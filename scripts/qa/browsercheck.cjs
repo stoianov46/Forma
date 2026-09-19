@@ -62,13 +62,28 @@ async function testMobileMenu(browser) {
     }
     await toggle.click();
     await new Promise((r) => setTimeout(r, 200));
-    const openState = await page.evaluate(() => ({
-      hasFlex: document.getElementById('mobile-menu')?.classList.contains('flex'),
-      hasHidden: document.getElementById('mobile-menu')?.classList.contains('hidden'),
-      ariaExpanded: document.getElementById('menu-toggle')?.getAttribute('aria-expanded'),
-    }));
+    const openState = await page.evaluate(() => {
+      const menu = document.getElementById('mobile-menu');
+      const rect = menu.getBoundingClientRect();
+      return {
+        hasFlex: menu?.classList.contains('flex'),
+        hasHidden: menu?.classList.contains('hidden'),
+        ariaExpanded: document.getElementById('menu-toggle')?.getAttribute('aria-expanded'),
+        height: rect.height,
+        viewportHeight: window.innerHeight,
+      };
+    });
     if (!openState.hasFlex || openState.hasHidden || openState.ariaExpanded !== 'true') {
       console.log(`[menu] ${vp.name}: menu did not open correctly`, openState);
+      ok = false;
+    }
+    // Classes/ARIA can be "correct" while the element still renders squished to a
+    // fraction of the viewport — e.g. an ancestor with backdrop-filter/transform/
+    // filter creates a new containing block for this `fixed` element, so its
+    // `inset-0` resolves against that ancestor's box instead of the viewport. Catch
+    // that class of bug directly by checking the actual rendered height.
+    if (openState.height < openState.viewportHeight * 0.9) {
+      console.log(`[menu] ${vp.name}: menu classes/ARIA say open, but rendered height is ${openState.height}px of a ${openState.viewportHeight}px viewport — check for a backdrop-filter/transform/filter ancestor creating a new containing block for this fixed element`);
       ok = false;
     }
 
