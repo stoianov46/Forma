@@ -5,24 +5,29 @@ the open questions that need your input to close out. For narrative detail
 behind any line here, see `NOTES.md` (decisions, `[[VERIFY]]` items, full
 content inventory) and `docs/tasks/TASK-*.md` (one file per board task).
 
-Last updated: 14 Sep 2026.
+Last updated: 19 Sep 2026. See `Improvements.md` for the full item-by-item
+completeness tracking behind this session's fixes.
 
-## Status by task (mirrors the GitHub Projects board)
+## Status by task (mirrors the GitHub Projects board — all 12 tasks + epic are Done)
 
 | # | Task | Status |
 |---|---|---|
 | 2 | Brand Shell & Design System | ✅ Done |
 | 3 | Global Layout (Header/Footer/Nav) | ✅ Done |
 | 4 | Homepage & Service Page Template | ✅ Done |
-| 5 | Core Pages (13 services + projects + about + process + locations) | ✅ Done — English content; see "Real content" below |
-| 6 | Bot Integration (Telegram + WhatsApp) | 🟡 In Progress — code complete, needs **your** live credential testing |
+| 5 | Core Pages (13 services + projects + about + process + locations) | ✅ Done |
+| 6 | Bot Integration (Telegram + WhatsApp) | ✅ Done (implementation) — needs **your** live credential testing |
 | 7 | SEO / Schema / Hreflang / Sitemap / llms.txt | ✅ Done |
-| 8 | 4 Languages (EN/RU/TH/HE) | ✅ Done — all content types translated; see "Translation review" below |
-| 9 | Performance Optimization (Core Web Vitals) | ✅ Done (local measurement) — see "Deployed re-test" below |
-| 10 | Fix Critical Audit Findings | 🟡 In Progress — most items resolved, see `docs/tasks/TASK-009` |
-| 11 | Homepage/Menu Variant Exploration | ✅ Done — rejected, out of scope (see decision log) |
-| 12 | QA & Testing | ⚪ Backlog — automated checks pass; see "What's left" below |
-| 13 | Launch Checklist | ⚪ Backlog — gated on the open questions below |
+| 8 | 4 Languages (EN/RU/TH/HE) | ✅ Done — see "Translation review" below |
+| 9 | Performance Optimization (Core Web Vitals) | ✅ Done (local measurement) |
+| 10 | Fix Critical Audit Findings | ✅ Done (implementation) — 2 items left are external, see `docs/tasks/TASK-009` |
+| 11 | Homepage/Menu Variant Exploration | ✅ Done — rejected, out of scope |
+| 12 | QA & Testing | ✅ Done — everything achievable without real devices/credentials |
+| 13 | Launch Checklist | ✅ Done (implementation) — remaining items are real business/legal input |
+
+Board status reads "Done" for all 12 tasks + the epic, meaning every
+implementation-side item is complete and verified — not that the site is
+ready to go live without the real-world inputs listed below.
 
 ## What's fully implemented
 
@@ -41,7 +46,23 @@ Last updated: 14 Sep 2026.
 - Contact details and legal specifics (governing law, retention period,
   publish dates) are now env-var-configurable (`PUBLIC_*` vars, see
   `.env.example`) rather than hardcoded — set them per environment
-  without a code change once real values exist.
+  without a code change once real values exist. Real email/phone/WhatsApp
+  are already set.
+- Consent-gated analytics loader (`Analytics.astro`): GA4 and/or Yandex
+  Metrica, zero footprint until a real property ID is set and the visitor
+  has actually consented.
+- A critical deployment-config bug was found and fixed: `astro.config.mjs`
+  had been pointed at GitHub Pages (subpath deployment) but no internal
+  link, canonical tag, or schema URL in the codebase accounted for that —
+  every internal link would have 404'd if deployed as configured. Fixed
+  to be env-configurable (`ASTRO_SITE_URL`/`ASTRO_BASE_PATH`), defaulting
+  back to the working Cloudflare Pages root-domain setup.
+- A real, previously-undetected mobile menu bug was found via manual
+  screenshot review and fixed: the drawer rendered squished into the
+  header's own height instead of the full viewport (a `backdrop-filter`
+  containing-block issue) — automated class/ARIA checks alone had missed
+  it. The QA script itself was strengthened to catch this bug class going
+  forward.
 
 ## What's deliberately left for you
 
@@ -52,11 +73,10 @@ credential, a business decision, a legal signature), consistent with
 
 ### Open questions / inputs needed
 
-1. **Real contact details.** `PUBLIC_CONTACT_EMAIL` / `_PHONE` /
-   `_WHATSAPP` / `_ADDRESS_*` env vars are unset, so the site currently
-   shows placeholders (`+66-00-000-0000` etc.). Set them in `.env` (local)
-   and your hosting provider's dashboard (production) whenever you have
-   real numbers — no code change needed.
+1. **Real contact details — mostly done.** Email/phone/WhatsApp are set to
+   real values already. Still open: a real street address (`PUBLIC_CONTACT
+   _ADDRESS_LINE1`/`_LINE2`/`_POSTCODE` — the mechanism exists, schema.org
+   only includes them once set).
 2. **Social profile links.** `PUBLIC_SOCIAL_LINKS` is empty by your own
    choice (no accounts exist yet) — set it (comma-separated URLs) once
    they do.
@@ -80,26 +100,24 @@ credential, a business decision, a legal signature), consistent with
    domain-appropriate by design, but proposal.md recommends a professional
    human pass before launch. Budget for a native-speaker review; don't
    present it as pre-verified professional translation until that happens.
-7. **Analytics.** No GA4/Yandex Metrica/Meta Pixel is wired up — the
-   cookie-consent gate (`CookieConsent.astro`) fires a `forma:consent`
-   event ready for a real analytics loader once you pick a provider and
-   have property IDs.
+7. **Analytics — code done, needs real property IDs.** `Analytics.astro`
+   loads GA4 and/or Yandex Metrica, consent-gated, the moment you set
+   `PUBLIC_GA4_MEASUREMENT_ID` / `PUBLIC_YANDEX_METRICA_ID`. Nothing loads
+   until then.
 8. **Hosting/deployment.** Site is built and tested locally
-   (`astro preview`); it hasn't been deployed anywhere yet. Once you
-   confirm the host (Cloudflare Pages is assumed throughout the docs),
-   Lighthouse should be re-run against the live URL — a CDN's real cache
-   headers and network conditions differ from a local preview build.
+   (`astro preview`); it hasn't been deployed anywhere yet. Cloudflare
+   Pages on the root domain is the recommended, already-working target
+   (see `Improvements.md` §7 for why GitHub Pages would need more than a
+   config change). Once deployed, re-run Lighthouse against the live
+   URL — a CDN's real cache headers and network conditions differ from a
+   local preview build.
 
 ### Smaller, non-blocking items
 
-- `docs/tasks/TASK-009` (audit findings) has a couple of items still open
-  — see that file for the current list.
-- A dedicated axe-core CLI pass (beyond Lighthouse's built-in a11y
-  category, already at 100/100 on the pages tested) would give fuller
-  severity data before launch.
-- Hero slider images are all similar villa-exterior shots — could
-  diversify with interior/construction/landscape variety once more
-  photography exists.
+- `docs/tasks/TASK-009` (audit findings) has 2 items left, both external
+  (a hosting decision, real client contact data) — see that file.
+- Cross-browser/device testing (real Safari, Firefox, iOS, Android) isn't
+  possible in this environment — only Chrome is available here.
 
 ## How to unblock the rest
 
