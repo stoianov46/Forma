@@ -1,4 +1,11 @@
-export const SITE_URL = 'https://forma.in.th';
+/**
+ * Full deployed origin + base path (no trailing slash), derived from astro.config.mjs's
+ * `site`/`base` (via ASTRO_SITE_URL/ASTRO_BASE_PATH env vars) rather than hardcoded, so
+ * it can never drift out of sync with the actual build config — this matters because
+ * schema.ts concatenates onto it directly (`${SITE_URL}/#organization`), which a
+ * mismatched value would silently point at the wrong URL.
+ */
+export const SITE_URL = `${import.meta.env.SITE.replace(/\/$/, '')}${import.meta.env.BASE_URL.replace(/\/$/, '')}`;
 export const SITE_NAME = 'FORMA';
 export const SITE_LEGAL_NAME = 'FORMA Design & Build Studio';
 
@@ -14,8 +21,16 @@ export const CONTACT = {
   phone: import.meta.env.PUBLIC_CONTACT_PHONE || '+66 80 870 5704',
   whatsapp: import.meta.env.PUBLIC_CONTACT_WHATSAPP || '+66 80 870 5704',
   telegram: import.meta.env.PUBLIC_CONTACT_TELEGRAM || 'https://t.me/formaisland_bot',
+  /**
+   * Street address — left unset (undefined) rather than a fabricated placeholder,
+   * since no real street/postcode exists yet; schema.ts only includes these fields
+   * in PostalAddress when they're actually present. Set via env once known.
+   */
+  addressLine1: import.meta.env.PUBLIC_CONTACT_ADDRESS_LINE1 || undefined,
+  addressLine2: import.meta.env.PUBLIC_CONTACT_ADDRESS_LINE2 || undefined,
   addressLocality: import.meta.env.PUBLIC_CONTACT_ADDRESS_LOCALITY || 'Koh Phangan',
   addressRegion: import.meta.env.PUBLIC_CONTACT_ADDRESS_REGION || 'Surat Thani',
+  postalCode: import.meta.env.PUBLIC_CONTACT_ADDRESS_POSTCODE || undefined,
   addressCountry: import.meta.env.PUBLIC_CONTACT_ADDRESS_COUNTRY || 'TH',
 };
 

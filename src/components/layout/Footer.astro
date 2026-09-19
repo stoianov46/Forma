@@ -1,7 +1,7 @@
 ---
 import type { Locale } from '../../lib/i18n';
 import { getDictionary } from '../../i18n/dictionary';
-import { localizePath } from '../../lib/i18n';
+import { localizePath, withBase } from '../../lib/i18n';
 import { services, serviceHrefSmart } from '../../content/services';
 import { primaryLocations, locationHrefSmart } from '../../content/locations';
 import { translatedProjectSlugs } from '../../content/projects';
@@ -76,11 +76,11 @@ const journalHref = journalLocales.includes(locale) || locale === 'en' ? localiz
       <p class="text-sm text-ink-900/60">© {year} FORMA. {t.footer.rights}</p>
       <ul class="flex flex-wrap gap-x-6 gap-y-2 text-sm text-ink-900/60">
         {/* Legal pages are English-only for now (pending translation + legal review — see NOTES.md), so these always link to the canonical English URL rather than a locale-prefixed page that does not exist. */}
-        <li><a href="/privacy/" class="hover:text-ink-900">{t.footer.privacy}</a></li>
-        <li><a href="/terms/" class="hover:text-ink-900">{t.footer.terms}</a></li>
-        <li><a href="/cookies/" class="hover:text-ink-900">{t.footer.cookies}</a></li>
-        <li><a href="/accessibility/" class="hover:text-ink-900">{t.footer.accessibility}</a></li>
-        <li><a href="/editorial-policy/" class="hover:text-ink-900">{t.footer.editorialPolicy}</a></li>
+        <li><a href={withBase('/privacy/')} class="hover:text-ink-900">{t.footer.privacy}</a></li>
+        <li><a href={withBase('/terms/')} class="hover:text-ink-900">{t.footer.terms}</a></li>
+        <li><a href={withBase('/cookies/')} class="hover:text-ink-900">{t.footer.cookies}</a></li>
+        <li><a href={withBase('/accessibility/')} class="hover:text-ink-900">{t.footer.accessibility}</a></li>
+        <li><a href={withBase('/editorial-policy/')} class="hover:text-ink-900">{t.footer.editorialPolicy}</a></li>
       </ul>
     </div>
   </div>

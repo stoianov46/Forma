@@ -6,6 +6,7 @@ import BaseHead from '../components/seo/BaseHead.astro';
 import Header from '../components/layout/Header.astro';
 import Footer from '../components/layout/Footer.astro';
 import CookieConsent from '../components/layout/CookieConsent.astro';
+import Analytics from '../components/layout/Analytics.astro';
 import JsonLd from '../components/seo/JsonLd.astro';
 import { organizationSchema, websiteSchema, webPageSchema, graph } from '../lib/schema';
 import { getDictionary } from '../i18n/dictionary';
@@ -71,5 +72,6 @@ const url = new URL(path, SITE_URL).toString();
     </main>
     <Footer locale={locale} />
     <CookieConsent locale={locale} />
+    <Analytics />
   </body>
 </html>

@@ -13,8 +13,10 @@ export function organizationSchema() {
     telephone: CONTACT.phone,
     address: {
       '@type': 'PostalAddress',
+      ...(CONTACT.addressLine1 && { streetAddress: [CONTACT.addressLine1, CONTACT.addressLine2].filter(Boolean).join(', ') }),
       addressLocality: CONTACT.addressLocality,
       addressRegion: CONTACT.addressRegion,
+      ...(CONTACT.postalCode && { postalCode: CONTACT.postalCode }),
       addressCountry: CONTACT.addressCountry,
     },
     areaServed: ['Koh Phangan', 'Koh Samui', 'Koh Tao', 'Bali'],

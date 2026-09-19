@@ -1,0 +1,89 @@
+---
+/**
+ * Consent-gated analytics loader — GA4 and/or Yandex Metrica.
+ *
+ * Does nothing at all unless a real property ID is set via
+ * `PUBLIC_GA4_MEASUREMENT_ID` / `PUBLIC_YANDEX_METRICA_ID` (see `.env.example`):
+ * no script tag, no network request, no console noise. Once an ID is set, the
+ * script only loads after the visitor has actually consented to analytics
+ * cookies — reads existing consent from `localStorage` on load, and listens
+ * for the `forma:consent` event `CookieConsent.astro` fires (accept/reject/
+ * save all dispatch it) so a mid-session consent change also takes effect
+ * without a page reload.
+ *
+ * Nothing here fabricates a tracking ID — this exists to be *ready*, not to
+ * pretend analytics is already configured.
+ */
+const ga4Id = import.meta.env.PUBLIC_GA4_MEASUREMENT_ID;
+const yandexId = import.meta.env.PUBLIC_YANDEX_METRICA_ID;
+const hasAnalytics = Boolean(ga4Id || yandexId);
+---
+
+{
+  hasAnalytics && (
+    <script define:vars={{ ga4Id, yandexId }}>
+      const STORAGE_KEY = 'formaCookieConsent';
+
+      function readConsent() {
+        try {
+          const raw = localStorage.getItem(STORAGE_KEY);
+          return raw ? JSON.parse(raw) : null;
+        } catch {
+          return null;
+        }
+      }
+
+      let loaded = false;
+
+      function loadGa4(id) {
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+          window.dataLayer.push(arguments);
+        }
+        window.gtag = gtag;
+        gtag('js', new Date());
+        gtag('config', id, { anonymize_ip: true });
+        const script = document.createElement('script');
+        script.async = true;
+        script.src = `https://www.googletagmanager.com/gtag/js?id=${id}`;
+        document.head.appendChild(script);
+      }
+
+      function loadYandexMetrica(id) {
+        window.ym =
+          window.ym ||
+          function () {
+            (window.ym.a = window.ym.a || []).push(arguments);
+          };
+        window.ym.l = Date.now();
+        const script = document.createElement('script');
+        script.async = true;
+        script.src = 'https://mc.yandex.ru/metrika/tag.js';
+        document.head.appendChild(script);
+        window.ym(id, 'init', { clickmap: true, trackLinks: true, accurateTrackBounce: true });
+      }
+
+      function activate() {
+        if (loaded) return;
+        loaded = true;
+        if (ga4Id) loadGa4(ga4Id);
+        if (yandexId) loadYandexMetrica(yandexId);
+      }
+
+      // A lightweight, always-safe hook for custom events (cta_click, bot_start, etc.
+      // per proposal.md's event list) — no-ops until analytics is actually loaded, so
+      // call sites elsewhere in the codebase don't need to guard for that themselves.
+      window.formaTrackEvent = function (name, params) {
+        if (window.gtag) window.gtag('event', name, params || {});
+        if (window.ym && yandexId) window.ym(yandexId, 'reachGoal', name, params || {});
+      };
+
+      const existing = readConsent();
+      if (existing?.analytics) activate();
+
+      document.addEventListener('forma:consent', (e) => {
+        if (e.detail?.analytics) activate();
+      });
+    </script>
+  )
+}

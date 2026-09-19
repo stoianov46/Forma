@@ -1,4 +1,4 @@
-import type { Locale } from '../../lib/i18n';
+import { localizePath, type Locale } from '../../lib/i18n';
 import type { Service } from '../../lib/types';
 import { servicesEn, servicesEnContent } from './en';
 import { servicesRuContent } from './ru';
@@ -42,8 +42,7 @@ export function getPriorityServices(): Service[] {
 }
 
 export function serviceHref(locale: Locale, slug: string): string {
-  const base = `/services/${slug}/`;
-  return locale === 'en' ? base : `/${locale}${base}`;
+  return localizePath(locale, `/services/${slug}/`);
 }
 
 /** Links to the localized service page if translated, otherwise falls back to the English page rather than a 404. */

@@ -1,4 +1,4 @@
-import type { Locale } from '../../lib/i18n';
+import { localizePath, type Locale } from '../../lib/i18n';
 import type { Project } from '../../lib/types';
 import { projectsEn, projectsEnContent } from './en';
 import { projectsRuContent } from './ru';
@@ -45,8 +45,7 @@ export function projectsForLocation(locationSlug: string): Project[] {
 }
 
 export function projectHref(locale: Locale, slug: string): string {
-  const base = `/projects/${slug}/`;
-  return locale === 'en' ? base : `/${locale}${base}`;
+  return localizePath(locale, `/projects/${slug}/`);
 }
 
 /** Links to the localized project page if translated, otherwise falls back to the English page rather than a 404. */

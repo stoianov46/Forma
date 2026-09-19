@@ -1,5 +1,5 @@
 ---
-import { LOCALES, LOCALE_HTML_LANG, localizePath, type Locale } from '../../lib/i18n';
+import { LOCALES, LOCALE_HTML_LANG, localizePath, withBase, type Locale } from '../../lib/i18n';
 import { SITE_URL, SITE_NAME } from '../../lib/site';
 
 interface Props {
@@ -18,7 +18,7 @@ const { locale, title, description, path, image, noindex = false, availableLocal
 
 const canonicalPath = localizePath(locale, path);
 const canonicalUrl = new URL(canonicalPath, SITE_URL).toString();
-const ogImage = new URL(image ?? '/images/og-default.jpg', SITE_URL).toString();
+const ogImage = new URL(image ?? withBase('/images/og-default.jpg'), SITE_URL).toString();
 ---
 
 <meta charset="utf-8" />
@@ -49,5 +49,5 @@ const ogImage = new URL(image ?? '/images/og-default.jpg', SITE_URL).toString();
 <meta name="twitter:description" content={description} />
 <meta name="twitter:image" content={ogImage} />
 
-<link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+<link rel="icon" href={withBase('/favicon.svg')} type="image/svg+xml" />
 <meta name="theme-color" content="#f7f4ef" />

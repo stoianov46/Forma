@@ -19,11 +19,23 @@ export const LOCALE_HTML_LANG: Record<Locale, string> = {
   he: 'he',
 };
 
-/** Prefixes a root-relative path with the locale, except for the default locale (en = "/"). */
+/**
+ * Prepends Astro's configured `base` (see astro.config.mjs) to a root-relative path.
+ * `import.meta.env.BASE_URL` is always `/`-prefixed and `/`-suffixed (e.g. "/" by
+ * default, or "/FORMA.in.th/" if `base` is set) — every internal href in this codebase
+ * must go through this (directly or via `localizePath`) so links still resolve
+ * correctly if the site is ever deployed under a subpath instead of a root domain.
+ */
+export function withBase(path: string): string {
+  const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+  return path === '/' ? `${base}/` : `${base}${path}`;
+}
+
+/** Prefixes a root-relative path with the locale, except for the default locale (en = "/"), then applies the site's base path. */
 export function localizePath(locale: Locale, path: string): string {
   const clean = path.startsWith('/') ? path : `/${path}`;
-  if (locale === DEFAULT_LOCALE) return clean;
-  return `/${locale}${clean === '/' ? '/' : clean}`;
+  if (locale === DEFAULT_LOCALE) return withBase(clean);
+  return withBase(`/${locale}${clean === '/' ? '/' : clean}`);
 }
 
 export function dirOf(locale: Locale): 'rtl' | 'ltr' {

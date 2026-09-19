@@ -14,14 +14,21 @@ interface ImportMetaEnv {
   readonly PUBLIC_CONTACT_PHONE?: string;
   readonly PUBLIC_CONTACT_WHATSAPP?: string;
   readonly PUBLIC_CONTACT_TELEGRAM?: string;
+  /** Street address, line 1 (e.g. "123 Moo 4") — optional; omitted from schema if unset. */
+  readonly PUBLIC_CONTACT_ADDRESS_LINE1?: string;
+  readonly PUBLIC_CONTACT_ADDRESS_LINE2?: string;
   readonly PUBLIC_CONTACT_ADDRESS_LOCALITY?: string;
   readonly PUBLIC_CONTACT_ADDRESS_REGION?: string;
+  readonly PUBLIC_CONTACT_ADDRESS_POSTCODE?: string;
   readonly PUBLIC_CONTACT_ADDRESS_COUNTRY?: string;
   /** Comma-separated list of social profile URLs (schema.org `sameAs`). */
   readonly PUBLIC_SOCIAL_LINKS?: string;
   readonly PUBLIC_LEGAL_UPDATED_DATE?: string;
   readonly PUBLIC_LEGAL_RETENTION_PERIOD?: string;
   readonly PUBLIC_LEGAL_GOVERNING_LAW?: string;
+  /** Analytics — see src/components/layout/Analytics.astro. Unset = no script loads at all. */
+  readonly PUBLIC_GA4_MEASUREMENT_ID?: string;
+  readonly PUBLIC_YANDEX_METRICA_ID?: string;
 }
 
 interface ImportMeta {

@@ -1,6 +1,7 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import { getDictionary } from '../i18n/dictionary';
+import { withBase } from '../lib/i18n';
 
 const t = getDictionary('en');
 ---
@@ -10,7 +11,7 @@ const t = getDictionary('en');
     <p class="font-display text-6xl text-olive-600">404</p>
     <h1 class="mt-4 max-w-xl">{t.notFound.title}</h1>
     <p class="body-l mt-4 max-w-md text-ink-900/70">{t.notFound.body}</p>
-    <a href="/" class="mt-8 inline-flex items-center rounded-full bg-ink-900 px-6 py-3 text-sm font-medium text-stone-50 hover:bg-olive-700">
+    <a href={withBase('/')} class="mt-8 inline-flex items-center rounded-full bg-ink-900 px-6 py-3 text-sm font-medium text-stone-50 hover:bg-olive-700">
       {t.notFound.cta}
     </a>
   </section>

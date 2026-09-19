@@ -1,4 +1,4 @@
-import type { Locale } from '../../lib/i18n';
+import { localizePath, type Locale } from '../../lib/i18n';
 import type { Location } from '../../lib/types';
 import { locationsEn, locationsEnContent } from './en';
 import { locationsRuContent } from './ru';
@@ -45,8 +45,7 @@ export function secondaryLocations(parentSlug: string): Location[] {
 }
 
 export function locationHref(locale: Locale, slug: string): string {
-  const base = `/locations/${slug}/`;
-  return locale === 'en' ? base : `/${locale}${base}`;
+  return localizePath(locale, `/locations/${slug}/`);
 }
 
 /** Links to the localized location page if translated, otherwise falls back to the English page rather than a 404. */
