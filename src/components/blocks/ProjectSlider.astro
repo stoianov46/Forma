@@ -32,17 +32,17 @@ const sliderId = `project-slider-${Math.random().toString(36).slice(2, 8)}`;
         </a>
       )}
       <div class="hidden sm:flex gap-2">
-        <button type="button" data-slider-prev={sliderId} aria-label="Previous project" class="flex h-10 w-10 items-center justify-center rounded-full border border-ink-900/20 hover:bg-stone-100">
+        <button type="button" data-slider-prev={sliderId} aria-label={t.common.previousProject} class="flex h-10 w-10 items-center justify-center rounded-full border border-ink-900/20 hover:bg-stone-100">
           <svg width="8" height="14" viewBox="0 0 8 14" fill="none" aria-hidden="true"><path d="M7 1L1 7L7 13" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
         </button>
-        <button type="button" data-slider-next={sliderId} aria-label="Next project" class="flex h-10 w-10 items-center justify-center rounded-full border border-ink-900/20 hover:bg-stone-100">
+        <button type="button" data-slider-next={sliderId} aria-label={t.common.nextProject} class="flex h-10 w-10 items-center justify-center rounded-full border border-ink-900/20 hover:bg-stone-100">
           <svg width="8" height="14" viewBox="0 0 8 14" fill="none" aria-hidden="true"><path d="M1 1L7 7L1 13" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
         </button>
       </div>
     </div>
   </div>
 
-  <div id={sliderId} class="scrollbar-none flex snap-x snap-mandatory gap-5 overflow-x-auto ps-[max(1.25rem,calc((100vw-90rem)/2+1.25rem))] pe-5 pb-2">
+  <div id={sliderId} class="scrollbar-none slider-gutter flex snap-x snap-mandatory gap-5 overflow-x-auto pb-2">
     {
       projects.map((p) => {
         const tr = p.translations[locale];
@@ -97,5 +97,23 @@ const sliderId = `project-slider-${Math.random().toString(36).slice(2, 8)}`;
   }
   .scrollbar-none::-webkit-scrollbar {
     display: none;
+  }
+  /* Same inline gutters as .wrap (global.css), so the first card lines up with the
+     heading above. scroll-padding makes snap-start respect that gutter; without it the
+     browser snaps the first card flush to the viewport edge. */
+  .slider-gutter {
+    --gutter: 1.25rem;
+    padding-inline: var(--gutter);
+    scroll-padding-inline: var(--gutter);
+  }
+  @media (min-width: 48rem) {
+    .slider-gutter {
+      --gutter: 2.5rem;
+    }
+  }
+  @media (min-width: 90rem) {
+    .slider-gutter {
+      --gutter: calc((100% - 90rem) / 2 + 4rem);
+    }
   }
 </style>

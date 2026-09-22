@@ -13,9 +13,11 @@ interface Props {
   cta1: { label: string; href: string };
   cta2: { label: string; href: string };
   slides: Slide[];
+  /** Localized control labels; `goToSlide` contains `{n}` and `{total}` placeholders. */
+  labels: { goToSlide: string; pause: string; play: string };
 }
 
-const { title, subtitle, cta1, cta2, slides } = Astro.props;
+const { title, subtitle, cta1, cta2, slides, labels } = Astro.props;
 
 /**
  * Slides after the first are stacked absolutely at inset-0 with opacity: 0
@@ -88,7 +90,8 @@ const deferredSlides = await Promise.all(
         </div>
       ))
     }
-    <div class="absolute inset-0 bg-gradient-to-t from-ink-900/70 via-ink-900/10 to-transparent" aria-hidden="true"></div>
+    <div class="absolute inset-0 bg-gradient-to-t from-ink-900/80 via-ink-900/30 to-ink-900/10" aria-hidden="true"></div>
+    <div class="absolute inset-0 bg-gradient-to-r from-ink-900/45 via-ink-900/10 to-transparent rtl:bg-gradient-to-l" aria-hidden="true"></div>
   </div>
 
   <div class="wrap absolute inset-x-0 bottom-0 pb-12 sm:pb-16">
@@ -101,16 +104,27 @@ const deferredSlides = await Promise.all(
 
     {
       slides.length > 1 && (
-        <div class="mt-10 flex items-center gap-3">
+        <div class="mt-8 flex items-center gap-1">
           {slides.map((_, i) => (
             <button
               type="button"
-              class="hero-dot h-1.5 rounded-full bg-stone-50/40 transition-all duration-300 data-[active=true]:w-8 data-[active=true]:bg-stone-50 w-3"
+              class="hero-dot box-border h-6 w-6 rounded-full bg-stone-50/40 bg-clip-content px-1.5 py-[9px] transition-all duration-300 data-[active=true]:w-11 data-[active=true]:bg-stone-50"
               data-index={i}
               data-active={i === 0 ? 'true' : 'false'}
-              aria-label={`Go to slide ${i + 1} of ${slides.length}`}
+              aria-label={labels.goToSlide.replace('{n}', String(i + 1)).replace('{total}', String(slides.length))}
             />
           ))}
+          <button
+            type="button"
+            id="hero-toggle"
+            class="ms-2 flex h-8 w-8 items-center justify-center rounded-full border border-stone-50/40 text-stone-50 hover:bg-stone-50/10"
+            aria-label={labels.pause}
+            data-label-pause={labels.pause}
+            data-label-play={labels.play}
+          >
+            <svg class="hero-icon-pause" width="10" height="12" viewBox="0 0 10 12" fill="currentColor" aria-hidden="true"><rect width="3" height="12" rx="1" /><rect x="7" width="3" height="12" rx="1" /></svg>
+            <svg class="hero-icon-play hidden" width="10" height="12" viewBox="0 0 10 12" fill="currentColor" aria-hidden="true"><path d="M0 1.2v9.6a1 1 0 0 0 1.5.86l8-4.8a1 1 0 0 0 0-1.72l-8-4.8A1 1 0 0 0 0 1.2Z" /></svg>
+          </button>
         </div>
       )
     }
@@ -158,11 +172,43 @@ const deferredSlides = await Promise.all(
       });
     });
 
+    // WCAG 2.2.2: auto-advancing content needs a pause control. The toggle is a
+    // user choice that sticks; hover/focus/hidden-tab pauses are temporary.
+    const section = root.closest('section');
+    const toggle = document.getElementById('hero-toggle');
+    let userPaused = reduceMotion;
+    let hoverPaused = false;
+
     function restart() {
-      if (reduceMotion || slides.length < 2) return;
       clearInterval(timer);
+      if (userPaused || hoverPaused || document.hidden || slides.length < 2) return;
       timer = setInterval(next, 6500);
     }
+
+    function syncToggle() {
+      if (!toggle) return;
+      toggle.setAttribute('aria-label', (userPaused ? toggle.dataset.labelPlay : toggle.dataset.labelPause) ?? '');
+      toggle.querySelector('.hero-icon-pause')?.classList.toggle('hidden', userPaused);
+      toggle.querySelector('.hero-icon-play')?.classList.toggle('hidden', !userPaused);
+    }
+
+    toggle?.addEventListener('click', () => {
+      userPaused = !userPaused;
+      syncToggle();
+      restart();
+    });
+    const setHover = (v: boolean) => () => {
+      hoverPaused = v;
+      restart();
+    };
+    section?.addEventListener('mouseenter', setHover(true));
+    section?.addEventListener('mouseleave', setHover(false));
+    section?.addEventListener('focusin', setHover(true));
+    section?.addEventListener('focusout', (e) => {
+      if (!section.contains(e.relatedTarget as Node | null)) setHover(false)();
+    });
+    document.addEventListener('visibilitychange', restart);
+    syncToggle();
 
     // Only fetch slides 2+ once the page has otherwise finished loading —
     // see the comment in this file's frontmatter for why loading="lazy"

@@ -51,13 +51,13 @@ const copy: Record<Locale, { intro: string; accept: string; reject: string; sett
 const c = copy[locale];
 ---
 
-<div id="cookie-consent" hidden class="fixed inset-x-0 bottom-0 z-[70] border-t border-ink-900/10 bg-stone-50 p-5 shadow-2xl sm:p-6">
-  <div class="wrap flex flex-col gap-4 lg:flex-row lg:items-center lg:justify-between">
-    <p class="body-m max-w-xl text-ink-900/80">{c.intro}</p>
-    <div class="flex flex-wrap gap-3">
-      <button type="button" id="cookie-settings-toggle" class="rounded-full border border-ink-900/20 px-5 py-2.5 text-sm font-medium hover:bg-stone-100">{c.settings}</button>
-      <button type="button" id="cookie-reject" class="rounded-full border border-ink-900/20 px-5 py-2.5 text-sm font-medium hover:bg-stone-100">{c.reject}</button>
-      <button type="button" id="cookie-accept" class="rounded-full bg-ink-900 px-5 py-2.5 text-sm font-medium text-stone-50 hover:bg-olive-700">{c.accept}</button>
+<div id="cookie-consent" hidden class="fixed inset-x-0 bottom-0 z-[70] max-h-[85svh] overflow-y-auto border-t border-ink-900/10 bg-stone-50 py-3 shadow-2xl sm:py-6">
+  <div class="wrap flex flex-col gap-3 sm:gap-4 lg:flex-row lg:items-center lg:justify-between">
+    <p class="max-w-xl text-sm text-ink-900/80 sm:text-base">{c.intro}</p>
+    <div class="grid grid-cols-2 gap-2 sm:flex sm:flex-wrap sm:gap-3">
+      <button type="button" id="cookie-settings-toggle" class="order-last col-span-2 py-1 text-xs font-medium text-ink-900/70 underline underline-offset-4 hover:text-ink-900 sm:order-none sm:rounded-full sm:border sm:border-ink-900/20 sm:px-5 sm:py-2.5 sm:text-sm sm:text-ink-900 sm:no-underline sm:hover:bg-stone-100">{c.settings}</button>
+      <button type="button" id="cookie-reject" class="rounded-full border border-ink-900/20 px-2 py-2.5 text-xs font-medium hover:bg-stone-100 sm:px-5 sm:text-sm">{c.reject}</button>
+      <button type="button" id="cookie-accept" class="rounded-full bg-ink-900 px-2 py-2.5 text-xs font-medium text-stone-50 hover:bg-olive-700 sm:px-5 sm:text-sm">{c.accept}</button>
     </div>
   </div>
 

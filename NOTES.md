@@ -366,6 +366,24 @@ a real-world fact, a legal answer, or a decision. Mirrored in `PROGRESS.md` →
 - [ ] **Native-speaker review** of RU/TH/HE (AI-translated).
 - [ ] **After deploy:** Lighthouse on the live URL, Google Search Console, real
       Safari/Firefox/iOS/Android pass.
+- [ ] **UI/UX audit follow-ups (22 Sep 2026), not implemented:**
+  - **Photography:** only ~7 source photos cover the hero, 13 services, 4 locations and
+    6 projects, so the same image repeats (e.g. `hero-villa` appears 3+ times on the home
+    page). Needs real project photos.
+  - **Alt texts don't match the photos**, e.g. hero slide 1 says "terrace overlooking
+    the sea" but shows a glass-walled terrace with a pool and open staircase. Rewrite the
+    alts (`heroSlideAlts` in `src/i18n/dictionary.ts`, service/location images) when the
+    real photos land.
+  - **Native review of the new UI strings** added to `src/i18n/dictionary.ts`
+    (`common.processHeading` … `mobileNavLabel`, `home.heroSlideAlts`): RU/TH/HE are
+    AI-translated like the rest of the site.
+  - **Performance (minor):** `public/images/og-default.jpg` is 341 KB (social previews
+    only, aim for ~100 KB). The hero `h1` font (Fraunces) isn't preloaded, so a brief
+    font swap is possible on slow connections.
+  - **Design options needing a decision:** a sticky WhatsApp/"Start a Project" button on
+    mobile (the home page is ~14,000 px tall on a phone); "Why FORMA" has 5 items in a
+    3-column grid (3 + 2); contact methods on `/contact/` are plain text links rather
+    than prominent buttons.
 
 ## Pre-launch checklist
 

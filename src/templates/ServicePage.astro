@@ -69,7 +69,7 @@ const availableLocales = LOCALES.filter((l) => hasServiceTranslation(l, slug));
 
   <MaterialsBlock image={service.image} alt={tr.h1} heading={tr.materialsHeading} body={tr.materials} />
 
-  <ProcessTimeline heading="Process" steps={tr.process} />
+  <ProcessTimeline heading={t.common.processHeading} steps={tr.process} />
 
   <section class="wrap py-14 sm:py-20">
     <h2 class="mb-8">Deliverables</h2>

@@ -19,9 +19,9 @@ const primary = primaryLocations();
 const year = new Date().getFullYear();
 
 const journalLocales = await getLocalesWithAnyArticles();
-const aboutHref = isAboutTranslated(locale) || locale === 'en' ? localizePath(locale, '/about/') : '/about/';
-const processHref = isProcessTranslated(locale) || locale === 'en' ? localizePath(locale, '/process/') : '/process/';
-const projectsHref = translatedProjectSlugs(locale).length > 0 || locale === 'en' ? localizePath(locale, '/projects/') : '/projects/';
+const aboutHref = isAboutTranslated(locale) || locale === 'en' ? localizePath(locale, '/about/') : withBase('/about/');
+const processHref = isProcessTranslated(locale) || locale === 'en' ? localizePath(locale, '/process/') : withBase('/process/');
+const projectsHref = translatedProjectSlugs(locale).length > 0 || locale === 'en' ? localizePath(locale, '/projects/') : withBase('/projects/');
 const journalHref = journalLocales.includes(locale) || locale === 'en' ? localizePath(locale, '/journal/') : withBase('/journal/');
 ---
 
@@ -36,7 +36,7 @@ const journalHref = journalLocales.includes(locale) || locale === 'en' ? localiz
       <div class="col-span-2 md:col-span-2 lg:col-span-2">
         <h3 class="text-xs font-semibold tracking-wide text-ink-900/60 uppercase">{t.footer.servicesHeading}</h3>
         <ul class="mt-4 space-y-2">
-          {services.slice(0, 8).map((s) => (
+          {services.map((s) => (
             <li><a href={serviceHrefSmart(locale, s.slug)} class="text-sm text-ink-900/80 hover:text-ink-900">{s.translations[locale].navLabel}</a></li>
           ))}
         </ul>

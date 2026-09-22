@@ -9,6 +9,8 @@ interface Props {
   steps: Step[];
 }
 const { heading, intro, steps } = Astro.props;
+// Avoid a lone step on the last row: 4 or 7 steps read better 4-up than 3-up.
+const wideCols = steps.length % 3 === 1 && steps.length % 4 !== 1 ? 'lg:grid-cols-4' : 'lg:grid-cols-3';
 ---
 
 <section class="wrap py-14 sm:py-20">
@@ -18,7 +20,7 @@ const { heading, intro, steps } = Astro.props;
       {intro && <p class="body-l mt-3 text-ink-900/70">{intro}</p>}
     </div>
   )}
-  <ol class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3 lg:gap-x-10">
+  <ol class:list={['grid gap-8 sm:grid-cols-2 lg:gap-x-10', wideCols]}>
     {
       steps.map((step, i) => (
         <li class="relative border-t border-ink-900/15 pt-6">

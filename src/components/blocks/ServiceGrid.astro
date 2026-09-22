@@ -12,8 +12,15 @@ interface Props {
   heading?: string;
   intro?: string;
   viewAllHref?: string;
+  /** Cards per row on wide screens (≥90rem, the 12-column grid). 4 suits 8 cards; default 3. */
+  columns?: 3 | 4;
+  /** Extra services rendered as a compact linked list below the cards. */
+  moreServices?: Service[];
+  moreServicesHeading?: string;
 }
-const { locale, services, heading, intro, viewAllHref } = Astro.props;
+const { locale, services, heading, intro, viewAllHref, columns = 3, moreServices = [], moreServicesHeading } = Astro.props;
+const span = columns === 4 ? 'min-[90rem]:col-span-3' : 'min-[90rem]:col-span-4';
+const imageSizes = columns === 4 ? '(min-width: 90rem) 22rem, (min-width: 48rem) 50vw, 100vw' : '(min-width: 90rem) 28rem, (min-width: 48rem) 50vw, 100vw';
 const t = getDictionary(locale);
 ---
 
@@ -38,15 +45,15 @@ const t = getDictionary(locale);
       services.map((s) => {
         const tr = s.translations[locale];
         return (
-          <a href={serviceHrefSmart(locale, s.slug)} class="group col-span-4 md:col-span-4 lg:col-span-4 flex flex-col overflow-hidden rounded-2xl border border-ink-900/10 bg-stone-50 transition-shadow hover:shadow-lg">
+          <a href={serviceHrefSmart(locale, s.slug)} class:list={['group col-span-4 flex flex-col overflow-hidden rounded-2xl border border-ink-900/10 bg-stone-50 transition-shadow hover:shadow-lg', span]}>
             <div class="aspect-[4/3] overflow-hidden">
               <Image
                 src={getImage(s.image)}
-                alt={tr.h1}
+                alt=""
                 width={640}
                 height={480}
                 widths={[320, 480, 640]}
-                sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw"
+                sizes={imageSizes}
                 format="avif"
                 loading="lazy"
                 class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
@@ -62,4 +69,21 @@ const t = getDictionary(locale);
       })
     }
   </div>
+  {
+    moreServices.length > 0 && (
+      <div class="mt-12 border-t border-ink-900/10 pt-8">
+        {moreServicesHeading && <h3 class="text-lg">{moreServicesHeading}</h3>}
+        <ul class="mt-4 grid gap-x-8 gap-y-3 sm:grid-cols-2 min-[90rem]:grid-cols-3">
+          {moreServices.map((s) => (
+            <li>
+              <a href={serviceHrefSmart(locale, s.slug)} class="group flex items-baseline justify-between gap-4 border-b border-ink-900/10 py-3 hover:border-ink-900/40">
+                <span class="font-medium">{s.translations[locale].navLabel}</span>
+                <span class="text-sm text-olive-700 transition-transform group-hover:translate-x-1 rtl:group-hover:-translate-x-1" aria-hidden="true">→</span>
+              </a>
+            </li>
+          ))}
+        </ul>
+      </div>
+    )
+  }
 </section>

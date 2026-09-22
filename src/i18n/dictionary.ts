@@ -45,6 +45,18 @@ export interface Dictionary {
     breadcrumbHome: string;
     skipToContent: string;
     languageLabel: string;
+    processHeading: string;
+    localContext: string;
+    islandsHeading: string;
+    specialistServices: string;
+    previousProject: string;
+    nextProject: string;
+    goToSlide: string;
+    pauseSlideshow: string;
+    playSlideshow: string;
+    breadcrumbLabel: string;
+    primaryNavLabel: string;
+    mobileNavLabel: string;
   };
   cta: {
     startProject: string;
@@ -83,6 +95,8 @@ export interface Dictionary {
   home: {
     heroTitle: string;
     heroSubtitle: string;
+    /** Hero slide alt texts, in slide order (see HomePage.astro). */
+    heroSlideAlts: string[];
     directAnswer: string;
     heroCta1: string;
     heroCta2: string;
@@ -154,6 +168,18 @@ export const en: Dictionary = {
     breadcrumbHome: 'Services',
     skipToContent: 'Skip to content',
     languageLabel: 'Language',
+    processHeading: 'Process',
+    localContext: 'Local context',
+    islandsHeading: 'Islands we work on',
+    specialistServices: 'Specialist services',
+    previousProject: 'Previous project',
+    nextProject: 'Next project',
+    goToSlide: 'Go to slide {n} of {total}',
+    pauseSlideshow: 'Pause slideshow',
+    playSlideshow: 'Play slideshow',
+    breadcrumbLabel: 'Breadcrumb',
+    primaryNavLabel: 'Primary',
+    mobileNavLabel: 'Menu',
   },
   cta: {
     startProject: 'Start a Project',
@@ -196,6 +222,7 @@ export const en: Dictionary = {
     heroTitle: 'Architecture & Design-Build on Koh Phangan',
     heroSubtitle:
       'Architecture, interiors and construction for distinctive villas and spaces in Koh Phangan, Thailand — from concept and planning to completion.',
+    heroSlideAlts: ['Villa terrace overlooking the sea on Koh Phangan', 'Concrete villa architecture with deep shading overhangs', 'Villa under construction, structural framing on site', 'Infinity pool integrated with tropical landscape design', 'Warm minimalist villa interior with natural materials'],
     heroCta1: 'View Projects',
     heroCta2: 'Start a Project',
     directAnswer:
@@ -270,6 +297,18 @@ export const ru: Dictionary = {
     breadcrumbHome: 'Услуги',
     skipToContent: 'Перейти к содержимому',
     languageLabel: 'Язык',
+    processHeading: 'Процесс',
+    localContext: 'Местный контекст',
+    islandsHeading: 'Острова, на которых мы работаем',
+    specialistServices: 'Специализированные услуги',
+    previousProject: 'Предыдущий проект',
+    nextProject: 'Следующий проект',
+    goToSlide: 'Слайд {n} из {total}',
+    pauseSlideshow: 'Приостановить слайд-шоу',
+    playSlideshow: 'Запустить слайд-шоу',
+    breadcrumbLabel: 'Навигационная цепочка',
+    primaryNavLabel: 'Основная навигация',
+    mobileNavLabel: 'Меню',
   },
   cta: {
     startProject: 'Начать проект',
@@ -311,6 +350,7 @@ export const ru: Dictionary = {
     heroTitle: 'Архитектура и дизайн-строительство на Ко Панган',
     heroSubtitle:
       'Архитектура, интерьеры и строительство вилл и пространств на Ко Панган, Таиланд — от концепции и планирования до завершения строительства.',
+    heroSlideAlts: ['Терраса виллы с видом на море на Пангане', 'Архитектура бетонной виллы с глубокими затеняющими навесами', 'Вилла в процессе строительства, несущий каркас на площадке', 'Инфинити-бассейн, встроенный в тропический ландшафт', 'Тёплый минималистичный интерьер виллы из натуральных материалов'],
     heroCta1: 'Смотреть проекты',
     heroCta2: 'Начать проект',
     directAnswer:
@@ -383,6 +423,18 @@ export const th: Dictionary = {
     breadcrumbHome: 'บริการ',
     skipToContent: 'ข้ามไปยังเนื้อหา',
     languageLabel: 'ภาษา',
+    processHeading: 'ขั้นตอนการทำงาน',
+    localContext: 'บริบทท้องถิ่น',
+    islandsHeading: 'เกาะที่เราให้บริการ',
+    specialistServices: 'บริการเฉพาะทาง',
+    previousProject: 'โครงการก่อนหน้า',
+    nextProject: 'โครงการถัดไป',
+    goToSlide: 'ไปยังสไลด์ที่ {n} จาก {total}',
+    pauseSlideshow: 'หยุดสไลด์โชว์ชั่วคราว',
+    playSlideshow: 'เล่นสไลด์โชว์',
+    breadcrumbLabel: 'เส้นทางนำทาง',
+    primaryNavLabel: 'เมนูหลัก',
+    mobileNavLabel: 'เมนู',
   },
   cta: {
     startProject: 'เริ่มโปรเจกต์',
@@ -422,6 +474,7 @@ export const th: Dictionary = {
   home: {
     heroTitle: 'งานสถาปัตยกรรมและออกแบบ-ก่อสร้างบนเกาะพะงัน',
     heroSubtitle: 'งานสถาปัตยกรรม ออกแบบภายใน และก่อสร้าง สำหรับวิลล่าและพื้นที่ที่โดดเด่นบนเกาะพะงัน ประเทศไทย ตั้งแต่แนวคิดและการวางแผนจนถึงความสำเร็จของโครงการ',
+    heroSlideAlts: ['ระเบียงวิลล่าที่มองเห็นทะเลบนเกาะพะงัน', 'สถาปัตยกรรมวิลล่าคอนกรีตพร้อมชายคายื่นลึกเพื่อบังแดด', 'วิลล่าระหว่างก่อสร้าง โครงสร้างหลักในไซต์งาน', 'สระว่ายน้ำอินฟินิตี้ที่ผสานกับภูมิทัศน์เขตร้อน', 'การตกแต่งภายในวิลล่าแบบมินิมอลที่อบอุ่นด้วยวัสดุธรรมชาติ'],
     heroCta1: 'ดูผลงาน',
     heroCta2: 'เริ่มโปรเจกต์',
     directAnswer:
@@ -494,6 +547,18 @@ export const he: Dictionary = {
     breadcrumbHome: 'שירותים',
     skipToContent: 'דלגו לתוכן',
     languageLabel: 'שפה',
+    processHeading: 'תהליך',
+    localContext: 'הקשר מקומי',
+    islandsHeading: 'האיים שבהם אנו עובדים',
+    specialistServices: 'שירותים מקצועיים נוספים',
+    previousProject: 'הפרויקט הקודם',
+    nextProject: 'הפרויקט הבא',
+    goToSlide: 'מעבר לשקופית {n} מתוך {total}',
+    pauseSlideshow: 'השהיית המצגת',
+    playSlideshow: 'הפעלת המצגת',
+    breadcrumbLabel: 'פירורי לחם',
+    primaryNavLabel: 'ניווט ראשי',
+    mobileNavLabel: 'תפריט',
   },
   cta: {
     startProject: 'התחילו פרויקט',
@@ -533,6 +598,7 @@ export const he: Dictionary = {
   home: {
     heroTitle: 'אדריכלות ובנייה מתוכננת בקו פנגן',
     heroSubtitle: 'אדריכלות, עיצוב פנים ובנייה לוילות ומרחבים ייחודיים בקו פנגן, תאילנד — מרעיון ותכנון ועד להשלמת הפרויקט.',
+    heroSlideAlts: ['מרפסת וילה המשקיפה לים בקו פנגן', 'אדריכלות וילת בטון עם גגונים עמוקים להצללה', 'וילה בבנייה, שלד מבני באתר', 'בריכת אינפיניטי המשולבת בנוף טרופי', 'עיצוב פנים מינימליסטי וחם של וילה בחומרים טבעיים'],
     heroCta1: 'צפייה בפרויקטים',
     heroCta2: 'התחילו פרויקט',
     directAnswer:

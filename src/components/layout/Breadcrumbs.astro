@@ -22,7 +22,7 @@ const trail = [{ name: t.common.breadcrumbHome, path: '/' }, ...items];
 const withUrls = trail.map((c) => ({ name: c.name, url: new URL(localizePath(locale, c.path), SITE_URL).toString() }));
 ---
 
-<nav aria-label="Breadcrumb" class="wrap py-4">
+<nav aria-label={t.common.breadcrumbLabel} class="wrap py-4">
   <ol class="flex flex-wrap items-center gap-1.5 text-sm text-ink-900/60">
     {
       trail.map((c, i) => (

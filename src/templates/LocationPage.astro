@@ -53,7 +53,7 @@ const availableLocales = LOCALES.filter((l) => hasLocationTranslation(l, slug));
 
   <DirectAnswer text={tr.directAnswer} />
   <EditorialIntro heading={tr.name} body={tr.intro} />
-  <SplitImageText image={location.image} alt={tr.name} heading="Local context" body={tr.context} reverse />
+  <SplitImageText image={location.image} alt={tr.name} heading={t.common.localContext} body={tr.context} reverse />
 
   <section class="wrap py-14 sm:py-20">
     <h2 class="mb-4">Getting materials and equipment here</h2>

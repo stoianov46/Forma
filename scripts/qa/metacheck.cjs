@@ -37,7 +37,8 @@ function check(file) {
   }
   const imgTags = html.match(/<img[^>]*>/g) || [];
   for (const img of imgTags) {
-    if (!/alt="[^"]*"/.test(img)) {
+    // A bare `alt` (how Astro minifies alt="") is a valid empty alt: decorative image.
+    if (!/\salt(="[^"]*"|[\s>\/])/.test(img)) {
       console.log(`[alt] ${rel}: <img> missing alt attribute: ${img.slice(0, 80)}`);
       issues++;
     }

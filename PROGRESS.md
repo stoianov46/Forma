@@ -129,6 +129,12 @@ Same list, as a checklist: `NOTES.md` → "Needs human review".
 
 ### Smaller, non-blocking items
 
+- UI/UX audit (22 Sep 2026): fixed the home page not listing all 13 services
+  (a P0 spec requirement), a "View all services" link pointing to itself,
+  English headings/labels on RU/TH/HE pages, the slideshow's missing pause
+  control, the oversized mobile cookie banner, and grid/carousel alignment.
+  Follow-ups that need photos, native review or a design decision are in
+  `NOTES.md` → "Needs human review".
 - Known code gap: with JavaScript off and the form endpoint on a different
   host than the site, `lead.ts` redirects to `/thank-you/` on the endpoint's
   host, without the base path. JS submissions are unaffected. See

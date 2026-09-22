@@ -11,8 +11,8 @@ import LocationBlock from '../components/blocks/LocationBlock.astro';
 import JournalCards from '../components/blocks/JournalCards.astro';
 import CTABanner from '../components/blocks/CTABanner.astro';
 import { getDictionary } from '../i18n/dictionary';
-import { localizePath, type Locale } from '../lib/i18n';
-import { getPriorityServices, translatedServiceSlugs } from '../content/services';
+import { localizePath, withBase, type Locale } from '../lib/i18n';
+import { getPriorityServices, services, translatedServiceSlugs } from '../content/services';
 import { projects, translatedProjectSlugs } from '../content/projects';
 import { primaryLocations, translatedLocationSlugs } from '../content/locations';
 import { getHomeContent } from '../content/home';
@@ -30,9 +30,12 @@ const home = getHomeContent(locale);
 const hasServices = translatedServiceSlugs(locale).length > 0;
 const hasProjects = translatedProjectSlugs(locale).length > 0;
 const hasLocations = translatedLocationSlugs(locale).length > 0 || locale === 'en';
-const locationsHref = hasLocations ? localizePath(locale, '/locations/') : '/locations/';
-const projectsHref = hasProjects ? localizePath(locale, '/projects/') : '/projects/';
+const locationsHref = hasLocations ? localizePath(locale, '/locations/') : withBase('/locations/');
+const projectsHref = hasProjects ? localizePath(locale, '/projects/') : withBase('/projects/');
 const priorityServices = hasServices ? getPriorityServices() : [];
+// "/" is the master Services landing (proposal.md §4/§24, P0), so every service must be
+// reachable from it: priority services as cards, the rest as a compact list below.
+const specialistServices = hasServices ? services.filter((s) => !s.priority) : [];
 const featuredProjects = hasProjects ? projects.slice(0, 6) : [];
 const articles = await getJournalArticles(locale);
 // Matches the Hero component's first-slide <Image> params exactly, so the browser preloads
@@ -61,12 +64,13 @@ const heroPreload = await astroGetImage({
     subtitle={t.home.heroSubtitle}
     cta1={{ label: t.home.heroCta1, href: projectsHref }}
     cta2={{ label: t.home.heroCta2, href: localizePath(locale, '/contact/') }}
+    labels={{ goToSlide: t.common.goToSlide, pause: t.common.pauseSlideshow, play: t.common.playSlideshow }}
     slides={[
-      { image: 'hero-villa', alt: 'Villa terrace overlooking the sea on Koh Phangan' },
-      { image: 'architecture', alt: 'Concrete villa architecture with deep shading overhangs' },
-      { image: 'construction', alt: 'Villa under construction, structural framing on site' },
-      { image: 'pool-villa', alt: 'Infinity pool integrated with tropical landscape design' },
-      { image: 'interior', alt: 'Warm minimalist villa interior with natural materials' },
+      { image: 'hero-villa', alt: t.home.heroSlideAlts[0] },
+      { image: 'architecture', alt: t.home.heroSlideAlts[1] },
+      { image: 'construction', alt: t.home.heroSlideAlts[2] },
+      { image: 'pool-villa', alt: t.home.heroSlideAlts[3] },
+      { image: 'interior', alt: t.home.heroSlideAlts[4] },
     ]}
   />
 
@@ -80,7 +84,9 @@ const heroPreload = await astroGetImage({
       services={priorityServices}
       heading={t.home.servicesHeading}
       intro={t.home.servicesIntro}
-      viewAllHref={localizePath(locale, '/')}
+      columns={4}
+      moreServices={specialistServices}
+      moreServicesHeading={t.common.specialistServices}
     />
   )}
 

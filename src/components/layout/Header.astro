@@ -24,10 +24,10 @@ const primary = primaryLocations();
 // Nav items beyond the homepage/services/contact are only translated for a subset of
 // locales so far — link to the English page instead of a locale-prefixed 404 until translated.
 const journalLocales = await getLocalesWithAnyArticles();
-const locationsHref = translatedLocationSlugs(locale).length > 0 || locale === 'en' ? localizePath(locale, '/locations/') : '/locations/';
-const projectsHref = translatedProjectSlugs(locale).length > 0 || locale === 'en' ? localizePath(locale, '/projects/') : '/projects/';
-const aboutHref = isAboutTranslated(locale) || locale === 'en' ? localizePath(locale, '/about/') : '/about/';
-const processHref = isProcessTranslated(locale) || locale === 'en' ? localizePath(locale, '/process/') : '/process/';
+const locationsHref = translatedLocationSlugs(locale).length > 0 || locale === 'en' ? localizePath(locale, '/locations/') : withBase('/locations/');
+const projectsHref = translatedProjectSlugs(locale).length > 0 || locale === 'en' ? localizePath(locale, '/projects/') : withBase('/projects/');
+const aboutHref = isAboutTranslated(locale) || locale === 'en' ? localizePath(locale, '/about/') : withBase('/about/');
+const processHref = isProcessTranslated(locale) || locale === 'en' ? localizePath(locale, '/process/') : withBase('/process/');
 const journalHrefTop = journalLocales.includes(locale) || locale === 'en' ? localizePath(locale, '/journal/') : withBase('/journal/');
 const phanganSecondary = secondaryLocations('koh-phangan');
 ---
@@ -38,7 +38,7 @@ const phanganSecondary = secondaryLocations('koh-phangan');
       FORMA
     </a>
 
-    <nav aria-label="Primary" class="hidden lg:flex items-center gap-1">
+    <nav aria-label={t.common.primaryNavLabel} class="hidden lg:flex items-center gap-1">
       <div class="group relative">
         <a href={home} class="flex items-center gap-1 rounded-full px-3.5 py-2 text-sm font-medium hover:bg-stone-100">
           {t.nav.services}
@@ -130,7 +130,7 @@ const phanganSecondary = secondaryLocations('koh-phangan');
         </svg>
       </button>
     </div>
-    <nav aria-label="Mobile" class="wrap flex flex-1 flex-col gap-1 pb-10">
+    <nav aria-label={t.common.mobileNavLabel} class="wrap flex flex-1 flex-col gap-1 pb-10">
       <details class="border-b border-ink-900/10 py-3">
         <summary class="flex cursor-pointer list-none items-center justify-between text-lg font-medium">
           {t.nav.services}
