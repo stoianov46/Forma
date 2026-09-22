@@ -9,8 +9,8 @@ automation (open/close/accordion/focus-return/Escape, 375-768px — see
 against a local `wrangler pages dev` run (honeypot, validation, and
 Telegram-delivery code path all confirmed correct). **Left, genuinely
 external:** lead-form hosting (a deployment decision — needs a real
-Cloudflare Pages project) and real contact details (needs client data,
-now settable via `PUBLIC_CONTACT_*` env vars per `.env.example`).
+Cloudflare Pages project, or `PUBLIC_LEAD_ENDPOINT` on GitHub Pages).
+Real contact details are done (15 Sep 2026).
 
 New task, added when merging `proposal(NEW2).md`'s §44 (a dated audit of
 an earlier deployment) into `proposal.md`. The audit predates the big
@@ -62,11 +62,9 @@ resolving the audit's two open questions."
       equivalent), which plain GitHub Pages doesn't provide. This is a
       hosting decision, not a code bug — the code already assumes
       Cloudflare Pages.
-- [ ] Replace live placeholder contact details: `+66-00-000-0000`,
-      `studio@forma.in.th` (unowned domain), the placeholder `wa.me`
-      number. These are correctly marked `[[VERIFY]]` in
-      `src/lib/site.ts` already — this item is "get real data from the
-      client," not a code fix.
+- [x] ~~Replace live placeholder contact details~~ — **done (15 Sep
+      2026):** real email, phone, WhatsApp and Telegram are the defaults
+      in `src/lib/site.ts`. Only the street address is still unknown.
 - [x] ~~Test mobile menu / mega-menu dropdown behavior~~ — **verified via
       real browser automation** (`scripts/qa/browsercheck.cjs`): open,
       services accordion, close button, focus return, and Escape key all
@@ -91,4 +89,4 @@ resolving the audit's two open questions."
       built output.
 - [ ] A real end-to-end form submission is received (Telegram staff chat
       or wherever it's wired to) from the deployed site.
-- [ ] No placeholder phone/email/WhatsApp number remains on any live page.
+- [x] No placeholder phone/email/WhatsApp number remains on any live page.

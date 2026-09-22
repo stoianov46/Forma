@@ -3,6 +3,7 @@ import { defineConfig } from 'astro/config';
 
 import tailwindcss from '@tailwindcss/vite';
 import sitemap from '@astrojs/sitemap';
+import { satteri } from '@astrojs/markdown-satteri';
 
 // Deployment target is env-configurable (build-time only — this file runs in Node,
 // not the browser, so plain process.env is correct here, unlike the PUBLIC_* runtime
@@ -18,6 +19,23 @@ import sitemap from '@astrojs/sitemap';
 const SITE_URL = process.env.ASTRO_SITE_URL || 'https://forma.in.th';
 const BASE_PATH = process.env.ASTRO_BASE_PATH || '/';
 
+// Markdown content (e.g. journal articles) links to other pages with plain root-relative
+// URLs like "/services/architecture/" — these can't call withBase(), so prefix them here.
+const BASE_PREFIX = BASE_PATH.replace(/\/$/, '');
+const baseLinksPlugin = {
+  name: 'base-links',
+  element: {
+    filter: ['a'],
+    /** @param {any} node @param {any} ctx */
+    visit(node, ctx) {
+      const href = node.properties?.href;
+      if (BASE_PREFIX && typeof href === 'string' && href.startsWith('/') && !href.startsWith('//')) {
+        ctx.setProperty(node, 'href', `${BASE_PREFIX}${href}`);
+      }
+    },
+  },
+};
+
 // https://astro.build/config
 export default defineConfig({
   base: BASE_PATH,
@@ -30,6 +48,9 @@ export default defineConfig({
       prefixDefaultLocale: false,
       redirectToDefaultLocale: false,
     },
+  },
+  markdown: {
+    processor: satteri({ hastPlugins: [baseLinksPlugin] }),
   },
   vite: {
     plugins: [tailwindcss()],

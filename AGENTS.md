@@ -1,3 +1,9 @@
+## Project index
+
+Read [`INDEX.md`](INDEX.md) first: it lists every doc, config/devops file and env var.
+If a change touches config, CI/deploy, or env requirements, update `INDEX.md` and the setup
+docs (`README.md`, `NOTES.md`, `.env.example`) in the same change.
+
 ## Development
 
 When starting the dev server, use background mode:

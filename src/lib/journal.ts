@@ -1,5 +1,5 @@
 import { getCollection, type CollectionEntry } from 'astro:content';
-import type { Locale } from './i18n';
+import { localizePath, type Locale } from './i18n';
 
 export type JournalEntry = CollectionEntry<'journal'>;
 
@@ -35,6 +35,5 @@ export async function getAvailableLocalesForArticle(slug: string): Promise<Local
 }
 
 export function journalHref(locale: Locale, slug: string): string {
-  const base = `/journal/${slug}/`;
-  return locale === 'en' ? base : `/${locale}${base}`;
+  return localizePath(locale, `/journal/${slug}/`);
 }

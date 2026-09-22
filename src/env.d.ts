@@ -29,6 +29,8 @@ interface ImportMetaEnv {
   /** Analytics — see src/components/layout/Analytics.astro. Unset = no script loads at all. */
   readonly PUBLIC_GA4_MEASUREMENT_ID?: string;
   readonly PUBLIC_YANDEX_METRICA_ID?: string;
+  /** Contact-form intake URL. Unset = the Cloudflare Pages Function at /api/lead. Never a Telegram API URL. */
+  readonly PUBLIC_LEAD_ENDPOINT?: string;
 }
 
 interface ImportMeta {

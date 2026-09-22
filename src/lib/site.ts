@@ -12,8 +12,9 @@ export const SITE_LEGAL_NAME = 'FORMA Design & Build Studio';
 /**
  * Contact details — overridable at build time via `PUBLIC_CONTACT_*` env vars (see
  * `.env.example`), so real studio information can be set per-environment (e.g. in the
- * Cloudflare Pages dashboard) without a source-code edit. Falls back to placeholders
- * when unset — [[VERIFY]] before launch if you see these defaults in production.
+ * Cloudflare Pages dashboard) without a source-code edit. The fallbacks below are the
+ * studio's real contact details (email, phone, WhatsApp, Telegram); only the street
+ * address is still unknown and is omitted until set.
  * See NOTES.md "Entity data to verify".
  */
 export const CONTACT = {

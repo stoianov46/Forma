@@ -63,6 +63,12 @@ ready to go live without the real-world inputs listed below.
   containing-block issue) — automated class/ARIA checks alone had missed
   it. The QA script itself was strengthened to catch this bug class going
   forward.
+- **22 Sep 2026: a Telegram bot token was found hardcoded in the contact
+  form's browser JS** (added in the GitHub Pages fork). Removed. The form now
+  POSTs to `functions/api/lead.ts` (or `PUBLIC_LEAD_ENDPOINT`). `deploy.yml`
+  now builds with `ASTRO_SITE_URL`/`ASTRO_BASE_PATH` instead of `sed`-rewriting
+  links, which also exposed and fixed journal links that ignored the base path.
+  Every env var and config file is now listed in [`INDEX.md`](INDEX.md).
 
 ## What's deliberately left for you
 
@@ -73,6 +79,12 @@ credential, a business decision, a legal signature), consistent with
 
 ### Open questions / inputs needed
 
+Same list, as a checklist: `NOTES.md` → "Needs human review".
+
+0. **🔴 Revoke the leaked Telegram bot tokens (urgent).** Two real tokens
+   were hardcoded in the contact form's browser JS and are still in git
+   history and the public repos. Revoke both in @BotFather (`/revoke`), then
+   set the new one only as the server-side `TELEGRAM_BOT_TOKEN`.
 1. **Real contact details — mostly done.** Email/phone/WhatsApp are set to
    real values already. Still open: a real street address (`PUBLIC_CONTACT
    _ADDRESS_LINE1`/`_LINE2`/`_POSTCODE` — the mechanism exists, schema.org
@@ -104,15 +116,23 @@ credential, a business decision, a legal signature), consistent with
    loads GA4 and/or Yandex Metrica, consent-gated, the moment you set
    `PUBLIC_GA4_MEASUREMENT_ID` / `PUBLIC_YANDEX_METRICA_ID`. Nothing loads
    until then.
-8. **Hosting/deployment.** Site is built and tested locally
-   (`astro preview`); it hasn't been deployed anywhere yet. Cloudflare
-   Pages on the root domain is the recommended, already-working target
-   (see `Improvements.md` §7 for why GitHub Pages would need more than a
-   config change). Once deployed, re-run Lighthouse against the live
+8. **Hosting/deployment.** The fork `DrAndromeda/FORMA.in.th` publishes
+   to GitHub Pages via `.github/workflows/deploy.yml`. There the contact form
+   needs `lead.ts` hosted elsewhere plus `PUBLIC_LEAD_ENDPOINT` (see
+   `README.md` → "GitHub Pages"). Cloudflare Pages on the root domain is
+   still the recommended target, since the form and `_redirects` work there
+   as-is.
+   **Revoke both leaked Telegram bot tokens in @BotFather first** (see
+   `Improvements.md`, "Безопасность"). Once deployed, re-run Lighthouse against the live
    URL — a CDN's real cache headers and network conditions differ from a
    local preview build.
 
 ### Smaller, non-blocking items
+
+- Known code gap: with JavaScript off and the form endpoint on a different
+  host than the site, `lead.ts` redirects to `/thank-you/` on the endpoint's
+  host, without the base path. JS submissions are unaffected. See
+  `NOTES.md` → "Needs human review".
 
 - `docs/tasks/TASK-009` (audit findings) has 2 items left, both external
   (a hosting decision, real client contact data) — see that file.

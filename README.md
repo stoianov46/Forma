@@ -119,6 +119,21 @@ alongside a 100% static Astro build with zero extra infrastructure:
 3. Deploy the `bots/` project separately (see `bots/README.md`) — it is not part of this
    build and runs as its own always-on process.
 
+### GitHub Pages (`.github/workflows/deploy.yml`)
+
+Every push to `main` builds and publishes to the `gh-pages` branch. The workflow sets
+`ASTRO_SITE_URL=https://<owner>.github.io` and `ASTRO_BASE_PATH=/<repo-name>/`, so every
+link, asset, canonical and sitemap URL gets the subpath. Nothing is rewritten after the
+build. GitHub Pages has no serverless functions, and it ignores `public/_redirects`:
+
+- **Contact form:** run `functions/api/lead.ts` somewhere that has functions (e.g. a
+  Cloudflare Pages project) with `LEAD_ALLOWED_ORIGINS=https://<owner>.github.io`, then set
+  the repo **variable** `PUBLIC_LEAD_ENDPOINT` to its URL (e.g.
+  `https://forma.pages.dev/api/lead`). Without it, the form shows its error state.
+- **Never** put a Telegram bot token in `src/`. Everything there ships to the browser.
+
+Every env var, config file and CI secret is listed in [`INDEX.md`](INDEX.md).
+
 ## Team workflow
 
 Work is tracked as GitHub Issues (Epics/Tasks/Bugs) on one Project board, with branches and
@@ -137,6 +152,7 @@ step by step.
 
 ## Documentation
 
+- **[`INDEX.md`](INDEX.md)** — start here: every doc, config/devops file and env var.
 - `docs/Index.md` — navigation hub for everything below, plus this README and `NOTES.md`.
 - `docs/WORKFLOW.md` / `docs/HowTo.md` — the team workflow (Issues + Projects board).
 - `NOTES.md` — assumptions made, every `[[VERIFY]]` item, content inventory, and the

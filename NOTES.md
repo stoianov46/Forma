@@ -47,6 +47,10 @@ the `functions/` directory). Create a `.dev.vars` file at the repo root (same ke
 `.env.example`: `TELEGRAM_BOT_TOKEN`, `TELEGRAM_CHAT_ID`) for `wrangler pages dev` to pick up
 locally — it's gitignored the same way `.env` is.
 
+To preview a subpath build (as GitHub Pages serves it), set the build-time vars in the shell:
+`ASTRO_SITE_URL=https://<owner>.github.io ASTRO_BASE_PATH=/<repo>/ npm run build`.
+Every env var is listed in `INDEX.md`.
+
 ### Bots (Telegram / WhatsApp)
 
 Separate project in `bots/` — see `bots/README.md` for full setup. Quick version:
@@ -142,7 +146,7 @@ files directly — the files just supply the `[[VERIFY]]` fallback shown when un
 
 | File | What to verify | Env var |
 |---|---|---|
-| `src/lib/site.ts` | Real studio email, phone, WhatsApp number, address | `PUBLIC_CONTACT_*` |
+| `src/lib/site.ts` | Street address only (email, phone, WhatsApp, Telegram are real — set 15 Sep 2026) | `PUBLIC_CONTACT_ADDRESS_*` |
 | `src/lib/site.ts` | Social profile URLs | `PUBLIC_SOCIAL_LINKS` |
 | `src/content/legal/en.ts` (×3) | "Last updated" dates for Privacy/Terms/Cookies pages | `PUBLIC_LEGAL_UPDATED_DATE` |
 | `src/content/legal/en.ts` | Data retention period for unconverted enquiries (Privacy) | `PUBLIC_LEGAL_RETENTION_PERIOD` |
@@ -216,7 +220,10 @@ of this list.
 - **The lead form doesn't work on the current host.** It depends on
   `functions/api/lead.ts`, a Cloudflare Pages Function — those don't run on
   GitHub Pages. Needs either a host with server functions, or the form
-  wired to an external form service.
+  wired to an external form service. *(22 Sep 2026: the form's endpoint is
+  now configurable via `PUBLIC_LEAD_ENDPOINT`, and `lead.ts` supports
+  cross-origin POSTs via `LEAD_ALLOWED_ORIGINS`. See `README.md` →
+  "GitHub Pages" and `INDEX.md`.)*
 - ~~**Breadcrumbs are broken**~~ — **real bug, now fixed.** This was not
   already fixed by the rebuild — verified live before the fix: every
   service page rendered a duplicate "Services / Services / <name>" crumb
@@ -326,6 +333,40 @@ simply wrong about the current implementation in each case.
   `LEAD_RATE_LIMIT_KV` KV namespace is bound in the Cloudflare Pages project — documented
   inline in that file.
 
+## Needs human review (updated 22 Sep 2026)
+
+Everything below is **not implemented** because it needs a person: a credential,
+a real-world fact, a legal answer, or a decision. Mirrored in `PROGRESS.md` →
+"Open questions / inputs needed". Tick items off in both places.
+
+- [ ] 🔴 **Revoke both leaked Telegram bot tokens in @BotFather (`/revoke`).** They
+      were hardcoded in the contact form's browser JS (commits `0433dff`, `af45846`,
+      `c6f7664`) and remain in git history and the public repos. Removing them from
+      the code does not revoke them. Put the new token only in `TELEGRAM_BOT_TOKEN`
+      on the server.
+- [ ] **Hosting decision.** Cloudflare Pages (form + `_redirects` work as-is), or
+      GitHub Pages plus `functions/api/lead.ts` hosted elsewhere, with the repo
+      variable `PUBLIC_LEAD_ENDPOINT` and `LEAD_ALLOWED_ORIGINS` set (see `README.md`
+      → "GitHub Pages"). Until then the form on GitHub Pages shows its error state.
+- [ ] **No-JS form fallback on a cross-origin endpoint (known gap, code).** With
+      JavaScript off, `lead.ts` redirects to `/thank-you/` on *its own* host, without
+      the site's base path. Only matters when the endpoint and the site are on
+      different hosts. The normal JS path is unaffected. Fix if you keep that setup:
+      redirect to an allowed origin + base path.
+- [ ] **Legal:** governing law, data-retention period, "last updated" date. Terms,
+      Privacy and Cookies show `[[VERIFY]]` text to visitors until
+      `PUBLIC_LEGAL_*` are set. Needs a lawyer, who should also do a PDPA/GDPR
+      review of the Privacy Policy's actual data flows.
+- [ ] **Street address** (`PUBLIC_CONTACT_ADDRESS_LINE1/_LINE2/_POSTCODE`) and
+      **social links** (`PUBLIC_SOCIAL_LINKS`) — once they exist.
+- [ ] **Analytics IDs** (`PUBLIC_GA4_MEASUREMENT_ID`, `PUBLIC_YANDEX_METRICA_ID`).
+- [ ] **Bots live test:** run `bots/TEST_PLAN.md` with real Telegram and Meta
+      WhatsApp credentials.
+- [ ] **Real projects, photography, testimonials** (currently "concept study").
+- [ ] **Native-speaker review** of RU/TH/HE (AI-translated).
+- [ ] **After deploy:** Lighthouse on the live URL, Google Search Console, real
+      Safari/Firefox/iOS/Android pass.
+
 ## Pre-launch checklist
 
 Derived from proposal.md's own QA tables (§22 QA DOD, §23 QA, Google Webmaster section).
@@ -348,14 +389,14 @@ Derived from proposal.md's own QA tables (§22 QA DOD, §23 QA, Google Webmaster
 - [ ] Re-run Lighthouse/PageSpeed against the **deployed** site (mobile + desktop) once
       real hosting/CDN is live — cache headers and real-world network conditions differ
       from a local preview build.
-  - [ ] Run axe-core (or similar) as a standalone pass against representative pages;
-        confirm 0 critical/serious (Lighthouse's own axe-based a11y category is at 100
-        on the 3 pages tested so far, but a dedicated pass gives full severity data).
+  - [x] Run axe-core as a standalone pass — `npm run qa:browser`: 0 violations on
+        18 pages across all 4 languages.
 - [ ] Verify in Google Search Console: sitemap submitted, no canonical/hreflang conflicts,
       structured data valid (Rich Results Test), mobile usability passes.
 - [ ] Cross-browser/device pass: latest Chrome/Safari/Firefox, iOS Safari, Android Chrome,
       at 320–430px, 768px, and 1440–1920px.
-- [ ] Decide on and wire up analytics (GA4/Yandex Metrica) behind the existing cookie
-      consent gate, and PDPA/GDPR review of the Privacy Policy's actual data flows.
+- [ ] Analytics: code is wired and consent-gated (`Analytics.astro`); set
+      `PUBLIC_GA4_MEASUREMENT_ID` / `PUBLIC_YANDEX_METRICA_ID` once the properties exist.
+- [ ] PDPA/GDPR review of the Privacy Policy's actual data flows (incl. analytics).
 - [ ] Legal review of Terms of Service (governing law) and Privacy Policy (retention period).
 - [ ] Populate `SAME_AS` social links once official profiles exist (proposal.md §21).

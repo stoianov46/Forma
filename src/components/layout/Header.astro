@@ -7,7 +7,7 @@ import { translatedProjectSlugs } from '../../content/projects';
 import { isAboutTranslated } from '../../content/about';
 import { isProcessTranslated } from '../../content/process';
 import { getLocalesWithAnyArticles } from '../../lib/journal';
-import { localizePath } from '../../lib/i18n';
+import { localizePath, withBase } from '../../lib/i18n';
 import LanguageSwitcher from './LanguageSwitcher.astro';
 
 interface Props {
@@ -28,7 +28,7 @@ const locationsHref = translatedLocationSlugs(locale).length > 0 || locale === '
 const projectsHref = translatedProjectSlugs(locale).length > 0 || locale === 'en' ? localizePath(locale, '/projects/') : '/projects/';
 const aboutHref = isAboutTranslated(locale) || locale === 'en' ? localizePath(locale, '/about/') : '/about/';
 const processHref = isProcessTranslated(locale) || locale === 'en' ? localizePath(locale, '/process/') : '/process/';
-const journalHrefTop = journalLocales.includes(locale) || locale === 'en' ? localizePath(locale, '/journal/') : '/journal/';
+const journalHrefTop = journalLocales.includes(locale) || locale === 'en' ? localizePath(locale, '/journal/') : withBase('/journal/');
 const phanganSecondary = secondaryLocations('koh-phangan');
 ---
 

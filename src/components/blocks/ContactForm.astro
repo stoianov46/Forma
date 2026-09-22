@@ -1,6 +1,7 @@
 ---
 import type { Locale } from '../../lib/i18n';
 import { getDictionary } from '../../i18n/dictionary';
+import { withBase } from '../../lib/i18n';
 import { services } from '../../content/services';
 import { locations } from '../../content/locations';
 
@@ -11,10 +12,14 @@ interface Props {
 }
 const { locale, presetService, presetLocation } = Astro.props;
 const t = getDictionary(locale);
+// Lead intake endpoint. Defaults to the Cloudflare Pages Function at
+// /api/lead; set PUBLIC_LEAD_ENDPOINT when hosting the static site somewhere
+// without functions (e.g. GitHub Pages) and running the endpoint elsewhere.
+const leadEndpoint = import.meta.env.PUBLIC_LEAD_ENDPOINT || withBase('/api/lead');
 ---
 
 <div id="contact-form-root" data-locale={locale}>
-  <form id="lead-form" method="post" class="grid grid-cols-1 gap-5 sm:grid-cols-2" novalidate>
+  <form id="lead-form" action={leadEndpoint} method="post" class="grid grid-cols-1 gap-5 sm:grid-cols-2" novalidate>
     <input type="hidden" name="locale" value={locale} />
     <input type="hidden" name="sourceUrl" id="source-url" value="" />
 
@@ -148,40 +153,15 @@ const t = getDictionary(locale);
     }
 
     try {
-      const formData = new FormData(form);
-      const name = formData.get('name') ?? '';
-      const email = formData.get('email') ?? '';
-      const whatsapp = formData.get('whatsapp') ?? '';
-      const projectType = formData.get('projectType') ?? '';
-      const service = formData.get('service') ?? '';
-      const location = formData.get('location') ?? '';
-      const budget = formData.get('budget') ?? '';
-      const preferredContact = formData.get('preferredContact') ?? '';
-      const message = formData.get('message') ?? '';
-
-      const text = `📦 Новая заявка с FORMA.in.th
-━━━━━━━━━━━━━━━━━━━━━
-👤 Имя: ${name}
-📧 Email: ${email}
-📞 WhatsApp: ${whatsapp || '—'}
-🏗 Проект: ${projectType}
-🔧 Услуга: ${service || '—'}
-📍 Локация: ${location || '—'}
-💰 Бюджет: ${budget || '—'}
-📱 Предпочт. контакт: ${preferredContact || '—'}
-💬 Сообщение: ${message}
-━━━━━━━━━━━━━━━━━━━━━
-🌐 forma.in.th`;
-
-      const TOKEN = '8695287399:AAFhFk6Ol-PTLN5NLzfwCIZIohSytZA8VeY';
-      const CHAT_ID = '237228075';
-      const tgRes = await fetch('https://api.telegram.org/bot' + TOKEN + '/sendMessage', {
+      // Submitted to the server-side intake endpoint (functions/api/lead.ts by
+      // default), which holds the Telegram bot token. Never call the Telegram
+      // API from here: anything in this script ships to every visitor.
+      const res = await fetch(form.action, {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ chat_id: CHAT_ID, text }),
+        headers: { Accept: 'application/json' },
+        body: new FormData(form),
       });
-
-      if (!tgRes.ok) throw new Error('Telegram send failed');
+      if (!res.ok) throw new Error('Request failed');
       form.reset();
       successBox?.classList.remove('hidden');
       successBox?.scrollIntoView({ behavior: 'smooth', block: 'center' });

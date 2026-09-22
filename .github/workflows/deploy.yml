@@ -17,14 +17,18 @@ jobs:
           node-version: 22
           cache: npm
       - run: npm ci
+      # GitHub Pages serves this repo under /<repo-name>/, so tell Astro the real
+      # site + base (see astro.config.mjs) instead of rewriting hrefs after the
+      # build — withBase()/localizePath() then prefix every internal link, asset,
+      # canonical, hreflang and JSON-LD URL correctly.
       - run: npm run build
-
-      - name: Add /FORMA.in.th/ prefix to internal links
-        run: |
-          cd dist
-          find . -name '*.html' -exec sed -i -E \
-            '/FORMA\.in\.th/!s#href="/#href="/FORMA.in.th/#g' {} +
-          echo "Fixed internal links in HTML files"
+        env:
+          ASTRO_SITE_URL: https://${{ github.repository_owner }}.github.io
+          ASTRO_BASE_PATH: /${{ github.event.repository.name }}/
+          # GitHub Pages has no serverless functions, so functions/api/lead.ts
+          # does not run here. Point the contact form at a hosted copy of it via
+          # a repo variable (Settings → Secrets and variables → Actions → Variables).
+          PUBLIC_LEAD_ENDPOINT: ${{ vars.PUBLIC_LEAD_ENDPOINT }}
 
       - name: Deploy to gh-pages branch
         uses: peaceiris/actions-gh-pages@v4

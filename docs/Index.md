@@ -1,5 +1,8 @@
 # Docs index
 
+> The project-wide index (every doc, config/devops file and env var) is
+> [`../INDEX.md`](../INDEX.md). This file covers the team-workflow docs.
+
 - [`../PROGRESS.md`](../PROGRESS.md) — single-page status snapshot: what's
   done, what's partial, and the open questions blocking launch. Start here.
 - [`WORKFLOW.md`](./WORKFLOW.md) — reference: how Epics/Tasks/Bugs, the

@@ -30,8 +30,8 @@ paths, not homepage links). See `TASK-009-fix-audit-findings.md`.
 
 The audit also proposes a possible primary-nav restructure (13 services
 listed directly instead of generic Home/Services/Projects/etc. labels) —
-that's a real IA decision, not a bug fix; see `TASK-009` and decide
-deliberately before building it.
+that's a real IA decision, not a bug fix. **Decided 14 Sep 2026: rejected,
+current nav kept** (see `TASK-009` and `NOTES.md`).
 
 Every nav/footer link is **translation-gated** — it links to the localized
 page only if one actually exists for that locale, otherwise falls back to

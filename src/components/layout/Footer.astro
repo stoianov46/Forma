@@ -22,7 +22,7 @@ const journalLocales = await getLocalesWithAnyArticles();
 const aboutHref = isAboutTranslated(locale) || locale === 'en' ? localizePath(locale, '/about/') : '/about/';
 const processHref = isProcessTranslated(locale) || locale === 'en' ? localizePath(locale, '/process/') : '/process/';
 const projectsHref = translatedProjectSlugs(locale).length > 0 || locale === 'en' ? localizePath(locale, '/projects/') : '/projects/';
-const journalHref = journalLocales.includes(locale) || locale === 'en' ? localizePath(locale, '/journal/') : '/journal/';
+const journalHref = journalLocales.includes(locale) || locale === 'en' ? localizePath(locale, '/journal/') : withBase('/journal/');
 ---
 
 <footer class="border-t border-ink-900/10 bg-stone-100">

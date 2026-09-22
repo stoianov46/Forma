@@ -131,44 +131,55 @@
 
 ## Исправлено в DrAndromeda/FORMA.in.th (форк — деплой на GitHub Pages)
 
-Эти правки были сделаны в форке для GitHub Pages. Cherry-pick при необходимости:
+**Перепроверено 22 сен 2026.** Все 4 коммита из примечания (`979dda7`,
+`a689218`, `af45846`, `c6f7664`) **уже есть в `main`**, cherry-pick не нужен.
+Проверка нашла, что часть пунктов ниже была помечена ✅ ошибочно. Исправлено:
+
+### 🔴 Безопасность: токен Telegram-бота был в клиентском JS
+- [x] ✅ **Исправлено в коде.** Пункты "bot token в `.env` (не в клиенте)" и
+      "ContactForm через Telegram API (client-side)" противоречили друг другу. На
+      деле токен был захардкожен в `ContactForm.astro`, и любой посетитель видел
+      его в исходнике страницы. Теперь форма шлёт `FormData` на серверный
+      `functions/api/lead.ts` (по умолчанию `<base>/api/lead`, или
+      `PUBLIC_LEAD_ENDPOINT`). В `src/` и `dist/` токена больше нет.
+- [ ] ⚠️ **Нужно от вас: отозвать оба токена в @BotFather (`/revoke`).** Они
+      остаются в git-истории и в публичных репозиториях: `0433dff` (`…AAFuVj…`)
+      и `af45846`/`c6f7664` (`…AAFh…`). Удаление из кода их не отзывает.
+      Новый токен кладётся только в `TELEGRAM_BOT_TOKEN` на сервере.
+- [ ] ⏸ **Форма на GitHub Pages** — там нет serverless-функций. Разверните
+      `lead.ts` на Cloudflare Pages с `LEAD_ALLOWED_ORIGINS=https://<owner>.github.io`
+      (CORS добавлен) и задайте repo variable `PUBLIC_LEAD_ENDPOINT`. Подробно:
+      `README.md` → "GitHub Pages".
 
 ### GitHub Pages / Static Export
-- ✅ `basePath: '/FORMA.in.th'` для деплоя на GitHub Pages
-- ✅ `deploy.yml` — peaceiris/actions-gh-pages (вместо deploy-pages@v4)
-- ✅ Internal links: на билде добавляется `/FORMA.in.th/` prefix ко всем ссылкам
-- ✅ Telegram bot token в `.env` (не в клиенте)
-- ✅ ContactForm: через Telegram API (client-side, working)
+- [x] ✅ **`deploy.yml` исправлен.** `sed`-хак переписывал только `href="/`:
+      `src=` у картинок и скриптов оставались без префикса, а при заданном `base`
+      получился бы двойной префикс. Теперь workflow передаёт
+      `ASTRO_SITE_URL` / `ASTRO_BASE_PATH` (берутся из имени владельца и репо,
+      поэтому работает и для форка, и для `stoianov46/Forma`). Canonical,
+      hreflang, sitemap и JSON-LD тоже получают правильный URL.
+- [x] ✅ **Найдены и исправлены ссылки без base**, которые хак маскировал:
+      карточки журнала (`journalHref`), fallback `/journal/` в Header/Footer и
+      48 ссылок внутри Markdown-статей (Sätteri hast-плагин в `astro.config.mjs`).
+      Проверено: сборка с `/FORMA.in.th/` дала 0 ссылок без префикса и 0 двойных.
+- ✅ `peaceiris/actions-gh-pages` — оставлено как есть.
 
-### Mobile Menu & Navigation
-- ✅ Мобильное бургер-меню — реализовано
-- ✅ Language switcher — EN/RU/TH/HE
-- ✅ Dropdown меню (Services, Locations) — работает на всех устройствах
-- ✅ Хлебные крошки — исправлены (base path учтён)
+### Mobile Menu, Navigation, SEO, Content
+- ✅ Подтверждено в коде: бургер-меню, переключатель языков, хлебные крошки,
+  canonical/hreflang, JSON-LD `ProfessionalService`, sitemap/robots,
+  OG/Twitter, 13 услуг, реальные контакты. QA проходит (linkcheck, metacheck,
+  jsonldcheck: 535 блоков, browsercheck/axe).
 
-### SEO
-- ✅ Canonical + hreflang на всех страницах
-- ✅ JSON-LD: LocalBusiness, ProfessionalService (исправлен на появившийся в спеке `ProfessionalService`, а не `Service`)
-- ✅ sitemap.xml + robots.txt
-- ✅ OG / Twitter карточки
-
-### Content
-- ✅ 13 услуг EN — полные лендинги
-- ✅ RU + TH переводы — полные
-- ✅ HE — базовая структура
-- ✅ Цены — с диапазонами и дисклеймером
-- ✅ Real contacts (email, WA, TG) вместо заглушек
-
-### Примечание
-Для переноса — cherry-pick коммитов из `DrAndromeda/FORMA.in.th`:
-```
-  979dda7 basePath /FORMA.in.th
-  a689218 internal links fix
-  af45846 bot token fix
-  c6f7664 ContactForm fix
-```
+### Документация
+- [x] ✅ Добавлен корневой **`INDEX.md`**: все документы, конфиг/devops-файлы и
+      env-переменные, плюс правило обновлять его при любых изменениях
+      конфигурации. Ссылки на него есть в `README.md`, `docs/Index.md` и
+      `AGENTS.md` (= `CLAUDE.md`).
 
 ## Итог
+
+Полный список того, что ждёт человека (с чекбоксами): `NOTES.md` →
+"Needs human review", дублируется в `PROGRESS.md` → "Open questions".
 
 Всё, что можно было реализовать кодом — реализовано и проверено (typecheck,
 build, полный QA-пак: linkcheck/metacheck/jsonldcheck/browsercheck). Что
