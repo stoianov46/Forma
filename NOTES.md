@@ -146,7 +146,7 @@ files directly — the files just supply the `[[VERIFY]]` fallback shown when un
 
 | File | What to verify | Env var |
 |---|---|---|
-| `src/lib/site.ts` | Street address only (email, phone, WhatsApp, Telegram are real — set 15 Sep 2026) | `PUBLIC_CONTACT_ADDRESS_*` |
+| `src/lib/site.ts` | Street address only (email, phone, WhatsApp, Telegram are real — set 15 Sep 2026) | `PUBLIC_CONTACT_ADDRESS_*` — ✅ resolved 23 Sep 2026: `LINE1=PX5R+JX7, Ko Pha-ngan`, `LINE2=Ko Pha-ngan District, Surat Thani`, `POSTCODE=84280` |
 | `src/lib/site.ts` | Social profile URLs | `PUBLIC_SOCIAL_LINKS` |
 | `src/content/legal/en.ts` (×3) | "Last updated" dates for Privacy/Terms/Cookies pages | `PUBLIC_LEGAL_UPDATED_DATE` |
 | `src/content/legal/en.ts` | Data retention period for unconverted enquiries (Privacy) | `PUBLIC_LEGAL_RETENTION_PERIOD` |
@@ -357,7 +357,13 @@ a real-world fact, a legal answer, or a decision. Mirrored in `PROGRESS.md` →
       Privacy and Cookies show `[[VERIFY]]` text to visitors until
       `PUBLIC_LEGAL_*` are set. Needs a lawyer, who should also do a PDPA/GDPR
       review of the Privacy Policy's actual data flows.
-- [ ] **Street address** (`PUBLIC_CONTACT_ADDRESS_LINE1/_LINE2/_POSTCODE`) and
+- [x] **Street address** — ✅ resolved 23 Sep 2026:
+  ```
+  PUBLIC_CONTACT_ADDRESS_LINE1='PX5R+JX7, Ko Pha-ngan'
+  PUBLIC_CONTACT_ADDRESS_LINE2='Ko Pha-ngan District, Surat Thani'
+  PUBLIC_CONTACT_ADDRESS_POSTCODE='84280'
+  ```
+  Set these vars before build. And
       **social links** (`PUBLIC_SOCIAL_LINKS`) — once they exist.
 - [ ] **Analytics IDs** (`PUBLIC_GA4_MEASUREMENT_ID`, `PUBLIC_YANDEX_METRICA_ID`).
 - [ ] **Bots live test:** run `bots/TEST_PLAN.md` with real Telegram and Meta
