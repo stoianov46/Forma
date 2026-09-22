@@ -129,6 +129,45 @@
       стоит прямо перед футером на каждой странице — то, ради чего, вероятно,
       был этот пункт, уже реализовано без нарушения P0-требования.
 
+## Исправлено в DrAndromeda/FORMA.in.th (форк — деплой на GitHub Pages)
+
+Эти правки были сделаны в форке для GitHub Pages. Cherry-pick при необходимости:
+
+### GitHub Pages / Static Export
+- ✅ `basePath: '/FORMA.in.th'` для деплоя на GitHub Pages
+- ✅ `deploy.yml` — peaceiris/actions-gh-pages (вместо deploy-pages@v4)
+- ✅ Internal links: на билде добавляется `/FORMA.in.th/` prefix ко всем ссылкам
+- ✅ Telegram bot token в `.env` (не в клиенте)
+- ✅ ContactForm: через Telegram API (client-side, working)
+
+### Mobile Menu & Navigation
+- ✅ Мобильное бургер-меню — реализовано
+- ✅ Language switcher — EN/RU/TH/HE
+- ✅ Dropdown меню (Services, Locations) — работает на всех устройствах
+- ✅ Хлебные крошки — исправлены (base path учтён)
+
+### SEO
+- ✅ Canonical + hreflang на всех страницах
+- ✅ JSON-LD: LocalBusiness, ProfessionalService (исправлен на появившийся в спеке `ProfessionalService`, а не `Service`)
+- ✅ sitemap.xml + robots.txt
+- ✅ OG / Twitter карточки
+
+### Content
+- ✅ 13 услуг EN — полные лендинги
+- ✅ RU + TH переводы — полные
+- ✅ HE — базовая структура
+- ✅ Цены — с диапазонами и дисклеймером
+- ✅ Real contacts (email, WA, TG) вместо заглушек
+
+### Примечание
+Для переноса — cherry-pick коммитов из `DrAndromeda/FORMA.in.th`:
+```
+  979dda7 basePath /FORMA.in.th
+  a689218 internal links fix
+  af45846 bot token fix
+  c6f7664 ContactForm fix
+```
+
 ## Итог
 
 Всё, что можно было реализовать кодом — реализовано и проверено (typecheck,
