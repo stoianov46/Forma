@@ -1,0 +1,13 @@
+# Cloudflare Pages / Netlify-style redirect rules.
+#
+# /services/ is not a second Services hub — proposal.md §24 (P0) explicitly
+# requires root "/" to be the ONE master Services landing page and forbids
+# building a competing "/services/" hub. This is a plain alias, not new
+# content: it just closes the 404 an old link, a direct URL guess, or a
+# search engine's own convention-guessing might hit, since "Services" is the
+# first primary nav label. See NOTES.md → "Architectural decisions made
+# without further sign-off" and docs/tasks/TASK-009 for the reasoning.
+/services/      /       301
+/ru/services/   /ru/    301
+/th/services/   /th/    301
+/he/services/   /he/    301
