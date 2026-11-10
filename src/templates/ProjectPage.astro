@@ -10,6 +10,9 @@ import { getProject, hasProjectTranslation } from '../content/projects';
 import { getLocation, locationHrefSmart } from '../content/locations';
 import { services as allServices } from '../content/services';
 import { getImage } from '../lib/images';
+import JsonLd from '../components/seo/JsonLd.astro';
+import { conceptSchema, graph } from '../lib/schema';
+import { SITE_URL } from '../lib/site';
 
 interface Props {
   locale: Locale;
@@ -32,7 +35,7 @@ const availableLocales = LOCALES.filter((l) => hasProjectTranslation(l, slug));
 
   <section class="wrap pb-6 pt-2">
     <p class="rounded-full bg-stone-100 px-3 py-1 text-xs font-semibold tracking-wide text-ink-900/60 uppercase inline-block">
-      Concept study — representative of our design approach
+      {t.indexPages.conceptLabel}
     </p>
     <h1 class="mt-4 max-w-3xl">{tr.name}</h1>
     <p class="body-l mt-3 max-w-2xl text-ink-900/70">{tr.summary}</p>
@@ -123,5 +126,17 @@ const availableLocales = LOCALES.filter((l) => hasProjectTranslation(l, slug));
     heading={t.home.finalCtaHeading}
     body={t.home.finalCtaBody}
     cta={{ label: t.cta.startProject, href: localizePath(locale, '/contact/') }}
+  />
+  <JsonLd
+    data={graph([
+      conceptSchema({
+        name: tr.name,
+        description: tr.seo.description,
+        url: new URL(localizePath(locale, path), SITE_URL).toString(),
+        image: optimizedOg.src.startsWith('http') ? optimizedOg.src : new URL(optimizedOg.src, SITE_URL).toString(),
+        locale,
+        keywords: project.tags,
+      }),
+    ])}
   />
 </BaseLayout>

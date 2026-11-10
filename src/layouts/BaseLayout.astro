@@ -20,6 +20,8 @@ interface Props {
   image?: string;
   noindex?: boolean;
   bodyClass?: string;
+  /** schema.org type for the page node (default WebPage). */
+  pageType?: 'WebPage' | 'ContactPage' | 'AboutPage' | 'CollectionPage';
   /** Locales that actually have this page. Defaults to all locales — pass the real subset for partially translated content. */
   availableLocales?: readonly Locale[];
   /** URL of the page's single LCP image, to preload — proposal.md "Hero standard": only the LCP image may be critically preloaded. */
@@ -37,6 +39,7 @@ const {
   image,
   noindex,
   bodyClass = '',
+  pageType = 'WebPage',
   availableLocales = LOCALES,
   preloadImage,
   preloadImageSrcset,
@@ -60,7 +63,7 @@ const url = new URL(path, SITE_URL).toString();
         fetchpriority="high"
       />
     )}
-    <JsonLd data={graph([organizationSchema(), websiteSchema(locale), webPageSchema(url, title, description, locale)])} />
+    <JsonLd data={graph([organizationSchema(), websiteSchema(locale), webPageSchema(url, title, description, locale, pageType)])} />
   </head>
   <body class={`atmosphere min-h-screen ${bodyClass}`}>
     <a href="#main" class="sr-only focus:not-sr-only focus:absolute focus:top-2 focus:start-2 focus:z-[100] focus:rounded-full focus:bg-ink-900 focus:px-4 focus:py-2 focus:text-stone-50">

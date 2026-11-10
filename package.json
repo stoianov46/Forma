@@ -16,6 +16,7 @@
     "qa:meta": "node scripts/qa/metacheck.cjs",
     "qa:jsonld": "node scripts/qa/jsonldcheck.cjs",
     "qa:static": "npm run qa:links && npm run qa:meta && npm run qa:jsonld",
+    "seo:audit": "node scripts/seo-audit.cjs",
     "qa:audit": "node scripts/qa/audit.cjs --md > reports/audit-matrix.md",
     "qa:browser": "node scripts/qa/browsercheck.cjs"
   },

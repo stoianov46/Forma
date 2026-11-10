@@ -17,9 +17,8 @@ const primary = primaryLocations();
 const phanganAreas = secondaryLocations('koh-phangan');
 const availableLocales = LOCALES.filter((l) => l === 'en' || translatedLocationSlugs(l).length > 0);
 
-const title = `${t.nav.locations} | FORMA — Koh Phangan, Koh Samui, Koh Tao & Bali`;
-const description =
-  'FORMA designs and builds villas across Koh Phangan, Koh Samui, Koh Tao and Bali, with deep local knowledge of each island\'s terrain, logistics and building conditions.';
+const title = `${t.nav.locations} | ${t.indexPages.locationsTitleSuffix}`;
+const description = t.indexPages.locationsDesc;
 ---
 
 <BaseLayout locale={locale} path="/locations/" title={title} description={description} availableLocales={availableLocales}>
@@ -34,12 +33,12 @@ const description =
     t={t}
     locations={primary}
     heading={t.common.islandsHeading}
-    intro="Based on Koh Phangan and working across the wider region."
+    intro={t.indexPages.locationsIntro}
     viewAllHref={locationHrefSmart(locale, 'koh-phangan')}
   />
 
   <section class="wrap py-14 sm:py-20">
-    <h2 class="mb-8">Koh Phangan areas</h2>
+    <h2 class="mb-8">{t.indexPages.phanganAreas}</h2>
     <div class="content-grid">
       {
         phanganAreas.map((a) => (

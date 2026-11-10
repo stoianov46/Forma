@@ -16,9 +16,8 @@ const t = getDictionary(locale);
 const articles = await getJournalArticles(locale);
 const availableLocales = await getLocalesWithAnyArticles();
 
-const title = `${t.nav.journal} | FORMA — Villa Design & Tropical Architecture Insight`;
-const description =
-  'Original articles on villa design, tropical architecture, construction logistics, renovation and building on Koh Phangan from the FORMA studio.';
+const title = `${t.nav.journal} | ${t.indexPages.journalTitleSuffix}`;
+const description = t.indexPages.journalDesc;
 ---
 
 <BaseLayout locale={locale} path="/journal/" title={title} description={description} availableLocales={availableLocales}>

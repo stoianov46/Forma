@@ -1,0 +1,83 @@
+{
+  "_doc": "Config for scripts/seo-audit.cjs. Thresholds produce WARNINGs (editorial); technical checks produce FAILs (non-zero exit). Exceptions map a URL to a list of check names that are waived; document each in NOTES.md.",
+  "locales": [
+    "en",
+    "ru",
+    "th",
+    "he"
+  ],
+  "titleMax": 65,
+  "titleMin": 20,
+  "descMin": 110,
+  "descMax": 170,
+  "directAnswerWords": [
+    40,
+    60
+  ],
+  "wordTarget": {
+    "service": 1500
+  },
+  "faqRequired": [
+    "service"
+  ],
+  "directAnswerRequired": [
+    "service",
+    "location",
+    "about",
+    "process"
+  ],
+  "indexableMustNotBeNoindex": [
+    "home",
+    "service",
+    "location",
+    "project",
+    "about",
+    "process",
+    "contact"
+  ],
+  "nearDuplicateThreshold": 0.8,
+  "cliches": [
+    "bespoke",
+    "seamless",
+    "tailored",
+    "timeless",
+    "unparalleled",
+    "world-class",
+    "cutting-edge",
+    "one-stop solution"
+  ],
+  "placeholders": [
+    "lorem ipsum",
+    "TODO",
+    "TBD",
+    "XXX",
+    "undefined",
+    "[object Object]"
+  ],
+  "keywordMap": "src/content/keywords.json",
+  "exceptions": {},
+  "parityTypes": [
+    "home",
+    "service",
+    "location",
+    "project",
+    "article",
+    "about",
+    "process",
+    "contact"
+  ],
+  "latinMaxPercent": 30,
+  "conceptForbidden": [
+    "award",
+    "awards",
+    "award-winning",
+    "testimonial",
+    "testimonials",
+    "ROI",
+    "completed in",
+    "built in",
+    "client said",
+    "our client",
+    "certified"
+  ]
+}

@@ -21,9 +21,8 @@ const availableLocales = LOCALES.filter((l) => l === 'en' || translatedProjectSl
 const ALL_TAGS: ProjectTag[] = ['Architecture', 'Villa', 'Interior', 'Renovation', 'Construction', 'Landscape', 'Hospitality'];
 const usedTags = ALL_TAGS.filter((tag) => projects.some((p) => p.tags.includes(tag)));
 
-const title = `${t.nav.projects} | FORMA — Villa & Architecture Portfolio, Koh Phangan`;
-const description =
-  'A portfolio of villa, interior, renovation and construction concept studies by FORMA, spanning Koh Phangan and the surrounding islands.';
+const title = `${t.nav.projects} | ${t.indexPages.projectsTitleSuffix}`;
+const description = t.indexPages.projectsDesc;
 ---
 
 <BaseLayout locale={locale} path="/projects/" title={title} description={description} availableLocales={availableLocales}>
@@ -34,15 +33,15 @@ const description =
   <DirectAnswer text={description} />
 
   <section class="wrap py-8">
-    <p class="mb-4 text-xs font-semibold tracking-wide text-ink-900/60 uppercase">Filter by type</p>
+    <p class="mb-4 text-xs font-semibold tracking-wide text-ink-900/60 uppercase">{t.indexPages.filterByType}</p>
     <div id="project-filters" class="flex flex-wrap gap-2">
       <button type="button" data-tag="all" data-active="true" class="filter-btn rounded-full border border-ink-900/20 px-4 py-2 text-sm">
-        All
+        {t.indexPages.filterAll}
       </button>
       {
         usedTags.map((tag) => (
           <button type="button" data-tag={tag} data-active="false" class="filter-btn rounded-full border border-ink-900/20 px-4 py-2 text-sm">
-            {tag}
+            {t.indexPages.tags[tag]}
           </button>
         ))
       }
@@ -76,7 +75,7 @@ const description =
               </div>
               <div class="pt-3">
                 <p class="text-xs font-medium tracking-wide text-ink-900/60 uppercase">
-                  {location?.translations[locale].name} · {p.tags.join(', ')}
+                  {location?.translations[locale].name} · {p.tags.map((x) => t.indexPages.tags[x]).join(', ')}
                 </p>
                 <h2 class="mt-1 text-lg">{tr.name}</h2>
                 <p class="body-m mt-1 text-ink-900/70 line-clamp-2">{tr.summary}</p>

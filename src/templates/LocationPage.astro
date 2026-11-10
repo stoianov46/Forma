@@ -14,6 +14,9 @@ import { getLocation, locationHrefSmart, secondaryLocations, hasLocationTranslat
 import { services as allServices } from '../content/services';
 import { projectsForLocation } from '../content/projects';
 import { getImage } from '../lib/images';
+import JsonLd from '../components/seo/JsonLd.astro';
+import { placeSchema, graph } from '../lib/schema';
+import { SITE_URL } from '../lib/site';
 import { getImage as astroGetImage } from 'astro:assets';
 
 interface Props {
@@ -93,5 +96,15 @@ const availableLocales = LOCALES.filter((l) => hasLocationTranslation(l, slug));
     heading={tr.ctaHeading}
     body={tr.ctaBody}
     cta={{ label: t.cta.discussSite, href: `${localizePath(locale, '/contact/')}?location=${slug}` }}
+  />
+  <JsonLd
+    data={graph([
+      placeSchema({
+        name: tr.name,
+        description: tr.seo.description,
+        url: new URL(localizePath(locale, path), SITE_URL).toString(),
+        containedIn: location.parentSlug ? getLocation(location.parentSlug)?.translations[locale].name : undefined,
+      }),
+    ])}
   />
 </BaseLayout>

@@ -22,6 +22,15 @@ jobs:
       # repo gains that tooling; don't invent commands that don't exist.
       - run: npm run check
       - run: npm run build
+      # Static QA over dist/: broken links, meta, JSON-LD validity.
+      - run: npm run qa:static
+      # SEO audit: technical FAILs exit non-zero; editorial WARNINGs are reported only (reports/seo-audit.md).
+      - run: npm run seo:audit
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: seo-audit-report
+          path: reports/seo-audit.*
 
   bots:
     name: Bots (typecheck)

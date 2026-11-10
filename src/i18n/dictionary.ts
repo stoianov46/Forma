@@ -58,6 +58,20 @@ export interface Dictionary {
     primaryNavLabel: string;
     mobileNavLabel: string;
   };
+  indexPages: {
+    locationsTitleSuffix: string;
+    locationsDesc: string;
+    locationsIntro: string;
+    phanganAreas: string;
+    projectsTitleSuffix: string;
+    projectsDesc: string;
+    filterByType: string;
+    filterAll: string;
+    journalTitleSuffix: string;
+    journalDesc: string;
+    conceptLabel: string;
+    tags: Record<'Architecture' | 'Villa' | 'Interior' | 'Renovation' | 'Construction' | 'Landscape' | 'Hospitality', string>;
+  };
   cta: {
     startProject: string;
     discussSite: string;
@@ -180,6 +194,20 @@ export const en: Dictionary = {
     breadcrumbLabel: 'Breadcrumb',
     primaryNavLabel: 'Primary',
     mobileNavLabel: 'Menu',
+  },
+  indexPages: {
+    locationsTitleSuffix: "FORMA — Koh Phangan, Koh Samui, Koh Tao & Bali",
+    locationsDesc: "FORMA designs and builds villas across Koh Phangan, Koh Samui, Koh Tao and Bali, with deep local knowledge of each island's terrain, logistics and building conditions.",
+    locationsIntro: "Based on Koh Phangan and working across the wider region.",
+    phanganAreas: "Koh Phangan areas",
+    projectsTitleSuffix: "FORMA — Villa & Architecture Portfolio, Koh Phangan",
+    projectsDesc: "A portfolio of villa, interior, renovation and construction concept studies by FORMA, spanning Koh Phangan and the surrounding islands.",
+    filterByType: "Filter by type",
+    filterAll: "All",
+    journalTitleSuffix: "FORMA — Villa Design & Tropical Architecture Insight",
+    journalDesc: "Original articles on villa design, tropical architecture, construction logistics, renovation and building on Koh Phangan from the FORMA studio.",
+    conceptLabel: "Concept study — representative of our design approach",
+    tags: { Architecture: 'Architecture', Villa: 'Villa', Interior: 'Interior', Renovation: 'Renovation', Construction: 'Construction', Landscape: 'Landscape', Hospitality: 'Hospitality' },
   },
   cta: {
     startProject: 'Start a Project',
@@ -310,6 +338,20 @@ export const ru: Dictionary = {
     primaryNavLabel: 'Основная навигация',
     mobileNavLabel: 'Меню',
   },
+  indexPages: {
+    locationsTitleSuffix: "FORMA — Ко Пханган, Ко Самуи, Ко Тао и Бали",
+    locationsDesc: "FORMA проектирует и строит виллы на Ко Пхангане, Ко Самуи, Ко Тао и Бали, хорошо зная рельеф, логистику и строительные условия каждого острова.",
+    locationsIntro: "Мы базируемся на Ко Пхангане и работаем по всему региону.",
+    phanganAreas: "Районы Ко Пханган",
+    projectsTitleSuffix: "FORMA — портфолио вилл и архитектуры, Ко Пханган",
+    projectsDesc: "Портфолио концептуальных проектов вилл, интерьеров, реновации и строительства от FORMA на Ко Пхангане и соседних островах.",
+    filterByType: "Фильтр по типу",
+    filterAll: "Все",
+    journalTitleSuffix: "FORMA — дизайн вилл и тропическая архитектура",
+    journalDesc: "Авторские статьи студии FORMA о дизайне вилл, тропической архитектуре, строительной логистике, реновации и строительстве на Ко Пхангане.",
+    conceptLabel: "Концептуальный проект — иллюстрация нашего подхода к дизайну",
+    tags: { Architecture: 'Архитектура', Villa: 'Виллы', Interior: 'Интерьер', Renovation: 'Реновация', Construction: 'Строительство', Landscape: 'Ландшафт', Hospitality: 'Гостиничные проекты' },
+  },
   cta: {
     startProject: 'Начать проект',
     discussSite: 'Обсудить участок',
@@ -436,6 +478,20 @@ export const th: Dictionary = {
     primaryNavLabel: 'เมนูหลัก',
     mobileNavLabel: 'เมนู',
   },
+  indexPages: {
+    locationsTitleSuffix: "FORMA — เกาะพะงัน เกาะสมุย เกาะเต่า และบาหลี",
+    locationsDesc: "FORMA ออกแบบและก่อสร้างวิลล่าบนเกาะพะงัน เกาะสมุย เกาะเต่า และบาหลี ด้วยความเข้าใจภูมิประเทศ การขนส่ง และสภาพการก่อสร้างของแต่ละเกาะ",
+    locationsIntro: "ฐานงานอยู่ที่เกาะพะงัน และให้บริการทั่วภูมิภาค",
+    phanganAreas: "พื้นที่บนเกาะพะงัน",
+    projectsTitleSuffix: "FORMA — ผลงานวิลล่าและสถาปัตยกรรม เกาะพะงัน",
+    projectsDesc: "ผลงานโครงการต้นแบบด้านวิลล่า การตกแต่งภายใน การปรับปรุง และการก่อสร้างโดย FORMA บนเกาะพะงันและเกาะใกล้เคียง",
+    filterByType: "กรองตามประเภท",
+    filterAll: "ทั้งหมด",
+    journalTitleSuffix: "FORMA — การออกแบบวิลล่าและสถาปัตยกรรมเขตร้อน",
+    journalDesc: "บทความต้นฉบับจากสตูดิโอ FORMA เกี่ยวกับการออกแบบวิลล่า สถาปัตยกรรมเขตร้อน โลจิสติกส์การก่อสร้าง การปรับปรุง และการสร้างบ้านบนเกาะพะงัน",
+    conceptLabel: "โครงการต้นแบบ — ตัวอย่างแนวทางการออกแบบของเรา",
+    tags: { Architecture: 'สถาปัตยกรรม', Villa: 'วิลล่า', Interior: 'ตกแต่งภายใน', Renovation: 'ปรับปรุง', Construction: 'ก่อสร้าง', Landscape: 'ภูมิทัศน์', Hospitality: 'โรงแรมและที่พัก' },
+  },
   cta: {
     startProject: 'เริ่มโปรเจกต์',
     discussSite: 'ปรึกษาเรื่องที่ดิน',
@@ -559,6 +615,20 @@ export const he: Dictionary = {
     breadcrumbLabel: 'פירורי לחם',
     primaryNavLabel: 'ניווט ראשי',
     mobileNavLabel: 'תפריט',
+  },
+  indexPages: {
+    locationsTitleSuffix: "FORMA — קו פנגן, קו סמוי, קו טאו ובאלי",
+    locationsDesc: "FORMA מתכננת ובונה וילות בקו פנגן, קו סמוי, קו טאו ובאלי, מתוך הכרות עמוקה עם השטח, הלוגיסטיקה ותנאי הבנייה בכל אי.",
+    locationsIntro: "מבוססים בקו פנגן ופועלים בכל האזור.",
+    phanganAreas: "אזורים בקו פנגן",
+    projectsTitleSuffix: "FORMA — תיק עבודות וילות ואדריכלות, קו פנגן",
+    projectsDesc: "תיק עבודות של פרויקטי קונספט לוילות, עיצוב פנים, שיפוץ ובנייה מאת FORMA, בקו פנגן ובאיים הסמוכים.",
+    filterByType: "סינון לפי סוג",
+    filterAll: "הכול",
+    journalTitleSuffix: "FORMA — עיצוב וילות ואדריכלות טרופית",
+    journalDesc: "מאמרים מקוריים מסטודיו FORMA על עיצוב וילות, אדריכלות טרופית, לוגיסטיקת בנייה, שיפוץ ובנייה בקו פנגן.",
+    conceptLabel: "פרויקט קונספט — המחשה של גישת העיצוב שלנו",
+    tags: { Architecture: 'אדריכלות', Villa: 'וילות', Interior: 'עיצוב פנים', Renovation: 'שיפוץ', Construction: 'בנייה', Landscape: 'נוף', Hospitality: 'אירוח' },
   },
   cta: {
     startProject: 'התחילו פרויקט',

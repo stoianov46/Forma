@@ -50,9 +50,9 @@ export function websiteSchema(locale: Locale) {
   };
 }
 
-export function webPageSchema(url: string, name: string, description: string, locale: Locale) {
+export function webPageSchema(url: string, name: string, description: string, locale: Locale, type: 'WebPage' | 'ContactPage' | 'AboutPage' | 'CollectionPage' = 'WebPage') {
   return {
-    '@type': 'WebPage',
+    '@type': type,
     '@id': `${url}#webpage`,
     url,
     name,
@@ -126,9 +126,41 @@ export function imageObjectSchema(url: string, caption?: string) {
   };
 }
 
-export function graph(nodes: Record<string, unknown>[]) {
+/**
+ * A fictional design study. Marked `genre: 'Concept project'` so it is never read as a
+ * completed building (truth rule: no real clients, dates, budgets or results).
+ */
+export function conceptSchema(opts: { name: string; description: string; url: string; image?: string; locale: Locale; keywords?: string[] }) {
+  return {
+    '@type': 'CreativeWork',
+    '@id': `${opts.url}#concept`,
+    name: opts.name,
+    description: opts.description,
+    url: opts.url,
+    genre: 'Concept project',
+    inLanguage: opts.locale,
+    creator: { '@id': `${SITE_URL}/#organization` },
+    ...(opts.image ? { image: opts.image } : {}),
+    ...(opts.keywords?.length ? { keywords: opts.keywords.join(', ') } : {}),
+  };
+}
+
+/** A place the studio works in. `geo` is optional: only pass coordinates that were verified. */
+export function placeSchema(opts: { name: string; description: string; url: string; containedIn?: string; geo?: { latitude: number; longitude: number } }) {
+  return {
+    '@type': 'Place',
+    '@id': `${opts.url}#place`,
+    name: opts.name,
+    description: opts.description,
+    url: opts.url,
+    ...(opts.containedIn ? { containedInPlace: { '@type': 'Place', name: opts.containedIn } } : {}),
+    ...(opts.geo ? { geo: { '@type': 'GeoCoordinates', ...opts.geo } } : {}),
+  };
+}
+
+export function graph(nodes: (Record<string, unknown> | null | undefined)[]) {
   return {
     '@context': 'https://schema.org',
-    '@graph': nodes,
+    '@graph': nodes.filter((n): n is Record<string, unknown> => Boolean(n)),
   };
 }

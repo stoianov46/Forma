@@ -35,6 +35,9 @@ npm run dev        # http://localhost:4321
 npm run build       # production build to ./dist
 npm run preview     # serve the production build locally
 npm run check       # astro check — type errors across .astro files
+npm run qa:static   # after build: broken links, meta, JSON-LD validity
+npm run seo:audit   # after build: SEO/content audit → reports/seo-audit.{md,json} (see NOTES.md)
+npm run qa:audit    # after build: per-page matrix → reports/audit-matrix.md
 ```
 
 Requires Node ≥ 22.12 (see `engines` in `package.json`).

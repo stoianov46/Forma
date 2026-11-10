@@ -424,3 +424,13 @@ Derived from proposal.md's own QA tables (§22 QA DOD, §23 QA, Google Webmaster
 - [ ] PDPA/GDPR review of the Privacy Policy's actual data flows (incl. analytics).
 - [ ] Legal review of Terms of Service (governing law) and Privacy Policy (retention period).
 - [ ] Populate `SAME_AS` social links once official profiles exist (proposal.md §21).
+
+## SEO audit tooling (10 Nov 2026)
+
+- `npm run build && npm run seo:audit` runs `scripts/seo-audit.cjs` over `dist/` (every page, all four locales) and writes `reports/seo-audit.md` + `reports/seo-audit.json`.
+- **FAIL** (exit 1, blocks CI): missing/duplicate title or description, wrong or missing canonical, `<html lang>`/RTL mismatch, not exactly one `<h1>`, invalid or duplicate-`@id` JSON-LD, images without `alt`, `noindex` on a commercial page, non-reciprocal hreflang, sitemap/noindex mismatch, placeholder text, result-like claims or missing "Concept project" schema on concept pages.
+- **WARNING** (editorial, never fails): title/description length, direct-answer length (40–60 words), word-count target (services 1,500), FAQ presence, heading-level skips, AI-cliché words, `[[VERIFY]]` markers, locale parity, untranslated text, near-duplicate content, keyword map coverage.
+- Thresholds, the keyword-map path (`src/content/keywords.json`, created in the SEO content phase) and per-URL exceptions live in `seo-audit.config.json`. Document every exception here when added. Current exceptions: none.
+- Keywords are qualitative (no search-volume data); validation of keyword placement only runs for pages present in the keyword map.
+- The audit only reads the local build. It is not production verification (the live site returns 403 to automated requests).
+- Schema helpers added: `conceptSchema()` (`CreativeWork`, genre "Concept project") on project pages, `placeSchema()` on location pages (no coordinates until verified), `ContactPage` type via `BaseLayout pageType`, and `graph()` now drops null nodes.
