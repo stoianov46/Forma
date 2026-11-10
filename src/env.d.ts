@@ -10,6 +10,8 @@ interface ImportMetaEnv {
    * number, a governing-law clause) via a hosting-provider env var and a
    * rebuild, instead of a source-code edit, once real values exist.
    */
+  readonly PUBLIC_GOOGLE_SITE_VERIFICATION?: string;
+  readonly PUBLIC_YANDEX_VERIFICATION?: string;
   readonly PUBLIC_CONTACT_EMAIL?: string;
   readonly PUBLIC_CONTACT_PHONE?: string;
   readonly PUBLIC_CONTACT_WHATSAPP?: string;

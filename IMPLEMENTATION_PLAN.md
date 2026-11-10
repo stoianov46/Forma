@@ -13,4 +13,6 @@ Source spec: `TO-DO_2026-11-03.md`. Status labels as defined there. All work is 
 | 7 | RU/TH/HE translations | CODE DONE — native review required | 91988e2 |
 | 8 | Final QA + release docs | LOCAL TESTED (see `FINAL_QA.md`) | this commit |
 
-Not in scope / not done: production crawl (403), Lighthouse, real-device tests, RU/TH/HE keyword map, email/CRM lead delivery, shared bots package (decision: option B, no cross-project refactor).
+| 9 | Business logic: `/plan/` tools, checklist, price-row details, lead qualification, context chat links, schema + verification extras | LOCAL TESTED | this commit |
+
+Not in scope / not done: production crawl (403), Lighthouse, real-device tests, RU/TH/HE keyword map, shared bots package (decision: option B, no cross-project refactor).

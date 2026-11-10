@@ -88,10 +88,23 @@ const leadEndpoint = import.meta.env.PUBLIC_LEAD_ENDPOINT || withBase('/api/lead
     </div>
 
     <div class="sm:col-span-1">
+      <label for="landStatus" class="text-sm font-medium">{t.form.landStatus}</label>
+      <select id="landStatus" name="landStatus" class="mt-1.5 w-full rounded-lg border border-ink-900/20 bg-stone-50 px-4 py-3 text-sm focus-visible:border-terracotta-500">
+        <option value="">—</option>
+        {t.form.landOptions.map((label, i) => <option value={en.form.landOptions[i]}>{label}</option>)}
+      </select>
+    </div>
+
+    <div class="sm:col-span-1">
       <label for="replyLanguage" class="text-sm font-medium">{t.form.replyLanguage}</label>
       <select id="replyLanguage" name="replyLanguage" class="mt-1.5 w-full rounded-lg border border-ink-900/20 bg-stone-50 px-4 py-3 text-sm focus-visible:border-terracotta-500">
         {LOCALES.map((l) => <option value={l} selected={l === locale}>{LOCALE_LABEL[l]}</option>)}
       </select>
+    </div>
+
+    <div id="lead-attached" hidden class="sm:col-span-2 rounded-xl bg-olive-600/10 p-4 text-sm">
+      <p class="text-xs font-semibold tracking-wide text-olive-700 uppercase">{t.form.attached}</p>
+      <p id="lead-attached-text" class="mt-1 text-ink-900/80"></p>
     </div>
 
     <div class="sm:col-span-2">
@@ -144,6 +157,27 @@ const leadEndpoint = import.meta.env.PUBLIC_LEAD_ENDPOINT || withBase('/api/lead
   if (submitBtn) submitBtn.textContent = reviewLabel;
 
   const params = new URLSearchParams(window.location.search);
+  // Summary attached by the /plan/ tools (estimator / service finder): shown to the visitor and sent as hidden fields.
+  const planText = (params.get('plan') || '').slice(0, 500);
+  const estMin = (params.get('estimateMin') || '').replace(/\D/g, '').slice(0, 12);
+  const estMax = (params.get('estimateMax') || '').replace(/\D/g, '').slice(0, 12);
+  if (planText && form instanceof HTMLFormElement) {
+    const attached = document.getElementById('lead-attached');
+    const attachedText = document.getElementById('lead-attached-text');
+    if (attached && attachedText) {
+      attachedText.textContent = planText;
+      attached.hidden = false;
+    }
+    [['planSummary', planText], ['estimateMin', estMin], ['estimateMax', estMax]].forEach(([name, value]) => {
+      if (!value) return;
+      const input = document.createElement('input');
+      input.type = 'hidden';
+      input.name = name;
+      input.value = value;
+      form.appendChild(input);
+    });
+  }
+
   const presetService = params.get('service');
   const presetLocation = params.get('location');
   const serviceSelect = document.getElementById('service');
@@ -186,7 +220,7 @@ const leadEndpoint = import.meta.env.PUBLIC_LEAD_ENDPOINT || withBase('/api/lead
   function buildReview() {
     if (!reviewList) return;
     reviewList.textContent = '';
-    ['name', 'email', 'whatsapp', 'projectType', 'service', 'location', 'budget', 'preferredContact', 'replyLanguage', 'message'].forEach((id) => {
+    ['name', 'email', 'whatsapp', 'projectType', 'service', 'location', 'budget', 'landStatus', 'preferredContact', 'replyLanguage', 'message'].forEach((id) => {
       const v = shownValue(id);
       if (!v) return;
       const wrap = document.createElement('div');
@@ -206,6 +240,7 @@ const leadEndpoint = import.meta.env.PUBLIC_LEAD_ENDPOINT || withBase('/api/lead
     Array.from(form.children).forEach((child) => {
       if (child === reviewBox || child === successBox || child === errorBox) return;
       if (child instanceof HTMLInputElement && child.type === 'hidden') return;
+      if (child.id === 'lead-attached' && !planText) return;
       child.hidden = !visible;
     });
     if (reviewBox) reviewBox.hidden = visible;

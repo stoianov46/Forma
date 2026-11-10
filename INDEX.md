@@ -51,6 +51,11 @@ config/devops file, and every environment variable the project reads.
 | `scripts/nav-check.mjs`, `scripts/i18n-check.mjs` (+ `scripts/i18n-allow.json`), `scripts/contact-check.mjs`, `scripts/qa/formcheck.cjs` | `nav:check`, `i18n:check`, `contact:check`, `qa:form` |
 | `src/components/layout/Attribution.astro` | First-touch attribution (consent-gated) sent with the enquiry |
 | `TO-DO_2026-11-03.md` | **Short TODO and status, grouped by who must act (read first).** The long original spec moved to `docs/archive/ORIGINAL_SPEC_AND_OWNER_INSTRUCTIONS.md` |
+| `src/content/plan/{en,ru,th,he}.ts`, `src/lib/estimate.ts`, `src/lib/finder.ts`, `src/lib/plan-client.ts`, `src/content/timeline.ts`, `PlanTools.astro` | `/plan/` page: service finder, cost estimator (reads `pricing.ts`), draft timeline; `/checklist/` content lives in the same plan files |
+| `src/content/pricing-details/{en,ru,th,he}.ts` | Included / Not-included lists per price id (text only, no numbers) |
+| `src/components/blocks/ContactChannels.astro` | Context chat links: WhatsApp text, Telegram bot deep link (`?start=service_<slug>` / `location_<slug>`), copy phone number |
+| `functions/tsconfig.json` | Separate TS program for the Cloudflare Function (`npm run typecheck:functions`) |
+| `scripts/plan-check.mjs`, `scripts/qa/plancheck.cjs` | `plan:check`, `qa:plan` |
 | `AUDIT.md` | Local audit findings + status (Phase 1). Full matrix: `reports/audit-matrix.md`, data: `reports/audit.json` |
 | `FORMA_SEO_CONTENT_AUDIT.md` | Per-page-type SEO/content audit summary |
 

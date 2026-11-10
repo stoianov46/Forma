@@ -11,13 +11,14 @@ import FAQAccordion from '../components/blocks/FAQAccordion.astro';
 import ServiceGrid from '../components/blocks/ServiceGrid.astro';
 import ProjectMosaic from '../components/blocks/ProjectMosaic.astro';
 import CTABanner from '../components/blocks/CTABanner.astro';
+import ContactChannels from '../components/blocks/ContactChannels.astro';
 import LongFormSections from '../components/blocks/LongFormSections.astro';
 import JsonLd from '../components/seo/JsonLd.astro';
 import { getDictionary } from '../i18n/dictionary';
 import { localizePath, LOCALES, type Locale } from '../lib/i18n';
 import { getService, services as allServices, hasServiceTranslation } from '../content/services';
 import { projectsForService } from '../content/projects';
-import { serviceSchema, graph } from '../lib/schema';
+import { serviceSchema, imageObjectSchema, graph } from '../lib/schema';
 import { SERVICE_PRICE_IDS } from '../content/pricing';
 import { SITE_URL } from '../lib/site';
 import { getImage } from '../lib/images';
@@ -97,7 +98,7 @@ const availableLocales = LOCALES.filter((l) => hasServiceTranslation(l, slug));
   />
 
   {tr.pricingRows && tr.pricingRows.length > 0 && (
-    <PricingTable heading={t.pricing.heading} rows={tr.pricingRows} priceIds={SERVICE_PRICE_IDS[slug] ?? []} disclaimer={t.pricing.disclaimer} labels={t.pricing} />
+    <PricingTable heading={t.pricing.heading} rows={tr.pricingRows} priceIds={SERVICE_PRICE_IDS[slug] ?? []} disclaimer={t.pricing.disclaimer} labels={t.pricing} locale={locale} />
   )}
 
   {relatedProjects.length > 0 && (
@@ -116,6 +117,8 @@ const availableLocales = LOCALES.filter((l) => hasServiceTranslation(l, slug));
     </section>
   )}
 
+  <ContactChannels locale={locale} topic={tr.navLabel} path={path} service={slug} />
+
   <CTABanner
     heading={tr.ctaHeading}
     body={tr.ctaBody}
@@ -128,7 +131,9 @@ const availableLocales = LOCALES.filter((l) => hasServiceTranslation(l, slug));
         name: tr.h1,
         description: tr.seo.description,
         url: new URL(localizePath(locale, path), SITE_URL).toString(),
+        catalog: tr.pricingRows?.length ? { name: tr.h1, items: tr.pricingRows.map((r) => r.item) } : undefined,
       }),
+      imageObjectSchema(new URL(optimizedOg.src, SITE_URL).toString(), tr.h1),
     ])}
   />
 </BaseLayout>

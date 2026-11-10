@@ -24,7 +24,9 @@
     "service",
     "location",
     "about",
-    "process"
+    "process",
+    "plan",
+    "checklist"
   ],
   "indexableMustNotBeNoindex": [
     "home",
@@ -33,7 +35,9 @@
     "project",
     "about",
     "process",
-    "contact"
+    "contact",
+    "plan",
+    "checklist"
   ],
   "nearDuplicateThreshold": 0.8,
   "cliches": [
@@ -64,7 +68,9 @@
     "article",
     "about",
     "process",
-    "contact"
+    "contact",
+    "plan",
+    "checklist"
   ],
   "latinMaxPercent": 30,
   "conceptForbidden": [

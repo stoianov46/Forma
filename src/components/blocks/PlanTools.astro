@@ -1,0 +1,152 @@
+---
+import type { Locale } from '../../lib/i18n';
+import { localizePath } from '../../lib/i18n';
+import { services, serviceHrefSmart } from '../../content/services';
+import { PRICES, SERVICE_PRICE_IDS } from '../../content/pricing';
+import { BUILD_MONTHS, DESIGN_WEEKS, TIMELINE_STATUS } from '../../content/timeline';
+import type { PlanContent } from '../../content/plan/types';
+import { AREA_LIMITS } from '../../lib/estimate';
+
+interface Props {
+  locale: Locale;
+  content: PlanContent;
+}
+const { locale, content } = Astro.props;
+const config = {
+  locale,
+  contact: localizePath(locale, '/contact/'),
+  services: Object.fromEntries(services.map((s) => [s.slug, { label: s.translations[locale].navLabel, href: serviceHrefSmart(locale, s.slug) }])),
+  content,
+  area: AREA_LIMITS,
+  timeline: { design: DESIGN_WEEKS, build: BUILD_MONTHS },
+};
+---
+
+<section class="wrap pb-6" id="plan-root" data-config={JSON.stringify(config)}>
+  <div role="tablist" aria-label={content.h1} class="flex flex-wrap gap-2 border-b border-ink-900/10 pb-4">
+    {
+      (['finder', 'estimator', 'timeline'] as const).map((id, i) => (
+        <button type="button" role="tab" id={`tab-${id}`} aria-controls={`panel-${id}`} aria-selected={i === 0 ? 'true' : 'false'} data-tab={id} class="plan-tab rounded-full border border-ink-900/20 px-5 py-2.5 text-sm font-medium">
+          {content.tabs[id]}
+        </button>
+      ))
+    }
+  </div>
+
+  <div id="panel-finder" role="tabpanel" aria-labelledby="tab-finder" class="plan-panel py-10">
+    <h2 class="text-2xl">{content.finder.heading}</h2>
+    <p class="body-m mt-2 max-w-2xl text-ink-900/70">{content.finder.intro}</p>
+    <form id="finder-form" class="mt-8 grid gap-8 md:grid-cols-2" novalidate>
+      {
+        content.finder.questions.map((q) => (
+          <fieldset class="space-y-3" data-question={q.id}>
+            <legend class="text-sm font-semibold">{q.label}</legend>
+            {q.options.map((o) => (
+              <label class="flex items-start gap-3 text-sm">
+                <input type={q.multi ? 'checkbox' : 'radio'} name={q.id} value={o.value} class="mt-1" />
+                <span>{o.label}</span>
+              </label>
+            ))}
+          </fieldset>
+        ))
+      }
+      <div class="md:col-span-2">
+        <button type="submit" class="rounded-full bg-ink-900 px-7 py-3.5 text-sm font-medium text-stone-50 hover:bg-olive-700">{content.finder.submit}</button>
+        <p id="finder-hint" role="status" class="mt-3 hidden text-sm text-terracotta-600">{content.finder.pickAnswers}</p>
+      </div>
+    </form>
+    <div id="finder-result" class="mt-10 hidden" aria-live="polite"></div>
+  </div>
+
+  <div id="panel-estimator" role="tabpanel" aria-labelledby="tab-estimator" class="plan-panel hidden py-10">
+    <h2 class="text-2xl">{content.estimator.heading}</h2>
+    <p class="body-m mt-2 max-w-2xl text-ink-900/70">{content.estimator.intro}</p>
+    <form id="estimator-form" class="mt-8 grid gap-6 md:grid-cols-2" novalidate>
+      <div>
+        <label for="est-area" class="text-sm font-medium">{content.estimator.area}</label>
+        <input id="est-area" name="area" type="number" inputmode="numeric" min={AREA_LIMITS.min} max={AREA_LIMITS.max} value="180" class="mt-1.5 w-full rounded-lg border border-ink-900/20 bg-stone-50 px-4 py-3 text-sm" />
+        <p class="mt-1 text-xs text-ink-900/60">{content.estimator.areaHint}</p>
+        <p id="est-area-error" role="alert" class="mt-1 hidden text-xs text-terracotta-600">{content.estimator.invalidArea}</p>
+      </div>
+      <div>
+        <label for="est-size" class="text-sm font-medium">{content.estimator.size}</label>
+        <select id="est-size" name="size" class="mt-1.5 w-full rounded-lg border border-ink-900/20 bg-stone-50 px-4 py-3 text-sm">
+          {content.estimator.sizes.map((s, i) => <option value={i}>{s}</option>)}
+        </select>
+      </div>
+      <div class="md:col-span-2">
+        <label for="est-mode" class="text-sm font-medium">{content.estimator.mode}</label>
+        <select id="est-mode" name="mode" class="mt-1.5 w-full rounded-lg border border-ink-900/20 bg-stone-50 px-4 py-3 text-sm">
+          {(['design', 'design-build', 'turnkey', 'oversight'] as const).map((m) => <option value={m}>{content.estimator.modes[m]}</option>)}
+        </select>
+      </div>
+      <div data-modes="design design-build turnkey">
+        <label for="est-interior" class="text-sm font-medium">{content.estimator.interior}</label>
+        <select id="est-interior" name="interior" class="mt-1.5 w-full rounded-lg border border-ink-900/20 bg-stone-50 px-4 py-3 text-sm">
+          {(['none', 'standard', 'custom'] as const).map((k) => <option value={k}>{content.estimator.interiorOptions[k]}</option>)}
+        </select>
+      </div>
+      <div data-modes="design design-build turnkey">
+        <label class="flex items-center gap-3 pt-8 text-sm font-medium">
+          <input id="est-landscape" type="checkbox" name="landscape" />
+          <span>{content.estimator.landscape}</span>
+        </label>
+      </div>
+      <div data-modes="design-build turnkey">
+        <label for="est-eco" class="text-sm font-medium">{content.estimator.eco}</label>
+        <select id="est-eco" name="eco" class="mt-1.5 w-full rounded-lg border border-ink-900/20 bg-stone-50 px-4 py-3 text-sm">
+          {(['none', 'passive', 'energy', 'full'] as const).map((k) => <option value={k}>{content.estimator.ecoOptions[k]}</option>)}
+        </select>
+      </div>
+      <div data-modes="design design-build turnkey oversight">
+        <label for="est-permits" class="text-sm font-medium">{content.estimator.permits}</label>
+        <select id="est-permits" name="permits" class="mt-1.5 w-full rounded-lg border border-ink-900/20 bg-stone-50 px-4 py-3 text-sm">
+          {(['none', 'standard', 'variances', 'complex'] as const).map((k) => <option value={k}>{content.estimator.permitOptions[k]}</option>)}
+        </select>
+      </div>
+      <div data-modes="oversight" hidden>
+        <label class="flex items-center gap-3 pt-8 text-sm font-medium">
+          <input id="est-pm" type="checkbox" name="pm" />
+          <span>{content.estimator.pm}</span>
+        </label>
+      </div>
+      <div data-modes="oversight" hidden>
+        <label for="est-supervision" class="text-sm font-medium">{content.estimator.supervision}</label>
+        <select id="est-supervision" name="supervision" class="mt-1.5 w-full rounded-lg border border-ink-900/20 bg-stone-50 px-4 py-3 text-sm">
+          {(['none', 'monthly', 'biweekly', 'weekly'] as const).map((k) => <option value={k}>{content.estimator.supervisionOptions[k]}</option>)}
+        </select>
+      </div>
+      <div data-modes="oversight" hidden>
+        <label class="flex items-center gap-3 pt-8 text-sm font-medium">
+          <input id="est-tech" type="checkbox" name="techSupervision" />
+          <span>{content.estimator.techSupervision}</span>
+        </label>
+      </div>
+      <div class="flex flex-wrap gap-3 md:col-span-2">
+        <button type="submit" class="rounded-full bg-ink-900 px-7 py-3.5 text-sm font-medium text-stone-50 hover:bg-olive-700">{content.estimator.calculate}</button>
+        <button type="reset" id="est-reset" class="rounded-full border border-ink-900/25 px-7 py-3.5 text-sm font-medium hover:bg-stone-100">{content.estimator.reset}</button>
+      </div>
+    </form>
+    <div id="estimator-result" class="mt-10 hidden" aria-live="polite"></div>
+  </div>
+
+  <div id="panel-timeline" role="tabpanel" aria-labelledby="tab-timeline" class="plan-panel hidden py-10">
+    <h2 class="text-2xl">{content.timeline.heading}</h2>
+    <p class="body-m mt-2 max-w-2xl text-ink-900/70">{content.timeline.intro}</p>
+    <div class="mt-6 max-w-md">
+      <label for="tl-size" class="text-sm font-medium">{content.timeline.sizeLabel}</label>
+      <select id="tl-size" class="mt-1.5 w-full rounded-lg border border-ink-900/20 bg-stone-50 px-4 py-3 text-sm">
+        {content.estimator.sizes.map((s, i) => <option value={i}>{s}</option>)}
+      </select>
+    </div>
+    <ol id="tl-list" class="mt-8 space-y-4"></ol>
+    <p class="mt-6 text-xs text-ink-900/60">{content.timeline.draft} <span class="sr-only">{TIMELINE_STATUS}</span></p>
+    <a id="tl-ask" href={`${config.contact}?plan=${encodeURIComponent('Timeline question')}`} class="mt-4 inline-block text-sm font-medium text-olive-700 underline">{content.timeline.ask}</a>
+  </div>
+
+  <p class="mt-2 max-w-3xl text-xs text-ink-900/60">{content.note}</p>
+</section>
+
+<script>
+  import '../../lib/plan-client';
+</script>

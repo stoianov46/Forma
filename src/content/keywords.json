@@ -384,5 +384,32 @@
       "location": "Thong Sala",
       "conversion": "Request consultation"
     }
+  },
+  "/plan/": {
+    "en": {
+      "primary": "plan your villa project",
+      "secondary": [
+        "villa cost estimate koh phangan",
+        "villa project timeline",
+        "which services do i need"
+      ],
+      "intent": "informational/tool: understand scope, cost and stages before contacting a studio",
+      "audience": "Prospects at the planning stage",
+      "location": "Koh Phangan",
+      "conversion": "Send the estimate or finder result with an enquiry"
+    }
+  },
+  "/checklist/": {
+    "en": {
+      "primary": "villa project checklist",
+      "secondary": [
+        "what to prepare before an architect consultation",
+        "building a villa on koh phangan checklist"
+      ],
+      "intent": "informational: prepare for a first consultation (printable)",
+      "audience": "Prospects preparing a first meeting",
+      "location": "Koh Phangan",
+      "conversion": "Start a conversation"
+    }
   }
 }

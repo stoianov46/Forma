@@ -27,6 +27,8 @@ const ogImage = new URL(image ?? withBase('/images/og-default.jpg'), SITE_URL).t
 <meta name="description" content={description} />
 <link rel="canonical" href={canonicalUrl} />
 {noindex && <meta name="robots" content="noindex, nofollow" />}
+{import.meta.env.PUBLIC_GOOGLE_SITE_VERIFICATION && <meta name="google-site-verification" content={import.meta.env.PUBLIC_GOOGLE_SITE_VERIFICATION} />}
+{import.meta.env.PUBLIC_YANDEX_VERIFICATION && <meta name="yandex-verification" content={import.meta.env.PUBLIC_YANDEX_VERIFICATION} />}
 
 {
   availableLocales.map((l) => (

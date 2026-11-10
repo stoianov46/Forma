@@ -6,6 +6,7 @@
 - [ ] Approve or change every draft price in `src/content/pricing.ts` (see `PRICING_STRATEGY.md`) — OWNER INPUT REQUIRED.
 - [ ] Read the Architecture, Permits & Planning and Eco Construction pages (AI-drafted EN copy) — OWNER INPUT REQUIRED.
 - [ ] Approve the concept-portfolio wording and replace the six shared stock-style images with original renders/photos when available.
+- [ ] Approve the draft timeline ranges (`src/content/timeline.ts`) and read the `/plan/` and `/checklist/` copy — OWNER INPUT REQUIRED.
 - [ ] Decide whether prices may ever appear in schema.org `Offer` (currently never).
 - [ ] Legal counsel resolves the `[[VERIFY]]` markers (`PUBLIC_LEGAL_GOVERNING_LAW`, `PUBLIC_LEGAL_RETENTION_PERIOD`, `PUBLIC_LEGAL_UPDATED_DATE`) — OWNER INPUT REQUIRED.
 - [ ] Native reviewers for RU, TH, HE (terminology list in NOTES.md) — OWNER INPUT REQUIRED.
@@ -23,7 +24,7 @@
 
 ## 3. Before deploying (local)
 - [ ] `npm ci && npm run check && npm run build`
-- [ ] `npm run qa:static && npm run seo:audit && npm run pricing:check && npm run nav:check && npm run i18n:check && npm run contact:check` — 0 FAIL / 0 errors
+- [ ] `npm run qa:static && npm run seo:audit && npm run pricing:check && npm run nav:check && npm run i18n:check && npm run contact:check && npm run plan:check && npm run typecheck:functions` — 0 FAIL / 0 errors
 - [ ] `node scripts/qa/browsercheck.cjs` (needs `astro preview` on :4321 and Chrome)
 - [ ] `git diff` reviewed; no secrets committed.
 

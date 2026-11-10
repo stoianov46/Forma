@@ -5,6 +5,7 @@ import Breadcrumbs from '../components/layout/Breadcrumbs.astro';
 import ConceptDiagram from '../components/blocks/ConceptDiagram.astro';
 import ServiceGrid from '../components/blocks/ServiceGrid.astro';
 import CTABanner from '../components/blocks/CTABanner.astro';
+import ContactChannels from '../components/blocks/ContactChannels.astro';
 import { getDictionary } from '../i18n/dictionary';
 import { localizePath, LOCALES, type Locale } from '../lib/i18n';
 import { getProject, hasProjectTranslation } from '../content/projects';
@@ -12,7 +13,7 @@ import { getLocation, locationHrefSmart } from '../content/locations';
 import { services as allServices } from '../content/services';
 import { getImage } from '../lib/images';
 import JsonLd from '../components/seo/JsonLd.astro';
-import { conceptSchema, graph } from '../lib/schema';
+import { conceptSchema, imageObjectSchema, graph } from '../lib/schema';
 import { SITE_URL } from '../lib/site';
 
 interface Props {
@@ -133,6 +134,8 @@ const availableLocales = LOCALES.filter((l) => hasProjectTranslation(l, slug));
     </section>
   )}
 
+  <ContactChannels locale={locale} topic={tr.name} path={path} service={project.serviceSlugs[0]} />
+
   <CTABanner
     heading={t.home.finalCtaHeading}
     body={t.home.finalCtaBody}
@@ -148,6 +151,7 @@ const availableLocales = LOCALES.filter((l) => hasProjectTranslation(l, slug));
         locale,
         keywords: project.tags,
       }),
+      imageObjectSchema(new URL(optimizedOg.src, SITE_URL).toString(), `${tr.name} (concept)`),
     ])}
   />
 </BaseLayout>

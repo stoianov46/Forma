@@ -44,6 +44,11 @@ const AXE_PAGES = [
   '/services/architecture/',
   '/he/services/architecture/',
   '/ru/projects/ridge-house-sri-thanu/',
+  '/plan/',
+  '/he/plan/',
+  '/ru/plan/',
+  '/th/plan/',
+  '/checklist/',
   '/about/',
   '/process/',
   '/contact/',
@@ -134,7 +139,7 @@ async function testHorizontalScroll(browser) {
   for (const vp of ALL_VIEWPORTS) {
     const page = await browser.newPage();
     await page.setViewport({ width: vp.width, height: vp.height });
-    for (const url of ['/', '/services/architecture/', '/he/services/architecture/', '/ru/services/architecture/', '/th/services/architecture/', '/he/projects/ridge-house-sri-thanu/']) {
+    for (const url of ['/', '/services/architecture/', '/he/services/architecture/', '/ru/services/architecture/', '/th/services/architecture/', '/he/projects/ridge-house-sri-thanu/', '/plan/', '/he/plan/', '/ru/plan/', '/th/plan/', '/checklist/']) {
       await page.goto(`${BASE}${url}`, { waitUntil: 'networkidle0' });
       const hasHorizontalScroll = await page.evaluate(() => document.documentElement.scrollWidth > document.documentElement.clientWidth + 1);
       if (hasHorizontalScroll) {

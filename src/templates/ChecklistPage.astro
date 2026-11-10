@@ -1,0 +1,56 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Breadcrumbs from '../components/layout/Breadcrumbs.astro';
+import DirectAnswer from '../components/blocks/DirectAnswer.astro';
+import CTABanner from '../components/blocks/CTABanner.astro';
+import { getDictionary } from '../i18n/dictionary';
+import { localizePath, type Locale } from '../lib/i18n';
+import { getPlanContent } from '../content/plan';
+
+interface Props {
+  locale: Locale;
+}
+const { locale } = Astro.props;
+const t = getDictionary(locale);
+const c = getPlanContent(locale).checklist;
+---
+
+<BaseLayout locale={locale} path="/checklist/" title={c.seo.title} description={c.seo.description}>
+  <Breadcrumbs locale={locale} items={[{ name: t.footer.planLink, path: '/plan/' }, { name: c.h1, path: '/checklist/' }]} />
+  <section class="wrap pb-6 pt-2">
+    <h1 class="max-w-3xl">{c.h1}</h1>
+  </section>
+  <DirectAnswer text={c.directAnswer} />
+
+  <section class="wrap py-10 sm:py-14">
+    <p class="body-l max-w-2xl text-ink-900/80">{c.intro}</p>
+    <div class="mt-8 flex gap-3 print:hidden">
+      <button type="button" id="print-btn" class="rounded-full bg-ink-900 px-7 py-3.5 text-sm font-medium text-stone-50 hover:bg-olive-700">{c.print}</button>
+    </div>
+    <div class="content-grid mt-10 gap-y-10">
+      {
+        c.groups.map((g) => (
+          <div class="col-span-4 md:col-span-4 lg:col-span-6 break-inside-avoid">
+            <h2 class="text-2xl">{g.title}</h2>
+            <ul class="mt-4 space-y-3">
+              {g.items.map((item) => (
+                <li class="flex items-start gap-3">
+                  <span class="mt-1 h-4 w-4 shrink-0 rounded border border-ink-900/40" aria-hidden="true" />
+                  <span class="body-m text-ink-900/80">{item}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+        ))
+      }
+    </div>
+  </section>
+
+  <div class="print:hidden">
+    <CTABanner heading={c.ctaHeading} body={c.ctaBody} cta={{ label: c.ctaLabel, href: localizePath(locale, '/contact/') }} />
+  </div>
+</BaseLayout>
+
+<script>
+  document.getElementById('print-btn')?.addEventListener('click', () => window.print());
+</script>

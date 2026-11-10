@@ -64,7 +64,7 @@ else {
     if (found.length !== ids.length) { fail(`${loc}services/${slug}/: ${found.length} priced rows, expected ${ids.length}`); continue; }
     found.forEach(([id, text], i) => { if (id !== ids[i]) fail(`${loc}services/${slug}/ row ${i}: id ${id} != ${ids[i]}`); else if (text !== formatPrice(ids[i])) fail(`${loc}services/${slug}/ row ${i}: shows "${text}", expected "${formatPrice(ids[i])}"`); });
   }
-  (function walk(d) { for (const e of fs.readdirSync(d, { withFileTypes: true })) { const f = path.join(d, e.name); if (e.isDirectory()) { if (e.name !== '_astro') walk(f); } else if (e.name.endsWith('.html')) { const h = fs.readFileSync(f, 'utf8'); if (/"@type":"(Offer|AggregateOffer|OfferCatalog|PriceSpecification)"|"priceSpecification"/.test(h)) fail(`${f.slice(distDir.length)}: Offer/price schema emitted while prices are drafts`); } } })(distDir);
+  (function walk(d) { for (const e of fs.readdirSync(d, { withFileTypes: true })) { const f = path.join(d, e.name); if (e.isDirectory()) { if (e.name !== '_astro') walk(f); } else if (e.name.endsWith('.html')) { const h = fs.readFileSync(f, 'utf8'); if (/"@type":"(Offer|AggregateOffer|PriceSpecification)"|"priceSpecification"|"price(Currency)?":/.test(h)) fail(`${f.slice(distDir.length)}: Offer/price schema emitted while prices are drafts (OfferCatalog of Service names only)`); } } })(distDir);
 }
 
 // 5. master doc in sync

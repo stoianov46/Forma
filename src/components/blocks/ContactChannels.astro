@@ -1,0 +1,58 @@
+---
+/**
+ * Context-aware chat links: WhatsApp (pre-filled text naming the page topic) and the Telegram bot with the
+ * deep-link payload from bots/README.md (`?start=service_<slug>` / `?start=location_<slug>`).
+ * Staff therefore know which service or place the visitor was reading. Plus a "copy phone number" button
+ * (Telegram links by phone number only work if the account allows it, so the number can always be copied).
+ */
+import type { Locale } from '../../lib/i18n';
+import { getDictionary } from '../../i18n/dictionary';
+import { CONTACT, SITE_URL } from '../../lib/site';
+
+interface Props {
+  locale: Locale;
+  /** Human-readable topic, e.g. the service or place name. */
+  topic: string;
+  /** Page path starting with "/" (without locale prefix). */
+  path: string;
+  /** Bot payload context: one of service / location (slug). */
+  service?: string;
+  location?: string;
+}
+const { locale, topic, path, service, location } = Astro.props;
+const t = getDictionary(locale);
+const c = t.channels;
+const pageUrl = `${SITE_URL}${locale === 'en' ? '' : '/' + locale}${path}`;
+const phoneDigits = CONTACT.whatsapp.replace(/[^\d]/g, '');
+const text = c.whatsappText.replace('{topic}', topic).replace('{url}', pageUrl);
+const whatsapp = `https://wa.me/${phoneDigits}?text=${encodeURIComponent(text)}`;
+const payload = service ? `service_${service}` : location ? `location_${location}` : '';
+const telegram = payload && /^https:\/\/t\.me\/[A-Za-z0-9_]+$/.test(CONTACT.telegram) ? `${CONTACT.telegram}?start=${payload}` : CONTACT.telegram;
+---
+
+<section class="wrap py-10" data-channels>
+  <div class="rounded-2xl border border-ink-900/10 p-6 sm:p-8">
+    <h2 class="text-xl">{c.heading}</h2>
+    <p class="body-m mt-2 max-w-2xl text-ink-900/70">{c.intro}</p>
+    <div class="mt-5 flex flex-wrap gap-3">
+      <a href={whatsapp} rel="noopener" class="rounded-full bg-ink-900 px-6 py-3 text-sm font-medium text-stone-50 hover:bg-olive-700">{c.whatsapp}</a>
+      <a href={telegram} rel="noopener" class="rounded-full border border-ink-900/25 px-6 py-3 text-sm font-medium hover:bg-stone-100">{c.telegram}</a>
+      <button type="button" data-copy={CONTACT.phone} data-done={c.copied} class="rounded-full border border-ink-900/25 px-6 py-3 text-sm font-medium hover:bg-stone-100">{c.copy}</button>
+    </div>
+  </div>
+</section>
+
+<script>
+  document.querySelectorAll<HTMLButtonElement>('[data-copy]').forEach((btn) => {
+    btn.addEventListener('click', async () => {
+      const label = btn.textContent;
+      try {
+        await navigator.clipboard.writeText(btn.dataset.copy || '');
+        btn.textContent = btn.dataset.done || label;
+        setTimeout(() => { btn.textContent = label; }, 2000);
+      } catch {
+        // Clipboard unavailable (older browser / insecure context): the number is also shown in the footer.
+      }
+    });
+  });
+</script>

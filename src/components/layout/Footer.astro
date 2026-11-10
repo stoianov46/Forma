@@ -58,6 +58,7 @@ const journalHref = journalLocales.includes(locale) || locale === 'en' ? localiz
           <li><a href={processHref} class="text-sm text-ink-900/80 hover:text-ink-900">{t.nav.process}</a></li>
           <li><a href={projectsHref} class="text-sm text-ink-900/80 hover:text-ink-900">{t.nav.projects}</a></li>
           <li><a href={journalHref} class="text-sm text-ink-900/80 hover:text-ink-900">{t.nav.journal}</a></li>
+          <li><a href={localizePath(locale, '/plan/')} class="text-sm text-ink-900/80 hover:text-ink-900">{t.footer.planLink}</a></li>
         </ul>
       </div>
 

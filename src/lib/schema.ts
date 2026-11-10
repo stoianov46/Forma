@@ -74,7 +74,7 @@ export function breadcrumbSchema(items: { name: string; url: string }[]) {
   };
 }
 
-export function serviceSchema(opts: { name: string; description: string; url: string; areaServed?: string[] }) {
+export function serviceSchema(opts: { name: string; description: string; url: string; areaServed?: string[]; catalog?: { name: string; items: string[] } }) {
   return {
     '@type': 'Service',
     serviceType: opts.name,
@@ -83,6 +83,17 @@ export function serviceSchema(opts: { name: string; description: string; url: st
     url: opts.url,
     provider: { '@id': `${SITE_URL}/#organization` },
     areaServed: opts.areaServed ?? ['Koh Phangan', 'Koh Samui', 'Koh Tao', 'Bali'],
+    // An OfferCatalog of Service items only: names of the project tiers, NO Offer, price or priceSpecification,
+    // because every price on the site is an indicative draft (enforced by `npm run pricing:check`).
+    ...(opts.catalog?.items.length
+      ? {
+          hasOfferCatalog: {
+            '@type': 'OfferCatalog',
+            name: opts.catalog.name,
+            itemListElement: opts.catalog.items.map((name) => ({ '@type': 'Service', name })),
+          },
+        }
+      : {}),
   };
 }
 

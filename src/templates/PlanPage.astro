@@ -1,0 +1,32 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Breadcrumbs from '../components/layout/Breadcrumbs.astro';
+import DirectAnswer from '../components/blocks/DirectAnswer.astro';
+import PlanTools from '../components/blocks/PlanTools.astro';
+import CTABanner from '../components/blocks/CTABanner.astro';
+import { getDictionary } from '../i18n/dictionary';
+import { localizePath, type Locale } from '../lib/i18n';
+import { getPlanContent } from '../content/plan';
+
+interface Props {
+  locale: Locale;
+}
+const { locale } = Astro.props;
+const t = getDictionary(locale);
+const p = getPlanContent(locale);
+---
+
+<BaseLayout locale={locale} path="/plan/" title={p.seo.title} description={p.seo.description}>
+  <Breadcrumbs locale={locale} items={[{ name: t.footer.planLink, path: '/plan/' }]} />
+  <section class="wrap pb-6 pt-2">
+    <h1 class="max-w-3xl">{p.h1}</h1>
+  </section>
+  <DirectAnswer text={p.directAnswer} />
+  <PlanTools locale={locale} content={p} />
+  <CTABanner
+    heading={t.home.finalCtaHeading}
+    body={t.home.finalCtaBody}
+    cta={{ label: t.cta.startProject, href: localizePath(locale, '/contact/') }}
+    secondaryCta={{ label: p.checklist.h1, href: localizePath(locale, '/checklist/') }}
+  />
+</BaseLayout>

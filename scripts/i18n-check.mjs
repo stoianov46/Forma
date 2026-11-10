@@ -2,7 +2,7 @@
 /**
  * Translation check — `npm run i18n:check` (also in CI). English is the master.
  *
- * For services, locations, projects, about, process, home, long-form service sections and the UI dictionary,
+ * For services, locations, projects, about, process, home, long-form service sections, the /plan/ page content, price-row details and the UI dictionary,
  * every RU / TH / HE entry must have the same structure as English (same keys, same list lengths, no empty
  * strings), every English page must exist in all locales, the digits in a string must survive translation,
  * and a translated string must not still be English (identical to the English text or mostly Latin letters).
@@ -27,6 +27,8 @@ const lines = [
   ...SLUG_GROUPS.flatMap((g) => ['en', ...LOCALES].map((l) => `export { ${g}${l[0].toUpperCase() + l.slice(1)}Content as ${g}_${l} } from '${abs(`src/content/${g}/${l}.ts`)}';`)),
   ...['about', 'process', 'home'].flatMap((g) => ['en', ...LOCALES].map((l) => `export { ${g}${l[0].toUpperCase() + l.slice(1)} as ${g}_${l} } from '${abs(`src/content/${g}/${l}.ts`)}';`)),
   `export { dictionaries } from '${abs('src/i18n/dictionary.ts')}';`,
+  ...['en', ...LOCALES].map((l) => `export { plan${l[0].toUpperCase() + l.slice(1)} as plan_${l} } from '${abs(`src/content/plan/${l}.ts`)}';`),
+  ...['en', ...LOCALES].map((l) => `export { default as pd_${l} } from '${abs(`src/content/pricing-details/${l}.ts`)}';`),
   ...['en', ...LOCALES].flatMap((l, i) => services.map((s, j) => (fs.existsSync(path.join(root, `src/content/services/extended/${l}/${s}.ts`)) ? `export { default as ext_${l}_${j} } from '${abs(`src/content/services/extended/${l}/${s}.ts`)}';` : ''))),
 ];
 // about/process/home exports can be null in a locale; the bundle re-exports whatever exists.
@@ -78,6 +80,7 @@ for (const g of SLUG_GROUPS) {
 }
 for (const g of ['about', 'process', 'home']) for (const loc of LOCALES) compare(loc, g, mod[`${g}_en`], mod[`${g}_${loc}`] ?? null);
 for (const loc of LOCALES) compare(loc, 'dictionary', mod.dictionaries.en, mod.dictionaries[loc]);
+for (const loc of LOCALES) { compare(loc, 'plan', mod.plan_en, mod[`plan_${loc}`]); compare(loc, 'pricingDetails', mod.pd_en, mod[`pd_${loc}`]); }
 services.forEach((s, j) => { const en = mod[`ext_en_${j}`]; for (const loc of LOCALES) { const idx = ['en', ...LOCALES].indexOf(loc) * services.length + j; const t = mod[`ext_${loc}_${j}`]; if (!t) err(loc, `extended.${s}`, 'long-form sections not translated'); else compare(loc, `extended.${s}`, en, t); } });
 
 for (const loc of LOCALES) console.log(`${loc}: ${stats[loc].compared} strings compared, ${stats[loc].errors} problem(s)`);

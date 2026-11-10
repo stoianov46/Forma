@@ -8,6 +8,7 @@ import ServiceGrid from '../components/blocks/ServiceGrid.astro';
 import ProjectMosaic from '../components/blocks/ProjectMosaic.astro';
 import FAQAccordion from '../components/blocks/FAQAccordion.astro';
 import CTABanner from '../components/blocks/CTABanner.astro';
+import ContactChannels from '../components/blocks/ContactChannels.astro';
 import { getDictionary } from '../i18n/dictionary';
 import { localizePath, LOCALES, type Locale } from '../lib/i18n';
 import { getLocation, locationHrefSmart, secondaryLocations, hasLocationTranslation } from '../content/locations';
@@ -15,7 +16,7 @@ import { services as allServices } from '../content/services';
 import { projectsForLocation } from '../content/projects';
 import { getImage } from '../lib/images';
 import JsonLd from '../components/seo/JsonLd.astro';
-import { placeSchema, graph } from '../lib/schema';
+import { placeSchema, imageObjectSchema, graph } from '../lib/schema';
 import { SITE_URL } from '../lib/site';
 import { getImage as astroGetImage } from 'astro:assets';
 
@@ -92,6 +93,8 @@ const availableLocales = LOCALES.filter((l) => hasLocationTranslation(l, slug));
 
   <FAQAccordion locale={locale} faqs={tr.faqs} />
 
+  <ContactChannels locale={locale} topic={tr.name} path={path} location={slug} />
+
   <CTABanner
     heading={tr.ctaHeading}
     body={tr.ctaBody}
@@ -105,6 +108,7 @@ const availableLocales = LOCALES.filter((l) => hasLocationTranslation(l, slug));
         url: new URL(localizePath(locale, path), SITE_URL).toString(),
         containedIn: location.parentSlug ? getLocation(location.parentSlug)?.translations[locale].name : undefined,
       }),
+      imageObjectSchema(new URL(optimizedOg.src, SITE_URL).toString(), tr.name),
     ])}
   />
 </BaseLayout>

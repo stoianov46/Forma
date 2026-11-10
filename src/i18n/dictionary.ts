@@ -30,6 +30,7 @@ export interface Dictionary {
     cookies: string;
     accessibility: string;
     editorialPolicy: string;
+    planLink: string;
     rights: string;
   };
   common: {
@@ -83,6 +84,15 @@ export interface Dictionary {
     wind: string;
     materialNames: Record<'timber' | 'stone' | 'concrete' | 'clay' | 'lime' | 'steel' | 'glass' | 'planting', string>;
   };
+  channels: {
+    heading: string;
+    intro: string;
+    whatsapp: string;
+    telegram: string;
+    copy: string;
+    copied: string;
+    whatsappText: string;
+  };
   indexPages: {
     locationsTitleSuffix: string;
     locationsDesc: string;
@@ -111,6 +121,9 @@ export interface Dictionary {
     range: string;
     drivers: string;
     draft: string;
+    detailsToggle: string;
+    included: string;
+    excluded: string;
     units: Record<'per-m2' | 'fixed' | 'per-month' | 'percent' | 'percent-uplift', string>;
   };
   form: {
@@ -139,6 +152,9 @@ export interface Dictionary {
     reviewHint: string;
     edit: string;
     send: string;
+    landStatus: string;
+    landOptions: string[];
+    attached: string;
     projectTypeOptions: string[];
     contactMethodOptions: string[];
   };
@@ -204,6 +220,7 @@ export const en: Dictionary = {
     cookies: 'Cookie Settings',
     accessibility: 'Accessibility',
     editorialPolicy: 'Editorial Policy',
+    planLink: "Plan your project",
     rights: 'All rights reserved.',
   },
   common: {
@@ -257,6 +274,15 @@ export const en: Dictionary = {
     wind: "Breeze",
     materialNames: { timber: "Timber", stone: "Stone", concrete: "Concrete", clay: "Clay", lime: "Lime render", steel: "Steel", glass: "Glass", planting: "Planting" },
   },
+  channels: {
+    heading: "Prefer to chat?",
+    intro: "Message us directly. We will know which page you were reading.",
+    whatsapp: "Chat on WhatsApp",
+    telegram: "Chat on Telegram",
+    copy: "Copy phone number",
+    copied: "Copied",
+    whatsappText: "Hello FORMA, I would like to ask about {topic}. (Page: {url})",
+  },
   indexPages: {
     locationsTitleSuffix: "FORMA — Koh Phangan, Koh Samui, Koh Tao & Bali",
     locationsDesc: "FORMA designs and builds villas across Koh Phangan, Koh Samui, Koh Tao and Bali, with deep local knowledge of each island's terrain, logistics and building conditions.",
@@ -286,6 +312,9 @@ export const en: Dictionary = {
     range: "Indicative range",
     drivers: "What drives it",
     draft: "Draft estimate",
+    detailsToggle: "What is included and what is not",
+    included: "Included",
+    excluded: "Not included",
     units: { 'per-m2': "per m²", 'fixed': "", 'per-month': "per month", 'percent': "of construction cost", 'percent-uplift': "above standard construction cost" },
   },
   form: {
@@ -316,6 +345,9 @@ export const en: Dictionary = {
     reviewHint: "Please check the details below. Nothing is sent until you press Send.",
     edit: "Edit",
     send: "Send enquiry",
+    landStatus: "Do you own the land?",
+    landOptions: ['Own land', 'Looking for land', 'Existing building', 'Not sure'],
+    attached: "Attached from the planning tools",
     projectTypeOptions: ['Villa / Residence', 'Hospitality', 'Commercial', 'Renovation', 'Land / New Build', 'Other'],
     contactMethodOptions: ['Email', 'WhatsApp', 'Telegram', 'Phone call'],
   },
@@ -384,6 +416,7 @@ export const ru: Dictionary = {
     cookies: 'Настройки cookie',
     accessibility: 'Доступность',
     editorialPolicy: 'Редакционная политика',
+    planLink: "Планирование проекта",
     rights: 'Все права защищены.',
   },
   common: {
@@ -437,6 +470,15 @@ export const ru: Dictionary = {
     wind: "Бриз",
     materialNames: { timber: "Дерево", stone: "Камень", concrete: "Бетон", clay: "Глина", lime: "Известковая штукатурка", steel: "Сталь", glass: "Стекло", planting: "Озеленение" },
   },
+  channels: {
+    heading: "Удобнее написать в мессенджер?",
+    intro: "Напишите нам напрямую: мы будем знать, какую страницу вы читали.",
+    whatsapp: "Написать в WhatsApp",
+    telegram: "Написать в Telegram",
+    copy: "Скопировать номер телефона",
+    copied: "Скопировано",
+    whatsappText: "Здравствуйте, FORMA! Хочу узнать подробнее: {topic}. (Страница: {url})",
+  },
   indexPages: {
     locationsTitleSuffix: "FORMA — Ко Пханган, Ко Самуи, Ко Тао и Бали",
     locationsDesc: "FORMA проектирует и строит виллы на Ко Пхангане, Ко Самуи, Ко Тао и Бали, хорошо зная рельеф, логистику и строительные условия каждого острова.",
@@ -466,6 +508,9 @@ export const ru: Dictionary = {
     range: "Ориентировочный диапазон",
     drivers: "Что влияет на цену",
     draft: "Предварительная оценка",
+    detailsToggle: "Что входит и что не входит",
+    included: "Входит",
+    excluded: "Не входит",
     units: { 'per-m2': "за м²", 'fixed': "", 'per-month': "в месяц", 'percent': "от стоимости строительства", 'percent-uplift': "к стандартной стоимости строительства" },
   },
   form: {
@@ -495,6 +540,9 @@ export const ru: Dictionary = {
     reviewHint: "Проверьте данные ниже. Ничего не отправляется, пока вы не нажмёте «Отправить».",
     edit: "Изменить",
     send: "Отправить запрос",
+    landStatus: "Есть ли у вас участок?",
+    landOptions: ['Есть участок', 'Ищу участок', 'Есть готовое здание', 'Пока не знаю'],
+    attached: "Приложено из инструментов планирования",
     projectTypeOptions: ['Вилла / резиденция', 'Гостиничный проект', 'Коммерческий объект', 'Реновация', 'Земля / новое строительство', 'Другое'],
     contactMethodOptions: ['Email', 'WhatsApp', 'Telegram', 'Звонок'],
   },
@@ -561,6 +609,7 @@ export const th: Dictionary = {
     cookies: 'การตั้งค่าคุกกี้',
     accessibility: 'การเข้าถึง',
     editorialPolicy: 'นโยบายด้านเนื้อหา',
+    planLink: "วางแผนโครงการ",
     rights: 'สงวนลิขสิทธิ์',
   },
   common: {
@@ -614,6 +663,15 @@ export const th: Dictionary = {
     wind: "ลม",
     materialNames: { timber: "ไม้", stone: "หิน", concrete: "คอนกรีต", clay: "ดินเผา", lime: "ปูนฉาบปูนขาว", steel: "เหล็ก", glass: "กระจก", planting: "พืชพรรณ" },
   },
+  channels: {
+    heading: "อยากคุยทางแชทหรือไม่",
+    intro: "ส่งข้อความหาเราได้โดยตรง เราจะรู้ว่าคุณกำลังอ่านหน้าไหนอยู่",
+    whatsapp: "แชททาง WhatsApp",
+    telegram: "แชททาง Telegram",
+    copy: "คัดลอกเบอร์โทรศัพท์",
+    copied: "คัดลอกแล้ว",
+    whatsappText: "สวัสดี FORMA ฉันอยากสอบถามเกี่ยวกับ {topic} (หน้า: {url})",
+  },
   indexPages: {
     locationsTitleSuffix: "FORMA — เกาะพะงัน เกาะสมุย เกาะเต่า และบาหลี",
     locationsDesc: "FORMA ออกแบบและก่อสร้างวิลล่าบนเกาะพะงัน เกาะสมุย เกาะเต่า และบาหลี ด้วยความเข้าใจภูมิประเทศ การขนส่ง และสภาพการก่อสร้างของแต่ละเกาะ",
@@ -643,6 +701,9 @@ export const th: Dictionary = {
     range: "ช่วงราคาโดยประมาณ",
     drivers: "ปัจจัยที่มีผล",
     draft: "ประมาณการฉบับร่าง",
+    detailsToggle: "สิ่งที่รวมและไม่รวม",
+    included: "รวมอยู่ในราคา",
+    excluded: "ไม่รวมอยู่ในราคา",
     units: { 'per-m2': "ต่อ ตร.ม.", 'fixed': "", 'per-month': "ต่อเดือน", 'percent': "ของค่าก่อสร้าง", 'percent-uplift': "เพิ่มจากค่าก่อสร้างมาตรฐาน" },
   },
   form: {
@@ -671,6 +732,9 @@ export const th: Dictionary = {
     reviewHint: "โปรดตรวจสอบข้อมูลด้านล่าง ระบบจะยังไม่ส่งจนกว่าคุณจะกดส่ง",
     edit: "แก้ไข",
     send: "ส่งคำขอ",
+    landStatus: "คุณมีที่ดินแล้วหรือไม่",
+    landOptions: ['มีที่ดินแล้ว', 'กำลังมองหาที่ดิน', 'มีอาคารอยู่แล้ว', 'ยังไม่แน่ใจ'],
+    attached: "แนบจากเครื่องมือวางแผน",
     projectTypeOptions: ['วิลล่า / ที่พักอาศัย', 'ธุรกิจโรงแรม', 'เชิงพาณิชย์', 'งานปรับปรุง', 'ที่ดิน / สร้างใหม่', 'อื่นๆ'],
     contactMethodOptions: ['อีเมล', 'WhatsApp', 'Telegram', 'โทรศัพท์'],
   },
@@ -736,6 +800,7 @@ export const he: Dictionary = {
     cookies: 'הגדרות עוגיות',
     accessibility: 'נגישות',
     editorialPolicy: 'מדיניות עריכה',
+    planLink: "תכנון הפרויקט",
     rights: 'כל הזכויות שמורות.',
   },
   common: {
@@ -789,6 +854,15 @@ export const he: Dictionary = {
     wind: "רוח",
     materialNames: { timber: "עץ", stone: "אבן", concrete: "בטון", clay: "חימר", lime: "טיח סיד", steel: "פלדה", glass: "זכוכית", planting: "צמחייה" },
   },
+  channels: {
+    heading: "מעדיפים לשוחח בצ׳אט?",
+    intro: "כתבו לנו ישירות. נדע באיזה עמוד קראתם.",
+    whatsapp: "שיחה ב-WhatsApp",
+    telegram: "שיחה ב-Telegram",
+    copy: "העתקת מספר הטלפון",
+    copied: "הועתק",
+    whatsappText: "שלום FORMA, אשמח לשאול על {topic}. (עמוד: {url})",
+  },
   indexPages: {
     locationsTitleSuffix: "FORMA — קו פנגן, קו סמוי, קו טאו ובאלי",
     locationsDesc: "FORMA מתכננת ובונה וילות בקו פנגן, קו סמוי, קו טאו ובאלי, מתוך הכרות עמוקה עם השטח, הלוגיסטיקה ותנאי הבנייה בכל אי.",
@@ -818,6 +892,9 @@ export const he: Dictionary = {
     range: "טווח משוער",
     drivers: "מה משפיע על המחיר",
     draft: "הערכת טיוטה",
+    detailsToggle: "מה כלול ומה לא",
+    included: "כלול",
+    excluded: "לא כלול",
     units: { 'per-m2': "למ״ר", 'fixed': "", 'per-month': "לחודש", 'percent': "מעלות הבנייה", 'percent-uplift': "מעל עלות הבנייה הסטנדרטית" },
   },
   form: {
@@ -846,6 +923,9 @@ export const he: Dictionary = {
     reviewHint: "בדקו את הפרטים שלמטה. דבר לא יישלח עד שתלחצו על שליחה.",
     edit: "עריכה",
     send: "שליחת הפנייה",
+    landStatus: "האם יש לכם קרקע?",
+    landOptions: ['יש לנו קרקע', 'מחפשים קרקע', 'יש מבנה קיים', 'עוד לא בטוחים'],
+    attached: "מצורף מכלי התכנון",
     projectTypeOptions: ['וילה / מגורים', 'אירוח', 'מסחרי', 'שיפוץ', 'קרקע / בנייה חדשה', 'אחר'],
     contactMethodOptions: ['אימייל', 'וואטסאפ', 'טלגרם', 'שיחת טלפון'],
   },

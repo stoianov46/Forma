@@ -1,9 +1,9 @@
 {
   "summary": {
-    "pages": 182,
-    "checks": 3669,
-    "pass": 3613,
-    "warning": 56,
+    "pages": 190,
+    "checks": 3831,
+    "pass": 3780,
+    "warning": 51,
     "fail": 0
   },
   "results": [
@@ -643,6 +643,195 @@
       "check": "title-present",
       "status": "PASS",
       "actual": "Accessibility | FORMA",
+      "expected": "non-empty",
+      "fix": ""
+    },
+    {
+      "url": "/checklist/",
+      "locale": "en",
+      "check": "canonical-correct",
+      "status": "PASS",
+      "actual": "/checklist/",
+      "expected": "/checklist/",
+      "fix": "Canonical must be the page itself (language-specific)"
+    },
+    {
+      "url": "/checklist/",
+      "locale": "en",
+      "check": "canonical-present",
+      "status": "PASS",
+      "actual": "https://forma.in.th/checklist/",
+      "expected": "present",
+      "fix": ""
+    },
+    {
+      "url": "/checklist/",
+      "locale": "en",
+      "check": "cliches",
+      "status": "PASS",
+      "actual": "none",
+      "expected": "none",
+      "fix": ""
+    },
+    {
+      "url": "/checklist/",
+      "locale": "en",
+      "check": "description-length",
+      "status": "PASS",
+      "actual": "160",
+      "expected": "110-170",
+      "fix": "Rewrite meta description"
+    },
+    {
+      "url": "/checklist/",
+      "locale": "en",
+      "check": "description-present",
+      "status": "PASS",
+      "actual": "160",
+      "expected": "non-empty",
+      "fix": ""
+    },
+    {
+      "url": "/checklist/",
+      "locale": "en",
+      "check": "direct-answer",
+      "status": "PASS",
+      "actual": "50",
+      "expected": "40-60 words",
+      "fix": "Tighten the opening answer"
+    },
+    {
+      "url": "/checklist/",
+      "locale": "en",
+      "check": "h1-single",
+      "status": "PASS",
+      "actual": "1",
+      "expected": "1",
+      "fix": ""
+    },
+    {
+      "url": "/checklist/",
+      "locale": "en",
+      "check": "heading-hierarchy",
+      "status": "PASS",
+      "actual": "ok",
+      "expected": "no skipped levels",
+      "fix": ""
+    },
+    {
+      "url": "/checklist/",
+      "locale": "en",
+      "check": "hreflang-reciprocal",
+      "status": "PASS",
+      "actual": "ok",
+      "expected": "reciprocal",
+      "fix": ""
+    },
+    {
+      "url": "/checklist/",
+      "locale": "en",
+      "check": "hreflang-self",
+      "status": "PASS",
+      "actual": "/checklist/",
+      "expected": "/checklist/",
+      "fix": ""
+    },
+    {
+      "url": "/checklist/",
+      "locale": "en",
+      "check": "html-lang",
+      "status": "PASS",
+      "actual": "en",
+      "expected": "en",
+      "fix": ""
+    },
+    {
+      "url": "/checklist/",
+      "locale": "en",
+      "check": "img-alt",
+      "status": "PASS",
+      "actual": "0",
+      "expected": "0",
+      "fix": ""
+    },
+    {
+      "url": "/checklist/",
+      "locale": "en",
+      "check": "indexable",
+      "status": "PASS",
+      "actual": "index",
+      "expected": "index",
+      "fix": ""
+    },
+    {
+      "url": "/checklist/",
+      "locale": "en",
+      "check": "jsonld-no-duplicate-ids",
+      "status": "PASS",
+      "actual": "ok",
+      "expected": "unique",
+      "fix": ""
+    },
+    {
+      "url": "/checklist/",
+      "locale": "en",
+      "check": "jsonld-valid",
+      "status": "PASS",
+      "actual": "2 block(s)",
+      "expected": "valid JSON",
+      "fix": ""
+    },
+    {
+      "url": "/checklist/",
+      "locale": "en",
+      "check": "keyword-in-h1",
+      "status": "PASS",
+      "actual": "villa project checklist for koh phangan",
+      "expected": "villa project checklist",
+      "fix": ""
+    },
+    {
+      "url": "/checklist/",
+      "locale": "en",
+      "check": "keyword-in-opening",
+      "status": "PASS",
+      "actual": "first 600 chars",
+      "expected": "villa project checklist",
+      "fix": ""
+    },
+    {
+      "url": "/checklist/",
+      "locale": "en",
+      "check": "placeholders",
+      "status": "PASS",
+      "actual": "none",
+      "expected": "none",
+      "fix": "Remove placeholder text"
+    },
+    {
+      "url": "/checklist/",
+      "locale": "en",
+      "check": "rtl-config",
+      "status": "PASS",
+      "actual": "ltr",
+      "expected": "ltr",
+      "fix": ""
+    },
+    {
+      "url": "/checklist/",
+      "locale": "en",
+      "check": "title-length",
+      "status": "PASS",
+      "actual": "48",
+      "expected": "20-65",
+      "fix": "Shorten/lengthen title"
+    },
+    {
+      "url": "/checklist/",
+      "locale": "en",
+      "check": "title-present",
+      "status": "PASS",
+      "actual": "Villa Project Checklist: What to Prepare | FORMA",
       "expected": "non-empty",
       "fix": ""
     },
@@ -1489,6 +1678,186 @@
       "check": "untranslated-text",
       "status": "PASS",
       "actual": "2% Latin letters",
+      "expected": "<=30%",
+      "fix": "Look for English fallback strings"
+    },
+    {
+      "url": "/he/checklist/",
+      "locale": "he",
+      "check": "canonical-correct",
+      "status": "PASS",
+      "actual": "/he/checklist/",
+      "expected": "/he/checklist/",
+      "fix": "Canonical must be the page itself (language-specific)"
+    },
+    {
+      "url": "/he/checklist/",
+      "locale": "he",
+      "check": "canonical-present",
+      "status": "PASS",
+      "actual": "https://forma.in.th/he/checklist/",
+      "expected": "present",
+      "fix": ""
+    },
+    {
+      "url": "/he/checklist/",
+      "locale": "he",
+      "check": "description-length",
+      "status": "PASS",
+      "actual": "118",
+      "expected": "85-170",
+      "fix": "Rewrite meta description"
+    },
+    {
+      "url": "/he/checklist/",
+      "locale": "he",
+      "check": "description-present",
+      "status": "PASS",
+      "actual": "118",
+      "expected": "non-empty",
+      "fix": ""
+    },
+    {
+      "url": "/he/checklist/",
+      "locale": "he",
+      "check": "direct-answer",
+      "status": "PASS",
+      "actual": "42",
+      "expected": "30-60 words",
+      "fix": "Tighten the opening answer"
+    },
+    {
+      "url": "/he/checklist/",
+      "locale": "he",
+      "check": "english-heading",
+      "status": "PASS",
+      "actual": "none",
+      "expected": "translated headings",
+      "fix": "Translate hard-coded English heading"
+    },
+    {
+      "url": "/he/checklist/",
+      "locale": "he",
+      "check": "h1-single",
+      "status": "PASS",
+      "actual": "1",
+      "expected": "1",
+      "fix": ""
+    },
+    {
+      "url": "/he/checklist/",
+      "locale": "he",
+      "check": "heading-hierarchy",
+      "status": "PASS",
+      "actual": "ok",
+      "expected": "no skipped levels",
+      "fix": ""
+    },
+    {
+      "url": "/he/checklist/",
+      "locale": "he",
+      "check": "hreflang-reciprocal",
+      "status": "PASS",
+      "actual": "ok",
+      "expected": "reciprocal",
+      "fix": ""
+    },
+    {
+      "url": "/he/checklist/",
+      "locale": "he",
+      "check": "hreflang-self",
+      "status": "PASS",
+      "actual": "/he/checklist/",
+      "expected": "/he/checklist/",
+      "fix": ""
+    },
+    {
+      "url": "/he/checklist/",
+      "locale": "he",
+      "check": "html-lang",
+      "status": "PASS",
+      "actual": "he",
+      "expected": "he",
+      "fix": ""
+    },
+    {
+      "url": "/he/checklist/",
+      "locale": "he",
+      "check": "img-alt",
+      "status": "PASS",
+      "actual": "0",
+      "expected": "0",
+      "fix": ""
+    },
+    {
+      "url": "/he/checklist/",
+      "locale": "he",
+      "check": "indexable",
+      "status": "PASS",
+      "actual": "index",
+      "expected": "index",
+      "fix": ""
+    },
+    {
+      "url": "/he/checklist/",
+      "locale": "he",
+      "check": "jsonld-no-duplicate-ids",
+      "status": "PASS",
+      "actual": "ok",
+      "expected": "unique",
+      "fix": ""
+    },
+    {
+      "url": "/he/checklist/",
+      "locale": "he",
+      "check": "jsonld-valid",
+      "status": "PASS",
+      "actual": "2 block(s)",
+      "expected": "valid JSON",
+      "fix": ""
+    },
+    {
+      "url": "/he/checklist/",
+      "locale": "he",
+      "check": "placeholders",
+      "status": "PASS",
+      "actual": "none",
+      "expected": "none",
+      "fix": "Remove placeholder text"
+    },
+    {
+      "url": "/he/checklist/",
+      "locale": "he",
+      "check": "rtl-config",
+      "status": "PASS",
+      "actual": "rtl",
+      "expected": "rtl",
+      "fix": ""
+    },
+    {
+      "url": "/he/checklist/",
+      "locale": "he",
+      "check": "title-length",
+      "status": "PASS",
+      "actual": "38",
+      "expected": "20-65",
+      "fix": "Shorten/lengthen title"
+    },
+    {
+      "url": "/he/checklist/",
+      "locale": "he",
+      "check": "title-present",
+      "status": "PASS",
+      "actual": "צ׳קליסט לפרויקט וילה: מה להכין | FORMA",
+      "expected": "non-empty",
+      "fix": ""
+    },
+    {
+      "url": "/he/checklist/",
+      "locale": "he",
+      "check": "untranslated-text",
+      "status": "PASS",
+      "actual": "0% Latin letters",
       "expected": "<=30%",
       "fix": "Look for English fallback strings"
     },
@@ -3135,7 +3504,7 @@
       "locale": "he",
       "check": "untranslated-text",
       "status": "PASS",
-      "actual": "2% Latin letters",
+      "actual": "3% Latin letters",
       "expected": "<=30%",
       "fix": "Look for English fallback strings"
     },
@@ -3315,7 +3684,7 @@
       "locale": "he",
       "check": "untranslated-text",
       "status": "PASS",
-      "actual": "1% Latin letters",
+      "actual": "2% Latin letters",
       "expected": "<=30%",
       "fix": "Look for English fallback strings"
     },
@@ -3495,7 +3864,7 @@
       "locale": "he",
       "check": "untranslated-text",
       "status": "PASS",
-      "actual": "2% Latin letters",
+      "actual": "3% Latin letters",
       "expected": "<=30%",
       "fix": "Look for English fallback strings"
     },
@@ -3675,7 +4044,7 @@
       "locale": "he",
       "check": "untranslated-text",
       "status": "PASS",
-      "actual": "2% Latin letters",
+      "actual": "3% Latin letters",
       "expected": "<=30%",
       "fix": "Look for English fallback strings"
     },
@@ -3855,7 +4224,7 @@
       "locale": "he",
       "check": "untranslated-text",
       "status": "PASS",
-      "actual": "2% Latin letters",
+      "actual": "3% Latin letters",
       "expected": "<=30%",
       "fix": "Look for English fallback strings"
     },
@@ -4035,7 +4404,7 @@
       "locale": "he",
       "check": "untranslated-text",
       "status": "PASS",
-      "actual": "2% Latin letters",
+      "actual": "3% Latin letters",
       "expected": "<=30%",
       "fix": "Look for English fallback strings"
     },
@@ -4215,7 +4584,7 @@
       "locale": "he",
       "check": "untranslated-text",
       "status": "PASS",
-      "actual": "1% Latin letters",
+      "actual": "2% Latin letters",
       "expected": "<=30%",
       "fix": "Look for English fallback strings"
     },
@@ -4395,7 +4764,7 @@
       "locale": "he",
       "check": "untranslated-text",
       "status": "PASS",
-      "actual": "1% Latin letters",
+      "actual": "2% Latin letters",
       "expected": "<=30%",
       "fix": "Look for English fallback strings"
     },
@@ -4575,7 +4944,7 @@
       "locale": "he",
       "check": "untranslated-text",
       "status": "PASS",
-      "actual": "1% Latin letters",
+      "actual": "2% Latin letters",
       "expected": "<=30%",
       "fix": "Look for English fallback strings"
     },
@@ -4755,7 +5124,7 @@
       "locale": "he",
       "check": "untranslated-text",
       "status": "PASS",
-      "actual": "2% Latin letters",
+      "actual": "3% Latin letters",
       "expected": "<=30%",
       "fix": "Look for English fallback strings"
     },
@@ -4932,6 +5301,186 @@
     },
     {
       "url": "/he/locations/thong-sala/",
+      "locale": "he",
+      "check": "untranslated-text",
+      "status": "PASS",
+      "actual": "3% Latin letters",
+      "expected": "<=30%",
+      "fix": "Look for English fallback strings"
+    },
+    {
+      "url": "/he/plan/",
+      "locale": "he",
+      "check": "canonical-correct",
+      "status": "PASS",
+      "actual": "/he/plan/",
+      "expected": "/he/plan/",
+      "fix": "Canonical must be the page itself (language-specific)"
+    },
+    {
+      "url": "/he/plan/",
+      "locale": "he",
+      "check": "canonical-present",
+      "status": "PASS",
+      "actual": "https://forma.in.th/he/plan/",
+      "expected": "present",
+      "fix": ""
+    },
+    {
+      "url": "/he/plan/",
+      "locale": "he",
+      "check": "description-length",
+      "status": "PASS",
+      "actual": "125",
+      "expected": "85-170",
+      "fix": "Rewrite meta description"
+    },
+    {
+      "url": "/he/plan/",
+      "locale": "he",
+      "check": "description-present",
+      "status": "PASS",
+      "actual": "125",
+      "expected": "non-empty",
+      "fix": ""
+    },
+    {
+      "url": "/he/plan/",
+      "locale": "he",
+      "check": "direct-answer",
+      "status": "PASS",
+      "actual": "48",
+      "expected": "30-60 words",
+      "fix": "Tighten the opening answer"
+    },
+    {
+      "url": "/he/plan/",
+      "locale": "he",
+      "check": "english-heading",
+      "status": "PASS",
+      "actual": "none",
+      "expected": "translated headings",
+      "fix": "Translate hard-coded English heading"
+    },
+    {
+      "url": "/he/plan/",
+      "locale": "he",
+      "check": "h1-single",
+      "status": "PASS",
+      "actual": "1",
+      "expected": "1",
+      "fix": ""
+    },
+    {
+      "url": "/he/plan/",
+      "locale": "he",
+      "check": "heading-hierarchy",
+      "status": "PASS",
+      "actual": "ok",
+      "expected": "no skipped levels",
+      "fix": ""
+    },
+    {
+      "url": "/he/plan/",
+      "locale": "he",
+      "check": "hreflang-reciprocal",
+      "status": "PASS",
+      "actual": "ok",
+      "expected": "reciprocal",
+      "fix": ""
+    },
+    {
+      "url": "/he/plan/",
+      "locale": "he",
+      "check": "hreflang-self",
+      "status": "PASS",
+      "actual": "/he/plan/",
+      "expected": "/he/plan/",
+      "fix": ""
+    },
+    {
+      "url": "/he/plan/",
+      "locale": "he",
+      "check": "html-lang",
+      "status": "PASS",
+      "actual": "he",
+      "expected": "he",
+      "fix": ""
+    },
+    {
+      "url": "/he/plan/",
+      "locale": "he",
+      "check": "img-alt",
+      "status": "PASS",
+      "actual": "0",
+      "expected": "0",
+      "fix": ""
+    },
+    {
+      "url": "/he/plan/",
+      "locale": "he",
+      "check": "indexable",
+      "status": "PASS",
+      "actual": "index",
+      "expected": "index",
+      "fix": ""
+    },
+    {
+      "url": "/he/plan/",
+      "locale": "he",
+      "check": "jsonld-no-duplicate-ids",
+      "status": "PASS",
+      "actual": "ok",
+      "expected": "unique",
+      "fix": ""
+    },
+    {
+      "url": "/he/plan/",
+      "locale": "he",
+      "check": "jsonld-valid",
+      "status": "PASS",
+      "actual": "2 block(s)",
+      "expected": "valid JSON",
+      "fix": ""
+    },
+    {
+      "url": "/he/plan/",
+      "locale": "he",
+      "check": "placeholders",
+      "status": "PASS",
+      "actual": "none",
+      "expected": "none",
+      "fix": "Remove placeholder text"
+    },
+    {
+      "url": "/he/plan/",
+      "locale": "he",
+      "check": "rtl-config",
+      "status": "PASS",
+      "actual": "rtl",
+      "expected": "rtl",
+      "fix": ""
+    },
+    {
+      "url": "/he/plan/",
+      "locale": "he",
+      "check": "title-length",
+      "status": "PASS",
+      "actual": "52",
+      "expected": "20-65",
+      "fix": "Shorten/lengthen title"
+    },
+    {
+      "url": "/he/plan/",
+      "locale": "he",
+      "check": "title-present",
+      "status": "PASS",
+      "actual": "תכנון פרויקט וילה: הערכת עלות ומציאת שירותים | FORMA",
+      "expected": "non-empty",
+      "fix": ""
+    },
+    {
+      "url": "/he/plan/",
       "locale": "he",
       "check": "untranslated-text",
       "status": "PASS",
@@ -5466,7 +6015,7 @@
       "locale": "he",
       "check": "untranslated-text",
       "status": "PASS",
-      "actual": "0% Latin letters",
+      "actual": "1% Latin letters",
       "expected": "<=30%",
       "fix": "Look for English fallback strings"
     },
@@ -5655,7 +6204,7 @@
       "locale": "he",
       "check": "untranslated-text",
       "status": "PASS",
-      "actual": "0% Latin letters",
+      "actual": "1% Latin letters",
       "expected": "<=30%",
       "fix": "Look for English fallback strings"
     },
@@ -5844,7 +6393,7 @@
       "locale": "he",
       "check": "untranslated-text",
       "status": "PASS",
-      "actual": "0% Latin letters",
+      "actual": "1% Latin letters",
       "expected": "<=30%",
       "fix": "Look for English fallback strings"
     },
@@ -6033,7 +6582,7 @@
       "locale": "he",
       "check": "untranslated-text",
       "status": "PASS",
-      "actual": "0% Latin letters",
+      "actual": "1% Latin letters",
       "expected": "<=30%",
       "fix": "Look for English fallback strings"
     },
@@ -6222,7 +6771,7 @@
       "locale": "he",
       "check": "untranslated-text",
       "status": "PASS",
-      "actual": "0% Latin letters",
+      "actual": "1% Latin letters",
       "expected": "<=30%",
       "fix": "Look for English fallback strings"
     },
@@ -6411,7 +6960,7 @@
       "locale": "he",
       "check": "untranslated-text",
       "status": "PASS",
-      "actual": "0% Latin letters",
+      "actual": "1% Latin letters",
       "expected": "<=30%",
       "fix": "Look for English fallback strings"
     },
@@ -6600,7 +7149,7 @@
       "locale": "he",
       "check": "untranslated-text",
       "status": "PASS",
-      "actual": "0% Latin letters",
+      "actual": "1% Latin letters",
       "expected": "<=30%",
       "fix": "Look for English fallback strings"
     },
@@ -6609,7 +7158,7 @@
       "locale": "he",
       "check": "word-count",
       "status": "PASS",
-      "actual": "1531",
+      "actual": "1732",
       "expected": ">=1250",
       "fix": "Expand with original, useful content (not filler)"
     },
@@ -6798,7 +7347,7 @@
       "locale": "he",
       "check": "untranslated-text",
       "status": "PASS",
-      "actual": "0% Latin letters",
+      "actual": "1% Latin letters",
       "expected": "<=30%",
       "fix": "Look for English fallback strings"
     },
@@ -6807,7 +7356,7 @@
       "locale": "he",
       "check": "word-count",
       "status": "PASS",
-      "actual": "1317",
+      "actual": "1495",
       "expected": ">=1250",
       "fix": "Expand with original, useful content (not filler)"
     },
@@ -7005,7 +7554,7 @@
       "locale": "he",
       "check": "word-count",
       "status": "PASS",
-      "actual": "1298",
+      "actual": "1471",
       "expected": ">=1250",
       "fix": "Expand with original, useful content (not filler)"
     },
@@ -7194,7 +7743,7 @@
       "locale": "he",
       "check": "untranslated-text",
       "status": "PASS",
-      "actual": "0% Latin letters",
+      "actual": "1% Latin letters",
       "expected": "<=30%",
       "fix": "Look for English fallback strings"
     },
@@ -7203,7 +7752,7 @@
       "locale": "he",
       "check": "word-count",
       "status": "PASS",
-      "actual": "1424",
+      "actual": "1598",
       "expected": ">=1250",
       "fix": "Expand with original, useful content (not filler)"
     },
@@ -7401,7 +7950,7 @@
       "locale": "he",
       "check": "word-count",
       "status": "PASS",
-      "actual": "1485",
+      "actual": "1650",
       "expected": ">=1250",
       "fix": "Expand with original, useful content (not filler)"
     },
@@ -7590,7 +8139,7 @@
       "locale": "he",
       "check": "untranslated-text",
       "status": "PASS",
-      "actual": "0% Latin letters",
+      "actual": "1% Latin letters",
       "expected": "<=30%",
       "fix": "Look for English fallback strings"
     },
@@ -7599,7 +8148,7 @@
       "locale": "he",
       "check": "word-count",
       "status": "PASS",
-      "actual": "1455",
+      "actual": "1619",
       "expected": ">=1250",
       "fix": "Expand with original, useful content (not filler)"
     },
@@ -7788,7 +8337,7 @@
       "locale": "he",
       "check": "untranslated-text",
       "status": "PASS",
-      "actual": "0% Latin letters",
+      "actual": "1% Latin letters",
       "expected": "<=30%",
       "fix": "Look for English fallback strings"
     },
@@ -7797,7 +8346,7 @@
       "locale": "he",
       "check": "word-count",
       "status": "PASS",
-      "actual": "1381",
+      "actual": "1547",
       "expected": ">=1250",
       "fix": "Expand with original, useful content (not filler)"
     },
@@ -7995,7 +8544,7 @@
       "locale": "he",
       "check": "word-count",
       "status": "PASS",
-      "actual": "1299",
+      "actual": "1461",
       "expected": ">=1250",
       "fix": "Expand with original, useful content (not filler)"
     },
@@ -8184,7 +8733,7 @@
       "locale": "he",
       "check": "untranslated-text",
       "status": "PASS",
-      "actual": "0% Latin letters",
+      "actual": "1% Latin letters",
       "expected": "<=30%",
       "fix": "Look for English fallback strings"
     },
@@ -8193,7 +8742,7 @@
       "locale": "he",
       "check": "word-count",
       "status": "PASS",
-      "actual": "1403",
+      "actual": "1588",
       "expected": ">=1250",
       "fix": "Expand with original, useful content (not filler)"
     },
@@ -8382,7 +8931,7 @@
       "locale": "he",
       "check": "untranslated-text",
       "status": "PASS",
-      "actual": "0% Latin letters",
+      "actual": "1% Latin letters",
       "expected": "<=30%",
       "fix": "Look for English fallback strings"
     },
@@ -8391,7 +8940,7 @@
       "locale": "he",
       "check": "word-count",
       "status": "PASS",
-      "actual": "1337",
+      "actual": "1504",
       "expected": ">=1250",
       "fix": "Expand with original, useful content (not filler)"
     },
@@ -8589,7 +9138,7 @@
       "locale": "he",
       "check": "word-count",
       "status": "PASS",
-      "actual": "1296",
+      "actual": "1470",
       "expected": ">=1250",
       "fix": "Expand with original, useful content (not filler)"
     },
@@ -8778,7 +9327,7 @@
       "locale": "he",
       "check": "untranslated-text",
       "status": "PASS",
-      "actual": "0% Latin letters",
+      "actual": "1% Latin letters",
       "expected": "<=30%",
       "fix": "Look for English fallback strings"
     },
@@ -8787,7 +9336,7 @@
       "locale": "he",
       "check": "word-count",
       "status": "PASS",
-      "actual": "1379",
+      "actual": "1548",
       "expected": ">=1250",
       "fix": "Expand with original, useful content (not filler)"
     },
@@ -8976,7 +9525,7 @@
       "locale": "he",
       "check": "untranslated-text",
       "status": "PASS",
-      "actual": "0% Latin letters",
+      "actual": "1% Latin letters",
       "expected": "<=30%",
       "fix": "Look for English fallback strings"
     },
@@ -8985,7 +9534,7 @@
       "locale": "he",
       "check": "word-count",
       "status": "PASS",
-      "actual": "1522",
+      "actual": "1717",
       "expected": ">=1250",
       "fix": "Expand with original, useful content (not filler)"
     },
@@ -12437,6 +12986,195 @@
       "fix": ""
     },
     {
+      "url": "/plan/",
+      "locale": "en",
+      "check": "canonical-correct",
+      "status": "PASS",
+      "actual": "/plan/",
+      "expected": "/plan/",
+      "fix": "Canonical must be the page itself (language-specific)"
+    },
+    {
+      "url": "/plan/",
+      "locale": "en",
+      "check": "canonical-present",
+      "status": "PASS",
+      "actual": "https://forma.in.th/plan/",
+      "expected": "present",
+      "fix": ""
+    },
+    {
+      "url": "/plan/",
+      "locale": "en",
+      "check": "cliches",
+      "status": "PASS",
+      "actual": "none",
+      "expected": "none",
+      "fix": ""
+    },
+    {
+      "url": "/plan/",
+      "locale": "en",
+      "check": "description-length",
+      "status": "PASS",
+      "actual": "150",
+      "expected": "110-170",
+      "fix": "Rewrite meta description"
+    },
+    {
+      "url": "/plan/",
+      "locale": "en",
+      "check": "description-present",
+      "status": "PASS",
+      "actual": "150",
+      "expected": "non-empty",
+      "fix": ""
+    },
+    {
+      "url": "/plan/",
+      "locale": "en",
+      "check": "direct-answer",
+      "status": "PASS",
+      "actual": "57",
+      "expected": "40-60 words",
+      "fix": "Tighten the opening answer"
+    },
+    {
+      "url": "/plan/",
+      "locale": "en",
+      "check": "h1-single",
+      "status": "PASS",
+      "actual": "1",
+      "expected": "1",
+      "fix": ""
+    },
+    {
+      "url": "/plan/",
+      "locale": "en",
+      "check": "heading-hierarchy",
+      "status": "PASS",
+      "actual": "ok",
+      "expected": "no skipped levels",
+      "fix": ""
+    },
+    {
+      "url": "/plan/",
+      "locale": "en",
+      "check": "hreflang-reciprocal",
+      "status": "PASS",
+      "actual": "ok",
+      "expected": "reciprocal",
+      "fix": ""
+    },
+    {
+      "url": "/plan/",
+      "locale": "en",
+      "check": "hreflang-self",
+      "status": "PASS",
+      "actual": "/plan/",
+      "expected": "/plan/",
+      "fix": ""
+    },
+    {
+      "url": "/plan/",
+      "locale": "en",
+      "check": "html-lang",
+      "status": "PASS",
+      "actual": "en",
+      "expected": "en",
+      "fix": ""
+    },
+    {
+      "url": "/plan/",
+      "locale": "en",
+      "check": "img-alt",
+      "status": "PASS",
+      "actual": "0",
+      "expected": "0",
+      "fix": ""
+    },
+    {
+      "url": "/plan/",
+      "locale": "en",
+      "check": "indexable",
+      "status": "PASS",
+      "actual": "index",
+      "expected": "index",
+      "fix": ""
+    },
+    {
+      "url": "/plan/",
+      "locale": "en",
+      "check": "jsonld-no-duplicate-ids",
+      "status": "PASS",
+      "actual": "ok",
+      "expected": "unique",
+      "fix": ""
+    },
+    {
+      "url": "/plan/",
+      "locale": "en",
+      "check": "jsonld-valid",
+      "status": "PASS",
+      "actual": "2 block(s)",
+      "expected": "valid JSON",
+      "fix": ""
+    },
+    {
+      "url": "/plan/",
+      "locale": "en",
+      "check": "keyword-in-h1",
+      "status": "PASS",
+      "actual": "plan your villa project in koh phangan",
+      "expected": "plan your villa project",
+      "fix": ""
+    },
+    {
+      "url": "/plan/",
+      "locale": "en",
+      "check": "keyword-in-opening",
+      "status": "PASS",
+      "actual": "first 600 chars",
+      "expected": "plan your villa project",
+      "fix": ""
+    },
+    {
+      "url": "/plan/",
+      "locale": "en",
+      "check": "placeholders",
+      "status": "PASS",
+      "actual": "none",
+      "expected": "none",
+      "fix": "Remove placeholder text"
+    },
+    {
+      "url": "/plan/",
+      "locale": "en",
+      "check": "rtl-config",
+      "status": "PASS",
+      "actual": "ltr",
+      "expected": "ltr",
+      "fix": ""
+    },
+    {
+      "url": "/plan/",
+      "locale": "en",
+      "check": "title-length",
+      "status": "PASS",
+      "actual": "62",
+      "expected": "20-65",
+      "fix": "Shorten/lengthen title"
+    },
+    {
+      "url": "/plan/",
+      "locale": "en",
+      "check": "title-present",
+      "status": "PASS",
+      "actual": "Plan Your Villa Project: Estimate &amp; Service Finder | FORMA",
+      "expected": "non-empty",
+      "fix": ""
+    },
+    {
       "url": "/privacy/",
       "locale": "en",
       "check": "canonical-correct",
@@ -14390,6 +15128,186 @@
       "fix": "Look for English fallback strings"
     },
     {
+      "url": "/ru/checklist/",
+      "locale": "ru",
+      "check": "canonical-correct",
+      "status": "PASS",
+      "actual": "/ru/checklist/",
+      "expected": "/ru/checklist/",
+      "fix": "Canonical must be the page itself (language-specific)"
+    },
+    {
+      "url": "/ru/checklist/",
+      "locale": "ru",
+      "check": "canonical-present",
+      "status": "PASS",
+      "actual": "https://forma.in.th/ru/checklist/",
+      "expected": "present",
+      "fix": ""
+    },
+    {
+      "url": "/ru/checklist/",
+      "locale": "ru",
+      "check": "description-length",
+      "status": "PASS",
+      "actual": "159",
+      "expected": "110-170",
+      "fix": "Rewrite meta description"
+    },
+    {
+      "url": "/ru/checklist/",
+      "locale": "ru",
+      "check": "description-present",
+      "status": "PASS",
+      "actual": "159",
+      "expected": "non-empty",
+      "fix": ""
+    },
+    {
+      "url": "/ru/checklist/",
+      "locale": "ru",
+      "check": "direct-answer",
+      "status": "PASS",
+      "actual": "42",
+      "expected": "40-60 words",
+      "fix": "Tighten the opening answer"
+    },
+    {
+      "url": "/ru/checklist/",
+      "locale": "ru",
+      "check": "english-heading",
+      "status": "PASS",
+      "actual": "none",
+      "expected": "translated headings",
+      "fix": "Translate hard-coded English heading"
+    },
+    {
+      "url": "/ru/checklist/",
+      "locale": "ru",
+      "check": "h1-single",
+      "status": "PASS",
+      "actual": "1",
+      "expected": "1",
+      "fix": ""
+    },
+    {
+      "url": "/ru/checklist/",
+      "locale": "ru",
+      "check": "heading-hierarchy",
+      "status": "PASS",
+      "actual": "ok",
+      "expected": "no skipped levels",
+      "fix": ""
+    },
+    {
+      "url": "/ru/checklist/",
+      "locale": "ru",
+      "check": "hreflang-reciprocal",
+      "status": "PASS",
+      "actual": "ok",
+      "expected": "reciprocal",
+      "fix": ""
+    },
+    {
+      "url": "/ru/checklist/",
+      "locale": "ru",
+      "check": "hreflang-self",
+      "status": "PASS",
+      "actual": "/ru/checklist/",
+      "expected": "/ru/checklist/",
+      "fix": ""
+    },
+    {
+      "url": "/ru/checklist/",
+      "locale": "ru",
+      "check": "html-lang",
+      "status": "PASS",
+      "actual": "ru",
+      "expected": "ru",
+      "fix": ""
+    },
+    {
+      "url": "/ru/checklist/",
+      "locale": "ru",
+      "check": "img-alt",
+      "status": "PASS",
+      "actual": "0",
+      "expected": "0",
+      "fix": ""
+    },
+    {
+      "url": "/ru/checklist/",
+      "locale": "ru",
+      "check": "indexable",
+      "status": "PASS",
+      "actual": "index",
+      "expected": "index",
+      "fix": ""
+    },
+    {
+      "url": "/ru/checklist/",
+      "locale": "ru",
+      "check": "jsonld-no-duplicate-ids",
+      "status": "PASS",
+      "actual": "ok",
+      "expected": "unique",
+      "fix": ""
+    },
+    {
+      "url": "/ru/checklist/",
+      "locale": "ru",
+      "check": "jsonld-valid",
+      "status": "PASS",
+      "actual": "2 block(s)",
+      "expected": "valid JSON",
+      "fix": ""
+    },
+    {
+      "url": "/ru/checklist/",
+      "locale": "ru",
+      "check": "placeholders",
+      "status": "PASS",
+      "actual": "none",
+      "expected": "none",
+      "fix": "Remove placeholder text"
+    },
+    {
+      "url": "/ru/checklist/",
+      "locale": "ru",
+      "check": "rtl-config",
+      "status": "PASS",
+      "actual": "ltr",
+      "expected": "ltr",
+      "fix": ""
+    },
+    {
+      "url": "/ru/checklist/",
+      "locale": "ru",
+      "check": "title-length",
+      "status": "PASS",
+      "actual": "47",
+      "expected": "20-65",
+      "fix": "Shorten/lengthen title"
+    },
+    {
+      "url": "/ru/checklist/",
+      "locale": "ru",
+      "check": "title-present",
+      "status": "PASS",
+      "actual": "Чек-лист проекта виллы: что подготовить | FORMA",
+      "expected": "non-empty",
+      "fix": ""
+    },
+    {
+      "url": "/ru/checklist/",
+      "locale": "ru",
+      "check": "untranslated-text",
+      "status": "PASS",
+      "actual": "0% Latin letters",
+      "expected": "<=30%",
+      "fix": "Look for English fallback strings"
+    },
+    {
       "url": "/ru/contact/",
       "locale": "ru",
       "check": "canonical-correct",
@@ -14556,7 +15474,7 @@
       "locale": "ru",
       "check": "untranslated-text",
       "status": "PASS",
-      "actual": "11% Latin letters",
+      "actual": "10% Latin letters",
       "expected": "<=30%",
       "fix": "Look for English fallback strings"
     },
@@ -16212,7 +17130,7 @@
       "locale": "ru",
       "check": "untranslated-text",
       "status": "PASS",
-      "actual": "1% Latin letters",
+      "actual": "2% Latin letters",
       "expected": "<=30%",
       "fix": "Look for English fallback strings"
     },
@@ -16392,7 +17310,7 @@
       "locale": "ru",
       "check": "untranslated-text",
       "status": "PASS",
-      "actual": "2% Latin letters",
+      "actual": "3% Latin letters",
       "expected": "<=30%",
       "fix": "Look for English fallback strings"
     },
@@ -16572,7 +17490,7 @@
       "locale": "ru",
       "check": "untranslated-text",
       "status": "PASS",
-      "actual": "1% Latin letters",
+      "actual": "2% Latin letters",
       "expected": "<=30%",
       "fix": "Look for English fallback strings"
     },
@@ -16752,7 +17670,7 @@
       "locale": "ru",
       "check": "untranslated-text",
       "status": "PASS",
-      "actual": "2% Latin letters",
+      "actual": "3% Latin letters",
       "expected": "<=30%",
       "fix": "Look for English fallback strings"
     },
@@ -16932,7 +17850,7 @@
       "locale": "ru",
       "check": "untranslated-text",
       "status": "PASS",
-      "actual": "2% Latin letters",
+      "actual": "3% Latin letters",
       "expected": "<=30%",
       "fix": "Look for English fallback strings"
     },
@@ -17472,7 +18390,7 @@
       "locale": "ru",
       "check": "untranslated-text",
       "status": "PASS",
-      "actual": "1% Latin letters",
+      "actual": "2% Latin letters",
       "expected": "<=30%",
       "fix": "Look for English fallback strings"
     },
@@ -17652,7 +18570,7 @@
       "locale": "ru",
       "check": "untranslated-text",
       "status": "PASS",
-      "actual": "2% Latin letters",
+      "actual": "3% Latin letters",
       "expected": "<=30%",
       "fix": "Look for English fallback strings"
     },
@@ -17833,6 +18751,186 @@
       "check": "untranslated-text",
       "status": "PASS",
       "actual": "2% Latin letters",
+      "expected": "<=30%",
+      "fix": "Look for English fallback strings"
+    },
+    {
+      "url": "/ru/plan/",
+      "locale": "ru",
+      "check": "canonical-correct",
+      "status": "PASS",
+      "actual": "/ru/plan/",
+      "expected": "/ru/plan/",
+      "fix": "Canonical must be the page itself (language-specific)"
+    },
+    {
+      "url": "/ru/plan/",
+      "locale": "ru",
+      "check": "canonical-present",
+      "status": "PASS",
+      "actual": "https://forma.in.th/ru/plan/",
+      "expected": "present",
+      "fix": ""
+    },
+    {
+      "url": "/ru/plan/",
+      "locale": "ru",
+      "check": "description-length",
+      "status": "PASS",
+      "actual": "153",
+      "expected": "110-170",
+      "fix": "Rewrite meta description"
+    },
+    {
+      "url": "/ru/plan/",
+      "locale": "ru",
+      "check": "description-present",
+      "status": "PASS",
+      "actual": "153",
+      "expected": "non-empty",
+      "fix": ""
+    },
+    {
+      "url": "/ru/plan/",
+      "locale": "ru",
+      "check": "direct-answer",
+      "status": "PASS",
+      "actual": "47",
+      "expected": "40-60 words",
+      "fix": "Tighten the opening answer"
+    },
+    {
+      "url": "/ru/plan/",
+      "locale": "ru",
+      "check": "english-heading",
+      "status": "PASS",
+      "actual": "none",
+      "expected": "translated headings",
+      "fix": "Translate hard-coded English heading"
+    },
+    {
+      "url": "/ru/plan/",
+      "locale": "ru",
+      "check": "h1-single",
+      "status": "PASS",
+      "actual": "1",
+      "expected": "1",
+      "fix": ""
+    },
+    {
+      "url": "/ru/plan/",
+      "locale": "ru",
+      "check": "heading-hierarchy",
+      "status": "PASS",
+      "actual": "ok",
+      "expected": "no skipped levels",
+      "fix": ""
+    },
+    {
+      "url": "/ru/plan/",
+      "locale": "ru",
+      "check": "hreflang-reciprocal",
+      "status": "PASS",
+      "actual": "ok",
+      "expected": "reciprocal",
+      "fix": ""
+    },
+    {
+      "url": "/ru/plan/",
+      "locale": "ru",
+      "check": "hreflang-self",
+      "status": "PASS",
+      "actual": "/ru/plan/",
+      "expected": "/ru/plan/",
+      "fix": ""
+    },
+    {
+      "url": "/ru/plan/",
+      "locale": "ru",
+      "check": "html-lang",
+      "status": "PASS",
+      "actual": "ru",
+      "expected": "ru",
+      "fix": ""
+    },
+    {
+      "url": "/ru/plan/",
+      "locale": "ru",
+      "check": "img-alt",
+      "status": "PASS",
+      "actual": "0",
+      "expected": "0",
+      "fix": ""
+    },
+    {
+      "url": "/ru/plan/",
+      "locale": "ru",
+      "check": "indexable",
+      "status": "PASS",
+      "actual": "index",
+      "expected": "index",
+      "fix": ""
+    },
+    {
+      "url": "/ru/plan/",
+      "locale": "ru",
+      "check": "jsonld-no-duplicate-ids",
+      "status": "PASS",
+      "actual": "ok",
+      "expected": "unique",
+      "fix": ""
+    },
+    {
+      "url": "/ru/plan/",
+      "locale": "ru",
+      "check": "jsonld-valid",
+      "status": "PASS",
+      "actual": "2 block(s)",
+      "expected": "valid JSON",
+      "fix": ""
+    },
+    {
+      "url": "/ru/plan/",
+      "locale": "ru",
+      "check": "placeholders",
+      "status": "PASS",
+      "actual": "none",
+      "expected": "none",
+      "fix": "Remove placeholder text"
+    },
+    {
+      "url": "/ru/plan/",
+      "locale": "ru",
+      "check": "rtl-config",
+      "status": "PASS",
+      "actual": "ltr",
+      "expected": "ltr",
+      "fix": ""
+    },
+    {
+      "url": "/ru/plan/",
+      "locale": "ru",
+      "check": "title-length",
+      "status": "PASS",
+      "actual": "48",
+      "expected": "20-65",
+      "fix": "Shorten/lengthen title"
+    },
+    {
+      "url": "/ru/plan/",
+      "locale": "ru",
+      "check": "title-present",
+      "status": "PASS",
+      "actual": "Планирование виллы: смета и подбор услуг | FORMA",
+      "expected": "non-empty",
+      "fix": ""
+    },
+    {
+      "url": "/ru/plan/",
+      "locale": "ru",
+      "check": "untranslated-text",
+      "status": "PASS",
+      "actual": "1% Latin letters",
       "expected": "<=30%",
       "fix": "Look for English fallback strings"
     },
@@ -18552,7 +19650,7 @@
       "locale": "ru",
       "check": "untranslated-text",
       "status": "PASS",
-      "actual": "2% Latin letters",
+      "actual": "3% Latin letters",
       "expected": "<=30%",
       "fix": "Look for English fallback strings"
     },
@@ -18930,7 +20028,7 @@
       "locale": "ru",
       "check": "untranslated-text",
       "status": "PASS",
-      "actual": "3% Latin letters",
+      "actual": "4% Latin letters",
       "expected": "<=30%",
       "fix": "Look for English fallback strings"
     },
@@ -19119,7 +20217,7 @@
       "locale": "ru",
       "check": "untranslated-text",
       "status": "PASS",
-      "actual": "1% Latin letters",
+      "actual": "2% Latin letters",
       "expected": "<=30%",
       "fix": "Look for English fallback strings"
     },
@@ -19308,7 +20406,7 @@
       "locale": "ru",
       "check": "untranslated-text",
       "status": "PASS",
-      "actual": "0% Latin letters",
+      "actual": "1% Latin letters",
       "expected": "<=30%",
       "fix": "Look for English fallback strings"
     },
@@ -19506,7 +20604,7 @@
       "locale": "ru",
       "check": "word-count",
       "status": "PASS",
-      "actual": "1708",
+      "actual": "1940",
       "expected": ">=1500",
       "fix": "Expand with original, useful content (not filler)"
     },
@@ -19703,8 +20801,8 @@
       "url": "/ru/services/concrete-construction/",
       "locale": "ru",
       "check": "word-count",
-      "status": "WARNING",
-      "actual": "1469",
+      "status": "PASS",
+      "actual": "1658",
       "expected": ">=1500",
       "fix": "Expand with original, useful content (not filler)"
     },
@@ -19901,8 +20999,8 @@
       "url": "/ru/services/construction-supervision/",
       "locale": "ru",
       "check": "word-count",
-      "status": "WARNING",
-      "actual": "1457",
+      "status": "PASS",
+      "actual": "1659",
       "expected": ">=1500",
       "fix": "Expand with original, useful content (not filler)"
     },
@@ -20100,7 +21198,7 @@
       "locale": "ru",
       "check": "word-count",
       "status": "PASS",
-      "actual": "1578",
+      "actual": "1765",
       "expected": ">=1500",
       "fix": "Expand with original, useful content (not filler)"
     },
@@ -20298,7 +21396,7 @@
       "locale": "ru",
       "check": "word-count",
       "status": "PASS",
-      "actual": "1657",
+      "actual": "1862",
       "expected": ">=1500",
       "fix": "Expand with original, useful content (not filler)"
     },
@@ -20496,7 +21594,7 @@
       "locale": "ru",
       "check": "word-count",
       "status": "PASS",
-      "actual": "1694",
+      "actual": "1897",
       "expected": ">=1500",
       "fix": "Expand with original, useful content (not filler)"
     },
@@ -20694,7 +21792,7 @@
       "locale": "ru",
       "check": "word-count",
       "status": "PASS",
-      "actual": "1612",
+      "actual": "1807",
       "expected": ">=1500",
       "fix": "Expand with original, useful content (not filler)"
     },
@@ -20892,7 +21990,7 @@
       "locale": "ru",
       "check": "word-count",
       "status": "PASS",
-      "actual": "1516",
+      "actual": "1704",
       "expected": ">=1500",
       "fix": "Expand with original, useful content (not filler)"
     },
@@ -21081,7 +22179,7 @@
       "locale": "ru",
       "check": "untranslated-text",
       "status": "PASS",
-      "actual": "0% Latin letters",
+      "actual": "1% Latin letters",
       "expected": "<=30%",
       "fix": "Look for English fallback strings"
     },
@@ -21090,7 +22188,7 @@
       "locale": "ru",
       "check": "word-count",
       "status": "PASS",
-      "actual": "1583",
+      "actual": "1802",
       "expected": ">=1500",
       "fix": "Expand with original, useful content (not filler)"
     },
@@ -21288,7 +22386,7 @@
       "locale": "ru",
       "check": "word-count",
       "status": "PASS",
-      "actual": "1513",
+      "actual": "1701",
       "expected": ">=1500",
       "fix": "Expand with original, useful content (not filler)"
     },
@@ -21485,8 +22583,8 @@
       "url": "/ru/services/technical-supervision/",
       "locale": "ru",
       "check": "word-count",
-      "status": "WARNING",
-      "actual": "1481",
+      "status": "PASS",
+      "actual": "1686",
       "expected": ">=1500",
       "fix": "Expand with original, useful content (not filler)"
     },
@@ -21675,7 +22773,7 @@
       "locale": "ru",
       "check": "untranslated-text",
       "status": "PASS",
-      "actual": "0% Latin letters",
+      "actual": "1% Latin letters",
       "expected": "<=30%",
       "fix": "Look for English fallback strings"
     },
@@ -21684,7 +22782,7 @@
       "locale": "ru",
       "check": "word-count",
       "status": "PASS",
-      "actual": "1554",
+      "actual": "1745",
       "expected": ">=1500",
       "fix": "Expand with original, useful content (not filler)"
     },
@@ -21882,7 +22980,7 @@
       "locale": "ru",
       "check": "word-count",
       "status": "PASS",
-      "actual": "1737",
+      "actual": "1962",
       "expected": ">=1500",
       "fix": "Expand with original, useful content (not filler)"
     },
@@ -22233,7 +23331,7 @@
       "locale": "en",
       "check": "word-count",
       "status": "PASS",
-      "actual": "1818",
+      "actual": "2037",
       "expected": ">=1500",
       "fix": "Expand with original, useful content (not filler)"
     },
@@ -22440,7 +23538,7 @@
       "locale": "en",
       "check": "word-count",
       "status": "PASS",
-      "actual": "1565",
+      "actual": "1753",
       "expected": ">=1500",
       "fix": "Expand with original, useful content (not filler)"
     },
@@ -22647,7 +23745,7 @@
       "locale": "en",
       "check": "word-count",
       "status": "PASS",
-      "actual": "1580",
+      "actual": "1772",
       "expected": ">=1500",
       "fix": "Expand with original, useful content (not filler)"
     },
@@ -22854,7 +23952,7 @@
       "locale": "en",
       "check": "word-count",
       "status": "PASS",
-      "actual": "1622",
+      "actual": "1806",
       "expected": ">=1500",
       "fix": "Expand with original, useful content (not filler)"
     },
@@ -23061,7 +24159,7 @@
       "locale": "en",
       "check": "word-count",
       "status": "PASS",
-      "actual": "1704",
+      "actual": "1897",
       "expected": ">=1500",
       "fix": "Expand with original, useful content (not filler)"
     },
@@ -23268,7 +24366,7 @@
       "locale": "en",
       "check": "word-count",
       "status": "PASS",
-      "actual": "1708",
+      "actual": "1900",
       "expected": ">=1500",
       "fix": "Expand with original, useful content (not filler)"
     },
@@ -23475,7 +24573,7 @@
       "locale": "en",
       "check": "word-count",
       "status": "PASS",
-      "actual": "1648",
+      "actual": "1830",
       "expected": ">=1500",
       "fix": "Expand with original, useful content (not filler)"
     },
@@ -23682,7 +24780,7 @@
       "locale": "en",
       "check": "word-count",
       "status": "PASS",
-      "actual": "1588",
+      "actual": "1765",
       "expected": ">=1500",
       "fix": "Expand with original, useful content (not filler)"
     },
@@ -23889,7 +24987,7 @@
       "locale": "en",
       "check": "word-count",
       "status": "PASS",
-      "actual": "1660",
+      "actual": "1869",
       "expected": ">=1500",
       "fix": "Expand with original, useful content (not filler)"
     },
@@ -24096,7 +25194,7 @@
       "locale": "en",
       "check": "word-count",
       "status": "PASS",
-      "actual": "1556",
+      "actual": "1741",
       "expected": ">=1500",
       "fix": "Expand with original, useful content (not filler)"
     },
@@ -24303,7 +25401,7 @@
       "locale": "en",
       "check": "word-count",
       "status": "PASS",
-      "actual": "1543",
+      "actual": "1736",
       "expected": ">=1500",
       "fix": "Expand with original, useful content (not filler)"
     },
@@ -24510,7 +25608,7 @@
       "locale": "en",
       "check": "word-count",
       "status": "PASS",
-      "actual": "1607",
+      "actual": "1795",
       "expected": ">=1500",
       "fix": "Expand with original, useful content (not filler)"
     },
@@ -24717,7 +25815,7 @@
       "locale": "en",
       "check": "word-count",
       "status": "PASS",
-      "actual": "1824",
+      "actual": "2048",
       "expected": ">=1500",
       "fix": "Expand with original, useful content (not filler)"
     },
@@ -25235,6 +26333,186 @@
       "fix": "Look for English fallback strings"
     },
     {
+      "url": "/th/checklist/",
+      "locale": "th",
+      "check": "canonical-correct",
+      "status": "PASS",
+      "actual": "/th/checklist/",
+      "expected": "/th/checklist/",
+      "fix": "Canonical must be the page itself (language-specific)"
+    },
+    {
+      "url": "/th/checklist/",
+      "locale": "th",
+      "check": "canonical-present",
+      "status": "PASS",
+      "actual": "https://forma.in.th/th/checklist/",
+      "expected": "present",
+      "fix": ""
+    },
+    {
+      "url": "/th/checklist/",
+      "locale": "th",
+      "check": "description-length",
+      "status": "PASS",
+      "actual": "155",
+      "expected": "110-170",
+      "fix": "Rewrite meta description"
+    },
+    {
+      "url": "/th/checklist/",
+      "locale": "th",
+      "check": "description-present",
+      "status": "PASS",
+      "actual": "155",
+      "expected": "non-empty",
+      "fix": ""
+    },
+    {
+      "url": "/th/checklist/",
+      "locale": "th",
+      "check": "direct-answer",
+      "status": "PASS",
+      "actual": "42",
+      "expected": "40-60 words",
+      "fix": "Tighten the opening answer"
+    },
+    {
+      "url": "/th/checklist/",
+      "locale": "th",
+      "check": "english-heading",
+      "status": "PASS",
+      "actual": "none",
+      "expected": "translated headings",
+      "fix": "Translate hard-coded English heading"
+    },
+    {
+      "url": "/th/checklist/",
+      "locale": "th",
+      "check": "h1-single",
+      "status": "PASS",
+      "actual": "1",
+      "expected": "1",
+      "fix": ""
+    },
+    {
+      "url": "/th/checklist/",
+      "locale": "th",
+      "check": "heading-hierarchy",
+      "status": "PASS",
+      "actual": "ok",
+      "expected": "no skipped levels",
+      "fix": ""
+    },
+    {
+      "url": "/th/checklist/",
+      "locale": "th",
+      "check": "hreflang-reciprocal",
+      "status": "PASS",
+      "actual": "ok",
+      "expected": "reciprocal",
+      "fix": ""
+    },
+    {
+      "url": "/th/checklist/",
+      "locale": "th",
+      "check": "hreflang-self",
+      "status": "PASS",
+      "actual": "/th/checklist/",
+      "expected": "/th/checklist/",
+      "fix": ""
+    },
+    {
+      "url": "/th/checklist/",
+      "locale": "th",
+      "check": "html-lang",
+      "status": "PASS",
+      "actual": "th",
+      "expected": "th",
+      "fix": ""
+    },
+    {
+      "url": "/th/checklist/",
+      "locale": "th",
+      "check": "img-alt",
+      "status": "PASS",
+      "actual": "0",
+      "expected": "0",
+      "fix": ""
+    },
+    {
+      "url": "/th/checklist/",
+      "locale": "th",
+      "check": "indexable",
+      "status": "PASS",
+      "actual": "index",
+      "expected": "index",
+      "fix": ""
+    },
+    {
+      "url": "/th/checklist/",
+      "locale": "th",
+      "check": "jsonld-no-duplicate-ids",
+      "status": "PASS",
+      "actual": "ok",
+      "expected": "unique",
+      "fix": ""
+    },
+    {
+      "url": "/th/checklist/",
+      "locale": "th",
+      "check": "jsonld-valid",
+      "status": "PASS",
+      "actual": "2 block(s)",
+      "expected": "valid JSON",
+      "fix": ""
+    },
+    {
+      "url": "/th/checklist/",
+      "locale": "th",
+      "check": "placeholders",
+      "status": "PASS",
+      "actual": "none",
+      "expected": "none",
+      "fix": "Remove placeholder text"
+    },
+    {
+      "url": "/th/checklist/",
+      "locale": "th",
+      "check": "rtl-config",
+      "status": "PASS",
+      "actual": "ltr",
+      "expected": "ltr",
+      "fix": ""
+    },
+    {
+      "url": "/th/checklist/",
+      "locale": "th",
+      "check": "title-length",
+      "status": "PASS",
+      "actual": "48",
+      "expected": "20-65",
+      "fix": "Shorten/lengthen title"
+    },
+    {
+      "url": "/th/checklist/",
+      "locale": "th",
+      "check": "title-present",
+      "status": "PASS",
+      "actual": "เช็กลิสต์โครงการวิลล่า: สิ่งที่ควรเตรียม | FORMA",
+      "expected": "non-empty",
+      "fix": ""
+    },
+    {
+      "url": "/th/checklist/",
+      "locale": "th",
+      "check": "untranslated-text",
+      "status": "PASS",
+      "actual": "0% Latin letters",
+      "expected": "<=30%",
+      "fix": "Look for English fallback strings"
+    },
+    {
       "url": "/th/contact/",
       "locale": "th",
       "check": "canonical-correct",
@@ -25401,7 +26679,7 @@
       "locale": "th",
       "check": "untranslated-text",
       "status": "PASS",
-      "actual": "13% Latin letters",
+      "actual": "12% Latin letters",
       "expected": "<=30%",
       "fix": "Look for English fallback strings"
     },
@@ -26877,7 +28155,7 @@
       "locale": "th",
       "check": "untranslated-text",
       "status": "PASS",
-      "actual": "3% Latin letters",
+      "actual": "4% Latin letters",
       "expected": "<=30%",
       "fix": "Look for English fallback strings"
     },
@@ -27237,7 +28515,7 @@
       "locale": "th",
       "check": "untranslated-text",
       "status": "PASS",
-      "actual": "3% Latin letters",
+      "actual": "4% Latin letters",
       "expected": "<=30%",
       "fix": "Look for English fallback strings"
     },
@@ -27417,7 +28695,7 @@
       "locale": "th",
       "check": "untranslated-text",
       "status": "PASS",
-      "actual": "1% Latin letters",
+      "actual": "2% Latin letters",
       "expected": "<=30%",
       "fix": "Look for English fallback strings"
     },
@@ -27597,7 +28875,7 @@
       "locale": "th",
       "check": "untranslated-text",
       "status": "PASS",
-      "actual": "3% Latin letters",
+      "actual": "4% Latin letters",
       "expected": "<=30%",
       "fix": "Look for English fallback strings"
     },
@@ -27777,7 +29055,7 @@
       "locale": "th",
       "check": "untranslated-text",
       "status": "PASS",
-      "actual": "3% Latin letters",
+      "actual": "4% Latin letters",
       "expected": "<=30%",
       "fix": "Look for English fallback strings"
     },
@@ -27957,7 +29235,7 @@
       "locale": "th",
       "check": "untranslated-text",
       "status": "PASS",
-      "actual": "1% Latin letters",
+      "actual": "2% Latin letters",
       "expected": "<=30%",
       "fix": "Look for English fallback strings"
     },
@@ -28317,7 +29595,7 @@
       "locale": "th",
       "check": "untranslated-text",
       "status": "PASS",
-      "actual": "1% Latin letters",
+      "actual": "2% Latin letters",
       "expected": "<=30%",
       "fix": "Look for English fallback strings"
     },
@@ -28497,7 +29775,7 @@
       "locale": "th",
       "check": "untranslated-text",
       "status": "PASS",
-      "actual": "3% Latin letters",
+      "actual": "4% Latin letters",
       "expected": "<=30%",
       "fix": "Look for English fallback strings"
     },
@@ -28677,7 +29955,187 @@
       "locale": "th",
       "check": "untranslated-text",
       "status": "PASS",
-      "actual": "2% Latin letters",
+      "actual": "3% Latin letters",
+      "expected": "<=30%",
+      "fix": "Look for English fallback strings"
+    },
+    {
+      "url": "/th/plan/",
+      "locale": "th",
+      "check": "canonical-correct",
+      "status": "PASS",
+      "actual": "/th/plan/",
+      "expected": "/th/plan/",
+      "fix": "Canonical must be the page itself (language-specific)"
+    },
+    {
+      "url": "/th/plan/",
+      "locale": "th",
+      "check": "canonical-present",
+      "status": "PASS",
+      "actual": "https://forma.in.th/th/plan/",
+      "expected": "present",
+      "fix": ""
+    },
+    {
+      "url": "/th/plan/",
+      "locale": "th",
+      "check": "description-length",
+      "status": "PASS",
+      "actual": "123",
+      "expected": "110-170",
+      "fix": "Rewrite meta description"
+    },
+    {
+      "url": "/th/plan/",
+      "locale": "th",
+      "check": "description-present",
+      "status": "PASS",
+      "actual": "123",
+      "expected": "non-empty",
+      "fix": ""
+    },
+    {
+      "url": "/th/plan/",
+      "locale": "th",
+      "check": "direct-answer",
+      "status": "PASS",
+      "actual": "53",
+      "expected": "40-60 words",
+      "fix": "Tighten the opening answer"
+    },
+    {
+      "url": "/th/plan/",
+      "locale": "th",
+      "check": "english-heading",
+      "status": "PASS",
+      "actual": "none",
+      "expected": "translated headings",
+      "fix": "Translate hard-coded English heading"
+    },
+    {
+      "url": "/th/plan/",
+      "locale": "th",
+      "check": "h1-single",
+      "status": "PASS",
+      "actual": "1",
+      "expected": "1",
+      "fix": ""
+    },
+    {
+      "url": "/th/plan/",
+      "locale": "th",
+      "check": "heading-hierarchy",
+      "status": "PASS",
+      "actual": "ok",
+      "expected": "no skipped levels",
+      "fix": ""
+    },
+    {
+      "url": "/th/plan/",
+      "locale": "th",
+      "check": "hreflang-reciprocal",
+      "status": "PASS",
+      "actual": "ok",
+      "expected": "reciprocal",
+      "fix": ""
+    },
+    {
+      "url": "/th/plan/",
+      "locale": "th",
+      "check": "hreflang-self",
+      "status": "PASS",
+      "actual": "/th/plan/",
+      "expected": "/th/plan/",
+      "fix": ""
+    },
+    {
+      "url": "/th/plan/",
+      "locale": "th",
+      "check": "html-lang",
+      "status": "PASS",
+      "actual": "th",
+      "expected": "th",
+      "fix": ""
+    },
+    {
+      "url": "/th/plan/",
+      "locale": "th",
+      "check": "img-alt",
+      "status": "PASS",
+      "actual": "0",
+      "expected": "0",
+      "fix": ""
+    },
+    {
+      "url": "/th/plan/",
+      "locale": "th",
+      "check": "indexable",
+      "status": "PASS",
+      "actual": "index",
+      "expected": "index",
+      "fix": ""
+    },
+    {
+      "url": "/th/plan/",
+      "locale": "th",
+      "check": "jsonld-no-duplicate-ids",
+      "status": "PASS",
+      "actual": "ok",
+      "expected": "unique",
+      "fix": ""
+    },
+    {
+      "url": "/th/plan/",
+      "locale": "th",
+      "check": "jsonld-valid",
+      "status": "PASS",
+      "actual": "2 block(s)",
+      "expected": "valid JSON",
+      "fix": ""
+    },
+    {
+      "url": "/th/plan/",
+      "locale": "th",
+      "check": "placeholders",
+      "status": "PASS",
+      "actual": "none",
+      "expected": "none",
+      "fix": "Remove placeholder text"
+    },
+    {
+      "url": "/th/plan/",
+      "locale": "th",
+      "check": "rtl-config",
+      "status": "PASS",
+      "actual": "ltr",
+      "expected": "ltr",
+      "fix": ""
+    },
+    {
+      "url": "/th/plan/",
+      "locale": "th",
+      "check": "title-length",
+      "status": "PASS",
+      "actual": "53",
+      "expected": "20-65",
+      "fix": "Shorten/lengthen title"
+    },
+    {
+      "url": "/th/plan/",
+      "locale": "th",
+      "check": "title-present",
+      "status": "PASS",
+      "actual": "วางแผนโครงการวิลล่า ประเมินราคาและเลือกบริการ | FORMA",
+      "expected": "non-empty",
+      "fix": ""
+    },
+    {
+      "url": "/th/plan/",
+      "locale": "th",
+      "check": "untranslated-text",
+      "status": "PASS",
+      "actual": "1% Latin letters",
       "expected": "<=30%",
       "fix": "Look for English fallback strings"
     },
@@ -29208,7 +30666,7 @@
       "locale": "th",
       "check": "untranslated-text",
       "status": "PASS",
-      "actual": "3% Latin letters",
+      "actual": "4% Latin letters",
       "expected": "<=30%",
       "fix": "Look for English fallback strings"
     },
@@ -29397,7 +30855,7 @@
       "locale": "th",
       "check": "untranslated-text",
       "status": "PASS",
-      "actual": "2% Latin letters",
+      "actual": "3% Latin letters",
       "expected": "<=30%",
       "fix": "Look for English fallback strings"
     },
@@ -29586,7 +31044,7 @@
       "locale": "th",
       "check": "untranslated-text",
       "status": "PASS",
-      "actual": "3% Latin letters",
+      "actual": "4% Latin letters",
       "expected": "<=30%",
       "fix": "Look for English fallback strings"
     },
@@ -29775,7 +31233,7 @@
       "locale": "th",
       "check": "untranslated-text",
       "status": "PASS",
-      "actual": "4% Latin letters",
+      "actual": "5% Latin letters",
       "expected": "<=30%",
       "fix": "Look for English fallback strings"
     },
@@ -29964,7 +31422,7 @@
       "locale": "th",
       "check": "untranslated-text",
       "status": "PASS",
-      "actual": "2% Latin letters",
+      "actual": "3% Latin letters",
       "expected": "<=30%",
       "fix": "Look for English fallback strings"
     },
@@ -30153,7 +31611,7 @@
       "locale": "th",
       "check": "untranslated-text",
       "status": "PASS",
-      "actual": "0% Latin letters",
+      "actual": "1% Latin letters",
       "expected": "<=30%",
       "fix": "Look for English fallback strings"
     },
@@ -30342,7 +31800,7 @@
       "locale": "th",
       "check": "untranslated-text",
       "status": "PASS",
-      "actual": "0% Latin letters",
+      "actual": "1% Latin letters",
       "expected": "<=30%",
       "fix": "Look for English fallback strings"
     },
@@ -30351,7 +31809,7 @@
       "locale": "th",
       "check": "word-count",
       "status": "PASS",
-      "actual": "1769",
+      "actual": "2012",
       "expected": ">=1500",
       "fix": "Expand with original, useful content (not filler)"
     },
@@ -30540,7 +31998,7 @@
       "locale": "th",
       "check": "untranslated-text",
       "status": "PASS",
-      "actual": "0% Latin letters",
+      "actual": "1% Latin letters",
       "expected": "<=30%",
       "fix": "Look for English fallback strings"
     },
@@ -30549,7 +32007,7 @@
       "locale": "th",
       "check": "word-count",
       "status": "PASS",
-      "actual": "1529",
+      "actual": "1754",
       "expected": ">=1500",
       "fix": "Expand with original, useful content (not filler)"
     },
@@ -30746,8 +32204,8 @@
       "url": "/th/services/construction-supervision/",
       "locale": "th",
       "check": "word-count",
-      "status": "WARNING",
-      "actual": "1497",
+      "status": "PASS",
+      "actual": "1722",
       "expected": ">=1500",
       "fix": "Expand with original, useful content (not filler)"
     },
@@ -30945,7 +32403,7 @@
       "locale": "th",
       "check": "word-count",
       "status": "PASS",
-      "actual": "1563",
+      "actual": "1784",
       "expected": ">=1500",
       "fix": "Expand with original, useful content (not filler)"
     },
@@ -31134,7 +32592,7 @@
       "locale": "th",
       "check": "untranslated-text",
       "status": "PASS",
-      "actual": "0% Latin letters",
+      "actual": "1% Latin letters",
       "expected": "<=30%",
       "fix": "Look for English fallback strings"
     },
@@ -31143,7 +32601,7 @@
       "locale": "th",
       "check": "word-count",
       "status": "PASS",
-      "actual": "1690",
+      "actual": "1913",
       "expected": ">=1500",
       "fix": "Expand with original, useful content (not filler)"
     },
@@ -31341,7 +32799,7 @@
       "locale": "th",
       "check": "word-count",
       "status": "PASS",
-      "actual": "1658",
+      "actual": "1878",
       "expected": ">=1500",
       "fix": "Expand with original, useful content (not filler)"
     },
@@ -31539,7 +32997,7 @@
       "locale": "th",
       "check": "word-count",
       "status": "PASS",
-      "actual": "1577",
+      "actual": "1794",
       "expected": ">=1500",
       "fix": "Expand with original, useful content (not filler)"
     },
@@ -31736,8 +33194,8 @@
       "url": "/th/services/permits-planning/",
       "locale": "th",
       "check": "word-count",
-      "status": "WARNING",
-      "actual": "1498",
+      "status": "PASS",
+      "actual": "1706",
       "expected": ">=1500",
       "fix": "Expand with original, useful content (not filler)"
     },
@@ -31935,7 +33393,7 @@
       "locale": "th",
       "check": "word-count",
       "status": "PASS",
-      "actual": "1555",
+      "actual": "1785",
       "expected": ">=1500",
       "fix": "Expand with original, useful content (not filler)"
     },
@@ -32133,7 +33591,7 @@
       "locale": "th",
       "check": "word-count",
       "status": "PASS",
-      "actual": "1515",
+      "actual": "1727",
       "expected": ">=1500",
       "fix": "Expand with original, useful content (not filler)"
     },
@@ -32331,7 +33789,7 @@
       "locale": "th",
       "check": "word-count",
       "status": "PASS",
-      "actual": "1513",
+      "actual": "1732",
       "expected": ">=1500",
       "fix": "Expand with original, useful content (not filler)"
     },
@@ -32529,7 +33987,7 @@
       "locale": "th",
       "check": "word-count",
       "status": "PASS",
-      "actual": "1581",
+      "actual": "1812",
       "expected": ">=1500",
       "fix": "Expand with original, useful content (not filler)"
     },
@@ -32727,7 +34185,7 @@
       "locale": "th",
       "check": "word-count",
       "status": "PASS",
-      "actual": "1687",
+      "actual": "1926",
       "expected": ">=1500",
       "fix": "Expand with original, useful content (not filler)"
     },

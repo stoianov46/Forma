@@ -34,5 +34,7 @@ Cannibalisation rule: one primary keyword per URL. `/services/architecture/` (fu
 | /locations/haad-yao/ | en | villa design in haad yao | haad yao villa | local-commercial: design/build in this area | Owners with land in this area | Haad Yao | Request consultation |
 | /locations/sri-thanu/ | en | villa design in sri thanu | sri thanu villa | local-commercial: design/build in this area | Owners with land in this area | Sri Thanu | Request consultation |
 | /locations/thong-sala/ | en | building in thong sala | thong sala villa design | local-commercial: design/build in this area | Owners with land in this area | Thong Sala | Request consultation |
+| /plan/ | en | plan your villa project | villa cost estimate koh phangan; villa project timeline; which services do i need | informational/tool: understand scope, cost and stages before contacting a studio | Prospects at the planning stage | Koh Phangan | Send the estimate or finder result with an enquiry |
+| /checklist/ | en | villa project checklist | what to prepare before an architect consultation; building a villa on koh phangan checklist | informational: prepare for a first consultation (printable) | Prospects preparing a first meeting | Koh Phangan | Start a conversation |
 
 RU / TH / HE variations: TODO (Phase 7, with the translations; need native-speaker validation).
