@@ -1,0 +1,90 @@
+---
+import { MATERIAL_COLORS, conceptVisuals } from '../../content/projects/concept-visuals';
+
+interface Props {
+  slug: string;
+  heading: string;
+  caption: string;
+  paletteHeading: string;
+  materialNames: Record<string, string>;
+  labels: { north: string; sun: string; wind: string };
+}
+const { slug, heading, caption, paletteHeading, materialNames, labels } = Astro.props;
+const v = conceptVisuals[slug];
+const fill = 'var(--color-ink-900)';
+---
+
+{
+  v && (
+    <section class="wrap pb-14 sm:pb-20">
+      <h2 class="mb-6 text-2xl">{heading}</h2>
+      <div class="grid gap-8 rounded-2xl border border-ink-900/10 bg-stone-100 p-6 sm:p-10 md:grid-cols-2">
+        <figure>
+          <svg viewBox="0 0 320 200" role="img" aria-label={caption} class="h-auto w-full" style="direction:ltr">
+            <rect x="0" y="0" width="320" height="200" fill="none" />
+            {v.massing === 'stepped' && (
+              <g>
+                <path d="M0 40 L320 190" stroke="currentColor" stroke-opacity="0.25" stroke-dasharray="4 4" fill="none" />
+                <rect x="40" y="50" width="90" height="40" fill={MATERIAL_COLORS[v.palette[0]]} />
+                <rect x="110" y="95" width="100" height="45" fill={MATERIAL_COLORS[v.palette[1]]} />
+                <rect x="190" y="130" width="90" height="40" fill={MATERIAL_COLORS[v.palette[2]]} />
+              </g>
+            )}
+            {v.massing === 'courtyard' && (
+              <g>
+                <rect x="70" y="40" width="180" height="120" fill={MATERIAL_COLORS[v.palette[0]]} />
+                <rect x="110" y="70" width="100" height="60" fill={MATERIAL_COLORS[v.palette[3]]} />
+                <rect x="70" y="40" width="180" height="14" fill={MATERIAL_COLORS[v.palette[1]]} />
+              </g>
+            )}
+            {v.massing === 'linear' && (
+              <g>
+                <rect x="30" y="70" width="260" height="46" fill={MATERIAL_COLORS[v.palette[0]]} />
+                <rect x="30" y="116" width="260" height="22" fill={MATERIAL_COLORS[v.palette[2]]} />
+                <rect x="30" y="56" width="260" height="14" fill={MATERIAL_COLORS[v.palette[3]]} />
+              </g>
+            )}
+            {v.massing === 'shoreline' && (
+              <g>
+                <path d="M0 150 C60 135 110 165 170 150 S280 135 320 150 L320 200 L0 200 Z" fill={MATERIAL_COLORS.glass} fill-opacity="0.5" />
+                <rect x="90" y="70" width="140" height="48" fill={MATERIAL_COLORS[v.palette[0]]} />
+                <rect x="90" y="118" width="140" height="10" fill={MATERIAL_COLORS[v.palette[1]]} />
+              </g>
+            )}
+            {v.massing === 'compound' && (
+              <g>
+                <rect x="30" y="40" width="110" height="60" fill={MATERIAL_COLORS[v.palette[0]]} />
+                <rect x="170" y="60" width="90" height="50" fill={MATERIAL_COLORS[v.palette[1]]} />
+                <rect x="90" y="130" width="120" height="44" fill={MATERIAL_COLORS[v.palette[2]]} />
+                <path d="M140 70 H170 M215 110 V130 M110 100 V130" stroke={fill} stroke-width="3" stroke-opacity="0.35" />
+              </g>
+            )}
+            <g transform="translate(286 30)">
+              <circle r="16" fill="none" stroke="currentColor" stroke-opacity="0.4" />
+              <path d="M0 -12 L5 4 L0 1 L-5 4 Z" fill="currentColor" />
+              <text y="30" text-anchor="middle" font-size="11" fill="currentColor">{labels.north}</text>
+            </g>
+            <g transform={`translate(34 170) rotate(${v.viewAngle})`}>
+              <path d="M0 18 V-14 M-5 -8 L0 -16 L5 -8" stroke="currentColor" stroke-width="2" fill="none" />
+            </g>
+            <text x="34" y="196" font-size="10" fill="currentColor" fill-opacity="0.7">{labels.wind}</text>
+            <circle cx="236" cy="30" r="9" fill="#e2b04a" />
+            <text x="236" y="54" text-anchor="middle" font-size="10" fill="currentColor" fill-opacity="0.7">{labels.sun}</text>
+          </svg>
+          <figcaption class="mt-3 text-xs text-ink-900/60">{caption}</figcaption>
+        </figure>
+        <div>
+          <h3 class="mb-4 text-lg">{paletteHeading}</h3>
+          <ul class="grid grid-cols-2 gap-3">
+            {v.palette.map((m) => (
+              <li class="flex items-center gap-3">
+                <span class="h-9 w-9 shrink-0 rounded-full border border-ink-900/15" style={`background:${MATERIAL_COLORS[m]}`} aria-hidden="true" />
+                <span class="text-sm text-ink-900/80">{materialNames[m]}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
+    </section>
+  )
+}

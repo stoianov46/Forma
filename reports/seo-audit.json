@@ -5241,7 +5241,7 @@
       "locale": "he",
       "check": "untranslated-text",
       "status": "PASS",
-      "actual": "12% Latin letters",
+      "actual": "0% Latin letters",
       "expected": "<=30%",
       "fix": "Look for English fallback strings"
     },
@@ -5421,7 +5421,7 @@
       "locale": "he",
       "check": "untranslated-text",
       "status": "PASS",
-      "actual": "11% Latin letters",
+      "actual": "0% Latin letters",
       "expected": "<=30%",
       "fix": "Look for English fallback strings"
     },
@@ -5601,7 +5601,7 @@
       "locale": "he",
       "check": "untranslated-text",
       "status": "PASS",
-      "actual": "11% Latin letters",
+      "actual": "0% Latin letters",
       "expected": "<=30%",
       "fix": "Look for English fallback strings"
     },
@@ -5781,7 +5781,7 @@
       "locale": "he",
       "check": "untranslated-text",
       "status": "PASS",
-      "actual": "12% Latin letters",
+      "actual": "0% Latin letters",
       "expected": "<=30%",
       "fix": "Look for English fallback strings"
     },
@@ -5961,7 +5961,7 @@
       "locale": "he",
       "check": "untranslated-text",
       "status": "PASS",
-      "actual": "10% Latin letters",
+      "actual": "0% Latin letters",
       "expected": "<=30%",
       "fix": "Look for English fallback strings"
     },
@@ -6141,7 +6141,7 @@
       "locale": "he",
       "check": "untranslated-text",
       "status": "PASS",
-      "actual": "10% Latin letters",
+      "actual": "0% Latin letters",
       "expected": "<=30%",
       "fix": "Look for English fallback strings"
     },
@@ -17751,7 +17751,7 @@
       "locale": "ru",
       "check": "untranslated-text",
       "status": "PASS",
-      "actual": "11% Latin letters",
+      "actual": "3% Latin letters",
       "expected": "<=30%",
       "fix": "Look for English fallback strings"
     },
@@ -17931,7 +17931,7 @@
       "locale": "ru",
       "check": "untranslated-text",
       "status": "PASS",
-      "actual": "9% Latin letters",
+      "actual": "2% Latin letters",
       "expected": "<=30%",
       "fix": "Look for English fallback strings"
     },
@@ -18111,7 +18111,7 @@
       "locale": "ru",
       "check": "untranslated-text",
       "status": "PASS",
-      "actual": "11% Latin letters",
+      "actual": "3% Latin letters",
       "expected": "<=30%",
       "fix": "Look for English fallback strings"
     },
@@ -18291,7 +18291,7 @@
       "locale": "ru",
       "check": "untranslated-text",
       "status": "PASS",
-      "actual": "11% Latin letters",
+      "actual": "3% Latin letters",
       "expected": "<=30%",
       "fix": "Look for English fallback strings"
     },
@@ -18471,7 +18471,7 @@
       "locale": "ru",
       "check": "untranslated-text",
       "status": "PASS",
-      "actual": "8% Latin letters",
+      "actual": "1% Latin letters",
       "expected": "<=30%",
       "fix": "Look for English fallback strings"
     },
@@ -18651,7 +18651,7 @@
       "locale": "ru",
       "check": "untranslated-text",
       "status": "PASS",
-      "actual": "7% Latin letters",
+      "actual": "0% Latin letters",
       "expected": "<=30%",
       "fix": "Look for English fallback strings"
     },
@@ -28209,7 +28209,7 @@
       "locale": "th",
       "check": "untranslated-text",
       "status": "PASS",
-      "actual": "14% Latin letters",
+      "actual": "3% Latin letters",
       "expected": "<=30%",
       "fix": "Look for English fallback strings"
     },
@@ -28389,7 +28389,7 @@
       "locale": "th",
       "check": "untranslated-text",
       "status": "PASS",
-      "actual": "12% Latin letters",
+      "actual": "2% Latin letters",
       "expected": "<=30%",
       "fix": "Look for English fallback strings"
     },
@@ -28569,7 +28569,7 @@
       "locale": "th",
       "check": "untranslated-text",
       "status": "PASS",
-      "actual": "15% Latin letters",
+      "actual": "3% Latin letters",
       "expected": "<=30%",
       "fix": "Look for English fallback strings"
     },
@@ -28749,7 +28749,7 @@
       "locale": "th",
       "check": "untranslated-text",
       "status": "PASS",
-      "actual": "15% Latin letters",
+      "actual": "4% Latin letters",
       "expected": "<=30%",
       "fix": "Look for English fallback strings"
     },
@@ -28929,7 +28929,7 @@
       "locale": "th",
       "check": "untranslated-text",
       "status": "PASS",
-      "actual": "11% Latin letters",
+      "actual": "2% Latin letters",
       "expected": "<=30%",
       "fix": "Look for English fallback strings"
     },
@@ -29109,7 +29109,7 @@
       "locale": "th",
       "check": "untranslated-text",
       "status": "PASS",
-      "actual": "10% Latin letters",
+      "actual": "0% Latin letters",
       "expected": "<=30%",
       "fix": "Look for English fallback strings"
     },

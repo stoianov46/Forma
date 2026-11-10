@@ -2,6 +2,7 @@
 import { Image, getImage as astroGetImage } from 'astro:assets';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Breadcrumbs from '../components/layout/Breadcrumbs.astro';
+import ConceptDiagram from '../components/blocks/ConceptDiagram.astro';
 import ServiceGrid from '../components/blocks/ServiceGrid.astro';
 import CTABanner from '../components/blocks/CTABanner.astro';
 import { getDictionary } from '../i18n/dictionary';
@@ -55,43 +56,53 @@ const availableLocales = LOCALES.filter((l) => hasProjectTranslation(l, slug));
         class="h-full w-full object-cover"
       />
     </div>
+    <p class="mt-2 text-xs text-ink-900/60">{t.projectPage.illustrative}</p>
   </section>
 
   <section class="wrap py-14 sm:py-20">
     <div class="content-grid mb-12">
       <div class="col-span-2 md:col-span-2 lg:col-span-2">
-        <p class="text-xs font-semibold tracking-wide text-ink-900/60 uppercase">Location</p>
+        <p class="text-xs font-semibold tracking-wide text-ink-900/60 uppercase">{t.projectPage.location}</p>
         <a href={locationHrefSmart(locale, project.locationSlug)} class="mt-1 block font-medium hover:text-olive-700">{location?.translations[locale].name}</a>
       </div>
       <div class="col-span-2 md:col-span-2 lg:col-span-2">
-        <p class="text-xs font-semibold tracking-wide text-ink-900/60 uppercase">Type</p>
-        <p class="mt-1 font-medium">{project.tags.join(', ')}</p>
+        <p class="text-xs font-semibold tracking-wide text-ink-900/60 uppercase">{t.projectPage.type}</p>
+        <p class="mt-1 font-medium">{project.tags.map((x) => t.indexPages.tags[x]).join(', ')}</p>
       </div>
       <div class="col-span-4 md:col-span-4 lg:col-span-2">
-        <p class="text-xs font-semibold tracking-wide text-ink-900/60 uppercase">Status</p>
-        <p class="mt-1 font-medium capitalize">{project.status}</p>
+        <p class="text-xs font-semibold tracking-wide text-ink-900/60 uppercase">{t.projectPage.status}</p>
+        <p class="mt-1 font-medium">{project.status === 'concept' ? t.projectPage.statusConcept : project.status}</p>
       </div>
     </div>
 
     <div class="content-grid gap-y-10">
       <div class="col-span-4 md:col-span-4 lg:col-span-6">
-        <h2 class="text-2xl">The brief</h2>
+        <h2 class="text-2xl">{t.projectPage.brief}</h2>
         <p class="body-m mt-3 text-ink-900/80">{tr.story}</p>
       </div>
       <div class="col-span-4 md:col-span-4 lg:col-span-6">
-        <h2 class="text-2xl">Design approach</h2>
+        <h2 class="text-2xl">{t.projectPage.approach}</h2>
         <p class="body-m mt-3 text-ink-900/80">{tr.design}</p>
       </div>
       <div class="col-span-4 md:col-span-4 lg:col-span-6">
-        <h2 class="text-2xl">Materials</h2>
+        <h2 class="text-2xl">{t.projectPage.materials}</h2>
         <p class="body-m mt-3 text-ink-900/80">{tr.materials}</p>
       </div>
       <div class="col-span-4 md:col-span-4 lg:col-span-6">
-        <h2 class="text-2xl">Outcome</h2>
+        <h2 class="text-2xl">{t.projectPage.intent}</h2>
         <p class="body-m mt-3 text-ink-900/80">{tr.outcome}</p>
       </div>
     </div>
   </section>
+
+  <ConceptDiagram
+    slug={slug}
+    heading={t.projectPage.diagramHeading}
+    caption={t.projectPage.diagramCaption}
+    paletteHeading={t.projectPage.paletteHeading}
+    materialNames={t.projectPage.materialNames}
+    labels={{ north: t.projectPage.north, sun: t.projectPage.sun, wind: t.projectPage.wind }}
+  />
 
   {project.images.length > 1 && (
     <section class="wrap pb-14 sm:pb-20">
@@ -117,7 +128,7 @@ const availableLocales = LOCALES.filter((l) => hasProjectTranslation(l, slug));
 
   {relatedServices.length > 0 && (
     <section class="wrap py-14 sm:py-20">
-      <h2 class="mb-8">Services on this project</h2>
+      <h2 class="mb-8">{t.projectPage.services}</h2>
       <ServiceGrid locale={locale} services={relatedServices} />
     </section>
   )}

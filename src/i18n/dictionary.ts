@@ -58,6 +58,25 @@ export interface Dictionary {
     primaryNavLabel: string;
     mobileNavLabel: string;
   };
+  projectPage: {
+    brief: string;
+    approach: string;
+    materials: string;
+    intent: string;
+    location: string;
+    type: string;
+    status: string;
+    statusConcept: string;
+    services: string;
+    illustrative: string;
+    diagramHeading: string;
+    diagramCaption: string;
+    paletteHeading: string;
+    north: string;
+    sun: string;
+    wind: string;
+    materialNames: Record<'timber' | 'stone' | 'concrete' | 'clay' | 'lime' | 'steel' | 'glass' | 'planting', string>;
+  };
   indexPages: {
     locationsTitleSuffix: string;
     locationsDesc: string;
@@ -200,6 +219,25 @@ export const en: Dictionary = {
     breadcrumbLabel: 'Breadcrumb',
     primaryNavLabel: 'Primary',
     mobileNavLabel: 'Menu',
+  },
+  projectPage: {
+    brief: "The brief",
+    approach: "Design approach",
+    materials: "Materials",
+    intent: "Design intent",
+    location: "Location",
+    type: "Type",
+    status: "Status",
+    statusConcept: "Concept project (fictional, not built)",
+    services: "Services on this project",
+    illustrative: "Illustrative image. This is a concept study, not a photograph of a built project.",
+    diagramHeading: "Design diagram and material palette",
+    diagramCaption: "Schematic massing diagram, not to scale. Colours indicate the intended material palette, not verified specifications.",
+    paletteHeading: "Material palette",
+    north: "N",
+    sun: "Sun",
+    wind: "Breeze",
+    materialNames: { timber: "Timber", stone: "Stone", concrete: "Concrete", clay: "Clay", lime: "Lime render", steel: "Steel", glass: "Glass", planting: "Planting" },
   },
   indexPages: {
     locationsTitleSuffix: "FORMA — Koh Phangan, Koh Samui, Koh Tao & Bali",
@@ -350,6 +388,25 @@ export const ru: Dictionary = {
     primaryNavLabel: 'Основная навигация',
     mobileNavLabel: 'Меню',
   },
+  projectPage: {
+    brief: "Задача",
+    approach: "Дизайн-подход",
+    materials: "Материалы",
+    intent: "Идея проекта",
+    location: "Локация",
+    type: "Тип",
+    status: "Статус",
+    statusConcept: "Концептуальный проект (вымышленный, не построен)",
+    services: "Услуги в проекте",
+    illustrative: "Иллюстрация. Это концептуальное исследование, а не фотография построенного объекта.",
+    diagramHeading: "Схема и палитра материалов",
+    diagramCaption: "Схематичная диаграмма объёмов, без масштаба. Цвета показывают предполагаемую палитру материалов, а не проверенные спецификации.",
+    paletteHeading: "Палитра материалов",
+    north: "С",
+    sun: "Солнце",
+    wind: "Бриз",
+    materialNames: { timber: "Дерево", stone: "Камень", concrete: "Бетон", clay: "Глина", lime: "Известковая штукатурка", steel: "Сталь", glass: "Стекло", planting: "Озеленение" },
+  },
   indexPages: {
     locationsTitleSuffix: "FORMA — Ко Пханган, Ко Самуи, Ко Тао и Бали",
     locationsDesc: "FORMA проектирует и строит виллы на Ко Пхангане, Ко Самуи, Ко Тао и Бали, хорошо зная рельеф, логистику и строительные условия каждого острова.",
@@ -495,6 +552,25 @@ export const th: Dictionary = {
     primaryNavLabel: 'เมนูหลัก',
     mobileNavLabel: 'เมนู',
   },
+  projectPage: {
+    brief: "โจทย์โครงการ",
+    approach: "แนวทางการออกแบบ",
+    materials: "วัสดุ",
+    intent: "เจตนารมณ์การออกแบบ",
+    location: "ที่ตั้ง",
+    type: "ประเภท",
+    status: "สถานะ",
+    statusConcept: "โครงการต้นแบบ (สมมติ ยังไม่ได้ก่อสร้าง)",
+    services: "บริการในโครงการนี้",
+    illustrative: "ภาพประกอบ นี่คือการศึกษาแนวคิด ไม่ใช่ภาพถ่ายของอาคารที่ก่อสร้างจริง",
+    diagramHeading: "แผนภาพและชุดวัสดุ",
+    diagramCaption: "แผนภาพมวลอาคารเชิงแนวคิด ไม่ได้อยู่ในมาตราส่วน สีแสดงชุดวัสดุที่ตั้งใจใช้ ไม่ใช่ข้อกำหนดที่ผ่านการตรวจสอบ",
+    paletteHeading: "ชุดวัสดุ",
+    north: "เหนือ",
+    sun: "แดด",
+    wind: "ลม",
+    materialNames: { timber: "ไม้", stone: "หิน", concrete: "คอนกรีต", clay: "ดินเผา", lime: "ปูนฉาบปูนขาว", steel: "เหล็ก", glass: "กระจก", planting: "พืชพรรณ" },
+  },
   indexPages: {
     locationsTitleSuffix: "FORMA — เกาะพะงัน เกาะสมุย เกาะเต่า และบาหลี",
     locationsDesc: "FORMA ออกแบบและก่อสร้างวิลล่าบนเกาะพะงัน เกาะสมุย เกาะเต่า และบาหลี ด้วยความเข้าใจภูมิประเทศ การขนส่ง และสภาพการก่อสร้างของแต่ละเกาะ",
@@ -637,6 +713,25 @@ export const he: Dictionary = {
     breadcrumbLabel: 'פירורי לחם',
     primaryNavLabel: 'ניווט ראשי',
     mobileNavLabel: 'תפריט',
+  },
+  projectPage: {
+    brief: "הבריף",
+    approach: "גישת התכנון",
+    materials: "חומרים",
+    intent: "כוונת התכנון",
+    location: "מיקום",
+    type: "סוג",
+    status: "סטטוס",
+    statusConcept: "פרויקט קונספט (בדיוני, לא נבנה)",
+    services: "שירותים בפרויקט",
+    illustrative: "תמונה להמחשה. זהו מחקר קונספט ולא צילום של מבנה שנבנה.",
+    diagramHeading: "דיאגרמה ופלטת חומרים",
+    diagramCaption: "דיאגרמת מסות סכמטית, לא בקנה מידה. הצבעים מציינים את פלטת החומרים המתוכננת ולא מפרט מאומת.",
+    paletteHeading: "פלטת חומרים",
+    north: "צ",
+    sun: "שמש",
+    wind: "רוח",
+    materialNames: { timber: "עץ", stone: "אבן", concrete: "בטון", clay: "חימר", lime: "טיח סיד", steel: "פלדה", glass: "זכוכית", planting: "צמחייה" },
   },
   indexPages: {
     locationsTitleSuffix: "FORMA — קו פנגן, קו סמוי, קו טאו ובאלי",
