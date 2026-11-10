@@ -434,3 +434,11 @@ Derived from proposal.md's own QA tables (§22 QA DOD, §23 QA, Google Webmaster
 - Keywords are qualitative (no search-volume data); validation of keyword placement only runs for pages present in the keyword map.
 - The audit only reads the local build. It is not production verification (the live site returns 403 to automated requests).
 - Schema helpers added: `conceptSchema()` (`CreativeWork`, genre "Concept project") on project pages, `placeSchema()` on location pages (no coordinates until verified), `ContactPage` type via `BaseLayout pageType`, and `graph()` now drops null nodes.
+
+## Pricing (10 Nov 2026)
+
+- Prices live only in `src/content/pricing.ts` (39 price ids, 13 services × 3 tiers). Locale content files hold row labels and notes only; `PricingRow` has no price field, so numbers cannot diverge between EN/RU/TH/HE. Enforced by `npm run pricing:check` (CI).
+- All figures are **DRAFT / indicative** and awaiting owner approval; evidence is thin (see `PRICING_STRATEGY.md`). Provisional assumptions: prices exclude VAT, government fees, land and island logistics; unit per row (THB/m², fixed, per month, % of construction cost, % uplift).
+- No `Offer` / `priceSpecification` schema is emitted while prices are drafts (checked by `pricing:check`).
+- Pricing-table column headers, draft label, unit labels and disclaimer are localised in `src/i18n/dictionary.ts` (`pricing.*`).
+- Unresolved: owner approval of every range; optional local quotes; whether to expose prices in schema later.

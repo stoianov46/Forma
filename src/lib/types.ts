@@ -24,15 +24,9 @@ export interface PricingRow {
   /** Project scope tier, e.g. "Compact villa (studio-2BR)" */
   item: string;
   /**
-   * Relative indicative range, NOT an absolute currency figure — this
-   * studio has no real pricing data to draw from, and inventing specific
-   * THB numbers would fail the truth rule as badly as a fabricated
-   * testimonial would. Use relative bands ("$" / "$$" / "$$$", or "Base" /
-   * "1.5-2.5x base") instead, always paired with the disclaimer prop on
-   * PricingTable.astro directing to a real consultation for an actual
-   * quote.
+   * Deliberately has no price field. Figures live ONLY in src/content/pricing.ts
+   * (SERVICE_PRICE_IDS[slug], same row order) so every locale shows identical numbers.
    */
-  range: string;
   note: string;
 }
 
@@ -52,13 +46,7 @@ export interface ServiceTranslation {
   budgetHeading: string;
   budgetIntro: string;
   budgetFactors: string[];
-  /**
-   * Optional indicative price-range table (proposal.md's merged Part 2
-   * pricing-table requirement). Omit rather than invent a range when no
-   * real client-provided figure applies to this service — several
-   * services (e.g. Construction/Technical Supervision, Permits & Planning)
-   * genuinely have none yet. Never guess a number here.
-   */
+  /** Row labels/notes for the pricing table; prices come from pricing.ts by row order. */
   pricingRows?: PricingRow[];
   faqs: FaqItem[];
   ctaHeading: string;

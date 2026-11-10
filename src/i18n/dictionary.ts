@@ -82,6 +82,11 @@ export interface Dictionary {
   pricing: {
     heading: string;
     disclaimer: string;
+    scope: string;
+    range: string;
+    drivers: string;
+    draft: string;
+    units: Record<'per-m2' | 'fixed' | 'per-month' | 'percent' | 'percent-uplift', string>;
   };
   form: {
     heading: string;
@@ -217,9 +222,14 @@ export const en: Dictionary = {
     askAboutProject: 'Ask About Your Project',
   },
   pricing: {
-    heading: 'Indicative investment',
+    heading: "Indicative investment",
     disclaimer:
-      'These are relative bands illustrating how scope affects cost, not quoted prices — we do not have verified pricing data to publish fixed figures, and would rather explain the real drivers than invent a number. Every project is estimated individually once we understand your site and brief.',
+      "Indicative estimates in Thai baht (THB), excluding VAT, government fees and land. They are not a quotation and not a fixed offer. The final price depends on a site inspection, land conditions, project size, architectural complexity, structural requirements, material selection, access and island logistics, and the permits and consultants required. Design fees, construction, supervision and permits are priced separately, and every project is quoted individually.",
+    scope: "Project scope",
+    range: "Indicative range",
+    drivers: "What drives it",
+    draft: "Draft estimate",
+    units: { 'per-m2': "per m²", 'fixed': "", 'per-month': "per month", 'percent': "of construction cost", 'percent-uplift': "above standard construction cost" },
   },
   form: {
     heading: 'Start a Project',
@@ -360,9 +370,14 @@ export const ru: Dictionary = {
     askAboutProject: 'Спросить о проекте',
   },
   pricing: {
-    heading: 'Ориентир по инвестициям',
+    heading: "Ориентировочная стоимость",
     disclaimer:
-      'Это относительные диапазоны, показывающие, как масштаб влияет на стоимость, а не фиксированные цены — у нас нет проверенных данных по ценам, чтобы публиковать конкретные цифры, и мы предпочитаем объяснить реальные факторы, а не придумывать число. Каждый проект оценивается индивидуально после знакомства с участком и техническим заданием.',
+      "Ориентировочные оценки в тайских батах (THB), без НДС, государственных сборов и стоимости земли. Это не коммерческое предложение и не фиксированная цена. Итоговая стоимость зависит от осмотра участка, состояния земли, размера проекта, архитектурной сложности, конструктивных требований, выбора материалов, доступа и островной логистики, а также необходимых разрешений и консультантов. Проектирование, строительство, надзор и разрешения оцениваются отдельно, каждый проект рассчитывается индивидуально.",
+    scope: "Объём проекта",
+    range: "Ориентировочный диапазон",
+    drivers: "Что влияет на цену",
+    draft: "Предварительная оценка",
+    units: { 'per-m2': "за м²", 'fixed': "", 'per-month': "в месяц", 'percent': "от стоимости строительства", 'percent-uplift': "к стандартной стоимости строительства" },
   },
   form: {
     heading: 'Начать проект',
@@ -500,9 +515,14 @@ export const th: Dictionary = {
     askAboutProject: 'สอบถามเกี่ยวกับโปรเจกต์',
   },
   pricing: {
-    heading: 'แนวทางการลงทุนโดยประมาณ',
+    heading: "ประมาณการค่าบริการ",
     disclaimer:
-      'ตัวเลขเหล่านี้เป็นช่วงเปรียบเทียบเชิงสัมพัทธ์ที่แสดงว่าขนาดโครงการส่งผลต่อค่าใช้จ่ายอย่างไร ไม่ใช่ราคาที่เสนอจริง เนื่องจากเราไม่มีข้อมูลราคาที่ยืนยันแล้วสำหรับเผยแพร่ตัวเลขที่แน่นอน และเราต้องการอธิบายปัจจัยที่แท้จริงมากกว่าการเดาตัวเลข ทุกโครงการจะได้รับการประเมินเป็นรายกรณีหลังจากที่เราเข้าใจที่ดินและโจทย์ของคุณแล้ว',
+      "ประมาณการเบื้องต้นเป็นเงินบาท (THB) ไม่รวมภาษีมูลค่าเพิ่ม ค่าธรรมเนียมราชการ และค่าที่ดิน ไม่ใช่ใบเสนอราคาและไม่ใช่ราคาคงที่ ราคาสุดท้ายขึ้นอยู่กับการตรวจสอบพื้นที่ สภาพที่ดิน ขนาดโครงการ ความซับซ้อนทางสถาปัตยกรรม ข้อกำหนดด้านโครงสร้าง การเลือกวัสดุ การเข้าถึงพื้นที่และการขนส่งบนเกาะ รวมถึงใบอนุญาตและที่ปรึกษาที่จำเป็น ค่าออกแบบ ก่อสร้าง ควบคุมงาน และขออนุญาต คิดแยกจากกัน และแต่ละโครงการจะเสนอราคาเป็นรายโครงการ",
+    scope: "ขอบเขตโครงการ",
+    range: "ช่วงราคาโดยประมาณ",
+    drivers: "ปัจจัยที่มีผล",
+    draft: "ประมาณการฉบับร่าง",
+    units: { 'per-m2': "ต่อ ตร.ม.", 'fixed': "", 'per-month': "ต่อเดือน", 'percent': "ของค่าก่อสร้าง", 'percent-uplift': "เพิ่มจากค่าก่อสร้างมาตรฐาน" },
   },
   form: {
     heading: 'เริ่มโปรเจกต์',
@@ -638,9 +658,14 @@ export const he: Dictionary = {
     askAboutProject: 'שאלו על הפרויקט',
   },
   pricing: {
-    heading: 'הערכת השקעה',
+    heading: "הערכת השקעה",
     disclaimer:
-      'אלו טווחים יחסיים הממחישים כיצד היקף הפרויקט משפיע על העלות, לא מחירים מוצעים — אין לנו נתוני תמחור מאומתים כדי לפרסם מספרים קבועים, ואנו מעדיפים להסביר את הגורמים האמיתיים במקום להמציא מספר. כל פרויקט מוערך בנפרד לאחר שנכיר את המגרש והתכנית שלכם.',
+      "הערכות ראשוניות בבהט תאילנדי (THB), לא כולל מע״מ, אגרות ממשלתיות ועלות הקרקע. אין זו הצעת מחיר ואין זו הצעה מחייבת. המחיר הסופי תלוי בסיור באתר, בתנאי הקרקע, בגודל הפרויקט, במורכבות האדריכלית, בדרישות הקונסטרוקציה, בבחירת החומרים, בנגישות ובלוגיסטיקה באי, וכן ברישיונות וביועצים הנדרשים. עלויות תכנון, בנייה, פיקוח ורישוי מתומחרות בנפרד, וכל פרויקט מתומחר בנפרד.",
+    scope: "היקף הפרויקט",
+    range: "טווח משוער",
+    drivers: "מה משפיע על המחיר",
+    draft: "הערכת טיוטה",
+    units: { 'per-m2': "למ״ר", 'fixed': "", 'per-month': "לחודש", 'percent': "מעלות הבנייה", 'percent-uplift': "מעל עלות הבנייה הסטנדרטית" },
   },
   form: {
     heading: 'התחילו פרויקט',

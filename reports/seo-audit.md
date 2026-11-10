@@ -14,7 +14,7 @@ Local `dist` only; not production verified. Full detail: `reports/seo-audit.json
 | WARNING | heading-hierarchy | 4 | /he/journal/ | level skipped | no skipped levels |
 | WARNING | owner-verify-markers | 3 | /cookies/ | [[VERIFY]] present | resolved |
 | WARNING | title-length | 27 | /he/journal/signs-a-villa-renovation-needs-structural-assessment/ | 78 | 20-65 |
-| WARNING | word-count | 52 | /he/services/architecture/ | 865 | >=1500 |
+| WARNING | word-count | 52 | /he/services/architecture/ | 890 | >=1500 |
 
 ## FAIL details
 

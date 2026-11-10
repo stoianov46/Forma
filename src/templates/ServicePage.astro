@@ -17,6 +17,7 @@ import { localizePath, LOCALES, type Locale } from '../lib/i18n';
 import { getService, services as allServices, hasServiceTranslation } from '../content/services';
 import { projectsForService } from '../content/projects';
 import { serviceSchema, graph } from '../lib/schema';
+import { SERVICE_PRICE_IDS } from '../content/pricing';
 import { SITE_URL } from '../lib/site';
 import { getImage } from '../lib/images';
 import { getImage as astroGetImage } from 'astro:assets';
@@ -93,7 +94,7 @@ const availableLocales = LOCALES.filter((l) => hasServiceTranslation(l, slug));
   />
 
   {tr.pricingRows && tr.pricingRows.length > 0 && (
-    <PricingTable heading={t.pricing.heading} rows={tr.pricingRows} disclaimer={t.pricing.disclaimer} />
+    <PricingTable heading={t.pricing.heading} rows={tr.pricingRows} priceIds={SERVICE_PRICE_IDS[slug] ?? []} disclaimer={t.pricing.disclaimer} labels={t.pricing} />
   )}
 
   {relatedProjects.length > 0 && (

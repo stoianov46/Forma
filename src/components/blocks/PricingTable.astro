@@ -1,32 +1,46 @@
 ---
 import type { PricingRow } from '../../lib/types';
+import { PRICES, formatPrice, type PriceId } from '../../content/pricing';
 
 interface Props {
   heading: string;
   rows: PricingRow[];
+  priceIds: PriceId[];
   disclaimer: string;
+  labels: {
+    scope: string;
+    range: string;
+    drivers: string;
+    draft: string;
+    units: Record<'per-m2' | 'fixed' | 'per-month' | 'percent' | 'percent-uplift', string>;
+  };
 }
-const { heading, rows, disclaimer } = Astro.props;
+const { heading, rows, priceIds, disclaimer, labels } = Astro.props;
+if (rows.length !== priceIds.length) throw new Error(`PricingTable: ${rows.length} rows but ${priceIds.length} price ids`);
 ---
 
 <section class="wrap py-14 sm:py-20">
   <div class="rounded-2xl border border-ink-900/10 bg-stone-100 p-8 sm:p-12">
-    <h2 class="mb-6">{heading}</h2>
+    <h2 class="mb-2">{heading}</h2>
+    <p class="mb-6 text-xs font-semibold tracking-wide text-ink-900/60 uppercase">{labels.draft}</p>
     <div class="overflow-x-auto" tabindex="0" role="region" aria-label={heading}>
-      <table class="w-full min-w-[520px] border-collapse text-left text-sm">
+      <table class="w-full min-w-[520px] border-collapse text-start text-sm">
         <thead>
           <tr class="border-b border-ink-900/15 text-xs font-semibold tracking-wide text-ink-900/60 uppercase">
-            <th class="py-3 pr-4">Project scope</th>
-            <th class="py-3 pr-4">Indicative range</th>
-            <th class="py-3">What drives it</th>
+            <th class="py-3 pe-4 text-start">{labels.scope}</th>
+            <th class="py-3 pe-4 text-start">{labels.range}</th>
+            <th class="py-3 text-start">{labels.drivers}</th>
           </tr>
         </thead>
         <tbody>
           {
-            rows.map((row) => (
+            rows.map((row, i) => (
               <tr class="border-b border-ink-900/10">
-                <td class="py-4 pr-4 font-medium text-ink-900">{row.item}</td>
-                <td class="py-4 pr-4 whitespace-nowrap text-ink-900">{row.range}</td>
+                <td class="py-4 pe-4 font-medium text-ink-900">{row.item}</td>
+                <td class="py-4 pe-4 whitespace-nowrap text-ink-900">
+                  <bdi dir="ltr" data-price-id={priceIds[i]}>{formatPrice(priceIds[i])}</bdi>
+                  {labels.units[PRICES[priceIds[i]].unit] && <span class="text-ink-900/60"> {labels.units[PRICES[priceIds[i]].unit]}</span>}
+                </td>
                 <td class="py-4 text-ink-900/70">{row.note}</td>
               </tr>
             ))

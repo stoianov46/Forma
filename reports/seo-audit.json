@@ -6267,7 +6267,7 @@
       "locale": "he",
       "check": "untranslated-text",
       "status": "PASS",
-      "actual": "2% Latin letters",
+      "actual": "1% Latin letters",
       "expected": "<=30%",
       "fix": "Look for English fallback strings"
     },
@@ -6276,7 +6276,7 @@
       "locale": "he",
       "check": "word-count",
       "status": "WARNING",
-      "actual": "865",
+      "actual": "890",
       "expected": ">=1500",
       "fix": "Expand with original, useful content (not filler)"
     },
@@ -6456,7 +6456,7 @@
       "locale": "he",
       "check": "untranslated-text",
       "status": "PASS",
-      "actual": "2% Latin letters",
+      "actual": "1% Latin letters",
       "expected": "<=30%",
       "fix": "Look for English fallback strings"
     },
@@ -6465,7 +6465,7 @@
       "locale": "he",
       "check": "word-count",
       "status": "WARNING",
-      "actual": "757",
+      "actual": "782",
       "expected": ">=1500",
       "fix": "Expand with original, useful content (not filler)"
     },
@@ -6645,7 +6645,7 @@
       "locale": "he",
       "check": "untranslated-text",
       "status": "PASS",
-      "actual": "2% Latin letters",
+      "actual": "1% Latin letters",
       "expected": "<=30%",
       "fix": "Look for English fallback strings"
     },
@@ -6654,7 +6654,7 @@
       "locale": "he",
       "check": "word-count",
       "status": "WARNING",
-      "actual": "716",
+      "actual": "738",
       "expected": ">=1500",
       "fix": "Expand with original, useful content (not filler)"
     },
@@ -6834,7 +6834,7 @@
       "locale": "he",
       "check": "untranslated-text",
       "status": "PASS",
-      "actual": "2% Latin letters",
+      "actual": "1% Latin letters",
       "expected": "<=30%",
       "fix": "Look for English fallback strings"
     },
@@ -6843,7 +6843,7 @@
       "locale": "he",
       "check": "word-count",
       "status": "WARNING",
-      "actual": "790",
+      "actual": "815",
       "expected": ">=1500",
       "fix": "Expand with original, useful content (not filler)"
     },
@@ -7023,7 +7023,7 @@
       "locale": "he",
       "check": "untranslated-text",
       "status": "PASS",
-      "actual": "2% Latin letters",
+      "actual": "1% Latin letters",
       "expected": "<=30%",
       "fix": "Look for English fallback strings"
     },
@@ -7032,7 +7032,7 @@
       "locale": "he",
       "check": "word-count",
       "status": "WARNING",
-      "actual": "842",
+      "actual": "867",
       "expected": ">=1500",
       "fix": "Expand with original, useful content (not filler)"
     },
@@ -7212,7 +7212,7 @@
       "locale": "he",
       "check": "untranslated-text",
       "status": "PASS",
-      "actual": "2% Latin letters",
+      "actual": "1% Latin letters",
       "expected": "<=30%",
       "fix": "Look for English fallback strings"
     },
@@ -7221,7 +7221,7 @@
       "locale": "he",
       "check": "word-count",
       "status": "WARNING",
-      "actual": "793",
+      "actual": "817",
       "expected": ">=1500",
       "fix": "Expand with original, useful content (not filler)"
     },
@@ -7401,7 +7401,7 @@
       "locale": "he",
       "check": "untranslated-text",
       "status": "PASS",
-      "actual": "2% Latin letters",
+      "actual": "1% Latin letters",
       "expected": "<=30%",
       "fix": "Look for English fallback strings"
     },
@@ -7410,7 +7410,7 @@
       "locale": "he",
       "check": "word-count",
       "status": "WARNING",
-      "actual": "745",
+      "actual": "764",
       "expected": ">=1500",
       "fix": "Expand with original, useful content (not filler)"
     },
@@ -7590,7 +7590,7 @@
       "locale": "he",
       "check": "untranslated-text",
       "status": "PASS",
-      "actual": "2% Latin letters",
+      "actual": "1% Latin letters",
       "expected": "<=30%",
       "fix": "Look for English fallback strings"
     },
@@ -7599,7 +7599,7 @@
       "locale": "he",
       "check": "word-count",
       "status": "WARNING",
-      "actual": "730",
+      "actual": "749",
       "expected": ">=1500",
       "fix": "Expand with original, useful content (not filler)"
     },
@@ -7779,7 +7779,7 @@
       "locale": "he",
       "check": "untranslated-text",
       "status": "PASS",
-      "actual": "2% Latin letters",
+      "actual": "1% Latin letters",
       "expected": "<=30%",
       "fix": "Look for English fallback strings"
     },
@@ -7788,7 +7788,7 @@
       "locale": "he",
       "check": "word-count",
       "status": "WARNING",
-      "actual": "737",
+      "actual": "756",
       "expected": ">=1500",
       "fix": "Expand with original, useful content (not filler)"
     },
@@ -7968,7 +7968,7 @@
       "locale": "he",
       "check": "untranslated-text",
       "status": "PASS",
-      "actual": "2% Latin letters",
+      "actual": "1% Latin letters",
       "expected": "<=30%",
       "fix": "Look for English fallback strings"
     },
@@ -7977,7 +7977,7 @@
       "locale": "he",
       "check": "word-count",
       "status": "WARNING",
-      "actual": "739",
+      "actual": "765",
       "expected": ">=1500",
       "fix": "Expand with original, useful content (not filler)"
     },
@@ -8157,7 +8157,7 @@
       "locale": "he",
       "check": "untranslated-text",
       "status": "PASS",
-      "actual": "2% Latin letters",
+      "actual": "1% Latin letters",
       "expected": "<=30%",
       "fix": "Look for English fallback strings"
     },
@@ -8166,7 +8166,7 @@
       "locale": "he",
       "check": "word-count",
       "status": "WARNING",
-      "actual": "701",
+      "actual": "720",
       "expected": ">=1500",
       "fix": "Expand with original, useful content (not filler)"
     },
@@ -8346,7 +8346,7 @@
       "locale": "he",
       "check": "untranslated-text",
       "status": "PASS",
-      "actual": "2% Latin letters",
+      "actual": "1% Latin letters",
       "expected": "<=30%",
       "fix": "Look for English fallback strings"
     },
@@ -8355,7 +8355,7 @@
       "locale": "he",
       "check": "word-count",
       "status": "WARNING",
-      "actual": "772",
+      "actual": "797",
       "expected": ">=1500",
       "fix": "Expand with original, useful content (not filler)"
     },
@@ -8535,7 +8535,7 @@
       "locale": "he",
       "check": "untranslated-text",
       "status": "PASS",
-      "actual": "2% Latin letters",
+      "actual": "1% Latin letters",
       "expected": "<=30%",
       "fix": "Look for English fallback strings"
     },
@@ -8544,7 +8544,7 @@
       "locale": "he",
       "check": "word-count",
       "status": "WARNING",
-      "actual": "889",
+      "actual": "908",
       "expected": ">=1500",
       "fix": "Expand with original, useful content (not filler)"
     },
@@ -18570,7 +18570,7 @@
       "locale": "ru",
       "check": "word-count",
       "status": "WARNING",
-      "actual": "968",
+      "actual": "992",
       "expected": ">=1500",
       "fix": "Expand with original, useful content (not filler)"
     },
@@ -18759,7 +18759,7 @@
       "locale": "ru",
       "check": "word-count",
       "status": "WARNING",
-      "actual": "834",
+      "actual": "858",
       "expected": ">=1500",
       "fix": "Expand with original, useful content (not filler)"
     },
@@ -18948,7 +18948,7 @@
       "locale": "ru",
       "check": "word-count",
       "status": "WARNING",
-      "actual": "787",
+      "actual": "811",
       "expected": ">=1500",
       "fix": "Expand with original, useful content (not filler)"
     },
@@ -19128,7 +19128,7 @@
       "locale": "ru",
       "check": "untranslated-text",
       "status": "PASS",
-      "actual": "2% Latin letters",
+      "actual": "1% Latin letters",
       "expected": "<=30%",
       "fix": "Look for English fallback strings"
     },
@@ -19137,7 +19137,7 @@
       "locale": "ru",
       "check": "word-count",
       "status": "WARNING",
-      "actual": "876",
+      "actual": "900",
       "expected": ">=1500",
       "fix": "Expand with original, useful content (not filler)"
     },
@@ -19326,7 +19326,7 @@
       "locale": "ru",
       "check": "word-count",
       "status": "WARNING",
-      "actual": "946",
+      "actual": "970",
       "expected": ">=1500",
       "fix": "Expand with original, useful content (not filler)"
     },
@@ -19506,7 +19506,7 @@
       "locale": "ru",
       "check": "untranslated-text",
       "status": "PASS",
-      "actual": "2% Latin letters",
+      "actual": "1% Latin letters",
       "expected": "<=30%",
       "fix": "Look for English fallback strings"
     },
@@ -19515,7 +19515,7 @@
       "locale": "ru",
       "check": "word-count",
       "status": "WARNING",
-      "actual": "932",
+      "actual": "955",
       "expected": ">=1500",
       "fix": "Expand with original, useful content (not filler)"
     },
@@ -19695,7 +19695,7 @@
       "locale": "ru",
       "check": "untranslated-text",
       "status": "PASS",
-      "actual": "3% Latin letters",
+      "actual": "2% Latin letters",
       "expected": "<=30%",
       "fix": "Look for English fallback strings"
     },
@@ -19704,7 +19704,7 @@
       "locale": "ru",
       "check": "word-count",
       "status": "WARNING",
-      "actual": "874",
+      "actual": "892",
       "expected": ">=1500",
       "fix": "Expand with original, useful content (not filler)"
     },
@@ -19893,7 +19893,7 @@
       "locale": "ru",
       "check": "word-count",
       "status": "WARNING",
-      "actual": "841",
+      "actual": "859",
       "expected": ">=1500",
       "fix": "Expand with original, useful content (not filler)"
     },
@@ -20073,7 +20073,7 @@
       "locale": "ru",
       "check": "untranslated-text",
       "status": "PASS",
-      "actual": "2% Latin letters",
+      "actual": "1% Latin letters",
       "expected": "<=30%",
       "fix": "Look for English fallback strings"
     },
@@ -20082,7 +20082,7 @@
       "locale": "ru",
       "check": "word-count",
       "status": "WARNING",
-      "actual": "823",
+      "actual": "844",
       "expected": ">=1500",
       "fix": "Expand with original, useful content (not filler)"
     },
@@ -20271,7 +20271,7 @@
       "locale": "ru",
       "check": "word-count",
       "status": "WARNING",
-      "actual": "867",
+      "actual": "892",
       "expected": ">=1500",
       "fix": "Expand with original, useful content (not filler)"
     },
@@ -20460,7 +20460,7 @@
       "locale": "ru",
       "check": "word-count",
       "status": "WARNING",
-      "actual": "808",
+      "actual": "826",
       "expected": ">=1500",
       "fix": "Expand with original, useful content (not filler)"
     },
@@ -20640,7 +20640,7 @@
       "locale": "ru",
       "check": "untranslated-text",
       "status": "PASS",
-      "actual": "2% Latin letters",
+      "actual": "1% Latin letters",
       "expected": "<=30%",
       "fix": "Look for English fallback strings"
     },
@@ -20649,7 +20649,7 @@
       "locale": "ru",
       "check": "word-count",
       "status": "WARNING",
-      "actual": "881",
+      "actual": "905",
       "expected": ">=1500",
       "fix": "Expand with original, useful content (not filler)"
     },
@@ -20838,7 +20838,7 @@
       "locale": "ru",
       "check": "word-count",
       "status": "WARNING",
-      "actual": "1016",
+      "actual": "1034",
       "expected": ">=1500",
       "fix": "Expand with original, useful content (not filler)"
     },
@@ -21171,7 +21171,7 @@
       "locale": "en",
       "check": "word-count",
       "status": "WARNING",
-      "actual": "1015",
+      "actual": "1047",
       "expected": ">=1500",
       "fix": "Expand with original, useful content (not filler)"
     },
@@ -21360,7 +21360,7 @@
       "locale": "en",
       "check": "word-count",
       "status": "WARNING",
-      "actual": "855",
+      "actual": "887",
       "expected": ">=1500",
       "fix": "Expand with original, useful content (not filler)"
     },
@@ -21549,7 +21549,7 @@
       "locale": "en",
       "check": "word-count",
       "status": "WARNING",
-      "actual": "829",
+      "actual": "861",
       "expected": ">=1500",
       "fix": "Expand with original, useful content (not filler)"
     },
@@ -21738,7 +21738,7 @@
       "locale": "en",
       "check": "word-count",
       "status": "WARNING",
-      "actual": "877",
+      "actual": "909",
       "expected": ">=1500",
       "fix": "Expand with original, useful content (not filler)"
     },
@@ -21927,7 +21927,7 @@
       "locale": "en",
       "check": "word-count",
       "status": "WARNING",
-      "actual": "934",
+      "actual": "966",
       "expected": ">=1500",
       "fix": "Expand with original, useful content (not filler)"
     },
@@ -22116,7 +22116,7 @@
       "locale": "en",
       "check": "word-count",
       "status": "WARNING",
-      "actual": "907",
+      "actual": "938",
       "expected": ">=1500",
       "fix": "Expand with original, useful content (not filler)"
     },
@@ -22305,7 +22305,7 @@
       "locale": "en",
       "check": "word-count",
       "status": "WARNING",
-      "actual": "866",
+      "actual": "892",
       "expected": ">=1500",
       "fix": "Expand with original, useful content (not filler)"
     },
@@ -22494,7 +22494,7 @@
       "locale": "en",
       "check": "word-count",
       "status": "WARNING",
-      "actual": "835",
+      "actual": "861",
       "expected": ">=1500",
       "fix": "Expand with original, useful content (not filler)"
     },
@@ -22683,7 +22683,7 @@
       "locale": "en",
       "check": "word-count",
       "status": "WARNING",
-      "actual": "836",
+      "actual": "865",
       "expected": ">=1500",
       "fix": "Expand with original, useful content (not filler)"
     },
@@ -22872,7 +22872,7 @@
       "locale": "en",
       "check": "word-count",
       "status": "WARNING",
-      "actual": "847",
+      "actual": "880",
       "expected": ">=1500",
       "fix": "Expand with original, useful content (not filler)"
     },
@@ -23061,7 +23061,7 @@
       "locale": "en",
       "check": "word-count",
       "status": "WARNING",
-      "actual": "820",
+      "actual": "846",
       "expected": ">=1500",
       "fix": "Expand with original, useful content (not filler)"
     },
@@ -23250,7 +23250,7 @@
       "locale": "en",
       "check": "word-count",
       "status": "WARNING",
-      "actual": "879",
+      "actual": "911",
       "expected": ">=1500",
       "fix": "Expand with original, useful content (not filler)"
     },
@@ -23439,7 +23439,7 @@
       "locale": "en",
       "check": "word-count",
       "status": "WARNING",
-      "actual": "1023",
+      "actual": "1049",
       "expected": ">=1500",
       "fix": "Expand with original, useful content (not filler)"
     },
@@ -28785,7 +28785,7 @@
       "locale": "th",
       "check": "untranslated-text",
       "status": "PASS",
-      "actual": "2% Latin letters",
+      "actual": "1% Latin letters",
       "expected": "<=30%",
       "fix": "Look for English fallback strings"
     },
@@ -28794,7 +28794,7 @@
       "locale": "th",
       "check": "word-count",
       "status": "WARNING",
-      "actual": "1021",
+      "actual": "1040",
       "expected": ">=1500",
       "fix": "Expand with original, useful content (not filler)"
     },
@@ -28983,7 +28983,7 @@
       "locale": "th",
       "check": "word-count",
       "status": "WARNING",
-      "actual": "926",
+      "actual": "947",
       "expected": ">=1500",
       "fix": "Expand with original, useful content (not filler)"
     },
@@ -29163,7 +29163,7 @@
       "locale": "th",
       "check": "untranslated-text",
       "status": "PASS",
-      "actual": "2% Latin letters",
+      "actual": "1% Latin letters",
       "expected": "<=30%",
       "fix": "Look for English fallback strings"
     },
@@ -29172,7 +29172,7 @@
       "locale": "th",
       "check": "word-count",
       "status": "WARNING",
-      "actual": "846",
+      "actual": "866",
       "expected": ">=1500",
       "fix": "Expand with original, useful content (not filler)"
     },
@@ -29352,7 +29352,7 @@
       "locale": "th",
       "check": "untranslated-text",
       "status": "PASS",
-      "actual": "3% Latin letters",
+      "actual": "2% Latin letters",
       "expected": "<=30%",
       "fix": "Look for English fallback strings"
     },
@@ -29361,7 +29361,7 @@
       "locale": "th",
       "check": "word-count",
       "status": "WARNING",
-      "actual": "888",
+      "actual": "909",
       "expected": ">=1500",
       "fix": "Expand with original, useful content (not filler)"
     },
@@ -29541,7 +29541,7 @@
       "locale": "th",
       "check": "untranslated-text",
       "status": "PASS",
-      "actual": "2% Latin letters",
+      "actual": "1% Latin letters",
       "expected": "<=30%",
       "fix": "Look for English fallback strings"
     },
@@ -29550,7 +29550,7 @@
       "locale": "th",
       "check": "word-count",
       "status": "WARNING",
-      "actual": "993",
+      "actual": "1019",
       "expected": ">=1500",
       "fix": "Expand with original, useful content (not filler)"
     },
@@ -29739,7 +29739,7 @@
       "locale": "th",
       "check": "word-count",
       "status": "WARNING",
-      "actual": "912",
+      "actual": "931",
       "expected": ">=1500",
       "fix": "Expand with original, useful content (not filler)"
     },
@@ -29928,7 +29928,7 @@
       "locale": "th",
       "check": "word-count",
       "status": "WARNING",
-      "actual": "878",
+      "actual": "896",
       "expected": ">=1500",
       "fix": "Expand with original, useful content (not filler)"
     },
@@ -30108,7 +30108,7 @@
       "locale": "th",
       "check": "untranslated-text",
       "status": "PASS",
-      "actual": "2% Latin letters",
+      "actual": "1% Latin letters",
       "expected": "<=30%",
       "fix": "Look for English fallback strings"
     },
@@ -30117,7 +30117,7 @@
       "locale": "th",
       "check": "word-count",
       "status": "WARNING",
-      "actual": "848",
+      "actual": "865",
       "expected": ">=1500",
       "fix": "Expand with original, useful content (not filler)"
     },
@@ -30297,7 +30297,7 @@
       "locale": "th",
       "check": "untranslated-text",
       "status": "PASS",
-      "actual": "3% Latin letters",
+      "actual": "2% Latin letters",
       "expected": "<=30%",
       "fix": "Look for English fallback strings"
     },
@@ -30306,7 +30306,7 @@
       "locale": "th",
       "check": "word-count",
       "status": "WARNING",
-      "actual": "838",
+      "actual": "857",
       "expected": ">=1500",
       "fix": "Expand with original, useful content (not filler)"
     },
@@ -30486,7 +30486,7 @@
       "locale": "th",
       "check": "untranslated-text",
       "status": "PASS",
-      "actual": "2% Latin letters",
+      "actual": "1% Latin letters",
       "expected": "<=30%",
       "fix": "Look for English fallback strings"
     },
@@ -30495,7 +30495,7 @@
       "locale": "th",
       "check": "word-count",
       "status": "WARNING",
-      "actual": "870",
+      "actual": "891",
       "expected": ">=1500",
       "fix": "Expand with original, useful content (not filler)"
     },
@@ -30675,7 +30675,7 @@
       "locale": "th",
       "check": "untranslated-text",
       "status": "PASS",
-      "actual": "2% Latin letters",
+      "actual": "1% Latin letters",
       "expected": "<=30%",
       "fix": "Look for English fallback strings"
     },
@@ -30684,7 +30684,7 @@
       "locale": "th",
       "check": "word-count",
       "status": "WARNING",
-      "actual": "848",
+      "actual": "865",
       "expected": ">=1500",
       "fix": "Expand with original, useful content (not filler)"
     },
@@ -30864,7 +30864,7 @@
       "locale": "th",
       "check": "untranslated-text",
       "status": "PASS",
-      "actual": "2% Latin letters",
+      "actual": "1% Latin letters",
       "expected": "<=30%",
       "fix": "Look for English fallback strings"
     },
@@ -30873,7 +30873,7 @@
       "locale": "th",
       "check": "word-count",
       "status": "WARNING",
-      "actual": "912",
+      "actual": "932",
       "expected": ">=1500",
       "fix": "Expand with original, useful content (not filler)"
     },
@@ -31053,7 +31053,7 @@
       "locale": "th",
       "check": "untranslated-text",
       "status": "PASS",
-      "actual": "3% Latin letters",
+      "actual": "2% Latin letters",
       "expected": "<=30%",
       "fix": "Look for English fallback strings"
     },
@@ -31062,7 +31062,7 @@
       "locale": "th",
       "check": "word-count",
       "status": "WARNING",
-      "actual": "1008",
+      "actual": "1025",
       "expected": ">=1500",
       "fix": "Expand with original, useful content (not filler)"
     },

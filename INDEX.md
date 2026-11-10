@@ -41,6 +41,7 @@ config/devops file, and every environment variable the project reads.
 | `Makefile` | Shortcuts: `make help` lists everything |
 | `scripts/qa/*.cjs` | QA: links, meta, JSON-LD, browser (axe, mobile menu), `audit.cjs` (per-page matrix of dist → `reports/`) |
 | `scripts/seo-audit.cjs` + `seo-audit.config.json` | Automated SEO/content audit of `dist/` (`npm run seo:audit`); thresholds, exceptions, keyword-map path in the config; reports in `reports/seo-audit.{md,json}`; FAIL → exit 1, WARNING = editorial only |
+| `src/content/pricing.ts`, `PRICING_STRATEGY.md`, `PRICING_MASTER.md` | Single source of all prices (DRAFT, THB), research/evidence, generated table. `npm run pricing:check` / `pricing:master`; `scripts/pricing-check.mjs` |
 | `AUDIT.md` | Local audit findings + status (Phase 1). Full matrix: `reports/audit-matrix.md`, data: `reports/audit.json` |
 | `FORMA_SEO_CONTENT_AUDIT.md` | Per-page-type SEO/content audit summary |
 
