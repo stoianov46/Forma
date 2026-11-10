@@ -82,5 +82,30 @@
   ],
   "keywordLocales": [
     "en"
-  ]
+  ],
+  "directAnswerWordsByLocale": {
+    "he": [
+      30,
+      60
+    ]
+  },
+  "descMinByLocale": {
+    "he": 85
+  },
+  "wordTargetByLocale": {
+    "he": {
+      "service": 1250
+    }
+  },
+  "englishOnlyUrls": [],
+  "latinHeadingAllow": [
+    "FORMA",
+    "Ridge House",
+    "Bay View Residence",
+    "Haad Yao Beachfront Pavilion",
+    "Haad Salad Privacy Villa",
+    "Baan Tai Family Compound",
+    "Thong Sala Townhouse Renovation"
+  ],
+  "_latinHeadingAllow_doc": "Project names are proper names and stay in English in every locale."
 }

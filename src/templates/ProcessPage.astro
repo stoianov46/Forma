@@ -26,7 +26,7 @@ const availableLocales = LOCALES.filter((l) => l === 'en' || isProcessTranslated
   </section>
   <DirectAnswer text={p.directAnswer} />
   <EditorialIntro heading={p.introHeading} body={p.intro} />
-  <ProcessStages stages={p.stages} />
+  <ProcessStages stages={p.stages} labels={{ input: t.common.processInput, outputs: t.common.processOutputs, next: t.common.processNext }} />
   <FAQAccordion locale={locale} faqs={p.faqs} />
   <CTABanner heading={p.ctaHeading} body={p.ctaBody} cta={{ label: t.cta.startProject, href: localizePath(locale, '/contact/') }} />
 </BaseLayout>

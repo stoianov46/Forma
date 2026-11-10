@@ -57,6 +57,12 @@ export interface Dictionary {
     breadcrumbLabel: string;
     primaryNavLabel: string;
     mobileNavLabel: string;
+    scopeHeading: string;
+    deliverablesHeading: string;
+    logisticsHeading: string;
+    processInput: string;
+    processOutputs: string;
+    processNext: string;
   };
   projectPage: {
     brief: string;
@@ -219,6 +225,12 @@ export const en: Dictionary = {
     breadcrumbLabel: 'Breadcrumb',
     primaryNavLabel: 'Primary',
     mobileNavLabel: 'Menu',
+    scopeHeading: "Scope of work",
+    deliverablesHeading: "Deliverables",
+    logisticsHeading: "Getting materials and equipment here",
+    processInput: "Your input",
+    processOutputs: "Outputs",
+    processNext: "Next step",
   },
   projectPage: {
     brief: "The brief",
@@ -387,6 +399,12 @@ export const ru: Dictionary = {
     breadcrumbLabel: 'Навигационная цепочка',
     primaryNavLabel: 'Основная навигация',
     mobileNavLabel: 'Меню',
+    scopeHeading: "Объём работ",
+    deliverablesHeading: "Что вы получаете",
+    logisticsHeading: "Доставка материалов и оборудования",
+    processInput: "Ваш вклад",
+    processOutputs: "Результаты",
+    processNext: "Следующий шаг",
   },
   projectPage: {
     brief: "Задача",
@@ -463,6 +481,7 @@ export const ru: Dictionary = {
     contactMethodOptions: ['Email', 'WhatsApp', 'Telegram', 'Звонок'],
   },
   home: {
+    seoDescription: "FORMA — студия архитектуры и проектирования со строительством на Ко Панган: виллы, интерьеры, строительство и управление проектами для тропических островов.",
     heroTitle: 'Архитектура и дизайн-строительство на Ко Панган',
     heroSubtitle:
       'Архитектура, интерьеры и строительство вилл и пространств на Ко Панган, Таиланд — от концепции и планирования до завершения строительства.',
@@ -551,6 +570,12 @@ export const th: Dictionary = {
     breadcrumbLabel: 'เส้นทางนำทาง',
     primaryNavLabel: 'เมนูหลัก',
     mobileNavLabel: 'เมนู',
+    scopeHeading: "ขอบเขตงาน",
+    deliverablesHeading: "สิ่งที่ส่งมอบ",
+    logisticsHeading: "การขนส่งวัสดุและอุปกรณ์มาที่นี่",
+    processInput: "สิ่งที่เราต้องการจากคุณ",
+    processOutputs: "ผลลัพธ์ของขั้นตอนนี้",
+    processNext: "ขั้นตอนถัดไป",
   },
   projectPage: {
     brief: "โจทย์โครงการ",
@@ -626,6 +651,7 @@ export const th: Dictionary = {
     contactMethodOptions: ['อีเมล', 'WhatsApp', 'Telegram', 'โทรศัพท์'],
   },
   home: {
+    seoDescription: "FORMA สตูดิโอสถาปัตยกรรมและออกแบบพร้อมก่อสร้างบนเกาะพะงัน ให้บริการออกแบบวิลล่า ก่อสร้าง ตกแต่งภายใน และบริหารโครงการบนเกาะเขตร้อน",
     heroTitle: 'งานสถาปัตยกรรมและออกแบบ-ก่อสร้างบนเกาะพะงัน',
     heroSubtitle: 'งานสถาปัตยกรรม ออกแบบภายใน และก่อสร้าง สำหรับวิลล่าและพื้นที่ที่โดดเด่นบนเกาะพะงัน ประเทศไทย ตั้งแต่แนวคิดและการวางแผนจนถึงความสำเร็จของโครงการ',
     heroSlideAlts: ['ระเบียงวิลล่าที่มองเห็นทะเลบนเกาะพะงัน', 'สถาปัตยกรรมวิลล่าคอนกรีตพร้อมชายคายื่นลึกเพื่อบังแดด', 'วิลล่าระหว่างก่อสร้าง โครงสร้างหลักในไซต์งาน', 'สระว่ายน้ำอินฟินิตี้ที่ผสานกับภูมิทัศน์เขตร้อน', 'การตกแต่งภายในวิลล่าแบบมินิมอลที่อบอุ่นด้วยวัสดุธรรมชาติ'],
@@ -713,6 +739,12 @@ export const he: Dictionary = {
     breadcrumbLabel: 'פירורי לחם',
     primaryNavLabel: 'ניווט ראשי',
     mobileNavLabel: 'תפריט',
+    scopeHeading: "היקף העבודה",
+    deliverablesHeading: "תוצרים",
+    logisticsHeading: "הבאת חומרים וציוד לכאן",
+    processInput: "מה נדרש מכם",
+    processOutputs: "תוצרי השלב",
+    processNext: "השלב הבא",
   },
   projectPage: {
     brief: "הבריף",
@@ -788,6 +820,7 @@ export const he: Dictionary = {
     contactMethodOptions: ['אימייל', 'וואטסאפ', 'טלגרם', 'שיחת טלפון'],
   },
   home: {
+    seoDescription: "FORMA היא סטודיו לאדריכלות ולתכנון ובנייה בקו פנגן: תכנון ובניית וילות, עיצוב פנים וניהול פרויקטים לפרויקטים טרופיים באיים.",
     heroTitle: 'אדריכלות ובנייה מתוכננת בקו פנגן',
     heroSubtitle: 'אדריכלות, עיצוב פנים ובנייה לוילות ומרחבים ייחודיים בקו פנגן, תאילנד — מרעיון ותכנון ועד להשלמת הפרויקט.',
     heroSlideAlts: ['מרפסת וילה המשקיפה לים בקו פנגן', 'אדריכלות וילת בטון עם גגונים עמוקים להצללה', 'וילה בבנייה, שלד מבני באתר', 'בריכת אינפיניטי המשולבת בנוף טרופי', 'עיצוב פנים מינימליסטי וחם של וילה בחומרים טבעיים'],

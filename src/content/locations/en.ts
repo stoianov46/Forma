@@ -79,7 +79,7 @@ export const locationsEn: Omit<Location, 'translations'>[] = [
 export const locationsEnContent: Record<string, Location['translations']['en']> = {
   'koh-phangan': {
     seo: {
-      title: 'Architecture & Villa Design on Koh Phangan | FORMA',
+      title: 'Architecture & Design-Build on Koh Phangan | FORMA',
       description:
         'FORMA is based on Koh Phangan, designing and building villas, interiors and full design-build projects across the island — from Thong Sala to Haad Rin.',
     },

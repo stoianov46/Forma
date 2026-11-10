@@ -57,7 +57,7 @@ for (const p of pages) {
     add(url, locale, 'title-length', title.length > cfg.titleMax || title.length < cfg.titleMin ? 'WARNING' : 'PASS', title.length, `${cfg.titleMin}-${cfg.titleMax}`, 'Shorten/lengthen title'); }
   add(url, locale, 'description-present', desc ? 'PASS' : 'FAIL', desc ? desc.length : '(none)', 'non-empty');
   if (desc) { (descs.get(desc) || descs.set(desc, []).get(desc)).push(url);
-    add(url, locale, 'description-length', desc.length < cfg.descMin || desc.length > cfg.descMax ? 'WARNING' : 'PASS', desc.length, `${cfg.descMin}-${cfg.descMax}`, 'Rewrite meta description'); }
+    { const dmin = (cfg.descMinByLocale || {})[locale] || cfg.descMin; add(url, locale, 'description-length', desc.length < dmin || desc.length > cfg.descMax ? 'WARNING' : 'PASS', desc.length, `${dmin}-${cfg.descMax}`, 'Rewrite meta description'); } }
   if (!is404) {
     add(url, locale, 'canonical-present', canon ? 'PASS' : 'FAIL', canon || '(none)', 'present');
     if (canon) add(url, locale, 'canonical-correct', norm(canon) === url ? 'PASS' : 'FAIL', norm(canon), url, 'Canonical must be the page itself (language-specific)');
@@ -77,12 +77,12 @@ for (const p of pages) {
   const text = strip(main);
   const words = wc(text, locale);
   p.words = words; p.text = text;
-  const target = cfg.wordTarget[type];
+  const target = ((cfg.wordTargetByLocale || {})[locale] || {})[type] || cfg.wordTarget[type];
   if (target) add(url, locale, 'word-count', words >= target ? 'PASS' : 'WARNING', words, `>=${target}`, 'Expand with original, useful content (not filler)');
   if (cfg.directAnswerRequired.includes(type)) {
     const da = (main.match(/<section[^>]*data-direct-answer[^>]*>([\s\S]*?)<\/section>/) || [])[1];
     if (!da) add(url, locale, 'direct-answer', 'WARNING', '(none)', 'present');
-    else { const n = wc(strip(da), locale), [lo, hi] = cfg.directAnswerWords;
+    else { const n = wc(strip(da), locale), [lo, hi] = (cfg.directAnswerWordsByLocale || {})[locale] || cfg.directAnswerWords;
       add(url, locale, 'direct-answer', locale === 'th' || (n >= lo && n <= hi) ? 'PASS' : 'WARNING', n, `${lo}-${hi} words`, 'Tighten the opening answer'); }
   }
   if (cfg.faqRequired.includes(type)) add(url, locale, 'faq-present', /"@type":"FAQPage"/.test(html) ? 'PASS' : 'WARNING', /"@type":"FAQPage"/.test(html) ? 'yes' : 'no', 'FAQPage');
@@ -132,6 +132,10 @@ for (const e of enIndexable) for (const l of cfg.locales.filter((x) => x !== 'en
 for (const p of pages) if (p.locale !== 'en' && !p.noindex) {
   const lat = (p.text.match(/[A-Za-z]/g) || []).length, all = (p.text.match(/\p{L}/gu) || []).length || 1, pct = Math.round((lat / all) * 100);
   add(p.url, p.locale, 'untranslated-text', pct > cfg.latinMaxPercent ? 'WARNING' : 'PASS', pct + '% Latin letters', `<=${cfg.latinMaxPercent}%`, 'Look for English fallback strings');
+}
+for (const p of pages.filter((q) => q.locale !== 'en' && !q.noindex && !cfg.englishOnlyUrls.includes(q.url))) {
+  const heads = [...p.main.matchAll(/<h[1-3][^>]*>([\s\S]*?)<\/h[1-3]>/g)].map((m) => strip(m[1])).filter((h) => /^[A-Za-z0-9 &,.'’:\/-]{4,}$/.test(h) && !cfg.latinHeadingAllow.includes(h));
+  add(p.url, p.locale, 'english-heading', heads.length ? 'WARNING' : 'PASS', heads.slice(0, 3).join(' | ') || 'none', 'translated headings', 'Translate hard-coded English heading');
 }
 for (const p of pages.filter((q) => q.type === 'project')) {
   const hit = cfg.conceptForbidden.filter((w) => new RegExp('\\b' + w + '\\b', 'i').test(p.text));

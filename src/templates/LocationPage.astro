@@ -59,7 +59,7 @@ const availableLocales = LOCALES.filter((l) => hasLocationTranslation(l, slug));
   <SplitImageText image={location.image} alt={tr.name} heading={t.common.localContext} body={tr.context} reverse />
 
   <section class="wrap py-14 sm:py-20">
-    <h2 class="mb-4">Getting materials and equipment here</h2>
+    <h2 class="mb-4">{t.common.logisticsHeading}</h2>
     <p class="body-l max-w-3xl text-ink-900/80">{tr.logistics}</p>
   </section>
 

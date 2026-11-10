@@ -1,9 +1,9 @@
 {
   "summary": {
     "pages": 182,
-    "checks": 3540,
-    "pass": 3363,
-    "warning": 177,
+    "checks": 3669,
+    "pass": 3613,
+    "warning": 56,
     "fail": 0
   },
   "results": [
@@ -1163,9 +1163,9 @@
       "url": "/he/",
       "locale": "he",
       "check": "description-length",
-      "status": "WARNING",
-      "actual": "179",
-      "expected": "110-170",
+      "status": "PASS",
+      "actual": "123",
+      "expected": "85-170",
       "fix": "Rewrite meta description"
     },
     {
@@ -1173,9 +1173,18 @@
       "locale": "he",
       "check": "description-present",
       "status": "PASS",
-      "actual": "179",
+      "actual": "123",
       "expected": "non-empty",
       "fix": ""
+    },
+    {
+      "url": "/he/",
+      "locale": "he",
+      "check": "english-heading",
+      "status": "PASS",
+      "actual": "none",
+      "expected": "translated headings",
+      "fix": "Translate hard-coded English heading"
     },
     {
       "url": "/he/",
@@ -1327,7 +1336,7 @@
       "check": "description-length",
       "status": "PASS",
       "actual": "128",
-      "expected": "110-170",
+      "expected": "85-170",
       "fix": "Rewrite meta description"
     },
     {
@@ -1343,10 +1352,19 @@
       "url": "/he/about/",
       "locale": "he",
       "check": "direct-answer",
-      "status": "WARNING",
-      "actual": "28",
-      "expected": "40-60 words",
+      "status": "PASS",
+      "actual": "41",
+      "expected": "30-60 words",
       "fix": "Tighten the opening answer"
+    },
+    {
+      "url": "/he/about/",
+      "locale": "he",
+      "check": "english-heading",
+      "status": "PASS",
+      "actual": "none",
+      "expected": "translated headings",
+      "fix": "Translate hard-coded English heading"
     },
     {
       "url": "/he/about/",
@@ -1496,9 +1514,9 @@
       "url": "/he/contact/",
       "locale": "he",
       "check": "description-length",
-      "status": "WARNING",
+      "status": "PASS",
       "actual": "87",
-      "expected": "110-170",
+      "expected": "85-170",
       "fix": "Rewrite meta description"
     },
     {
@@ -1509,6 +1527,15 @@
       "actual": "87",
       "expected": "non-empty",
       "fix": ""
+    },
+    {
+      "url": "/he/contact/",
+      "locale": "he",
+      "check": "english-heading",
+      "status": "PASS",
+      "actual": "none",
+      "expected": "translated headings",
+      "fix": "Translate hard-coded English heading"
     },
     {
       "url": "/he/contact/",
@@ -1658,9 +1685,9 @@
       "url": "/he/journal/",
       "locale": "he",
       "check": "description-length",
-      "status": "WARNING",
+      "status": "PASS",
       "actual": "101",
-      "expected": "110-170",
+      "expected": "85-170",
       "fix": "Rewrite meta description"
     },
     {
@@ -1671,6 +1698,15 @@
       "actual": "101",
       "expected": "non-empty",
       "fix": ""
+    },
+    {
+      "url": "/he/journal/",
+      "locale": "he",
+      "check": "english-heading",
+      "status": "PASS",
+      "actual": "none",
+      "expected": "translated headings",
+      "fix": "Translate hard-coded English heading"
     },
     {
       "url": "/he/journal/",
@@ -1811,9 +1847,9 @@
       "url": "/he/journal/building-logistics-on-an-island/",
       "locale": "he",
       "check": "description-length",
-      "status": "WARNING",
+      "status": "PASS",
       "actual": "101",
-      "expected": "110-170",
+      "expected": "85-170",
       "fix": "Rewrite meta description"
     },
     {
@@ -1824,6 +1860,15 @@
       "actual": "101",
       "expected": "non-empty",
       "fix": ""
+    },
+    {
+      "url": "/he/journal/building-logistics-on-an-island/",
+      "locale": "he",
+      "check": "english-heading",
+      "status": "PASS",
+      "actual": "none",
+      "expected": "translated headings",
+      "fix": "Translate hard-coded English heading"
     },
     {
       "url": "/he/journal/building-logistics-on-an-island/",
@@ -1966,7 +2011,7 @@
       "check": "description-length",
       "status": "PASS",
       "actual": "112",
-      "expected": "110-170",
+      "expected": "85-170",
       "fix": "Rewrite meta description"
     },
     {
@@ -1977,6 +2022,15 @@
       "actual": "112",
       "expected": "non-empty",
       "fix": ""
+    },
+    {
+      "url": "/he/journal/building-permits-koh-phangan-what-to-expect/",
+      "locale": "he",
+      "check": "english-heading",
+      "status": "PASS",
+      "actual": "none",
+      "expected": "translated headings",
+      "fix": "Translate hard-coded English heading"
     },
     {
       "url": "/he/journal/building-permits-koh-phangan-what-to-expect/",
@@ -2119,7 +2173,7 @@
       "check": "description-length",
       "status": "PASS",
       "actual": "110",
-      "expected": "110-170",
+      "expected": "85-170",
       "fix": "Rewrite meta description"
     },
     {
@@ -2130,6 +2184,15 @@
       "actual": "110",
       "expected": "non-empty",
       "fix": ""
+    },
+    {
+      "url": "/he/journal/orienting-a-villa-for-koh-phangan-sun-and-wind/",
+      "locale": "he",
+      "check": "english-heading",
+      "status": "PASS",
+      "actual": "none",
+      "expected": "translated headings",
+      "fix": "Translate hard-coded English heading"
     },
     {
       "url": "/he/journal/orienting-a-villa-for-koh-phangan-sun-and-wind/",
@@ -2272,7 +2335,7 @@
       "check": "description-length",
       "status": "PASS",
       "actual": "126",
-      "expected": "110-170",
+      "expected": "85-170",
       "fix": "Rewrite meta description"
     },
     {
@@ -2283,6 +2346,15 @@
       "actual": "126",
       "expected": "non-empty",
       "fix": ""
+    },
+    {
+      "url": "/he/journal/passive-cooling-without-losing-design-quality/",
+      "locale": "he",
+      "check": "english-heading",
+      "status": "PASS",
+      "actual": "none",
+      "expected": "translated headings",
+      "fix": "Translate hard-coded English heading"
     },
     {
       "url": "/he/journal/passive-cooling-without-losing-design-quality/",
@@ -2425,7 +2497,7 @@
       "check": "description-length",
       "status": "PASS",
       "actual": "110",
-      "expected": "110-170",
+      "expected": "85-170",
       "fix": "Rewrite meta description"
     },
     {
@@ -2436,6 +2508,15 @@
       "actual": "110",
       "expected": "non-empty",
       "fix": ""
+    },
+    {
+      "url": "/he/journal/signs-a-villa-renovation-needs-structural-assessment/",
+      "locale": "he",
+      "check": "english-heading",
+      "status": "PASS",
+      "actual": "none",
+      "expected": "translated headings",
+      "fix": "Translate hard-coded English heading"
     },
     {
       "url": "/he/journal/signs-a-villa-renovation-needs-structural-assessment/",
@@ -2578,7 +2659,7 @@
       "check": "description-length",
       "status": "PASS",
       "actual": "133",
-      "expected": "110-170",
+      "expected": "85-170",
       "fix": "Rewrite meta description"
     },
     {
@@ -2589,6 +2670,15 @@
       "actual": "133",
       "expected": "non-empty",
       "fix": ""
+    },
+    {
+      "url": "/he/journal/what-tropical-architecture-actually-means/",
+      "locale": "he",
+      "check": "english-heading",
+      "status": "PASS",
+      "actual": "none",
+      "expected": "translated headings",
+      "fix": "Translate hard-coded English heading"
     },
     {
       "url": "/he/journal/what-tropical-architecture-actually-means/",
@@ -2731,7 +2821,7 @@
       "check": "description-length",
       "status": "PASS",
       "actual": "115",
-      "expected": "110-170",
+      "expected": "85-170",
       "fix": "Rewrite meta description"
     },
     {
@@ -2742,6 +2832,15 @@
       "actual": "115",
       "expected": "non-empty",
       "fix": ""
+    },
+    {
+      "url": "/he/locations/",
+      "locale": "he",
+      "check": "english-heading",
+      "status": "PASS",
+      "actual": "none",
+      "expected": "translated headings",
+      "fix": "Translate hard-coded English heading"
     },
     {
       "url": "/he/locations/",
@@ -2882,9 +2981,9 @@
       "url": "/he/locations/baan-tai/",
       "locale": "he",
       "check": "description-length",
-      "status": "WARNING",
+      "status": "PASS",
       "actual": "101",
-      "expected": "110-170",
+      "expected": "85-170",
       "fix": "Rewrite meta description"
     },
     {
@@ -2900,10 +2999,19 @@
       "url": "/he/locations/baan-tai/",
       "locale": "he",
       "check": "direct-answer",
-      "status": "WARNING",
-      "actual": "33",
-      "expected": "40-60 words",
+      "status": "PASS",
+      "actual": "43",
+      "expected": "30-60 words",
       "fix": "Tighten the opening answer"
+    },
+    {
+      "url": "/he/locations/baan-tai/",
+      "locale": "he",
+      "check": "english-heading",
+      "status": "PASS",
+      "actual": "none",
+      "expected": "translated headings",
+      "fix": "Translate hard-coded English heading"
     },
     {
       "url": "/he/locations/baan-tai/",
@@ -3027,7 +3135,7 @@
       "locale": "he",
       "check": "untranslated-text",
       "status": "PASS",
-      "actual": "5% Latin letters",
+      "actual": "2% Latin letters",
       "expected": "<=30%",
       "fix": "Look for English fallback strings"
     },
@@ -3053,9 +3161,9 @@
       "url": "/he/locations/bali/",
       "locale": "he",
       "check": "description-length",
-      "status": "WARNING",
+      "status": "PASS",
       "actual": "107",
-      "expected": "110-170",
+      "expected": "85-170",
       "fix": "Rewrite meta description"
     },
     {
@@ -3071,10 +3179,19 @@
       "url": "/he/locations/bali/",
       "locale": "he",
       "check": "direct-answer",
-      "status": "WARNING",
-      "actual": "25",
-      "expected": "40-60 words",
+      "status": "PASS",
+      "actual": "40",
+      "expected": "30-60 words",
       "fix": "Tighten the opening answer"
+    },
+    {
+      "url": "/he/locations/bali/",
+      "locale": "he",
+      "check": "english-heading",
+      "status": "PASS",
+      "actual": "none",
+      "expected": "translated headings",
+      "fix": "Translate hard-coded English heading"
     },
     {
       "url": "/he/locations/bali/",
@@ -3198,7 +3315,7 @@
       "locale": "he",
       "check": "untranslated-text",
       "status": "PASS",
-      "actual": "3% Latin letters",
+      "actual": "1% Latin letters",
       "expected": "<=30%",
       "fix": "Look for English fallback strings"
     },
@@ -3224,9 +3341,9 @@
       "url": "/he/locations/chaloklum/",
       "locale": "he",
       "check": "description-length",
-      "status": "WARNING",
+      "status": "PASS",
       "actual": "102",
-      "expected": "110-170",
+      "expected": "85-170",
       "fix": "Rewrite meta description"
     },
     {
@@ -3242,10 +3359,19 @@
       "url": "/he/locations/chaloklum/",
       "locale": "he",
       "check": "direct-answer",
-      "status": "WARNING",
-      "actual": "31",
-      "expected": "40-60 words",
+      "status": "PASS",
+      "actual": "46",
+      "expected": "30-60 words",
       "fix": "Tighten the opening answer"
+    },
+    {
+      "url": "/he/locations/chaloklum/",
+      "locale": "he",
+      "check": "english-heading",
+      "status": "PASS",
+      "actual": "none",
+      "expected": "translated headings",
+      "fix": "Translate hard-coded English heading"
     },
     {
       "url": "/he/locations/chaloklum/",
@@ -3369,7 +3495,7 @@
       "locale": "he",
       "check": "untranslated-text",
       "status": "PASS",
-      "actual": "4% Latin letters",
+      "actual": "2% Latin letters",
       "expected": "<=30%",
       "fix": "Look for English fallback strings"
     },
@@ -3397,7 +3523,7 @@
       "check": "description-length",
       "status": "PASS",
       "actual": "127",
-      "expected": "110-170",
+      "expected": "85-170",
       "fix": "Rewrite meta description"
     },
     {
@@ -3413,10 +3539,19 @@
       "url": "/he/locations/haad-rin/",
       "locale": "he",
       "check": "direct-answer",
-      "status": "WARNING",
-      "actual": "33",
-      "expected": "40-60 words",
+      "status": "PASS",
+      "actual": "44",
+      "expected": "30-60 words",
       "fix": "Tighten the opening answer"
+    },
+    {
+      "url": "/he/locations/haad-rin/",
+      "locale": "he",
+      "check": "english-heading",
+      "status": "PASS",
+      "actual": "none",
+      "expected": "translated headings",
+      "fix": "Translate hard-coded English heading"
     },
     {
       "url": "/he/locations/haad-rin/",
@@ -3540,7 +3675,7 @@
       "locale": "he",
       "check": "untranslated-text",
       "status": "PASS",
-      "actual": "4% Latin letters",
+      "actual": "2% Latin letters",
       "expected": "<=30%",
       "fix": "Look for English fallback strings"
     },
@@ -3568,7 +3703,7 @@
       "check": "description-length",
       "status": "PASS",
       "actual": "117",
-      "expected": "110-170",
+      "expected": "85-170",
       "fix": "Rewrite meta description"
     },
     {
@@ -3584,10 +3719,19 @@
       "url": "/he/locations/haad-salad/",
       "locale": "he",
       "check": "direct-answer",
-      "status": "WARNING",
-      "actual": "35",
-      "expected": "40-60 words",
+      "status": "PASS",
+      "actual": "42",
+      "expected": "30-60 words",
       "fix": "Tighten the opening answer"
+    },
+    {
+      "url": "/he/locations/haad-salad/",
+      "locale": "he",
+      "check": "english-heading",
+      "status": "PASS",
+      "actual": "none",
+      "expected": "translated headings",
+      "fix": "Translate hard-coded English heading"
     },
     {
       "url": "/he/locations/haad-salad/",
@@ -3711,7 +3855,7 @@
       "locale": "he",
       "check": "untranslated-text",
       "status": "PASS",
-      "actual": "4% Latin letters",
+      "actual": "2% Latin letters",
       "expected": "<=30%",
       "fix": "Look for English fallback strings"
     },
@@ -3737,9 +3881,9 @@
       "url": "/he/locations/haad-yao/",
       "locale": "he",
       "check": "description-length",
-      "status": "WARNING",
+      "status": "PASS",
       "actual": "100",
-      "expected": "110-170",
+      "expected": "85-170",
       "fix": "Rewrite meta description"
     },
     {
@@ -3755,10 +3899,19 @@
       "url": "/he/locations/haad-yao/",
       "locale": "he",
       "check": "direct-answer",
-      "status": "WARNING",
-      "actual": "34",
-      "expected": "40-60 words",
+      "status": "PASS",
+      "actual": "47",
+      "expected": "30-60 words",
       "fix": "Tighten the opening answer"
+    },
+    {
+      "url": "/he/locations/haad-yao/",
+      "locale": "he",
+      "check": "english-heading",
+      "status": "PASS",
+      "actual": "none",
+      "expected": "translated headings",
+      "fix": "Translate hard-coded English heading"
     },
     {
       "url": "/he/locations/haad-yao/",
@@ -3882,7 +4035,7 @@
       "locale": "he",
       "check": "untranslated-text",
       "status": "PASS",
-      "actual": "4% Latin letters",
+      "actual": "2% Latin letters",
       "expected": "<=30%",
       "fix": "Look for English fallback strings"
     },
@@ -3908,9 +4061,9 @@
       "url": "/he/locations/koh-phangan/",
       "locale": "he",
       "check": "description-length",
-      "status": "WARNING",
+      "status": "PASS",
       "actual": "109",
-      "expected": "110-170",
+      "expected": "85-170",
       "fix": "Rewrite meta description"
     },
     {
@@ -3926,10 +4079,19 @@
       "url": "/he/locations/koh-phangan/",
       "locale": "he",
       "check": "direct-answer",
-      "status": "WARNING",
-      "actual": "28",
-      "expected": "40-60 words",
+      "status": "PASS",
+      "actual": "41",
+      "expected": "30-60 words",
       "fix": "Tighten the opening answer"
+    },
+    {
+      "url": "/he/locations/koh-phangan/",
+      "locale": "he",
+      "check": "english-heading",
+      "status": "PASS",
+      "actual": "none",
+      "expected": "translated headings",
+      "fix": "Translate hard-coded English heading"
     },
     {
       "url": "/he/locations/koh-phangan/",
@@ -4053,7 +4215,7 @@
       "locale": "he",
       "check": "untranslated-text",
       "status": "PASS",
-      "actual": "3% Latin letters",
+      "actual": "1% Latin letters",
       "expected": "<=30%",
       "fix": "Look for English fallback strings"
     },
@@ -4081,7 +4243,7 @@
       "check": "description-length",
       "status": "PASS",
       "actual": "126",
-      "expected": "110-170",
+      "expected": "85-170",
       "fix": "Rewrite meta description"
     },
     {
@@ -4097,10 +4259,19 @@
       "url": "/he/locations/koh-samui/",
       "locale": "he",
       "check": "direct-answer",
-      "status": "WARNING",
-      "actual": "31",
-      "expected": "40-60 words",
+      "status": "PASS",
+      "actual": "40",
+      "expected": "30-60 words",
       "fix": "Tighten the opening answer"
+    },
+    {
+      "url": "/he/locations/koh-samui/",
+      "locale": "he",
+      "check": "english-heading",
+      "status": "PASS",
+      "actual": "none",
+      "expected": "translated headings",
+      "fix": "Translate hard-coded English heading"
     },
     {
       "url": "/he/locations/koh-samui/",
@@ -4224,7 +4395,7 @@
       "locale": "he",
       "check": "untranslated-text",
       "status": "PASS",
-      "actual": "3% Latin letters",
+      "actual": "1% Latin letters",
       "expected": "<=30%",
       "fix": "Look for English fallback strings"
     },
@@ -4252,7 +4423,7 @@
       "check": "description-length",
       "status": "PASS",
       "actual": "115",
-      "expected": "110-170",
+      "expected": "85-170",
       "fix": "Rewrite meta description"
     },
     {
@@ -4268,10 +4439,19 @@
       "url": "/he/locations/koh-tao/",
       "locale": "he",
       "check": "direct-answer",
-      "status": "WARNING",
-      "actual": "32",
-      "expected": "40-60 words",
+      "status": "PASS",
+      "actual": "45",
+      "expected": "30-60 words",
       "fix": "Tighten the opening answer"
+    },
+    {
+      "url": "/he/locations/koh-tao/",
+      "locale": "he",
+      "check": "english-heading",
+      "status": "PASS",
+      "actual": "none",
+      "expected": "translated headings",
+      "fix": "Translate hard-coded English heading"
     },
     {
       "url": "/he/locations/koh-tao/",
@@ -4395,7 +4575,7 @@
       "locale": "he",
       "check": "untranslated-text",
       "status": "PASS",
-      "actual": "4% Latin letters",
+      "actual": "1% Latin letters",
       "expected": "<=30%",
       "fix": "Look for English fallback strings"
     },
@@ -4423,7 +4603,7 @@
       "check": "description-length",
       "status": "PASS",
       "actual": "127",
-      "expected": "110-170",
+      "expected": "85-170",
       "fix": "Rewrite meta description"
     },
     {
@@ -4439,10 +4619,19 @@
       "url": "/he/locations/sri-thanu/",
       "locale": "he",
       "check": "direct-answer",
-      "status": "WARNING",
-      "actual": "33",
-      "expected": "40-60 words",
+      "status": "PASS",
+      "actual": "45",
+      "expected": "30-60 words",
       "fix": "Tighten the opening answer"
+    },
+    {
+      "url": "/he/locations/sri-thanu/",
+      "locale": "he",
+      "check": "english-heading",
+      "status": "PASS",
+      "actual": "none",
+      "expected": "translated headings",
+      "fix": "Translate hard-coded English heading"
     },
     {
       "url": "/he/locations/sri-thanu/",
@@ -4566,7 +4755,7 @@
       "locale": "he",
       "check": "untranslated-text",
       "status": "PASS",
-      "actual": "4% Latin letters",
+      "actual": "2% Latin letters",
       "expected": "<=30%",
       "fix": "Look for English fallback strings"
     },
@@ -4592,9 +4781,9 @@
       "url": "/he/locations/thong-sala/",
       "locale": "he",
       "check": "description-length",
-      "status": "WARNING",
+      "status": "PASS",
       "actual": "89",
-      "expected": "110-170",
+      "expected": "85-170",
       "fix": "Rewrite meta description"
     },
     {
@@ -4610,10 +4799,19 @@
       "url": "/he/locations/thong-sala/",
       "locale": "he",
       "check": "direct-answer",
-      "status": "WARNING",
-      "actual": "35",
-      "expected": "40-60 words",
+      "status": "PASS",
+      "actual": "40",
+      "expected": "30-60 words",
       "fix": "Tighten the opening answer"
+    },
+    {
+      "url": "/he/locations/thong-sala/",
+      "locale": "he",
+      "check": "english-heading",
+      "status": "PASS",
+      "actual": "none",
+      "expected": "translated headings",
+      "fix": "Translate hard-coded English heading"
     },
     {
       "url": "/he/locations/thong-sala/",
@@ -4737,7 +4935,7 @@
       "locale": "he",
       "check": "untranslated-text",
       "status": "PASS",
-      "actual": "5% Latin letters",
+      "actual": "2% Latin letters",
       "expected": "<=30%",
       "fix": "Look for English fallback strings"
     },
@@ -4763,9 +4961,9 @@
       "url": "/he/process/",
       "locale": "he",
       "check": "description-length",
-      "status": "WARNING",
+      "status": "PASS",
       "actual": "98",
-      "expected": "110-170",
+      "expected": "85-170",
       "fix": "Rewrite meta description"
     },
     {
@@ -4781,10 +4979,19 @@
       "url": "/he/process/",
       "locale": "he",
       "check": "direct-answer",
-      "status": "WARNING",
-      "actual": "34",
-      "expected": "40-60 words",
+      "status": "PASS",
+      "actual": "40",
+      "expected": "30-60 words",
       "fix": "Tighten the opening answer"
+    },
+    {
+      "url": "/he/process/",
+      "locale": "he",
+      "check": "english-heading",
+      "status": "PASS",
+      "actual": "none",
+      "expected": "translated headings",
+      "fix": "Translate hard-coded English heading"
     },
     {
       "url": "/he/process/",
@@ -4908,7 +5115,7 @@
       "locale": "he",
       "check": "untranslated-text",
       "status": "PASS",
-      "actual": "7% Latin letters",
+      "actual": "0% Latin letters",
       "expected": "<=30%",
       "fix": "Look for English fallback strings"
     },
@@ -4934,9 +5141,9 @@
       "url": "/he/projects/",
       "locale": "he",
       "check": "description-length",
-      "status": "WARNING",
+      "status": "PASS",
       "actual": "97",
-      "expected": "110-170",
+      "expected": "85-170",
       "fix": "Rewrite meta description"
     },
     {
@@ -4947,6 +5154,15 @@
       "actual": "97",
       "expected": "non-empty",
       "fix": ""
+    },
+    {
+      "url": "/he/projects/",
+      "locale": "he",
+      "check": "english-heading",
+      "status": "PASS",
+      "actual": "none",
+      "expected": "translated headings",
+      "fix": "Translate hard-coded English heading"
     },
     {
       "url": "/he/projects/",
@@ -5107,7 +5323,7 @@
       "check": "description-length",
       "status": "WARNING",
       "actual": "78",
-      "expected": "110-170",
+      "expected": "85-170",
       "fix": "Rewrite meta description"
     },
     {
@@ -5118,6 +5334,15 @@
       "actual": "78",
       "expected": "non-empty",
       "fix": ""
+    },
+    {
+      "url": "/he/projects/baan-tai-family-compound/",
+      "locale": "he",
+      "check": "english-heading",
+      "status": "PASS",
+      "actual": "none",
+      "expected": "translated headings",
+      "fix": "Translate hard-coded English heading"
     },
     {
       "url": "/he/projects/baan-tai-family-compound/",
@@ -5285,9 +5510,9 @@
       "url": "/he/projects/bay-view-residence-chaloklum/",
       "locale": "he",
       "check": "description-length",
-      "status": "WARNING",
+      "status": "PASS",
       "actual": "103",
-      "expected": "110-170",
+      "expected": "85-170",
       "fix": "Rewrite meta description"
     },
     {
@@ -5298,6 +5523,15 @@
       "actual": "103",
       "expected": "non-empty",
       "fix": ""
+    },
+    {
+      "url": "/he/projects/bay-view-residence-chaloklum/",
+      "locale": "he",
+      "check": "english-heading",
+      "status": "PASS",
+      "actual": "none",
+      "expected": "translated headings",
+      "fix": "Translate hard-coded English heading"
     },
     {
       "url": "/he/projects/bay-view-residence-chaloklum/",
@@ -5465,9 +5699,9 @@
       "url": "/he/projects/haad-salad-privacy-villa/",
       "locale": "he",
       "check": "description-length",
-      "status": "WARNING",
+      "status": "PASS",
       "actual": "97",
-      "expected": "110-170",
+      "expected": "85-170",
       "fix": "Rewrite meta description"
     },
     {
@@ -5478,6 +5712,15 @@
       "actual": "97",
       "expected": "non-empty",
       "fix": ""
+    },
+    {
+      "url": "/he/projects/haad-salad-privacy-villa/",
+      "locale": "he",
+      "check": "english-heading",
+      "status": "PASS",
+      "actual": "none",
+      "expected": "translated headings",
+      "fix": "Translate hard-coded English heading"
     },
     {
       "url": "/he/projects/haad-salad-privacy-villa/",
@@ -5645,9 +5888,9 @@
       "url": "/he/projects/haad-yao-beachfront-pavilion/",
       "locale": "he",
       "check": "description-length",
-      "status": "WARNING",
+      "status": "PASS",
       "actual": "96",
-      "expected": "110-170",
+      "expected": "85-170",
       "fix": "Rewrite meta description"
     },
     {
@@ -5658,6 +5901,15 @@
       "actual": "96",
       "expected": "non-empty",
       "fix": ""
+    },
+    {
+      "url": "/he/projects/haad-yao-beachfront-pavilion/",
+      "locale": "he",
+      "check": "english-heading",
+      "status": "PASS",
+      "actual": "none",
+      "expected": "translated headings",
+      "fix": "Translate hard-coded English heading"
     },
     {
       "url": "/he/projects/haad-yao-beachfront-pavilion/",
@@ -5825,9 +6077,9 @@
       "url": "/he/projects/ridge-house-sri-thanu/",
       "locale": "he",
       "check": "description-length",
-      "status": "WARNING",
+      "status": "PASS",
       "actual": "104",
-      "expected": "110-170",
+      "expected": "85-170",
       "fix": "Rewrite meta description"
     },
     {
@@ -5838,6 +6090,15 @@
       "actual": "104",
       "expected": "non-empty",
       "fix": ""
+    },
+    {
+      "url": "/he/projects/ridge-house-sri-thanu/",
+      "locale": "he",
+      "check": "english-heading",
+      "status": "PASS",
+      "actual": "none",
+      "expected": "translated headings",
+      "fix": "Translate hard-coded English heading"
     },
     {
       "url": "/he/projects/ridge-house-sri-thanu/",
@@ -6005,9 +6266,9 @@
       "url": "/he/projects/thong-sala-townhouse-renovation/",
       "locale": "he",
       "check": "description-length",
-      "status": "WARNING",
+      "status": "PASS",
       "actual": "102",
-      "expected": "110-170",
+      "expected": "85-170",
       "fix": "Rewrite meta description"
     },
     {
@@ -6018,6 +6279,15 @@
       "actual": "102",
       "expected": "non-empty",
       "fix": ""
+    },
+    {
+      "url": "/he/projects/thong-sala-townhouse-renovation/",
+      "locale": "he",
+      "check": "english-heading",
+      "status": "PASS",
+      "actual": "none",
+      "expected": "translated headings",
+      "fix": "Translate hard-coded English heading"
     },
     {
       "url": "/he/projects/thong-sala-townhouse-renovation/",
@@ -6168,8 +6438,8 @@
       "locale": "he",
       "check": "description-length",
       "status": "PASS",
-      "actual": "111",
-      "expected": "110-170",
+      "actual": "116",
+      "expected": "85-170",
       "fix": "Rewrite meta description"
     },
     {
@@ -6177,7 +6447,7 @@
       "locale": "he",
       "check": "description-present",
       "status": "PASS",
-      "actual": "111",
+      "actual": "116",
       "expected": "non-empty",
       "fix": ""
     },
@@ -6185,10 +6455,19 @@
       "url": "/he/services/architecture/",
       "locale": "he",
       "check": "direct-answer",
-      "status": "WARNING",
-      "actual": "30",
-      "expected": "40-60 words",
+      "status": "PASS",
+      "actual": "40",
+      "expected": "30-60 words",
       "fix": "Tighten the opening answer"
+    },
+    {
+      "url": "/he/services/architecture/",
+      "locale": "he",
+      "check": "english-heading",
+      "status": "PASS",
+      "actual": "none",
+      "expected": "translated headings",
+      "fix": "Translate hard-coded English heading"
     },
     {
       "url": "/he/services/architecture/",
@@ -6303,7 +6582,7 @@
       "locale": "he",
       "check": "title-length",
       "status": "PASS",
-      "actual": "32",
+      "actual": "38",
       "expected": "20-65",
       "fix": "Shorten/lengthen title"
     },
@@ -6312,7 +6591,7 @@
       "locale": "he",
       "check": "title-present",
       "status": "PASS",
-      "actual": "סטודיו אדריכלות בקו פנגן | FORMA",
+      "actual": "אדריכלות ותכנון וילות בקו פנגן | FORMA",
       "expected": "non-empty",
       "fix": ""
     },
@@ -6321,7 +6600,7 @@
       "locale": "he",
       "check": "untranslated-text",
       "status": "PASS",
-      "actual": "1% Latin letters",
+      "actual": "0% Latin letters",
       "expected": "<=30%",
       "fix": "Look for English fallback strings"
     },
@@ -6329,9 +6608,9 @@
       "url": "/he/services/architecture/",
       "locale": "he",
       "check": "word-count",
-      "status": "WARNING",
-      "actual": "890",
-      "expected": ">=1500",
+      "status": "PASS",
+      "actual": "1531",
+      "expected": ">=1250",
       "fix": "Expand with original, useful content (not filler)"
     },
     {
@@ -6356,9 +6635,9 @@
       "url": "/he/services/concrete-construction/",
       "locale": "he",
       "check": "description-length",
-      "status": "WARNING",
-      "actual": "105",
-      "expected": "110-170",
+      "status": "PASS",
+      "actual": "112",
+      "expected": "85-170",
       "fix": "Rewrite meta description"
     },
     {
@@ -6366,7 +6645,7 @@
       "locale": "he",
       "check": "description-present",
       "status": "PASS",
-      "actual": "105",
+      "actual": "112",
       "expected": "non-empty",
       "fix": ""
     },
@@ -6374,10 +6653,19 @@
       "url": "/he/services/concrete-construction/",
       "locale": "he",
       "check": "direct-answer",
-      "status": "WARNING",
-      "actual": "26",
-      "expected": "40-60 words",
+      "status": "PASS",
+      "actual": "42",
+      "expected": "30-60 words",
       "fix": "Tighten the opening answer"
+    },
+    {
+      "url": "/he/services/concrete-construction/",
+      "locale": "he",
+      "check": "english-heading",
+      "status": "PASS",
+      "actual": "none",
+      "expected": "translated headings",
+      "fix": "Translate hard-coded English heading"
     },
     {
       "url": "/he/services/concrete-construction/",
@@ -6492,7 +6780,7 @@
       "locale": "he",
       "check": "title-length",
       "status": "PASS",
-      "actual": "34",
+      "actual": "28",
       "expected": "20-65",
       "fix": "Shorten/lengthen title"
     },
@@ -6501,7 +6789,7 @@
       "locale": "he",
       "check": "title-present",
       "status": "PASS",
-      "actual": "בנייה בבטון טרנקי בקו פנגן | FORMA",
+      "actual": "בנייה בבטון בקו פנגן | FORMA",
       "expected": "non-empty",
       "fix": ""
     },
@@ -6510,7 +6798,7 @@
       "locale": "he",
       "check": "untranslated-text",
       "status": "PASS",
-      "actual": "1% Latin letters",
+      "actual": "0% Latin letters",
       "expected": "<=30%",
       "fix": "Look for English fallback strings"
     },
@@ -6518,9 +6806,9 @@
       "url": "/he/services/concrete-construction/",
       "locale": "he",
       "check": "word-count",
-      "status": "WARNING",
-      "actual": "782",
-      "expected": ">=1500",
+      "status": "PASS",
+      "actual": "1317",
+      "expected": ">=1250",
       "fix": "Expand with original, useful content (not filler)"
     },
     {
@@ -6545,9 +6833,9 @@
       "url": "/he/services/construction-supervision/",
       "locale": "he",
       "check": "description-length",
-      "status": "WARNING",
-      "actual": "102",
-      "expected": "110-170",
+      "status": "PASS",
+      "actual": "114",
+      "expected": "85-170",
       "fix": "Rewrite meta description"
     },
     {
@@ -6555,7 +6843,7 @@
       "locale": "he",
       "check": "description-present",
       "status": "PASS",
-      "actual": "102",
+      "actual": "114",
       "expected": "non-empty",
       "fix": ""
     },
@@ -6563,10 +6851,19 @@
       "url": "/he/services/construction-supervision/",
       "locale": "he",
       "check": "direct-answer",
-      "status": "WARNING",
-      "actual": "25",
-      "expected": "40-60 words",
+      "status": "PASS",
+      "actual": "42",
+      "expected": "30-60 words",
       "fix": "Tighten the opening answer"
+    },
+    {
+      "url": "/he/services/construction-supervision/",
+      "locale": "he",
+      "check": "english-heading",
+      "status": "PASS",
+      "actual": "none",
+      "expected": "translated headings",
+      "fix": "Translate hard-coded English heading"
     },
     {
       "url": "/he/services/construction-supervision/",
@@ -6699,7 +6996,7 @@
       "locale": "he",
       "check": "untranslated-text",
       "status": "PASS",
-      "actual": "1% Latin letters",
+      "actual": "0% Latin letters",
       "expected": "<=30%",
       "fix": "Look for English fallback strings"
     },
@@ -6707,9 +7004,9 @@
       "url": "/he/services/construction-supervision/",
       "locale": "he",
       "check": "word-count",
-      "status": "WARNING",
-      "actual": "738",
-      "expected": ">=1500",
+      "status": "PASS",
+      "actual": "1298",
+      "expected": ">=1250",
       "fix": "Expand with original, useful content (not filler)"
     },
     {
@@ -6734,9 +7031,9 @@
       "url": "/he/services/construction/",
       "locale": "he",
       "check": "description-length",
-      "status": "WARNING",
-      "actual": "97",
-      "expected": "110-170",
+      "status": "PASS",
+      "actual": "126",
+      "expected": "85-170",
       "fix": "Rewrite meta description"
     },
     {
@@ -6744,7 +7041,7 @@
       "locale": "he",
       "check": "description-present",
       "status": "PASS",
-      "actual": "97",
+      "actual": "126",
       "expected": "non-empty",
       "fix": ""
     },
@@ -6752,10 +7049,19 @@
       "url": "/he/services/construction/",
       "locale": "he",
       "check": "direct-answer",
-      "status": "WARNING",
-      "actual": "28",
-      "expected": "40-60 words",
+      "status": "PASS",
+      "actual": "40",
+      "expected": "30-60 words",
       "fix": "Tighten the opening answer"
+    },
+    {
+      "url": "/he/services/construction/",
+      "locale": "he",
+      "check": "english-heading",
+      "status": "PASS",
+      "actual": "none",
+      "expected": "translated headings",
+      "fix": "Translate hard-coded English heading"
     },
     {
       "url": "/he/services/construction/",
@@ -6870,7 +7176,7 @@
       "locale": "he",
       "check": "title-length",
       "status": "PASS",
-      "actual": "43",
+      "actual": "42",
       "expected": "20-65",
       "fix": "Shorten/lengthen title"
     },
@@ -6879,7 +7185,7 @@
       "locale": "he",
       "check": "title-present",
       "status": "PASS",
-      "actual": "בניית וילות בקו פנגן | תכנון וביצוע | FORMA",
+      "actual": "בניית וילות בקו פנגן | תכנון-ביצוע | FORMA",
       "expected": "non-empty",
       "fix": ""
     },
@@ -6888,7 +7194,7 @@
       "locale": "he",
       "check": "untranslated-text",
       "status": "PASS",
-      "actual": "1% Latin letters",
+      "actual": "0% Latin letters",
       "expected": "<=30%",
       "fix": "Look for English fallback strings"
     },
@@ -6896,9 +7202,9 @@
       "url": "/he/services/construction/",
       "locale": "he",
       "check": "word-count",
-      "status": "WARNING",
-      "actual": "815",
-      "expected": ">=1500",
+      "status": "PASS",
+      "actual": "1424",
+      "expected": ">=1250",
       "fix": "Expand with original, useful content (not filler)"
     },
     {
@@ -6923,9 +7229,9 @@
       "url": "/he/services/eco-construction/",
       "locale": "he",
       "check": "description-length",
-      "status": "WARNING",
-      "actual": "104",
-      "expected": "110-170",
+      "status": "PASS",
+      "actual": "125",
+      "expected": "85-170",
       "fix": "Rewrite meta description"
     },
     {
@@ -6933,7 +7239,7 @@
       "locale": "he",
       "check": "description-present",
       "status": "PASS",
-      "actual": "104",
+      "actual": "125",
       "expected": "non-empty",
       "fix": ""
     },
@@ -6941,10 +7247,19 @@
       "url": "/he/services/eco-construction/",
       "locale": "he",
       "check": "direct-answer",
-      "status": "WARNING",
-      "actual": "29",
-      "expected": "40-60 words",
+      "status": "PASS",
+      "actual": "41",
+      "expected": "30-60 words",
       "fix": "Tighten the opening answer"
+    },
+    {
+      "url": "/he/services/eco-construction/",
+      "locale": "he",
+      "check": "english-heading",
+      "status": "PASS",
+      "actual": "none",
+      "expected": "translated headings",
+      "fix": "Translate hard-coded English heading"
     },
     {
       "url": "/he/services/eco-construction/",
@@ -7068,7 +7383,7 @@
       "locale": "he",
       "check": "title-present",
       "status": "PASS",
-      "actual": "בנייה אקולוגית בקו פנגן | בנייה בת קיימא | FORMA",
+      "actual": "בנייה אקולוגית בקו פנגן | בנייה בת-קיימא | FORMA",
       "expected": "non-empty",
       "fix": ""
     },
@@ -7077,7 +7392,7 @@
       "locale": "he",
       "check": "untranslated-text",
       "status": "PASS",
-      "actual": "1% Latin letters",
+      "actual": "0% Latin letters",
       "expected": "<=30%",
       "fix": "Look for English fallback strings"
     },
@@ -7085,9 +7400,9 @@
       "url": "/he/services/eco-construction/",
       "locale": "he",
       "check": "word-count",
-      "status": "WARNING",
-      "actual": "867",
-      "expected": ">=1500",
+      "status": "PASS",
+      "actual": "1485",
+      "expected": ">=1250",
       "fix": "Expand with original, useful content (not filler)"
     },
     {
@@ -7112,9 +7427,9 @@
       "url": "/he/services/interior-design/",
       "locale": "he",
       "check": "description-length",
-      "status": "WARNING",
-      "actual": "99",
-      "expected": "110-170",
+      "status": "PASS",
+      "actual": "117",
+      "expected": "85-170",
       "fix": "Rewrite meta description"
     },
     {
@@ -7122,7 +7437,7 @@
       "locale": "he",
       "check": "description-present",
       "status": "PASS",
-      "actual": "99",
+      "actual": "117",
       "expected": "non-empty",
       "fix": ""
     },
@@ -7130,10 +7445,19 @@
       "url": "/he/services/interior-design/",
       "locale": "he",
       "check": "direct-answer",
-      "status": "WARNING",
-      "actual": "27",
-      "expected": "40-60 words",
+      "status": "PASS",
+      "actual": "40",
+      "expected": "30-60 words",
       "fix": "Tighten the opening answer"
+    },
+    {
+      "url": "/he/services/interior-design/",
+      "locale": "he",
+      "check": "english-heading",
+      "status": "PASS",
+      "actual": "none",
+      "expected": "translated headings",
+      "fix": "Translate hard-coded English heading"
     },
     {
       "url": "/he/services/interior-design/",
@@ -7266,7 +7590,7 @@
       "locale": "he",
       "check": "untranslated-text",
       "status": "PASS",
-      "actual": "1% Latin letters",
+      "actual": "0% Latin letters",
       "expected": "<=30%",
       "fix": "Look for English fallback strings"
     },
@@ -7274,9 +7598,9 @@
       "url": "/he/services/interior-design/",
       "locale": "he",
       "check": "word-count",
-      "status": "WARNING",
-      "actual": "817",
-      "expected": ">=1500",
+      "status": "PASS",
+      "actual": "1455",
+      "expected": ">=1250",
       "fix": "Expand with original, useful content (not filler)"
     },
     {
@@ -7301,9 +7625,9 @@
       "url": "/he/services/landscape-design/",
       "locale": "he",
       "check": "description-length",
-      "status": "WARNING",
-      "actual": "85",
-      "expected": "110-170",
+      "status": "PASS",
+      "actual": "113",
+      "expected": "85-170",
       "fix": "Rewrite meta description"
     },
     {
@@ -7311,7 +7635,7 @@
       "locale": "he",
       "check": "description-present",
       "status": "PASS",
-      "actual": "85",
+      "actual": "113",
       "expected": "non-empty",
       "fix": ""
     },
@@ -7319,10 +7643,19 @@
       "url": "/he/services/landscape-design/",
       "locale": "he",
       "check": "direct-answer",
-      "status": "WARNING",
-      "actual": "26",
-      "expected": "40-60 words",
+      "status": "PASS",
+      "actual": "41",
+      "expected": "30-60 words",
       "fix": "Tighten the opening answer"
+    },
+    {
+      "url": "/he/services/landscape-design/",
+      "locale": "he",
+      "check": "english-heading",
+      "status": "PASS",
+      "actual": "none",
+      "expected": "translated headings",
+      "fix": "Translate hard-coded English heading"
     },
     {
       "url": "/he/services/landscape-design/",
@@ -7437,7 +7770,7 @@
       "locale": "he",
       "check": "title-length",
       "status": "PASS",
-      "actual": "50",
+      "actual": "34",
       "expected": "20-65",
       "fix": "Shorten/lengthen title"
     },
@@ -7446,7 +7779,7 @@
       "locale": "he",
       "check": "title-present",
       "status": "PASS",
-      "actual": "עיצוב נוף בקו פנגן | גינות ובריכות טרופיות | FORMA",
+      "actual": "תכנון נוף ובריכות בקו פנגן | FORMA",
       "expected": "non-empty",
       "fix": ""
     },
@@ -7455,7 +7788,7 @@
       "locale": "he",
       "check": "untranslated-text",
       "status": "PASS",
-      "actual": "1% Latin letters",
+      "actual": "0% Latin letters",
       "expected": "<=30%",
       "fix": "Look for English fallback strings"
     },
@@ -7463,9 +7796,9 @@
       "url": "/he/services/landscape-design/",
       "locale": "he",
       "check": "word-count",
-      "status": "WARNING",
-      "actual": "764",
-      "expected": ">=1500",
+      "status": "PASS",
+      "actual": "1381",
+      "expected": ">=1250",
       "fix": "Expand with original, useful content (not filler)"
     },
     {
@@ -7490,9 +7823,9 @@
       "url": "/he/services/permits-planning/",
       "locale": "he",
       "check": "description-length",
-      "status": "WARNING",
-      "actual": "95",
-      "expected": "110-170",
+      "status": "PASS",
+      "actual": "117",
+      "expected": "85-170",
       "fix": "Rewrite meta description"
     },
     {
@@ -7500,7 +7833,7 @@
       "locale": "he",
       "check": "description-present",
       "status": "PASS",
-      "actual": "95",
+      "actual": "117",
       "expected": "non-empty",
       "fix": ""
     },
@@ -7508,10 +7841,19 @@
       "url": "/he/services/permits-planning/",
       "locale": "he",
       "check": "direct-answer",
-      "status": "WARNING",
-      "actual": "31",
-      "expected": "40-60 words",
+      "status": "PASS",
+      "actual": "41",
+      "expected": "30-60 words",
       "fix": "Tighten the opening answer"
+    },
+    {
+      "url": "/he/services/permits-planning/",
+      "locale": "he",
+      "check": "english-heading",
+      "status": "PASS",
+      "actual": "none",
+      "expected": "translated headings",
+      "fix": "Translate hard-coded English heading"
     },
     {
       "url": "/he/services/permits-planning/",
@@ -7626,7 +7968,7 @@
       "locale": "he",
       "check": "title-length",
       "status": "PASS",
-      "actual": "30",
+      "actual": "35",
       "expected": "20-65",
       "fix": "Shorten/lengthen title"
     },
@@ -7635,7 +7977,7 @@
       "locale": "he",
       "check": "title-present",
       "status": "PASS",
-      "actual": "היתרים ותכנון בקו פנגן | FORMA",
+      "actual": "היתרי בנייה ותכנון בקו פנגן | FORMA",
       "expected": "non-empty",
       "fix": ""
     },
@@ -7644,7 +7986,7 @@
       "locale": "he",
       "check": "untranslated-text",
       "status": "PASS",
-      "actual": "1% Latin letters",
+      "actual": "0% Latin letters",
       "expected": "<=30%",
       "fix": "Look for English fallback strings"
     },
@@ -7652,9 +7994,9 @@
       "url": "/he/services/permits-planning/",
       "locale": "he",
       "check": "word-count",
-      "status": "WARNING",
-      "actual": "749",
-      "expected": ">=1500",
+      "status": "PASS",
+      "actual": "1299",
+      "expected": ">=1250",
       "fix": "Expand with original, useful content (not filler)"
     },
     {
@@ -7679,9 +8021,9 @@
       "url": "/he/services/project-management/",
       "locale": "he",
       "check": "description-length",
-      "status": "WARNING",
-      "actual": "97",
-      "expected": "110-170",
+      "status": "PASS",
+      "actual": "116",
+      "expected": "85-170",
       "fix": "Rewrite meta description"
     },
     {
@@ -7689,7 +8031,7 @@
       "locale": "he",
       "check": "description-present",
       "status": "PASS",
-      "actual": "97",
+      "actual": "116",
       "expected": "non-empty",
       "fix": ""
     },
@@ -7697,10 +8039,19 @@
       "url": "/he/services/project-management/",
       "locale": "he",
       "check": "direct-answer",
-      "status": "WARNING",
-      "actual": "30",
-      "expected": "40-60 words",
+      "status": "PASS",
+      "actual": "41",
+      "expected": "30-60 words",
       "fix": "Tighten the opening answer"
+    },
+    {
+      "url": "/he/services/project-management/",
+      "locale": "he",
+      "check": "english-heading",
+      "status": "PASS",
+      "actual": "none",
+      "expected": "translated headings",
+      "fix": "Translate hard-coded English heading"
     },
     {
       "url": "/he/services/project-management/",
@@ -7815,7 +8166,7 @@
       "locale": "he",
       "check": "title-length",
       "status": "PASS",
-      "actual": "31",
+      "actual": "36",
       "expected": "20-65",
       "fix": "Shorten/lengthen title"
     },
@@ -7824,7 +8175,7 @@
       "locale": "he",
       "check": "title-present",
       "status": "PASS",
-      "actual": "ניהול פרויקטים בקו פנגן | FORMA",
+      "actual": "ניהול פרויקטי בנייה בקו פנגן | FORMA",
       "expected": "non-empty",
       "fix": ""
     },
@@ -7833,7 +8184,7 @@
       "locale": "he",
       "check": "untranslated-text",
       "status": "PASS",
-      "actual": "1% Latin letters",
+      "actual": "0% Latin letters",
       "expected": "<=30%",
       "fix": "Look for English fallback strings"
     },
@@ -7841,9 +8192,9 @@
       "url": "/he/services/project-management/",
       "locale": "he",
       "check": "word-count",
-      "status": "WARNING",
-      "actual": "756",
-      "expected": ">=1500",
+      "status": "PASS",
+      "actual": "1403",
+      "expected": ">=1250",
       "fix": "Expand with original, useful content (not filler)"
     },
     {
@@ -7868,9 +8219,9 @@
       "url": "/he/services/renovation/",
       "locale": "he",
       "check": "description-length",
-      "status": "WARNING",
-      "actual": "102",
-      "expected": "110-170",
+      "status": "PASS",
+      "actual": "117",
+      "expected": "85-170",
       "fix": "Rewrite meta description"
     },
     {
@@ -7878,7 +8229,7 @@
       "locale": "he",
       "check": "description-present",
       "status": "PASS",
-      "actual": "102",
+      "actual": "117",
       "expected": "non-empty",
       "fix": ""
     },
@@ -7886,10 +8237,19 @@
       "url": "/he/services/renovation/",
       "locale": "he",
       "check": "direct-answer",
-      "status": "WARNING",
-      "actual": "25",
-      "expected": "40-60 words",
+      "status": "PASS",
+      "actual": "42",
+      "expected": "30-60 words",
       "fix": "Tighten the opening answer"
+    },
+    {
+      "url": "/he/services/renovation/",
+      "locale": "he",
+      "check": "english-heading",
+      "status": "PASS",
+      "actual": "none",
+      "expected": "translated headings",
+      "fix": "Translate hard-coded English heading"
     },
     {
       "url": "/he/services/renovation/",
@@ -8004,7 +8364,7 @@
       "locale": "he",
       "check": "title-length",
       "status": "PASS",
-      "actual": "38",
+      "actual": "45",
       "expected": "20-65",
       "fix": "Shorten/lengthen title"
     },
@@ -8013,7 +8373,7 @@
       "locale": "he",
       "check": "title-present",
       "status": "PASS",
-      "actual": "שיפוץ וילות בקו פנגן | שיפוצים | FORMA",
+      "actual": "שיפוץ וילות בקו פנגן | שינויים ושדרוג | FORMA",
       "expected": "non-empty",
       "fix": ""
     },
@@ -8022,7 +8382,7 @@
       "locale": "he",
       "check": "untranslated-text",
       "status": "PASS",
-      "actual": "1% Latin letters",
+      "actual": "0% Latin letters",
       "expected": "<=30%",
       "fix": "Look for English fallback strings"
     },
@@ -8030,9 +8390,9 @@
       "url": "/he/services/renovation/",
       "locale": "he",
       "check": "word-count",
-      "status": "WARNING",
-      "actual": "765",
-      "expected": ">=1500",
+      "status": "PASS",
+      "actual": "1337",
+      "expected": ">=1250",
       "fix": "Expand with original, useful content (not filler)"
     },
     {
@@ -8057,9 +8417,9 @@
       "url": "/he/services/technical-supervision/",
       "locale": "he",
       "check": "description-length",
-      "status": "WARNING",
-      "actual": "100",
-      "expected": "110-170",
+      "status": "PASS",
+      "actual": "116",
+      "expected": "85-170",
       "fix": "Rewrite meta description"
     },
     {
@@ -8067,7 +8427,7 @@
       "locale": "he",
       "check": "description-present",
       "status": "PASS",
-      "actual": "100",
+      "actual": "116",
       "expected": "non-empty",
       "fix": ""
     },
@@ -8075,10 +8435,19 @@
       "url": "/he/services/technical-supervision/",
       "locale": "he",
       "check": "direct-answer",
-      "status": "WARNING",
-      "actual": "23",
-      "expected": "40-60 words",
+      "status": "PASS",
+      "actual": "40",
+      "expected": "30-60 words",
       "fix": "Tighten the opening answer"
+    },
+    {
+      "url": "/he/services/technical-supervision/",
+      "locale": "he",
+      "check": "english-heading",
+      "status": "PASS",
+      "actual": "none",
+      "expected": "translated headings",
+      "fix": "Translate hard-coded English heading"
     },
     {
       "url": "/he/services/technical-supervision/",
@@ -8193,7 +8562,7 @@
       "locale": "he",
       "check": "title-length",
       "status": "PASS",
-      "actual": "27",
+      "actual": "42",
       "expected": "20-65",
       "fix": "Shorten/lengthen title"
     },
@@ -8202,7 +8571,7 @@
       "locale": "he",
       "check": "title-present",
       "status": "PASS",
-      "actual": "פיקוח טכני בקו פנגן | FORMA",
+      "actual": "פיקוח טכני על בניית וילות בקו פנגן | FORMA",
       "expected": "non-empty",
       "fix": ""
     },
@@ -8219,9 +8588,9 @@
       "url": "/he/services/technical-supervision/",
       "locale": "he",
       "check": "word-count",
-      "status": "WARNING",
-      "actual": "720",
-      "expected": ">=1500",
+      "status": "PASS",
+      "actual": "1296",
+      "expected": ">=1250",
       "fix": "Expand with original, useful content (not filler)"
     },
     {
@@ -8246,9 +8615,9 @@
       "url": "/he/services/turnkey-projects/",
       "locale": "he",
       "check": "description-length",
-      "status": "WARNING",
-      "actual": "100",
-      "expected": "110-170",
+      "status": "PASS",
+      "actual": "117",
+      "expected": "85-170",
       "fix": "Rewrite meta description"
     },
     {
@@ -8256,7 +8625,7 @@
       "locale": "he",
       "check": "description-present",
       "status": "PASS",
-      "actual": "100",
+      "actual": "117",
       "expected": "non-empty",
       "fix": ""
     },
@@ -8264,10 +8633,19 @@
       "url": "/he/services/turnkey-projects/",
       "locale": "he",
       "check": "direct-answer",
-      "status": "WARNING",
-      "actual": "23",
-      "expected": "40-60 words",
+      "status": "PASS",
+      "actual": "41",
+      "expected": "30-60 words",
       "fix": "Tighten the opening answer"
+    },
+    {
+      "url": "/he/services/turnkey-projects/",
+      "locale": "he",
+      "check": "english-heading",
+      "status": "PASS",
+      "actual": "none",
+      "expected": "translated headings",
+      "fix": "Translate hard-coded English heading"
     },
     {
       "url": "/he/services/turnkey-projects/",
@@ -8391,7 +8769,7 @@
       "locale": "he",
       "check": "title-present",
       "status": "PASS",
-      "actual": "פרויקטי וילה טרנקי בקו פנגן | תכנון-וביצוע | FORMA",
+      "actual": "פרויקטי וילות במפתח בקו פנגן | תכנון-ביצוע | FORMA",
       "expected": "non-empty",
       "fix": ""
     },
@@ -8400,7 +8778,7 @@
       "locale": "he",
       "check": "untranslated-text",
       "status": "PASS",
-      "actual": "1% Latin letters",
+      "actual": "0% Latin letters",
       "expected": "<=30%",
       "fix": "Look for English fallback strings"
     },
@@ -8408,9 +8786,9 @@
       "url": "/he/services/turnkey-projects/",
       "locale": "he",
       "check": "word-count",
-      "status": "WARNING",
-      "actual": "797",
-      "expected": ">=1500",
+      "status": "PASS",
+      "actual": "1379",
+      "expected": ">=1250",
       "fix": "Expand with original, useful content (not filler)"
     },
     {
@@ -8435,9 +8813,9 @@
       "url": "/he/services/villa-design/",
       "locale": "he",
       "check": "description-length",
-      "status": "WARNING",
-      "actual": "104",
-      "expected": "110-170",
+      "status": "PASS",
+      "actual": "117",
+      "expected": "85-170",
       "fix": "Rewrite meta description"
     },
     {
@@ -8445,7 +8823,7 @@
       "locale": "he",
       "check": "description-present",
       "status": "PASS",
-      "actual": "104",
+      "actual": "117",
       "expected": "non-empty",
       "fix": ""
     },
@@ -8453,10 +8831,19 @@
       "url": "/he/services/villa-design/",
       "locale": "he",
       "check": "direct-answer",
-      "status": "WARNING",
-      "actual": "32",
-      "expected": "40-60 words",
+      "status": "PASS",
+      "actual": "41",
+      "expected": "30-60 words",
       "fix": "Tighten the opening answer"
+    },
+    {
+      "url": "/he/services/villa-design/",
+      "locale": "he",
+      "check": "english-heading",
+      "status": "PASS",
+      "actual": "none",
+      "expected": "translated headings",
+      "fix": "Translate hard-coded English heading"
     },
     {
       "url": "/he/services/villa-design/",
@@ -8571,7 +8958,7 @@
       "locale": "he",
       "check": "title-length",
       "status": "PASS",
-      "actual": "52",
+      "actual": "36",
       "expected": "20-65",
       "fix": "Shorten/lengthen title"
     },
@@ -8580,7 +8967,7 @@
       "locale": "he",
       "check": "title-present",
       "status": "PASS",
-      "actual": "עיצוב וילות בקו פנגן | אדריכלות בהתאמה אישית | FORMA",
+      "actual": "תכנון וילות טרופיות בקו פנגן | FORMA",
       "expected": "non-empty",
       "fix": ""
     },
@@ -8589,7 +8976,7 @@
       "locale": "he",
       "check": "untranslated-text",
       "status": "PASS",
-      "actual": "1% Latin letters",
+      "actual": "0% Latin letters",
       "expected": "<=30%",
       "fix": "Look for English fallback strings"
     },
@@ -8597,9 +8984,9 @@
       "url": "/he/services/villa-design/",
       "locale": "he",
       "check": "word-count",
-      "status": "WARNING",
-      "actual": "908",
-      "expected": ">=1500",
+      "status": "PASS",
+      "actual": "1522",
+      "expected": ">=1250",
       "fix": "Expand with original, useful content (not filler)"
     },
     {
@@ -8626,7 +9013,7 @@
       "check": "description-length",
       "status": "WARNING",
       "actual": "56",
-      "expected": "110-170",
+      "expected": "85-170",
       "fix": "Rewrite meta description"
     },
     {
@@ -11289,7 +11676,7 @@
       "locale": "en",
       "check": "title-present",
       "status": "PASS",
-      "actual": "Architecture &amp; Villa Design on Koh Phangan | FORMA",
+      "actual": "Architecture &amp; Design-Build on Koh Phangan | FORMA",
       "expected": "non-empty",
       "fix": ""
     },
@@ -13673,8 +14060,8 @@
       "url": "/ru/",
       "locale": "ru",
       "check": "description-length",
-      "status": "WARNING",
-      "actual": "247",
+      "status": "PASS",
+      "actual": "156",
       "expected": "110-170",
       "fix": "Rewrite meta description"
     },
@@ -13683,9 +14070,18 @@
       "locale": "ru",
       "check": "description-present",
       "status": "PASS",
-      "actual": "247",
+      "actual": "156",
       "expected": "non-empty",
       "fix": ""
+    },
+    {
+      "url": "/ru/",
+      "locale": "ru",
+      "check": "english-heading",
+      "status": "PASS",
+      "actual": "none",
+      "expected": "translated headings",
+      "fix": "Translate hard-coded English heading"
     },
     {
       "url": "/ru/",
@@ -13853,10 +14249,19 @@
       "url": "/ru/about/",
       "locale": "ru",
       "check": "direct-answer",
-      "status": "WARNING",
-      "actual": "33",
+      "status": "PASS",
+      "actual": "50",
       "expected": "40-60 words",
       "fix": "Tighten the opening answer"
+    },
+    {
+      "url": "/ru/about/",
+      "locale": "ru",
+      "check": "english-heading",
+      "status": "PASS",
+      "actual": "none",
+      "expected": "translated headings",
+      "fix": "Translate hard-coded English heading"
     },
     {
       "url": "/ru/about/",
@@ -13961,8 +14366,8 @@
       "url": "/ru/about/",
       "locale": "ru",
       "check": "title-length",
-      "status": "WARNING",
-      "actual": "67",
+      "status": "PASS",
+      "actual": "53",
       "expected": "20-65",
       "fix": "Shorten/lengthen title"
     },
@@ -13971,7 +14376,7 @@
       "locale": "ru",
       "check": "title-present",
       "status": "PASS",
-      "actual": "О студии FORMA | Архитектура и девелопмент полного цикла, Ко Панган",
+      "actual": "О студии FORMA | Архитектура и девелопмент, Ко Панган",
       "expected": "non-empty",
       "fix": ""
     },
@@ -14019,6 +14424,15 @@
       "actual": "108",
       "expected": "non-empty",
       "fix": ""
+    },
+    {
+      "url": "/ru/contact/",
+      "locale": "ru",
+      "check": "english-heading",
+      "status": "PASS",
+      "actual": "none",
+      "expected": "translated headings",
+      "fix": "Translate hard-coded English heading"
     },
     {
       "url": "/ru/contact/",
@@ -14185,6 +14599,15 @@
     {
       "url": "/ru/journal/",
       "locale": "ru",
+      "check": "english-heading",
+      "status": "PASS",
+      "actual": "none",
+      "expected": "translated headings",
+      "fix": "Translate hard-coded English heading"
+    },
+    {
+      "url": "/ru/journal/",
+      "locale": "ru",
       "check": "h1-single",
       "status": "PASS",
       "actual": "1",
@@ -14334,6 +14757,15 @@
       "actual": "154",
       "expected": "non-empty",
       "fix": ""
+    },
+    {
+      "url": "/ru/journal/building-logistics-on-an-island/",
+      "locale": "ru",
+      "check": "english-heading",
+      "status": "PASS",
+      "actual": "none",
+      "expected": "translated headings",
+      "fix": "Translate hard-coded English heading"
     },
     {
       "url": "/ru/journal/building-logistics-on-an-island/",
@@ -14491,6 +14923,15 @@
     {
       "url": "/ru/journal/building-permits-koh-phangan-what-to-expect/",
       "locale": "ru",
+      "check": "english-heading",
+      "status": "PASS",
+      "actual": "none",
+      "expected": "translated headings",
+      "fix": "Translate hard-coded English heading"
+    },
+    {
+      "url": "/ru/journal/building-permits-koh-phangan-what-to-expect/",
+      "locale": "ru",
       "check": "h1-single",
       "status": "PASS",
       "actual": "1",
@@ -14640,6 +15081,15 @@
       "actual": "146",
       "expected": "non-empty",
       "fix": ""
+    },
+    {
+      "url": "/ru/journal/orienting-a-villa-for-koh-phangan-sun-and-wind/",
+      "locale": "ru",
+      "check": "english-heading",
+      "status": "PASS",
+      "actual": "none",
+      "expected": "translated headings",
+      "fix": "Translate hard-coded English heading"
     },
     {
       "url": "/ru/journal/orienting-a-villa-for-koh-phangan-sun-and-wind/",
@@ -14797,6 +15247,15 @@
     {
       "url": "/ru/journal/passive-cooling-without-losing-design-quality/",
       "locale": "ru",
+      "check": "english-heading",
+      "status": "PASS",
+      "actual": "none",
+      "expected": "translated headings",
+      "fix": "Translate hard-coded English heading"
+    },
+    {
+      "url": "/ru/journal/passive-cooling-without-losing-design-quality/",
+      "locale": "ru",
       "check": "h1-single",
       "status": "PASS",
       "actual": "1",
@@ -14946,6 +15405,15 @@
       "actual": "176",
       "expected": "non-empty",
       "fix": ""
+    },
+    {
+      "url": "/ru/journal/signs-a-villa-renovation-needs-structural-assessment/",
+      "locale": "ru",
+      "check": "english-heading",
+      "status": "PASS",
+      "actual": "none",
+      "expected": "translated headings",
+      "fix": "Translate hard-coded English heading"
     },
     {
       "url": "/ru/journal/signs-a-villa-renovation-needs-structural-assessment/",
@@ -15103,6 +15571,15 @@
     {
       "url": "/ru/journal/what-tropical-architecture-actually-means/",
       "locale": "ru",
+      "check": "english-heading",
+      "status": "PASS",
+      "actual": "none",
+      "expected": "translated headings",
+      "fix": "Translate hard-coded English heading"
+    },
+    {
+      "url": "/ru/journal/what-tropical-architecture-actually-means/",
+      "locale": "ru",
       "check": "h1-single",
       "status": "PASS",
       "actual": "1",
@@ -15252,6 +15729,15 @@
       "actual": "143",
       "expected": "non-empty",
       "fix": ""
+    },
+    {
+      "url": "/ru/locations/",
+      "locale": "ru",
+      "check": "english-heading",
+      "status": "PASS",
+      "actual": "none",
+      "expected": "translated headings",
+      "fix": "Translate hard-coded English heading"
     },
     {
       "url": "/ru/locations/",
@@ -15410,10 +15896,19 @@
       "url": "/ru/locations/baan-tai/",
       "locale": "ru",
       "check": "direct-answer",
-      "status": "WARNING",
-      "actual": "39",
+      "status": "PASS",
+      "actual": "47",
       "expected": "40-60 words",
       "fix": "Tighten the opening answer"
+    },
+    {
+      "url": "/ru/locations/baan-tai/",
+      "locale": "ru",
+      "check": "english-heading",
+      "status": "PASS",
+      "actual": "none",
+      "expected": "translated headings",
+      "fix": "Translate hard-coded English heading"
     },
     {
       "url": "/ru/locations/baan-tai/",
@@ -15537,7 +16032,7 @@
       "locale": "ru",
       "check": "untranslated-text",
       "status": "PASS",
-      "actual": "5% Latin letters",
+      "actual": "3% Latin letters",
       "expected": "<=30%",
       "fix": "Look for English fallback strings"
     },
@@ -15581,10 +16076,19 @@
       "url": "/ru/locations/bali/",
       "locale": "ru",
       "check": "direct-answer",
-      "status": "WARNING",
-      "actual": "30",
+      "status": "PASS",
+      "actual": "43",
       "expected": "40-60 words",
       "fix": "Tighten the opening answer"
+    },
+    {
+      "url": "/ru/locations/bali/",
+      "locale": "ru",
+      "check": "english-heading",
+      "status": "PASS",
+      "actual": "none",
+      "expected": "translated headings",
+      "fix": "Translate hard-coded English heading"
     },
     {
       "url": "/ru/locations/bali/",
@@ -15708,7 +16212,7 @@
       "locale": "ru",
       "check": "untranslated-text",
       "status": "PASS",
-      "actual": "2% Latin letters",
+      "actual": "1% Latin letters",
       "expected": "<=30%",
       "fix": "Look for English fallback strings"
     },
@@ -15752,10 +16256,19 @@
       "url": "/ru/locations/chaloklum/",
       "locale": "ru",
       "check": "direct-answer",
-      "status": "WARNING",
-      "actual": "31",
+      "status": "PASS",
+      "actual": "43",
       "expected": "40-60 words",
       "fix": "Tighten the opening answer"
+    },
+    {
+      "url": "/ru/locations/chaloklum/",
+      "locale": "ru",
+      "check": "english-heading",
+      "status": "PASS",
+      "actual": "none",
+      "expected": "translated headings",
+      "fix": "Translate hard-coded English heading"
     },
     {
       "url": "/ru/locations/chaloklum/",
@@ -15879,7 +16392,7 @@
       "locale": "ru",
       "check": "untranslated-text",
       "status": "PASS",
-      "actual": "4% Latin letters",
+      "actual": "2% Latin letters",
       "expected": "<=30%",
       "fix": "Look for English fallback strings"
     },
@@ -15923,10 +16436,19 @@
       "url": "/ru/locations/haad-rin/",
       "locale": "ru",
       "check": "direct-answer",
-      "status": "WARNING",
-      "actual": "37",
+      "status": "PASS",
+      "actual": "46",
       "expected": "40-60 words",
       "fix": "Tighten the opening answer"
+    },
+    {
+      "url": "/ru/locations/haad-rin/",
+      "locale": "ru",
+      "check": "english-heading",
+      "status": "PASS",
+      "actual": "none",
+      "expected": "translated headings",
+      "fix": "Translate hard-coded English heading"
     },
     {
       "url": "/ru/locations/haad-rin/",
@@ -16050,7 +16572,7 @@
       "locale": "ru",
       "check": "untranslated-text",
       "status": "PASS",
-      "actual": "3% Latin letters",
+      "actual": "1% Latin letters",
       "expected": "<=30%",
       "fix": "Look for English fallback strings"
     },
@@ -16094,10 +16616,19 @@
       "url": "/ru/locations/haad-salad/",
       "locale": "ru",
       "check": "direct-answer",
-      "status": "WARNING",
-      "actual": "39",
+      "status": "PASS",
+      "actual": "47",
       "expected": "40-60 words",
       "fix": "Tighten the opening answer"
+    },
+    {
+      "url": "/ru/locations/haad-salad/",
+      "locale": "ru",
+      "check": "english-heading",
+      "status": "PASS",
+      "actual": "none",
+      "expected": "translated headings",
+      "fix": "Translate hard-coded English heading"
     },
     {
       "url": "/ru/locations/haad-salad/",
@@ -16221,7 +16752,7 @@
       "locale": "ru",
       "check": "untranslated-text",
       "status": "PASS",
-      "actual": "4% Latin letters",
+      "actual": "2% Latin letters",
       "expected": "<=30%",
       "fix": "Look for English fallback strings"
     },
@@ -16266,9 +16797,18 @@
       "locale": "ru",
       "check": "direct-answer",
       "status": "PASS",
-      "actual": "42",
+      "actual": "45",
       "expected": "40-60 words",
       "fix": "Tighten the opening answer"
+    },
+    {
+      "url": "/ru/locations/haad-yao/",
+      "locale": "ru",
+      "check": "english-heading",
+      "status": "PASS",
+      "actual": "none",
+      "expected": "translated headings",
+      "fix": "Translate hard-coded English heading"
     },
     {
       "url": "/ru/locations/haad-yao/",
@@ -16392,7 +16932,7 @@
       "locale": "ru",
       "check": "untranslated-text",
       "status": "PASS",
-      "actual": "4% Latin letters",
+      "actual": "2% Latin letters",
       "expected": "<=30%",
       "fix": "Look for English fallback strings"
     },
@@ -16436,10 +16976,19 @@
       "url": "/ru/locations/koh-phangan/",
       "locale": "ru",
       "check": "direct-answer",
-      "status": "WARNING",
-      "actual": "35",
+      "status": "PASS",
+      "actual": "48",
       "expected": "40-60 words",
       "fix": "Tighten the opening answer"
+    },
+    {
+      "url": "/ru/locations/koh-phangan/",
+      "locale": "ru",
+      "check": "english-heading",
+      "status": "PASS",
+      "actual": "none",
+      "expected": "translated headings",
+      "fix": "Translate hard-coded English heading"
     },
     {
       "url": "/ru/locations/koh-phangan/",
@@ -16545,7 +17094,7 @@
       "locale": "ru",
       "check": "title-length",
       "status": "PASS",
-      "actual": "46",
+      "actual": "48",
       "expected": "20-65",
       "fix": "Shorten/lengthen title"
     },
@@ -16554,7 +17103,7 @@
       "locale": "ru",
       "check": "title-present",
       "status": "PASS",
-      "actual": "Архитектура и дизайн вилл на Ко Панган | FORMA",
+      "actual": "Архитектура и строительство на Ко Панган | FORMA",
       "expected": "non-empty",
       "fix": ""
     },
@@ -16563,7 +17112,7 @@
       "locale": "ru",
       "check": "untranslated-text",
       "status": "PASS",
-      "actual": "2% Latin letters",
+      "actual": "1% Latin letters",
       "expected": "<=30%",
       "fix": "Look for English fallback strings"
     },
@@ -16607,10 +17156,19 @@
       "url": "/ru/locations/koh-samui/",
       "locale": "ru",
       "check": "direct-answer",
-      "status": "WARNING",
-      "actual": "38",
+      "status": "PASS",
+      "actual": "49",
       "expected": "40-60 words",
       "fix": "Tighten the opening answer"
+    },
+    {
+      "url": "/ru/locations/koh-samui/",
+      "locale": "ru",
+      "check": "english-heading",
+      "status": "PASS",
+      "actual": "none",
+      "expected": "translated headings",
+      "fix": "Translate hard-coded English heading"
     },
     {
       "url": "/ru/locations/koh-samui/",
@@ -16734,7 +17292,7 @@
       "locale": "ru",
       "check": "untranslated-text",
       "status": "PASS",
-      "actual": "2% Latin letters",
+      "actual": "1% Latin letters",
       "expected": "<=30%",
       "fix": "Look for English fallback strings"
     },
@@ -16778,10 +17336,19 @@
       "url": "/ru/locations/koh-tao/",
       "locale": "ru",
       "check": "direct-answer",
-      "status": "WARNING",
-      "actual": "32",
+      "status": "PASS",
+      "actual": "42",
       "expected": "40-60 words",
       "fix": "Tighten the opening answer"
+    },
+    {
+      "url": "/ru/locations/koh-tao/",
+      "locale": "ru",
+      "check": "english-heading",
+      "status": "PASS",
+      "actual": "none",
+      "expected": "translated headings",
+      "fix": "Translate hard-coded English heading"
     },
     {
       "url": "/ru/locations/koh-tao/",
@@ -16905,7 +17472,7 @@
       "locale": "ru",
       "check": "untranslated-text",
       "status": "PASS",
-      "actual": "2% Latin letters",
+      "actual": "1% Latin letters",
       "expected": "<=30%",
       "fix": "Look for English fallback strings"
     },
@@ -16949,10 +17516,19 @@
       "url": "/ru/locations/sri-thanu/",
       "locale": "ru",
       "check": "direct-answer",
-      "status": "WARNING",
-      "actual": "35",
+      "status": "PASS",
+      "actual": "45",
       "expected": "40-60 words",
       "fix": "Tighten the opening answer"
+    },
+    {
+      "url": "/ru/locations/sri-thanu/",
+      "locale": "ru",
+      "check": "english-heading",
+      "status": "PASS",
+      "actual": "none",
+      "expected": "translated headings",
+      "fix": "Translate hard-coded English heading"
     },
     {
       "url": "/ru/locations/sri-thanu/",
@@ -17076,7 +17652,7 @@
       "locale": "ru",
       "check": "untranslated-text",
       "status": "PASS",
-      "actual": "4% Latin letters",
+      "actual": "2% Latin letters",
       "expected": "<=30%",
       "fix": "Look for English fallback strings"
     },
@@ -17120,10 +17696,19 @@
       "url": "/ru/locations/thong-sala/",
       "locale": "ru",
       "check": "direct-answer",
-      "status": "WARNING",
-      "actual": "37",
+      "status": "PASS",
+      "actual": "45",
       "expected": "40-60 words",
       "fix": "Tighten the opening answer"
+    },
+    {
+      "url": "/ru/locations/thong-sala/",
+      "locale": "ru",
+      "check": "english-heading",
+      "status": "PASS",
+      "actual": "none",
+      "expected": "translated headings",
+      "fix": "Translate hard-coded English heading"
     },
     {
       "url": "/ru/locations/thong-sala/",
@@ -17247,7 +17832,7 @@
       "locale": "ru",
       "check": "untranslated-text",
       "status": "PASS",
-      "actual": "3% Latin letters",
+      "actual": "2% Latin letters",
       "expected": "<=30%",
       "fix": "Look for English fallback strings"
     },
@@ -17292,9 +17877,18 @@
       "locale": "ru",
       "check": "direct-answer",
       "status": "PASS",
-      "actual": "40",
+      "actual": "43",
       "expected": "40-60 words",
       "fix": "Tighten the opening answer"
+    },
+    {
+      "url": "/ru/process/",
+      "locale": "ru",
+      "check": "english-heading",
+      "status": "PASS",
+      "actual": "none",
+      "expected": "translated headings",
+      "fix": "Translate hard-coded English heading"
     },
     {
       "url": "/ru/process/",
@@ -17418,7 +18012,7 @@
       "locale": "ru",
       "check": "untranslated-text",
       "status": "PASS",
-      "actual": "5% Latin letters",
+      "actual": "0% Latin letters",
       "expected": "<=30%",
       "fix": "Look for English fallback strings"
     },
@@ -17457,6 +18051,15 @@
       "actual": "122",
       "expected": "non-empty",
       "fix": ""
+    },
+    {
+      "url": "/ru/projects/",
+      "locale": "ru",
+      "check": "english-heading",
+      "status": "PASS",
+      "actual": "none",
+      "expected": "translated headings",
+      "fix": "Translate hard-coded English heading"
     },
     {
       "url": "/ru/projects/",
@@ -17628,6 +18231,15 @@
       "actual": "142",
       "expected": "non-empty",
       "fix": ""
+    },
+    {
+      "url": "/ru/projects/baan-tai-family-compound/",
+      "locale": "ru",
+      "check": "english-heading",
+      "status": "PASS",
+      "actual": "none",
+      "expected": "translated headings",
+      "fix": "Translate hard-coded English heading"
     },
     {
       "url": "/ru/projects/baan-tai-family-compound/",
@@ -17812,6 +18424,15 @@
     {
       "url": "/ru/projects/bay-view-residence-chaloklum/",
       "locale": "ru",
+      "check": "english-heading",
+      "status": "PASS",
+      "actual": "none",
+      "expected": "translated headings",
+      "fix": "Translate hard-coded English heading"
+    },
+    {
+      "url": "/ru/projects/bay-view-residence-chaloklum/",
+      "locale": "ru",
       "check": "h1-single",
       "status": "PASS",
       "actual": "1",
@@ -17988,6 +18609,15 @@
       "actual": "163",
       "expected": "non-empty",
       "fix": ""
+    },
+    {
+      "url": "/ru/projects/haad-salad-privacy-villa/",
+      "locale": "ru",
+      "check": "english-heading",
+      "status": "PASS",
+      "actual": "none",
+      "expected": "translated headings",
+      "fix": "Translate hard-coded English heading"
     },
     {
       "url": "/ru/projects/haad-salad-privacy-villa/",
@@ -18172,6 +18802,15 @@
     {
       "url": "/ru/projects/haad-yao-beachfront-pavilion/",
       "locale": "ru",
+      "check": "english-heading",
+      "status": "PASS",
+      "actual": "none",
+      "expected": "translated headings",
+      "fix": "Translate hard-coded English heading"
+    },
+    {
+      "url": "/ru/projects/haad-yao-beachfront-pavilion/",
+      "locale": "ru",
       "check": "h1-single",
       "status": "PASS",
       "actual": "1",
@@ -18348,6 +18987,15 @@
       "actual": "157",
       "expected": "non-empty",
       "fix": ""
+    },
+    {
+      "url": "/ru/projects/ridge-house-sri-thanu/",
+      "locale": "ru",
+      "check": "english-heading",
+      "status": "PASS",
+      "actual": "none",
+      "expected": "translated headings",
+      "fix": "Translate hard-coded English heading"
     },
     {
       "url": "/ru/projects/ridge-house-sri-thanu/",
@@ -18532,6 +19180,15 @@
     {
       "url": "/ru/projects/thong-sala-townhouse-renovation/",
       "locale": "ru",
+      "check": "english-heading",
+      "status": "PASS",
+      "actual": "none",
+      "expected": "translated headings",
+      "fix": "Translate hard-coded English heading"
+    },
+    {
+      "url": "/ru/projects/thong-sala-townhouse-renovation/",
+      "locale": "ru",
       "check": "h1-single",
       "status": "PASS",
       "actual": "1",
@@ -18678,7 +19335,7 @@
       "locale": "ru",
       "check": "description-length",
       "status": "PASS",
-      "actual": "155",
+      "actual": "146",
       "expected": "110-170",
       "fix": "Rewrite meta description"
     },
@@ -18687,7 +19344,7 @@
       "locale": "ru",
       "check": "description-present",
       "status": "PASS",
-      "actual": "155",
+      "actual": "146",
       "expected": "non-empty",
       "fix": ""
     },
@@ -18695,10 +19352,19 @@
       "url": "/ru/services/architecture/",
       "locale": "ru",
       "check": "direct-answer",
-      "status": "WARNING",
-      "actual": "37",
+      "status": "PASS",
+      "actual": "44",
       "expected": "40-60 words",
       "fix": "Tighten the opening answer"
+    },
+    {
+      "url": "/ru/services/architecture/",
+      "locale": "ru",
+      "check": "english-heading",
+      "status": "PASS",
+      "actual": "none",
+      "expected": "translated headings",
+      "fix": "Translate hard-coded English heading"
     },
     {
       "url": "/ru/services/architecture/",
@@ -18813,7 +19479,7 @@
       "locale": "ru",
       "check": "title-length",
       "status": "PASS",
-      "actual": "41",
+      "actual": "46",
       "expected": "20-65",
       "fix": "Shorten/lengthen title"
     },
@@ -18822,7 +19488,7 @@
       "locale": "ru",
       "check": "title-present",
       "status": "PASS",
-      "actual": "Архитектурная студия на Ко Панган | FORMA",
+      "actual": "Архитектура и дизайн вилл на Ко Панган | FORMA",
       "expected": "non-empty",
       "fix": ""
     },
@@ -18831,7 +19497,7 @@
       "locale": "ru",
       "check": "untranslated-text",
       "status": "PASS",
-      "actual": "1% Latin letters",
+      "actual": "0% Latin letters",
       "expected": "<=30%",
       "fix": "Look for English fallback strings"
     },
@@ -18839,8 +19505,8 @@
       "url": "/ru/services/architecture/",
       "locale": "ru",
       "check": "word-count",
-      "status": "WARNING",
-      "actual": "992",
+      "status": "PASS",
+      "actual": "1708",
       "expected": ">=1500",
       "fix": "Expand with original, useful content (not filler)"
     },
@@ -18867,7 +19533,7 @@
       "locale": "ru",
       "check": "description-length",
       "status": "PASS",
-      "actual": "164",
+      "actual": "150",
       "expected": "110-170",
       "fix": "Rewrite meta description"
     },
@@ -18876,7 +19542,7 @@
       "locale": "ru",
       "check": "description-present",
       "status": "PASS",
-      "actual": "164",
+      "actual": "150",
       "expected": "non-empty",
       "fix": ""
     },
@@ -18884,10 +19550,19 @@
       "url": "/ru/services/concrete-construction/",
       "locale": "ru",
       "check": "direct-answer",
-      "status": "WARNING",
-      "actual": "26",
+      "status": "PASS",
+      "actual": "42",
       "expected": "40-60 words",
       "fix": "Tighten the opening answer"
+    },
+    {
+      "url": "/ru/services/concrete-construction/",
+      "locale": "ru",
+      "check": "english-heading",
+      "status": "PASS",
+      "actual": "none",
+      "expected": "translated headings",
+      "fix": "Translate hard-coded English heading"
     },
     {
       "url": "/ru/services/concrete-construction/",
@@ -19002,7 +19677,7 @@
       "locale": "ru",
       "check": "title-length",
       "status": "PASS",
-      "actual": "54",
+      "actual": "43",
       "expected": "20-65",
       "fix": "Shorten/lengthen title"
     },
@@ -19011,7 +19686,7 @@
       "locale": "ru",
       "check": "title-present",
       "status": "PASS",
-      "actual": "Бетонное строительство «под ключ» на Ко Панган | FORMA",
+      "actual": "Бетонное строительство на Ко Панган | FORMA",
       "expected": "non-empty",
       "fix": ""
     },
@@ -19020,7 +19695,7 @@
       "locale": "ru",
       "check": "untranslated-text",
       "status": "PASS",
-      "actual": "1% Latin letters",
+      "actual": "0% Latin letters",
       "expected": "<=30%",
       "fix": "Look for English fallback strings"
     },
@@ -19029,7 +19704,7 @@
       "locale": "ru",
       "check": "word-count",
       "status": "WARNING",
-      "actual": "858",
+      "actual": "1469",
       "expected": ">=1500",
       "fix": "Expand with original, useful content (not filler)"
     },
@@ -19056,7 +19731,7 @@
       "locale": "ru",
       "check": "description-length",
       "status": "PASS",
-      "actual": "166",
+      "actual": "158",
       "expected": "110-170",
       "fix": "Rewrite meta description"
     },
@@ -19065,7 +19740,7 @@
       "locale": "ru",
       "check": "description-present",
       "status": "PASS",
-      "actual": "166",
+      "actual": "158",
       "expected": "non-empty",
       "fix": ""
     },
@@ -19073,10 +19748,19 @@
       "url": "/ru/services/construction-supervision/",
       "locale": "ru",
       "check": "direct-answer",
-      "status": "WARNING",
-      "actual": "28",
+      "status": "PASS",
+      "actual": "43",
       "expected": "40-60 words",
       "fix": "Tighten the opening answer"
+    },
+    {
+      "url": "/ru/services/construction-supervision/",
+      "locale": "ru",
+      "check": "english-heading",
+      "status": "PASS",
+      "actual": "none",
+      "expected": "translated headings",
+      "fix": "Translate hard-coded English heading"
     },
     {
       "url": "/ru/services/construction-supervision/",
@@ -19209,7 +19893,7 @@
       "locale": "ru",
       "check": "untranslated-text",
       "status": "PASS",
-      "actual": "1% Latin letters",
+      "actual": "0% Latin letters",
       "expected": "<=30%",
       "fix": "Look for English fallback strings"
     },
@@ -19218,7 +19902,7 @@
       "locale": "ru",
       "check": "word-count",
       "status": "WARNING",
-      "actual": "811",
+      "actual": "1457",
       "expected": ">=1500",
       "fix": "Expand with original, useful content (not filler)"
     },
@@ -19245,7 +19929,7 @@
       "locale": "ru",
       "check": "description-length",
       "status": "PASS",
-      "actual": "149",
+      "actual": "156",
       "expected": "110-170",
       "fix": "Rewrite meta description"
     },
@@ -19254,7 +19938,7 @@
       "locale": "ru",
       "check": "description-present",
       "status": "PASS",
-      "actual": "149",
+      "actual": "156",
       "expected": "non-empty",
       "fix": ""
     },
@@ -19262,10 +19946,19 @@
       "url": "/ru/services/construction/",
       "locale": "ru",
       "check": "direct-answer",
-      "status": "WARNING",
-      "actual": "28",
+      "status": "PASS",
+      "actual": "42",
       "expected": "40-60 words",
       "fix": "Tighten the opening answer"
+    },
+    {
+      "url": "/ru/services/construction/",
+      "locale": "ru",
+      "check": "english-heading",
+      "status": "PASS",
+      "actual": "none",
+      "expected": "translated headings",
+      "fix": "Translate hard-coded English heading"
     },
     {
       "url": "/ru/services/construction/",
@@ -19380,7 +20073,7 @@
       "locale": "ru",
       "check": "title-length",
       "status": "PASS",
-      "actual": "64",
+      "actual": "50",
       "expected": "20-65",
       "fix": "Shorten/lengthen title"
     },
@@ -19389,7 +20082,7 @@
       "locale": "ru",
       "check": "title-present",
       "status": "PASS",
-      "actual": "Строительство вилл на Ко Панган | Дизайн и строительство | FORMA",
+      "actual": "Строительство вилл на Ко Панган | Под ключ | FORMA",
       "expected": "non-empty",
       "fix": ""
     },
@@ -19406,8 +20099,8 @@
       "url": "/ru/services/construction/",
       "locale": "ru",
       "check": "word-count",
-      "status": "WARNING",
-      "actual": "900",
+      "status": "PASS",
+      "actual": "1578",
       "expected": ">=1500",
       "fix": "Expand with original, useful content (not filler)"
     },
@@ -19433,8 +20126,8 @@
       "url": "/ru/services/eco-construction/",
       "locale": "ru",
       "check": "description-length",
-      "status": "WARNING",
-      "actual": "175",
+      "status": "PASS",
+      "actual": "153",
       "expected": "110-170",
       "fix": "Rewrite meta description"
     },
@@ -19443,7 +20136,7 @@
       "locale": "ru",
       "check": "description-present",
       "status": "PASS",
-      "actual": "175",
+      "actual": "153",
       "expected": "non-empty",
       "fix": ""
     },
@@ -19451,10 +20144,19 @@
       "url": "/ru/services/eco-construction/",
       "locale": "ru",
       "check": "direct-answer",
-      "status": "WARNING",
-      "actual": "31",
+      "status": "PASS",
+      "actual": "45",
       "expected": "40-60 words",
       "fix": "Tighten the opening answer"
+    },
+    {
+      "url": "/ru/services/eco-construction/",
+      "locale": "ru",
+      "check": "english-heading",
+      "status": "PASS",
+      "actual": "none",
+      "expected": "translated headings",
+      "fix": "Translate hard-coded English heading"
     },
     {
       "url": "/ru/services/eco-construction/",
@@ -19587,7 +20289,7 @@
       "locale": "ru",
       "check": "untranslated-text",
       "status": "PASS",
-      "actual": "1% Latin letters",
+      "actual": "0% Latin letters",
       "expected": "<=30%",
       "fix": "Look for English fallback strings"
     },
@@ -19595,8 +20297,8 @@
       "url": "/ru/services/eco-construction/",
       "locale": "ru",
       "check": "word-count",
-      "status": "WARNING",
-      "actual": "970",
+      "status": "PASS",
+      "actual": "1657",
       "expected": ">=1500",
       "fix": "Expand with original, useful content (not filler)"
     },
@@ -19623,7 +20325,7 @@
       "locale": "ru",
       "check": "description-length",
       "status": "PASS",
-      "actual": "160",
+      "actual": "156",
       "expected": "110-170",
       "fix": "Rewrite meta description"
     },
@@ -19632,7 +20334,7 @@
       "locale": "ru",
       "check": "description-present",
       "status": "PASS",
-      "actual": "160",
+      "actual": "156",
       "expected": "non-empty",
       "fix": ""
     },
@@ -19640,10 +20342,19 @@
       "url": "/ru/services/interior-design/",
       "locale": "ru",
       "check": "direct-answer",
-      "status": "WARNING",
-      "actual": "32",
+      "status": "PASS",
+      "actual": "42",
       "expected": "40-60 words",
       "fix": "Tighten the opening answer"
+    },
+    {
+      "url": "/ru/services/interior-design/",
+      "locale": "ru",
+      "check": "english-heading",
+      "status": "PASS",
+      "actual": "none",
+      "expected": "translated headings",
+      "fix": "Translate hard-coded English heading"
     },
     {
       "url": "/ru/services/interior-design/",
@@ -19776,7 +20487,7 @@
       "locale": "ru",
       "check": "untranslated-text",
       "status": "PASS",
-      "actual": "1% Latin letters",
+      "actual": "0% Latin letters",
       "expected": "<=30%",
       "fix": "Look for English fallback strings"
     },
@@ -19784,8 +20495,8 @@
       "url": "/ru/services/interior-design/",
       "locale": "ru",
       "check": "word-count",
-      "status": "WARNING",
-      "actual": "955",
+      "status": "PASS",
+      "actual": "1694",
       "expected": ">=1500",
       "fix": "Expand with original, useful content (not filler)"
     },
@@ -19812,7 +20523,7 @@
       "locale": "ru",
       "check": "description-length",
       "status": "PASS",
-      "actual": "135",
+      "actual": "142",
       "expected": "110-170",
       "fix": "Rewrite meta description"
     },
@@ -19821,7 +20532,7 @@
       "locale": "ru",
       "check": "description-present",
       "status": "PASS",
-      "actual": "135",
+      "actual": "142",
       "expected": "non-empty",
       "fix": ""
     },
@@ -19829,10 +20540,19 @@
       "url": "/ru/services/landscape-design/",
       "locale": "ru",
       "check": "direct-answer",
-      "status": "WARNING",
-      "actual": "34",
+      "status": "PASS",
+      "actual": "43",
       "expected": "40-60 words",
       "fix": "Tighten the opening answer"
+    },
+    {
+      "url": "/ru/services/landscape-design/",
+      "locale": "ru",
+      "check": "english-heading",
+      "status": "PASS",
+      "actual": "none",
+      "expected": "translated headings",
+      "fix": "Translate hard-coded English heading"
     },
     {
       "url": "/ru/services/landscape-design/",
@@ -19946,8 +20666,8 @@
       "url": "/ru/services/landscape-design/",
       "locale": "ru",
       "check": "title-length",
-      "status": "WARNING",
-      "actual": "69",
+      "status": "PASS",
+      "actual": "50",
       "expected": "20-65",
       "fix": "Shorten/lengthen title"
     },
@@ -19956,7 +20676,7 @@
       "locale": "ru",
       "check": "title-present",
       "status": "PASS",
-      "actual": "Ландшафтный дизайн на Ко Панган | Тропические сады и бассейны | FORMA",
+      "actual": "Ландшафтный дизайн и бассейны на Ко Панган | FORMA",
       "expected": "non-empty",
       "fix": ""
     },
@@ -19965,7 +20685,7 @@
       "locale": "ru",
       "check": "untranslated-text",
       "status": "PASS",
-      "actual": "2% Latin letters",
+      "actual": "1% Latin letters",
       "expected": "<=30%",
       "fix": "Look for English fallback strings"
     },
@@ -19973,8 +20693,8 @@
       "url": "/ru/services/landscape-design/",
       "locale": "ru",
       "check": "word-count",
-      "status": "WARNING",
-      "actual": "892",
+      "status": "PASS",
+      "actual": "1612",
       "expected": ">=1500",
       "fix": "Expand with original, useful content (not filler)"
     },
@@ -20000,8 +20720,8 @@
       "url": "/ru/services/permits-planning/",
       "locale": "ru",
       "check": "description-length",
-      "status": "WARNING",
-      "actual": "175",
+      "status": "PASS",
+      "actual": "164",
       "expected": "110-170",
       "fix": "Rewrite meta description"
     },
@@ -20010,7 +20730,7 @@
       "locale": "ru",
       "check": "description-present",
       "status": "PASS",
-      "actual": "175",
+      "actual": "164",
       "expected": "non-empty",
       "fix": ""
     },
@@ -20018,10 +20738,19 @@
       "url": "/ru/services/permits-planning/",
       "locale": "ru",
       "check": "direct-answer",
-      "status": "WARNING",
-      "actual": "34",
+      "status": "PASS",
+      "actual": "41",
       "expected": "40-60 words",
       "fix": "Tighten the opening answer"
+    },
+    {
+      "url": "/ru/services/permits-planning/",
+      "locale": "ru",
+      "check": "english-heading",
+      "status": "PASS",
+      "actual": "none",
+      "expected": "translated headings",
+      "fix": "Translate hard-coded English heading"
     },
     {
       "url": "/ru/services/permits-planning/",
@@ -20136,7 +20865,7 @@
       "locale": "ru",
       "check": "title-length",
       "status": "PASS",
-      "actual": "46",
+      "actual": "48",
       "expected": "20-65",
       "fix": "Shorten/lengthen title"
     },
@@ -20145,7 +20874,7 @@
       "locale": "ru",
       "check": "title-present",
       "status": "PASS",
-      "actual": "Разрешения и планирование на Ко Панган | FORMA",
+      "actual": "Разрешения на строительство на Ко Панган | FORMA",
       "expected": "non-empty",
       "fix": ""
     },
@@ -20154,7 +20883,7 @@
       "locale": "ru",
       "check": "untranslated-text",
       "status": "PASS",
-      "actual": "1% Latin letters",
+      "actual": "0% Latin letters",
       "expected": "<=30%",
       "fix": "Look for English fallback strings"
     },
@@ -20162,8 +20891,8 @@
       "url": "/ru/services/permits-planning/",
       "locale": "ru",
       "check": "word-count",
-      "status": "WARNING",
-      "actual": "859",
+      "status": "PASS",
+      "actual": "1516",
       "expected": ">=1500",
       "fix": "Expand with original, useful content (not filler)"
     },
@@ -20190,7 +20919,7 @@
       "locale": "ru",
       "check": "description-length",
       "status": "PASS",
-      "actual": "134",
+      "actual": "153",
       "expected": "110-170",
       "fix": "Rewrite meta description"
     },
@@ -20199,7 +20928,7 @@
       "locale": "ru",
       "check": "description-present",
       "status": "PASS",
-      "actual": "134",
+      "actual": "153",
       "expected": "non-empty",
       "fix": ""
     },
@@ -20207,10 +20936,19 @@
       "url": "/ru/services/project-management/",
       "locale": "ru",
       "check": "direct-answer",
-      "status": "WARNING",
-      "actual": "32",
+      "status": "PASS",
+      "actual": "41",
       "expected": "40-60 words",
       "fix": "Tighten the opening answer"
+    },
+    {
+      "url": "/ru/services/project-management/",
+      "locale": "ru",
+      "check": "english-heading",
+      "status": "PASS",
+      "actual": "none",
+      "expected": "translated headings",
+      "fix": "Translate hard-coded English heading"
     },
     {
       "url": "/ru/services/project-management/",
@@ -20325,7 +21063,7 @@
       "locale": "ru",
       "check": "title-length",
       "status": "PASS",
-      "actual": "41",
+      "actual": "53",
       "expected": "20-65",
       "fix": "Shorten/lengthen title"
     },
@@ -20334,7 +21072,7 @@
       "locale": "ru",
       "check": "title-present",
       "status": "PASS",
-      "actual": "Управление проектами на Ко Панган | FORMA",
+      "actual": "Управление строительным проектом на Ко Панган | FORMA",
       "expected": "non-empty",
       "fix": ""
     },
@@ -20343,7 +21081,7 @@
       "locale": "ru",
       "check": "untranslated-text",
       "status": "PASS",
-      "actual": "1% Latin letters",
+      "actual": "0% Latin letters",
       "expected": "<=30%",
       "fix": "Look for English fallback strings"
     },
@@ -20351,8 +21089,8 @@
       "url": "/ru/services/project-management/",
       "locale": "ru",
       "check": "word-count",
-      "status": "WARNING",
-      "actual": "844",
+      "status": "PASS",
+      "actual": "1583",
       "expected": ">=1500",
       "fix": "Expand with original, useful content (not filler)"
     },
@@ -20379,7 +21117,7 @@
       "locale": "ru",
       "check": "description-length",
       "status": "PASS",
-      "actual": "142",
+      "actual": "160",
       "expected": "110-170",
       "fix": "Rewrite meta description"
     },
@@ -20388,7 +21126,7 @@
       "locale": "ru",
       "check": "description-present",
       "status": "PASS",
-      "actual": "142",
+      "actual": "160",
       "expected": "non-empty",
       "fix": ""
     },
@@ -20396,10 +21134,19 @@
       "url": "/ru/services/renovation/",
       "locale": "ru",
       "check": "direct-answer",
-      "status": "WARNING",
-      "actual": "35",
+      "status": "PASS",
+      "actual": "44",
       "expected": "40-60 words",
       "fix": "Tighten the opening answer"
+    },
+    {
+      "url": "/ru/services/renovation/",
+      "locale": "ru",
+      "check": "english-heading",
+      "status": "PASS",
+      "actual": "none",
+      "expected": "translated headings",
+      "fix": "Translate hard-coded English heading"
     },
     {
       "url": "/ru/services/renovation/",
@@ -20514,7 +21261,7 @@
       "locale": "ru",
       "check": "title-length",
       "status": "PASS",
-      "actual": "58",
+      "actual": "52",
       "expected": "20-65",
       "fix": "Shorten/lengthen title"
     },
@@ -20523,7 +21270,7 @@
       "locale": "ru",
       "check": "title-present",
       "status": "PASS",
-      "actual": "Реновация вилл на Ко Панган | Ремонт и перестройка | FORMA",
+      "actual": "Реновация вилл на Ко Панган | Перепланировка | FORMA",
       "expected": "non-empty",
       "fix": ""
     },
@@ -20532,7 +21279,7 @@
       "locale": "ru",
       "check": "untranslated-text",
       "status": "PASS",
-      "actual": "1% Latin letters",
+      "actual": "0% Latin letters",
       "expected": "<=30%",
       "fix": "Look for English fallback strings"
     },
@@ -20540,8 +21287,8 @@
       "url": "/ru/services/renovation/",
       "locale": "ru",
       "check": "word-count",
-      "status": "WARNING",
-      "actual": "892",
+      "status": "PASS",
+      "actual": "1513",
       "expected": ">=1500",
       "fix": "Expand with original, useful content (not filler)"
     },
@@ -20567,8 +21314,8 @@
       "url": "/ru/services/technical-supervision/",
       "locale": "ru",
       "check": "description-length",
-      "status": "WARNING",
-      "actual": "179",
+      "status": "PASS",
+      "actual": "160",
       "expected": "110-170",
       "fix": "Rewrite meta description"
     },
@@ -20577,7 +21324,7 @@
       "locale": "ru",
       "check": "description-present",
       "status": "PASS",
-      "actual": "179",
+      "actual": "160",
       "expected": "non-empty",
       "fix": ""
     },
@@ -20585,10 +21332,19 @@
       "url": "/ru/services/technical-supervision/",
       "locale": "ru",
       "check": "direct-answer",
-      "status": "WARNING",
-      "actual": "27",
+      "status": "PASS",
+      "actual": "41",
       "expected": "40-60 words",
       "fix": "Tighten the opening answer"
+    },
+    {
+      "url": "/ru/services/technical-supervision/",
+      "locale": "ru",
+      "check": "english-heading",
+      "status": "PASS",
+      "actual": "none",
+      "expected": "translated headings",
+      "fix": "Translate hard-coded English heading"
     },
     {
       "url": "/ru/services/technical-supervision/",
@@ -20703,7 +21459,7 @@
       "locale": "ru",
       "check": "title-length",
       "status": "PASS",
-      "actual": "39",
+      "actual": "56",
       "expected": "20-65",
       "fix": "Shorten/lengthen title"
     },
@@ -20712,7 +21468,7 @@
       "locale": "ru",
       "check": "title-present",
       "status": "PASS",
-      "actual": "Технический надзор на Ко Панган | FORMA",
+      "actual": "Технический надзор за стройкой вилл на Ко Панган | FORMA",
       "expected": "non-empty",
       "fix": ""
     },
@@ -20721,7 +21477,7 @@
       "locale": "ru",
       "check": "untranslated-text",
       "status": "PASS",
-      "actual": "1% Latin letters",
+      "actual": "0% Latin letters",
       "expected": "<=30%",
       "fix": "Look for English fallback strings"
     },
@@ -20730,7 +21486,7 @@
       "locale": "ru",
       "check": "word-count",
       "status": "WARNING",
-      "actual": "826",
+      "actual": "1481",
       "expected": ">=1500",
       "fix": "Expand with original, useful content (not filler)"
     },
@@ -20757,7 +21513,7 @@
       "locale": "ru",
       "check": "description-length",
       "status": "PASS",
-      "actual": "154",
+      "actual": "150",
       "expected": "110-170",
       "fix": "Rewrite meta description"
     },
@@ -20766,7 +21522,7 @@
       "locale": "ru",
       "check": "description-present",
       "status": "PASS",
-      "actual": "154",
+      "actual": "150",
       "expected": "non-empty",
       "fix": ""
     },
@@ -20774,10 +21530,19 @@
       "url": "/ru/services/turnkey-projects/",
       "locale": "ru",
       "check": "direct-answer",
-      "status": "WARNING",
-      "actual": "27",
+      "status": "PASS",
+      "actual": "44",
       "expected": "40-60 words",
       "fix": "Tighten the opening answer"
+    },
+    {
+      "url": "/ru/services/turnkey-projects/",
+      "locale": "ru",
+      "check": "english-heading",
+      "status": "PASS",
+      "actual": "none",
+      "expected": "translated headings",
+      "fix": "Translate hard-coded English heading"
     },
     {
       "url": "/ru/services/turnkey-projects/",
@@ -20891,8 +21656,8 @@
       "url": "/ru/services/turnkey-projects/",
       "locale": "ru",
       "check": "title-length",
-      "status": "WARNING",
-      "actual": "67",
+      "status": "PASS",
+      "actual": "35",
       "expected": "20-65",
       "fix": "Shorten/lengthen title"
     },
@@ -20901,7 +21666,7 @@
       "locale": "ru",
       "check": "title-present",
       "status": "PASS",
-      "actual": "Проекты вилл «под ключ» на Ко Панган | Дизайн-строительство | FORMA",
+      "actual": "Виллы под ключ на Ко Панган | FORMA",
       "expected": "non-empty",
       "fix": ""
     },
@@ -20910,7 +21675,7 @@
       "locale": "ru",
       "check": "untranslated-text",
       "status": "PASS",
-      "actual": "1% Latin letters",
+      "actual": "0% Latin letters",
       "expected": "<=30%",
       "fix": "Look for English fallback strings"
     },
@@ -20918,8 +21683,8 @@
       "url": "/ru/services/turnkey-projects/",
       "locale": "ru",
       "check": "word-count",
-      "status": "WARNING",
-      "actual": "905",
+      "status": "PASS",
+      "actual": "1554",
       "expected": ">=1500",
       "fix": "Expand with original, useful content (not filler)"
     },
@@ -20946,7 +21711,7 @@
       "locale": "ru",
       "check": "description-length",
       "status": "PASS",
-      "actual": "162",
+      "actual": "148",
       "expected": "110-170",
       "fix": "Rewrite meta description"
     },
@@ -20955,7 +21720,7 @@
       "locale": "ru",
       "check": "description-present",
       "status": "PASS",
-      "actual": "162",
+      "actual": "148",
       "expected": "non-empty",
       "fix": ""
     },
@@ -20967,6 +21732,15 @@
       "actual": "41",
       "expected": "40-60 words",
       "fix": "Tighten the opening answer"
+    },
+    {
+      "url": "/ru/services/villa-design/",
+      "locale": "ru",
+      "check": "english-heading",
+      "status": "PASS",
+      "actual": "none",
+      "expected": "translated headings",
+      "fix": "Translate hard-coded English heading"
     },
     {
       "url": "/ru/services/villa-design/",
@@ -21081,7 +21855,7 @@
       "locale": "ru",
       "check": "title-length",
       "status": "PASS",
-      "actual": "61",
+      "actual": "52",
       "expected": "20-65",
       "fix": "Shorten/lengthen title"
     },
@@ -21090,7 +21864,7 @@
       "locale": "ru",
       "check": "title-present",
       "status": "PASS",
-      "actual": "Дизайн вилл на Ко Панган | Индивидуальная архитектура | FORMA",
+      "actual": "Проектирование тропических вилл на Ко Панган | FORMA",
       "expected": "non-empty",
       "fix": ""
     },
@@ -21099,7 +21873,7 @@
       "locale": "ru",
       "check": "untranslated-text",
       "status": "PASS",
-      "actual": "2% Latin letters",
+      "actual": "1% Latin letters",
       "expected": "<=30%",
       "fix": "Look for English fallback strings"
     },
@@ -21107,8 +21881,8 @@
       "url": "/ru/services/villa-design/",
       "locale": "ru",
       "check": "word-count",
-      "status": "WARNING",
-      "actual": "1034",
+      "status": "PASS",
+      "actual": "1737",
       "expected": ">=1500",
       "fix": "Expand with original, useful content (not filler)"
     },
@@ -21459,7 +22233,7 @@
       "locale": "en",
       "check": "word-count",
       "status": "PASS",
-      "actual": "1820",
+      "actual": "1818",
       "expected": ">=1500",
       "fix": "Expand with original, useful content (not filler)"
     },
@@ -21666,7 +22440,7 @@
       "locale": "en",
       "check": "word-count",
       "status": "PASS",
-      "actual": "1567",
+      "actual": "1565",
       "expected": ">=1500",
       "fix": "Expand with original, useful content (not filler)"
     },
@@ -21873,7 +22647,7 @@
       "locale": "en",
       "check": "word-count",
       "status": "PASS",
-      "actual": "1582",
+      "actual": "1580",
       "expected": ">=1500",
       "fix": "Expand with original, useful content (not filler)"
     },
@@ -22080,7 +22854,7 @@
       "locale": "en",
       "check": "word-count",
       "status": "PASS",
-      "actual": "1624",
+      "actual": "1622",
       "expected": ">=1500",
       "fix": "Expand with original, useful content (not filler)"
     },
@@ -22287,7 +23061,7 @@
       "locale": "en",
       "check": "word-count",
       "status": "PASS",
-      "actual": "1706",
+      "actual": "1704",
       "expected": ">=1500",
       "fix": "Expand with original, useful content (not filler)"
     },
@@ -22494,7 +23268,7 @@
       "locale": "en",
       "check": "word-count",
       "status": "PASS",
-      "actual": "1710",
+      "actual": "1708",
       "expected": ">=1500",
       "fix": "Expand with original, useful content (not filler)"
     },
@@ -22701,7 +23475,7 @@
       "locale": "en",
       "check": "word-count",
       "status": "PASS",
-      "actual": "1650",
+      "actual": "1648",
       "expected": ">=1500",
       "fix": "Expand with original, useful content (not filler)"
     },
@@ -22908,7 +23682,7 @@
       "locale": "en",
       "check": "word-count",
       "status": "PASS",
-      "actual": "1590",
+      "actual": "1588",
       "expected": ">=1500",
       "fix": "Expand with original, useful content (not filler)"
     },
@@ -23115,7 +23889,7 @@
       "locale": "en",
       "check": "word-count",
       "status": "PASS",
-      "actual": "1662",
+      "actual": "1660",
       "expected": ">=1500",
       "fix": "Expand with original, useful content (not filler)"
     },
@@ -23529,7 +24303,7 @@
       "locale": "en",
       "check": "word-count",
       "status": "PASS",
-      "actual": "1545",
+      "actual": "1543",
       "expected": ">=1500",
       "fix": "Expand with original, useful content (not filler)"
     },
@@ -23736,7 +24510,7 @@
       "locale": "en",
       "check": "word-count",
       "status": "PASS",
-      "actual": "1609",
+      "actual": "1607",
       "expected": ">=1500",
       "fix": "Expand with original, useful content (not filler)"
     },
@@ -23943,7 +24717,7 @@
       "locale": "en",
       "check": "word-count",
       "status": "PASS",
-      "actual": "1826",
+      "actual": "1824",
       "expected": ">=1500",
       "fix": "Expand with original, useful content (not filler)"
     },
@@ -24131,8 +24905,8 @@
       "url": "/th/",
       "locale": "th",
       "check": "description-length",
-      "status": "WARNING",
-      "actual": "216",
+      "status": "PASS",
+      "actual": "130",
       "expected": "110-170",
       "fix": "Rewrite meta description"
     },
@@ -24141,9 +24915,18 @@
       "locale": "th",
       "check": "description-present",
       "status": "PASS",
-      "actual": "216",
+      "actual": "130",
       "expected": "non-empty",
       "fix": ""
+    },
+    {
+      "url": "/th/",
+      "locale": "th",
+      "check": "english-heading",
+      "status": "PASS",
+      "actual": "none",
+      "expected": "translated headings",
+      "fix": "Translate hard-coded English heading"
     },
     {
       "url": "/th/",
@@ -24312,9 +25095,18 @@
       "locale": "th",
       "check": "direct-answer",
       "status": "PASS",
-      "actual": "37",
+      "actual": "53",
       "expected": "40-60 words",
       "fix": "Tighten the opening answer"
+    },
+    {
+      "url": "/th/about/",
+      "locale": "th",
+      "check": "english-heading",
+      "status": "PASS",
+      "actual": "none",
+      "expected": "translated headings",
+      "fix": "Translate hard-coded English heading"
     },
     {
       "url": "/th/about/",
@@ -24481,6 +25273,15 @@
     {
       "url": "/th/contact/",
       "locale": "th",
+      "check": "english-heading",
+      "status": "PASS",
+      "actual": "none",
+      "expected": "translated headings",
+      "fix": "Translate hard-coded English heading"
+    },
+    {
+      "url": "/th/contact/",
+      "locale": "th",
       "check": "h1-single",
       "status": "PASS",
       "actual": "1",
@@ -24643,6 +25444,15 @@
     {
       "url": "/th/journal/",
       "locale": "th",
+      "check": "english-heading",
+      "status": "PASS",
+      "actual": "none",
+      "expected": "translated headings",
+      "fix": "Translate hard-coded English heading"
+    },
+    {
+      "url": "/th/journal/",
+      "locale": "th",
       "check": "h1-single",
       "status": "PASS",
       "actual": "1",
@@ -24792,6 +25602,15 @@
       "actual": "115",
       "expected": "non-empty",
       "fix": ""
+    },
+    {
+      "url": "/th/journal/building-logistics-on-an-island/",
+      "locale": "th",
+      "check": "english-heading",
+      "status": "PASS",
+      "actual": "none",
+      "expected": "translated headings",
+      "fix": "Translate hard-coded English heading"
     },
     {
       "url": "/th/journal/building-logistics-on-an-island/",
@@ -24949,6 +25768,15 @@
     {
       "url": "/th/journal/building-permits-koh-phangan-what-to-expect/",
       "locale": "th",
+      "check": "english-heading",
+      "status": "PASS",
+      "actual": "none",
+      "expected": "translated headings",
+      "fix": "Translate hard-coded English heading"
+    },
+    {
+      "url": "/th/journal/building-permits-koh-phangan-what-to-expect/",
+      "locale": "th",
       "check": "h1-single",
       "status": "PASS",
       "actual": "1",
@@ -25098,6 +25926,15 @@
       "actual": "136",
       "expected": "non-empty",
       "fix": ""
+    },
+    {
+      "url": "/th/journal/orienting-a-villa-for-koh-phangan-sun-and-wind/",
+      "locale": "th",
+      "check": "english-heading",
+      "status": "PASS",
+      "actual": "none",
+      "expected": "translated headings",
+      "fix": "Translate hard-coded English heading"
     },
     {
       "url": "/th/journal/orienting-a-villa-for-koh-phangan-sun-and-wind/",
@@ -25255,6 +26092,15 @@
     {
       "url": "/th/journal/passive-cooling-without-losing-design-quality/",
       "locale": "th",
+      "check": "english-heading",
+      "status": "PASS",
+      "actual": "none",
+      "expected": "translated headings",
+      "fix": "Translate hard-coded English heading"
+    },
+    {
+      "url": "/th/journal/passive-cooling-without-losing-design-quality/",
+      "locale": "th",
       "check": "h1-single",
       "status": "PASS",
       "actual": "1",
@@ -25404,6 +26250,15 @@
       "actual": "137",
       "expected": "non-empty",
       "fix": ""
+    },
+    {
+      "url": "/th/journal/signs-a-villa-renovation-needs-structural-assessment/",
+      "locale": "th",
+      "check": "english-heading",
+      "status": "PASS",
+      "actual": "none",
+      "expected": "translated headings",
+      "fix": "Translate hard-coded English heading"
     },
     {
       "url": "/th/journal/signs-a-villa-renovation-needs-structural-assessment/",
@@ -25561,6 +26416,15 @@
     {
       "url": "/th/journal/what-tropical-architecture-actually-means/",
       "locale": "th",
+      "check": "english-heading",
+      "status": "PASS",
+      "actual": "none",
+      "expected": "translated headings",
+      "fix": "Translate hard-coded English heading"
+    },
+    {
+      "url": "/th/journal/what-tropical-architecture-actually-means/",
+      "locale": "th",
       "check": "h1-single",
       "status": "PASS",
       "actual": "1",
@@ -25710,6 +26574,15 @@
       "actual": "132",
       "expected": "non-empty",
       "fix": ""
+    },
+    {
+      "url": "/th/locations/",
+      "locale": "th",
+      "check": "english-heading",
+      "status": "PASS",
+      "actual": "none",
+      "expected": "translated headings",
+      "fix": "Translate hard-coded English heading"
     },
     {
       "url": "/th/locations/",
@@ -25869,9 +26742,18 @@
       "locale": "th",
       "check": "direct-answer",
       "status": "PASS",
-      "actual": "37",
+      "actual": "45",
       "expected": "40-60 words",
       "fix": "Tighten the opening answer"
+    },
+    {
+      "url": "/th/locations/baan-tai/",
+      "locale": "th",
+      "check": "english-heading",
+      "status": "PASS",
+      "actual": "none",
+      "expected": "translated headings",
+      "fix": "Translate hard-coded English heading"
     },
     {
       "url": "/th/locations/baan-tai/",
@@ -25995,7 +26877,7 @@
       "locale": "th",
       "check": "untranslated-text",
       "status": "PASS",
-      "actual": "6% Latin letters",
+      "actual": "3% Latin letters",
       "expected": "<=30%",
       "fix": "Look for English fallback strings"
     },
@@ -26040,9 +26922,18 @@
       "locale": "th",
       "check": "direct-answer",
       "status": "PASS",
-      "actual": "36",
+      "actual": "49",
       "expected": "40-60 words",
       "fix": "Tighten the opening answer"
+    },
+    {
+      "url": "/th/locations/bali/",
+      "locale": "th",
+      "check": "english-heading",
+      "status": "PASS",
+      "actual": "none",
+      "expected": "translated headings",
+      "fix": "Translate hard-coded English heading"
     },
     {
       "url": "/th/locations/bali/",
@@ -26166,7 +27057,7 @@
       "locale": "th",
       "check": "untranslated-text",
       "status": "PASS",
-      "actual": "3% Latin letters",
+      "actual": "2% Latin letters",
       "expected": "<=30%",
       "fix": "Look for English fallback strings"
     },
@@ -26211,9 +27102,18 @@
       "locale": "th",
       "check": "direct-answer",
       "status": "PASS",
-      "actual": "32",
+      "actual": "48",
       "expected": "40-60 words",
       "fix": "Tighten the opening answer"
+    },
+    {
+      "url": "/th/locations/chaloklum/",
+      "locale": "th",
+      "check": "english-heading",
+      "status": "PASS",
+      "actual": "none",
+      "expected": "translated headings",
+      "fix": "Translate hard-coded English heading"
     },
     {
       "url": "/th/locations/chaloklum/",
@@ -26337,7 +27237,7 @@
       "locale": "th",
       "check": "untranslated-text",
       "status": "PASS",
-      "actual": "5% Latin letters",
+      "actual": "3% Latin letters",
       "expected": "<=30%",
       "fix": "Look for English fallback strings"
     },
@@ -26382,9 +27282,18 @@
       "locale": "th",
       "check": "direct-answer",
       "status": "PASS",
-      "actual": "46",
+      "actual": "52",
       "expected": "40-60 words",
       "fix": "Tighten the opening answer"
+    },
+    {
+      "url": "/th/locations/haad-rin/",
+      "locale": "th",
+      "check": "english-heading",
+      "status": "PASS",
+      "actual": "none",
+      "expected": "translated headings",
+      "fix": "Translate hard-coded English heading"
     },
     {
       "url": "/th/locations/haad-rin/",
@@ -26508,7 +27417,7 @@
       "locale": "th",
       "check": "untranslated-text",
       "status": "PASS",
-      "actual": "3% Latin letters",
+      "actual": "1% Latin letters",
       "expected": "<=30%",
       "fix": "Look for English fallback strings"
     },
@@ -26553,9 +27462,18 @@
       "locale": "th",
       "check": "direct-answer",
       "status": "PASS",
-      "actual": "35",
+      "actual": "45",
       "expected": "40-60 words",
       "fix": "Tighten the opening answer"
+    },
+    {
+      "url": "/th/locations/haad-salad/",
+      "locale": "th",
+      "check": "english-heading",
+      "status": "PASS",
+      "actual": "none",
+      "expected": "translated headings",
+      "fix": "Translate hard-coded English heading"
     },
     {
       "url": "/th/locations/haad-salad/",
@@ -26679,7 +27597,7 @@
       "locale": "th",
       "check": "untranslated-text",
       "status": "PASS",
-      "actual": "5% Latin letters",
+      "actual": "3% Latin letters",
       "expected": "<=30%",
       "fix": "Look for English fallback strings"
     },
@@ -26724,9 +27642,18 @@
       "locale": "th",
       "check": "direct-answer",
       "status": "PASS",
-      "actual": "37",
+      "actual": "44",
       "expected": "40-60 words",
       "fix": "Tighten the opening answer"
+    },
+    {
+      "url": "/th/locations/haad-yao/",
+      "locale": "th",
+      "check": "english-heading",
+      "status": "PASS",
+      "actual": "none",
+      "expected": "translated headings",
+      "fix": "Translate hard-coded English heading"
     },
     {
       "url": "/th/locations/haad-yao/",
@@ -26850,7 +27777,7 @@
       "locale": "th",
       "check": "untranslated-text",
       "status": "PASS",
-      "actual": "5% Latin letters",
+      "actual": "3% Latin letters",
       "expected": "<=30%",
       "fix": "Look for English fallback strings"
     },
@@ -26895,9 +27822,18 @@
       "locale": "th",
       "check": "direct-answer",
       "status": "PASS",
-      "actual": "37",
+      "actual": "48",
       "expected": "40-60 words",
       "fix": "Tighten the opening answer"
+    },
+    {
+      "url": "/th/locations/koh-phangan/",
+      "locale": "th",
+      "check": "english-heading",
+      "status": "PASS",
+      "actual": "none",
+      "expected": "translated headings",
+      "fix": "Translate hard-coded English heading"
     },
     {
       "url": "/th/locations/koh-phangan/",
@@ -27021,7 +27957,7 @@
       "locale": "th",
       "check": "untranslated-text",
       "status": "PASS",
-      "actual": "3% Latin letters",
+      "actual": "1% Latin letters",
       "expected": "<=30%",
       "fix": "Look for English fallback strings"
     },
@@ -27066,9 +28002,18 @@
       "locale": "th",
       "check": "direct-answer",
       "status": "PASS",
-      "actual": "47",
+      "actual": "51",
       "expected": "40-60 words",
       "fix": "Tighten the opening answer"
+    },
+    {
+      "url": "/th/locations/koh-samui/",
+      "locale": "th",
+      "check": "english-heading",
+      "status": "PASS",
+      "actual": "none",
+      "expected": "translated headings",
+      "fix": "Translate hard-coded English heading"
     },
     {
       "url": "/th/locations/koh-samui/",
@@ -27192,7 +28137,7 @@
       "locale": "th",
       "check": "untranslated-text",
       "status": "PASS",
-      "actual": "3% Latin letters",
+      "actual": "2% Latin letters",
       "expected": "<=30%",
       "fix": "Look for English fallback strings"
     },
@@ -27237,9 +28182,18 @@
       "locale": "th",
       "check": "direct-answer",
       "status": "PASS",
-      "actual": "33",
+      "actual": "44",
       "expected": "40-60 words",
       "fix": "Tighten the opening answer"
+    },
+    {
+      "url": "/th/locations/koh-tao/",
+      "locale": "th",
+      "check": "english-heading",
+      "status": "PASS",
+      "actual": "none",
+      "expected": "translated headings",
+      "fix": "Translate hard-coded English heading"
     },
     {
       "url": "/th/locations/koh-tao/",
@@ -27363,7 +28317,7 @@
       "locale": "th",
       "check": "untranslated-text",
       "status": "PASS",
-      "actual": "3% Latin letters",
+      "actual": "1% Latin letters",
       "expected": "<=30%",
       "fix": "Look for English fallback strings"
     },
@@ -27408,9 +28362,18 @@
       "locale": "th",
       "check": "direct-answer",
       "status": "PASS",
-      "actual": "42",
+      "actual": "46",
       "expected": "40-60 words",
       "fix": "Tighten the opening answer"
+    },
+    {
+      "url": "/th/locations/sri-thanu/",
+      "locale": "th",
+      "check": "english-heading",
+      "status": "PASS",
+      "actual": "none",
+      "expected": "translated headings",
+      "fix": "Translate hard-coded English heading"
     },
     {
       "url": "/th/locations/sri-thanu/",
@@ -27534,7 +28497,7 @@
       "locale": "th",
       "check": "untranslated-text",
       "status": "PASS",
-      "actual": "5% Latin letters",
+      "actual": "3% Latin letters",
       "expected": "<=30%",
       "fix": "Look for English fallback strings"
     },
@@ -27579,9 +28542,18 @@
       "locale": "th",
       "check": "direct-answer",
       "status": "PASS",
-      "actual": "41",
+      "actual": "46",
       "expected": "40-60 words",
       "fix": "Tighten the opening answer"
+    },
+    {
+      "url": "/th/locations/thong-sala/",
+      "locale": "th",
+      "check": "english-heading",
+      "status": "PASS",
+      "actual": "none",
+      "expected": "translated headings",
+      "fix": "Translate hard-coded English heading"
     },
     {
       "url": "/th/locations/thong-sala/",
@@ -27705,7 +28677,7 @@
       "locale": "th",
       "check": "untranslated-text",
       "status": "PASS",
-      "actual": "4% Latin letters",
+      "actual": "2% Latin letters",
       "expected": "<=30%",
       "fix": "Look for English fallback strings"
     },
@@ -27750,9 +28722,18 @@
       "locale": "th",
       "check": "direct-answer",
       "status": "PASS",
-      "actual": "44",
+      "actual": "48",
       "expected": "40-60 words",
       "fix": "Tighten the opening answer"
+    },
+    {
+      "url": "/th/process/",
+      "locale": "th",
+      "check": "english-heading",
+      "status": "PASS",
+      "actual": "none",
+      "expected": "translated headings",
+      "fix": "Translate hard-coded English heading"
     },
     {
       "url": "/th/process/",
@@ -27876,7 +28857,7 @@
       "locale": "th",
       "check": "untranslated-text",
       "status": "PASS",
-      "actual": "6% Latin letters",
+      "actual": "0% Latin letters",
       "expected": "<=30%",
       "fix": "Look for English fallback strings"
     },
@@ -27915,6 +28896,15 @@
       "actual": "107",
       "expected": "non-empty",
       "fix": ""
+    },
+    {
+      "url": "/th/projects/",
+      "locale": "th",
+      "check": "english-heading",
+      "status": "PASS",
+      "actual": "none",
+      "expected": "translated headings",
+      "fix": "Translate hard-coded English heading"
     },
     {
       "url": "/th/projects/",
@@ -28086,6 +29076,15 @@
       "actual": "115",
       "expected": "non-empty",
       "fix": ""
+    },
+    {
+      "url": "/th/projects/baan-tai-family-compound/",
+      "locale": "th",
+      "check": "english-heading",
+      "status": "PASS",
+      "actual": "none",
+      "expected": "translated headings",
+      "fix": "Translate hard-coded English heading"
     },
     {
       "url": "/th/projects/baan-tai-family-compound/",
@@ -28270,6 +29269,15 @@
     {
       "url": "/th/projects/bay-view-residence-chaloklum/",
       "locale": "th",
+      "check": "english-heading",
+      "status": "PASS",
+      "actual": "none",
+      "expected": "translated headings",
+      "fix": "Translate hard-coded English heading"
+    },
+    {
+      "url": "/th/projects/bay-view-residence-chaloklum/",
+      "locale": "th",
       "check": "h1-single",
       "status": "PASS",
       "actual": "1",
@@ -28446,6 +29454,15 @@
       "actual": "135",
       "expected": "non-empty",
       "fix": ""
+    },
+    {
+      "url": "/th/projects/haad-salad-privacy-villa/",
+      "locale": "th",
+      "check": "english-heading",
+      "status": "PASS",
+      "actual": "none",
+      "expected": "translated headings",
+      "fix": "Translate hard-coded English heading"
     },
     {
       "url": "/th/projects/haad-salad-privacy-villa/",
@@ -28630,6 +29647,15 @@
     {
       "url": "/th/projects/haad-yao-beachfront-pavilion/",
       "locale": "th",
+      "check": "english-heading",
+      "status": "PASS",
+      "actual": "none",
+      "expected": "translated headings",
+      "fix": "Translate hard-coded English heading"
+    },
+    {
+      "url": "/th/projects/haad-yao-beachfront-pavilion/",
+      "locale": "th",
       "check": "h1-single",
       "status": "PASS",
       "actual": "1",
@@ -28806,6 +29832,15 @@
       "actual": "125",
       "expected": "non-empty",
       "fix": ""
+    },
+    {
+      "url": "/th/projects/ridge-house-sri-thanu/",
+      "locale": "th",
+      "check": "english-heading",
+      "status": "PASS",
+      "actual": "none",
+      "expected": "translated headings",
+      "fix": "Translate hard-coded English heading"
     },
     {
       "url": "/th/projects/ridge-house-sri-thanu/",
@@ -28990,6 +30025,15 @@
     {
       "url": "/th/projects/thong-sala-townhouse-renovation/",
       "locale": "th",
+      "check": "english-heading",
+      "status": "PASS",
+      "actual": "none",
+      "expected": "translated headings",
+      "fix": "Translate hard-coded English heading"
+    },
+    {
+      "url": "/th/projects/thong-sala-townhouse-renovation/",
+      "locale": "th",
       "check": "h1-single",
       "status": "PASS",
       "actual": "1",
@@ -29136,7 +30180,7 @@
       "locale": "th",
       "check": "description-length",
       "status": "PASS",
-      "actual": "139",
+      "actual": "151",
       "expected": "110-170",
       "fix": "Rewrite meta description"
     },
@@ -29145,7 +30189,7 @@
       "locale": "th",
       "check": "description-present",
       "status": "PASS",
-      "actual": "139",
+      "actual": "151",
       "expected": "non-empty",
       "fix": ""
     },
@@ -29154,9 +30198,18 @@
       "locale": "th",
       "check": "direct-answer",
       "status": "PASS",
-      "actual": "41",
+      "actual": "52",
       "expected": "40-60 words",
       "fix": "Tighten the opening answer"
+    },
+    {
+      "url": "/th/services/architecture/",
+      "locale": "th",
+      "check": "english-heading",
+      "status": "PASS",
+      "actual": "none",
+      "expected": "translated headings",
+      "fix": "Translate hard-coded English heading"
     },
     {
       "url": "/th/services/architecture/",
@@ -29271,7 +30324,7 @@
       "locale": "th",
       "check": "title-length",
       "status": "PASS",
-      "actual": "36",
+      "actual": "44",
       "expected": "20-65",
       "fix": "Shorten/lengthen title"
     },
@@ -29280,7 +30333,7 @@
       "locale": "th",
       "check": "title-present",
       "status": "PASS",
-      "actual": "สตูดิโอสถาปัตยกรรม เกาะพะงัน | FORMA",
+      "actual": "ออกแบบสถาปัตยกรรมและวิลล่า เกาะพะงัน | FORMA",
       "expected": "non-empty",
       "fix": ""
     },
@@ -29289,7 +30342,7 @@
       "locale": "th",
       "check": "untranslated-text",
       "status": "PASS",
-      "actual": "1% Latin letters",
+      "actual": "0% Latin letters",
       "expected": "<=30%",
       "fix": "Look for English fallback strings"
     },
@@ -29297,8 +30350,8 @@
       "url": "/th/services/architecture/",
       "locale": "th",
       "check": "word-count",
-      "status": "WARNING",
-      "actual": "1040",
+      "status": "PASS",
+      "actual": "1769",
       "expected": ">=1500",
       "fix": "Expand with original, useful content (not filler)"
     },
@@ -29325,7 +30378,7 @@
       "locale": "th",
       "check": "description-length",
       "status": "PASS",
-      "actual": "131",
+      "actual": "159",
       "expected": "110-170",
       "fix": "Rewrite meta description"
     },
@@ -29334,7 +30387,7 @@
       "locale": "th",
       "check": "description-present",
       "status": "PASS",
-      "actual": "131",
+      "actual": "159",
       "expected": "non-empty",
       "fix": ""
     },
@@ -29343,9 +30396,18 @@
       "locale": "th",
       "check": "direct-answer",
       "status": "PASS",
-      "actual": "37",
+      "actual": "44",
       "expected": "40-60 words",
       "fix": "Tighten the opening answer"
+    },
+    {
+      "url": "/th/services/concrete-construction/",
+      "locale": "th",
+      "check": "english-heading",
+      "status": "PASS",
+      "actual": "none",
+      "expected": "translated headings",
+      "fix": "Translate hard-coded English heading"
     },
     {
       "url": "/th/services/concrete-construction/",
@@ -29460,7 +30522,7 @@
       "locale": "th",
       "check": "title-length",
       "status": "PASS",
-      "actual": "43",
+      "actual": "50",
       "expected": "20-65",
       "fix": "Shorten/lengthen title"
     },
@@ -29469,7 +30531,7 @@
       "locale": "th",
       "check": "title-present",
       "status": "PASS",
-      "actual": "ก่อสร้างคอนกรีตเทิร์นคีย์ เกาะพะงัน | FORMA",
+      "actual": "งานก่อสร้างคอนกรีต วิลล่าเขตร้อน เกาะพะงัน | FORMA",
       "expected": "non-empty",
       "fix": ""
     },
@@ -29478,7 +30540,7 @@
       "locale": "th",
       "check": "untranslated-text",
       "status": "PASS",
-      "actual": "1% Latin letters",
+      "actual": "0% Latin letters",
       "expected": "<=30%",
       "fix": "Look for English fallback strings"
     },
@@ -29486,8 +30548,8 @@
       "url": "/th/services/concrete-construction/",
       "locale": "th",
       "check": "word-count",
-      "status": "WARNING",
-      "actual": "947",
+      "status": "PASS",
+      "actual": "1529",
       "expected": ">=1500",
       "fix": "Expand with original, useful content (not filler)"
     },
@@ -29514,7 +30576,7 @@
       "locale": "th",
       "check": "description-length",
       "status": "PASS",
-      "actual": "132",
+      "actual": "129",
       "expected": "110-170",
       "fix": "Rewrite meta description"
     },
@@ -29523,7 +30585,7 @@
       "locale": "th",
       "check": "description-present",
       "status": "PASS",
-      "actual": "132",
+      "actual": "129",
       "expected": "non-empty",
       "fix": ""
     },
@@ -29532,9 +30594,18 @@
       "locale": "th",
       "check": "direct-answer",
       "status": "PASS",
-      "actual": "33",
+      "actual": "41",
       "expected": "40-60 words",
       "fix": "Tighten the opening answer"
+    },
+    {
+      "url": "/th/services/construction-supervision/",
+      "locale": "th",
+      "check": "english-heading",
+      "status": "PASS",
+      "actual": "none",
+      "expected": "translated headings",
+      "fix": "Translate hard-coded English heading"
     },
     {
       "url": "/th/services/construction-supervision/",
@@ -29667,7 +30738,7 @@
       "locale": "th",
       "check": "untranslated-text",
       "status": "PASS",
-      "actual": "1% Latin letters",
+      "actual": "0% Latin letters",
       "expected": "<=30%",
       "fix": "Look for English fallback strings"
     },
@@ -29676,7 +30747,7 @@
       "locale": "th",
       "check": "word-count",
       "status": "WARNING",
-      "actual": "866",
+      "actual": "1497",
       "expected": ">=1500",
       "fix": "Expand with original, useful content (not filler)"
     },
@@ -29703,7 +30774,7 @@
       "locale": "th",
       "check": "description-length",
       "status": "PASS",
-      "actual": "118",
+      "actual": "133",
       "expected": "110-170",
       "fix": "Rewrite meta description"
     },
@@ -29712,7 +30783,7 @@
       "locale": "th",
       "check": "description-present",
       "status": "PASS",
-      "actual": "118",
+      "actual": "133",
       "expected": "non-empty",
       "fix": ""
     },
@@ -29721,9 +30792,18 @@
       "locale": "th",
       "check": "direct-answer",
       "status": "PASS",
-      "actual": "35",
+      "actual": "40",
       "expected": "40-60 words",
       "fix": "Tighten the opening answer"
+    },
+    {
+      "url": "/th/services/construction/",
+      "locale": "th",
+      "check": "english-heading",
+      "status": "PASS",
+      "actual": "none",
+      "expected": "translated headings",
+      "fix": "Translate hard-coded English heading"
     },
     {
       "url": "/th/services/construction/",
@@ -29838,7 +30918,7 @@
       "locale": "th",
       "check": "title-length",
       "status": "PASS",
-      "actual": "57",
+      "actual": "50",
       "expected": "20-65",
       "fix": "Shorten/lengthen title"
     },
@@ -29847,7 +30927,7 @@
       "locale": "th",
       "check": "title-present",
       "status": "PASS",
-      "actual": "ก่อสร้างวิลล่า เกาะพะงัน | ออกแบบ-ก่อสร้างครบวงจร | FORMA",
+      "actual": "รับสร้างวิลล่า เกาะพะงัน ออกแบบและก่อสร้าง | FORMA",
       "expected": "non-empty",
       "fix": ""
     },
@@ -29856,7 +30936,7 @@
       "locale": "th",
       "check": "untranslated-text",
       "status": "PASS",
-      "actual": "2% Latin letters",
+      "actual": "1% Latin letters",
       "expected": "<=30%",
       "fix": "Look for English fallback strings"
     },
@@ -29864,8 +30944,8 @@
       "url": "/th/services/construction/",
       "locale": "th",
       "check": "word-count",
-      "status": "WARNING",
-      "actual": "909",
+      "status": "PASS",
+      "actual": "1563",
       "expected": ">=1500",
       "fix": "Expand with original, useful content (not filler)"
     },
@@ -29892,7 +30972,7 @@
       "locale": "th",
       "check": "description-length",
       "status": "PASS",
-      "actual": "124",
+      "actual": "142",
       "expected": "110-170",
       "fix": "Rewrite meta description"
     },
@@ -29901,7 +30981,7 @@
       "locale": "th",
       "check": "description-present",
       "status": "PASS",
-      "actual": "124",
+      "actual": "142",
       "expected": "non-empty",
       "fix": ""
     },
@@ -29910,9 +30990,18 @@
       "locale": "th",
       "check": "direct-answer",
       "status": "PASS",
-      "actual": "39",
+      "actual": "52",
       "expected": "40-60 words",
       "fix": "Tighten the opening answer"
+    },
+    {
+      "url": "/th/services/eco-construction/",
+      "locale": "th",
+      "check": "english-heading",
+      "status": "PASS",
+      "actual": "none",
+      "expected": "translated headings",
+      "fix": "Translate hard-coded English heading"
     },
     {
       "url": "/th/services/eco-construction/",
@@ -30027,7 +31116,7 @@
       "locale": "th",
       "check": "title-length",
       "status": "PASS",
-      "actual": "50",
+      "actual": "48",
       "expected": "20-65",
       "fix": "Shorten/lengthen title"
     },
@@ -30036,7 +31125,7 @@
       "locale": "th",
       "check": "title-present",
       "status": "PASS",
-      "actual": "ก่อสร้างเชิงนิเวศ เกาะพะงัน | อาคารยั่งยืน | FORMA",
+      "actual": "ก่อสร้างเชิงนิเวศ อาคารยั่งยืน เกาะพะงัน | FORMA",
       "expected": "non-empty",
       "fix": ""
     },
@@ -30045,7 +31134,7 @@
       "locale": "th",
       "check": "untranslated-text",
       "status": "PASS",
-      "actual": "1% Latin letters",
+      "actual": "0% Latin letters",
       "expected": "<=30%",
       "fix": "Look for English fallback strings"
     },
@@ -30053,8 +31142,8 @@
       "url": "/th/services/eco-construction/",
       "locale": "th",
       "check": "word-count",
-      "status": "WARNING",
-      "actual": "1019",
+      "status": "PASS",
+      "actual": "1690",
       "expected": ">=1500",
       "fix": "Expand with original, useful content (not filler)"
     },
@@ -30081,7 +31170,7 @@
       "locale": "th",
       "check": "description-length",
       "status": "PASS",
-      "actual": "129",
+      "actual": "127",
       "expected": "110-170",
       "fix": "Rewrite meta description"
     },
@@ -30090,7 +31179,7 @@
       "locale": "th",
       "check": "description-present",
       "status": "PASS",
-      "actual": "129",
+      "actual": "127",
       "expected": "non-empty",
       "fix": ""
     },
@@ -30099,9 +31188,18 @@
       "locale": "th",
       "check": "direct-answer",
       "status": "PASS",
-      "actual": "32",
+      "actual": "46",
       "expected": "40-60 words",
       "fix": "Tighten the opening answer"
+    },
+    {
+      "url": "/th/services/interior-design/",
+      "locale": "th",
+      "check": "english-heading",
+      "status": "PASS",
+      "actual": "none",
+      "expected": "translated headings",
+      "fix": "Translate hard-coded English heading"
     },
     {
       "url": "/th/services/interior-design/",
@@ -30216,7 +31314,7 @@
       "locale": "th",
       "check": "title-length",
       "status": "PASS",
-      "actual": "53",
+      "actual": "51",
       "expected": "20-65",
       "fix": "Shorten/lengthen title"
     },
@@ -30225,7 +31323,7 @@
       "locale": "th",
       "check": "title-present",
       "status": "PASS",
-      "actual": "ออกแบบตกแต่งภายใน เกาะพะงัน | วิลล่าและโรงแรม | FORMA",
+      "actual": "ออกแบบตกแต่งภายใน เกาะพะงัน วิลล่าและโรงแรม | FORMA",
       "expected": "non-empty",
       "fix": ""
     },
@@ -30234,7 +31332,7 @@
       "locale": "th",
       "check": "untranslated-text",
       "status": "PASS",
-      "actual": "2% Latin letters",
+      "actual": "1% Latin letters",
       "expected": "<=30%",
       "fix": "Look for English fallback strings"
     },
@@ -30242,8 +31340,8 @@
       "url": "/th/services/interior-design/",
       "locale": "th",
       "check": "word-count",
-      "status": "WARNING",
-      "actual": "931",
+      "status": "PASS",
+      "actual": "1658",
       "expected": ">=1500",
       "fix": "Expand with original, useful content (not filler)"
     },
@@ -30270,7 +31368,7 @@
       "locale": "th",
       "check": "description-length",
       "status": "PASS",
-      "actual": "117",
+      "actual": "135",
       "expected": "110-170",
       "fix": "Rewrite meta description"
     },
@@ -30279,7 +31377,7 @@
       "locale": "th",
       "check": "description-present",
       "status": "PASS",
-      "actual": "117",
+      "actual": "135",
       "expected": "non-empty",
       "fix": ""
     },
@@ -30288,9 +31386,18 @@
       "locale": "th",
       "check": "direct-answer",
       "status": "PASS",
-      "actual": "36",
+      "actual": "45",
       "expected": "40-60 words",
       "fix": "Tighten the opening answer"
+    },
+    {
+      "url": "/th/services/landscape-design/",
+      "locale": "th",
+      "check": "english-heading",
+      "status": "PASS",
+      "actual": "none",
+      "expected": "translated headings",
+      "fix": "Translate hard-coded English heading"
     },
     {
       "url": "/th/services/landscape-design/",
@@ -30405,7 +31512,7 @@
       "locale": "th",
       "check": "title-length",
       "status": "PASS",
-      "actual": "59",
+      "actual": "46",
       "expected": "20-65",
       "fix": "Shorten/lengthen title"
     },
@@ -30414,7 +31521,7 @@
       "locale": "th",
       "check": "title-present",
       "status": "PASS",
-      "actual": "ออกแบบภูมิทัศน์ เกาะพะงัน | สวนเขตร้อนและสระว่ายน้ำ | FORMA",
+      "actual": "ออกแบบภูมิทัศน์และสระว่ายน้ำ เกาะพะงัน | FORMA",
       "expected": "non-empty",
       "fix": ""
     },
@@ -30423,7 +31530,7 @@
       "locale": "th",
       "check": "untranslated-text",
       "status": "PASS",
-      "actual": "3% Latin letters",
+      "actual": "1% Latin letters",
       "expected": "<=30%",
       "fix": "Look for English fallback strings"
     },
@@ -30431,8 +31538,8 @@
       "url": "/th/services/landscape-design/",
       "locale": "th",
       "check": "word-count",
-      "status": "WARNING",
-      "actual": "896",
+      "status": "PASS",
+      "actual": "1577",
       "expected": ">=1500",
       "fix": "Expand with original, useful content (not filler)"
     },
@@ -30459,7 +31566,7 @@
       "locale": "th",
       "check": "description-length",
       "status": "PASS",
-      "actual": "122",
+      "actual": "130",
       "expected": "110-170",
       "fix": "Rewrite meta description"
     },
@@ -30468,7 +31575,7 @@
       "locale": "th",
       "check": "description-present",
       "status": "PASS",
-      "actual": "122",
+      "actual": "130",
       "expected": "non-empty",
       "fix": ""
     },
@@ -30477,9 +31584,18 @@
       "locale": "th",
       "check": "direct-answer",
       "status": "PASS",
-      "actual": "33",
+      "actual": "40",
       "expected": "40-60 words",
       "fix": "Tighten the opening answer"
+    },
+    {
+      "url": "/th/services/permits-planning/",
+      "locale": "th",
+      "check": "english-heading",
+      "status": "PASS",
+      "actual": "none",
+      "expected": "translated headings",
+      "fix": "Translate hard-coded English heading"
     },
     {
       "url": "/th/services/permits-planning/",
@@ -30594,7 +31710,7 @@
       "locale": "th",
       "check": "title-length",
       "status": "PASS",
-      "actual": "37",
+      "actual": "43",
       "expected": "20-65",
       "fix": "Shorten/lengthen title"
     },
@@ -30603,7 +31719,7 @@
       "locale": "th",
       "check": "title-present",
       "status": "PASS",
-      "actual": "ใบอนุญาตและผังเมือง เกาะพะงัน | FORMA",
+      "actual": "ขออนุญาตก่อสร้างและวางผัง เกาะพะงัน | FORMA",
       "expected": "non-empty",
       "fix": ""
     },
@@ -30612,7 +31728,7 @@
       "locale": "th",
       "check": "untranslated-text",
       "status": "PASS",
-      "actual": "1% Latin letters",
+      "actual": "0% Latin letters",
       "expected": "<=30%",
       "fix": "Look for English fallback strings"
     },
@@ -30621,7 +31737,7 @@
       "locale": "th",
       "check": "word-count",
       "status": "WARNING",
-      "actual": "865",
+      "actual": "1498",
       "expected": ">=1500",
       "fix": "Expand with original, useful content (not filler)"
     },
@@ -30648,7 +31764,7 @@
       "locale": "th",
       "check": "description-length",
       "status": "PASS",
-      "actual": "125",
+      "actual": "131",
       "expected": "110-170",
       "fix": "Rewrite meta description"
     },
@@ -30657,7 +31773,7 @@
       "locale": "th",
       "check": "description-present",
       "status": "PASS",
-      "actual": "125",
+      "actual": "131",
       "expected": "non-empty",
       "fix": ""
     },
@@ -30666,9 +31782,18 @@
       "locale": "th",
       "check": "direct-answer",
       "status": "PASS",
-      "actual": "32",
+      "actual": "37",
       "expected": "40-60 words",
       "fix": "Tighten the opening answer"
+    },
+    {
+      "url": "/th/services/project-management/",
+      "locale": "th",
+      "check": "english-heading",
+      "status": "PASS",
+      "actual": "none",
+      "expected": "translated headings",
+      "fix": "Translate hard-coded English heading"
     },
     {
       "url": "/th/services/project-management/",
@@ -30783,7 +31908,7 @@
       "locale": "th",
       "check": "title-length",
       "status": "PASS",
-      "actual": "37",
+      "actual": "39",
       "expected": "20-65",
       "fix": "Shorten/lengthen title"
     },
@@ -30792,7 +31917,7 @@
       "locale": "th",
       "check": "title-present",
       "status": "PASS",
-      "actual": "บริหารจัดการโครงการ เกาะพะงัน | FORMA",
+      "actual": "บริหารโครงการก่อสร้าง เกาะพะงัน | FORMA",
       "expected": "non-empty",
       "fix": ""
     },
@@ -30801,7 +31926,7 @@
       "locale": "th",
       "check": "untranslated-text",
       "status": "PASS",
-      "actual": "2% Latin letters",
+      "actual": "1% Latin letters",
       "expected": "<=30%",
       "fix": "Look for English fallback strings"
     },
@@ -30809,8 +31934,8 @@
       "url": "/th/services/project-management/",
       "locale": "th",
       "check": "word-count",
-      "status": "WARNING",
-      "actual": "857",
+      "status": "PASS",
+      "actual": "1555",
       "expected": ">=1500",
       "fix": "Expand with original, useful content (not filler)"
     },
@@ -30837,7 +31962,7 @@
       "locale": "th",
       "check": "description-length",
       "status": "PASS",
-      "actual": "129",
+      "actual": "142",
       "expected": "110-170",
       "fix": "Rewrite meta description"
     },
@@ -30846,7 +31971,7 @@
       "locale": "th",
       "check": "description-present",
       "status": "PASS",
-      "actual": "129",
+      "actual": "142",
       "expected": "non-empty",
       "fix": ""
     },
@@ -30855,9 +31980,18 @@
       "locale": "th",
       "check": "direct-answer",
       "status": "PASS",
-      "actual": "34",
+      "actual": "40",
       "expected": "40-60 words",
       "fix": "Tighten the opening answer"
+    },
+    {
+      "url": "/th/services/renovation/",
+      "locale": "th",
+      "check": "english-heading",
+      "status": "PASS",
+      "actual": "none",
+      "expected": "translated headings",
+      "fix": "Translate hard-coded English heading"
     },
     {
       "url": "/th/services/renovation/",
@@ -30972,7 +32106,7 @@
       "locale": "th",
       "check": "title-length",
       "status": "PASS",
-      "actual": "42",
+      "actual": "40",
       "expected": "20-65",
       "fix": "Shorten/lengthen title"
     },
@@ -30981,7 +32115,7 @@
       "locale": "th",
       "check": "title-present",
       "status": "PASS",
-      "actual": "ปรับปรุงวิลล่า เกาะพะงัน | รีโนเวท | FORMA",
+      "actual": "ปรับปรุงวิลล่า เกาะพะงัน รีโมเดล | FORMA",
       "expected": "non-empty",
       "fix": ""
     },
@@ -30990,7 +32124,7 @@
       "locale": "th",
       "check": "untranslated-text",
       "status": "PASS",
-      "actual": "1% Latin letters",
+      "actual": "0% Latin letters",
       "expected": "<=30%",
       "fix": "Look for English fallback strings"
     },
@@ -30998,8 +32132,8 @@
       "url": "/th/services/renovation/",
       "locale": "th",
       "check": "word-count",
-      "status": "WARNING",
-      "actual": "891",
+      "status": "PASS",
+      "actual": "1515",
       "expected": ">=1500",
       "fix": "Expand with original, useful content (not filler)"
     },
@@ -31026,7 +32160,7 @@
       "locale": "th",
       "check": "description-length",
       "status": "PASS",
-      "actual": "126",
+      "actual": "143",
       "expected": "110-170",
       "fix": "Rewrite meta description"
     },
@@ -31035,7 +32169,7 @@
       "locale": "th",
       "check": "description-present",
       "status": "PASS",
-      "actual": "126",
+      "actual": "143",
       "expected": "non-empty",
       "fix": ""
     },
@@ -31044,9 +32178,18 @@
       "locale": "th",
       "check": "direct-answer",
       "status": "PASS",
-      "actual": "28",
+      "actual": "41",
       "expected": "40-60 words",
       "fix": "Tighten the opening answer"
+    },
+    {
+      "url": "/th/services/technical-supervision/",
+      "locale": "th",
+      "check": "english-heading",
+      "status": "PASS",
+      "actual": "none",
+      "expected": "translated headings",
+      "fix": "Translate hard-coded English heading"
     },
     {
       "url": "/th/services/technical-supervision/",
@@ -31161,7 +32304,7 @@
       "locale": "th",
       "check": "title-length",
       "status": "PASS",
-      "actual": "33",
+      "actual": "44",
       "expected": "20-65",
       "fix": "Shorten/lengthen title"
     },
@@ -31170,7 +32313,7 @@
       "locale": "th",
       "check": "title-present",
       "status": "PASS",
-      "actual": "ควบคุมงานเทคนิค เกาะพะงัน | FORMA",
+      "actual": "ควบคุมงานด้านเทคนิค วิลล่า เกาะพะงัน | FORMA",
       "expected": "non-empty",
       "fix": ""
     },
@@ -31187,8 +32330,8 @@
       "url": "/th/services/technical-supervision/",
       "locale": "th",
       "check": "word-count",
-      "status": "WARNING",
-      "actual": "865",
+      "status": "PASS",
+      "actual": "1513",
       "expected": ">=1500",
       "fix": "Expand with original, useful content (not filler)"
     },
@@ -31215,7 +32358,7 @@
       "locale": "th",
       "check": "description-length",
       "status": "PASS",
-      "actual": "139",
+      "actual": "140",
       "expected": "110-170",
       "fix": "Rewrite meta description"
     },
@@ -31224,7 +32367,7 @@
       "locale": "th",
       "check": "description-present",
       "status": "PASS",
-      "actual": "139",
+      "actual": "140",
       "expected": "non-empty",
       "fix": ""
     },
@@ -31233,9 +32376,18 @@
       "locale": "th",
       "check": "direct-answer",
       "status": "PASS",
-      "actual": "31",
+      "actual": "43",
       "expected": "40-60 words",
       "fix": "Tighten the opening answer"
+    },
+    {
+      "url": "/th/services/turnkey-projects/",
+      "locale": "th",
+      "check": "english-heading",
+      "status": "PASS",
+      "actual": "none",
+      "expected": "translated headings",
+      "fix": "Translate hard-coded English heading"
     },
     {
       "url": "/th/services/turnkey-projects/",
@@ -31349,8 +32501,8 @@
       "url": "/th/services/turnkey-projects/",
       "locale": "th",
       "check": "title-length",
-      "status": "WARNING",
-      "actual": "66",
+      "status": "PASS",
+      "actual": "51",
       "expected": "20-65",
       "fix": "Shorten/lengthen title"
     },
@@ -31359,7 +32511,7 @@
       "locale": "th",
       "check": "title-present",
       "status": "PASS",
-      "actual": "โครงการวิลล่าเทิร์นคีย์ เกาะพะงัน | ออกแบบ-ก่อสร้างครบวงจร | FORMA",
+      "actual": "สร้างวิลล่าเบ็ดเสร็จพร้อมเข้าอยู่ เกาะพะงัน | FORMA",
       "expected": "non-empty",
       "fix": ""
     },
@@ -31376,8 +32528,8 @@
       "url": "/th/services/turnkey-projects/",
       "locale": "th",
       "check": "word-count",
-      "status": "WARNING",
-      "actual": "932",
+      "status": "PASS",
+      "actual": "1581",
       "expected": ">=1500",
       "fix": "Expand with original, useful content (not filler)"
     },
@@ -31404,7 +32556,7 @@
       "locale": "th",
       "check": "description-length",
       "status": "PASS",
-      "actual": "151",
+      "actual": "141",
       "expected": "110-170",
       "fix": "Rewrite meta description"
     },
@@ -31413,7 +32565,7 @@
       "locale": "th",
       "check": "description-present",
       "status": "PASS",
-      "actual": "151",
+      "actual": "141",
       "expected": "non-empty",
       "fix": ""
     },
@@ -31422,9 +32574,18 @@
       "locale": "th",
       "check": "direct-answer",
       "status": "PASS",
-      "actual": "44",
+      "actual": "42",
       "expected": "40-60 words",
       "fix": "Tighten the opening answer"
+    },
+    {
+      "url": "/th/services/villa-design/",
+      "locale": "th",
+      "check": "english-heading",
+      "status": "PASS",
+      "actual": "none",
+      "expected": "translated headings",
+      "fix": "Translate hard-coded English heading"
     },
     {
       "url": "/th/services/villa-design/",
@@ -31539,7 +32700,7 @@
       "locale": "th",
       "check": "title-length",
       "status": "PASS",
-      "actual": "54",
+      "actual": "37",
       "expected": "20-65",
       "fix": "Shorten/lengthen title"
     },
@@ -31548,7 +32709,7 @@
       "locale": "th",
       "check": "title-present",
       "status": "PASS",
-      "actual": "ออกแบบวิลล่า เกาะพะงัน | สถาปัตยกรรมเฉพาะบุคคล | FORMA",
+      "actual": "ออกแบบวิลล่าเขตร้อน เกาะพะงัน | FORMA",
       "expected": "non-empty",
       "fix": ""
     },
@@ -31557,7 +32718,7 @@
       "locale": "th",
       "check": "untranslated-text",
       "status": "PASS",
-      "actual": "2% Latin letters",
+      "actual": "1% Latin letters",
       "expected": "<=30%",
       "fix": "Look for English fallback strings"
     },
@@ -31565,8 +32726,8 @@
       "url": "/th/services/villa-design/",
       "locale": "th",
       "check": "word-count",
-      "status": "WARNING",
-      "actual": "1025",
+      "status": "PASS",
+      "actual": "1687",
       "expected": ">=1500",
       "fix": "Expand with original, useful content (not filler)"
     },

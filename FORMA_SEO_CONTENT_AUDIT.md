@@ -4,7 +4,7 @@ Word counts are the text of `<main>` per page (Thai estimated). Full per-URL dat
 
 | Page type | Pages (all locales) | EN words | RU / TH / HE words | Gap vs target |
 |---|---|---|---|---|
-| Service | 13 × 4 | **1,550–1,830 (after Phase 5)** | 787–1,016 / 837–1,020 / 701–889 (not yet expanded) | EN meets target; RU/TH/HE 500–800 words short until Phase 7 |
+| Service | 13 × 4 | **1,550–1,830 (after Phase 5)** | ~1,460–1,740 / ~1,490–1,760 / ~1,280–1,520 (after Phase 7) | RU/TH meet the 1,500 target within ~3%; HE uses a 1,250 target (Hebrew uses fewer tokens per idea) |
 | Location | 11 × 4 | 304–582 | 289–557 / 297–562 / 263–498 | no 1,500 target (secondary districts); keep unique |
 | Project (concept) | 6 × 4 | 208–245 | 185–223 | concept studies, short by design |
 | Journal article | 6 × 4 | 474–633 | 389–585 | informational |
@@ -23,3 +23,5 @@ Word counts are the text of `<main>` per page (Thai estimated). Full per-URL dat
 4. Translate Latin headings on RU/TH/HE locations/projects indexes (A11).
 
 _Updated after Phase 5 (EN content). Full machine report: `reports/seo-audit.md`._
+
+_Updated after Phase 7 (RU/TH/HE service content)._

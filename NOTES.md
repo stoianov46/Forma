@@ -450,3 +450,11 @@ Derived from proposal.md's own QA tables (§22 QA DOD, §23 QA, Google Webmaster
 - "bespoke" was replaced by "custom" in EN content (banned-word list in `seo-audit.config.json`).
 - Accepted editorial warnings (EN): meta descriptions of the legal/utility pages are short (64–84 chars) and five journal article titles exceed 65 characters; revisit with the legal review. No exceptions are configured in `seo-audit.config.json`.
 - Long-form copy was drafted by AI agents and reviewed only for banned words, invented figures and guarantees; the owner should read the Architecture, Permits and Eco pages before publishing.
+
+## Translations of the new content (10 Nov 2026)
+
+- RU/TH/HE versions of the 13 long-form service sections (`src/content/services/extended/{ru,th,he}/`), service/location/about/process titles, descriptions, H1s and direct answers, pricing-table labels, project-page labels and index-page metadata were produced by AI agents. **Status: machine draft — native-speaker review required** before launch.
+- Terminology to review: Russian uses «Ко Панган» (existing site spelling; «Пханган» is also common); Thai Chaloklum is «โฉลกหลำ» in the new text but «ช่องคื้น» in the existing location page — pick one; Thai «เทิร์นคีย์» for turnkey; Hebrew «מפתח/תכנון-ביצוע» for turnkey/design-build and «נקודות עצירה» for hold points; some technical terms (MEP, as-built, swale) appear in Latin script.
+- Audit thresholds by locale (`seo-audit.config.json`): Hebrew direct answer ≥30 words, Hebrew description ≥85 chars, Hebrew service word target 1,250 (Hebrew packs more meaning into fewer tokens). Thai direct-answer length is not word-counted (no spaces).
+- Accepted warnings after Phase 7 (55): legal/utility pages' short descriptions, journal article titles longer than 65 characters, a few Russian descriptions up to ~188 characters, three RU service pages at 1,458–1,482 words, one TH page at 1,499 words, `[[VERIFY]]` legal markers (owner/legal counsel).
+- Keyword map is English only (`keywordLocales: ["en"]`); RU/TH/HE keyword research needs a native speaker and a keyword tool.

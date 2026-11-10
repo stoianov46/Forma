@@ -8,8 +8,9 @@ interface Stage {
 }
 interface Props {
   stages: Stage[];
+  labels: { input: string; outputs: string; next: string };
 }
-const { stages } = Astro.props;
+const { stages, labels } = Astro.props;
 ---
 
 <section class="wrap py-14 sm:py-20">
@@ -24,15 +25,15 @@ const { stages } = Astro.props;
           </div>
           <div class="grid gap-6 sm:grid-cols-3 lg:col-span-8">
             <div>
-              <p class="text-xs font-semibold tracking-wide text-ink-900/60 uppercase">Your input</p>
+              <p class="text-xs font-semibold tracking-wide text-ink-900/60 uppercase">{labels.input}</p>
               <p class="body-m mt-2 text-ink-900/70">{stage.clientInput}</p>
             </div>
             <div>
-              <p class="text-xs font-semibold tracking-wide text-ink-900/60 uppercase">Outputs</p>
+              <p class="text-xs font-semibold tracking-wide text-ink-900/60 uppercase">{labels.outputs}</p>
               <p class="body-m mt-2 text-ink-900/70">{stage.outputs}</p>
             </div>
             <div>
-              <p class="text-xs font-semibold tracking-wide text-ink-900/60 uppercase">Next step</p>
+              <p class="text-xs font-semibold tracking-wide text-ink-900/60 uppercase">{labels.next}</p>
               <p class="body-m mt-2 text-ink-900/70">{stage.nextStep}</p>
             </div>
           </div>
