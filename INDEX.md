@@ -39,7 +39,9 @@ config/devops file, and every environment variable the project reads.
 | `.github/workflows/deploy.yml` | GitHub Pages deploy (sets site/base from the repo name) |
 | `.github/workflows/project-status-sync.yml` | Moves board cards on PR open/merge (needs `PROJECT_TOKEN`) |
 | `Makefile` | Shortcuts: `make help` lists everything |
-| `scripts/qa/*.cjs` | QA: links, meta, JSON-LD, browser (axe, mobile menu) |
+| `scripts/qa/*.cjs` | QA: links, meta, JSON-LD, browser (axe, mobile menu), `audit.cjs` (per-page matrix of dist → `reports/`) |
+| `AUDIT.md` | Local audit findings + status (Phase 1). Full matrix: `reports/audit-matrix.md`, data: `reports/audit.json` |
+| `FORMA_SEO_CONTENT_AUDIT.md` | Per-page-type SEO/content audit summary |
 
 ## Environment variables
 
