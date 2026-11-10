@@ -1,16 +1,5 @@
 ---
 import LegalPage from '../../templates/LegalPage.astro';
-import { legalEn } from '../../content/legal/en';
-
-const p = legalEn.terms;
 ---
 
-<LegalPage
-  path="/terms/"
-  navLabel="Terms of Service"
-  title={p.title}
-  description={p.description}
-  h1={p.h1}
-  updated={p.updated}
-  sections={p.body}
-/>
+<LegalPage locale="en" kind="terms" path="/terms/" />

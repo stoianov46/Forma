@@ -76,12 +76,12 @@ const journalHref = journalLocales.includes(locale) || locale === 'en' ? localiz
     <div class="mt-12 flex flex-col gap-4 border-t border-ink-900/10 pt-6 sm:flex-row sm:items-center sm:justify-between">
       <p class="text-sm text-ink-900/60">© {year} FORMA. {t.footer.rights}</p>
       <ul class="flex flex-wrap gap-x-6 gap-y-2 text-sm text-ink-900/60">
-        {/* Legal pages are English-only for now (pending translation + legal review — see NOTES.md), so these always link to the canonical English URL rather than a locale-prefixed page that does not exist. */}
-        <li><a href={withBase('/privacy/')} class="hover:text-ink-900">{t.footer.privacy}</a></li>
-        <li><a href={withBase('/terms/')} class="hover:text-ink-900">{t.footer.terms}</a></li>
-        <li><a href={withBase('/cookies/')} class="hover:text-ink-900">{t.footer.cookies}</a></li>
-        <li><a href={withBase('/accessibility/')} class="hover:text-ink-900">{t.footer.accessibility}</a></li>
-        <li><a href={withBase('/editorial-policy/')} class="hover:text-ink-900">{t.footer.editorialPolicy}</a></li>
+        {/* Legal pages exist in all four locales (AI drafts, pending legal review — see NOTES.md). */}
+        <li><a href={localizePath(locale, '/privacy/')} class="hover:text-ink-900">{t.footer.privacy}</a></li>
+        <li><a href={localizePath(locale, '/terms/')} class="hover:text-ink-900">{t.footer.terms}</a></li>
+        <li><a href={localizePath(locale, '/cookies/')} class="hover:text-ink-900">{t.footer.cookies}</a></li>
+        <li><a href={localizePath(locale, '/accessibility/')} class="hover:text-ink-900">{t.footer.accessibility}</a></li>
+        <li><a href={localizePath(locale, '/editorial-policy/')} class="hover:text-ink-900">{t.footer.editorialPolicy}</a></li>
       </ul>
     </div>
   </div>

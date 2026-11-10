@@ -1,43 +1,55 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Breadcrumbs from '../components/layout/Breadcrumbs.astro';
+import type { Locale } from '../lib/i18n';
+import { getLegalContent, fillLegal, lastUpdated } from '../content/legal';
 
-// Legal pages are English-only for now (pending professional translation + legal review — see NOTES.md),
-// so hreflang/language-switcher must never claim a ru/th/he version exists.
-const ENGLISH_ONLY = ['en'] as const;
-
-interface Section {
-  heading: string;
-  text: string;
-}
+type Kind = 'privacy' | 'terms' | 'cookies' | 'accessibility' | 'editorialPolicy';
 interface Props {
+  locale: Locale;
+  kind: Kind;
   path: string;
-  navLabel: string;
-  title: string;
-  description: string;
-  h1: string;
-  updated?: string;
-  intro?: string;
-  sections?: Section[];
-  body?: string;
 }
-const { path, navLabel, title, description, h1, updated, intro, sections, body } = Astro.props;
+const { locale, kind, path } = Astro.props;
+const legal = getLegalContent(locale);
+const p = legal[kind];
+const sections = 'sections' in p ? p.sections : undefined;
+const body = 'body' in p ? p.body : undefined;
+const cookies = kind === 'cookies' ? legal.cookies : undefined;
+const showUpdated = kind === 'privacy' || kind === 'terms' || kind === 'cookies';
 ---
 
-<BaseLayout locale="en" path={path} title={title} description={description} availableLocales={ENGLISH_ONLY}>
-  <Breadcrumbs locale="en" items={[{ name: navLabel, path }]} />
+<BaseLayout locale={locale} path={path} title={p.title} description={p.description}>
+  <Breadcrumbs locale={locale} items={[{ name: p.navLabel, path }]} />
   <section class="wrap py-14 sm:py-20">
     <div class="prose-article">
-      <h1 class="mb-2">{h1}</h1>
-      {updated && <p class="text-sm text-ink-900/60">{updated}</p>}
-      {intro && <p class="mt-6">{intro}</p>}
-      {body && <p class="mt-6">{body}</p>}
+      <h1 class="mb-2">{p.h1}</h1>
+      {showUpdated && <p class="text-sm text-ink-900/60">{lastUpdated(locale)}</p>}
+      {cookies && <p class="mt-6">{cookies.intro}</p>}
+      {body && <p class="mt-6">{fillLegal(body)}</p>}
       {sections && sections.map((s) => (
         <div class="mt-8">
           <h2>{s.heading}</h2>
-          <p>{s.text}</p>
+          <p>{fillLegal(s.text)}</p>
+        </div>
+      ))}
+      {cookies && cookies.categories.map((cat) => (
+        <div class="mt-6">
+          <h2>{cat.title}</h2>
+          <p>{cat.body}</p>
         </div>
       ))}
     </div>
+    {cookies && (
+      <button type="button" id="manage-cookies" class="mt-8 inline-flex items-center rounded-full bg-ink-900 px-6 py-3 text-sm font-medium text-stone-50 hover:bg-olive-700">
+        {cookies.manage}
+      </button>
+    )}
   </section>
 </BaseLayout>
+
+<script>
+  document.getElementById('manage-cookies')?.addEventListener('click', () => {
+    (window as unknown as { formaOpenCookieSettings?: () => void }).formaOpenCookieSettings?.();
+  });
+</script>

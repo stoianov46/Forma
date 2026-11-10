@@ -1,9 +1,9 @@
 {
   "summary": {
-    "pages": 190,
-    "checks": 3831,
-    "pass": 3780,
-    "warning": 51,
+    "pages": 205,
+    "checks": 4110,
+    "pass": 4032,
+    "warning": 78,
     "fail": 0
   },
   "results": [
@@ -1682,6 +1682,168 @@
       "fix": "Look for English fallback strings"
     },
     {
+      "url": "/he/accessibility/",
+      "locale": "he",
+      "check": "canonical-correct",
+      "status": "PASS",
+      "actual": "/he/accessibility/",
+      "expected": "/he/accessibility/",
+      "fix": "Canonical must be the page itself (language-specific)"
+    },
+    {
+      "url": "/he/accessibility/",
+      "locale": "he",
+      "check": "canonical-present",
+      "status": "PASS",
+      "actual": "https://forma.in.th/he/accessibility/",
+      "expected": "present",
+      "fix": ""
+    },
+    {
+      "url": "/he/accessibility/",
+      "locale": "he",
+      "check": "description-length",
+      "status": "WARNING",
+      "actual": "52",
+      "expected": "85-170",
+      "fix": "Rewrite meta description"
+    },
+    {
+      "url": "/he/accessibility/",
+      "locale": "he",
+      "check": "description-present",
+      "status": "PASS",
+      "actual": "52",
+      "expected": "non-empty",
+      "fix": ""
+    },
+    {
+      "url": "/he/accessibility/",
+      "locale": "he",
+      "check": "english-heading",
+      "status": "PASS",
+      "actual": "none",
+      "expected": "translated headings",
+      "fix": "Translate hard-coded English heading"
+    },
+    {
+      "url": "/he/accessibility/",
+      "locale": "he",
+      "check": "h1-single",
+      "status": "PASS",
+      "actual": "1",
+      "expected": "1",
+      "fix": ""
+    },
+    {
+      "url": "/he/accessibility/",
+      "locale": "he",
+      "check": "heading-hierarchy",
+      "status": "PASS",
+      "actual": "ok",
+      "expected": "no skipped levels",
+      "fix": ""
+    },
+    {
+      "url": "/he/accessibility/",
+      "locale": "he",
+      "check": "hreflang-reciprocal",
+      "status": "PASS",
+      "actual": "ok",
+      "expected": "reciprocal",
+      "fix": ""
+    },
+    {
+      "url": "/he/accessibility/",
+      "locale": "he",
+      "check": "hreflang-self",
+      "status": "PASS",
+      "actual": "/he/accessibility/",
+      "expected": "/he/accessibility/",
+      "fix": ""
+    },
+    {
+      "url": "/he/accessibility/",
+      "locale": "he",
+      "check": "html-lang",
+      "status": "PASS",
+      "actual": "he",
+      "expected": "he",
+      "fix": ""
+    },
+    {
+      "url": "/he/accessibility/",
+      "locale": "he",
+      "check": "img-alt",
+      "status": "PASS",
+      "actual": "0",
+      "expected": "0",
+      "fix": ""
+    },
+    {
+      "url": "/he/accessibility/",
+      "locale": "he",
+      "check": "jsonld-no-duplicate-ids",
+      "status": "PASS",
+      "actual": "ok",
+      "expected": "unique",
+      "fix": ""
+    },
+    {
+      "url": "/he/accessibility/",
+      "locale": "he",
+      "check": "jsonld-valid",
+      "status": "PASS",
+      "actual": "2 block(s)",
+      "expected": "valid JSON",
+      "fix": ""
+    },
+    {
+      "url": "/he/accessibility/",
+      "locale": "he",
+      "check": "placeholders",
+      "status": "PASS",
+      "actual": "none",
+      "expected": "none",
+      "fix": "Remove placeholder text"
+    },
+    {
+      "url": "/he/accessibility/",
+      "locale": "he",
+      "check": "rtl-config",
+      "status": "PASS",
+      "actual": "rtl",
+      "expected": "rtl",
+      "fix": ""
+    },
+    {
+      "url": "/he/accessibility/",
+      "locale": "he",
+      "check": "title-length",
+      "status": "WARNING",
+      "actual": "14",
+      "expected": "20-65",
+      "fix": "Shorten/lengthen title"
+    },
+    {
+      "url": "/he/accessibility/",
+      "locale": "he",
+      "check": "title-present",
+      "status": "PASS",
+      "actual": "נגישות | FORMA",
+      "expected": "non-empty",
+      "fix": ""
+    },
+    {
+      "url": "/he/accessibility/",
+      "locale": "he",
+      "check": "untranslated-text",
+      "status": "PASS",
+      "actual": "9% Latin letters",
+      "expected": "<=30%",
+      "fix": "Look for English fallback strings"
+    },
+    {
       "url": "/he/checklist/",
       "locale": "he",
       "check": "canonical-correct",
@@ -2029,6 +2191,339 @@
       "check": "untranslated-text",
       "status": "PASS",
       "actual": "9% Latin letters",
+      "expected": "<=30%",
+      "fix": "Look for English fallback strings"
+    },
+    {
+      "url": "/he/cookies/",
+      "locale": "he",
+      "check": "canonical-correct",
+      "status": "PASS",
+      "actual": "/he/cookies/",
+      "expected": "/he/cookies/",
+      "fix": "Canonical must be the page itself (language-specific)"
+    },
+    {
+      "url": "/he/cookies/",
+      "locale": "he",
+      "check": "canonical-present",
+      "status": "PASS",
+      "actual": "https://forma.in.th/he/cookies/",
+      "expected": "present",
+      "fix": ""
+    },
+    {
+      "url": "/he/cookies/",
+      "locale": "he",
+      "check": "description-length",
+      "status": "WARNING",
+      "actual": "73",
+      "expected": "85-170",
+      "fix": "Rewrite meta description"
+    },
+    {
+      "url": "/he/cookies/",
+      "locale": "he",
+      "check": "description-present",
+      "status": "PASS",
+      "actual": "73",
+      "expected": "non-empty",
+      "fix": ""
+    },
+    {
+      "url": "/he/cookies/",
+      "locale": "he",
+      "check": "english-heading",
+      "status": "PASS",
+      "actual": "none",
+      "expected": "translated headings",
+      "fix": "Translate hard-coded English heading"
+    },
+    {
+      "url": "/he/cookies/",
+      "locale": "he",
+      "check": "h1-single",
+      "status": "PASS",
+      "actual": "1",
+      "expected": "1",
+      "fix": ""
+    },
+    {
+      "url": "/he/cookies/",
+      "locale": "he",
+      "check": "heading-hierarchy",
+      "status": "PASS",
+      "actual": "ok",
+      "expected": "no skipped levels",
+      "fix": ""
+    },
+    {
+      "url": "/he/cookies/",
+      "locale": "he",
+      "check": "hreflang-reciprocal",
+      "status": "PASS",
+      "actual": "ok",
+      "expected": "reciprocal",
+      "fix": ""
+    },
+    {
+      "url": "/he/cookies/",
+      "locale": "he",
+      "check": "hreflang-self",
+      "status": "PASS",
+      "actual": "/he/cookies/",
+      "expected": "/he/cookies/",
+      "fix": ""
+    },
+    {
+      "url": "/he/cookies/",
+      "locale": "he",
+      "check": "html-lang",
+      "status": "PASS",
+      "actual": "he",
+      "expected": "he",
+      "fix": ""
+    },
+    {
+      "url": "/he/cookies/",
+      "locale": "he",
+      "check": "img-alt",
+      "status": "PASS",
+      "actual": "0",
+      "expected": "0",
+      "fix": ""
+    },
+    {
+      "url": "/he/cookies/",
+      "locale": "he",
+      "check": "jsonld-no-duplicate-ids",
+      "status": "PASS",
+      "actual": "ok",
+      "expected": "unique",
+      "fix": ""
+    },
+    {
+      "url": "/he/cookies/",
+      "locale": "he",
+      "check": "jsonld-valid",
+      "status": "PASS",
+      "actual": "2 block(s)",
+      "expected": "valid JSON",
+      "fix": ""
+    },
+    {
+      "url": "/he/cookies/",
+      "locale": "he",
+      "check": "owner-verify-markers",
+      "status": "WARNING",
+      "actual": "[[VERIFY]] present",
+      "expected": "resolved",
+      "fix": "OWNER INPUT REQUIRED (legal counsel)"
+    },
+    {
+      "url": "/he/cookies/",
+      "locale": "he",
+      "check": "placeholders",
+      "status": "PASS",
+      "actual": "none",
+      "expected": "none",
+      "fix": "Remove placeholder text"
+    },
+    {
+      "url": "/he/cookies/",
+      "locale": "he",
+      "check": "rtl-config",
+      "status": "PASS",
+      "actual": "rtl",
+      "expected": "rtl",
+      "fix": ""
+    },
+    {
+      "url": "/he/cookies/",
+      "locale": "he",
+      "check": "title-length",
+      "status": "PASS",
+      "actual": "21",
+      "expected": "20-65",
+      "fix": "Shorten/lengthen title"
+    },
+    {
+      "url": "/he/cookies/",
+      "locale": "he",
+      "check": "title-present",
+      "status": "PASS",
+      "actual": "הגדרות עוגיות | FORMA",
+      "expected": "non-empty",
+      "fix": ""
+    },
+    {
+      "url": "/he/cookies/",
+      "locale": "he",
+      "check": "untranslated-text",
+      "status": "PASS",
+      "actual": "6% Latin letters",
+      "expected": "<=30%",
+      "fix": "Look for English fallback strings"
+    },
+    {
+      "url": "/he/editorial-policy/",
+      "locale": "he",
+      "check": "canonical-correct",
+      "status": "PASS",
+      "actual": "/he/editorial-policy/",
+      "expected": "/he/editorial-policy/",
+      "fix": "Canonical must be the page itself (language-specific)"
+    },
+    {
+      "url": "/he/editorial-policy/",
+      "locale": "he",
+      "check": "canonical-present",
+      "status": "PASS",
+      "actual": "https://forma.in.th/he/editorial-policy/",
+      "expected": "present",
+      "fix": ""
+    },
+    {
+      "url": "/he/editorial-policy/",
+      "locale": "he",
+      "check": "description-length",
+      "status": "WARNING",
+      "actual": "64",
+      "expected": "85-170",
+      "fix": "Rewrite meta description"
+    },
+    {
+      "url": "/he/editorial-policy/",
+      "locale": "he",
+      "check": "description-present",
+      "status": "PASS",
+      "actual": "64",
+      "expected": "non-empty",
+      "fix": ""
+    },
+    {
+      "url": "/he/editorial-policy/",
+      "locale": "he",
+      "check": "english-heading",
+      "status": "PASS",
+      "actual": "none",
+      "expected": "translated headings",
+      "fix": "Translate hard-coded English heading"
+    },
+    {
+      "url": "/he/editorial-policy/",
+      "locale": "he",
+      "check": "h1-single",
+      "status": "PASS",
+      "actual": "1",
+      "expected": "1",
+      "fix": ""
+    },
+    {
+      "url": "/he/editorial-policy/",
+      "locale": "he",
+      "check": "heading-hierarchy",
+      "status": "PASS",
+      "actual": "ok",
+      "expected": "no skipped levels",
+      "fix": ""
+    },
+    {
+      "url": "/he/editorial-policy/",
+      "locale": "he",
+      "check": "hreflang-reciprocal",
+      "status": "PASS",
+      "actual": "ok",
+      "expected": "reciprocal",
+      "fix": ""
+    },
+    {
+      "url": "/he/editorial-policy/",
+      "locale": "he",
+      "check": "hreflang-self",
+      "status": "PASS",
+      "actual": "/he/editorial-policy/",
+      "expected": "/he/editorial-policy/",
+      "fix": ""
+    },
+    {
+      "url": "/he/editorial-policy/",
+      "locale": "he",
+      "check": "html-lang",
+      "status": "PASS",
+      "actual": "he",
+      "expected": "he",
+      "fix": ""
+    },
+    {
+      "url": "/he/editorial-policy/",
+      "locale": "he",
+      "check": "img-alt",
+      "status": "PASS",
+      "actual": "0",
+      "expected": "0",
+      "fix": ""
+    },
+    {
+      "url": "/he/editorial-policy/",
+      "locale": "he",
+      "check": "jsonld-no-duplicate-ids",
+      "status": "PASS",
+      "actual": "ok",
+      "expected": "unique",
+      "fix": ""
+    },
+    {
+      "url": "/he/editorial-policy/",
+      "locale": "he",
+      "check": "jsonld-valid",
+      "status": "PASS",
+      "actual": "2 block(s)",
+      "expected": "valid JSON",
+      "fix": ""
+    },
+    {
+      "url": "/he/editorial-policy/",
+      "locale": "he",
+      "check": "placeholders",
+      "status": "PASS",
+      "actual": "none",
+      "expected": "none",
+      "fix": "Remove placeholder text"
+    },
+    {
+      "url": "/he/editorial-policy/",
+      "locale": "he",
+      "check": "rtl-config",
+      "status": "PASS",
+      "actual": "rtl",
+      "expected": "rtl",
+      "fix": ""
+    },
+    {
+      "url": "/he/editorial-policy/",
+      "locale": "he",
+      "check": "title-length",
+      "status": "PASS",
+      "actual": "23",
+      "expected": "20-65",
+      "fix": "Shorten/lengthen title"
+    },
+    {
+      "url": "/he/editorial-policy/",
+      "locale": "he",
+      "check": "title-present",
+      "status": "PASS",
+      "actual": "מדיניות מערכתית | FORMA",
+      "expected": "non-empty",
+      "fix": ""
+    },
+    {
+      "url": "/he/editorial-policy/",
+      "locale": "he",
+      "check": "untranslated-text",
+      "status": "PASS",
+      "actual": "0% Latin letters",
       "expected": "<=30%",
       "fix": "Look for English fallback strings"
     },
@@ -5484,7 +5979,178 @@
       "locale": "he",
       "check": "untranslated-text",
       "status": "PASS",
-      "actual": "2% Latin letters",
+      "actual": "0% Latin letters",
+      "expected": "<=30%",
+      "fix": "Look for English fallback strings"
+    },
+    {
+      "url": "/he/privacy/",
+      "locale": "he",
+      "check": "canonical-correct",
+      "status": "PASS",
+      "actual": "/he/privacy/",
+      "expected": "/he/privacy/",
+      "fix": "Canonical must be the page itself (language-specific)"
+    },
+    {
+      "url": "/he/privacy/",
+      "locale": "he",
+      "check": "canonical-present",
+      "status": "PASS",
+      "actual": "https://forma.in.th/he/privacy/",
+      "expected": "present",
+      "fix": ""
+    },
+    {
+      "url": "/he/privacy/",
+      "locale": "he",
+      "check": "description-length",
+      "status": "WARNING",
+      "actual": "56",
+      "expected": "85-170",
+      "fix": "Rewrite meta description"
+    },
+    {
+      "url": "/he/privacy/",
+      "locale": "he",
+      "check": "description-present",
+      "status": "PASS",
+      "actual": "56",
+      "expected": "non-empty",
+      "fix": ""
+    },
+    {
+      "url": "/he/privacy/",
+      "locale": "he",
+      "check": "english-heading",
+      "status": "PASS",
+      "actual": "none",
+      "expected": "translated headings",
+      "fix": "Translate hard-coded English heading"
+    },
+    {
+      "url": "/he/privacy/",
+      "locale": "he",
+      "check": "h1-single",
+      "status": "PASS",
+      "actual": "1",
+      "expected": "1",
+      "fix": ""
+    },
+    {
+      "url": "/he/privacy/",
+      "locale": "he",
+      "check": "heading-hierarchy",
+      "status": "PASS",
+      "actual": "ok",
+      "expected": "no skipped levels",
+      "fix": ""
+    },
+    {
+      "url": "/he/privacy/",
+      "locale": "he",
+      "check": "hreflang-reciprocal",
+      "status": "PASS",
+      "actual": "ok",
+      "expected": "reciprocal",
+      "fix": ""
+    },
+    {
+      "url": "/he/privacy/",
+      "locale": "he",
+      "check": "hreflang-self",
+      "status": "PASS",
+      "actual": "/he/privacy/",
+      "expected": "/he/privacy/",
+      "fix": ""
+    },
+    {
+      "url": "/he/privacy/",
+      "locale": "he",
+      "check": "html-lang",
+      "status": "PASS",
+      "actual": "he",
+      "expected": "he",
+      "fix": ""
+    },
+    {
+      "url": "/he/privacy/",
+      "locale": "he",
+      "check": "img-alt",
+      "status": "PASS",
+      "actual": "0",
+      "expected": "0",
+      "fix": ""
+    },
+    {
+      "url": "/he/privacy/",
+      "locale": "he",
+      "check": "jsonld-no-duplicate-ids",
+      "status": "PASS",
+      "actual": "ok",
+      "expected": "unique",
+      "fix": ""
+    },
+    {
+      "url": "/he/privacy/",
+      "locale": "he",
+      "check": "jsonld-valid",
+      "status": "PASS",
+      "actual": "2 block(s)",
+      "expected": "valid JSON",
+      "fix": ""
+    },
+    {
+      "url": "/he/privacy/",
+      "locale": "he",
+      "check": "owner-verify-markers",
+      "status": "WARNING",
+      "actual": "[[VERIFY]] present",
+      "expected": "resolved",
+      "fix": "OWNER INPUT REQUIRED (legal counsel)"
+    },
+    {
+      "url": "/he/privacy/",
+      "locale": "he",
+      "check": "placeholders",
+      "status": "PASS",
+      "actual": "none",
+      "expected": "none",
+      "fix": "Remove placeholder text"
+    },
+    {
+      "url": "/he/privacy/",
+      "locale": "he",
+      "check": "rtl-config",
+      "status": "PASS",
+      "actual": "rtl",
+      "expected": "rtl",
+      "fix": ""
+    },
+    {
+      "url": "/he/privacy/",
+      "locale": "he",
+      "check": "title-length",
+      "status": "PASS",
+      "actual": "22",
+      "expected": "20-65",
+      "fix": "Shorten/lengthen title"
+    },
+    {
+      "url": "/he/privacy/",
+      "locale": "he",
+      "check": "title-present",
+      "status": "PASS",
+      "actual": "מדיניות פרטיות | FORMA",
+      "expected": "non-empty",
+      "fix": ""
+    },
+    {
+      "url": "/he/privacy/",
+      "locale": "he",
+      "check": "untranslated-text",
+      "status": "PASS",
+      "actual": "10% Latin letters",
       "expected": "<=30%",
       "fix": "Look for English fallback strings"
     },
@@ -9537,6 +10203,177 @@
       "actual": "1717",
       "expected": ">=1250",
       "fix": "Expand with original, useful content (not filler)"
+    },
+    {
+      "url": "/he/terms/",
+      "locale": "he",
+      "check": "canonical-correct",
+      "status": "PASS",
+      "actual": "/he/terms/",
+      "expected": "/he/terms/",
+      "fix": "Canonical must be the page itself (language-specific)"
+    },
+    {
+      "url": "/he/terms/",
+      "locale": "he",
+      "check": "canonical-present",
+      "status": "PASS",
+      "actual": "https://forma.in.th/he/terms/",
+      "expected": "present",
+      "fix": ""
+    },
+    {
+      "url": "/he/terms/",
+      "locale": "he",
+      "check": "description-length",
+      "status": "WARNING",
+      "actual": "68",
+      "expected": "85-170",
+      "fix": "Rewrite meta description"
+    },
+    {
+      "url": "/he/terms/",
+      "locale": "he",
+      "check": "description-present",
+      "status": "PASS",
+      "actual": "68",
+      "expected": "non-empty",
+      "fix": ""
+    },
+    {
+      "url": "/he/terms/",
+      "locale": "he",
+      "check": "english-heading",
+      "status": "PASS",
+      "actual": "none",
+      "expected": "translated headings",
+      "fix": "Translate hard-coded English heading"
+    },
+    {
+      "url": "/he/terms/",
+      "locale": "he",
+      "check": "h1-single",
+      "status": "PASS",
+      "actual": "1",
+      "expected": "1",
+      "fix": ""
+    },
+    {
+      "url": "/he/terms/",
+      "locale": "he",
+      "check": "heading-hierarchy",
+      "status": "PASS",
+      "actual": "ok",
+      "expected": "no skipped levels",
+      "fix": ""
+    },
+    {
+      "url": "/he/terms/",
+      "locale": "he",
+      "check": "hreflang-reciprocal",
+      "status": "PASS",
+      "actual": "ok",
+      "expected": "reciprocal",
+      "fix": ""
+    },
+    {
+      "url": "/he/terms/",
+      "locale": "he",
+      "check": "hreflang-self",
+      "status": "PASS",
+      "actual": "/he/terms/",
+      "expected": "/he/terms/",
+      "fix": ""
+    },
+    {
+      "url": "/he/terms/",
+      "locale": "he",
+      "check": "html-lang",
+      "status": "PASS",
+      "actual": "he",
+      "expected": "he",
+      "fix": ""
+    },
+    {
+      "url": "/he/terms/",
+      "locale": "he",
+      "check": "img-alt",
+      "status": "PASS",
+      "actual": "0",
+      "expected": "0",
+      "fix": ""
+    },
+    {
+      "url": "/he/terms/",
+      "locale": "he",
+      "check": "jsonld-no-duplicate-ids",
+      "status": "PASS",
+      "actual": "ok",
+      "expected": "unique",
+      "fix": ""
+    },
+    {
+      "url": "/he/terms/",
+      "locale": "he",
+      "check": "jsonld-valid",
+      "status": "PASS",
+      "actual": "2 block(s)",
+      "expected": "valid JSON",
+      "fix": ""
+    },
+    {
+      "url": "/he/terms/",
+      "locale": "he",
+      "check": "owner-verify-markers",
+      "status": "WARNING",
+      "actual": "[[VERIFY]] present",
+      "expected": "resolved",
+      "fix": "OWNER INPUT REQUIRED (legal counsel)"
+    },
+    {
+      "url": "/he/terms/",
+      "locale": "he",
+      "check": "placeholders",
+      "status": "PASS",
+      "actual": "none",
+      "expected": "none",
+      "fix": "Remove placeholder text"
+    },
+    {
+      "url": "/he/terms/",
+      "locale": "he",
+      "check": "rtl-config",
+      "status": "PASS",
+      "actual": "rtl",
+      "expected": "rtl",
+      "fix": ""
+    },
+    {
+      "url": "/he/terms/",
+      "locale": "he",
+      "check": "title-length",
+      "status": "WARNING",
+      "actual": "18",
+      "expected": "20-65",
+      "fix": "Shorten/lengthen title"
+    },
+    {
+      "url": "/he/terms/",
+      "locale": "he",
+      "check": "title-present",
+      "status": "PASS",
+      "actual": "תנאי שימוש | FORMA",
+      "expected": "non-empty",
+      "fix": ""
+    },
+    {
+      "url": "/he/terms/",
+      "locale": "he",
+      "check": "untranslated-text",
+      "status": "PASS",
+      "actual": "13% Latin letters",
+      "expected": "<=30%",
+      "fix": "Look for English fallback strings"
     },
     {
       "url": "/he/thank-you/",
@@ -15128,6 +15965,168 @@
       "fix": "Look for English fallback strings"
     },
     {
+      "url": "/ru/accessibility/",
+      "locale": "ru",
+      "check": "canonical-correct",
+      "status": "PASS",
+      "actual": "/ru/accessibility/",
+      "expected": "/ru/accessibility/",
+      "fix": "Canonical must be the page itself (language-specific)"
+    },
+    {
+      "url": "/ru/accessibility/",
+      "locale": "ru",
+      "check": "canonical-present",
+      "status": "PASS",
+      "actual": "https://forma.in.th/ru/accessibility/",
+      "expected": "present",
+      "fix": ""
+    },
+    {
+      "url": "/ru/accessibility/",
+      "locale": "ru",
+      "check": "description-length",
+      "status": "WARNING",
+      "actual": "78",
+      "expected": "110-170",
+      "fix": "Rewrite meta description"
+    },
+    {
+      "url": "/ru/accessibility/",
+      "locale": "ru",
+      "check": "description-present",
+      "status": "PASS",
+      "actual": "78",
+      "expected": "non-empty",
+      "fix": ""
+    },
+    {
+      "url": "/ru/accessibility/",
+      "locale": "ru",
+      "check": "english-heading",
+      "status": "PASS",
+      "actual": "none",
+      "expected": "translated headings",
+      "fix": "Translate hard-coded English heading"
+    },
+    {
+      "url": "/ru/accessibility/",
+      "locale": "ru",
+      "check": "h1-single",
+      "status": "PASS",
+      "actual": "1",
+      "expected": "1",
+      "fix": ""
+    },
+    {
+      "url": "/ru/accessibility/",
+      "locale": "ru",
+      "check": "heading-hierarchy",
+      "status": "PASS",
+      "actual": "ok",
+      "expected": "no skipped levels",
+      "fix": ""
+    },
+    {
+      "url": "/ru/accessibility/",
+      "locale": "ru",
+      "check": "hreflang-reciprocal",
+      "status": "PASS",
+      "actual": "ok",
+      "expected": "reciprocal",
+      "fix": ""
+    },
+    {
+      "url": "/ru/accessibility/",
+      "locale": "ru",
+      "check": "hreflang-self",
+      "status": "PASS",
+      "actual": "/ru/accessibility/",
+      "expected": "/ru/accessibility/",
+      "fix": ""
+    },
+    {
+      "url": "/ru/accessibility/",
+      "locale": "ru",
+      "check": "html-lang",
+      "status": "PASS",
+      "actual": "ru",
+      "expected": "ru",
+      "fix": ""
+    },
+    {
+      "url": "/ru/accessibility/",
+      "locale": "ru",
+      "check": "img-alt",
+      "status": "PASS",
+      "actual": "0",
+      "expected": "0",
+      "fix": ""
+    },
+    {
+      "url": "/ru/accessibility/",
+      "locale": "ru",
+      "check": "jsonld-no-duplicate-ids",
+      "status": "PASS",
+      "actual": "ok",
+      "expected": "unique",
+      "fix": ""
+    },
+    {
+      "url": "/ru/accessibility/",
+      "locale": "ru",
+      "check": "jsonld-valid",
+      "status": "PASS",
+      "actual": "2 block(s)",
+      "expected": "valid JSON",
+      "fix": ""
+    },
+    {
+      "url": "/ru/accessibility/",
+      "locale": "ru",
+      "check": "placeholders",
+      "status": "PASS",
+      "actual": "none",
+      "expected": "none",
+      "fix": "Remove placeholder text"
+    },
+    {
+      "url": "/ru/accessibility/",
+      "locale": "ru",
+      "check": "rtl-config",
+      "status": "PASS",
+      "actual": "ltr",
+      "expected": "ltr",
+      "fix": ""
+    },
+    {
+      "url": "/ru/accessibility/",
+      "locale": "ru",
+      "check": "title-length",
+      "status": "WARNING",
+      "actual": "19",
+      "expected": "20-65",
+      "fix": "Shorten/lengthen title"
+    },
+    {
+      "url": "/ru/accessibility/",
+      "locale": "ru",
+      "check": "title-present",
+      "status": "PASS",
+      "actual": "Доступность | FORMA",
+      "expected": "non-empty",
+      "fix": ""
+    },
+    {
+      "url": "/ru/accessibility/",
+      "locale": "ru",
+      "check": "untranslated-text",
+      "status": "PASS",
+      "actual": "5% Latin letters",
+      "expected": "<=30%",
+      "fix": "Look for English fallback strings"
+    },
+    {
       "url": "/ru/checklist/",
       "locale": "ru",
       "check": "canonical-correct",
@@ -15475,6 +16474,339 @@
       "check": "untranslated-text",
       "status": "PASS",
       "actual": "10% Latin letters",
+      "expected": "<=30%",
+      "fix": "Look for English fallback strings"
+    },
+    {
+      "url": "/ru/cookies/",
+      "locale": "ru",
+      "check": "canonical-correct",
+      "status": "PASS",
+      "actual": "/ru/cookies/",
+      "expected": "/ru/cookies/",
+      "fix": "Canonical must be the page itself (language-specific)"
+    },
+    {
+      "url": "/ru/cookies/",
+      "locale": "ru",
+      "check": "canonical-present",
+      "status": "PASS",
+      "actual": "https://forma.in.th/ru/cookies/",
+      "expected": "present",
+      "fix": ""
+    },
+    {
+      "url": "/ru/cookies/",
+      "locale": "ru",
+      "check": "description-length",
+      "status": "WARNING",
+      "actual": "94",
+      "expected": "110-170",
+      "fix": "Rewrite meta description"
+    },
+    {
+      "url": "/ru/cookies/",
+      "locale": "ru",
+      "check": "description-present",
+      "status": "PASS",
+      "actual": "94",
+      "expected": "non-empty",
+      "fix": ""
+    },
+    {
+      "url": "/ru/cookies/",
+      "locale": "ru",
+      "check": "english-heading",
+      "status": "PASS",
+      "actual": "none",
+      "expected": "translated headings",
+      "fix": "Translate hard-coded English heading"
+    },
+    {
+      "url": "/ru/cookies/",
+      "locale": "ru",
+      "check": "h1-single",
+      "status": "PASS",
+      "actual": "1",
+      "expected": "1",
+      "fix": ""
+    },
+    {
+      "url": "/ru/cookies/",
+      "locale": "ru",
+      "check": "heading-hierarchy",
+      "status": "PASS",
+      "actual": "ok",
+      "expected": "no skipped levels",
+      "fix": ""
+    },
+    {
+      "url": "/ru/cookies/",
+      "locale": "ru",
+      "check": "hreflang-reciprocal",
+      "status": "PASS",
+      "actual": "ok",
+      "expected": "reciprocal",
+      "fix": ""
+    },
+    {
+      "url": "/ru/cookies/",
+      "locale": "ru",
+      "check": "hreflang-self",
+      "status": "PASS",
+      "actual": "/ru/cookies/",
+      "expected": "/ru/cookies/",
+      "fix": ""
+    },
+    {
+      "url": "/ru/cookies/",
+      "locale": "ru",
+      "check": "html-lang",
+      "status": "PASS",
+      "actual": "ru",
+      "expected": "ru",
+      "fix": ""
+    },
+    {
+      "url": "/ru/cookies/",
+      "locale": "ru",
+      "check": "img-alt",
+      "status": "PASS",
+      "actual": "0",
+      "expected": "0",
+      "fix": ""
+    },
+    {
+      "url": "/ru/cookies/",
+      "locale": "ru",
+      "check": "jsonld-no-duplicate-ids",
+      "status": "PASS",
+      "actual": "ok",
+      "expected": "unique",
+      "fix": ""
+    },
+    {
+      "url": "/ru/cookies/",
+      "locale": "ru",
+      "check": "jsonld-valid",
+      "status": "PASS",
+      "actual": "2 block(s)",
+      "expected": "valid JSON",
+      "fix": ""
+    },
+    {
+      "url": "/ru/cookies/",
+      "locale": "ru",
+      "check": "owner-verify-markers",
+      "status": "WARNING",
+      "actual": "[[VERIFY]] present",
+      "expected": "resolved",
+      "fix": "OWNER INPUT REQUIRED (legal counsel)"
+    },
+    {
+      "url": "/ru/cookies/",
+      "locale": "ru",
+      "check": "placeholders",
+      "status": "PASS",
+      "actual": "none",
+      "expected": "none",
+      "fix": "Remove placeholder text"
+    },
+    {
+      "url": "/ru/cookies/",
+      "locale": "ru",
+      "check": "rtl-config",
+      "status": "PASS",
+      "actual": "ltr",
+      "expected": "ltr",
+      "fix": ""
+    },
+    {
+      "url": "/ru/cookies/",
+      "locale": "ru",
+      "check": "title-length",
+      "status": "PASS",
+      "actual": "24",
+      "expected": "20-65",
+      "fix": "Shorten/lengthen title"
+    },
+    {
+      "url": "/ru/cookies/",
+      "locale": "ru",
+      "check": "title-present",
+      "status": "PASS",
+      "actual": "Настройки cookie | FORMA",
+      "expected": "non-empty",
+      "fix": ""
+    },
+    {
+      "url": "/ru/cookies/",
+      "locale": "ru",
+      "check": "untranslated-text",
+      "status": "PASS",
+      "actual": "8% Latin letters",
+      "expected": "<=30%",
+      "fix": "Look for English fallback strings"
+    },
+    {
+      "url": "/ru/editorial-policy/",
+      "locale": "ru",
+      "check": "canonical-correct",
+      "status": "PASS",
+      "actual": "/ru/editorial-policy/",
+      "expected": "/ru/editorial-policy/",
+      "fix": "Canonical must be the page itself (language-specific)"
+    },
+    {
+      "url": "/ru/editorial-policy/",
+      "locale": "ru",
+      "check": "canonical-present",
+      "status": "PASS",
+      "actual": "https://forma.in.th/ru/editorial-policy/",
+      "expected": "present",
+      "fix": ""
+    },
+    {
+      "url": "/ru/editorial-policy/",
+      "locale": "ru",
+      "check": "description-length",
+      "status": "WARNING",
+      "actual": "78",
+      "expected": "110-170",
+      "fix": "Rewrite meta description"
+    },
+    {
+      "url": "/ru/editorial-policy/",
+      "locale": "ru",
+      "check": "description-present",
+      "status": "PASS",
+      "actual": "78",
+      "expected": "non-empty",
+      "fix": ""
+    },
+    {
+      "url": "/ru/editorial-policy/",
+      "locale": "ru",
+      "check": "english-heading",
+      "status": "PASS",
+      "actual": "none",
+      "expected": "translated headings",
+      "fix": "Translate hard-coded English heading"
+    },
+    {
+      "url": "/ru/editorial-policy/",
+      "locale": "ru",
+      "check": "h1-single",
+      "status": "PASS",
+      "actual": "1",
+      "expected": "1",
+      "fix": ""
+    },
+    {
+      "url": "/ru/editorial-policy/",
+      "locale": "ru",
+      "check": "heading-hierarchy",
+      "status": "PASS",
+      "actual": "ok",
+      "expected": "no skipped levels",
+      "fix": ""
+    },
+    {
+      "url": "/ru/editorial-policy/",
+      "locale": "ru",
+      "check": "hreflang-reciprocal",
+      "status": "PASS",
+      "actual": "ok",
+      "expected": "reciprocal",
+      "fix": ""
+    },
+    {
+      "url": "/ru/editorial-policy/",
+      "locale": "ru",
+      "check": "hreflang-self",
+      "status": "PASS",
+      "actual": "/ru/editorial-policy/",
+      "expected": "/ru/editorial-policy/",
+      "fix": ""
+    },
+    {
+      "url": "/ru/editorial-policy/",
+      "locale": "ru",
+      "check": "html-lang",
+      "status": "PASS",
+      "actual": "ru",
+      "expected": "ru",
+      "fix": ""
+    },
+    {
+      "url": "/ru/editorial-policy/",
+      "locale": "ru",
+      "check": "img-alt",
+      "status": "PASS",
+      "actual": "0",
+      "expected": "0",
+      "fix": ""
+    },
+    {
+      "url": "/ru/editorial-policy/",
+      "locale": "ru",
+      "check": "jsonld-no-duplicate-ids",
+      "status": "PASS",
+      "actual": "ok",
+      "expected": "unique",
+      "fix": ""
+    },
+    {
+      "url": "/ru/editorial-policy/",
+      "locale": "ru",
+      "check": "jsonld-valid",
+      "status": "PASS",
+      "actual": "2 block(s)",
+      "expected": "valid JSON",
+      "fix": ""
+    },
+    {
+      "url": "/ru/editorial-policy/",
+      "locale": "ru",
+      "check": "placeholders",
+      "status": "PASS",
+      "actual": "none",
+      "expected": "none",
+      "fix": "Remove placeholder text"
+    },
+    {
+      "url": "/ru/editorial-policy/",
+      "locale": "ru",
+      "check": "rtl-config",
+      "status": "PASS",
+      "actual": "ltr",
+      "expected": "ltr",
+      "fix": ""
+    },
+    {
+      "url": "/ru/editorial-policy/",
+      "locale": "ru",
+      "check": "title-length",
+      "status": "PASS",
+      "actual": "29",
+      "expected": "20-65",
+      "fix": "Shorten/lengthen title"
+    },
+    {
+      "url": "/ru/editorial-policy/",
+      "locale": "ru",
+      "check": "title-present",
+      "status": "PASS",
+      "actual": "Редакционная политика | FORMA",
+      "expected": "non-empty",
+      "fix": ""
+    },
+    {
+      "url": "/ru/editorial-policy/",
+      "locale": "ru",
+      "check": "untranslated-text",
+      "status": "PASS",
+      "actual": "0% Latin letters",
       "expected": "<=30%",
       "fix": "Look for English fallback strings"
     },
@@ -18930,7 +20262,178 @@
       "locale": "ru",
       "check": "untranslated-text",
       "status": "PASS",
-      "actual": "1% Latin letters",
+      "actual": "0% Latin letters",
+      "expected": "<=30%",
+      "fix": "Look for English fallback strings"
+    },
+    {
+      "url": "/ru/privacy/",
+      "locale": "ru",
+      "check": "canonical-correct",
+      "status": "PASS",
+      "actual": "/ru/privacy/",
+      "expected": "/ru/privacy/",
+      "fix": "Canonical must be the page itself (language-specific)"
+    },
+    {
+      "url": "/ru/privacy/",
+      "locale": "ru",
+      "check": "canonical-present",
+      "status": "PASS",
+      "actual": "https://forma.in.th/ru/privacy/",
+      "expected": "present",
+      "fix": ""
+    },
+    {
+      "url": "/ru/privacy/",
+      "locale": "ru",
+      "check": "description-length",
+      "status": "WARNING",
+      "actual": "83",
+      "expected": "110-170",
+      "fix": "Rewrite meta description"
+    },
+    {
+      "url": "/ru/privacy/",
+      "locale": "ru",
+      "check": "description-present",
+      "status": "PASS",
+      "actual": "83",
+      "expected": "non-empty",
+      "fix": ""
+    },
+    {
+      "url": "/ru/privacy/",
+      "locale": "ru",
+      "check": "english-heading",
+      "status": "PASS",
+      "actual": "none",
+      "expected": "translated headings",
+      "fix": "Translate hard-coded English heading"
+    },
+    {
+      "url": "/ru/privacy/",
+      "locale": "ru",
+      "check": "h1-single",
+      "status": "PASS",
+      "actual": "1",
+      "expected": "1",
+      "fix": ""
+    },
+    {
+      "url": "/ru/privacy/",
+      "locale": "ru",
+      "check": "heading-hierarchy",
+      "status": "PASS",
+      "actual": "ok",
+      "expected": "no skipped levels",
+      "fix": ""
+    },
+    {
+      "url": "/ru/privacy/",
+      "locale": "ru",
+      "check": "hreflang-reciprocal",
+      "status": "PASS",
+      "actual": "ok",
+      "expected": "reciprocal",
+      "fix": ""
+    },
+    {
+      "url": "/ru/privacy/",
+      "locale": "ru",
+      "check": "hreflang-self",
+      "status": "PASS",
+      "actual": "/ru/privacy/",
+      "expected": "/ru/privacy/",
+      "fix": ""
+    },
+    {
+      "url": "/ru/privacy/",
+      "locale": "ru",
+      "check": "html-lang",
+      "status": "PASS",
+      "actual": "ru",
+      "expected": "ru",
+      "fix": ""
+    },
+    {
+      "url": "/ru/privacy/",
+      "locale": "ru",
+      "check": "img-alt",
+      "status": "PASS",
+      "actual": "0",
+      "expected": "0",
+      "fix": ""
+    },
+    {
+      "url": "/ru/privacy/",
+      "locale": "ru",
+      "check": "jsonld-no-duplicate-ids",
+      "status": "PASS",
+      "actual": "ok",
+      "expected": "unique",
+      "fix": ""
+    },
+    {
+      "url": "/ru/privacy/",
+      "locale": "ru",
+      "check": "jsonld-valid",
+      "status": "PASS",
+      "actual": "2 block(s)",
+      "expected": "valid JSON",
+      "fix": ""
+    },
+    {
+      "url": "/ru/privacy/",
+      "locale": "ru",
+      "check": "owner-verify-markers",
+      "status": "WARNING",
+      "actual": "[[VERIFY]] present",
+      "expected": "resolved",
+      "fix": "OWNER INPUT REQUIRED (legal counsel)"
+    },
+    {
+      "url": "/ru/privacy/",
+      "locale": "ru",
+      "check": "placeholders",
+      "status": "PASS",
+      "actual": "none",
+      "expected": "none",
+      "fix": "Remove placeholder text"
+    },
+    {
+      "url": "/ru/privacy/",
+      "locale": "ru",
+      "check": "rtl-config",
+      "status": "PASS",
+      "actual": "ltr",
+      "expected": "ltr",
+      "fix": ""
+    },
+    {
+      "url": "/ru/privacy/",
+      "locale": "ru",
+      "check": "title-length",
+      "status": "PASS",
+      "actual": "35",
+      "expected": "20-65",
+      "fix": "Shorten/lengthen title"
+    },
+    {
+      "url": "/ru/privacy/",
+      "locale": "ru",
+      "check": "title-present",
+      "status": "PASS",
+      "actual": "Политика конфиденциальности | FORMA",
+      "expected": "non-empty",
+      "fix": ""
+    },
+    {
+      "url": "/ru/privacy/",
+      "locale": "ru",
+      "check": "untranslated-text",
+      "status": "PASS",
+      "actual": "8% Latin letters",
       "expected": "<=30%",
       "fix": "Look for English fallback strings"
     },
@@ -22985,6 +24488,177 @@
       "fix": "Expand with original, useful content (not filler)"
     },
     {
+      "url": "/ru/terms/",
+      "locale": "ru",
+      "check": "canonical-correct",
+      "status": "PASS",
+      "actual": "/ru/terms/",
+      "expected": "/ru/terms/",
+      "fix": "Canonical must be the page itself (language-specific)"
+    },
+    {
+      "url": "/ru/terms/",
+      "locale": "ru",
+      "check": "canonical-present",
+      "status": "PASS",
+      "actual": "https://forma.in.th/ru/terms/",
+      "expected": "present",
+      "fix": ""
+    },
+    {
+      "url": "/ru/terms/",
+      "locale": "ru",
+      "check": "description-length",
+      "status": "WARNING",
+      "actual": "80",
+      "expected": "110-170",
+      "fix": "Rewrite meta description"
+    },
+    {
+      "url": "/ru/terms/",
+      "locale": "ru",
+      "check": "description-present",
+      "status": "PASS",
+      "actual": "80",
+      "expected": "non-empty",
+      "fix": ""
+    },
+    {
+      "url": "/ru/terms/",
+      "locale": "ru",
+      "check": "english-heading",
+      "status": "PASS",
+      "actual": "none",
+      "expected": "translated headings",
+      "fix": "Translate hard-coded English heading"
+    },
+    {
+      "url": "/ru/terms/",
+      "locale": "ru",
+      "check": "h1-single",
+      "status": "PASS",
+      "actual": "1",
+      "expected": "1",
+      "fix": ""
+    },
+    {
+      "url": "/ru/terms/",
+      "locale": "ru",
+      "check": "heading-hierarchy",
+      "status": "PASS",
+      "actual": "ok",
+      "expected": "no skipped levels",
+      "fix": ""
+    },
+    {
+      "url": "/ru/terms/",
+      "locale": "ru",
+      "check": "hreflang-reciprocal",
+      "status": "PASS",
+      "actual": "ok",
+      "expected": "reciprocal",
+      "fix": ""
+    },
+    {
+      "url": "/ru/terms/",
+      "locale": "ru",
+      "check": "hreflang-self",
+      "status": "PASS",
+      "actual": "/ru/terms/",
+      "expected": "/ru/terms/",
+      "fix": ""
+    },
+    {
+      "url": "/ru/terms/",
+      "locale": "ru",
+      "check": "html-lang",
+      "status": "PASS",
+      "actual": "ru",
+      "expected": "ru",
+      "fix": ""
+    },
+    {
+      "url": "/ru/terms/",
+      "locale": "ru",
+      "check": "img-alt",
+      "status": "PASS",
+      "actual": "0",
+      "expected": "0",
+      "fix": ""
+    },
+    {
+      "url": "/ru/terms/",
+      "locale": "ru",
+      "check": "jsonld-no-duplicate-ids",
+      "status": "PASS",
+      "actual": "ok",
+      "expected": "unique",
+      "fix": ""
+    },
+    {
+      "url": "/ru/terms/",
+      "locale": "ru",
+      "check": "jsonld-valid",
+      "status": "PASS",
+      "actual": "2 block(s)",
+      "expected": "valid JSON",
+      "fix": ""
+    },
+    {
+      "url": "/ru/terms/",
+      "locale": "ru",
+      "check": "owner-verify-markers",
+      "status": "WARNING",
+      "actual": "[[VERIFY]] present",
+      "expected": "resolved",
+      "fix": "OWNER INPUT REQUIRED (legal counsel)"
+    },
+    {
+      "url": "/ru/terms/",
+      "locale": "ru",
+      "check": "placeholders",
+      "status": "PASS",
+      "actual": "none",
+      "expected": "none",
+      "fix": "Remove placeholder text"
+    },
+    {
+      "url": "/ru/terms/",
+      "locale": "ru",
+      "check": "rtl-config",
+      "status": "PASS",
+      "actual": "ltr",
+      "expected": "ltr",
+      "fix": ""
+    },
+    {
+      "url": "/ru/terms/",
+      "locale": "ru",
+      "check": "title-length",
+      "status": "PASS",
+      "actual": "29",
+      "expected": "20-65",
+      "fix": "Shorten/lengthen title"
+    },
+    {
+      "url": "/ru/terms/",
+      "locale": "ru",
+      "check": "title-present",
+      "status": "PASS",
+      "actual": "Условия использования | FORMA",
+      "expected": "non-empty",
+      "fix": ""
+    },
+    {
+      "url": "/ru/terms/",
+      "locale": "ru",
+      "check": "untranslated-text",
+      "status": "PASS",
+      "actual": "10% Latin letters",
+      "expected": "<=30%",
+      "fix": "Look for English fallback strings"
+    },
+    {
       "url": "/ru/thank-you/",
       "locale": "ru",
       "check": "canonical-correct",
@@ -26333,6 +28007,168 @@
       "fix": "Look for English fallback strings"
     },
     {
+      "url": "/th/accessibility/",
+      "locale": "th",
+      "check": "canonical-correct",
+      "status": "PASS",
+      "actual": "/th/accessibility/",
+      "expected": "/th/accessibility/",
+      "fix": "Canonical must be the page itself (language-specific)"
+    },
+    {
+      "url": "/th/accessibility/",
+      "locale": "th",
+      "check": "canonical-present",
+      "status": "PASS",
+      "actual": "https://forma.in.th/th/accessibility/",
+      "expected": "present",
+      "fix": ""
+    },
+    {
+      "url": "/th/accessibility/",
+      "locale": "th",
+      "check": "description-length",
+      "status": "WARNING",
+      "actual": "77",
+      "expected": "110-170",
+      "fix": "Rewrite meta description"
+    },
+    {
+      "url": "/th/accessibility/",
+      "locale": "th",
+      "check": "description-present",
+      "status": "PASS",
+      "actual": "77",
+      "expected": "non-empty",
+      "fix": ""
+    },
+    {
+      "url": "/th/accessibility/",
+      "locale": "th",
+      "check": "english-heading",
+      "status": "PASS",
+      "actual": "none",
+      "expected": "translated headings",
+      "fix": "Translate hard-coded English heading"
+    },
+    {
+      "url": "/th/accessibility/",
+      "locale": "th",
+      "check": "h1-single",
+      "status": "PASS",
+      "actual": "1",
+      "expected": "1",
+      "fix": ""
+    },
+    {
+      "url": "/th/accessibility/",
+      "locale": "th",
+      "check": "heading-hierarchy",
+      "status": "PASS",
+      "actual": "ok",
+      "expected": "no skipped levels",
+      "fix": ""
+    },
+    {
+      "url": "/th/accessibility/",
+      "locale": "th",
+      "check": "hreflang-reciprocal",
+      "status": "PASS",
+      "actual": "ok",
+      "expected": "reciprocal",
+      "fix": ""
+    },
+    {
+      "url": "/th/accessibility/",
+      "locale": "th",
+      "check": "hreflang-self",
+      "status": "PASS",
+      "actual": "/th/accessibility/",
+      "expected": "/th/accessibility/",
+      "fix": ""
+    },
+    {
+      "url": "/th/accessibility/",
+      "locale": "th",
+      "check": "html-lang",
+      "status": "PASS",
+      "actual": "th",
+      "expected": "th",
+      "fix": ""
+    },
+    {
+      "url": "/th/accessibility/",
+      "locale": "th",
+      "check": "img-alt",
+      "status": "PASS",
+      "actual": "0",
+      "expected": "0",
+      "fix": ""
+    },
+    {
+      "url": "/th/accessibility/",
+      "locale": "th",
+      "check": "jsonld-no-duplicate-ids",
+      "status": "PASS",
+      "actual": "ok",
+      "expected": "unique",
+      "fix": ""
+    },
+    {
+      "url": "/th/accessibility/",
+      "locale": "th",
+      "check": "jsonld-valid",
+      "status": "PASS",
+      "actual": "2 block(s)",
+      "expected": "valid JSON",
+      "fix": ""
+    },
+    {
+      "url": "/th/accessibility/",
+      "locale": "th",
+      "check": "placeholders",
+      "status": "PASS",
+      "actual": "none",
+      "expected": "none",
+      "fix": "Remove placeholder text"
+    },
+    {
+      "url": "/th/accessibility/",
+      "locale": "th",
+      "check": "rtl-config",
+      "status": "PASS",
+      "actual": "ltr",
+      "expected": "ltr",
+      "fix": ""
+    },
+    {
+      "url": "/th/accessibility/",
+      "locale": "th",
+      "check": "title-length",
+      "status": "PASS",
+      "actual": "26",
+      "expected": "20-65",
+      "fix": "Shorten/lengthen title"
+    },
+    {
+      "url": "/th/accessibility/",
+      "locale": "th",
+      "check": "title-present",
+      "status": "PASS",
+      "actual": "การเข้าถึงเว็บไซต์ | FORMA",
+      "expected": "non-empty",
+      "fix": ""
+    },
+    {
+      "url": "/th/accessibility/",
+      "locale": "th",
+      "check": "untranslated-text",
+      "status": "PASS",
+      "actual": "7% Latin letters",
+      "expected": "<=30%",
+      "fix": "Look for English fallback strings"
+    },
+    {
       "url": "/th/checklist/",
       "locale": "th",
       "check": "canonical-correct",
@@ -26680,6 +28516,339 @@
       "check": "untranslated-text",
       "status": "PASS",
       "actual": "12% Latin letters",
+      "expected": "<=30%",
+      "fix": "Look for English fallback strings"
+    },
+    {
+      "url": "/th/cookies/",
+      "locale": "th",
+      "check": "canonical-correct",
+      "status": "PASS",
+      "actual": "/th/cookies/",
+      "expected": "/th/cookies/",
+      "fix": "Canonical must be the page itself (language-specific)"
+    },
+    {
+      "url": "/th/cookies/",
+      "locale": "th",
+      "check": "canonical-present",
+      "status": "PASS",
+      "actual": "https://forma.in.th/th/cookies/",
+      "expected": "present",
+      "fix": ""
+    },
+    {
+      "url": "/th/cookies/",
+      "locale": "th",
+      "check": "description-length",
+      "status": "WARNING",
+      "actual": "87",
+      "expected": "110-170",
+      "fix": "Rewrite meta description"
+    },
+    {
+      "url": "/th/cookies/",
+      "locale": "th",
+      "check": "description-present",
+      "status": "PASS",
+      "actual": "87",
+      "expected": "non-empty",
+      "fix": ""
+    },
+    {
+      "url": "/th/cookies/",
+      "locale": "th",
+      "check": "english-heading",
+      "status": "PASS",
+      "actual": "none",
+      "expected": "translated headings",
+      "fix": "Translate hard-coded English heading"
+    },
+    {
+      "url": "/th/cookies/",
+      "locale": "th",
+      "check": "h1-single",
+      "status": "PASS",
+      "actual": "1",
+      "expected": "1",
+      "fix": ""
+    },
+    {
+      "url": "/th/cookies/",
+      "locale": "th",
+      "check": "heading-hierarchy",
+      "status": "PASS",
+      "actual": "ok",
+      "expected": "no skipped levels",
+      "fix": ""
+    },
+    {
+      "url": "/th/cookies/",
+      "locale": "th",
+      "check": "hreflang-reciprocal",
+      "status": "PASS",
+      "actual": "ok",
+      "expected": "reciprocal",
+      "fix": ""
+    },
+    {
+      "url": "/th/cookies/",
+      "locale": "th",
+      "check": "hreflang-self",
+      "status": "PASS",
+      "actual": "/th/cookies/",
+      "expected": "/th/cookies/",
+      "fix": ""
+    },
+    {
+      "url": "/th/cookies/",
+      "locale": "th",
+      "check": "html-lang",
+      "status": "PASS",
+      "actual": "th",
+      "expected": "th",
+      "fix": ""
+    },
+    {
+      "url": "/th/cookies/",
+      "locale": "th",
+      "check": "img-alt",
+      "status": "PASS",
+      "actual": "0",
+      "expected": "0",
+      "fix": ""
+    },
+    {
+      "url": "/th/cookies/",
+      "locale": "th",
+      "check": "jsonld-no-duplicate-ids",
+      "status": "PASS",
+      "actual": "ok",
+      "expected": "unique",
+      "fix": ""
+    },
+    {
+      "url": "/th/cookies/",
+      "locale": "th",
+      "check": "jsonld-valid",
+      "status": "PASS",
+      "actual": "2 block(s)",
+      "expected": "valid JSON",
+      "fix": ""
+    },
+    {
+      "url": "/th/cookies/",
+      "locale": "th",
+      "check": "owner-verify-markers",
+      "status": "WARNING",
+      "actual": "[[VERIFY]] present",
+      "expected": "resolved",
+      "fix": "OWNER INPUT REQUIRED (legal counsel)"
+    },
+    {
+      "url": "/th/cookies/",
+      "locale": "th",
+      "check": "placeholders",
+      "status": "PASS",
+      "actual": "none",
+      "expected": "none",
+      "fix": "Remove placeholder text"
+    },
+    {
+      "url": "/th/cookies/",
+      "locale": "th",
+      "check": "rtl-config",
+      "status": "PASS",
+      "actual": "ltr",
+      "expected": "ltr",
+      "fix": ""
+    },
+    {
+      "url": "/th/cookies/",
+      "locale": "th",
+      "check": "title-length",
+      "status": "PASS",
+      "actual": "24",
+      "expected": "20-65",
+      "fix": "Shorten/lengthen title"
+    },
+    {
+      "url": "/th/cookies/",
+      "locale": "th",
+      "check": "title-present",
+      "status": "PASS",
+      "actual": "การตั้งค่าคุกกี้ | FORMA",
+      "expected": "non-empty",
+      "fix": ""
+    },
+    {
+      "url": "/th/cookies/",
+      "locale": "th",
+      "check": "untranslated-text",
+      "status": "PASS",
+      "actual": "5% Latin letters",
+      "expected": "<=30%",
+      "fix": "Look for English fallback strings"
+    },
+    {
+      "url": "/th/editorial-policy/",
+      "locale": "th",
+      "check": "canonical-correct",
+      "status": "PASS",
+      "actual": "/th/editorial-policy/",
+      "expected": "/th/editorial-policy/",
+      "fix": "Canonical must be the page itself (language-specific)"
+    },
+    {
+      "url": "/th/editorial-policy/",
+      "locale": "th",
+      "check": "canonical-present",
+      "status": "PASS",
+      "actual": "https://forma.in.th/th/editorial-policy/",
+      "expected": "present",
+      "fix": ""
+    },
+    {
+      "url": "/th/editorial-policy/",
+      "locale": "th",
+      "check": "description-length",
+      "status": "WARNING",
+      "actual": "64",
+      "expected": "110-170",
+      "fix": "Rewrite meta description"
+    },
+    {
+      "url": "/th/editorial-policy/",
+      "locale": "th",
+      "check": "description-present",
+      "status": "PASS",
+      "actual": "64",
+      "expected": "non-empty",
+      "fix": ""
+    },
+    {
+      "url": "/th/editorial-policy/",
+      "locale": "th",
+      "check": "english-heading",
+      "status": "PASS",
+      "actual": "none",
+      "expected": "translated headings",
+      "fix": "Translate hard-coded English heading"
+    },
+    {
+      "url": "/th/editorial-policy/",
+      "locale": "th",
+      "check": "h1-single",
+      "status": "PASS",
+      "actual": "1",
+      "expected": "1",
+      "fix": ""
+    },
+    {
+      "url": "/th/editorial-policy/",
+      "locale": "th",
+      "check": "heading-hierarchy",
+      "status": "PASS",
+      "actual": "ok",
+      "expected": "no skipped levels",
+      "fix": ""
+    },
+    {
+      "url": "/th/editorial-policy/",
+      "locale": "th",
+      "check": "hreflang-reciprocal",
+      "status": "PASS",
+      "actual": "ok",
+      "expected": "reciprocal",
+      "fix": ""
+    },
+    {
+      "url": "/th/editorial-policy/",
+      "locale": "th",
+      "check": "hreflang-self",
+      "status": "PASS",
+      "actual": "/th/editorial-policy/",
+      "expected": "/th/editorial-policy/",
+      "fix": ""
+    },
+    {
+      "url": "/th/editorial-policy/",
+      "locale": "th",
+      "check": "html-lang",
+      "status": "PASS",
+      "actual": "th",
+      "expected": "th",
+      "fix": ""
+    },
+    {
+      "url": "/th/editorial-policy/",
+      "locale": "th",
+      "check": "img-alt",
+      "status": "PASS",
+      "actual": "0",
+      "expected": "0",
+      "fix": ""
+    },
+    {
+      "url": "/th/editorial-policy/",
+      "locale": "th",
+      "check": "jsonld-no-duplicate-ids",
+      "status": "PASS",
+      "actual": "ok",
+      "expected": "unique",
+      "fix": ""
+    },
+    {
+      "url": "/th/editorial-policy/",
+      "locale": "th",
+      "check": "jsonld-valid",
+      "status": "PASS",
+      "actual": "2 block(s)",
+      "expected": "valid JSON",
+      "fix": ""
+    },
+    {
+      "url": "/th/editorial-policy/",
+      "locale": "th",
+      "check": "placeholders",
+      "status": "PASS",
+      "actual": "none",
+      "expected": "none",
+      "fix": "Remove placeholder text"
+    },
+    {
+      "url": "/th/editorial-policy/",
+      "locale": "th",
+      "check": "rtl-config",
+      "status": "PASS",
+      "actual": "ltr",
+      "expected": "ltr",
+      "fix": ""
+    },
+    {
+      "url": "/th/editorial-policy/",
+      "locale": "th",
+      "check": "title-length",
+      "status": "PASS",
+      "actual": "24",
+      "expected": "20-65",
+      "fix": "Shorten/lengthen title"
+    },
+    {
+      "url": "/th/editorial-policy/",
+      "locale": "th",
+      "check": "title-present",
+      "status": "PASS",
+      "actual": "นโยบายบรรณาธิการ | FORMA",
+      "expected": "non-empty",
+      "fix": ""
+    },
+    {
+      "url": "/th/editorial-policy/",
+      "locale": "th",
+      "check": "untranslated-text",
+      "status": "PASS",
+      "actual": "0% Latin letters",
       "expected": "<=30%",
       "fix": "Look for English fallback strings"
     },
@@ -30135,7 +32304,178 @@
       "locale": "th",
       "check": "untranslated-text",
       "status": "PASS",
-      "actual": "1% Latin letters",
+      "actual": "0% Latin letters",
+      "expected": "<=30%",
+      "fix": "Look for English fallback strings"
+    },
+    {
+      "url": "/th/privacy/",
+      "locale": "th",
+      "check": "canonical-correct",
+      "status": "PASS",
+      "actual": "/th/privacy/",
+      "expected": "/th/privacy/",
+      "fix": "Canonical must be the page itself (language-specific)"
+    },
+    {
+      "url": "/th/privacy/",
+      "locale": "th",
+      "check": "canonical-present",
+      "status": "PASS",
+      "actual": "https://forma.in.th/th/privacy/",
+      "expected": "present",
+      "fix": ""
+    },
+    {
+      "url": "/th/privacy/",
+      "locale": "th",
+      "check": "description-length",
+      "status": "WARNING",
+      "actual": "66",
+      "expected": "110-170",
+      "fix": "Rewrite meta description"
+    },
+    {
+      "url": "/th/privacy/",
+      "locale": "th",
+      "check": "description-present",
+      "status": "PASS",
+      "actual": "66",
+      "expected": "non-empty",
+      "fix": ""
+    },
+    {
+      "url": "/th/privacy/",
+      "locale": "th",
+      "check": "english-heading",
+      "status": "PASS",
+      "actual": "none",
+      "expected": "translated headings",
+      "fix": "Translate hard-coded English heading"
+    },
+    {
+      "url": "/th/privacy/",
+      "locale": "th",
+      "check": "h1-single",
+      "status": "PASS",
+      "actual": "1",
+      "expected": "1",
+      "fix": ""
+    },
+    {
+      "url": "/th/privacy/",
+      "locale": "th",
+      "check": "heading-hierarchy",
+      "status": "PASS",
+      "actual": "ok",
+      "expected": "no skipped levels",
+      "fix": ""
+    },
+    {
+      "url": "/th/privacy/",
+      "locale": "th",
+      "check": "hreflang-reciprocal",
+      "status": "PASS",
+      "actual": "ok",
+      "expected": "reciprocal",
+      "fix": ""
+    },
+    {
+      "url": "/th/privacy/",
+      "locale": "th",
+      "check": "hreflang-self",
+      "status": "PASS",
+      "actual": "/th/privacy/",
+      "expected": "/th/privacy/",
+      "fix": ""
+    },
+    {
+      "url": "/th/privacy/",
+      "locale": "th",
+      "check": "html-lang",
+      "status": "PASS",
+      "actual": "th",
+      "expected": "th",
+      "fix": ""
+    },
+    {
+      "url": "/th/privacy/",
+      "locale": "th",
+      "check": "img-alt",
+      "status": "PASS",
+      "actual": "0",
+      "expected": "0",
+      "fix": ""
+    },
+    {
+      "url": "/th/privacy/",
+      "locale": "th",
+      "check": "jsonld-no-duplicate-ids",
+      "status": "PASS",
+      "actual": "ok",
+      "expected": "unique",
+      "fix": ""
+    },
+    {
+      "url": "/th/privacy/",
+      "locale": "th",
+      "check": "jsonld-valid",
+      "status": "PASS",
+      "actual": "2 block(s)",
+      "expected": "valid JSON",
+      "fix": ""
+    },
+    {
+      "url": "/th/privacy/",
+      "locale": "th",
+      "check": "owner-verify-markers",
+      "status": "WARNING",
+      "actual": "[[VERIFY]] present",
+      "expected": "resolved",
+      "fix": "OWNER INPUT REQUIRED (legal counsel)"
+    },
+    {
+      "url": "/th/privacy/",
+      "locale": "th",
+      "check": "placeholders",
+      "status": "PASS",
+      "actual": "none",
+      "expected": "none",
+      "fix": "Remove placeholder text"
+    },
+    {
+      "url": "/th/privacy/",
+      "locale": "th",
+      "check": "rtl-config",
+      "status": "PASS",
+      "actual": "ltr",
+      "expected": "ltr",
+      "fix": ""
+    },
+    {
+      "url": "/th/privacy/",
+      "locale": "th",
+      "check": "title-length",
+      "status": "PASS",
+      "actual": "29",
+      "expected": "20-65",
+      "fix": "Shorten/lengthen title"
+    },
+    {
+      "url": "/th/privacy/",
+      "locale": "th",
+      "check": "title-present",
+      "status": "PASS",
+      "actual": "นโยบายความเป็นส่วนตัว | FORMA",
+      "expected": "non-empty",
+      "fix": ""
+    },
+    {
+      "url": "/th/privacy/",
+      "locale": "th",
+      "check": "untranslated-text",
+      "status": "PASS",
+      "actual": "10% Latin letters",
       "expected": "<=30%",
       "fix": "Look for English fallback strings"
     },
@@ -34188,6 +36528,177 @@
       "actual": "1926",
       "expected": ">=1500",
       "fix": "Expand with original, useful content (not filler)"
+    },
+    {
+      "url": "/th/terms/",
+      "locale": "th",
+      "check": "canonical-correct",
+      "status": "PASS",
+      "actual": "/th/terms/",
+      "expected": "/th/terms/",
+      "fix": "Canonical must be the page itself (language-specific)"
+    },
+    {
+      "url": "/th/terms/",
+      "locale": "th",
+      "check": "canonical-present",
+      "status": "PASS",
+      "actual": "https://forma.in.th/th/terms/",
+      "expected": "present",
+      "fix": ""
+    },
+    {
+      "url": "/th/terms/",
+      "locale": "th",
+      "check": "description-length",
+      "status": "WARNING",
+      "actual": "69",
+      "expected": "110-170",
+      "fix": "Rewrite meta description"
+    },
+    {
+      "url": "/th/terms/",
+      "locale": "th",
+      "check": "description-present",
+      "status": "PASS",
+      "actual": "69",
+      "expected": "non-empty",
+      "fix": ""
+    },
+    {
+      "url": "/th/terms/",
+      "locale": "th",
+      "check": "english-heading",
+      "status": "PASS",
+      "actual": "none",
+      "expected": "translated headings",
+      "fix": "Translate hard-coded English heading"
+    },
+    {
+      "url": "/th/terms/",
+      "locale": "th",
+      "check": "h1-single",
+      "status": "PASS",
+      "actual": "1",
+      "expected": "1",
+      "fix": ""
+    },
+    {
+      "url": "/th/terms/",
+      "locale": "th",
+      "check": "heading-hierarchy",
+      "status": "PASS",
+      "actual": "ok",
+      "expected": "no skipped levels",
+      "fix": ""
+    },
+    {
+      "url": "/th/terms/",
+      "locale": "th",
+      "check": "hreflang-reciprocal",
+      "status": "PASS",
+      "actual": "ok",
+      "expected": "reciprocal",
+      "fix": ""
+    },
+    {
+      "url": "/th/terms/",
+      "locale": "th",
+      "check": "hreflang-self",
+      "status": "PASS",
+      "actual": "/th/terms/",
+      "expected": "/th/terms/",
+      "fix": ""
+    },
+    {
+      "url": "/th/terms/",
+      "locale": "th",
+      "check": "html-lang",
+      "status": "PASS",
+      "actual": "th",
+      "expected": "th",
+      "fix": ""
+    },
+    {
+      "url": "/th/terms/",
+      "locale": "th",
+      "check": "img-alt",
+      "status": "PASS",
+      "actual": "0",
+      "expected": "0",
+      "fix": ""
+    },
+    {
+      "url": "/th/terms/",
+      "locale": "th",
+      "check": "jsonld-no-duplicate-ids",
+      "status": "PASS",
+      "actual": "ok",
+      "expected": "unique",
+      "fix": ""
+    },
+    {
+      "url": "/th/terms/",
+      "locale": "th",
+      "check": "jsonld-valid",
+      "status": "PASS",
+      "actual": "2 block(s)",
+      "expected": "valid JSON",
+      "fix": ""
+    },
+    {
+      "url": "/th/terms/",
+      "locale": "th",
+      "check": "owner-verify-markers",
+      "status": "WARNING",
+      "actual": "[[VERIFY]] present",
+      "expected": "resolved",
+      "fix": "OWNER INPUT REQUIRED (legal counsel)"
+    },
+    {
+      "url": "/th/terms/",
+      "locale": "th",
+      "check": "placeholders",
+      "status": "PASS",
+      "actual": "none",
+      "expected": "none",
+      "fix": "Remove placeholder text"
+    },
+    {
+      "url": "/th/terms/",
+      "locale": "th",
+      "check": "rtl-config",
+      "status": "PASS",
+      "actual": "ltr",
+      "expected": "ltr",
+      "fix": ""
+    },
+    {
+      "url": "/th/terms/",
+      "locale": "th",
+      "check": "title-length",
+      "status": "PASS",
+      "actual": "28",
+      "expected": "20-65",
+      "fix": "Shorten/lengthen title"
+    },
+    {
+      "url": "/th/terms/",
+      "locale": "th",
+      "check": "title-present",
+      "status": "PASS",
+      "actual": "ข้อกำหนดการให้บริการ | FORMA",
+      "expected": "non-empty",
+      "fix": ""
+    },
+    {
+      "url": "/th/terms/",
+      "locale": "th",
+      "check": "untranslated-text",
+      "status": "PASS",
+      "actual": "11% Latin letters",
+      "expected": "<=30%",
+      "fix": "Look for English fallback strings"
     },
     {
       "url": "/th/thank-you/",

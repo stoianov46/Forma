@@ -70,7 +70,12 @@
     "process",
     "contact",
     "plan",
-    "checklist"
+    "checklist",
+    "privacy",
+    "terms",
+    "cookies",
+    "accessibility",
+    "editorial-policy"
   ],
   "latinMaxPercent": 30,
   "conceptForbidden": [

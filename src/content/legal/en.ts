@@ -1,12 +1,13 @@
-import { LEGAL } from '../../lib/site';
+import type { LegalContent } from './types';
 
-export const legalEn = {
+export const legalEn: LegalContent = {
+  updatedLabel: 'Last updated:',
   privacy: {
+    navLabel: 'Privacy Policy',
     title: 'Privacy Policy | FORMA',
     description: 'How FORMA collects, uses and protects information submitted through this website.',
     h1: 'Privacy Policy',
-    updated: `Last updated: ${LEGAL.updatedDate}`,
-    body: [
+    sections: [
       {
         heading: 'What we collect',
         text: 'When you submit our project enquiry form, or message us via Telegram or WhatsApp, we collect the information you provide directly: your name, contact details, project type, location, budget guidance, message content and any files or images you choose to share.',
@@ -20,36 +21,40 @@ export const legalEn = {
         text: 'Project enquiries submitted through this site are forwarded to our internal Telegram intake chat via the official Telegram Bot API, and to our team\'s email where relevant. Message content is retained only as long as needed to manage your enquiry or, if you become a client, your project.',
       },
       {
+        heading: 'Planning tools and enquiry source',
+        text: 'If you use the planning tools on this site and choose to send the result with your enquiry, the summary you attach is sent together with your message. If you accept analytics cookies, your browser also keeps the first page you visited, the website you came from and any campaign tags in session storage until you close the browser, and these are sent with your enquiry so we know where it came from. If you decline analytics cookies, nothing is stored for this purpose. Staff may rate the priority of an enquiry from the details you provide; this is used only to decide which enquiry we answer first.',
+      },
+      {
         heading: 'Third-party services',
-        text: 'We use Telegram and WhatsApp (Meta) as official messaging channels for project intake, and, once implemented, privacy-respecting analytics to understand site usage. Each of these providers has its own privacy practices governing their platforms.',
+        text: 'We use Telegram and WhatsApp (Meta) as official messaging channels for project intake, an email delivery provider and, where configured, a customer-management tool to receive enquiries, and, once implemented, privacy-respecting analytics to understand site usage. Each of these providers has its own privacy practices governing their platforms.',
       },
       {
         heading: 'Your rights',
-        text: 'You may request access to, correction of, or deletion of personal information you have submitted to us by contacting studio@forma.in.th. We will respond to verified requests within a reasonable timeframe.',
+        text: 'You may request access to, correction of, or deletion of personal information you have submitted to us by contacting {email}. We will respond to verified requests within a reasonable timeframe.',
       },
       {
         heading: 'Data retention',
-        text: `Enquiry data that does not proceed to an active project is retained for a limited period (${LEGAL.retentionPeriod}) and then deleted, unless you ask us to remove it sooner.`,
+        text: 'Enquiry data that does not proceed to an active project is retained for a limited period ({retention}) and then deleted, unless you ask us to remove it sooner.',
       },
       {
         heading: 'Contact',
-        text: 'Questions about this policy can be sent to studio@forma.in.th.',
+        text: 'Questions about this policy can be sent to {email}.',
       },
     ],
   },
   terms: {
+    navLabel: 'Terms of Service',
     title: 'Terms of Service | FORMA',
     description: 'Terms governing use of the FORMA website and initial project enquiries.',
     h1: 'Terms of Service',
-    updated: `Last updated: ${LEGAL.updatedDate}`,
-    body: [
+    sections: [
       {
         heading: 'About this site',
         text: 'This website is operated by FORMA, an architecture and design-build studio based on Koh Phangan, Thailand. Content on this site is provided for general information about our services and portfolio.',
       },
       {
         heading: 'No guarantee of outcome',
-        text: 'Budget guidance, timelines and process descriptions on this site are indicative and educational. They do not constitute a binding quotation, contract or guarantee of specific cost, schedule or regulatory approval. Formal project terms are set out in a separate signed agreement once a project is scoped.',
+        text: 'Budget guidance, estimates, timelines and process descriptions on this site, including the results of the planning tools, are indicative and educational. They do not constitute a binding quotation, contract or guarantee of specific cost, schedule or regulatory approval. Formal project terms are set out in a separate signed agreement once a project is scoped.',
       },
       {
         heading: 'Permits and regulatory matters',
@@ -65,15 +70,15 @@ export const legalEn = {
       },
       {
         heading: 'Governing law',
-        text: `${LEGAL.governingLaw}.`,
+        text: '{governingLaw}.',
       },
     ],
   },
   cookies: {
+    navLabel: 'Cookie Settings',
     title: 'Cookie Settings | FORMA',
     description: 'How FORMA uses cookies and similar technologies, and how to manage your preferences.',
     h1: 'Cookie Settings',
-    updated: `Last updated: ${LEGAL.updatedDate}`,
     intro:
       'We use a small number of cookies to run this site and, where you consent, to understand how it is used. You can change your preference at any time using the control below.',
     categories: [
@@ -83,21 +88,24 @@ export const legalEn = {
       },
       {
         title: 'Analytics',
-        body: 'Help us understand how visitors use the site so we can improve it. Not active until you consent.',
+        body: 'Help us understand how visitors use the site so we can improve it, and let us tell where an enquiry came from. Not active until you consent.',
       },
       {
         title: 'Marketing',
         body: 'Used to measure the effectiveness of any future marketing campaigns. Not active until you consent, and not currently in use on this site.',
       },
     ],
+    manage: 'Manage cookie preferences',
   },
   accessibility: {
+    navLabel: 'Accessibility',
     title: 'Accessibility | FORMA',
     description: 'Our commitment to an accessible website and how to report an accessibility issue.',
     h1: 'Accessibility Statement',
-    body: 'We aim for this website to be usable by as many people as possible, including via keyboard navigation and screen readers, with sufficient colour contrast and respect for reduced-motion preferences. If you encounter an accessibility barrier anywhere on this site, please tell us at studio@forma.in.th so we can address it.',
+    body: 'We aim for this website to be usable by as many people as possible, including via keyboard navigation and screen readers, with sufficient colour contrast and respect for reduced-motion preferences. If you encounter an accessibility barrier anywhere on this site, please tell us at {email} so we can address it.',
   },
   editorialPolicy: {
+    navLabel: 'Editorial Policy',
     title: 'Editorial Policy | FORMA',
     description: 'How FORMA researches, writes and maintains the articles published in our Journal.',
     h1: 'Editorial Policy',

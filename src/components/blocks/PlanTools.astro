@@ -3,7 +3,7 @@ import type { Locale } from '../../lib/i18n';
 import { localizePath } from '../../lib/i18n';
 import { services, serviceHrefSmart } from '../../content/services';
 import { PRICES, SERVICE_PRICE_IDS } from '../../content/pricing';
-import { BUILD_MONTHS, DESIGN_WEEKS, TIMELINE_STATUS } from '../../content/timeline';
+import { BUILD_MONTHS, DESIGN_WEEKS } from '../../content/timeline';
 import type { PlanContent } from '../../content/plan/types';
 import { AREA_LIMITS } from '../../lib/estimate';
 
@@ -140,7 +140,7 @@ const config = {
       </select>
     </div>
     <ol id="tl-list" class="mt-8 space-y-4"></ol>
-    <p class="mt-6 text-xs text-ink-900/60">{content.timeline.draft} <span class="sr-only">{TIMELINE_STATUS}</span></p>
+    <p class="mt-6 text-xs text-ink-900/60">{content.timeline.draft}</p>
     <a id="tl-ask" href={`${config.contact}?plan=${encodeURIComponent('Timeline question')}`} class="mt-4 inline-block text-sm font-medium text-olive-700 underline">{content.timeline.ask}</a>
   </div>
 

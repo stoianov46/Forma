@@ -1,0 +1,13 @@
+---
+import LegalPage from '../../../templates/LegalPage.astro';
+import type { Locale } from '../../../lib/i18n';
+
+export function getStaticPaths() {
+  const locales: Locale[] = ['ru', 'th', 'he'];
+  return locales.map((locale) => ({ params: { locale } }));
+}
+
+const { locale } = Astro.params as { locale: Locale };
+---
+
+<LegalPage locale={locale} kind="editorialPolicy" path="/editorial-policy/" />

@@ -5,14 +5,14 @@ Everything below was run against the **local** `dist/` build and a local `astro 
 | Check | Command | Result |
 |---|---|---|
 | Types | `npm run check` | 0 errors, 0 warnings |
-| Build | `npm run build` | 190 pages (189 `index.html` + `404.html`; `/plan/` and `/checklist/` × 4 locales added) |
+| Build | `npm run build` | 205 pages (204 `index.html` + `404.html`; `/plan/`, `/checklist/` and the 5 legal pages in RU/TH/HE added) |
 | Links / meta / JSON-LD | `npm run qa:static` | no broken internal links; meta checks pass; all JSON-LD blocks valid |
-| SEO audit | `npm run seo:audit` | 190 pages, 3,831 checks: **0 FAIL**, 51 WARNING (all documented in NOTES.md "Accepted warnings") |
+| SEO audit | `npm run seo:audit` | 205 pages, 4,110 checks: **0 FAIL**, 78 WARNING (all documented in NOTES.md "Accepted warnings") |
 | Pricing | `npm run pricing:check` | 39 prices × 13 services × 4 locales identical; no Offer schema |
 | Browser QA | `node scripts/qa/browsercheck.cjs` (Chrome via puppeteer-core, preview on :4321) | passed: mobile menu (375/430/768 px), **no horizontal scroll at 320/360/375/390/412/430/768/1024/1280/1440/1728/1920 px** on 6 pages (EN, RU, TH, HE service pages, HE project, home), **axe-core WCAG 2.1 A/AA clean** on ~20 representative pages across all 4 locales |
 | Planning tools | `npm run plan:check` (estimator, finder, timeline, price details, built pages ×4 locales); `npm run qa:plan` (browser, 4 locales, stubbed endpoint) | passed |
 | Contact form logic | `npm run contact:check` (incl. lead qualification and budget parsing, mocked); `npm run qa:form` | passed |
-| Navigation / translations | `npm run nav:check`, `npm run i18n:check` (2,294 strings per locale) | passed |
+| Navigation / translations | `npm run nav:check`, `npm run i18n:check` (2,353 strings per locale) | passed |
 | Function types | `npm run typecheck:functions` | passed |
 | Visual spot checks | Chrome, manual | RU project page, HE architecture page (RTL, pricing table, nav "Islands", no "Start a Project" in header) looked correct |
 

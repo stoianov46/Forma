@@ -479,3 +479,11 @@ Derived from proposal.md's own QA tables (§22 QA DOD, §23 QA, Google Webmaster
 - **Telegram deep links** follow the bot contract in `bots/README.md`. WhatsApp links carry a pre-filled message naming the page topic; the bot side of WhatsApp parsing is still not implemented.
 - **Tooling note:** the Cloudflare Function is type-checked separately (`functions/tsconfig.json`); `@cloudflare/workers-types` redeclares DOM globals and broke `astro check` when both shared one program.
 - Not done: more concept studies / renders, RU/TH/HE keyword research, shared bots package.
+
+## Legal pages and 404 in all four languages (10 Nov 2026)
+
+- Privacy, Terms, Cookies, Accessibility and Editorial Policy now exist in EN/RU/TH/HE (`src/content/legal/<locale>.ts`, one `LegalPage` template). **All are AI drafts of the English drafts and need a lawyer plus native review**; `[[VERIFY]]` markers (updated date, retention period, governing law) still appear in every language until counsel supplies the values (`PUBLIC_LEGAL_*`).
+- Contact email in the legal text is now the owner-confirmed `CONTACT.email` (it was an unconfirmed `studio@forma.in.th`). Placeholders `{email}`, `{retention}`, `{governingLaw}` are filled at render time.
+- New Privacy section "Planning tools and enquiry source": describes the consent-gated session attribution, the attached plan summary and the staff priority rating. Wording is factual; counsel must confirm it.
+- The single static `404.html` switches language on the client from the URL prefix (`/ru/`, `/th/`, `/he/`), including `lang`/`dir` and the home link (tested in Chrome).
+- `i18n:check` now covers the legal content (2,353 strings per locale); `seo-audit` parity covers the five legal page types.

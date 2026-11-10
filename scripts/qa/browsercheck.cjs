@@ -53,6 +53,11 @@ const AXE_PAGES = [
   '/process/',
   '/contact/',
   '/privacy/',
+  '/ru/privacy/',
+  '/th/terms/',
+  '/he/cookies/',
+  '/he/accessibility/',
+  '/ru/editorial-policy/',
 ];
 
 async function testMobileMenu(browser) {
