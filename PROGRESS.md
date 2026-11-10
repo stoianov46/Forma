@@ -1,5 +1,7 @@
 # PROGRESS.md — FORMA.in.th
 
+> **Update 10 Nov 2026:** the TO-DO_2026-11-03 programme was executed locally in 8 phases — see `IMPLEMENTATION_PLAN.md` (status per phase and commit), `AUDIT.md`, `FINAL_QA.md` and `RELEASE_CHECKLIST.md`. Nothing is pushed or deployed; nothing is production verified. The sections below are the older (Sep 2026) snapshot.
+
 Single-page snapshot of where the build stands against `proposal.md`, and
 the open questions that need your input to close out. For narrative detail
 behind any line here, see `NOTES.md` (decisions, `[[VERIFY]]` items, full

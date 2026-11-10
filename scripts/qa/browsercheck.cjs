@@ -3,7 +3,7 @@
 //   1. Mobile menu interaction (open/close, accordion, focus return, Escape key)
 //      at 375/430/768px — the "test on a real device/emulator" item from
 //      docs/tasks/TASK-009-fix-audit-findings.md.
-//   2. Horizontal-scroll check at 375/430/768/1440/1920px.
+//   2. Horizontal-scroll check at 320/360/375/390/412/430/768/1024/1280/1440/1728/1920px.
 //   3. axe-core (WCAG 2.1 A/AA) against representative pages across all 4
 //      locales and several templates.
 //
@@ -23,7 +23,8 @@ const MOBILE_VIEWPORTS = [
   { name: 'mobile-430', width: 430, height: 932 },
   { name: 'tablet-768', width: 768, height: 1024 },
 ];
-const ALL_VIEWPORTS = [...MOBILE_VIEWPORTS, { name: 'desktop-1440', width: 1440, height: 900 }, { name: 'desktop-1920', width: 1920, height: 1080 }];
+// The 12 widths required by the TO-DO (320 … 1920).
+const ALL_VIEWPORTS = [320, 360, 375, 390, 412, 430, 768, 1024, 1280, 1440, 1728, 1920].map((width) => ({ name: `w${width}`, width, height: width < 768 ? 800 : 900 }));
 
 const AXE_PAGES = [
   '/',
@@ -40,6 +41,9 @@ const AXE_PAGES = [
   '/he/locations/koh-phangan/',
   '/projects/ridge-house-sri-thanu/',
   '/journal/what-tropical-architecture-actually-means/',
+  '/services/architecture/',
+  '/he/services/architecture/',
+  '/ru/projects/ridge-house-sri-thanu/',
   '/about/',
   '/process/',
   '/contact/',
@@ -130,7 +134,7 @@ async function testHorizontalScroll(browser) {
   for (const vp of ALL_VIEWPORTS) {
     const page = await browser.newPage();
     await page.setViewport({ width: vp.width, height: vp.height });
-    for (const url of ['/', '/services/villa-design/']) {
+    for (const url of ['/', '/services/architecture/', '/he/services/architecture/', '/ru/services/architecture/', '/th/services/architecture/', '/he/projects/ridge-house-sri-thanu/']) {
       await page.goto(`${BASE}${url}`, { waitUntil: 'networkidle0' });
       const hasHorizontalScroll = await page.evaluate(() => document.documentElement.scrollWidth > document.documentElement.clientWidth + 1);
       if (hasHorizontalScroll) {
