@@ -11,6 +11,7 @@ import FAQAccordion from '../components/blocks/FAQAccordion.astro';
 import ServiceGrid from '../components/blocks/ServiceGrid.astro';
 import ProjectMosaic from '../components/blocks/ProjectMosaic.astro';
 import CTABanner from '../components/blocks/CTABanner.astro';
+import LongFormSections from '../components/blocks/LongFormSections.astro';
 import JsonLd from '../components/seo/JsonLd.astro';
 import { getDictionary } from '../i18n/dictionary';
 import { localizePath, LOCALES, type Locale } from '../lib/i18n';
@@ -85,6 +86,8 @@ const availableLocales = LOCALES.filter((l) => hasServiceTranslation(l, slug));
       }
     </ul>
   </section>
+
+  {tr.extended && <LongFormSections sections={tr.extended} />}
 
   <BudgetGuidance
     heading={tr.budgetHeading}

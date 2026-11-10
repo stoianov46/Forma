@@ -101,15 +101,15 @@ export const servicesEn: Omit<Service, 'translations'>[] = [
 export const servicesEnContent: Record<string, Service['translations']['en']> = {
   architecture: {
     seo: {
-      title: 'Architecture Studio in Koh Phangan | FORMA',
+      title: 'Architecture & Villa Design in Koh Phangan | FORMA',
       description:
-        'Concept-to-construction architecture on Koh Phangan: site-responsive villa and building design, climate-led planning, and technical coordination through to permits.',
+        'Architecture and villa design on Koh Phangan: site analysis, climate-led concepts and technical drawings ready for permits and construction, from FORMA.',
     },
     navLabel: 'Architecture',
-    h1: 'Architecture, Rooted in the Island',
+    h1: 'Architecture & Villa Design in Koh Phangan',
     tagline: 'Concept design and technical architecture for Koh Phangan',
     directAnswer:
-      'FORMA provides full architectural design on Koh Phangan, from concept massing and site analysis through to technical drawings ready for permitting and construction. Every design responds to slope, orientation, wind and privacy before it responds to style.',
+      'FORMA provides professional architecture and villa design in Koh Phangan, combining site analysis, tropical climate planning, architectural concepts and detailed technical documentation. The result is a property that is distinctive, practical and buildable, with every decision tested against slope, orientation, wind, privacy and island construction logistics.',
     introHeading: 'Design that starts with the site, not the mood board',
     intro:
       'Koh Phangan is not a flat, uniform building plot. Slopes fall steeply toward the sea, sun paths swing hard between monsoon seasons, and neighbouring plots can close off a view in a single build cycle. Our architecture practice begins every commission with the land itself: contour surveys, solar and wind studies, access routes and the practical realities of building on an island where materials arrive by boat and truck rather than by highway. Concept sketches follow only once those constraints are understood, so the forms we propose are buildable, not just beautiful on paper.',
@@ -206,15 +206,15 @@ export const servicesEnContent: Record<string, Service['translations']['en']> = 
 
   'villa-design': {
     seo: {
-      title: 'Villa Design Koh Phangan | Bespoke Architecture | FORMA',
+      title: 'Tropical Villa Design in Koh Phangan | FORMA',
       description:
-        'Bespoke villa design on Koh Phangan built around views, privacy and indoor-outdoor living, coordinated from concept through to construction-ready detail.',
+        'Tropical villa design on Koh Phangan: concept and schematic design shaped by views, wind, privacy and the way you plan to live in the house.',
     },
     navLabel: 'Villa Design',
-    h1: 'Villas Designed Around the View, the Wind and the Way You Live',
-    tagline: 'Bespoke villa design for Koh Phangan',
+    h1: 'Tropical Villa Design in Koh Phangan',
+    tagline: 'Custom villa design for Koh Phangan',
     directAnswer:
-      'FORMA designs bespoke villas on Koh Phangan around a specific site\'s view corridor, prevailing breeze and privacy needs. Each villa is planned for genuine indoor-outdoor living, natural ventilation and construction practicality, not adapted from a generic floor plan.',
+      'Villa design at FORMA is the concept and schematic stage of a private villa on Koh Phangan: how the house sits on the plot, frames the view, catches the breeze and separates living, sleeping and service areas. It produces a clear design the client can approve before technical documentation begins.',
     introHeading: 'A villa is a relationship between a site and a life',
     intro:
       'The best villas on this island are not defined by square footage but by how precisely they are tuned to one plot, one view and one household\'s daily rhythm. We design each villa around the specific way light crosses the site through the day, the direction the sea breeze arrives from, and the balance a client wants between openness and privacy from neighbouring plots. The result is a home that reads as inevitable on its site — because it was never intended to work anywhere else.',
@@ -267,7 +267,7 @@ export const servicesEnContent: Record<string, Service['translations']['en']> = 
     pricingRows: [
       { item: 'Compact villa (studio-2BR)', note: 'Reference point — single pavilion, standard specification' },
       { item: 'Mid-size family villa (3-4BR)', note: 'Larger footprint, pool integration, higher finish specification' },
-      { item: 'Large villa or hospitality-scale property', note: 'Multiple pavilions, extensive glazing, bespoke joinery throughout' },
+      { item: 'Large villa or hospitality-scale property', note: 'Multiple pavilions, extensive glazing, custom joinery throughout' },
     ],
     faqs: [
       {
@@ -306,20 +306,20 @@ export const servicesEnContent: Record<string, Service['translations']['en']> = 
     ctaHeading: 'Have land and a vision for a villa?',
     ctaBody: 'Tell us about your site, your household and how you want to live in the tropics. We will shape the design around it.',
     ctaLabel: 'Start a Project',
-    cardSummary: 'Bespoke villas planned around view, breeze and privacy.',
+    cardSummary: 'Custom villas planned around view, breeze and privacy.',
   },
 
   'interior-design': {
     seo: {
-      title: 'Interior Design Koh Phangan | Villas & Hospitality | FORMA',
+      title: 'Interior Design in Koh Phangan | Villas & Hospitality | FORMA',
       description:
-        'Interior design for villas and hospitality spaces on Koh Phangan: material palette, lighting, joinery and styling coordinated with the architecture.',
+        'Interior design for villas and hospitality projects on Koh Phangan: layouts, materials, joinery and lighting chosen to last in a humid, salt-laden climate.',
     },
     navLabel: 'Interior Design',
-    h1: 'Interiors That Complete the Architecture',
+    h1: 'Interior Design for Villas & Hospitality in Koh Phangan',
     tagline: 'Interior design for villas and hospitality spaces',
     directAnswer:
-      'FORMA\'s interior design service develops material palette, lighting, joinery, kitchens and furniture direction for villas and hospitality spaces on Koh Phangan, coordinated with the architecture rather than layered on after construction.',
+      'FORMA provides interior design for villas and small hospitality projects on Koh Phangan, covering space planning, material and finish selection, joinery, lighting and furniture. Every specification is checked against heat, humidity and salt air, so interiors keep their quality long after handover without constant maintenance.',
     introHeading: 'Interiors planned with the building, not after it',
     intro:
       'An interior that feels resolved rarely happened by accident at the end of a project — it was considered from the moment ceiling heights, window placement and structural grids were first drawn. We develop interior concepts in parallel with architecture wherever possible, so joinery, lighting and material transitions align with the building\'s logic instead of fighting it. Where a client already has an existing shell, we work backward from that structure to find the most honest interior expression it can support.',
@@ -372,7 +372,7 @@ export const servicesEnContent: Record<string, Service['translations']['en']> = 
     pricingRows: [
       { item: 'Single room or suite refresh', note: 'Reference point — specified finishes, minimal custom joinery' },
       { item: 'Full villa interior, standard joinery', note: 'All principal rooms, kitchens and bathrooms, moderate custom joinery' },
-      { item: 'Full villa with extensive custom joinery', note: 'Bespoke cabinetry throughout, imported materials, full styling package' },
+      { item: 'Full villa with extensive custom joinery', note: 'Custom cabinetry throughout, imported materials, full styling package' },
     ],
     faqs: [
       {
@@ -416,15 +416,15 @@ export const servicesEnContent: Record<string, Service['translations']['en']> = 
 
   construction: {
     seo: {
-      title: 'Villa Construction Koh Phangan | Design-Build | FORMA',
+      title: 'Villa Construction in Koh Phangan | Design-Build | FORMA',
       description:
-        'Construction delivery for villas and design-build projects on Koh Phangan, with in-house quality control, scheduling and site management.',
+        'Villa construction on Koh Phangan delivered by the team that designed it: structure, envelope, finishes and site management under one accountable team.',
     },
     navLabel: 'Construction',
-    h1: 'Construction Delivered by the Team That Designed It',
+    h1: 'Villa Construction & Design-Build in Koh Phangan',
     tagline: 'Villa and design-build construction on Koh Phangan',
     directAnswer:
-      'FORMA delivers construction for villas and design-build projects on Koh Phangan, coordinating quality control, scheduling, materials and subcontractors under one accountable team rather than handing the design to an unrelated contractor.',
+      'FORMA builds private villas on Koh Phangan as a design-build contractor, so the team that drew the details also builds them. Construction covers earthworks, foundations, structure, envelope, services and finishes, coordinated around island logistics, monsoon weather and the limits of the plot.',
     introHeading: 'Design and build under one roof, one accountability',
     intro:
       'A design is only as good as its execution. Where architecture and construction sit with separate, uncoordinated teams, details drift, schedules slip and accountability becomes difficult to trace when something goes wrong. Our construction service closes that gap: the same studio that resolves the design also manages its build, coordinating trades, materials and inspections against the original technical intent rather than a simplified site interpretation of it.',
@@ -521,15 +521,15 @@ export const servicesEnContent: Record<string, Service['translations']['en']> = 
 
   renovation: {
     seo: {
-      title: 'Villa Renovation Koh Phangan | Remodeling | FORMA',
+      title: 'Villa Renovation in Koh Phangan | Remodeling | FORMA',
       description:
-        'Renovation and remodeling for existing villas and hospitality properties on Koh Phangan, from structural assessment to redesign and phased execution.',
+        'Villa renovation and remodeling on Koh Phangan: structural assessment, layout changes, services upgrades and finishes that respect what already works.',
     },
     navLabel: 'Renovation',
-    h1: 'Renovation That Respects What Already Works',
+    h1: 'Villa Renovation & Remodeling in Koh Phangan',
     tagline: 'Renovation and remodeling for existing properties',
     directAnswer:
-      'FORMA renovates existing villas and hospitality properties on Koh Phangan, beginning with structural and condition assessment, then redesigning and executing upgrades in phases that suit occupied or partially occupied properties.',
+      'FORMA renovates and remodels existing villas on Koh Phangan, starting with an assessment of the structure, roof, drainage and services before any design is drawn. Work ranges from a cosmetic refresh to a full structural renovation, keeping what performs well and replacing only what does not.',
     introHeading: 'Every renovation starts with an honest assessment',
     intro:
       'Older properties on Koh Phangan often have real bones worth keeping — a strong structural frame, a good relationship to the site, mature landscaping — alongside genuine problems in layout, ventilation, waterproofing or finish quality. Our renovation process starts by separating the two: a structural and condition survey identifies what can be retained safely, what needs remediation, and what should be reimagined entirely, before any redesign work begins.',
@@ -626,15 +626,15 @@ export const servicesEnContent: Record<string, Service['translations']['en']> = 
 
   'project-management': {
     seo: {
-      title: 'Project Management Koh Phangan | FORMA',
+      title: 'Construction Project Management in Koh Phangan | FORMA',
       description:
-        'Independent project management for villa and construction projects on Koh Phangan: budget coordination, scheduling, procurement and client reporting.',
+        'Construction project management on Koh Phangan: one coordinator for schedule, budget, procurement and contractors on a villa or small development.',
     },
     navLabel: 'Project Management',
-    h1: 'One Point of Coordination for a Complex Build',
+    h1: 'Construction Project Management in Koh Phangan',
     tagline: 'Project management for villa and construction projects',
     directAnswer:
-      'FORMA provides project management for villa and construction projects on Koh Phangan, coordinating budget, schedule, procurement and multiple contractors under one point of accountability, whether or not FORMA also holds the construction contract.',
+      'FORMA provides construction project management on Koh Phangan for owners who hire their own contractors. We coordinate schedule, budget, procurement, trades and reporting, so decisions are made on time and problems surface early instead of appearing on the invoice after the work is already built.',
     introHeading: 'Someone has to hold the whole picture',
     intro:
       'A villa project typically involves an architect, a structural engineer, an interior designer, a landscape contractor, a main builder and several specialist trades — and when no single party is responsible for how they fit together, gaps appear between them at the client\'s expense. Our project management service exists to hold that whole picture: tracking budget against actual spend, keeping the schedule realistic rather than aspirational, and giving clients one clear channel of communication instead of five conflicting ones.',
@@ -731,15 +731,15 @@ export const servicesEnContent: Record<string, Service['translations']['en']> = 
 
   'construction-supervision': {
     seo: {
-      title: 'Construction Supervision Koh Phangan | FORMA',
+      title: 'Construction Supervision in Koh Phangan | FORMA',
       description:
-        'Independent construction supervision on Koh Phangan: site inspections, quality checks, design compliance monitoring, snagging and structured reporting.',
+        'Independent construction supervision on Koh Phangan: regular site visits that check quality, drawings and progress against what the contractor agreed to build.',
     },
     navLabel: 'Construction Supervision',
-    h1: 'A Second Set of Eyes on Your Build',
+    h1: 'Construction Supervision in Koh Phangan',
     tagline: 'Independent construction supervision',
     directAnswer:
-      'FORMA provides independent construction supervision on Koh Phangan for clients building with another contractor, carrying out regular site inspections, quality checks against the design documentation, progress monitoring and structured reporting.',
+      'Construction supervision by FORMA means an independent professional visits your Koh Phangan site on a fixed schedule, compares the work with the drawings and specification, and reports on quality, progress and defects. It protects owners who are overseas or cannot inspect the build themselves.',
     introHeading: 'Quality control is not the contractor\'s job to grade itself',
     intro:
       'When a client is building with a contractor we did not select and may not be able to visit regularly, an independent set of eyes on-site protects the project from drift — details that quietly diverge from the drawings, workmanship that falls short of specification, or progress that looks fine in photographs but is behind schedule underneath. Our construction supervision service exists specifically for that gap, reporting honestly to the client rather than to the builder.',
@@ -836,15 +836,15 @@ export const servicesEnContent: Record<string, Service['translations']['en']> = 
 
   'technical-supervision': {
     seo: {
-      title: 'Technical Supervision Koh Phangan | FORMA',
+      title: 'Technical Supervision for Villa Builds in Koh Phangan | FORMA',
       description:
-        'Technical supervision on Koh Phangan focused on structural, MEP and building-systems compliance, coordinating specialist consultants through construction.',
+        'Technical supervision for villa builds on Koh Phangan: engineering-level review of structure, MEP and waterproofing at the stages where mistakes are costly.',
     },
     navLabel: 'Technical Supervision',
-    h1: 'Technical Detail Deserves Technical Oversight',
+    h1: 'Technical Supervision for Villa Builds in Koh Phangan',
     tagline: 'Specialist technical supervision',
     directAnswer:
-      'FORMA\'s technical supervision service focuses on structural, mechanical, electrical and building-systems compliance during construction, coordinating specialist consultants and verifying that installed systems match the engineered design.',
+      'Technical supervision is engineering-level review of a villa build on Koh Phangan, focused on the elements that are expensive to fix later: reinforcement, concrete, waterproofing, drainage and building services. FORMA checks these at defined hold points, before they are covered up by the next stage of work.',
     introHeading: 'Beyond finishes: the systems that make a building work',
     intro:
       'Some quality issues are visible on a walk-through; others are buried in a wall or a roof void and only reveal themselves years later as a leak, a crack or a failed system. Technical supervision goes beyond general site inspection to focus specifically on structural execution, building services installation and the technical junctions most prone to failure in a tropical marine environment, coordinating directly with the structural and MEP engineers where their input is required.',
@@ -941,15 +941,15 @@ export const servicesEnContent: Record<string, Service['translations']['en']> = 
 
   'landscape-design': {
     seo: {
-      title: 'Landscape Design Koh Phangan | Tropical Gardens & Pools | FORMA',
+      title: 'Landscape & Pool Design in Koh Phangan | FORMA',
       description:
-        'Tropical landscape design on Koh Phangan integrating pools, planting, outdoor living and drainage with the architecture of the home.',
+        'Landscape design for tropical gardens and pools on Koh Phangan: planting, drainage, retaining and outdoor living designed as part of the house.',
     },
     navLabel: 'Landscape Design',
-    h1: 'Landscape as an Extension of the House',
+    h1: 'Landscape Design for Tropical Gardens & Pools in Koh Phangan',
     tagline: 'Tropical landscape and outdoor living design',
     directAnswer:
-      'FORMA designs tropical landscapes on Koh Phangan that integrate pool areas, planting, pathways and outdoor living directly with the architecture, addressing drainage and site slope as design opportunities rather than afterthoughts.',
+      'FORMA designs tropical gardens, pool surrounds and outdoor living areas on Koh Phangan as an extension of the architecture. The design covers planting suited to the soil and climate, drainage, retaining walls, shade and lighting, so the landscape works through the monsoon and matures well over time.',
     introHeading: 'The garden is not what surrounds the house — it completes it',
     intro:
       'On a tropical island, the boundary between inside and outside is one of the most important design decisions a project makes. A pool positioned without regard to the living room\'s sightlines, planting that blocks the very breeze the architecture was designed to capture, or drainage left unresolved until construction — these are the failures we design against from the outset, treating landscape as a discipline coordinated with architecture rather than an afterthought applied once the building is finished.',
@@ -1046,15 +1046,15 @@ export const servicesEnContent: Record<string, Service['translations']['en']> = 
 
   'permits-planning': {
     seo: {
-      title: 'Permits & Planning Koh Phangan | FORMA',
+      title: 'Building Permits & Planning in Koh Phangan | FORMA',
       description:
-        'Coordination of building permit and planning documentation for villa projects on Koh Phangan, prepared and submitted through the applicable local authority.',
+        'Building permit and planning support on Koh Phangan: documentation, consultant coordination and application preparation for a villa or small development.',
     },
     navLabel: 'Permits & Planning',
-    h1: 'Careful Coordination Through the Approvals Process',
+    h1: 'Building Permits & Planning Support in Koh Phangan',
     tagline: 'Building permit and planning coordination',
     directAnswer:
-      'FORMA coordinates the preparation and submission of building permit documentation for villa projects on Koh Phangan, working with the applicable local authority. We do not hold government authority ourselves and cannot guarantee approval outcomes or timelines.',
+      'FORMA prepares the drawings and documents needed for a building permit on Koh Phangan and coordinates the engineers and consultants involved in the application. We explain the requirements for your plot in advance. Approval itself is decided by the authorities, so no outcome or timeline is guaranteed.',
     introHeading: 'A process that rewards preparation, not shortcuts',
     intro:
       'Permit and planning requirements on Koh Phangan depend on zoning, plot characteristics and the specific building type proposed, and are ultimately determined by the relevant local authority rather than by us. What we control is the quality and completeness of the documentation submitted, and clear, honest communication with clients about realistic timelines and requirements — never a promise of a specific approval outcome, which is not ours to give.',
@@ -1150,15 +1150,15 @@ export const servicesEnContent: Record<string, Service['translations']['en']> = 
 
   'turnkey-projects': {
     seo: {
-      title: 'Turnkey Villa Projects Koh Phangan | Design-Build | FORMA',
+      title: 'Turnkey Villa Projects in Koh Phangan | Design-Build | FORMA',
       description:
-        'Turnkey design-build for villas on Koh Phangan: architecture, interiors, construction and project management delivered as one integrated service.',
+        'Turnkey villa projects on Koh Phangan: design, permits, construction and handover managed by one team, from first sketch to finished, furnished keys.',
     },
     navLabel: 'Turnkey Projects',
-    h1: 'From First Sketch to Handed-Over Keys',
+    h1: 'Turnkey Villa Projects in Koh Phangan',
     tagline: 'Turnkey design-build for villas',
     directAnswer:
-      'FORMA\'s turnkey service integrates architecture, interior design, construction and project management into a single accountable engagement, taking a villa project from initial concept through to a completed, handed-over home.',
+      'A turnkey villa project with FORMA covers everything from the first sketch to handover on Koh Phangan: design, permit documentation, construction, interiors and landscape under one contract and one point of responsibility. You decide at the main milestones, and the team manages the work between them.',
     introHeading: 'One brief, one team, one outcome',
     intro:
       'Coordinating separate architects, interior designers, builders and project managers can work well when every relationship is managed carefully — but it also multiplies the points where miscommunication and cost creep can occur. Our turnkey service removes that overhead for clients who want a single point of accountability: one studio responsible for the design intent, the technical execution and the finished result, from the first concept sketch to the day the keys are handed over.',
@@ -1206,12 +1206,12 @@ export const servicesEnContent: Record<string, Service['translations']['en']> = 
       'Specification level across architecture, interiors and landscape',
       'Site conditions, including slope, access and required earthworks',
       'Timeline requirements and any schedule compression requested',
-      'Extent of custom joinery, imported materials and bespoke detailing',
+      'Extent of custom joinery, imported materials and custom detailing',
     ],
     pricingRows: [
       { item: 'Compact villa turnkey', note: 'Reference point — single pavilion, standard specification throughout' },
       { item: 'Mid-size villa turnkey', note: 'Larger footprint, higher finish specification, more custom detailing' },
-      { item: 'Large or multi-structure turnkey', note: 'Multiple structures, extensive bespoke joinery, imported materials' },
+      { item: 'Large or multi-structure turnkey', note: 'Multiple structures, extensive custom joinery, imported materials' },
     ],
     faqs: [
       {
@@ -1255,15 +1255,15 @@ export const servicesEnContent: Record<string, Service['translations']['en']> = 
 
   'eco-construction': {
     seo: {
-      title: 'Eco Construction Koh Phangan | Sustainable Building | FORMA',
+      title: 'Eco Construction in Koh Phangan | Sustainable Building | FORMA',
       description:
-        'Sustainable, climate-responsive construction on Koh Phangan: passive cooling, energy and water strategy integrated with the architecture from concept.',
+        'Eco construction on Koh Phangan: passive cooling, shading, rainwater, solar readiness and durable materials that cut running costs without gimmicks.',
     },
     navLabel: 'Eco Construction',
-    h1: 'Building With the Climate, Not Against It',
+    h1: 'Eco Construction & Sustainable Building in Koh Phangan',
     tagline: 'Sustainable, climate-responsive construction',
     directAnswer:
-      'FORMA\'s eco construction service designs and builds villas around passive cooling, responsible material selection, and energy and water strategy, reducing operational demand through genuine design decisions rather than surface-level green branding.',
+      'Eco construction at FORMA starts with passive design on Koh Phangan: orientation, shading, cross-ventilation and thermal mass that reduce cooling demand before any equipment is added. Renewable energy, water collection and durable local materials are then sized against that lower demand, keeping running costs and maintenance realistic.',
     introHeading: 'Sustainability as design discipline, not decoration',
     intro:
       'A building marketed as sustainable but reliant entirely on mechanical cooling and imported materials has not actually reduced its footprint — it has relabelled the problem. Our eco construction approach treats sustainability as a design discipline applied from the earliest concept stage: orientation and massing that reduce solar heat gain before it needs to be corrected, natural ventilation strategies that lower cooling load genuinely, and material choices weighed against their real embodied impact and local availability, not just their marketing.',
@@ -1360,15 +1360,15 @@ export const servicesEnContent: Record<string, Service['translations']['en']> = 
 
   'concrete-construction': {
     seo: {
-      title: 'Concrete Construction Turnkey Koh Phangan | FORMA',
+      title: 'Concrete Construction in Koh Phangan | FORMA',
       description:
-        'Reinforced concrete design-build on Koh Phangan, from structural concept through to completed construction, engineered for tropical and coastal conditions.',
+        'Concrete construction for tropical villas on Koh Phangan: engineered frames, board-formed and exposed finishes, and mix, cover and waterproofing detailing.',
     },
     navLabel: 'Concrete Construction',
-    h1: 'Concrete, Engineered for the Tropics',
+    h1: 'Concrete Construction for Tropical Villas in Koh Phangan',
     tagline: 'Reinforced concrete design-build, concept to handover',
     directAnswer:
-      'FORMA delivers reinforced concrete design-build projects on Koh Phangan from structural concept through to completed handover, engineering every stage for the demands of a humid, seismic-aware, coastal-influenced tropical environment.',
+      'FORMA builds reinforced concrete frames, slabs and exposed architectural concrete for villas on Koh Phangan. Salt air, humidity and monsoon rain make concrete quality decisive, so mix design, reinforcement cover, formwork, curing and waterproofing are specified and checked rather than left to site habit.',
     introHeading: 'Concrete rewards precision — and punishes shortcuts',
     intro:
       'Reinforced concrete is the structural backbone of most substantial builds on Koh Phangan, and it is unforgiving of poor execution: insufficient cover, inconsistent curing or careless formwork surface today onto decades of maintenance problems tomorrow. Our concrete construction service treats structural design and execution as a single continuous discipline, engineering for the specific demands of coastal humidity, monsoon rainfall and seismic-aware detailing, and holding site execution to the same standard as the drawings.',

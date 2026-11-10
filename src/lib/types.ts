@@ -30,6 +30,13 @@ export interface PricingRow {
   note: string;
 }
 
+/** Long-form editorial section on a service page (H2 + paragraphs + optional bullet list). */
+export interface ExtendedSection {
+  heading: string;
+  paragraphs: string[];
+  list?: string[];
+}
+
 export interface ServiceTranslation {
   seo: Seo;
   navLabel: string;
@@ -48,6 +55,8 @@ export interface ServiceTranslation {
   budgetFactors: string[];
   /** Row labels/notes for the pricing table; prices come from pricing.ts by row order. */
   pricingRows?: PricingRow[];
+  /** Long-form sections (see src/content/services/extended/<locale>/<slug>.ts); attached by services/index.ts. */
+  extended?: ExtendedSection[];
   faqs: FaqItem[];
   ctaHeading: string;
   ctaBody: string;

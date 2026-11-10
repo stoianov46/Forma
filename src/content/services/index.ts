@@ -1,5 +1,5 @@
 import { localizePath, type Locale } from '../../lib/i18n';
-import type { Service } from '../../lib/types';
+import type { ExtendedSection, Service } from '../../lib/types';
 import { servicesEn, servicesEnContent } from './en';
 import { servicesRuContent } from './ru';
 import { servicesThContent } from './th';
@@ -23,13 +23,23 @@ export function translatedServiceSlugs(locale: Locale): string[] {
   return servicesEn.map((s) => s.slug).filter((slug) => hasServiceTranslation(locale, slug));
 }
 
+// Long-form sections: one file per slug per locale, e.g. extended/en/architecture.ts (default export ExtendedSection[]).
+const extendedModules = import.meta.glob<{ default: ExtendedSection[] }>('./extended/*/*.ts', { eager: true });
+function extendedFor(locale: Locale, slug: string): ExtendedSection[] | undefined {
+  return extendedModules[`./extended/${locale}/${slug}.ts`]?.default;
+}
+const withExtended = (locale: Locale, slug: string, tr: Service['translations']['en']): Service['translations']['en'] => {
+  const extended = extendedFor(locale, slug);
+  return extended ? { ...tr, extended } : tr;
+};
+
 export const services: Service[] = servicesEn.map((base) => ({
   ...base,
   translations: {
-    en: servicesEnContent[base.slug],
-    ru: servicesRuContent[base.slug] ?? servicesEnContent[base.slug],
-    th: servicesThContent[base.slug] ?? servicesEnContent[base.slug],
-    he: servicesHeContent[base.slug] ?? servicesEnContent[base.slug],
+    en: withExtended('en', base.slug, servicesEnContent[base.slug]),
+    ru: withExtended('ru', base.slug, servicesRuContent[base.slug] ?? servicesEnContent[base.slug]),
+    th: withExtended('th', base.slug, servicesThContent[base.slug] ?? servicesEnContent[base.slug]),
+    he: withExtended('he', base.slug, servicesHeContent[base.slug] ?? servicesEnContent[base.slug]),
   },
 }));
 

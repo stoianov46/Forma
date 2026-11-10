@@ -79,5 +79,8 @@
     "client said",
     "our client",
     "certified"
+  ],
+  "keywordLocales": [
+    "en"
   ]
 }

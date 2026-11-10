@@ -1,0 +1,35 @@
+---
+import type { ExtendedSection } from '../../lib/types';
+
+interface Props {
+  sections: ExtendedSection[];
+}
+const { sections } = Astro.props;
+---
+
+{
+  sections.map((s) => (
+    <section class="wrap py-10 sm:py-14">
+      <div class="content-grid">
+        <div class="col-span-4 md:col-span-3 lg:col-span-4">
+          <h2>{s.heading}</h2>
+        </div>
+        <div class="col-span-4 md:col-span-5 lg:col-span-7 lg:col-start-6">
+          {s.paragraphs.map((p) => (
+            <p class="body-m mb-4 text-ink-900/80">{p}</p>
+          ))}
+          {s.list && (
+            <ul class="mt-2 space-y-2">
+              {s.list.map((li) => (
+                <li class="flex gap-3">
+                  <span class="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-olive-600" />
+                  <span class="body-m text-ink-900/80">{li}</span>
+                </li>
+              ))}
+            </ul>
+          )}
+        </div>
+      </div>
+    </section>
+  ))
+}

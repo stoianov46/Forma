@@ -1,0 +1,388 @@
+{
+  "/services/architecture/": {
+    "en": {
+      "primary": "architecture & villa design",
+      "secondary": [
+        "architecture studio koh phangan",
+        "villa architecture",
+        "architect koh phangan",
+        "technical drawings villa",
+        "tropical architecture"
+      ],
+      "intent": "commercial-investigation: hire an architecture studio for a villa",
+      "audience": "Land owners and villa investors, mostly foreign, planning a build on Koh Phangan",
+      "location": "Koh Phangan",
+      "conversion": "Request consultation / site review"
+    }
+  },
+  "/services/villa-design/": {
+    "en": {
+      "primary": "villa design",
+      "secondary": [
+        "tropical villa design",
+        "villa concept design koh phangan",
+        "private villa design",
+        "villa design stages"
+      ],
+      "intent": "commercial: concept-led design of a private villa (differs from architecture page, which targets the full technical architecture service)",
+      "audience": "Private owners deciding layout, views and lifestyle before technical design",
+      "location": "Koh Phangan",
+      "conversion": "Request consultation"
+    }
+  },
+  "/services/interior-design/": {
+    "en": {
+      "primary": "interior design",
+      "secondary": [
+        "villa interior design",
+        "hospitality interior design",
+        "interior design koh phangan",
+        "tropical interior materials"
+      ],
+      "intent": "commercial: hire an interior designer for a villa or small hotel",
+      "audience": "Villa owners and small hospitality operators",
+      "location": "Koh Phangan",
+      "conversion": "Request consultation"
+    }
+  },
+  "/services/construction/": {
+    "en": {
+      "primary": "villa construction",
+      "secondary": [
+        "design-build villa",
+        "villa builder koh phangan",
+        "construction koh phangan",
+        "build a villa in thailand"
+      ],
+      "intent": "commercial: hire a contractor to build a villa",
+      "audience": "Owners ready to build, comparing contractors",
+      "location": "Koh Phangan",
+      "conversion": "Request quote / site visit"
+    }
+  },
+  "/services/renovation/": {
+    "en": {
+      "primary": "villa renovation",
+      "secondary": [
+        "villa remodeling",
+        "renovate villa koh phangan",
+        "structural renovation",
+        "villa refurbishment"
+      ],
+      "intent": "commercial: renovate an existing villa",
+      "audience": "Owners of existing villas needing repair or change",
+      "location": "Koh Phangan",
+      "conversion": "Request assessment"
+    }
+  },
+  "/services/project-management/": {
+    "en": {
+      "primary": "project management",
+      "secondary": [
+        "construction project management",
+        "villa project manager",
+        "manage contractors koh phangan",
+        "owner representative construction"
+      ],
+      "intent": "commercial: hire a project manager for an owner-led build",
+      "audience": "Owners hiring their own contractors, often overseas",
+      "location": "Koh Phangan",
+      "conversion": "Request consultation"
+    }
+  },
+  "/services/construction-supervision/": {
+    "en": {
+      "primary": "construction supervision",
+      "secondary": [
+        "site supervision villa",
+        "independent construction supervisor",
+        "building inspection koh phangan",
+        "remote owner construction oversight"
+      ],
+      "intent": "commercial: independent supervision of a build",
+      "audience": "Overseas or time-poor owners with a contractor already hired",
+      "location": "Koh Phangan",
+      "conversion": "Request consultation"
+    }
+  },
+  "/services/technical-supervision/": {
+    "en": {
+      "primary": "technical supervision",
+      "secondary": [
+        "structural inspection villa",
+        "waterproofing inspection",
+        "mep inspection villa",
+        "engineering review construction"
+      ],
+      "intent": "commercial: engineering-level review of a build",
+      "audience": "Owners and investors wanting technical verification",
+      "location": "Koh Phangan",
+      "conversion": "Request consultation"
+    }
+  },
+  "/services/landscape-design/": {
+    "en": {
+      "primary": "landscape design",
+      "secondary": [
+        "tropical garden design",
+        "pool design koh phangan",
+        "landscape and pool design",
+        "outdoor living design"
+      ],
+      "intent": "commercial: design of gardens, pool surrounds and outdoor areas",
+      "audience": "Villa owners and hospitality operators",
+      "location": "Koh Phangan",
+      "conversion": "Request consultation"
+    }
+  },
+  "/services/permits-planning/": {
+    "en": {
+      "primary": "building permits",
+      "secondary": [
+        "building permit koh phangan",
+        "permit documentation villa",
+        "construction permit thailand",
+        "planning support"
+      ],
+      "intent": "commercial/informational: understand and prepare permit documentation",
+      "audience": "Foreign and local owners preparing a first build",
+      "location": "Koh Phangan",
+      "conversion": "Request consultation"
+    }
+  },
+  "/services/turnkey-projects/": {
+    "en": {
+      "primary": "turnkey villa",
+      "secondary": [
+        "turnkey villa koh phangan",
+        "design and build villa",
+        "build villa from scratch thailand",
+        "full-service villa project"
+      ],
+      "intent": "commercial: single-contract design and build",
+      "audience": "Owners who want one accountable team",
+      "location": "Koh Phangan",
+      "conversion": "Request consultation / quote"
+    }
+  },
+  "/services/eco-construction/": {
+    "en": {
+      "primary": "eco construction",
+      "secondary": [
+        "sustainable building koh phangan",
+        "passive cooling villa",
+        "eco villa design",
+        "rainwater and solar villa"
+      ],
+      "intent": "commercial-informational: sustainable villa building",
+      "audience": "Environmentally minded owners and eco-resort developers",
+      "location": "Koh Phangan",
+      "conversion": "Request consultation"
+    }
+  },
+  "/services/concrete-construction/": {
+    "en": {
+      "primary": "concrete construction",
+      "secondary": [
+        "reinforced concrete villa",
+        "exposed concrete architecture",
+        "board-formed concrete",
+        "tropical concrete detailing"
+      ],
+      "intent": "commercial: concrete structures and exposed concrete",
+      "audience": "Owners and architects preferring concrete structures",
+      "location": "Koh Phangan",
+      "conversion": "Request consultation"
+    }
+  },
+  "/": {
+    "en": {
+      "primary": "design-build",
+      "secondary": [
+        "architecture koh phangan",
+        "villa builder koh phangan",
+        "design-build studio"
+      ],
+      "intent": "navigational/commercial: services overview (root is the services hub; no /services/ page)",
+      "audience": "All visitors",
+      "location": "Koh Phangan",
+      "conversion": "Request consultation"
+    }
+  },
+  "/about/": {
+    "en": {
+      "primary": "architecture and design-build studio",
+      "secondary": [
+        "about forma",
+        "koh phangan studio"
+      ],
+      "intent": "informational: who is FORMA",
+      "audience": "Prospects checking credibility",
+      "location": "Koh Phangan",
+      "conversion": "Contact",
+      "h1Exempt": true,
+      "note": "H1 is a brand statement; keyword carried by title and opening text"
+    }
+  },
+  "/process/": {
+    "en": {
+      "primary": "how a project unfolds",
+      "secondary": [
+        "design-build process",
+        "villa project stages",
+        "how to build a villa in thailand"
+      ],
+      "intent": "informational: stages of a project",
+      "audience": "Prospects planning a build",
+      "location": "Koh Phangan",
+      "conversion": "Request consultation",
+      "h1Exempt": true,
+      "note": "H1 is the question form of the keyword"
+    }
+  },
+  "/contact/": {
+    "en": {
+      "primary": "start a project",
+      "secondary": [
+        "contact architect koh phangan",
+        "request consultation"
+      ],
+      "intent": "transactional: get in touch",
+      "audience": "Ready prospects",
+      "location": "Koh Phangan",
+      "conversion": "Form / WhatsApp / Telegram"
+    }
+  },
+  "/locations/koh-phangan/": {
+    "en": {
+      "primary": "architecture & design-build",
+      "secondary": [
+        "architecture and design-build on koh phangan"
+      ],
+      "intent": "local-commercial: design/build in this area",
+      "audience": "Owners with land in this area",
+      "location": "Koh Phangan",
+      "conversion": "Request consultation"
+    }
+  },
+  "/locations/koh-samui/": {
+    "en": {
+      "primary": "villa design & construction on koh samui",
+      "secondary": [
+        "villa construction koh samui"
+      ],
+      "intent": "local-commercial: design/build in this area",
+      "audience": "Owners with land in this area",
+      "location": "Koh Samui",
+      "conversion": "Request consultation"
+    }
+  },
+  "/locations/koh-tao/": {
+    "en": {
+      "primary": "villa design & renovation on koh tao",
+      "secondary": [
+        "koh tao villa renovation"
+      ],
+      "intent": "local-commercial: design/build in this area",
+      "audience": "Owners with land in this area",
+      "location": "Koh Tao",
+      "conversion": "Request consultation"
+    }
+  },
+  "/locations/bali/": {
+    "en": {
+      "primary": "villa design & interiors in bali",
+      "secondary": [
+        "bali villa design"
+      ],
+      "intent": "local-commercial: design/build in this area",
+      "audience": "Owners with land in this area",
+      "location": "Bali",
+      "conversion": "Request consultation"
+    }
+  },
+  "/locations/baan-tai/": {
+    "en": {
+      "primary": "villa design in baan tai",
+      "secondary": [
+        "baan tai villa"
+      ],
+      "intent": "local-commercial: design/build in this area",
+      "audience": "Owners with land in this area",
+      "location": "Baan Tai",
+      "conversion": "Request consultation"
+    }
+  },
+  "/locations/chaloklum/": {
+    "en": {
+      "primary": "villa design in chaloklum",
+      "secondary": [
+        "chaloklum villa"
+      ],
+      "intent": "local-commercial: design/build in this area",
+      "audience": "Owners with land in this area",
+      "location": "Chaloklum",
+      "conversion": "Request consultation"
+    }
+  },
+  "/locations/haad-rin/": {
+    "en": {
+      "primary": "design-build in haad rin",
+      "secondary": [
+        "haad rin villa design"
+      ],
+      "intent": "local-commercial: design/build in this area",
+      "audience": "Owners with land in this area",
+      "location": "Haad Rin",
+      "conversion": "Request consultation"
+    }
+  },
+  "/locations/haad-salad/": {
+    "en": {
+      "primary": "villa design in haad salad",
+      "secondary": [
+        "haad salad villa"
+      ],
+      "intent": "local-commercial: design/build in this area",
+      "audience": "Owners with land in this area",
+      "location": "Haad Salad",
+      "conversion": "Request consultation"
+    }
+  },
+  "/locations/haad-yao/": {
+    "en": {
+      "primary": "villa design in haad yao",
+      "secondary": [
+        "haad yao villa"
+      ],
+      "intent": "local-commercial: design/build in this area",
+      "audience": "Owners with land in this area",
+      "location": "Haad Yao",
+      "conversion": "Request consultation"
+    }
+  },
+  "/locations/sri-thanu/": {
+    "en": {
+      "primary": "villa design in sri thanu",
+      "secondary": [
+        "sri thanu villa"
+      ],
+      "intent": "local-commercial: design/build in this area",
+      "audience": "Owners with land in this area",
+      "location": "Sri Thanu",
+      "conversion": "Request consultation"
+    }
+  },
+  "/locations/thong-sala/": {
+    "en": {
+      "primary": "building in thong sala",
+      "secondary": [
+        "thong sala villa design"
+      ],
+      "intent": "local-commercial: design/build in this area",
+      "audience": "Owners with land in this area",
+      "location": "Thong Sala",
+      "conversion": "Request consultation"
+    }
+  }
+}

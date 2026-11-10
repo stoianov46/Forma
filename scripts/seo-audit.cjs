@@ -92,7 +92,7 @@ for (const p of pages) {
   if (locale === 'en') { const c = cfg.cliches.filter((w) => new RegExp('\\b' + w + '\\b', 'i').test(text)); add(url, locale, 'cliches', c.length ? 'WARNING' : 'PASS', c.join(',') || 'none', 'none'); }
   // keyword map
   const km = keywords && keywords[p.rest] && keywords[p.rest][locale];
-  if (keywords && ['service', 'location', 'about', 'process', 'home'].includes(type) && !km) add(url, locale, 'keyword-mapped', 'WARNING', 'no entry', 'entry in keyword map');
+  if (keywords && cfg.keywordLocales.includes(locale) && ['service', 'location', 'about', 'process', 'home'].includes(type) && !km) add(url, locale, 'keyword-mapped', 'WARNING', 'no entry', 'entry in keyword map');
   if (km && km.primary) {
     const h1 = strip((html.match(/<h1[^>]*>([\s\S]*?)<\/h1>/) || [])[1] || '').toLowerCase(), k = km.primary.toLowerCase();
     add(url, locale, 'keyword-in-h1', h1.includes(k) || (km.h1Exempt) ? 'PASS' : 'WARNING', h1, k);

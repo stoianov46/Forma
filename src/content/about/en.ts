@@ -2,11 +2,11 @@ export const aboutEn = {
   seo: {
     title: 'About FORMA | Architecture & Design-Build Studio, Koh Phangan',
     description:
-      'FORMA is an architecture and design-build studio based on Koh Phangan, working across architecture, interiors, construction and project management for tropical island projects.',
+      'FORMA is an architecture and design-build studio on Koh Phangan, working across architecture, interiors, construction and project management for tropical island projects.',
   },
   h1: 'A Studio Built for Island Building',
   directAnswer:
-    'FORMA is an architecture and design-build studio based on Koh Phangan, Thailand, integrating architecture, interior design, landscape, construction and project management into one accountable team for villa and design-build projects across the region.',
+    'FORMA is an architecture and design-build studio based on Koh Phangan, Thailand, integrating architecture, interior design, landscape, construction and project management into one accountable team. We take villa and design-build projects across the region from first site visit to handover, with one point of responsibility throughout.',
   storyHeading: 'Why we work this way',
   story:
     'FORMA was formed around a simple observation: villa projects on tropical islands fail more often from coordination gaps than from bad design ideas. An architect hands drawings to a builder who never fully understood the design intent; a project manager arrives after decisions are already locked in; an interior designer is asked to make sense of a shell that was never planned with interiors in mind. We built this studio to close those gaps — one team, carrying a project from first sketch through to handover, accountable for the whole outcome rather than one link in a longer chain.',

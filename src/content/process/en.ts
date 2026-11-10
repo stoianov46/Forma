@@ -1,12 +1,12 @@
 export const processEn = {
   seo: {
-    title: 'Our Process | FORMA — Architecture & Design-Build, Koh Phangan',
+    title: 'Our Process | FORMA — Architecture & Design-Build',
     description:
       'How a FORMA project unfolds, from first conversation and site review through concept design, permits, construction, supervision and handover.',
   },
   h1: 'How a Project Unfolds, Stage by Stage',
   directAnswer:
-    'A FORMA project moves through eight structured stages — first contact, site review, concept design, design development, permits, construction, supervision and handover — each with clear inputs, outputs and a defined next step, so nothing depends on guesswork.',
+    'A FORMA project moves through eight structured stages: first contact, site review, concept design, design development, permits, construction, supervision and handover. Each stage has clear inputs, outputs and a defined next step, so you always know what is being decided, what you will receive and what happens next.',
   introHeading: 'A structure, not a formality',
   intro:
     'Every project is different, but the underlying structure that gets it built well is consistent. We use the same eight-stage process for a small renovation and a full turnkey villa, scaling the detail and duration to the project rather than skipping steps to move faster.',

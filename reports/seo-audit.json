@@ -1,9 +1,9 @@
 {
   "summary": {
     "pages": 182,
-    "checks": 3484,
-    "pass": 3243,
-    "warning": 241,
+    "checks": 3540,
+    "pass": 3363,
+    "warning": 177,
     "fail": 0
   },
   "results": [
@@ -29,8 +29,8 @@
       "url": "/",
       "locale": "en",
       "check": "cliches",
-      "status": "WARNING",
-      "actual": "bespoke",
+      "status": "PASS",
+      "actual": "none",
       "expected": "none",
       "fix": ""
     },
@@ -38,8 +38,8 @@
       "url": "/",
       "locale": "en",
       "check": "description-length",
-      "status": "WARNING",
-      "actual": "239",
+      "status": "PASS",
+      "actual": "155",
       "expected": "110-170",
       "fix": "Rewrite meta description"
     },
@@ -48,7 +48,7 @@
       "locale": "en",
       "check": "description-present",
       "status": "PASS",
-      "actual": "239",
+      "actual": "155",
       "expected": "non-empty",
       "fix": ""
     },
@@ -131,6 +131,24 @@
       "status": "PASS",
       "actual": "1 block(s)",
       "expected": "valid JSON",
+      "fix": ""
+    },
+    {
+      "url": "/",
+      "locale": "en",
+      "check": "keyword-in-h1",
+      "status": "PASS",
+      "actual": "architecture & design-build on koh phangan",
+      "expected": "design-build",
+      "fix": ""
+    },
+    {
+      "url": "/",
+      "locale": "en",
+      "check": "keyword-in-opening",
+      "status": "PASS",
+      "actual": "first 600 chars",
+      "expected": "design-build",
       "fix": ""
     },
     {
@@ -317,8 +335,8 @@
       "url": "/about/",
       "locale": "en",
       "check": "description-length",
-      "status": "WARNING",
-      "actual": "176",
+      "status": "PASS",
+      "actual": "170",
       "expected": "110-170",
       "fix": "Rewrite meta description"
     },
@@ -327,7 +345,7 @@
       "locale": "en",
       "check": "description-present",
       "status": "PASS",
-      "actual": "176",
+      "actual": "170",
       "expected": "non-empty",
       "fix": ""
     },
@@ -335,8 +353,8 @@
       "url": "/about/",
       "locale": "en",
       "check": "direct-answer",
-      "status": "WARNING",
-      "actual": "33",
+      "status": "PASS",
+      "actual": "46",
       "expected": "40-60 words",
       "fix": "Tighten the opening answer"
     },
@@ -419,6 +437,24 @@
       "status": "PASS",
       "actual": "3 block(s)",
       "expected": "valid JSON",
+      "fix": ""
+    },
+    {
+      "url": "/about/",
+      "locale": "en",
+      "check": "keyword-in-h1",
+      "status": "PASS",
+      "actual": "a studio built for island building",
+      "expected": "architecture and design-build studio",
+      "fix": ""
+    },
+    {
+      "url": "/about/",
+      "locale": "en",
+      "check": "keyword-in-opening",
+      "status": "PASS",
+      "actual": "first 600 chars",
+      "expected": "architecture and design-build studio",
       "fix": ""
     },
     {
@@ -734,6 +770,24 @@
       "status": "PASS",
       "actual": "2 block(s)",
       "expected": "valid JSON",
+      "fix": ""
+    },
+    {
+      "url": "/contact/",
+      "locale": "en",
+      "check": "keyword-in-h1",
+      "status": "PASS",
+      "actual": "start a project",
+      "expected": "start a project",
+      "fix": ""
+    },
+    {
+      "url": "/contact/",
+      "locale": "en",
+      "check": "keyword-in-opening",
+      "status": "PASS",
+      "actual": "first 600 chars",
+      "expected": "start a project",
       "fix": ""
     },
     {
@@ -8831,8 +8885,8 @@
       "url": "/journal/",
       "locale": "en",
       "check": "title-length",
-      "status": "WARNING",
-      "actual": "66",
+      "status": "PASS",
+      "actual": "58",
       "expected": "20-65",
       "fix": "Shorten/lengthen title"
     },
@@ -8841,7 +8895,7 @@
       "locale": "en",
       "check": "title-present",
       "status": "PASS",
-      "actual": "Journal | FORMA — Villa Design &amp; Tropical Architecture Insight",
+      "actual": "Journal | FORMA — Villa Design &amp; Tropical Architecture",
       "expected": "non-empty",
       "fix": ""
     },
@@ -9938,8 +9992,8 @@
       "url": "/locations/baan-tai/",
       "locale": "en",
       "check": "cliches",
-      "status": "WARNING",
-      "actual": "bespoke",
+      "status": "PASS",
+      "actual": "none",
       "expected": "none",
       "fix": ""
     },
@@ -9966,7 +10020,7 @@
       "locale": "en",
       "check": "direct-answer",
       "status": "PASS",
-      "actual": "41",
+      "actual": "52",
       "expected": "40-60 words",
       "fix": "Tighten the opening answer"
     },
@@ -10054,6 +10108,24 @@
     {
       "url": "/locations/baan-tai/",
       "locale": "en",
+      "check": "keyword-in-h1",
+      "status": "PASS",
+      "actual": "villa design in baan tai",
+      "expected": "villa design in baan tai",
+      "fix": ""
+    },
+    {
+      "url": "/locations/baan-tai/",
+      "locale": "en",
+      "check": "keyword-in-opening",
+      "status": "PASS",
+      "actual": "first 600 chars",
+      "expected": "villa design in baan tai",
+      "fix": ""
+    },
+    {
+      "url": "/locations/baan-tai/",
+      "locale": "en",
       "check": "placeholders",
       "status": "PASS",
       "actual": "none",
@@ -10109,8 +10181,8 @@
       "url": "/locations/bali/",
       "locale": "en",
       "check": "cliches",
-      "status": "WARNING",
-      "actual": "bespoke",
+      "status": "PASS",
+      "actual": "none",
       "expected": "none",
       "fix": ""
     },
@@ -10136,8 +10208,8 @@
       "url": "/locations/bali/",
       "locale": "en",
       "check": "direct-answer",
-      "status": "WARNING",
-      "actual": "27",
+      "status": "PASS",
+      "actual": "45",
       "expected": "40-60 words",
       "fix": "Tighten the opening answer"
     },
@@ -10220,6 +10292,24 @@
       "status": "PASS",
       "actual": "4 block(s)",
       "expected": "valid JSON",
+      "fix": ""
+    },
+    {
+      "url": "/locations/bali/",
+      "locale": "en",
+      "check": "keyword-in-h1",
+      "status": "PASS",
+      "actual": "villa design & interiors in bali",
+      "expected": "villa design & interiors in bali",
+      "fix": ""
+    },
+    {
+      "url": "/locations/bali/",
+      "locale": "en",
+      "check": "keyword-in-opening",
+      "status": "PASS",
+      "actual": "first 600 chars",
+      "expected": "villa design & interiors in bali",
       "fix": ""
     },
     {
@@ -10280,8 +10370,8 @@
       "url": "/locations/chaloklum/",
       "locale": "en",
       "check": "cliches",
-      "status": "WARNING",
-      "actual": "bespoke",
+      "status": "PASS",
+      "actual": "none",
       "expected": "none",
       "fix": ""
     },
@@ -10307,8 +10397,8 @@
       "url": "/locations/chaloklum/",
       "locale": "en",
       "check": "direct-answer",
-      "status": "WARNING",
-      "actual": "29",
+      "status": "PASS",
+      "actual": "46",
       "expected": "40-60 words",
       "fix": "Tighten the opening answer"
     },
@@ -10391,6 +10481,24 @@
       "status": "PASS",
       "actual": "4 block(s)",
       "expected": "valid JSON",
+      "fix": ""
+    },
+    {
+      "url": "/locations/chaloklum/",
+      "locale": "en",
+      "check": "keyword-in-h1",
+      "status": "PASS",
+      "actual": "villa design in chaloklum",
+      "expected": "villa design in chaloklum",
+      "fix": ""
+    },
+    {
+      "url": "/locations/chaloklum/",
+      "locale": "en",
+      "check": "keyword-in-opening",
+      "status": "PASS",
+      "actual": "first 600 chars",
+      "expected": "villa design in chaloklum",
       "fix": ""
     },
     {
@@ -10478,8 +10586,8 @@
       "url": "/locations/haad-rin/",
       "locale": "en",
       "check": "direct-answer",
-      "status": "WARNING",
-      "actual": "38",
+      "status": "PASS",
+      "actual": "50",
       "expected": "40-60 words",
       "fix": "Tighten the opening answer"
     },
@@ -10567,6 +10675,24 @@
     {
       "url": "/locations/haad-rin/",
       "locale": "en",
+      "check": "keyword-in-h1",
+      "status": "PASS",
+      "actual": "design-build in haad rin",
+      "expected": "design-build in haad rin",
+      "fix": ""
+    },
+    {
+      "url": "/locations/haad-rin/",
+      "locale": "en",
+      "check": "keyword-in-opening",
+      "status": "PASS",
+      "actual": "first 600 chars",
+      "expected": "design-build in haad rin",
+      "fix": ""
+    },
+    {
+      "url": "/locations/haad-rin/",
+      "locale": "en",
       "check": "placeholders",
       "status": "PASS",
       "actual": "none",
@@ -10622,8 +10748,8 @@
       "url": "/locations/haad-salad/",
       "locale": "en",
       "check": "cliches",
-      "status": "WARNING",
-      "actual": "bespoke",
+      "status": "PASS",
+      "actual": "none",
       "expected": "none",
       "fix": ""
     },
@@ -10649,8 +10775,8 @@
       "url": "/locations/haad-salad/",
       "locale": "en",
       "check": "direct-answer",
-      "status": "WARNING",
-      "actual": "36",
+      "status": "PASS",
+      "actual": "51",
       "expected": "40-60 words",
       "fix": "Tighten the opening answer"
     },
@@ -10733,6 +10859,24 @@
       "status": "PASS",
       "actual": "4 block(s)",
       "expected": "valid JSON",
+      "fix": ""
+    },
+    {
+      "url": "/locations/haad-salad/",
+      "locale": "en",
+      "check": "keyword-in-h1",
+      "status": "PASS",
+      "actual": "villa design in haad salad",
+      "expected": "villa design in haad salad",
+      "fix": ""
+    },
+    {
+      "url": "/locations/haad-salad/",
+      "locale": "en",
+      "check": "keyword-in-opening",
+      "status": "PASS",
+      "actual": "first 600 chars",
+      "expected": "villa design in haad salad",
       "fix": ""
     },
     {
@@ -10793,8 +10937,8 @@
       "url": "/locations/haad-yao/",
       "locale": "en",
       "check": "cliches",
-      "status": "WARNING",
-      "actual": "bespoke",
+      "status": "PASS",
+      "actual": "none",
       "expected": "none",
       "fix": ""
     },
@@ -10820,8 +10964,8 @@
       "url": "/locations/haad-yao/",
       "locale": "en",
       "check": "direct-answer",
-      "status": "WARNING",
-      "actual": "36",
+      "status": "PASS",
+      "actual": "51",
       "expected": "40-60 words",
       "fix": "Tighten the opening answer"
     },
@@ -10909,6 +11053,24 @@
     {
       "url": "/locations/haad-yao/",
       "locale": "en",
+      "check": "keyword-in-h1",
+      "status": "PASS",
+      "actual": "villa design in haad yao",
+      "expected": "villa design in haad yao",
+      "fix": ""
+    },
+    {
+      "url": "/locations/haad-yao/",
+      "locale": "en",
+      "check": "keyword-in-opening",
+      "status": "PASS",
+      "actual": "first 600 chars",
+      "expected": "villa design in haad yao",
+      "fix": ""
+    },
+    {
+      "url": "/locations/haad-yao/",
+      "locale": "en",
       "check": "placeholders",
       "status": "PASS",
       "actual": "none",
@@ -10964,8 +11126,8 @@
       "url": "/locations/koh-phangan/",
       "locale": "en",
       "check": "cliches",
-      "status": "WARNING",
-      "actual": "bespoke",
+      "status": "PASS",
+      "actual": "none",
       "expected": "none",
       "fix": ""
     },
@@ -10991,8 +11153,8 @@
       "url": "/locations/koh-phangan/",
       "locale": "en",
       "check": "direct-answer",
-      "status": "WARNING",
-      "actual": "36",
+      "status": "PASS",
+      "actual": "50",
       "expected": "40-60 words",
       "fix": "Tighten the opening answer"
     },
@@ -11075,6 +11237,24 @@
       "status": "PASS",
       "actual": "4 block(s)",
       "expected": "valid JSON",
+      "fix": ""
+    },
+    {
+      "url": "/locations/koh-phangan/",
+      "locale": "en",
+      "check": "keyword-in-h1",
+      "status": "PASS",
+      "actual": "architecture & design-build, rooted on koh phangan",
+      "expected": "architecture & design-build",
+      "fix": ""
+    },
+    {
+      "url": "/locations/koh-phangan/",
+      "locale": "en",
+      "check": "keyword-in-opening",
+      "status": "PASS",
+      "actual": "first 600 chars",
+      "expected": "architecture & design-build",
       "fix": ""
     },
     {
@@ -11135,8 +11315,8 @@
       "url": "/locations/koh-samui/",
       "locale": "en",
       "check": "cliches",
-      "status": "WARNING",
-      "actual": "bespoke",
+      "status": "PASS",
+      "actual": "none",
       "expected": "none",
       "fix": ""
     },
@@ -11144,8 +11324,8 @@
       "url": "/locations/koh-samui/",
       "locale": "en",
       "check": "description-length",
-      "status": "WARNING",
-      "actual": "178",
+      "status": "PASS",
+      "actual": "166",
       "expected": "110-170",
       "fix": "Rewrite meta description"
     },
@@ -11154,7 +11334,7 @@
       "locale": "en",
       "check": "description-present",
       "status": "PASS",
-      "actual": "178",
+      "actual": "166",
       "expected": "non-empty",
       "fix": ""
     },
@@ -11162,8 +11342,8 @@
       "url": "/locations/koh-samui/",
       "locale": "en",
       "check": "direct-answer",
-      "status": "WARNING",
-      "actual": "37",
+      "status": "PASS",
+      "actual": "47",
       "expected": "40-60 words",
       "fix": "Tighten the opening answer"
     },
@@ -11251,6 +11431,24 @@
     {
       "url": "/locations/koh-samui/",
       "locale": "en",
+      "check": "keyword-in-h1",
+      "status": "PASS",
+      "actual": "villa design & construction on koh samui",
+      "expected": "villa design & construction on koh samui",
+      "fix": ""
+    },
+    {
+      "url": "/locations/koh-samui/",
+      "locale": "en",
+      "check": "keyword-in-opening",
+      "status": "PASS",
+      "actual": "first 600 chars",
+      "expected": "villa design & construction on koh samui",
+      "fix": ""
+    },
+    {
+      "url": "/locations/koh-samui/",
+      "locale": "en",
       "check": "placeholders",
       "status": "PASS",
       "actual": "none",
@@ -11306,8 +11504,8 @@
       "url": "/locations/koh-tao/",
       "locale": "en",
       "check": "cliches",
-      "status": "WARNING",
-      "actual": "bespoke",
+      "status": "PASS",
+      "actual": "none",
       "expected": "none",
       "fix": ""
     },
@@ -11333,8 +11531,8 @@
       "url": "/locations/koh-tao/",
       "locale": "en",
       "check": "direct-answer",
-      "status": "WARNING",
-      "actual": "31",
+      "status": "PASS",
+      "actual": "49",
       "expected": "40-60 words",
       "fix": "Tighten the opening answer"
     },
@@ -11417,6 +11615,24 @@
       "status": "PASS",
       "actual": "4 block(s)",
       "expected": "valid JSON",
+      "fix": ""
+    },
+    {
+      "url": "/locations/koh-tao/",
+      "locale": "en",
+      "check": "keyword-in-h1",
+      "status": "PASS",
+      "actual": "villa design & renovation on koh tao",
+      "expected": "villa design & renovation on koh tao",
+      "fix": ""
+    },
+    {
+      "url": "/locations/koh-tao/",
+      "locale": "en",
+      "check": "keyword-in-opening",
+      "status": "PASS",
+      "actual": "first 600 chars",
+      "expected": "villa design & renovation on koh tao",
       "fix": ""
     },
     {
@@ -11477,8 +11693,8 @@
       "url": "/locations/sri-thanu/",
       "locale": "en",
       "check": "cliches",
-      "status": "WARNING",
-      "actual": "bespoke",
+      "status": "PASS",
+      "actual": "none",
       "expected": "none",
       "fix": ""
     },
@@ -11487,7 +11703,7 @@
       "locale": "en",
       "check": "description-length",
       "status": "PASS",
-      "actual": "155",
+      "actual": "154",
       "expected": "110-170",
       "fix": "Rewrite meta description"
     },
@@ -11496,7 +11712,7 @@
       "locale": "en",
       "check": "description-present",
       "status": "PASS",
-      "actual": "155",
+      "actual": "154",
       "expected": "non-empty",
       "fix": ""
     },
@@ -11504,8 +11720,8 @@
       "url": "/locations/sri-thanu/",
       "locale": "en",
       "check": "direct-answer",
-      "status": "WARNING",
-      "actual": "37",
+      "status": "PASS",
+      "actual": "49",
       "expected": "40-60 words",
       "fix": "Tighten the opening answer"
     },
@@ -11588,6 +11804,24 @@
       "status": "PASS",
       "actual": "4 block(s)",
       "expected": "valid JSON",
+      "fix": ""
+    },
+    {
+      "url": "/locations/sri-thanu/",
+      "locale": "en",
+      "check": "keyword-in-h1",
+      "status": "PASS",
+      "actual": "villa design in sri thanu",
+      "expected": "villa design in sri thanu",
+      "fix": ""
+    },
+    {
+      "url": "/locations/sri-thanu/",
+      "locale": "en",
+      "check": "keyword-in-opening",
+      "status": "PASS",
+      "actual": "first 600 chars",
+      "expected": "villa design in sri thanu",
       "fix": ""
     },
     {
@@ -11676,7 +11910,7 @@
       "locale": "en",
       "check": "direct-answer",
       "status": "PASS",
-      "actual": "40",
+      "actual": "49",
       "expected": "40-60 words",
       "fix": "Tighten the opening answer"
     },
@@ -11759,6 +11993,24 @@
       "status": "PASS",
       "actual": "4 block(s)",
       "expected": "valid JSON",
+      "fix": ""
+    },
+    {
+      "url": "/locations/thong-sala/",
+      "locale": "en",
+      "check": "keyword-in-h1",
+      "status": "PASS",
+      "actual": "building in thong sala",
+      "expected": "building in thong sala",
+      "fix": ""
+    },
+    {
+      "url": "/locations/thong-sala/",
+      "locale": "en",
+      "check": "keyword-in-opening",
+      "status": "PASS",
+      "actual": "first 600 chars",
+      "expected": "building in thong sala",
       "fix": ""
     },
     {
@@ -12008,8 +12260,8 @@
       "url": "/process/",
       "locale": "en",
       "check": "direct-answer",
-      "status": "WARNING",
-      "actual": "36",
+      "status": "PASS",
+      "actual": "48",
       "expected": "40-60 words",
       "fix": "Tighten the opening answer"
     },
@@ -12097,6 +12349,24 @@
     {
       "url": "/process/",
       "locale": "en",
+      "check": "keyword-in-h1",
+      "status": "PASS",
+      "actual": "how a project unfolds, stage by stage",
+      "expected": "how a project unfolds",
+      "fix": ""
+    },
+    {
+      "url": "/process/",
+      "locale": "en",
+      "check": "keyword-in-opening",
+      "status": "PASS",
+      "actual": "first 600 chars",
+      "expected": "how a project unfolds",
+      "fix": ""
+    },
+    {
+      "url": "/process/",
+      "locale": "en",
       "check": "placeholders",
       "status": "PASS",
       "actual": "none",
@@ -12116,8 +12386,8 @@
       "url": "/process/",
       "locale": "en",
       "check": "title-length",
-      "status": "WARNING",
-      "actual": "66",
+      "status": "PASS",
+      "actual": "53",
       "expected": "20-65",
       "fix": "Shorten/lengthen title"
     },
@@ -12126,7 +12396,7 @@
       "locale": "en",
       "check": "title-present",
       "status": "PASS",
-      "actual": "Our Process | FORMA — Architecture &amp; Design-Build, Koh Phangan",
+      "actual": "Our Process | FORMA — Architecture &amp; Design-Build",
       "expected": "non-empty",
       "fix": ""
     },
@@ -12269,8 +12539,8 @@
       "url": "/projects/",
       "locale": "en",
       "check": "title-length",
-      "status": "WARNING",
-      "actual": "66",
+      "status": "PASS",
+      "actual": "53",
       "expected": "20-65",
       "fix": "Shorten/lengthen title"
     },
@@ -12279,7 +12549,7 @@
       "locale": "en",
       "check": "title-present",
       "status": "PASS",
-      "actual": "Projects | FORMA — Villa &amp; Architecture Portfolio, Koh Phangan",
+      "actual": "Projects | FORMA — Villa &amp; Architecture Portfolio",
       "expected": "non-empty",
       "fix": ""
     },
@@ -12485,8 +12755,8 @@
       "url": "/projects/bay-view-residence-chaloklum/",
       "locale": "en",
       "check": "cliches",
-      "status": "WARNING",
-      "actual": "bespoke",
+      "status": "PASS",
+      "actual": "none",
       "expected": "none",
       "fix": ""
     },
@@ -12665,8 +12935,8 @@
       "url": "/projects/haad-salad-privacy-villa/",
       "locale": "en",
       "check": "cliches",
-      "status": "WARNING",
-      "actual": "bespoke",
+      "status": "PASS",
+      "actual": "none",
       "expected": "none",
       "fix": ""
     },
@@ -12845,8 +13115,8 @@
       "url": "/projects/haad-yao-beachfront-pavilion/",
       "locale": "en",
       "check": "cliches",
-      "status": "WARNING",
-      "actual": "bespoke",
+      "status": "PASS",
+      "actual": "none",
       "expected": "none",
       "fix": ""
     },
@@ -13025,8 +13295,8 @@
       "url": "/projects/ridge-house-sri-thanu/",
       "locale": "en",
       "check": "cliches",
-      "status": "WARNING",
-      "actual": "bespoke",
+      "status": "PASS",
+      "actual": "none",
       "expected": "none",
       "fix": ""
     },
@@ -21008,8 +21278,8 @@
       "url": "/services/architecture/",
       "locale": "en",
       "check": "cliches",
-      "status": "WARNING",
-      "actual": "bespoke",
+      "status": "PASS",
+      "actual": "none",
       "expected": "none",
       "fix": ""
     },
@@ -21018,7 +21288,7 @@
       "locale": "en",
       "check": "description-length",
       "status": "PASS",
-      "actual": "164",
+      "actual": "152",
       "expected": "110-170",
       "fix": "Rewrite meta description"
     },
@@ -21027,7 +21297,7 @@
       "locale": "en",
       "check": "description-present",
       "status": "PASS",
-      "actual": "164",
+      "actual": "152",
       "expected": "non-empty",
       "fix": ""
     },
@@ -21035,8 +21305,8 @@
       "url": "/services/architecture/",
       "locale": "en",
       "check": "direct-answer",
-      "status": "WARNING",
-      "actual": "37",
+      "status": "PASS",
+      "actual": "46",
       "expected": "40-60 words",
       "fix": "Tighten the opening answer"
     },
@@ -21133,6 +21403,24 @@
     {
       "url": "/services/architecture/",
       "locale": "en",
+      "check": "keyword-in-h1",
+      "status": "PASS",
+      "actual": "architecture & villa design in koh phangan",
+      "expected": "architecture & villa design",
+      "fix": ""
+    },
+    {
+      "url": "/services/architecture/",
+      "locale": "en",
+      "check": "keyword-in-opening",
+      "status": "PASS",
+      "actual": "first 600 chars",
+      "expected": "architecture & villa design",
+      "fix": ""
+    },
+    {
+      "url": "/services/architecture/",
+      "locale": "en",
       "check": "placeholders",
       "status": "PASS",
       "actual": "none",
@@ -21153,7 +21441,7 @@
       "locale": "en",
       "check": "title-length",
       "status": "PASS",
-      "actual": "42",
+      "actual": "54",
       "expected": "20-65",
       "fix": "Shorten/lengthen title"
     },
@@ -21162,7 +21450,7 @@
       "locale": "en",
       "check": "title-present",
       "status": "PASS",
-      "actual": "Architecture Studio in Koh Phangan | FORMA",
+      "actual": "Architecture &amp; Villa Design in Koh Phangan | FORMA",
       "expected": "non-empty",
       "fix": ""
     },
@@ -21170,8 +21458,8 @@
       "url": "/services/architecture/",
       "locale": "en",
       "check": "word-count",
-      "status": "WARNING",
-      "actual": "1047",
+      "status": "PASS",
+      "actual": "1820",
       "expected": ">=1500",
       "fix": "Expand with original, useful content (not filler)"
     },
@@ -21224,8 +21512,8 @@
       "url": "/services/concrete-construction/",
       "locale": "en",
       "check": "direct-answer",
-      "status": "WARNING",
-      "actual": "29",
+      "status": "PASS",
+      "actual": "44",
       "expected": "40-60 words",
       "fix": "Tighten the opening answer"
     },
@@ -21322,6 +21610,24 @@
     {
       "url": "/services/concrete-construction/",
       "locale": "en",
+      "check": "keyword-in-h1",
+      "status": "PASS",
+      "actual": "concrete construction for tropical villas in koh phangan",
+      "expected": "concrete construction",
+      "fix": ""
+    },
+    {
+      "url": "/services/concrete-construction/",
+      "locale": "en",
+      "check": "keyword-in-opening",
+      "status": "PASS",
+      "actual": "first 600 chars",
+      "expected": "concrete construction",
+      "fix": ""
+    },
+    {
+      "url": "/services/concrete-construction/",
+      "locale": "en",
       "check": "placeholders",
       "status": "PASS",
       "actual": "none",
@@ -21342,7 +21648,7 @@
       "locale": "en",
       "check": "title-length",
       "status": "PASS",
-      "actual": "49",
+      "actual": "44",
       "expected": "20-65",
       "fix": "Shorten/lengthen title"
     },
@@ -21351,7 +21657,7 @@
       "locale": "en",
       "check": "title-present",
       "status": "PASS",
-      "actual": "Concrete Construction Turnkey Koh Phangan | FORMA",
+      "actual": "Concrete Construction in Koh Phangan | FORMA",
       "expected": "non-empty",
       "fix": ""
     },
@@ -21359,8 +21665,8 @@
       "url": "/services/concrete-construction/",
       "locale": "en",
       "check": "word-count",
-      "status": "WARNING",
-      "actual": "887",
+      "status": "PASS",
+      "actual": "1567",
       "expected": ">=1500",
       "fix": "Expand with original, useful content (not filler)"
     },
@@ -21396,7 +21702,7 @@
       "locale": "en",
       "check": "description-length",
       "status": "PASS",
-      "actual": "151",
+      "actual": "159",
       "expected": "110-170",
       "fix": "Rewrite meta description"
     },
@@ -21405,7 +21711,7 @@
       "locale": "en",
       "check": "description-present",
       "status": "PASS",
-      "actual": "151",
+      "actual": "159",
       "expected": "non-empty",
       "fix": ""
     },
@@ -21413,8 +21719,8 @@
       "url": "/services/construction-supervision/",
       "locale": "en",
       "check": "direct-answer",
-      "status": "WARNING",
-      "actual": "30",
+      "status": "PASS",
+      "actual": "44",
       "expected": "40-60 words",
       "fix": "Tighten the opening answer"
     },
@@ -21511,6 +21817,24 @@
     {
       "url": "/services/construction-supervision/",
       "locale": "en",
+      "check": "keyword-in-h1",
+      "status": "PASS",
+      "actual": "construction supervision in koh phangan",
+      "expected": "construction supervision",
+      "fix": ""
+    },
+    {
+      "url": "/services/construction-supervision/",
+      "locale": "en",
+      "check": "keyword-in-opening",
+      "status": "PASS",
+      "actual": "first 600 chars",
+      "expected": "construction supervision",
+      "fix": ""
+    },
+    {
+      "url": "/services/construction-supervision/",
+      "locale": "en",
       "check": "placeholders",
       "status": "PASS",
       "actual": "none",
@@ -21531,7 +21855,7 @@
       "locale": "en",
       "check": "title-length",
       "status": "PASS",
-      "actual": "44",
+      "actual": "47",
       "expected": "20-65",
       "fix": "Shorten/lengthen title"
     },
@@ -21540,7 +21864,7 @@
       "locale": "en",
       "check": "title-present",
       "status": "PASS",
-      "actual": "Construction Supervision Koh Phangan | FORMA",
+      "actual": "Construction Supervision in Koh Phangan | FORMA",
       "expected": "non-empty",
       "fix": ""
     },
@@ -21548,8 +21872,8 @@
       "url": "/services/construction-supervision/",
       "locale": "en",
       "check": "word-count",
-      "status": "WARNING",
-      "actual": "861",
+      "status": "PASS",
+      "actual": "1582",
       "expected": ">=1500",
       "fix": "Expand with original, useful content (not filler)"
     },
@@ -21585,7 +21909,7 @@
       "locale": "en",
       "check": "description-length",
       "status": "PASS",
-      "actual": "137",
+      "actual": "151",
       "expected": "110-170",
       "fix": "Rewrite meta description"
     },
@@ -21594,7 +21918,7 @@
       "locale": "en",
       "check": "description-present",
       "status": "PASS",
-      "actual": "137",
+      "actual": "151",
       "expected": "non-empty",
       "fix": ""
     },
@@ -21602,8 +21926,8 @@
       "url": "/services/construction/",
       "locale": "en",
       "check": "direct-answer",
-      "status": "WARNING",
-      "actual": "31",
+      "status": "PASS",
+      "actual": "42",
       "expected": "40-60 words",
       "fix": "Tighten the opening answer"
     },
@@ -21700,6 +22024,24 @@
     {
       "url": "/services/construction/",
       "locale": "en",
+      "check": "keyword-in-h1",
+      "status": "PASS",
+      "actual": "villa construction & design-build in koh phangan",
+      "expected": "villa construction",
+      "fix": ""
+    },
+    {
+      "url": "/services/construction/",
+      "locale": "en",
+      "check": "keyword-in-opening",
+      "status": "PASS",
+      "actual": "first 600 chars",
+      "expected": "villa construction",
+      "fix": ""
+    },
+    {
+      "url": "/services/construction/",
+      "locale": "en",
       "check": "placeholders",
       "status": "PASS",
       "actual": "none",
@@ -21720,7 +22062,7 @@
       "locale": "en",
       "check": "title-length",
       "status": "PASS",
-      "actual": "53",
+      "actual": "56",
       "expected": "20-65",
       "fix": "Shorten/lengthen title"
     },
@@ -21729,7 +22071,7 @@
       "locale": "en",
       "check": "title-present",
       "status": "PASS",
-      "actual": "Villa Construction Koh Phangan | Design-Build | FORMA",
+      "actual": "Villa Construction in Koh Phangan | Design-Build | FORMA",
       "expected": "non-empty",
       "fix": ""
     },
@@ -21737,8 +22079,8 @@
       "url": "/services/construction/",
       "locale": "en",
       "check": "word-count",
-      "status": "WARNING",
-      "actual": "909",
+      "status": "PASS",
+      "actual": "1624",
       "expected": ">=1500",
       "fix": "Expand with original, useful content (not filler)"
     },
@@ -21764,8 +22106,8 @@
       "url": "/services/eco-construction/",
       "locale": "en",
       "check": "cliches",
-      "status": "WARNING",
-      "actual": "bespoke",
+      "status": "PASS",
+      "actual": "none",
       "expected": "none",
       "fix": ""
     },
@@ -21774,7 +22116,7 @@
       "locale": "en",
       "check": "description-length",
       "status": "PASS",
-      "actual": "150",
+      "actual": "148",
       "expected": "110-170",
       "fix": "Rewrite meta description"
     },
@@ -21783,7 +22125,7 @@
       "locale": "en",
       "check": "description-present",
       "status": "PASS",
-      "actual": "150",
+      "actual": "148",
       "expected": "non-empty",
       "fix": ""
     },
@@ -21791,8 +22133,8 @@
       "url": "/services/eco-construction/",
       "locale": "en",
       "check": "direct-answer",
-      "status": "WARNING",
-      "actual": "31",
+      "status": "PASS",
+      "actual": "47",
       "expected": "40-60 words",
       "fix": "Tighten the opening answer"
     },
@@ -21889,6 +22231,24 @@
     {
       "url": "/services/eco-construction/",
       "locale": "en",
+      "check": "keyword-in-h1",
+      "status": "PASS",
+      "actual": "eco construction & sustainable building in koh phangan",
+      "expected": "eco construction",
+      "fix": ""
+    },
+    {
+      "url": "/services/eco-construction/",
+      "locale": "en",
+      "check": "keyword-in-opening",
+      "status": "PASS",
+      "actual": "first 600 chars",
+      "expected": "eco construction",
+      "fix": ""
+    },
+    {
+      "url": "/services/eco-construction/",
+      "locale": "en",
       "check": "placeholders",
       "status": "PASS",
       "actual": "none",
@@ -21909,7 +22269,7 @@
       "locale": "en",
       "check": "title-length",
       "status": "PASS",
-      "actual": "59",
+      "actual": "62",
       "expected": "20-65",
       "fix": "Shorten/lengthen title"
     },
@@ -21918,7 +22278,7 @@
       "locale": "en",
       "check": "title-present",
       "status": "PASS",
-      "actual": "Eco Construction Koh Phangan | Sustainable Building | FORMA",
+      "actual": "Eco Construction in Koh Phangan | Sustainable Building | FORMA",
       "expected": "non-empty",
       "fix": ""
     },
@@ -21926,8 +22286,8 @@
       "url": "/services/eco-construction/",
       "locale": "en",
       "check": "word-count",
-      "status": "WARNING",
-      "actual": "966",
+      "status": "PASS",
+      "actual": "1706",
       "expected": ">=1500",
       "fix": "Expand with original, useful content (not filler)"
     },
@@ -21953,8 +22313,8 @@
       "url": "/services/interior-design/",
       "locale": "en",
       "check": "cliches",
-      "status": "WARNING",
-      "actual": "bespoke",
+      "status": "PASS",
+      "actual": "none",
       "expected": "none",
       "fix": ""
     },
@@ -21963,7 +22323,7 @@
       "locale": "en",
       "check": "description-length",
       "status": "PASS",
-      "actual": "148",
+      "actual": "155",
       "expected": "110-170",
       "fix": "Rewrite meta description"
     },
@@ -21972,7 +22332,7 @@
       "locale": "en",
       "check": "description-present",
       "status": "PASS",
-      "actual": "148",
+      "actual": "155",
       "expected": "non-empty",
       "fix": ""
     },
@@ -21980,8 +22340,8 @@
       "url": "/services/interior-design/",
       "locale": "en",
       "check": "direct-answer",
-      "status": "WARNING",
-      "actual": "31",
+      "status": "PASS",
+      "actual": "45",
       "expected": "40-60 words",
       "fix": "Tighten the opening answer"
     },
@@ -22078,6 +22438,24 @@
     {
       "url": "/services/interior-design/",
       "locale": "en",
+      "check": "keyword-in-h1",
+      "status": "PASS",
+      "actual": "interior design for villas & hospitality in koh phangan",
+      "expected": "interior design",
+      "fix": ""
+    },
+    {
+      "url": "/services/interior-design/",
+      "locale": "en",
+      "check": "keyword-in-opening",
+      "status": "PASS",
+      "actual": "first 600 chars",
+      "expected": "interior design",
+      "fix": ""
+    },
+    {
+      "url": "/services/interior-design/",
+      "locale": "en",
       "check": "placeholders",
       "status": "PASS",
       "actual": "none",
@@ -22098,7 +22476,7 @@
       "locale": "en",
       "check": "title-length",
       "status": "PASS",
-      "actual": "62",
+      "actual": "65",
       "expected": "20-65",
       "fix": "Shorten/lengthen title"
     },
@@ -22107,7 +22485,7 @@
       "locale": "en",
       "check": "title-present",
       "status": "PASS",
-      "actual": "Interior Design Koh Phangan | Villas &amp; Hospitality | FORMA",
+      "actual": "Interior Design in Koh Phangan | Villas &amp; Hospitality | FORMA",
       "expected": "non-empty",
       "fix": ""
     },
@@ -22115,8 +22493,8 @@
       "url": "/services/interior-design/",
       "locale": "en",
       "check": "word-count",
-      "status": "WARNING",
-      "actual": "938",
+      "status": "PASS",
+      "actual": "1710",
       "expected": ">=1500",
       "fix": "Expand with original, useful content (not filler)"
     },
@@ -22142,8 +22520,8 @@
       "url": "/services/landscape-design/",
       "locale": "en",
       "check": "cliches",
-      "status": "WARNING",
-      "actual": "bespoke",
+      "status": "PASS",
+      "actual": "none",
       "expected": "none",
       "fix": ""
     },
@@ -22152,7 +22530,7 @@
       "locale": "en",
       "check": "description-length",
       "status": "PASS",
-      "actual": "132",
+      "actual": "143",
       "expected": "110-170",
       "fix": "Rewrite meta description"
     },
@@ -22161,7 +22539,7 @@
       "locale": "en",
       "check": "description-present",
       "status": "PASS",
-      "actual": "132",
+      "actual": "143",
       "expected": "non-empty",
       "fix": ""
     },
@@ -22169,8 +22547,8 @@
       "url": "/services/landscape-design/",
       "locale": "en",
       "check": "direct-answer",
-      "status": "WARNING",
-      "actual": "31",
+      "status": "PASS",
+      "actual": "47",
       "expected": "40-60 words",
       "fix": "Tighten the opening answer"
     },
@@ -22267,6 +22645,24 @@
     {
       "url": "/services/landscape-design/",
       "locale": "en",
+      "check": "keyword-in-h1",
+      "status": "PASS",
+      "actual": "landscape design for tropical gardens & pools in koh phangan",
+      "expected": "landscape design",
+      "fix": ""
+    },
+    {
+      "url": "/services/landscape-design/",
+      "locale": "en",
+      "check": "keyword-in-opening",
+      "status": "PASS",
+      "actual": "first 600 chars",
+      "expected": "landscape design",
+      "fix": ""
+    },
+    {
+      "url": "/services/landscape-design/",
+      "locale": "en",
       "check": "placeholders",
       "status": "PASS",
       "actual": "none",
@@ -22286,8 +22682,8 @@
       "url": "/services/landscape-design/",
       "locale": "en",
       "check": "title-length",
-      "status": "WARNING",
-      "actual": "67",
+      "status": "PASS",
+      "actual": "50",
       "expected": "20-65",
       "fix": "Shorten/lengthen title"
     },
@@ -22296,7 +22692,7 @@
       "locale": "en",
       "check": "title-present",
       "status": "PASS",
-      "actual": "Landscape Design Koh Phangan | Tropical Gardens &amp; Pools | FORMA",
+      "actual": "Landscape &amp; Pool Design in Koh Phangan | FORMA",
       "expected": "non-empty",
       "fix": ""
     },
@@ -22304,8 +22700,8 @@
       "url": "/services/landscape-design/",
       "locale": "en",
       "check": "word-count",
-      "status": "WARNING",
-      "actual": "892",
+      "status": "PASS",
+      "actual": "1650",
       "expected": ">=1500",
       "fix": "Expand with original, useful content (not filler)"
     },
@@ -22341,7 +22737,7 @@
       "locale": "en",
       "check": "description-length",
       "status": "PASS",
-      "actual": "156",
+      "actual": "153",
       "expected": "110-170",
       "fix": "Rewrite meta description"
     },
@@ -22350,7 +22746,7 @@
       "locale": "en",
       "check": "description-present",
       "status": "PASS",
-      "actual": "156",
+      "actual": "153",
       "expected": "non-empty",
       "fix": ""
     },
@@ -22358,8 +22754,8 @@
       "url": "/services/permits-planning/",
       "locale": "en",
       "check": "direct-answer",
-      "status": "WARNING",
-      "actual": "36",
+      "status": "PASS",
+      "actual": "47",
       "expected": "40-60 words",
       "fix": "Tighten the opening answer"
     },
@@ -22456,6 +22852,24 @@
     {
       "url": "/services/permits-planning/",
       "locale": "en",
+      "check": "keyword-in-h1",
+      "status": "PASS",
+      "actual": "building permits & planning support in koh phangan",
+      "expected": "building permits",
+      "fix": ""
+    },
+    {
+      "url": "/services/permits-planning/",
+      "locale": "en",
+      "check": "keyword-in-opening",
+      "status": "PASS",
+      "actual": "first 600 chars",
+      "expected": "building permits",
+      "fix": ""
+    },
+    {
+      "url": "/services/permits-planning/",
+      "locale": "en",
       "check": "placeholders",
       "status": "PASS",
       "actual": "none",
@@ -22476,7 +22890,7 @@
       "locale": "en",
       "check": "title-length",
       "status": "PASS",
-      "actual": "42",
+      "actual": "54",
       "expected": "20-65",
       "fix": "Shorten/lengthen title"
     },
@@ -22485,7 +22899,7 @@
       "locale": "en",
       "check": "title-present",
       "status": "PASS",
-      "actual": "Permits &amp; Planning Koh Phangan | FORMA",
+      "actual": "Building Permits &amp; Planning in Koh Phangan | FORMA",
       "expected": "non-empty",
       "fix": ""
     },
@@ -22493,8 +22907,8 @@
       "url": "/services/permits-planning/",
       "locale": "en",
       "check": "word-count",
-      "status": "WARNING",
-      "actual": "861",
+      "status": "PASS",
+      "actual": "1590",
       "expected": ">=1500",
       "fix": "Expand with original, useful content (not filler)"
     },
@@ -22530,7 +22944,7 @@
       "locale": "en",
       "check": "description-length",
       "status": "PASS",
-      "actual": "149",
+      "actual": "146",
       "expected": "110-170",
       "fix": "Rewrite meta description"
     },
@@ -22539,7 +22953,7 @@
       "locale": "en",
       "check": "description-present",
       "status": "PASS",
-      "actual": "149",
+      "actual": "146",
       "expected": "non-empty",
       "fix": ""
     },
@@ -22547,8 +22961,8 @@
       "url": "/services/project-management/",
       "locale": "en",
       "check": "direct-answer",
-      "status": "WARNING",
-      "actual": "33",
+      "status": "PASS",
+      "actual": "45",
       "expected": "40-60 words",
       "fix": "Tighten the opening answer"
     },
@@ -22645,6 +23059,24 @@
     {
       "url": "/services/project-management/",
       "locale": "en",
+      "check": "keyword-in-h1",
+      "status": "PASS",
+      "actual": "construction project management in koh phangan",
+      "expected": "project management",
+      "fix": ""
+    },
+    {
+      "url": "/services/project-management/",
+      "locale": "en",
+      "check": "keyword-in-opening",
+      "status": "PASS",
+      "actual": "first 600 chars",
+      "expected": "project management",
+      "fix": ""
+    },
+    {
+      "url": "/services/project-management/",
+      "locale": "en",
       "check": "placeholders",
       "status": "PASS",
       "actual": "none",
@@ -22665,7 +23097,7 @@
       "locale": "en",
       "check": "title-length",
       "status": "PASS",
-      "actual": "38",
+      "actual": "54",
       "expected": "20-65",
       "fix": "Shorten/lengthen title"
     },
@@ -22674,7 +23106,7 @@
       "locale": "en",
       "check": "title-present",
       "status": "PASS",
-      "actual": "Project Management Koh Phangan | FORMA",
+      "actual": "Construction Project Management in Koh Phangan | FORMA",
       "expected": "non-empty",
       "fix": ""
     },
@@ -22682,8 +23114,8 @@
       "url": "/services/project-management/",
       "locale": "en",
       "check": "word-count",
-      "status": "WARNING",
-      "actual": "865",
+      "status": "PASS",
+      "actual": "1662",
       "expected": ">=1500",
       "fix": "Expand with original, useful content (not filler)"
     },
@@ -22719,7 +23151,7 @@
       "locale": "en",
       "check": "description-length",
       "status": "PASS",
-      "actual": "149",
+      "actual": "150",
       "expected": "110-170",
       "fix": "Rewrite meta description"
     },
@@ -22728,7 +23160,7 @@
       "locale": "en",
       "check": "description-present",
       "status": "PASS",
-      "actual": "149",
+      "actual": "150",
       "expected": "non-empty",
       "fix": ""
     },
@@ -22736,8 +23168,8 @@
       "url": "/services/renovation/",
       "locale": "en",
       "check": "direct-answer",
-      "status": "WARNING",
-      "actual": "30",
+      "status": "PASS",
+      "actual": "46",
       "expected": "40-60 words",
       "fix": "Tighten the opening answer"
     },
@@ -22834,6 +23266,24 @@
     {
       "url": "/services/renovation/",
       "locale": "en",
+      "check": "keyword-in-h1",
+      "status": "PASS",
+      "actual": "villa renovation & remodeling in koh phangan",
+      "expected": "villa renovation",
+      "fix": ""
+    },
+    {
+      "url": "/services/renovation/",
+      "locale": "en",
+      "check": "keyword-in-opening",
+      "status": "PASS",
+      "actual": "first 600 chars",
+      "expected": "villa renovation",
+      "fix": ""
+    },
+    {
+      "url": "/services/renovation/",
+      "locale": "en",
       "check": "placeholders",
       "status": "PASS",
       "actual": "none",
@@ -22854,7 +23304,7 @@
       "locale": "en",
       "check": "title-length",
       "status": "PASS",
-      "actual": "49",
+      "actual": "52",
       "expected": "20-65",
       "fix": "Shorten/lengthen title"
     },
@@ -22863,7 +23313,7 @@
       "locale": "en",
       "check": "title-present",
       "status": "PASS",
-      "actual": "Villa Renovation Koh Phangan | Remodeling | FORMA",
+      "actual": "Villa Renovation in Koh Phangan | Remodeling | FORMA",
       "expected": "non-empty",
       "fix": ""
     },
@@ -22871,8 +23321,8 @@
       "url": "/services/renovation/",
       "locale": "en",
       "check": "word-count",
-      "status": "WARNING",
-      "actual": "880",
+      "status": "PASS",
+      "actual": "1556",
       "expected": ">=1500",
       "fix": "Expand with original, useful content (not filler)"
     },
@@ -22908,7 +23358,7 @@
       "locale": "en",
       "check": "description-length",
       "status": "PASS",
-      "actual": "154",
+      "actual": "156",
       "expected": "110-170",
       "fix": "Rewrite meta description"
     },
@@ -22917,7 +23367,7 @@
       "locale": "en",
       "check": "description-present",
       "status": "PASS",
-      "actual": "154",
+      "actual": "156",
       "expected": "non-empty",
       "fix": ""
     },
@@ -22925,8 +23375,8 @@
       "url": "/services/technical-supervision/",
       "locale": "en",
       "check": "direct-answer",
-      "status": "WARNING",
-      "actual": "26",
+      "status": "PASS",
+      "actual": "47",
       "expected": "40-60 words",
       "fix": "Tighten the opening answer"
     },
@@ -23023,6 +23473,24 @@
     {
       "url": "/services/technical-supervision/",
       "locale": "en",
+      "check": "keyword-in-h1",
+      "status": "PASS",
+      "actual": "technical supervision for villa builds in koh phangan",
+      "expected": "technical supervision",
+      "fix": ""
+    },
+    {
+      "url": "/services/technical-supervision/",
+      "locale": "en",
+      "check": "keyword-in-opening",
+      "status": "PASS",
+      "actual": "first 600 chars",
+      "expected": "technical supervision",
+      "fix": ""
+    },
+    {
+      "url": "/services/technical-supervision/",
+      "locale": "en",
       "check": "placeholders",
       "status": "PASS",
       "actual": "none",
@@ -23043,7 +23511,7 @@
       "locale": "en",
       "check": "title-length",
       "status": "PASS",
-      "actual": "41",
+      "actual": "61",
       "expected": "20-65",
       "fix": "Shorten/lengthen title"
     },
@@ -23052,7 +23520,7 @@
       "locale": "en",
       "check": "title-present",
       "status": "PASS",
-      "actual": "Technical Supervision Koh Phangan | FORMA",
+      "actual": "Technical Supervision for Villa Builds in Koh Phangan | FORMA",
       "expected": "non-empty",
       "fix": ""
     },
@@ -23060,8 +23528,8 @@
       "url": "/services/technical-supervision/",
       "locale": "en",
       "check": "word-count",
-      "status": "WARNING",
-      "actual": "846",
+      "status": "PASS",
+      "actual": "1545",
       "expected": ">=1500",
       "fix": "Expand with original, useful content (not filler)"
     },
@@ -23087,8 +23555,8 @@
       "url": "/services/turnkey-projects/",
       "locale": "en",
       "check": "cliches",
-      "status": "WARNING",
-      "actual": "bespoke",
+      "status": "PASS",
+      "actual": "none",
       "expected": "none",
       "fix": ""
     },
@@ -23097,7 +23565,7 @@
       "locale": "en",
       "check": "description-length",
       "status": "PASS",
-      "actual": "145",
+      "actual": "149",
       "expected": "110-170",
       "fix": "Rewrite meta description"
     },
@@ -23106,7 +23574,7 @@
       "locale": "en",
       "check": "description-present",
       "status": "PASS",
-      "actual": "145",
+      "actual": "149",
       "expected": "non-empty",
       "fix": ""
     },
@@ -23114,8 +23582,8 @@
       "url": "/services/turnkey-projects/",
       "locale": "en",
       "check": "direct-answer",
-      "status": "WARNING",
-      "actual": "29",
+      "status": "PASS",
+      "actual": "46",
       "expected": "40-60 words",
       "fix": "Tighten the opening answer"
     },
@@ -23212,6 +23680,24 @@
     {
       "url": "/services/turnkey-projects/",
       "locale": "en",
+      "check": "keyword-in-h1",
+      "status": "PASS",
+      "actual": "turnkey villa projects in koh phangan",
+      "expected": "turnkey villa",
+      "fix": ""
+    },
+    {
+      "url": "/services/turnkey-projects/",
+      "locale": "en",
+      "check": "keyword-in-opening",
+      "status": "PASS",
+      "actual": "first 600 chars",
+      "expected": "turnkey villa",
+      "fix": ""
+    },
+    {
+      "url": "/services/turnkey-projects/",
+      "locale": "en",
       "check": "placeholders",
       "status": "PASS",
       "actual": "none",
@@ -23232,7 +23718,7 @@
       "locale": "en",
       "check": "title-length",
       "status": "PASS",
-      "actual": "57",
+      "actual": "60",
       "expected": "20-65",
       "fix": "Shorten/lengthen title"
     },
@@ -23241,7 +23727,7 @@
       "locale": "en",
       "check": "title-present",
       "status": "PASS",
-      "actual": "Turnkey Villa Projects Koh Phangan | Design-Build | FORMA",
+      "actual": "Turnkey Villa Projects in Koh Phangan | Design-Build | FORMA",
       "expected": "non-empty",
       "fix": ""
     },
@@ -23249,8 +23735,8 @@
       "url": "/services/turnkey-projects/",
       "locale": "en",
       "check": "word-count",
-      "status": "WARNING",
-      "actual": "911",
+      "status": "PASS",
+      "actual": "1609",
       "expected": ">=1500",
       "fix": "Expand with original, useful content (not filler)"
     },
@@ -23276,8 +23762,8 @@
       "url": "/services/villa-design/",
       "locale": "en",
       "check": "cliches",
-      "status": "WARNING",
-      "actual": "bespoke",
+      "status": "PASS",
+      "actual": "none",
       "expected": "none",
       "fix": ""
     },
@@ -23286,7 +23772,7 @@
       "locale": "en",
       "check": "description-length",
       "status": "PASS",
-      "actual": "153",
+      "actual": "140",
       "expected": "110-170",
       "fix": "Rewrite meta description"
     },
@@ -23295,7 +23781,7 @@
       "locale": "en",
       "check": "description-present",
       "status": "PASS",
-      "actual": "153",
+      "actual": "140",
       "expected": "non-empty",
       "fix": ""
     },
@@ -23303,8 +23789,8 @@
       "url": "/services/villa-design/",
       "locale": "en",
       "check": "direct-answer",
-      "status": "WARNING",
-      "actual": "38",
+      "status": "PASS",
+      "actual": "50",
       "expected": "40-60 words",
       "fix": "Tighten the opening answer"
     },
@@ -23401,6 +23887,24 @@
     {
       "url": "/services/villa-design/",
       "locale": "en",
+      "check": "keyword-in-h1",
+      "status": "PASS",
+      "actual": "tropical villa design in koh phangan",
+      "expected": "villa design",
+      "fix": ""
+    },
+    {
+      "url": "/services/villa-design/",
+      "locale": "en",
+      "check": "keyword-in-opening",
+      "status": "PASS",
+      "actual": "first 600 chars",
+      "expected": "villa design",
+      "fix": ""
+    },
+    {
+      "url": "/services/villa-design/",
+      "locale": "en",
       "check": "placeholders",
       "status": "PASS",
       "actual": "none",
@@ -23421,7 +23925,7 @@
       "locale": "en",
       "check": "title-length",
       "status": "PASS",
-      "actual": "55",
+      "actual": "44",
       "expected": "20-65",
       "fix": "Shorten/lengthen title"
     },
@@ -23430,7 +23934,7 @@
       "locale": "en",
       "check": "title-present",
       "status": "PASS",
-      "actual": "Villa Design Koh Phangan | Bespoke Architecture | FORMA",
+      "actual": "Tropical Villa Design in Koh Phangan | FORMA",
       "expected": "non-empty",
       "fix": ""
     },
@@ -23438,8 +23942,8 @@
       "url": "/services/villa-design/",
       "locale": "en",
       "check": "word-count",
-      "status": "WARNING",
-      "actual": "1049",
+      "status": "PASS",
+      "actual": "1826",
       "expected": ">=1500",
       "fix": "Expand with original, useful content (not filler)"
     },

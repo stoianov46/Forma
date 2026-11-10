@@ -39,6 +39,8 @@ npm run qa:static   # after build: broken links, meta, JSON-LD validity
 npm run seo:audit   # after build: SEO/content audit → reports/seo-audit.{md,json} (see NOTES.md)
 npm run pricing:check  # after build: prices single-sourced, identical in 4 locales, no Offer schema
 npm run pricing:master # regenerate PRICING_MASTER.md from src/content/pricing.ts
+npm run seo:keywords  # regenerate FORMA_KEYWORD_MAP.md + URL_INTENT_MAP.md from src/content/keywords.json
+npm run seo:links     # after build: INTERNAL_LINKING_MAP.md
 npm run qa:audit    # after build: per-page matrix → reports/audit-matrix.md
 ```
 

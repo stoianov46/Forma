@@ -112,6 +112,7 @@ export interface Dictionary {
     contactMethodOptions: string[];
   };
   home: {
+    seoDescription?: string;
     heroTitle: string;
     heroSubtitle: string;
     /** Hero slide alt texts, in slide order (see HomePage.astro). */
@@ -205,11 +206,11 @@ export const en: Dictionary = {
     locationsDesc: "FORMA designs and builds villas across Koh Phangan, Koh Samui, Koh Tao and Bali, with deep local knowledge of each island's terrain, logistics and building conditions.",
     locationsIntro: "Based on Koh Phangan and working across the wider region.",
     phanganAreas: "Koh Phangan areas",
-    projectsTitleSuffix: "FORMA — Villa & Architecture Portfolio, Koh Phangan",
+    projectsTitleSuffix: "FORMA — Villa & Architecture Portfolio",
     projectsDesc: "A portfolio of villa, interior, renovation and construction concept studies by FORMA, spanning Koh Phangan and the surrounding islands.",
     filterByType: "Filter by type",
     filterAll: "All",
-    journalTitleSuffix: "FORMA — Villa Design & Tropical Architecture Insight",
+    journalTitleSuffix: "FORMA — Villa Design & Tropical Architecture",
     journalDesc: "Original articles on villa design, tropical architecture, construction logistics, renovation and building on Koh Phangan from the FORMA studio.",
     conceptLabel: "Concept study — representative of our design approach",
     tags: { Architecture: 'Architecture', Villa: 'Villa', Interior: 'Interior', Renovation: 'Renovation', Construction: 'Construction', Landscape: 'Landscape', Hospitality: 'Hospitality' },
@@ -257,6 +258,7 @@ export const en: Dictionary = {
     contactMethodOptions: ['Email', 'WhatsApp', 'Telegram', 'Phone call'],
   },
   home: {
+    seoDescription: 'FORMA is an architecture and design-build studio on Koh Phangan: villa design, construction, interiors and project management for tropical island projects.',
     heroTitle: 'Architecture & Design-Build on Koh Phangan',
     heroSubtitle:
       'Architecture, interiors and construction for distinctive villas and spaces in Koh Phangan, Thailand — from concept and planning to completion.',

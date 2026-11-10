@@ -86,7 +86,7 @@ export const locationsEnContent: Record<string, Location['translations']['en']> 
     name: 'Koh Phangan',
     h1: 'Architecture & Design-Build, Rooted on Koh Phangan',
     directAnswer:
-      'FORMA is based on Koh Phangan and designs, builds and supervises villas and interiors island-wide, working directly with the terrain, zoning and logistics specific to each district — from the quieter west coast to the developed south.',
+      'FORMA is based on Koh Phangan and designs, builds and supervises villas and interiors island-wide, working directly with the terrain, zoning and logistics specific to each district. Projects range from the quieter west coast to the developed south, and each is planned around its own slope, access and building conditions.',
     intro:
       'Koh Phangan rewards architecture that understands its terrain: steep interior hills, a coastline that shifts character from the busy south to the quiet, forested north-west, and a construction supply chain that runs through Surat Thani and Ko Samui before reaching site by boat or barge. We work across the island\'s districts, and this local presence shapes every recommendation we make, from realistic construction schedules around the monsoon to material choices that hold up to salt air and humidity without constant upkeep.',
     context:
@@ -126,12 +126,12 @@ export const locationsEnContent: Record<string, Location['translations']['en']> 
     seo: {
       title: 'Villa Architecture & Construction on Koh Samui | FORMA',
       description:
-        'FORMA designs and builds villas and manages design-build projects on Koh Samui, extending our Koh Phangan practice to the island\'s established residential and hospitality market.',
+        'FORMA designs and builds villas and manages design-build projects on Koh Samui, extending our Koh Phangan practice to the island\'s residential and hospitality market.',
     },
     name: 'Koh Samui',
     h1: 'Villa Design & Construction on Koh Samui',
     directAnswer:
-      'FORMA extends its Koh Phangan practice to Koh Samui, delivering villa architecture, interiors and design-build construction for the island\'s established residential and hospitality market, with the same site-first design method applied to Samui\'s terrain and access conditions.',
+      'FORMA extends its Koh Phangan practice to Koh Samui, delivering villa architecture, interiors and design-build construction for the island\'s established residential and hospitality market. The same site-first design method is applied to Samui\'s terrain, road access and contractor networks, with each project planned around its own plot.',
     intro:
       'Koh Samui\'s more developed infrastructure — an international airport, deeper contractor and supply networks, and a mature hospitality sector — creates different opportunities and constraints than Koh Phangan. We bring the same disciplined, site-responsive design approach to Samui commissions, while working within its more established permitting and construction ecosystem.',
     context:
@@ -168,7 +168,7 @@ export const locationsEnContent: Record<string, Location['translations']['en']> 
     name: 'Koh Tao',
     h1: 'Villa Design & Renovation on Koh Tao',
     directAnswer:
-      'FORMA provides villa design, renovation and construction supervision on Koh Tao, working within the island\'s compact plot sizes and a property market shaped heavily by dive tourism and smaller-scale residential development.',
+      'FORMA provides villa design, renovation and construction supervision on Koh Tao, working within the island\'s compact plot sizes and a property market shaped heavily by dive tourism and smaller-scale residential development. Projects are planned around steep terrain, limited access and the practical logistics of building on a small island.',
     intro:
       'Koh Tao is smaller and more compact than Koh Phangan or Samui, with plots that reward efficient, carefully considered design over sheer scale. Much of our work here involves renovation and upgrading of existing properties alongside select new villa design, reflecting the island\'s more built-out coastline.',
     context:
@@ -205,7 +205,7 @@ export const locationsEnContent: Record<string, Location['translations']['en']> 
     name: 'Bali',
     h1: 'Villa Design & Interiors in Bali',
     directAnswer:
-      'FORMA applies its tropical, site-first design method to Bali, delivering villa architecture, interior design and eco-conscious construction for clients building in Indonesia\'s most established tropical villa market.',
+      'FORMA applies its tropical, site-first design method to Bali, delivering villa architecture, interior design and eco-conscious construction for clients building in Indonesia\'s most established tropical villa market. Each project begins with a review of the plot, local building conditions and access before any design starts.',
     intro:
       'Bali\'s villa design culture is more mature and internationally visible than Koh Phangan\'s, with a sophisticated market for architecture that blends tropical modernism with local craft traditions. Our Bali commissions draw on the same climate-first design discipline we apply across Thailand, adapted to Bali\'s specific building culture, materials and regulatory environment.',
     context:
@@ -242,7 +242,7 @@ export const locationsEnContent: Record<string, Location['translations']['en']> 
     name: 'Thong Sala',
     h1: 'Building in Thong Sala',
     directAnswer:
-      'Thong Sala is Koh Phangan\'s main town and port, combining commercial density with residential development. FORMA designs and renovates villas and manages projects here with particular attention to access, drainage and the practical logistics of the island\'s primary arrival point.',
+      'Thong Sala is Koh Phangan\'s main town and port, combining commercial density with residential development. FORMA designs and renovates villas and manages projects here with particular attention to access, drainage and the practical logistics of the island\'s primary arrival point, where materials, contractors and services are closest to hand.',
     intro:
       'As the island\'s administrative and commercial centre, Thong Sala offers strong infrastructure and access — the main pier, markets, schools and services — making it a practical base for both full-time residents and rental property owners. Design here often balances proximity to town amenities against the need for privacy and quiet within a busier district.',
     context: 'Thong Sala\'s flatter terrain and established road network simplify some aspects of construction access compared with hillside districts, while its proximity to the port makes it a natural staging point for materials heading elsewhere on the island.',
@@ -269,12 +269,12 @@ export const locationsEnContent: Record<string, Location['translations']['en']> 
     seo: {
       title: 'Villa Design in Sri Thanu, Koh Phangan | FORMA',
       description:
-        'Bespoke villa design and eco-conscious construction in Sri Thanu, Koh Phangan\'s west-coast area known for sunset views and a quieter residential character.',
+        'Custom villa design and eco-conscious construction in Sri Thanu, Koh Phangan\'s west-coast area known for sunset views and a quieter residential character.',
     },
     name: 'Sri Thanu',
     h1: 'Villa Design in Sri Thanu',
     directAnswer:
-      'Sri Thanu\'s west-facing coastline and quieter, more residential character make it a popular area for bespoke villa design. FORMA designs here with particular attention to sunset orientation, privacy and the terraced hillside conditions common to the area.',
+      'Sri Thanu\'s west-facing coastline and quieter, more residential character make it a popular area for custom villa design. FORMA designs here with particular attention to sunset orientation, privacy and the terraced hillside conditions common to the area, so each house sits comfortably on its slope and keeps its outlook.',
     intro:
       'Sri Thanu has developed a reputation as one of Koh Phangan\'s more design-conscious residential areas, drawing owners who want a quieter alternative to the island\'s southern hubs without sacrificing sea access and views. Hillside plots with unobstructed west-facing outlooks are especially sought after for their sunset orientation.',
     context:
@@ -307,7 +307,7 @@ export const locationsEnContent: Record<string, Location['translations']['en']> 
     name: 'Haad Rin',
     h1: 'Design-Build in Haad Rin',
     directAnswer:
-      'Haad Rin is Koh Phangan\'s busiest beach district, with a dense mix of hospitality and residential property. FORMA designs and manages villa and small hospitality projects here with attention to noise, density and commercial viability alongside architectural quality.',
+      'Haad Rin is Koh Phangan\'s busiest beach district, with a dense mix of hospitality and residential property. FORMA designs and manages villa and small hospitality projects here with attention to noise, density and commercial viability alongside architectural quality, so a building works for guests, neighbours and the operating budget alike.',
     intro:
       'As the island\'s best-known nightlife and beach hub, Haad Rin presents a distinct brief: properties here often serve rental or hospitality income alongside private use, and design decisions — soundproofing, guest privacy, durability under heavier turnover — reflect that dual purpose more than in quieter districts.',
     context:
@@ -340,7 +340,7 @@ export const locationsEnContent: Record<string, Location['translations']['en']> 
     name: 'Chaloklum',
     h1: 'Villa Design in Chaloklum',
     directAnswer:
-      'Chaloklum\'s north-coast fishing-village character and sheltered bay make it attractive for quieter, more private villa projects. FORMA designs here with attention to the area\'s working-harbour setting and bay-facing outlooks.',
+      'Chaloklum\'s north-coast fishing-village character and sheltered bay make it attractive for quieter, more private villa projects. FORMA designs here with attention to the area\'s working-harbour setting and bay-facing outlooks, keeping buildings modest in scale, well ventilated and respectful of the neighbouring village and its everyday activity.',
     intro:
       'Chaloklum retains much of its identity as a working fishing community, giving it a different character from the island\'s more tourism-oriented beaches. Villa projects here tend to favour a quieter, more understated design language that respects the surrounding village context while making the most of sheltered bay views.',
     context:
@@ -373,7 +373,7 @@ export const locationsEnContent: Record<string, Location['translations']['en']> 
     name: 'Baan Tai',
     h1: 'Villa Design in Baan Tai',
     directAnswer:
-      'Baan Tai sits along the south coast between Thong Sala and Haad Rin, offering a more residential setting with reasonable access to both. FORMA designs villas here with a focus on landscape integration and a calmer setting close to established infrastructure.',
+      'Baan Tai sits along the south coast between Thong Sala and Haad Rin, offering a more residential setting with reasonable access to both. FORMA designs villas here with a focus on landscape integration and a calmer setting close to established infrastructure, using the plot\'s shade, breeze and privacy as the starting point.',
     intro:
       'Baan Tai occupies a practical middle ground on the island — close enough to Thong Sala\'s services and Haad Rin\'s energy to stay convenient, while retaining a more residential, less commercial character of its own. Plots here often support generous garden and landscape integration alongside the villa itself.',
     context:
@@ -406,7 +406,7 @@ export const locationsEnContent: Record<string, Location['translations']['en']> 
     name: 'Haad Yao',
     h1: 'Villa Design in Haad Yao',
     directAnswer:
-      'Haad Yao\'s long, west-facing beach makes it a sought-after location for villas designed around sea access and sunset views. FORMA designs here with attention to beachfront regulation setbacks and the coastal microclimate specific to this shoreline.',
+      'Haad Yao\'s long, west-facing beach makes it a sought-after location for villas designed around sea access and sunset views. FORMA designs here with attention to beachfront setbacks and the coastal microclimate of this shoreline, including salt exposure, wind and afternoon sun, which shape the orientation, materials and detailing of each house.',
     intro:
       'Haad Yao\'s extended sandy beach and gentler west-coast character make it attractive to owners who want direct sea proximity in a setting less developed than the island\'s southern hubs. Villa design here typically centres on maximising the relationship to the beach while respecting the specific setback and environmental considerations of a beachfront site.',
     context:
@@ -439,7 +439,7 @@ export const locationsEnContent: Record<string, Location['translations']['en']> 
     name: 'Haad Salad',
     h1: 'Villa Design in Haad Salad',
     directAnswer:
-      'Haad Salad\'s quieter, smaller beach and reef-adjacent waters attract owners seeking privacy and a more secluded villa setting. FORMA designs here with a focus on discreet massing, landscape integration and outlooks over the bay\'s calmer waters.',
+      'Haad Salad\'s quieter, smaller beach and reef-adjacent waters attract owners seeking privacy and a more secluded villa setting. FORMA designs here with a focus on discreet massing, landscape integration and outlooks over the bay\'s calmer waters, so the house stays low-key, comfortable in the heat and in keeping with its surroundings.',
     intro:
       'Haad Salad remains one of the island\'s quieter north-west beaches, its smaller scale and reef-sheltered waters appealing to owners who prioritise seclusion and a slower pace over proximity to the island\'s busier hubs. Villa design here tends to favour understated massing that sits comfortably within the bay\'s low-key character.',
     context:

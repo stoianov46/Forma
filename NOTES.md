@@ -442,3 +442,11 @@ Derived from proposal.md's own QA tables (§22 QA DOD, §23 QA, Google Webmaster
 - No `Offer` / `priceSpecification` schema is emitted while prices are drafts (checked by `pricing:check`).
 - Pricing-table column headers, draft label, unit labels and disclaimer are localised in `src/i18n/dictionary.ts` (`pricing.*`).
 - Unresolved: owner approval of every range; optional local quotes; whether to expose prices in schema later.
+
+## SEO content (10 Nov 2026, English)
+
+- Service pages now carry long-form sections from `src/content/services/extended/en/<slug>.ts` (rendered by `LongFormSections.astro` after Deliverables). RU/TH/HE service pages do not have these yet (Phase 7); the files are picked up automatically when added under `extended/<locale>/`.
+- Titles, H1s, meta descriptions and 40–60-word direct answers for all 13 services follow `src/content/keywords.json`. Keywords are qualitative (no volume data). `/services/architecture/` (full architecture, owner-specified H1) and `/services/villa-design/` (concept-stage design) have different intents on purpose.
+- "bespoke" was replaced by "custom" in EN content (banned-word list in `seo-audit.config.json`).
+- Accepted editorial warnings (EN): meta descriptions of the legal/utility pages are short (64–84 chars) and five journal article titles exceed 65 characters; revisit with the legal review. No exceptions are configured in `seo-audit.config.json`.
+- Long-form copy was drafted by AI agents and reviewed only for banned words, invented figures and guarantees; the owner should read the Architecture, Permits and Eco pages before publishing.
