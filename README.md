@@ -37,6 +37,10 @@ npm run preview     # serve the production build locally
 npm run check       # astro check — type errors across .astro files
 npm run qa:static   # after build: broken links, meta, JSON-LD validity
 npm run seo:audit   # after build: SEO/content audit → reports/seo-audit.{md,json} (see NOTES.md)
+npm run nav:check     # after build: header/mobile/footer navigation rules (D1/D2) in 4 locales
+npm run i18n:check    # translation structure vs English (RU/TH/HE)
+npm run contact:check # contact form logic with mocked delivery (nothing is sent)
+npm run qa:form       # browser journey of the contact form with a stubbed endpoint (needs preview on :4321)
 npm run pricing:check  # after build: prices single-sourced, identical in 4 locales, no Offer schema
 npm run pricing:master # regenerate PRICING_MASTER.md from src/content/pricing.ts
 npm run seo:keywords  # regenerate FORMA_KEYWORD_MAP.md + URL_INTENT_MAP.md from src/content/keywords.json

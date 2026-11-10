@@ -9,7 +9,8 @@
 - [ ] Decide whether prices may ever appear in schema.org `Offer` (currently never).
 - [ ] Legal counsel resolves the `[[VERIFY]]` markers (`PUBLIC_LEGAL_GOVERNING_LAW`, `PUBLIC_LEGAL_RETENTION_PERIOD`, `PUBLIC_LEGAL_UPDATED_DATE`) — OWNER INPUT REQUIRED.
 - [ ] Native reviewers for RU, TH, HE (terminology list in NOTES.md) — OWNER INPUT REQUIRED.
-- [ ] Telegram: create/rotate the bot token, set `TELEGRAM_BOT_TOKEN` and `TELEGRAM_CHAT_ID` server-side after hosting — DEFERRED BY OWNER. The phone number is not a token.
+- [ ] Lead delivery: set at least one channel server-side after hosting — Telegram (`TELEGRAM_BOT_TOKEN` + `TELEGRAM_CHAT_ID`; revoke the old leaked tokens in @BotFather first, URGENT), email (`RESEND_API_KEY` + `CONTACT_EMAIL_FROM` + `CONTACT_EMAIL_TO`), optional `LEAD_WEBHOOK_URL` — DEFERRED BY OWNER. The phone number is not a token.
+- [ ] Privacy Policy mentions the session attribution (landing page, referrer, UTM; only after analytics consent) and the email/Telegram processors — lawyer review.
 - [ ] Analytics IDs (`PUBLIC_GA4_MEASUREMENT_ID`, `PUBLIC_YANDEX_METRICA_ID`) — DEFERRED BY OWNER.
 - [ ] Google Business Profile — OWNER WILL HANDLE. The site must not claim it is verified.
 - [ ] Certificates, registration numbers, tax IDs — DEFERRED BY OWNER; none are displayed.
@@ -22,7 +23,7 @@
 
 ## 3. Before deploying (local)
 - [ ] `npm ci && npm run check && npm run build`
-- [ ] `npm run qa:static && npm run seo:audit && npm run pricing:check` — 0 FAIL / 0 errors
+- [ ] `npm run qa:static && npm run seo:audit && npm run pricing:check && npm run nav:check && npm run i18n:check && npm run contact:check` — 0 FAIL / 0 errors
 - [ ] `node scripts/qa/browsercheck.cjs` (needs `astro preview` on :4321 and Chrome)
 - [ ] `git diff` reviewed; no secrets committed.
 

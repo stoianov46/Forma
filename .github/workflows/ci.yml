@@ -28,6 +28,10 @@ jobs:
       - run: npm run seo:audit
       # Prices: single source (src/content/pricing.ts), identical in all locales, no Offer schema.
       - run: npm run pricing:check
+      # Navigation decisions D1/D2 in all four locales, translation structure, and the contact form logic (mocked, sends nothing).
+      - run: npm run nav:check
+      - run: npm run i18n:check
+      - run: npm run contact:check
       - uses: actions/upload-artifact@v4
         if: always()
         with:

@@ -1,7 +1,7 @@
 ---
 import type { Locale } from '../../lib/i18n';
 import { getDictionary } from '../../i18n/dictionary';
-import { withBase } from '../../lib/i18n';
+import { withBase, LOCALES, LOCALE_LABEL } from '../../lib/i18n';
 import { services } from '../../content/services';
 import { locations } from '../../content/locations';
 
@@ -12,6 +12,9 @@ interface Props {
 }
 const { locale, presetService, presetLocation } = Astro.props;
 const t = getDictionary(locale);
+// Option VALUES are the stable English strings (validated server-side in functions/_lib/lead-core.ts);
+// only the visible labels are translated.
+const en = getDictionary('en');
 // Lead intake endpoint. Defaults to the Cloudflare Pages Function at
 // /api/lead; set PUBLIC_LEAD_ENDPOINT when hosting the static site somewhere
 // without functions (e.g. GitHub Pages) and running the endpoint elsewhere.
@@ -48,7 +51,7 @@ const leadEndpoint = import.meta.env.PUBLIC_LEAD_ENDPOINT || withBase('/api/lead
     <div class="sm:col-span-1">
       <label for="projectType" class="text-sm font-medium">{t.form.projectType} <span class="text-terracotta-500">*</span></label>
       <select id="projectType" name="projectType" required class="mt-1.5 w-full rounded-lg border border-ink-900/20 bg-stone-50 px-4 py-3 text-sm focus-visible:border-terracotta-500">
-        {t.form.projectTypeOptions.map((opt) => <option value={opt}>{opt}</option>)}
+        {t.form.projectTypeOptions.map((label, i) => <option value={en.form.projectTypeOptions[i]}>{label}</option>)}
       </select>
     </div>
 
@@ -80,7 +83,14 @@ const leadEndpoint = import.meta.env.PUBLIC_LEAD_ENDPOINT || withBase('/api/lead
     <div class="sm:col-span-1">
       <label for="preferredContact" class="text-sm font-medium">{t.form.preferredContact}</label>
       <select id="preferredContact" name="preferredContact" class="mt-1.5 w-full rounded-lg border border-ink-900/20 bg-stone-50 px-4 py-3 text-sm focus-visible:border-terracotta-500">
-        {t.form.contactMethodOptions.map((opt) => <option value={opt}>{opt}</option>)}
+        {t.form.contactMethodOptions.map((label, i) => <option value={en.form.contactMethodOptions[i]}>{label}</option>)}
+      </select>
+    </div>
+
+    <div class="sm:col-span-1">
+      <label for="replyLanguage" class="text-sm font-medium">{t.form.replyLanguage}</label>
+      <select id="replyLanguage" name="replyLanguage" class="mt-1.5 w-full rounded-lg border border-ink-900/20 bg-stone-50 px-4 py-3 text-sm focus-visible:border-terracotta-500">
+        {LOCALES.map((l) => <option value={l} selected={l === locale}>{LOCALE_LABEL[l]}</option>)}
       </select>
     </div>
 
@@ -89,11 +99,21 @@ const leadEndpoint = import.meta.env.PUBLIC_LEAD_ENDPOINT || withBase('/api/lead
       <textarea id="message" name="message" required minlength="10" maxlength="4000" rows="5" class="mt-1.5 w-full rounded-lg border border-ink-900/20 bg-stone-50 px-4 py-3 text-sm focus-visible:border-terracotta-500"></textarea>
     </div>
 
-    <div class="sm:col-span-2">
+    <div id="lead-submit-row" class="sm:col-span-2">
       <button type="submit" id="lead-submit" class="inline-flex items-center justify-center rounded-full bg-ink-900 px-7 py-3.5 text-sm font-medium text-stone-50 transition-colors hover:bg-olive-700 disabled:opacity-60">
         {t.form.submit}
       </button>
       <p class="body-m mt-4 text-ink-900/60">{t.form.privacyNotice}</p>
+    </div>
+
+    <div id="lead-review" hidden class="sm:col-span-2 rounded-xl border border-ink-900/15 bg-stone-100 p-6">
+      <h2 class="text-xl">{t.form.reviewHeading}</h2>
+      <p class="body-m mt-1 text-ink-900/70">{t.form.reviewHint}</p>
+      <dl id="lead-review-list" class="mt-5 grid gap-3 text-sm sm:grid-cols-2"></dl>
+      <div class="mt-6 flex flex-wrap gap-3">
+        <button type="button" id="lead-edit" class="rounded-full border border-ink-900/25 px-6 py-3 text-sm font-medium hover:bg-stone-50">{t.form.edit}</button>
+        <button type="button" id="lead-send" class="rounded-full bg-ink-900 px-7 py-3 text-sm font-medium text-stone-50 hover:bg-olive-700 disabled:opacity-60">{t.form.send}</button>
+      </div>
     </div>
 
     <div id="lead-success" role="status" class="hidden sm:col-span-2 rounded-xl bg-olive-600/10 p-5">
@@ -107,30 +127,23 @@ const leadEndpoint = import.meta.env.PUBLIC_LEAD_ENDPOINT || withBase('/api/lead
   </form>
 </div>
 
-<script define:vars={{ submitLabel: t.form.submit, sendingLabel: t.form.submitting }}>
+<script define:vars={{ sendLabel: t.form.send, reviewLabel: t.form.review, sendingLabel: t.form.submitting }}>
   const form = document.getElementById('lead-form');
   const submitBtn = document.getElementById('lead-submit');
+  const submitRow = document.getElementById('lead-submit-row');
+  const reviewBox = document.getElementById('lead-review');
+  const reviewList = document.getElementById('lead-review-list');
+  const editBtn = document.getElementById('lead-edit');
+  const sendBtn = document.getElementById('lead-send');
   const successBox = document.getElementById('lead-success');
   const errorBox = document.getElementById('lead-error');
   const sourceUrlInput = document.getElementById('source-url');
 
   if (sourceUrlInput) sourceUrlInput.value = window.location.href;
+  // With JavaScript the first press opens the review step; without it the form posts directly.
+  if (submitBtn) submitBtn.textContent = reviewLabel;
 
   const params = new URLSearchParams(window.location.search);
-  const utmFields = ['utm_source', 'utm_medium', 'utm_campaign', 'utm_content', 'utm_term'];
-  utmFields.forEach((key) => {
-    const value = params.get(key);
-    if (value && form) {
-      const hidden = document.createElement('input');
-      hidden.type = 'hidden';
-      hidden.name = key;
-      hidden.value = value;
-      form.appendChild(hidden);
-    }
-  });
-
-  // Contextual preselect from a service/location page CTA (?service=slug / ?location=slug).
-  // Read client-side since this is a statically generated page with no server request context.
   const presetService = params.get('service');
   const presetLocation = params.get('location');
   const serviceSelect = document.getElementById('service');
@@ -138,7 +151,67 @@ const leadEndpoint = import.meta.env.PUBLIC_LEAD_ENDPOINT || withBase('/api/lead
   if (presetService && serviceSelect instanceof HTMLSelectElement) serviceSelect.value = presetService;
   if (presetLocation && locationSelect instanceof HTMLSelectElement) locationSelect.value = presetLocation;
 
-  form?.addEventListener('submit', async (e) => {
+  // First-touch attribution (landing page, referrer host, UTM) is stored for the session by
+  // Attribution.astro only after analytics consent. UTM values in this page's own URL always apply.
+  function setHidden(name, value) {
+    if (!value || !(form instanceof HTMLFormElement)) return;
+    let el = form.querySelector('input[type="hidden"][name="' + name + '"]');
+    if (!el) {
+      el = document.createElement('input');
+      el.type = 'hidden';
+      el.name = name;
+      form.appendChild(el);
+    }
+    el.value = value;
+  }
+  function applyAttribution() {
+    let stored = {};
+    try {
+      stored = JSON.parse(sessionStorage.getItem('formaAttribution') || '{}');
+    } catch {}
+    ['landingPage', 'referrer', 'utm_source', 'utm_medium', 'utm_campaign', 'utm_content', 'utm_term'].forEach((k) => setHidden(k, stored[k]));
+    ['utm_source', 'utm_medium', 'utm_campaign', 'utm_content', 'utm_term'].forEach((k) => setHidden(k, params.get(k)));
+  }
+
+  function labelFor(id) {
+    const l = document.querySelector('label[for="' + id + '"]');
+    return l ? l.textContent.replace('*', '').trim() : id;
+  }
+  function shownValue(id) {
+    const el = document.getElementById(id);
+    if (!el) return '';
+    if (el instanceof HTMLSelectElement) return el.value ? el.options[el.selectedIndex].text : '';
+    return el.value.trim();
+  }
+  function buildReview() {
+    if (!reviewList) return;
+    reviewList.textContent = '';
+    ['name', 'email', 'whatsapp', 'projectType', 'service', 'location', 'budget', 'preferredContact', 'replyLanguage', 'message'].forEach((id) => {
+      const v = shownValue(id);
+      if (!v) return;
+      const wrap = document.createElement('div');
+      if (id === 'message') wrap.className = 'sm:col-span-2';
+      const dt = document.createElement('dt');
+      dt.className = 'text-xs font-semibold tracking-wide text-ink-900/60 uppercase';
+      dt.textContent = labelFor(id);
+      const dd = document.createElement('dd');
+      dd.className = 'mt-0.5 whitespace-pre-wrap text-ink-900';
+      dd.textContent = v;
+      wrap.append(dt, dd);
+      reviewList.append(wrap);
+    });
+  }
+  function fieldsVisible(visible) {
+    if (!(form instanceof HTMLFormElement)) return;
+    Array.from(form.children).forEach((child) => {
+      if (child === reviewBox || child === successBox || child === errorBox) return;
+      if (child instanceof HTMLInputElement && child.type === 'hidden') return;
+      child.hidden = !visible;
+    });
+    if (reviewBox) reviewBox.hidden = visible;
+  }
+
+  form?.addEventListener('submit', (e) => {
     e.preventDefault();
     if (!(form instanceof HTMLFormElement)) return;
     if (!form.checkValidity()) {
@@ -147,15 +220,29 @@ const leadEndpoint = import.meta.env.PUBLIC_LEAD_ENDPOINT || withBase('/api/lead
     }
     successBox?.classList.add('hidden');
     errorBox?.classList.add('hidden');
-    if (submitBtn instanceof HTMLButtonElement) {
-      submitBtn.disabled = true;
-      submitBtn.textContent = sendingLabel;
-    }
+    buildReview();
+    fieldsVisible(false);
+    reviewBox?.scrollIntoView({ behavior: 'smooth', block: 'center' });
+  });
 
+  editBtn?.addEventListener('click', () => {
+    fieldsVisible(true);
+    form?.querySelector('input, select, textarea')?.focus();
+  });
+
+  sendBtn?.addEventListener('click', async () => {
+    if (!(form instanceof HTMLFormElement)) return;
+    successBox?.classList.add('hidden');
+    errorBox?.classList.add('hidden');
+    applyAttribution();
+    if (sendBtn instanceof HTMLButtonElement) {
+      sendBtn.disabled = true;
+      sendBtn.textContent = sendingLabel;
+    }
     try {
-      // Submitted to the server-side intake endpoint (functions/api/lead.ts by
-      // default), which holds the Telegram bot token. Never call the Telegram
-      // API from here: anything in this script ships to every visitor.
+      // Submitted to the server-side intake endpoint (functions/api/lead.ts by default). It holds
+      // the Telegram/email/webhook secrets. Never call those APIs from here: anything in this
+      // script ships to every visitor.
       const res = await fetch(form.action, {
         method: 'POST',
         headers: { Accept: 'application/json' },
@@ -163,14 +250,17 @@ const leadEndpoint = import.meta.env.PUBLIC_LEAD_ENDPOINT || withBase('/api/lead
       });
       if (!res.ok) throw new Error('Request failed');
       form.reset();
+      fieldsVisible(true);
+      if (reviewBox) reviewBox.hidden = true;
       successBox?.classList.remove('hidden');
       successBox?.scrollIntoView({ behavior: 'smooth', block: 'center' });
     } catch {
+      // Keep everything the visitor typed: go back to the review step so they can resend.
       errorBox?.classList.remove('hidden');
     } finally {
-      if (submitBtn instanceof HTMLButtonElement) {
-        submitBtn.disabled = false;
-        submitBtn.textContent = submitLabel;
+      if (sendBtn instanceof HTMLButtonElement) {
+        sendBtn.disabled = false;
+        sendBtn.textContent = sendLabel;
       }
     }
   });

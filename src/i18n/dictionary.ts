@@ -133,6 +133,12 @@ export interface Dictionary {
     errorBody: string;
     privacyNotice: string;
     required: string;
+    replyLanguage: string;
+    review: string;
+    reviewHeading: string;
+    reviewHint: string;
+    edit: string;
+    send: string;
     projectTypeOptions: string[];
     contactMethodOptions: string[];
   };
@@ -304,6 +310,12 @@ export const en: Dictionary = {
     privacyNotice:
       'Submitting this form sends your details to our team via our secure intake system. See our Privacy Policy for how we handle your information.',
     required: 'Required',
+    replyLanguage: "Reply language",
+    review: "Review enquiry",
+    reviewHeading: "Check your details",
+    reviewHint: "Please check the details below. Nothing is sent until you press Send.",
+    edit: "Edit",
+    send: "Send enquiry",
     projectTypeOptions: ['Villa / Residence', 'Hospitality', 'Commercial', 'Renovation', 'Land / New Build', 'Other'],
     contactMethodOptions: ['Email', 'WhatsApp', 'Telegram', 'Phone call'],
   },
@@ -477,6 +489,12 @@ export const ru: Dictionary = {
     privacyNotice:
       'Отправляя форму, вы передаёте свои данные нашей команде через защищённую систему приёма заявок. См. нашу Политику конфиденциальности.',
     required: 'Обязательное поле',
+    replyLanguage: "Язык ответа",
+    review: "Проверить запрос",
+    reviewHeading: "Проверьте данные",
+    reviewHint: "Проверьте данные ниже. Ничего не отправляется, пока вы не нажмёте «Отправить».",
+    edit: "Изменить",
+    send: "Отправить запрос",
     projectTypeOptions: ['Вилла / резиденция', 'Гостиничный проект', 'Коммерческий объект', 'Реновация', 'Земля / новое строительство', 'Другое'],
     contactMethodOptions: ['Email', 'WhatsApp', 'Telegram', 'Звонок'],
   },
@@ -647,6 +665,12 @@ export const th: Dictionary = {
     errorBody: 'ไม่สามารถส่งข้อความได้ กรุณาลองใหม่อีกครั้ง หรือติดต่อเราโดยตรงทาง WhatsApp หรือ Telegram',
     privacyNotice: 'การส่งแบบฟอร์มนี้จะส่งข้อมูลของคุณไปยังทีมงานผ่านระบบรับคำขอที่ปลอดภัยของเรา ดูรายละเอียดในนโยบายความเป็นส่วนตัว',
     required: 'จำเป็นต้องกรอก',
+    replyLanguage: "ภาษาที่ใช้ตอบกลับ",
+    review: "ตรวจสอบคำขอ",
+    reviewHeading: "ตรวจสอบข้อมูลของคุณ",
+    reviewHint: "โปรดตรวจสอบข้อมูลด้านล่าง ระบบจะยังไม่ส่งจนกว่าคุณจะกดส่ง",
+    edit: "แก้ไข",
+    send: "ส่งคำขอ",
     projectTypeOptions: ['วิลล่า / ที่พักอาศัย', 'ธุรกิจโรงแรม', 'เชิงพาณิชย์', 'งานปรับปรุง', 'ที่ดิน / สร้างใหม่', 'อื่นๆ'],
     contactMethodOptions: ['อีเมล', 'WhatsApp', 'Telegram', 'โทรศัพท์'],
   },
@@ -816,6 +840,12 @@ export const he: Dictionary = {
     errorBody: 'ההודעה לא נשלחה. נסו שוב, או פנו אלינו ישירות בוואטסאפ או בטלגרם.',
     privacyNotice: 'שליחת טופס זה מעבירה את הפרטים שלכם לצוות שלנו במערכת מאובטחת. ראו את מדיניות הפרטיות שלנו למידע נוסף.',
     required: 'שדה חובה',
+    replyLanguage: "שפת המענה",
+    review: "בדיקת הפנייה",
+    reviewHeading: "בדקו את הפרטים",
+    reviewHint: "בדקו את הפרטים שלמטה. דבר לא יישלח עד שתלחצו על שליחה.",
+    edit: "עריכה",
+    send: "שליחת הפנייה",
     projectTypeOptions: ['וילה / מגורים', 'אירוח', 'מסחרי', 'שיפוץ', 'קרקע / בנייה חדשה', 'אחר'],
     contactMethodOptions: ['אימייל', 'וואטסאפ', 'טלגרם', 'שיחת טלפון'],
   },

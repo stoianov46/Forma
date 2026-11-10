@@ -1,0 +1,50 @@
+---
+/**
+ * First-touch attribution for the contact form: the first page of the session, the referrer host and
+ * UTM parameters are kept in sessionStorage and sent with an enquiry so staff know where it came from.
+ * Treated as analytics: nothing is stored unless the visitor has accepted analytics cookies
+ * (same consent record as Analytics.astro), and it is cleared when the session ends.
+ */
+---
+
+<script>
+  const CONSENT_KEY = 'formaCookieConsent';
+  const KEY = 'formaAttribution';
+
+  function hasAnalyticsConsent(): boolean {
+    try {
+      const raw = localStorage.getItem(CONSENT_KEY);
+      return Boolean(raw && JSON.parse(raw).analytics);
+    } catch {
+      return false;
+    }
+  }
+
+  function capture() {
+    try {
+      if (sessionStorage.getItem(KEY)) return;
+      const params = new URLSearchParams(window.location.search);
+      const data: Record<string, string> = { landingPage: window.location.pathname };
+      try {
+        if (document.referrer) {
+          const host = new URL(document.referrer).hostname;
+          if (host && host !== window.location.hostname) data.referrer = host;
+        }
+      } catch {
+        // malformed referrer: ignore
+      }
+      ['utm_source', 'utm_medium', 'utm_campaign', 'utm_content', 'utm_term'].forEach((k) => {
+        const v = params.get(k);
+        if (v) data[k] = v.slice(0, 100);
+      });
+      sessionStorage.setItem(KEY, JSON.stringify(data));
+    } catch {
+      // storage unavailable: attribution simply is not sent
+    }
+  }
+
+  if (hasAnalyticsConsent()) capture();
+  document.addEventListener('forma:consent', (e) => {
+    if ((e as CustomEvent).detail?.analytics) capture();
+  });
+</script>

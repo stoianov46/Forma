@@ -458,3 +458,11 @@ Derived from proposal.md's own QA tables (§22 QA DOD, §23 QA, Google Webmaster
 - Audit thresholds by locale (`seo-audit.config.json`): Hebrew direct answer ≥30 words, Hebrew description ≥85 chars, Hebrew service word target 1,250 (Hebrew packs more meaning into fewer tokens). Thai direct-answer length is not word-counted (no spaces).
 - Accepted warnings after Phase 7 (56): legal/utility pages' short descriptions, journal article titles longer than 65 characters, a few Russian descriptions up to ~188 characters, three RU service pages at 1,458–1,482 words, one TH page at 1,499 words, `[[VERIFY]]` legal markers (owner/legal counsel).
 - Keyword map is English only (`keywordLocales: ["en"]`); RU/TH/HE keyword research needs a native speaker and a keyword tool.
+
+## Contact form and checks ported from CreativeLAB (10 Nov 2026)
+
+- Form: review step (Edit / Send, nothing sent before Send), preferred reply language, server-side option whitelists (option values are stable English strings, labels are translated), first-touch attribution (landing page, referrer host, UTM) sent with the lead.
+- Attribution is stored in `sessionStorage` only after analytics consent (`Attribution.astro`). **The Privacy Policy must mention this** (lawyer review; `[[VERIFY]]` pages are English-only drafts).
+- Delivery (`functions/_lib/lead-core.ts`): Telegram, email via Resend, optional webhook; a lead counts as delivered if at least one configured channel succeeds, and the failures of the others are logged. Email needs `CONTACT_EMAIL_TO` (set it to the business email); nothing is hard-coded.
+- New checks (all in CI): `nav:check` (D1/D2 on built HTML, header + mobile menu + footer, 4 locales), `i18n:check` (structure parity of services, locations, projects, about, process, home, long-form sections and the UI dictionary; allow-list in `scripts/i18n-allow.json`), `contact:check` (mocked delivery tests and "no secrets in dist"). `npm run qa:form` is the browser journey with a stubbed endpoint (not in CI: needs Chrome).
+- Not ported from CreativeLAB: price-row Included/Not-included lists, `ImageObject`/`OfferCatalog` schema, Search Console verification env vars, `.translated-from` hash tracking (FORMA's `i18n:check` checks structure and "still English", not staleness).

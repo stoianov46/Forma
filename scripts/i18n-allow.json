@@ -1,0 +1,11 @@
+{
+  "_doc": "Proper names and by-design exceptions for scripts/i18n-check.mjs. regex = paths exempt from the 'still English' tests (project names are proper names and stay in English); emptyPaths = strings that are intentionally empty; strings = exact English texts allowed to stay identical.",
+  "regex": [
+    "^projects\\..*\\.(name|seo\\.title)$"
+  ],
+  "emptyPaths": [
+    "pricing.units.fixed"
+  ],
+  "paths": [],
+  "strings": []
+}

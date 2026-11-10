@@ -16,12 +16,16 @@
     "qa:meta": "node scripts/qa/metacheck.cjs",
     "qa:jsonld": "node scripts/qa/jsonldcheck.cjs",
     "qa:static": "npm run qa:links && npm run qa:meta && npm run qa:jsonld",
+    "i18n:check": "node scripts/i18n-check.mjs",
+    "nav:check": "node scripts/nav-check.mjs",
+    "contact:check": "node scripts/contact-check.mjs",
     "pricing:check": "node scripts/pricing-check.mjs",
     "pricing:master": "node scripts/pricing-check.mjs --write",
     "seo:keywords": "node scripts/keyword-map.mjs",
     "seo:links": "node scripts/linking-map.cjs",
     "seo:audit": "node scripts/seo-audit.cjs",
     "qa:audit": "node scripts/qa/audit.cjs --md > reports/audit-matrix.md",
+    "qa:form": "node scripts/qa/formcheck.cjs",
     "qa:browser": "node scripts/qa/browsercheck.cjs"
   },
   "dependencies": {
