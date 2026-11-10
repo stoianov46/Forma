@@ -50,6 +50,7 @@ config/devops file, and every environment variable the project reads.
 | `functions/_lib/lead-core.ts` | Contact-form logic: validation, option whitelists, Telegram/Resend-email/webhook delivery (tested by `npm run contact:check`) |
 | `scripts/nav-check.mjs`, `scripts/i18n-check.mjs` (+ `scripts/i18n-allow.json`), `scripts/contact-check.mjs`, `scripts/qa/formcheck.cjs` | `nav:check`, `i18n:check`, `contact:check`, `qa:form` |
 | `src/components/layout/Attribution.astro` | First-touch attribution (consent-gated) sent with the enquiry |
+| `TO-DO_2026-11-03.md` | **Short TODO and status, grouped by who must act (read first).** The long original spec moved to `docs/archive/ORIGINAL_SPEC_AND_OWNER_INSTRUCTIONS.md` |
 | `AUDIT.md` | Local audit findings + status (Phase 1). Full matrix: `reports/audit-matrix.md`, data: `reports/audit.json` |
 | `FORMA_SEO_CONTENT_AUDIT.md` | Per-page-type SEO/content audit summary |
 

@@ -1,0 +1,1601 @@
+# FORMA.in.th — FINAL AUTONOMOUS COMPLETION TO-DO
+
+**Date:** November 3, 2026  
+**Repository:** https://github.com/stoianov46/Forma  
+**Production website:** https://forma.in.th/  
+**Google Maps:** https://maps.app.goo.gl/Lx2HBNn8kP1rvpfd6?g_st=ic  
+**Required languages:** English / Russian / Thai / Hebrew  
+**Status:** Final development and completion instructions
+
+---
+
+## 0. PRIMARY OBJECTIVE
+
+Bring the existing FORMA website to a complete, professional, premium architecture and design-build standard.
+
+This is an existing project. Do not rebuild it from scratch, replace working components unnecessarily, or repeat completed work.
+
+Your responsibility is to:
+
+1. Audit the entire live production website.
+2. Compare every discovered page against the original requirements and project documentation.
+3. Identify what is complete, incomplete, missing, broken, outdated, or unverified.
+4. Implement all outstanding work that does not require unavailable external access or owner approval.
+5. Deliver a fully tested and documented project.
+
+**The most important rule: do not duplicate completed work.**
+
+Do not treat an old progress report as proof that a feature currently works. Verify the actual production website and source code.
+
+Do not limit the task to producing an audit report. Execute the work.
+
+## 1. SOURCE DOCUMENTS AND PROJECT CONTEXT
+
+Before making changes, inspect all relevant repository documentation, including:
+
+- `Improvements.md`
+- `PROGRESS.md`
+- `NOTES.md`
+- `README.md`
+- `README_FOR_AGENT.md`
+- `proposal.md`
+- `proposal-part-2.md`, if present
+- `INDEX.md`
+- `URL_INTENT_MAP.md`
+- `FINAL_QA.md`
+- `package.json`
+- `.env.example`
+- Existing documentation and design specifications.
+
+The primary repository is:
+
+`https://github.com/stoianov46/Forma`
+
+Do not use old repositories or outdated GitHub Pages URLs as the source of truth.
+
+The production domain is:
+
+`https://forma.in.th/`
+
+Use this domain consistently for canonical URLs, hreflang, sitemap, Open Graph and internal production references, unless the actual deployment configuration proves otherwise.
+
+Preserve the original requirements in `Improvements.md`. Do not replace the original specification with this checklist.
+
+Resolve conflicting historical instructions according to the latest explicit owner decisions documented here.
+
+## 2. COMPLETE PRODUCTION WEBSITE AUDIT
+
+Perform a full crawl of the live production website before implementation.
+
+Do not inspect only the homepage or a small sample of pages.
+
+### 2.1 Discover every URL
+
+Use all available sources:
+
+- Production sitemap.
+- `robots.txt`.
+- Internal navigation links.
+- Footer links.
+- Source-code route definitions.
+- Language route definitions.
+- Service pages.
+- Subservice pages.
+- Island landing pages.
+- District landing pages.
+- Project and portfolio pages.
+- Journal and article pages.
+- Contact and legal pages.
+
+Identify:
+
+- All publicly accessible production URLs.
+- All language versions.
+- Routes that exist in the source code but are inaccessible through navigation.
+- Sitemap URLs that do not work.
+- Orphan pages.
+- Duplicate pages.
+- Redirect chains.
+- Broken routes and 404 responses.
+
+Check all four language versions: EN, RU, TH and HE.
+
+### 2.2 Audit every discovered page
+
+For every URL, verify:
+
+- HTTP status.
+- Correct page content.
+- Unique title tag.
+- Meta description.
+- One primary H1.
+- Logical H2/H3 hierarchy.
+- Search intent.
+- Content quality and uniqueness.
+- Direct-answer section.
+- Internal links.
+- Breadcrumbs.
+- Canonical URL.
+- Hreflang.
+- Open Graph metadata.
+- Structured data.
+- Image quality and alt text.
+- Pricing table.
+- Language consistency.
+- Mobile layout.
+- Accessibility.
+- CTA functionality.
+
+Create a complete audit matrix:
+
+`URL | Locale | Page Type | HTTP Status | SEO | Content | Pricing | Schema | Internal Links | Mobile | Evidence | Required Action`
+
+Every finding must include the affected URL, evidence, severity and recommended correction.
+
+Do not mark a page as verified unless it has actually been tested.
+
+## 3. NAVIGATION AND OWNER DECISIONS
+
+Preserve and implement the following owner-approved decisions.
+
+### D1 — Header and Footer
+
+Remove `Start a Project` from:
+
+- Desktop header.
+- Sticky header.
+- Mobile navigation.
+- Footer.
+
+Keep `Contact` in the header.
+
+The `Start a Project` CTA should remain available inside page content, including hero sections, service pages and final CTA sections.
+
+Verify all four languages and the Hebrew RTL layout.
+
+### D2 — Islands Navigation
+
+The main navigation must contain one group:
+
+**Islands**
+- Koh Phangan
+- Koh Samui
+- Koh Tao
+- Bali
+
+Koh Phangan districts must not appear as separate top-level navigation items.
+
+District pages may remain available as internal SEO landing pages if they provide meaningful, unique content.
+
+Check desktop navigation, mobile navigation, footer and all language versions.
+
+### D3 — Design Versions
+
+Inspect `/v1`, `/v2`, `/v3` and related design variants.
+
+Keep the currently approved design.
+
+Remove unused versions and routes only after confirming that they are not used by production or required by the current architecture.
+
+Update sitemap and navigation accordingly.
+
+### D4 — Page-Level Quality
+
+Every important page must have:
+
+- Unique SEO content.
+- A useful direct-answer section.
+- Correct structured data.
+- A visible pricing table where the page represents a commercial service.
+
+### D5 — Homepage Architecture
+
+The homepage `/` remains the main services overview.
+
+Do not create a separate `/services/` page if this conflicts with the approved site architecture.
+
+## 4. PRICING STRATEGY — NEW OWNER DECISION
+
+Previous instructions asking the owner to provide all pricing information are superseded.
+
+**You are responsible for researching the market and creating the pricing strategy independently.**
+
+Do not wait for the owner to provide a price list.
+
+### 4.1 Market research
+
+Research current 2026 market pricing for comparable services in:
+
+- Koh Phangan.
+- Koh Samui.
+- Phuket.
+- Bangkok.
+- Other relevant premium architecture and construction markets in Thailand.
+
+Use publicly available competitor pricing, service proposals, industry references and credible market sources.
+
+Document the sources, research date, assumptions and methodology.
+
+### 4.2 Market positioning
+
+Position FORMA in the upper-middle market / premium mid-market segment.
+
+As an initial pricing principle, aim approximately 10–20% above comparable market averages where justified by service quality, expertise, scope and positioning.
+
+Do not apply an automatic markup without evidence.
+
+Do not copy competitor pricing.
+
+Avoid artificially inflated prices that cannot be justified by the actual service scope.
+
+### 4.3 Mandatory pricing tables
+
+Every individual commercial service page must contain its own visible pricing table.
+
+A general pricing page does not replace service-specific pricing.
+
+Do not use only relative labels such as:
+
+- Base.
+- 1.5x–2.5x.
+- 3x+.
+
+Provide meaningful indicative THB prices.
+
+Each pricing table should explain:
+
+- Service or project type.
+- Package or scope.
+- Included deliverables.
+- Unit of calculation.
+- Indicative price or price range.
+- Exclusions.
+- Additional expenses.
+- Factors affecting the final price.
+
+Use THB/m² where appropriate.
+
+Use fixed fees, project-based ranges or percentage-based fees where more suitable.
+
+### 4.4 Separate cost categories
+
+Clearly distinguish:
+
+- Architecture and design fees.
+- Structural engineering.
+- MEP consultants.
+- Interior design.
+- Landscape design.
+- Construction.
+- Project supervision.
+- Project management.
+- Permits and documentation.
+- Earthworks.
+- Retaining walls.
+- Foundations.
+- Materials.
+- Transportation and island logistics.
+- VAT and applicable government fees.
+
+Do not combine unrelated costs into a misleading single price.
+
+### 4.5 Pricing disclaimers
+
+All preliminary prices must be identified as indicative estimates.
+
+Explain that final quotations depend on:
+
+- Site inspection.
+- Land conditions.
+- Project size.
+- Architectural complexity.
+- Structural requirements.
+- Material selection.
+- Access and logistics.
+- Applicable permits and professional consultants.
+
+Indicative prices must not be presented as guaranteed quotations.
+
+### 4.6 Centralized pricing source
+
+Create:
+
+- `PRICING_STRATEGY.md`
+- `PRICING_MASTER.md`
+- A centralized data source such as `pricing.ts` or `pricing.json`.
+
+All service pages and all language versions must use the same underlying numerical values.
+
+Never manually duplicate different prices across language files.
+
+Record provisional assumptions and unresolved pricing decisions in `NOTES.md`.
+
+Structured data must not represent indicative prices as confirmed commercial offers.
+
+## 5. SEO, FEATURED SNIPPETS AND AI SEARCH
+
+Create or improve a complete SEO structure for every relevant page.
+
+Every page must have:
+
+- Unique SEO title.
+- Unique meta description.
+- One primary H1.
+- Primary keyword.
+- Secondary keywords.
+- Clearly defined search intent.
+- Direct-answer section of approximately 40–60 words.
+- Logical H2/H3 structure.
+- Useful and original content.
+- Relevant FAQ.
+- Internal links.
+- Related services.
+- Related projects.
+- Relevant location references.
+- Correct structured data.
+
+### Search optimization targets
+
+Optimize content for:
+
+- Google organic search.
+- Google Featured Snippets.
+- Google AI Overviews.
+- ChatGPT search.
+- Perplexity.
+- Other AI search and answer systems.
+
+Use clear definitions, concise explanations, factual statements and structured information that search systems can understand.
+
+Do not promise guaranteed rankings, Featured Snippets or AI citations.
+
+Avoid:
+
+- Keyword stuffing.
+- Thin content.
+- Duplicate location pages.
+- Doorway pages.
+- Artificial word-count inflation.
+
+### Brand voice
+
+FORMA should communicate as a premium architecture and design-build studio.
+
+Use precise, professional, technically credible language.
+
+Avoid empty marketing clichés and repetitive phrases such as:
+
+- Bespoke.
+- Seamless.
+- Tailored.
+- Timeless.
+- Unparalleled.
+- World-class.
+- Cutting-edge.
+- One-stop solution.
+
+Every content section must provide useful information.
+
+## 6. DEMONSTRATION PROJECTS AND PORTFOLIO
+
+The owner authorizes you to create original demonstration projects and visual materials.
+
+Do not wait for real client photographs or completed construction projects.
+
+Build a visually compelling portfolio covering:
+
+- Villa architecture.
+- Architectural concepts.
+- Interior design.
+- Landscape design.
+- Swimming pools.
+- Renovation.
+- Concrete architecture.
+- Eco construction.
+- Turnkey villas.
+- Hospitality concepts.
+
+Create original visual assets, including:
+
+- Architectural renders.
+- Floor-plan concepts.
+- Design diagrams.
+- Moodboards.
+- Material palettes.
+- Interior visualizations.
+- Landscape concepts.
+- Project descriptions.
+
+The visual quality should resemble a professional premium architecture studio, not a generic AI image catalogue.
+
+### Mandatory transparency
+
+Every fictional project must be clearly labelled:
+
+- `Concept Project`
+- `Demonstration Project`
+- `Illustrative Design Study`
+
+Never present fictional projects as completed real buildings.
+
+Never invent:
+
+- Real clients.
+- Real site addresses.
+- Construction completion dates.
+- Actual project budgets.
+- Verified material specifications.
+- Technical certifications.
+- Client testimonials.
+- Real construction outcomes.
+
+Create `CONCEPT_PORTFOLIO.md` documenting all demonstration projects and their status.
+
+## 7. BUSINESS ADDRESS AND CONTACT INFORMATION
+
+The owner has specified a shared physical address for FORMA and CreativeLAB.
+
+**FORMA Google Maps listing:**
+
+https://maps.app.goo.gl/Lx2HBNn8kP1rvpfd6?g_st=ic
+
+**Address:**
+
+`PX5R+JX7, Forma.in.th, Koh Phangan, Ko Pha-ngan District, Surat Thani 84280, Thailand`
+
+Use this address in the relevant contact sections and website components.
+
+Do not invent:
+
+- A phone number.
+- Legal registration details.
+- Company registration number.
+- Professional licences.
+- Additional street or building numbers.
+- Other unverified business details.
+
+Preserve existing verified email addresses and messaging channels unless they are demonstrably broken or outdated.
+
+Check:
+
+- Contact page.
+- Footer.
+- Mobile contact elements.
+- Contact links.
+- Map link.
+- Address consistency.
+- Structured data.
+- All language versions.
+
+If a phone number or legal detail is unavailable, mark it as `OWNER INPUT REQUIRED`.
+
+## 8. FOUR-LANGUAGE IMPLEMENTATION
+
+Required languages:
+
+- English.
+- Russian.
+- Thai.
+- Hebrew.
+
+English is the master content language.
+
+Complete all public pages in all four languages, including:
+
+- Service pages.
+- Subservice pages.
+- Islands.
+- Districts.
+- Projects.
+- About.
+- Process.
+- Journal.
+- Contact.
+- FAQ.
+- Pricing tables.
+- Legal pages.
+- Metadata.
+- Relevant structured-data text.
+
+### Hebrew RTL
+
+Implement genuine RTL support, not simply `text-align: right`.
+
+Check:
+
+- Header.
+- Navigation.
+- Dropdowns.
+- Breadcrumbs.
+- Forms.
+- Tables.
+- Grids.
+- Buttons.
+- Icons and directional controls.
+- Image captions.
+- Phone numbers.
+- URLs.
+- Responsive layouts.
+
+Do not leave accidental English fallback strings in RU, TH or HE pages.
+
+All four language versions must display identical numerical prices.
+
+## 9. STRUCTURED DATA — SCHEMA.ORG
+
+Audit and implement appropriate structured data:
+
+- Organization.
+- WebSite.
+- WebPage.
+- Service.
+- OfferCatalog.
+- Offer / priceSpecification where justified by accurate, visible pricing.
+- BreadcrumbList.
+- CreativeWork.
+- ImageObject.
+- Article / BlogPosting.
+- ContactPage.
+- FAQPage where applicable and compliant with current search-engine requirements.
+
+Use LocalBusiness only if the real business entity and physical address accurately qualify.
+
+Never invent:
+
+- Ratings.
+- Reviews.
+- Awards.
+- Certifications.
+- Prices.
+- Authors.
+- Business details.
+
+Structured data must accurately reflect visible page content.
+
+## 10. LEGAL, TECHNICAL SEO AND ANALYTICS
+
+Audit and improve:
+
+- Privacy Policy.
+- Terms.
+- Cookies.
+- PDPA.
+- Accessibility.
+- Editorial Policy.
+- Cookie consent: Accept / Reject / Settings.
+- `robots.txt`.
+- XML sitemap.
+- `llms.txt`.
+- Search Console readiness.
+- Analytics.
+- Yandex Webmaster readiness.
+- CI checks.
+
+Do not load non-essential tracking scripts before user consent.
+
+Do not expose API tokens, credentials or private configuration.
+
+Do not invent legal information.
+
+For unresolved legal terms, clearly document the required owner or legal review.
+
+## 11. PERFORMANCE, MOBILE AND ACCESSIBILITY
+
+Test:
+
+- Lighthouse.
+- Core Web Vitals.
+- axe-core.
+- Image optimization.
+- Font loading.
+- CSS and JavaScript performance.
+- Lazy loading.
+- Responsive layouts.
+- Keyboard navigation.
+- Mobile menus.
+- Touch interactions.
+- Forms.
+- RTL rendering.
+
+Test these viewport widths:
+
+`320, 360, 375, 390, 412, 430, 768, 1024, 1280, 1440, 1728, 1920 px`
+
+Test Safari, Chrome, Firefox and Edge where available.
+
+Do not report a manual browser test as completed unless it was actually performed.
+
+## 12. DOCUMENTATION REQUIREMENTS
+
+Create or update the following documents:
+
+- `AUDIT.md`
+- `IMPLEMENTATION_PLAN.md`
+- `PRICING_STRATEGY.md`
+- `PRICING_MASTER.md`
+- `SEO_CONTENT_MAP.md`
+- `URL_INTENT_MAP.md`
+- `INTERNAL_LINKING_MAP.md`
+- `CONTENT_QA.md`
+- `SEO_GEO_AUDIT.md`
+- `CONCEPT_PORTFOLIO.md`
+- `SCHEMA_QA.md`
+- `FINAL_QA.md`
+- `RELEASE_CHECKLIST.md`
+- `PROGRESS.md`
+- `NOTES.md`
+
+Do not create duplicate documents if equivalent files already exist. Update existing documents instead.
+
+Update `INDEX.md` to reflect the current documentation structure.
+
+## 13. IMPLEMENTATION PRIORITY
+
+Work in this order:
+
+1. Full production crawl and repository audit.
+2. Route, navigation and broken-link corrections.
+3. Centralized pricing strategy and data.
+4. Service-specific pricing tables.
+5. Complete SEO content.
+6. Demonstration portfolio.
+7. Four-language implementation.
+8. Hebrew RTL.
+9. Schema.org.
+10. Contact and legal sections.
+11. Technical SEO and analytics readiness.
+12. Performance and accessibility.
+13. Final QA.
+
+After every implementation stage, record:
+
+- What was completed.
+- Files changed.
+- Commands and tests executed.
+- Actual test results.
+- Remaining issues.
+
+Use these status labels:
+
+- `TODO`
+- `IN PROGRESS`
+- `CODE DONE`
+- `PRODUCTION VERIFIED`
+- `OWNER INPUT REQUIRED`
+- `BLOCKED`
+- `FAILED`
+
+**Do not push commits, change DNS or deploy to production without explicit owner approval.**
+
+## 14. DEFINITION OF DONE
+
+FORMA is complete only when:
+
+- Every discovered production page has been audited.
+- All four language versions work.
+- No critical 404 errors remain.
+- Internal navigation and links work.
+- All commercial service pages have meaningful content.
+- Every commercial service page has its own pricing table.
+- Pricing is centralized and consistent.
+- Demonstration projects are clearly labelled.
+- SEO metadata and content have been checked.
+- Structured data matches visible content.
+- Contact information is consistent and accurate.
+- Mobile and RTL layouts pass QA.
+- Accessibility checks have been performed.
+- Build and CI pass.
+- Production has been verified after an approved deployment.
+
+### Final audit report
+
+Deliver a final matrix:
+
+`URL | Locale | Status | Findings | Fix Applied | Evidence | Test Result | Commit`
+
+
+
+# ADDITIONAL OWNER INSTRUCTIONS — CONTACTS, BUSINESS DATA AND DEVELOPMENT SCOPE
+
+**Project:** FORMA  
+**Repository:** `stoianov46/Forma`  
+**Website:** https://forma.in.th/
+
+These instructions supplement the existing TO-DO.md and override any conflicting assumptions about missing owner information.
+
+### 1. Shared business identity and address
+
+FORMA and CreativeLAB use the same company identity, phone number, email address and physical business address.
+
+Use the following address:
+
+`PX5R+JX7, Forma.in.th, Ko Pha-ngan, Ko Pha-ngan District, Surat Thani 84280, Thailand`
+
+Use this address consistently on the website, contact page, footer and appropriate structured data.
+
+Do not invent additional company registration details, tax numbers or legal addresses.
+
+### 2. Shared phone number — owner confirmed
+
+Use this exact number everywhere on FORMA:
+
+**Phone:** `+66808705704`
+
+- Telephone: `tel:+66808705704`
+- WhatsApp: `https://wa.me/66808705704`
+- Telegram: use the supplied phone number as the owner's Telegram contact. Implement a tested Telegram contact link where supported; if direct phone-based linking is unavailable because of Telegram privacy settings, display the number and provide a copyable contact option.
+
+Use the same number in every language and on desktop and mobile.
+
+Remove outdated or conflicting contact numbers.
+
+Important: the phone number is not a Telegram Bot API token or Telegram chat ID.
+
+### 3. Email and CRM
+
+Use the existing business email address already published on the websites or present in the repository. The same email is used by FORMA and CreativeLAB.
+
+Use it for contact information, `mailto:` links and intended lead notifications.
+
+Implement the contact form, validation, error handling and email-delivery architecture. If SMTP credentials or an external service are required, make them configurable and document the activation steps.
+
+Do not invent CRM accounts, webhooks or email credentials. If no CRM is configured, implement an email-based lead workflow and an optional CRM integration interface.
+
+### 4. Telegram bot — token will be added later
+
+The owner will manually add the real Telegram bot token after hosting.
+
+Do not wait for it.
+
+Implement the Telegram notification code, message formatting, configuration, error handling and documentation now.
+
+Use environment variables:
+
+- `TELEGRAM_BOT_TOKEN`
+- `TELEGRAM_CHAT_ID`
+
+Never use the supplied phone number as either variable.
+
+For local tests, use a disposable test bot only if valid credentials are already available. Otherwise use a mock adapter.
+
+Do not hardcode or commit secrets.
+
+Document exactly where the owner must insert the real token and chat ID after hosting.
+
+### 5. Analytics — postponed
+
+Do not require or invent:
+
+- Google Analytics / GA4 IDs.
+- Google Tag Manager IDs.
+- Yandex Metrika IDs.
+- Meta Pixel IDs.
+- Meta Conversion API credentials.
+
+The owner will add analytics manually later.
+
+Keep optional integration points documented. Do not block development because these IDs are missing.
+
+**Status: DEFERRED BY OWNER.**
+
+### 6. Google Business Profile
+
+The owner will personally handle Google Business Profile verification.
+
+Complete all website-side local SEO work without waiting for verification.
+
+Do not claim that the profile is verified or invent profile IDs, ratings or reviews.
+
+**Status: OWNER WILL HANDLE.**
+
+### 7. Legal details and certificates
+
+The shared physical address is the only additional business location information authorized at this stage.
+
+Do not invent company registration numbers, tax IDs, licenses or other legal details.
+
+The owner will provide professional certificates later. Do not display unverified certifications or badges.
+
+Do not block development because certificates are unavailable.
+
+**Status: DEFERRED BY OWNER.**
+
+### 8. Hosting and production deployment
+
+Another assistant will handle hosting, Cloudflare Pages, DNS and production deployment.
+
+Do not request hosting credentials, modify DNS or attempt deployment.
+
+Prepare the complete source code for handoff. Complete local builds, tests, environment templates and documentation.
+
+Do not push or deploy without explicit authorization.
+
+**Status: EXTERNAL DEPLOYMENT — HANDLED BY ANOTHER ASSISTANT.**
+
+### 9. Final instruction — do not create artificial blockers
+
+The following are not development blockers:
+
+- Missing production Telegram bot token.
+- Missing Telegram chat ID before bot activation.
+- Missing analytics IDs.
+- Google Business Profile verification.
+- Future professional certificates.
+- Additional legal registration details.
+- Hosting and Cloudflare credentials.
+- Production deployment access.
+- External CRM credentials, provided the email-based architecture is implemented.
+
+Use the confirmed phone number, existing shared email and shared address.
+
+Complete and locally test everything possible. Clearly document only the remaining owner actions.
+
+Do not mark these deferred items as failed or use them as a reason to stop development.
+# FORMA — COMPLETE WEBSITE SEO, COPYWRITING AND CONTENT QUALITY SPECIFICATION
+
+**Priority:** P1 — Critical  
+**Repository:** `https://github.com/stoianov46/Forma`  
+**Production website:** `https://forma.in.th/`  
+**Languages:** EN / RU / TH / HE  
+**Scope:** Entire website — all existing and future pages.
+
+## 1. Main objective
+
+Conduct a complete SEO, content and copywriting audit of the entire FORMA website.
+
+The objective is to ensure that every important page has:
+
+- A clearly defined search intent.
+- A dedicated primary keyword and supporting keyword cluster.
+- An optimized SEO Title and Meta Description.
+- An H1 containing the primary keyword.
+- A logical H2/H3 hierarchy.
+- Original, comprehensive and useful content.
+- A strong opening paragraph suitable for direct-answer search results.
+- Relevant commercial information and pricing presentation.
+- Appropriate Schema.org structured data.
+- Internal links and a clear conversion path.
+- Complete localization in EN, RU, TH and HE.
+
+Do not optimize only the homepage or the Architecture page. Apply this standard to every relevant page across the entire website.
+
+Preserve the existing premium positioning and useful content. Improve existing pages rather than replacing them with generic SEO text.
+
+## 2. Complete page inventory
+
+First, inspect the entire repository and discover every website route.
+
+Use:
+- Source code and route configuration.
+- Existing page templates and content collections.
+- Internal links.
+- Sitemap and robots.txt.
+- Generated static pages.
+- All four language versions.
+
+Create a complete inventory of indexable pages.
+
+For every page, record:
+
+- URL.
+- Language.
+- Page type.
+- Page purpose.
+- Primary keyword.
+- Secondary keywords.
+- Search intent.
+- Existing SEO Title.
+- Existing Meta Description.
+- Existing H1.
+- H2/H3 structure.
+- Approximate content word count.
+- Structured data types.
+- Internal links.
+- Canonical URL.
+- Hreflang status.
+- Content quality issues.
+- Required improvements.
+
+Create:
+
+`FORMA_SEO_CONTENT_AUDIT.md`
+
+This document must contain the actual audit results, not a generic checklist.
+
+## 3. Keyword research and page-level keyword mapping
+
+Create a dedicated keyword strategy for every important page.
+
+For each page:
+
+1. Identify its primary search intent.
+2. Research the primary keyword.
+3. Identify relevant secondary and long-tail keywords.
+4. Identify related questions and informational queries.
+5. Map keywords to Title, H1, H2/H3 and body content.
+6. Check other FORMA pages to prevent keyword cannibalization.
+7. Identify missing pages or content opportunities where justified.
+
+Build a central keyword map:
+
+`FORMA_KEYWORD_MAP.md`
+
+Include:
+
+- URL.
+- Page name.
+- Primary keyword.
+- Secondary keywords.
+- Search intent.
+- Target audience.
+- Location relevance.
+- Conversion objective.
+- Language-specific keyword variations.
+
+Do not use the same primary keyword indiscriminately across multiple pages.
+
+Do not invent search volumes or keyword difficulty values. If keyword research tools are unavailable, clearly label keyword selection as qualitative research requiring later validation.
+
+## 4. SEO Title, Meta Description and heading standards
+
+Every important indexable page must have unique metadata and a clear heading structure.
+
+### SEO Title
+
+- Include the primary keyword naturally.
+- Communicate the actual service or page subject.
+- Include Koh Phangan or another relevant location when appropriate.
+- Preserve FORMA's premium positioning.
+- Avoid duplicate or generic titles.
+
+### Meta Description
+
+- Unique for each page and language.
+- Describe the actual content and service.
+- Include the primary keyword naturally.
+- Communicate a clear customer benefit.
+- Encourage relevant clicks without exaggerated claims.
+
+### H1
+
+- One primary H1 per page.
+- Must clearly describe the page's subject.
+- Must include the primary keyword naturally.
+- Must match the actual search intent.
+
+Do not use beautiful but vague marketing slogans as the only H1.
+
+### H2 and H3
+
+- Logical hierarchy.
+- Descriptive section headings.
+- Natural supporting keyword usage.
+- No artificial keyword repetition.
+- No heading tags used only for visual styling.
+
+## 5. Specific mandatory example — Architecture page
+
+Page:
+
+`https://forma.in.th/services/architecture/`
+
+Current published SEO Title:
+
+`Architecture Studio in Koh Phangan | FORMA`
+
+Current published H1:
+
+`Architecture, Rooted in the Island`
+
+The current H1 contains the word Architecture, but does not communicate the commercial service as clearly as it should.
+
+Recommended SEO Title:
+
+`Architecture & Villa Design in Koh Phangan | FORMA`
+
+Recommended H1:
+
+`Architecture & Villa Design in Koh Phangan`
+
+Suggested opening paragraph:
+
+`FORMA provides professional architecture and villa design services in Koh Phangan, combining site analysis, tropical climate planning, architectural concepts and detailed technical documentation to create distinctive, practical and buildable properties.`
+
+These are proposed improvements. Validate the final wording against the actual services and keyword research.
+
+Audit and improve this page as part of the full website-wide implementation.
+
+Preserve useful existing material covering site analysis, architectural concepts, materials, workflow, deliverables, pricing considerations and FAQ.
+
+Expand missing topics, including:
+- Villa architecture and architectural design.
+- Site analysis and land feasibility.
+- Tropical architecture.
+- Sloped and coastal plots.
+- Natural ventilation and solar orientation.
+- Shading, drainage and moisture protection.
+- Architectural design stages.
+- Structural and MEP coordination.
+- Technical drawings and documentation.
+- Private villas and hospitality developments.
+- Project timelines and client collaboration.
+- Design-only versus design-and-build services.
+
+Do not invent services or technical capabilities that FORMA does not provide.
+
+## 6. Content depth and originality
+
+Target at least **1,500 words of meaningful original content per major commercial landing page, per language**.
+
+This is an internal editorial quality target, not a Google ranking requirement.
+
+Apply the target to major service and commercial landing pages where the topic justifies that depth.
+
+Do not force 1,500 words onto simple utility pages or pages whose search intent is better served by concise content.
+
+Content must:
+- Be original and specific to the page.
+- Explain the actual service in sufficient depth.
+- Answer real customer questions.
+- Demonstrate professional expertise.
+- Include relevant local context.
+- Avoid generic AI-generated filler.
+- Avoid repetitive paragraphs.
+- Avoid keyword stuffing.
+- Avoid duplicated content across pages.
+
+Do not generate content merely to satisfy a word counter.
+
+## 7. Standard commercial landing-page content structure
+
+Adapt the following structure to each service:
+
+1. H1 clearly identifying the service and primary keyword.
+2. Opening answer paragraph of approximately 40–60 words.
+3. Service introduction and customer value.
+4. Detailed service scope.
+5. Design philosophy and methodology.
+6. Project stages and workflow.
+7. Materials, technologies and technical considerations.
+8. Local conditions and considerations in Thailand and the islands.
+9. Deliverables and scope of work.
+10. Pricing or pricing methodology.
+11. Relevant portfolio examples, where verified.
+12. Frequently asked questions.
+13. Contact and consultation CTA.
+
+Not every page needs every section. Use editorial judgment and preserve relevance.
+
+## 8. Featured Snippet and AI search readiness
+
+Every major landing page must start its main content with a concise, direct explanation of the service.
+
+Target approximately 40–60 words for the opening answer.
+
+The paragraph should:
+- Define the service.
+- Include the primary keyword naturally.
+- Explain the service's purpose or benefit.
+- Mention the location where relevant.
+- Make sense independently of the surrounding content.
+
+Structure suitable sections using:
+- Direct definition paragraphs.
+- Numbered process lists.
+- Bullet-point lists.
+- Comparison tables.
+- Question-based H2 headings.
+- Concise FAQ answers.
+
+Write clear, factual content that can be understood by search engines and AI-powered search systems.
+
+Do not promise Featured Snippets, AI citations or specific rankings.
+
+## 9. Pricing tables and commercial transparency
+
+Review every commercial service page for pricing information.
+
+Where verified prices exist, display a clear pricing table containing:
+
+- Service or package.
+- Scope and deliverables.
+- Price or price range in THB.
+- Pricing unit.
+- Important conditions.
+- Exclusions, where relevant.
+
+If the owner has not confirmed prices:
+
+- Do not invent numbers.
+- Use a transparent custom-quotation presentation.
+- Explain the factors that influence pricing.
+- Provide a clear Request a Quote CTA.
+- Mark missing information as `OWNER INPUT REQUIRED`.
+
+For the Architecture page specifically, review the existing relative investment bands (`Base`, `1.5–2.5x`, `3x+`). Do not present these as actual prices.
+
+All pricing displayed in structured data must exactly match visible and approved pricing.
+
+## 10. FAQ and customer questions
+
+Every major service page should contain useful FAQs based on actual customer concerns and relevant search queries.
+
+For architecture-related pages, consider:
+
+- What does architectural design include?
+- How much does villa architecture cost?
+- How long does architectural design take?
+- What documents and drawings are delivered?
+- Can FORMA work with land already owned by the client?
+- Can a villa be designed on a sloped plot?
+- How does tropical climate affect architecture?
+- How does architectural design coordinate with construction?
+- What is the difference between design-only and design-and-build?
+
+Adapt questions to each service. Do not copy the same generic FAQ across every page.
+
+Answers must be factual and must not promise permits, approvals, guarantees or services without confirmation.
+
+## 11. Schema.org structured data
+
+Inspect and validate structured data across the website.
+
+Use relevant types where appropriate:
+
+- `Organization`
+- `WebSite`
+- `WebPage`
+- `Service`
+- `BreadcrumbList`
+- `Offer`
+- `OfferCatalog`
+- `FAQPage` only where appropriate and compliant with current Google eligibility requirements.
+
+Requirements:
+
+- Valid JSON-LD.
+- Consistent business identity.
+- Correct page and language URLs.
+- No duplicate or conflicting entities.
+- Accurate service descriptions.
+- Visible content must match structured data.
+- No fabricated prices, ratings, reviews, awards or credentials.
+
+Use `Offer` only when genuine and approved pricing is available.
+
+Validate using Schema.org Validator and Google's Rich Results Test where applicable.
+
+Structured data does not guarantee rich results.
+
+## 12. International SEO and localization
+
+Apply complete international SEO to EN / RU / TH / HE.
+
+Each language version requires:
+
+- Localized SEO Title.
+- Localized Meta Description.
+- Localized H1/H2/H3.
+- Complete localized body content.
+- Language-specific keyword targeting.
+- Correct canonical URL.
+- Reciprocal hreflang annotations.
+- Correct language identifiers.
+- Correct RTL behavior for Hebrew.
+
+Do not rely on literal machine translation.
+
+Do not leave one language with substantially shorter or incomplete content without documenting the reason.
+
+## 13. Internal linking and topical authority
+
+Build meaningful internal links between related FORMA pages.
+
+Connect relevant:
+- Architecture.
+- Villa design.
+- Concept design.
+- Construction.
+- Project management.
+- Renovation and refresh.
+- Portfolio.
+- Location pages.
+- Journal articles.
+- Contact and consultation pages.
+
+Use descriptive anchor text.
+
+Avoid irrelevant links, excessive cross-linking and competing pages targeting the same primary keyword.
+
+## 14. Image SEO
+
+Review all important page images.
+
+Check:
+- Descriptive filenames where practical.
+- Accurate alt attributes.
+- Empty alt attributes for decorative images.
+- Appropriate image dimensions.
+- Responsive image delivery.
+- Modern image formats where supported.
+- Lazy loading below the fold.
+- Appropriate priority for the main above-the-fold image.
+
+Do not stuff keywords into alt text.
+
+## 15. AUTOMATED CODE-LEVEL SEO VALIDATION — MANDATORY
+
+This is a critical implementation requirement.
+
+Do not stop after manually improving page content.
+
+Create automated checks in the repository so that SEO and content regressions can be detected in future changes.
+
+Inspect the existing framework and build system first. Integrate the checks into the existing architecture rather than introducing unnecessary dependencies.
+
+Create an appropriate script, for example:
+
+`scripts/seo-audit`
+
+The exact filename and implementation may follow existing project conventions.
+
+### Required automated checks
+
+For every discovered indexable page and language version, validate:
+
+**Metadata**
+- Missing SEO Title.
+- Empty or duplicate SEO Title.
+- Missing Meta Description.
+- Empty or duplicate Meta Description.
+- Missing canonical URL.
+- Incorrect canonical URL.
+
+**Headings**
+- Missing H1.
+- Multiple primary H1 elements.
+- Missing primary keyword in H1, where a keyword mapping exists.
+- Missing or invalid heading hierarchy.
+- Missing primary keyword in opening content, where applicable.
+
+**Content**
+- Word count per page and language.
+- Pages below the configured content target.
+- Duplicate or near-duplicate page content.
+- Missing opening answer paragraph.
+- Missing FAQ section on pages where required.
+- Empty or placeholder content.
+- Unresolved editorial placeholders.
+- Missing page-specific keyword mapping.
+
+**International SEO**
+- Missing language metadata.
+- Missing or incorrect hreflang.
+- Non-reciprocal hreflang references.
+- Incorrect language-specific canonical.
+- Missing language versions where expected.
+- Incorrect Hebrew RTL configuration.
+
+**Technical SEO**
+- Broken internal links.
+- Missing image alt attributes for informative images.
+- Missing or invalid JSON-LD.
+- Duplicate structured data entities.
+- Incorrect sitemap entries.
+- Noindex accidentally applied to important commercial pages.
+- Incorrect robots directives.
+
+### Keyword-aware validation
+
+Read primary keywords from a central configuration or keyword map.
+
+Do not hardcode individual page keywords inside the validation script.
+
+The validation must compare actual page content with the assigned keyword map.
+
+Allow sensible exceptions for pages where exact keyword matching would produce unnatural language.
+
+### Reporting
+
+Generate machine-readable and human-readable reports.
+
+Suggested outputs:
+
+- `reports/seo-audit.json`
+- `reports/seo-audit.md`
+
+The report must identify:
+- Page URL.
+- Language.
+- Check performed.
+- PASS / WARNING / FAIL.
+- Actual detected value.
+- Expected value.
+- Recommended correction.
+
+### CI and build integration
+
+Integrate the SEO audit into the existing test or CI workflow where practical.
+
+Requirements:
+
+- Critical technical failures should cause a non-zero exit code.
+- Editorial warnings should be reported separately.
+- Configurable exceptions must be documented.
+- Do not make ordinary builds impossible because of unapproved owner information.
+- Do not automatically modify content to make tests pass.
+- Keep the audit repeatable and deterministic.
+
+The script must test the actual generated pages or reliable source representations, not only a manually maintained checklist.
+
+## 16. Page-level implementation status
+
+Use these statuses consistently:
+
+- `TODO`
+- `IN PROGRESS`
+- `CODE DONE`
+- `LOCAL TESTED`
+- `PRODUCTION VERIFIED`
+- `OWNER INPUT REQUIRED`
+- `OWNER WILL HANDLE`
+- `DEFERRED BY OWNER`
+- `BLOCKED`
+- `FAILED`
+
+Do not mark a page as SEO complete merely because its metadata exists.
+
+## 17. Required deliverables
+
+Create or update:
+
+1. `FORMA_SEO_CONTENT_AUDIT.md` — complete page-by-page audit.
+2. `FORMA_KEYWORD_MAP.md` — primary and secondary keyword mapping.
+3. `scripts/seo-audit` — automated validation script or equivalent.
+4. `reports/seo-audit.md` — human-readable report.
+5. `reports/seo-audit.json` — machine-readable report.
+6. Updated page content and metadata.
+7. Updated structured data.
+8. Updated `TO-DO.md`.
+9. Updated `PROGRESS.md`.
+
+Document all exceptions and owner-dependent information.
+
+## 18. Final acceptance criteria
+
+The task is complete only when:
+
+- [ ] All repository routes have been inventoried.
+- [ ] All indexable pages have been audited.
+- [ ] All four language versions have been reviewed.
+- [ ] Every major page has an assigned primary keyword.
+- [ ] Important pages have unique SEO Titles and Descriptions.
+- [ ] H1 headings communicate the page subject and target keyword.
+- [ ] H2/H3 hierarchy is logical.
+- [ ] Major landing pages meet the content quality target.
+- [ ] Opening answer paragraphs are implemented.
+- [ ] Pricing information is accurate or transparently quote-based.
+- [ ] Structured data is validated.
+- [ ] Internal linking has been reviewed.
+- [ ] International SEO has been checked.
+- [ ] Automated SEO validation is implemented.
+- [ ] The audit produces actionable reports.
+- [ ] Critical checks are integrated into the build or CI workflow.
+- [ ] No fabricated prices, projects, certifications or business claims have been introduced.
+
+**Important:** A manual audit alone is insufficient. The implementation must include repeatable code-level checks across all pages and languages.
+
+Do not claim `PRODUCTION VERIFIED` until the actual deployed website has been checked separately.
+
+Do not declare the project complete while critical P0/P1 issues remain.
+
+Do not claim that work is production-verified when it has only been tested locally.
+
+# Инструкция для Клода — Деплой Next.js как статика
+
+Давать эту инструкцию Клоду ПЕРЕД началом работы с любым Next.js сайтом, который нужно экспортировать в статику.
+
+---
+
+## ⚠️ Критическое: `_next/image` URLs
+
+Next.js при статическом экспорте НЕ работает `_next/image` middleware. Все ссылки вида:
+
+```
+/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Ffile.jpg&w=750&q=75
+```
+
+— возвращают 404. Их НУЖНО заменить на прямые пути:
+
+```
+/_next/static/media/file.jpg
+```
+
+**ВАЖНО:** Эти URL встречаются в ДВУХ атрибутах:
+- `src="/_next/image?...&w=3840&q=75"` — главный атрибут
+- `srcSet="/_next/image?...740w, ..."` — респонсив атрибут
+
+ОБЯЗАТЕЛЬНО заменить В ОБОИХ.
+
+### Регексп для замены
+
+```python
+# Python
+re.sub(
+    r'_next/image\?url=%2F_next%2Fstatic%2Fmedia%2F([a-zA-Z0-9._-]+?(?:\.[a-zA-Z0-9]+)?)(?:(?:&(?:amp;)?)|(?:%26))[^"\'<>\s]*',
+    r'_next/static/media/\1',
+    html
+)
+```
+
+ИЛИ `sed`:
+
+```bash
+# GNU sed (Linux):
+sed 's|_next/image?url=%2F_next%2Fstatic%2Fmedia%2F\([a-zA-Z0-9._-]*\)[^"'"'"']*|_next/static/media/\1|g'
+
+# macOS sed (BSD):
+sed -E 's|_next/image\?url=%2F_next%2Fstatic%2Fmedia%2F([a-zA-Z0-9._-]*)[^"]*|_next/static/media/\1|g'
+```
+
+### Проверка
+
+После замены — ОБЯЗАТЕЛЬНО:
+
+```bash
+grep -r '_next/image' . | head
+# Должен быть 0 результатов
+
+grep -r 'srcSet' . | head
+# Должен быть 0 результатов (srcSet не нужен в статике)
+```
+
+### Почему удалять `srcSet` и `sizes`
+
+В статическом экспорте `srcSet` содержит битые респонсив-ссылки. Браузер (Chrome/Safari) использует `srcset` вместо `src`, поэтому даже если `src` правильный — картинки не грузятся.
+
+```bash
+# Удалить srcSet
+sed 's/ srcSet="[^"]*"//g'
+# Удалить sizes  
+sed 's/ sizes="[^"]*"//g'
+```
+
+## Процесс деплоя
+
+### 1. Собрать Next.js
+```bash
+cd /path/to/project
+npm run build   # создаёт .next/
+```
+
+### 2. Запустить сервер
+```bash
+npx next start -p 3005 &
+sleep 5
+curl http://localhost:3005/  # проверить
+```
+
+### 3. Скачать все страницы и пофиксить
+```python
+import xml.etree.ElementTree as ET, urllib.request, re, os, tarfile
+
+# Скачать sitemap
+resp = urllib.request.urlopen('http://localhost:3005/sitemap.xml')
+tree = ET.parse(resp)
+ns = {'s': 'http://www.sitemaps.org/schemas/sitemap/0.9'}
+urls = [url.find('s:loc', ns).text for url in tree.findall('s:url', ns)]
+
+pat_img = re.compile(r'_next/image\?url=%2F_next%2Fstatic%2Fmedia%2F([a-zA-Z0-9._-]+?(?:\.[a-zA-Z0-9]+)?)(?:(?:&(?:amp;)?)|(?:%26))[^"\'<>\s]*')
+pat_ss = re.compile(r'\s+srcSet="[^"]*"')
+
+BASE = '/tmp/export'
+for url in urls:
+    path = url.replace('https://site.com/', '')
+    if not path: path = 'index'
+    local = url.replace('https://site.com', 'http://localhost:3005')
+    try:
+        html = urllib.request.urlopen(urllib.request.Request(local), timeout=15).read().decode()
+    except:
+        html = urllib.request.urlopen(urllib.request.Request(local+'/'), timeout=15).read().decode()
+    
+    # FIX
+    html = pat_img.sub(r'_next/static/media/\1', html)
+    html = pat_ss.sub('', html)
+    html = re.sub(r'\s+sizes="[^"]*"', '', html)
+    
+    fp = f'{BASE}/{path}/index.html'
+    os.makedirs(os.path.dirname(fp), exist_ok=True)
+    with open(fp, 'w') as f: f.write(html)
+
+# Упаковать
+with tarfile.open('/tmp/site-export.tar.gz', 'w:gz') as tar:
+    tar.add(BASE, arcname='.')
+```
+
+### 4. Залить на сервер
+```bash
+scp -P 740 /tmp/site-export.tar.gz user@host:/home/user/
+ssh -p 740 user@host "cd /path/to/docroot && tar xzf /home/user/site-export.tar.gz && find . -type d -exec chmod 755 {} \; && find . -type f -exec chmod 644 {} \; && find . -name '._*' -delete"
+```
+
+## Права для Apache
+```
+Директории: 755 (rwxr-xr-x)
+Файлы:      644 (rw-r--r--)
+.htaccess:  644 (rw-r--r--)
+```
+
+Если права неправильные — Apache отдаёт 403.
+
+## Cloudflare + AVIF
+```apache
+# В .htaccess:
+AddType image/avif .avif
+```
+После добавления — **сбросить кеш Cloudflare** (Caching → Purge Everything).
+
+## Сервер: SherlockHost
+- Хост: `138.201.10.206`
+- Порт SSH: `-p 740`
+- Юзер: `adfotoco`
+
+- **SSH нестабилен:** обрывается через 20-30 сек. Для долгих операций — SCP/SFTP.
+- **cPanel пароль** содержит `&` → использовать `--data-urlencode`
+
+## Docroots
+| Сайт | Путь |
+|---|---|
+| creativelab.in.th | `/home/adfotoco/public_html/creativelab.in.th/` |
+| forma.in.th | `/home/adfotoco/public_html/forma.in.th/` |
+| broservice.in.th | `/home/adfotoco/public_html/broservice.in.th/` |
+
+
+Technical Brief: Next.js Static Export & Image Fixes
+Context: You have a Next.js project that needs to be deployed as a static site on a shared Apache/cPanel hosting. The site uses _next/image optimization middleware (responsive srcSet / sizes attributes on <img> tags). This must be handled correctly during static export.
+Known Pitfalls & Required Handling
+1. Image srcSet attribute breaks in static export:
+Next.js generates <img srcSet="..." src="..."> with _next/image?url=%2F_next%2Fstatic%2Fmedia%2Ffile.jpg&w=...&q=... URLs
+In static export (no backend), these URLs don't resolve
+❌ DO NOT regex-replace _next/image?... inside srcSet — it creates garbled double paths like _next/static/media/file.jpgstatic%2Fmedia%2Ffile.jpg&w=...
+✅ Instead: Remove the entire srcSet and sizes attributes from all HTML files using a proper HTML-aware regex: sed 's/ srcSet="[^"]*"//g' and sed 's/ sizes="[^"]*"//g'
+✅ The src attribute already contains the correct direct path
+2. Generate static pages from the production Next.js build, not from live site:
+Start the Next.js server locally: npx next start -p 3005
+pages from http://localhost:3005/sitemap.xml
+Download each page via the local server (not the public URL), fix attributes, save
+Bundle all HTML files into a tarball
+3. Tar archive — macOS specifics:
+Use tar czf archive.tar.gz -C source-dir . (correct current working dir)
+⚠️ The root index.html must be at the archive root as index.html, NOT inside index/index.html
+After extraction on server, delete AppleDouble metadata files: find . -name '._*' -delete
+Fix permissions for Apache: find . -type d -exec chmod 755 {} \; and find . -type f -exec chmod 644 {} \;
+4. Upload & deploy:
+Upload tarball via SCP (scp -P 740)
+Extract directly on server via SSH: cd /path/to/docroot && tar xzf /path/to/archive.tar.gz
+After extraction: fix permissions and clean up macOS files
+5. Cloudflare + AVIF images:
+If the site uses .avif images through Cloudflare: Apache's .htaccess needs AddType image/avif .avif
+After adding this to .htaccess, Cloudflare cache MUST be purged (Cloudflare dashboard → Caching → Purge Everything)
+Otherwise Cloudflare serves cached AVIF files without the Content-Type header and browsers cannot render them
+6. SSH to SherlockHost cPanel server:
+Port: -p 740
+Identity: -i ~/.ssh/id_rsa_broservice_nopass
+User: adfotoco
+Host: 138.201.10.206
+⚠️ SSH connections are unstable and get killed after ~20-30 seconds (SIGTERM)
+For long operations: use SFTP or SCP instead
+For SSH commands: keep them very short and simple
+7. Image verification checklist:
+Check ALL pages return HTTP 200
+Check ALL image URLs return HTTP 200 with correct Content-Type (image/jpeg, image/avif, image/png, etc.)
+Check with mobile User-Agent header (iPhone, Android)
+Verify no remaining srcSet or sizes attributes in HTML
+Check _next/image references across all pages
+Verify static files: robots.txt, sitemap.xml, favicon.ico, llms.txt
+Sites & Paths
+Site	Docroot
+creativelab.in.th	/home/adfotoco/public_html/creativelab.in.th/
+forma.in.th	/home/adfotoco/public_html/forma.in.th/
+broservice.in.th	/home/adfotoco/public_html/broservice.in.th/
+───
