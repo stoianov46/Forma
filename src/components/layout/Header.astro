@@ -2,7 +2,7 @@
 import type { Locale } from '../../lib/i18n';
 import { getDictionary } from '../../i18n/dictionary';
 import { services, serviceHrefSmart } from '../../content/services';
-import { primaryLocations, secondaryLocations, locationHrefSmart, translatedLocationSlugs } from '../../content/locations';
+import { primaryLocations, locationHrefSmart, translatedLocationSlugs } from '../../content/locations';
 import { translatedProjectSlugs } from '../../content/projects';
 import { isAboutTranslated } from '../../content/about';
 import { isProcessTranslated } from '../../content/process';
@@ -29,7 +29,6 @@ const projectsHref = translatedProjectSlugs(locale).length > 0 || locale === 'en
 const aboutHref = isAboutTranslated(locale) || locale === 'en' ? localizePath(locale, '/about/') : withBase('/about/');
 const processHref = isProcessTranslated(locale) || locale === 'en' ? localizePath(locale, '/process/') : withBase('/process/');
 const journalHrefTop = journalLocales.includes(locale) || locale === 'en' ? localizePath(locale, '/journal/') : withBase('/journal/');
-const phanganSecondary = secondaryLocations('koh-phangan');
 ---
 
 <header class="sticky top-0 z-50 border-b border-ink-900/10 bg-stone-50/90 backdrop-blur-sm">
@@ -60,21 +59,12 @@ const phanganSecondary = secondaryLocations('koh-phangan');
 
       <div class="group relative">
         <a href={locationsHref} class="flex items-center gap-1 rounded-full px-3.5 py-2 text-sm font-medium hover:bg-stone-100">
-          {t.nav.locations}
+          {t.nav.islands}
           <svg width="10" height="6" viewBox="0 0 10 6" fill="none" aria-hidden="true"><path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
         </a>
         <div class="invisible absolute start-0 top-full z-40 w-96 rounded-2xl border border-ink-900/10 bg-stone-50 p-6 opacity-0 shadow-xl transition-all duration-150 group-hover:visible group-hover:opacity-100 group-focus-within:visible group-focus-within:opacity-100">
-          <p class="mb-1 text-xs font-semibold tracking-wide text-ink-900/60 uppercase">Islands</p>
-          <div class="mb-3 grid grid-cols-2 gap-1">
-            {primary.map((l) => (
-              <a href={locationHrefSmart(locale, l.slug)} class="rounded-lg px-3 py-2 text-sm hover:bg-stone-100">
-                {l.translations[locale].name}
-              </a>
-            ))}
-          </div>
-          <p class="mb-1 text-xs font-semibold tracking-wide text-ink-900/60 uppercase">Koh Phangan areas</p>
           <div class="grid grid-cols-2 gap-1">
-            {phanganSecondary.map((l) => (
+            {primary.map((l) => (
               <a href={locationHrefSmart(locale, l.slug)} class="rounded-lg px-3 py-2 text-sm hover:bg-stone-100">
                 {l.translations[locale].name}
               </a>
@@ -92,12 +82,6 @@ const phanganSecondary = secondaryLocations('koh-phangan');
 
     <div class="flex items-center gap-2">
       <LanguageSwitcher locale={locale} path={path} availableLocales={availableLocales} class="hidden sm:inline-block" />
-      <a
-        href={localizePath(locale, '/contact/')}
-        class="hidden sm:inline-flex items-center rounded-full bg-ink-900 px-4 py-2 text-sm font-medium text-stone-50 transition-colors hover:bg-olive-700"
-      >
-        {t.nav.startProject}
-      </a>
       <button
         type="button"
         id="menu-toggle"
@@ -144,11 +128,11 @@ const phanganSecondary = secondaryLocations('koh-phangan');
       </details>
       <details class="border-b border-ink-900/10 py-3">
         <summary class="flex cursor-pointer list-none items-center justify-between text-lg font-medium">
-          {t.nav.locations}
+          {t.nav.islands}
           <svg width="12" height="7" viewBox="0 0 10 6" fill="none" aria-hidden="true"><path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
         </summary>
         <div class="flex flex-col gap-1 py-2 ps-2">
-          {[...primary, ...phanganSecondary].map((l) => (
+          {primary.map((l) => (
             <a href={locationHrefSmart(locale, l.slug)} class="rounded-lg px-2 py-2 text-base text-ink-900/80">{l.translations[locale].name}</a>
           ))}
         </div>
@@ -161,9 +145,6 @@ const phanganSecondary = secondaryLocations('koh-phangan');
 
       <div class="mt-4 flex items-center justify-between">
         <LanguageSwitcher locale={locale} path={path} availableLocales={availableLocales} />
-        <a href={localizePath(locale, '/contact/')} class="inline-flex items-center rounded-full bg-ink-900 px-5 py-2.5 text-sm font-medium text-stone-50">
-          {t.nav.startProject}
-        </a>
       </div>
     </nav>
 </div>

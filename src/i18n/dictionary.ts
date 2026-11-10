@@ -7,9 +7,9 @@ export interface Dictionary {
     about: string;
     process: string;
     locations: string;
+    islands: string;
     journal: string;
     contact: string;
-    startProject: string;
     contactShort: string;
     menu: string;
     close: string;
@@ -129,9 +129,9 @@ export const en: Dictionary = {
     about: 'About',
     process: 'Process',
     locations: 'Locations',
+    islands: 'Islands',
     journal: 'Journal',
     contact: 'Contact',
-    startProject: 'Start a Project',
     contactShort: 'Contact',
     menu: 'Menu',
     close: 'Close',
@@ -258,9 +258,9 @@ export const ru: Dictionary = {
     about: 'О студии',
     process: 'Процесс',
     locations: 'Локации',
+    islands: 'Острова',
     journal: 'Журнал',
     contact: 'Контакты',
-    startProject: 'Начать проект',
     contactShort: 'Контакты',
     menu: 'Меню',
     close: 'Закрыть',
@@ -385,9 +385,9 @@ export const th: Dictionary = {
     about: 'เกี่ยวกับเรา',
     process: 'กระบวนการทำงาน',
     locations: 'พื้นที่ให้บริการ',
+    islands: 'เกาะ',
     journal: 'บทความ',
     contact: 'ติดต่อเรา',
-    startProject: 'เริ่มโปรเจกต์',
     contactShort: 'ติดต่อ',
     menu: 'เมนู',
     close: 'ปิด',
@@ -509,9 +509,9 @@ export const he: Dictionary = {
     about: 'אודות',
     process: 'תהליך העבודה',
     locations: 'אזורי פעילות',
+    islands: 'איים',
     journal: 'בלוג',
     contact: 'צור קשר',
-    startProject: 'התחילו פרויקט',
     contactShort: 'צור קשר',
     menu: 'תפריט',
     close: 'סגור',
