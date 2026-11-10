@@ -4,7 +4,7 @@ import Breadcrumbs from '../components/layout/Breadcrumbs.astro';
 import ContactForm from '../components/blocks/ContactForm.astro';
 import { getDictionary } from '../i18n/dictionary';
 import type { Locale } from '../lib/i18n';
-import { CONTACT } from '../lib/site';
+import { CONTACT, PHONE_TEL, TELEGRAM_OWNER, TELEGRAM_BOT_HANDLE } from '../lib/site';
 
 interface Props {
   locale: Locale;
@@ -34,7 +34,9 @@ const description = t.form.intro;
           <a href={`https://wa.me/${CONTACT.whatsapp.replace(/[^\d]/g, '')}`} class="block text-sm font-medium hover:text-olive-700">
             WhatsApp
           </a>
-          <a href={CONTACT.telegram} class="block text-sm font-medium hover:text-olive-700">Telegram</a>
+          <a href={PHONE_TEL} class="block text-sm font-medium hover:text-olive-700"><bdi dir="ltr">{CONTACT.phone}</bdi></a>
+          <a href={TELEGRAM_OWNER} class="block text-sm font-medium hover:text-olive-700">Telegram · <bdi dir="ltr">{CONTACT.phone}</bdi></a>
+          {TELEGRAM_BOT_HANDLE && <a href={CONTACT.telegram} class="block text-sm font-medium hover:text-olive-700"><bdi dir="ltr">{TELEGRAM_BOT_HANDLE}</bdi></a>}
           <p class="text-sm text-ink-900/60">{CONTACT.addressLocality}, {CONTACT.addressRegion}, Thailand</p>
         </div>
       </div>

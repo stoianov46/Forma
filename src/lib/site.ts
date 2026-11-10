@@ -35,6 +35,18 @@ export const CONTACT = {
   addressCountry: import.meta.env.PUBLIC_CONTACT_ADDRESS_COUNTRY || 'TH',
 };
 
+/** Phone helpers derived from CONTACT.phone, so the number is typed in exactly one place. */
+export const PHONE_E164 = CONTACT.phone.replace(/[^\d+]/g, '');
+/** tel: link (E.164). */
+export const PHONE_TEL = `tel:${PHONE_E164}`;
+/**
+ * The owner's own Telegram account, reached by the confirmed phone number (owner instruction). It only works when
+ * the account allows being found by phone number, so the number is also shown and can be copied. NOT a Bot API value.
+ */
+export const TELEGRAM_OWNER = `https://t.me/${PHONE_E164.startsWith('+') ? PHONE_E164 : '+' + PHONE_E164}`;
+/** Handle of the intake bot, taken from CONTACT.telegram (e.g. "@formaisland_bot"), or null if it is not a t.me bot link. */
+export const TELEGRAM_BOT_HANDLE = (CONTACT.telegram.match(/^https:\/\/t\.me\/([A-Za-z0-9_]+)$/) || [])[1] ? '@' + CONTACT.telegram.split('/').pop() : null;
+
 /**
  * Social profile URLs (schema.org `sameAs`) — set `PUBLIC_SOCIAL_LINKS` (comma-separated)
  * once official accounts exist (proposal.md §21 SOCIAL). Empty by default, which is valid.

@@ -8,7 +8,7 @@ import { translatedProjectSlugs } from '../../content/projects';
 import { isAboutTranslated } from '../../content/about';
 import { isProcessTranslated } from '../../content/process';
 import { getLocalesWithAnyArticles } from '../../lib/journal';
-import { CONTACT } from '../../lib/site';
+import { CONTACT, PHONE_TEL, TELEGRAM_OWNER } from '../../lib/site';
 
 interface Props {
   locale: Locale;
@@ -67,7 +67,8 @@ const journalHref = journalLocales.includes(locale) || locale === 'en' ? localiz
         <ul class="mt-4 space-y-2 text-sm text-ink-900/80">
           <li><a href={`mailto:${CONTACT.email}`} class="hover:text-ink-900"><bdi>{CONTACT.email}</bdi></a></li>
           <li><a href={`https://wa.me/${CONTACT.whatsapp.replace(/[^\d]/g, '')}`} class="hover:text-ink-900">WhatsApp</a></li>
-          <li><a href={CONTACT.telegram} class="hover:text-ink-900">Telegram</a></li>
+          <li><a href={PHONE_TEL} class="hover:text-ink-900"><bdi dir="ltr">{CONTACT.phone}</bdi></a></li>
+          <li><a href={TELEGRAM_OWNER} class="hover:text-ink-900">Telegram</a></li>
           <li>{CONTACT.addressLocality}, {CONTACT.addressRegion}, Thailand</li>
         </ul>
       </div>

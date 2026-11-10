@@ -56,6 +56,8 @@ config/devops file, and every environment variable the project reads.
 | `src/components/blocks/ContactChannels.astro` | Context chat links: WhatsApp text, Telegram bot deep link (`?start=service_<slug>` / `location_<slug>`), copy phone number |
 | `functions/tsconfig.json` | Separate TS program for the Cloudflare Function (`npm run typecheck:functions`) |
 | `scripts/plan-check.mjs`, `scripts/qa/plancheck.cjs` | `plan:check`, `qa:plan` |
+| `bots/shared/deeplink.ts`, `bots/test/*.test.ts` | Bot start-payload parser (shared with the website's chat links) and 18 tests (`cd bots && npm run check`) |
+| `scripts/qa/consentcheck.cjs`, `scripts/final-matrix.cjs` | `qa:consent` (cookie consent, fake ids), `seo:matrix` (-> `reports/final-matrix.md`) |
 | `AUDIT.md` | Local audit findings + status (Phase 1). Full matrix: `reports/audit-matrix.md`, data: `reports/audit.json` |
 | `FORMA_SEO_CONTENT_AUDIT.md` | Per-page-type SEO/content audit summary |
 

@@ -487,3 +487,13 @@ Derived from proposal.md's own QA tables (§22 QA DOD, §23 QA, Google Webmaster
 - New Privacy section "Planning tools and enquiry source": describes the consent-gated session attribution, the attached plan summary and the staff priority rating. Wording is factual; counsel must confirm it.
 - The single static `404.html` switches language on the client from the URL prefix (`/ru/`, `/th/`, `/he/`), including `lang`/`dir` and the home link (tested in Chrome).
 - `i18n:check` now covers the legal content (2,353 strings per locale); `seo-audit` parity covers the five legal page types.
+
+## Gap closing against CreativeLAB (11 Nov 2026)
+
+- **Bots:** pure logic extracted to `bots/shared/deeplink.ts`; `bots/test/` has 18 node tests (state machine, i18n completeness in 4 locales, parity with the site's 13 services and primary locations, deep-link parsing incl. forged payloads, and that the site builds links in the format the bot parses). `npm run check` in `bots/` = typecheck + tests; CI uses it. The Telegram/WhatsApp conversations themselves are still untested live.
+- **Cookie consent** (`npm run qa:consent`): builds a separate copy with fake GA4/Yandex ids and verifies nothing is requested before consent, reject/accept/settings, mid-session activation, attribution stored only after consent, banner translated in RU/TH/HE. Third-party requests are aborted by the test.
+- **Browser matrix** widened to 15 page types × 4 locales: 720 overflow checks (12 widths) and 120 axe runs (390 and 1280 px). It found a real bug: long Russian words in headings (e.g. «конфиденциальности») widened the page on phones (/ru/privacy/, /ru/services/villa-design/). Fixed in `global.css` (`overflow-wrap` + `hyphens` on headings).
+- **Contact links:** the site showed no phone number and no `tel:` link anywhere (only in schema). Added `tel:` + visible number + the owner's Telegram link (`https://t.me/+66808705704`, works only if the account allows search by phone, hence the number is shown and copyable) on the contact page and in the footer; helpers `PHONE_TEL`, `TELEGRAM_OWNER`, `TELEGRAM_BOT_HANDLE` in `src/lib/site.ts`; checked by `contact:check`.
+- **Secrets scan:** working tree and all new commits are clean. **Git history still contains Telegram bot tokens** (5 old commits, on both remotes' `main`): revoking them in @BotFather is the fix; rewriting history is a separate owner decision.
+- `reports/final-matrix.md` (generated) is the final audit matrix; "fix" and "commit" columns are per page type.
+- Not done: Lighthouse (not installed), translation staleness tracking, live-site audit mode (site returns 403).

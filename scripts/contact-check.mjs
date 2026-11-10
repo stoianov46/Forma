@@ -120,6 +120,9 @@ if (fs.existsSync(distDir)) {
   check('no Telegram/Resend/webhook secrets or APIs in dist/', bad.length === 0, bad.slice(0, 3).join(', '));
   const contact = fs.existsSync(path.join(distDir, 'contact/index.html')) ? fs.readFileSync(path.join(distDir, 'contact/index.html'), 'utf8') : '';
   check('contact page has the review step, reply-language field and honeypot', /id="lead-review"/.test(contact) && /name="replyLanguage"/.test(contact) && /name="company"/.test(contact));
+  check('contact page: tel: link, WhatsApp link and the owner Telegram link use the confirmed number', /href="tel:\+66808705704"/.test(contact) && /https:\/\/wa\.me\/66808705704/.test(contact) && /https:\/\/t\.me\/\+66808705704/.test(contact));
+  const footerHtml = fs.existsSync(path.join(distDir, 'index.html')) ? fs.readFileSync(path.join(distDir, 'index.html'), 'utf8') : '';
+  check('footer: tel: and owner Telegram links on every page type', /href="tel:\+66808705704"/.test(footerHtml) && /https:\/\/t\.me\/\+66808705704/.test(footerHtml));
   check('form option values are stable English values', /<option value="Villa \/ Residence"/.test(contact));
   const ru = fs.existsSync(path.join(distDir, 'ru/contact/index.html')) ? fs.readFileSync(path.join(distDir, 'ru/contact/index.html'), 'utf8') : '';
   check('RU form keeps English option values with Russian labels', /<option value="Villa \/ Residence">[^<]*[А-Яа-я]/.test(ru));

@@ -25,8 +25,10 @@
     "pricing:master": "node scripts/pricing-check.mjs --write",
     "seo:keywords": "node scripts/keyword-map.mjs",
     "seo:links": "node scripts/linking-map.cjs",
+    "seo:matrix": "node scripts/final-matrix.cjs",
     "seo:audit": "node scripts/seo-audit.cjs",
     "qa:audit": "node scripts/qa/audit.cjs --md > reports/audit-matrix.md",
+    "qa:consent": "node scripts/qa/consentcheck.cjs",
     "qa:plan": "node scripts/qa/plancheck.cjs",
     "qa:form": "node scripts/qa/formcheck.cjs",
     "qa:browser": "node scripts/qa/browsercheck.cjs"

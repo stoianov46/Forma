@@ -55,4 +55,4 @@ jobs:
       - working-directory: bots
         run: npm ci
       - working-directory: bots
-        run: npm run typecheck
+        run: npm run check

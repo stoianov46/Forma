@@ -157,6 +157,47 @@ async function testHorizontalScroll(browser) {
   return ok;
 }
 
+// Full matrix: 15 page types x 4 locales, at every width for horizontal overflow and at 390 + 1280 px for axe.
+const MATRIX_PAGES = ['', 'services/architecture/', 'services/villa-design/', 'locations/', 'locations/koh-phangan/', 'projects/', 'projects/ridge-house-sri-thanu/', 'journal/', 'journal/what-tropical-architecture-actually-means/', 'about/', 'process/', 'contact/', 'plan/', 'checklist/', 'privacy/'];
+const MATRIX_URLS = ['', 'ru/', 'th/', 'he/'].flatMap((loc) => MATRIX_PAGES.map((p) => `/${loc}${p}`));
+
+async function testMatrix(browser) {
+  let ok = true;
+  let scrollRuns = 0;
+  for (const vp of ALL_VIEWPORTS) {
+    const page = await browser.newPage();
+    await page.setViewport({ width: vp.width, height: vp.height });
+    for (const url of MATRIX_URLS) {
+      await page.goto(`${BASE}${url}`, { waitUntil: 'domcontentloaded' });
+      scrollRuns++;
+      if (await page.evaluate(() => document.documentElement.scrollWidth > document.documentElement.clientWidth + 1)) {
+        console.log(`[matrix-scroll] ${vp.name} ${url}: horizontal scroll detected`);
+        ok = false;
+      }
+    }
+    await page.close();
+  }
+  const axeSource = require('axe-core').source;
+  let axeRuns = 0;
+  for (const width of [390, 1280]) {
+    const page = await browser.newPage();
+    await page.setViewport({ width, height: 900 });
+    for (const url of MATRIX_URLS) {
+      await page.goto(`${BASE}${url}`, { waitUntil: 'networkidle0' });
+      await page.evaluate(axeSource);
+      const result = await page.evaluate(async () => window.axe.run(document, { runOnly: { type: 'tag', values: ['wcag2a', 'wcag2aa', 'wcag21a', 'wcag21aa'] } }));
+      axeRuns++;
+      if (result.violations.length > 0) {
+        ok = false;
+        console.log(`[matrix-axe] ${width}px ${url}: ${result.violations.map((v) => `${v.id} (${v.nodes.length})`).join(', ')}`);
+      }
+    }
+    await page.close();
+  }
+  console.log(`  matrix: ${scrollRuns} overflow checks (${MATRIX_URLS.length} pages x ${ALL_VIEWPORTS.length} widths), ${axeRuns} axe runs (${MATRIX_URLS.length} pages x 2 widths)`);
+  return ok;
+}
+
 async function runAxe(browser) {
   const axeSource = require('axe-core').source;
   let ok = true;
@@ -190,6 +231,9 @@ async function runAxe(browser) {
 
   console.log('=== axe-core (WCAG 2.1 A/AA), all 4 locales + key templates ===');
   allOk = (await runAxe(browser)) && allOk;
+
+  console.log('=== Matrix: 15 page types x 4 locales ===');
+  allOk = (await testMatrix(browser)) && allOk;
 
   await browser.close();
   console.log(allOk ? '\nAll browser QA checks passed.' : '\nSome browser QA checks failed — see above.');

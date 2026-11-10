@@ -2190,7 +2190,7 @@
       "locale": "he",
       "check": "untranslated-text",
       "status": "PASS",
-      "actual": "9% Latin letters",
+      "actual": "10% Latin letters",
       "expected": "<=30%",
       "fix": "Look for English fallback strings"
     },
@@ -16473,7 +16473,7 @@
       "locale": "ru",
       "check": "untranslated-text",
       "status": "PASS",
-      "actual": "10% Latin letters",
+      "actual": "11% Latin letters",
       "expected": "<=30%",
       "fix": "Look for English fallback strings"
     },
@@ -28515,7 +28515,7 @@
       "locale": "th",
       "check": "untranslated-text",
       "status": "PASS",
-      "actual": "12% Latin letters",
+      "actual": "13% Latin letters",
       "expected": "<=30%",
       "fix": "Look for English fallback strings"
     },

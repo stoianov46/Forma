@@ -14,6 +14,10 @@ Everything below was run against the **local** `dist/` build and a local `astro 
 | Contact form logic | `npm run contact:check` (incl. lead qualification and budget parsing, mocked); `npm run qa:form` | passed |
 | Navigation / translations | `npm run nav:check`, `npm run i18n:check` (2,353 strings per locale) | passed |
 | Function types | `npm run typecheck:functions` | passed |
+| Browser matrix | `node scripts/qa/browsercheck.cjs` | 60 pages (15 types × 4 locales): 720 overflow checks at 12 widths, 120 axe runs (390 / 1280 px): passed after fixing a Russian long-word overflow |
+| Cookie consent | `npm run qa:consent` (fake ids, third-party requests aborted) | passed |
+| Bots | `cd bots && npm run check` (typecheck + 18 tests) | passed |
+| Secrets | grep of working tree and diff; history scan | tree clean; **old commits contain Telegram tokens** (see TODO 4A item 4) |
 | Visual spot checks | Chrome, manual | RU project page, HE architecture page (RTL, pricing table, nav "Islands", no "Start a Project" in header) looked correct |
 
 ## Not tested (cannot be, in this environment)

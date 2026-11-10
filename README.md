@@ -43,6 +43,8 @@ npm run contact:check # contact form logic with mocked delivery (nothing is sent
 npm run plan:check    # estimator / service finder / timeline / price details (pure logic + built pages)
 npm run typecheck:functions # Cloudflare Function types (kept out of `npm run check`)
 npm run qa:plan       # browser check of /plan/ tools and hand-off to the form (stubbed; needs preview on :4321)
+npm run qa:consent    # cookie consent with FAKE analytics ids (own build into dist-consent/, nothing leaves the machine)
+npm run seo:matrix    # final audit matrix -> reports/final-matrix.md
 npm run qa:form       # browser journey of the contact form with a stubbed endpoint (needs preview on :4321)
 npm run pricing:check  # after build: prices single-sourced, identical in 4 locales, no Offer schema
 npm run pricing:master # regenerate PRICING_MASTER.md from src/content/pricing.ts

@@ -12,6 +12,7 @@ import {
   type ProjectTypeSlug,
   type ServiceSlug,
 } from '../shared/flow';
+import { applyStartPayload } from '../shared/deeplink';
 import { botStrings, LANGUAGE_BUTTONS, LANGUAGE_PROMPT } from '../shared/i18n';
 
 /**
@@ -136,19 +137,6 @@ async function advanceFromLanguage(ctx: Context, state: LeadState) {
   }
   state.step = 'projectType';
   await askProjectType(ctx, state);
-}
-
-/** Parses an optional /start deep-link payload like "service_villa-design" or "location_koh-phangan" — set by a service/location page's contextual "Start a Project" CTA. */
-function applyStartPayload(state: LeadState, payload?: string) {
-  if (!payload) return;
-  const [kind, ...rest] = payload.split('_');
-  const value = rest.join('_');
-  if (kind === 'service' && (SERVICES as readonly string[]).includes(value)) {
-    state.service = value as ServiceSlug;
-  }
-  if (kind === 'location' && (LOCATIONS as readonly string[]).includes(value)) {
-    state.location = value as LocationSlug;
-  }
 }
 
 bot.command('start', async (ctx) => {
