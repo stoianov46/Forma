@@ -1,6 +1,6 @@
 /**
  * Shared project-intake state machine used by both the Telegram and WhatsApp bots.
- * Mirrors proposal.md §15 BOT: Language → Service → Location → Project Type →
+ * Mirrors the original brief §15 BOT: Language → Service → Location → Project Type →
  * Description → Budget(optional) → Timeline(optional) → Photos/files → Contact →
  * Review/Edit → Submit → Human handoff. Kept framework-agnostic (no Telegram/WhatsApp
  * SDK imports) so both channel adapters drive the same logic.
@@ -10,7 +10,7 @@ export type BotLocale = 'en' | 'ru' | 'th' | 'he';
 
 export const BOT_LOCALES: BotLocale[] = ['en', 'ru', 'th', 'he'];
 
-/** Must stay in exact parity with src/content/services — proposal.md §15 BOT. */
+/** Must stay in exact parity with src/content/services — the original brief §15 BOT. */
 export const SERVICES = [
   'architecture',
   'villa-design',

@@ -33,7 +33,7 @@ const hasLocations = translatedLocationSlugs(locale).length > 0 || locale === 'e
 const locationsHref = hasLocations ? localizePath(locale, '/locations/') : withBase('/locations/');
 const projectsHref = hasProjects ? localizePath(locale, '/projects/') : withBase('/projects/');
 const priorityServices = hasServices ? getPriorityServices() : [];
-// "/" is the master Services landing (proposal.md §4/§24, P0), so every service must be
+// "/" is the master Services landing (the original brief §4/§24, P0), so every service must be
 // reachable from it: priority services as cards, the rest as a compact list below.
 const specialistServices = hasServices ? services.filter((s) => !s.priority) : [];
 const featuredProjects = hasProjects ? projects.slice(0, 6) : [];

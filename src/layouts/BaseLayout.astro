@@ -25,7 +25,7 @@ interface Props {
   pageType?: 'WebPage' | 'ContactPage' | 'AboutPage' | 'CollectionPage';
   /** Locales that actually have this page. Defaults to all locales — pass the real subset for partially translated content. */
   availableLocales?: readonly Locale[];
-  /** URL of the page's single LCP image, to preload — proposal.md "Hero standard": only the LCP image may be critically preloaded. */
+  /** URL of the page's single LCP image, to preload — the original brief "Hero standard": only the LCP image may be critically preloaded. */
   preloadImage?: string;
   /** Matching responsive srcset/sizes so the preload actually resolves to what the <img> requests at each viewport. */
   preloadImageSrcset?: string;

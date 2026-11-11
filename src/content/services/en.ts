@@ -2,7 +2,7 @@ import type { Service } from '../../lib/types';
 
 /**
  * Canonical English service content — source of truth for RU/TH/HE translation.
- * Word counts follow proposal.md §8 COPY guidance (service pages ~1000-2000 words).
+ * Word counts follow the original brief §8 COPY guidance (service pages ~1000-2000 words).
  */
 export const servicesEn: Omit<Service, 'translations'>[] = [
   {

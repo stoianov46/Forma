@@ -71,7 +71,7 @@ const hasAnalytics = Boolean(ga4Id || yandexId);
       }
 
       // A lightweight, always-safe hook for custom events (cta_click, bot_start, etc.
-      // per proposal.md's event list) — no-ops until analytics is actually loaded, so
+      // per the original brief's event list) — no-ops until analytics is actually loaded, so
       // call sites elsewhere in the codebase don't need to guard for that themselves.
       window.formaTrackEvent = function (name, params) {
         if (window.gtag) window.gtag('event', name, params || {});

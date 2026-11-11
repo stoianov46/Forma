@@ -4,7 +4,7 @@ Premium architecture and design-build studio website for Koh Phangan, Thailand �
 Astro site covering 13 services, 11 locations, a project portfolio, journal, and a
 multilingual (EN/RU/TH/HE) shell, plus standalone Telegram/WhatsApp project-intake bots.
 
-Built from the brief in `proposal.md`. See [`PROGRESS.md`](./PROGRESS.md) for a current
+Built from the brief in the original brief. See [`TO-DO_2026-11-03.md`](./TO-DO_2026-11-03.md) for a current
 status snapshot and open questions, and `NOTES.md` for full decision/verification detail.
 
 ## Stack
@@ -48,8 +48,8 @@ npm run seo:matrix    # final audit matrix -> reports/final-matrix.md
 npm run qa:form       # browser journey of the contact form with a stubbed endpoint (needs preview on :4321)
 npm run pricing:check  # after build: prices single-sourced, identical in 4 locales, no Offer schema
 npm run pricing:master # regenerate PRICING_MASTER.md from src/content/pricing.ts
-npm run seo:keywords  # regenerate FORMA_KEYWORD_MAP.md + URL_INTENT_MAP.md from src/content/keywords.json
-npm run seo:links     # after build: INTERNAL_LINKING_MAP.md
+npm run seo:keywords  # regenerate reports/FORMA_KEYWORD_MAP.md + reports/URL_INTENT_MAP.md from src/content/keywords.json
+npm run seo:links     # after build: reports/INTERNAL_LINKING_MAP.md
 npm run qa:audit    # after build: per-page matrix → reports/audit-matrix.md
 ```
 
@@ -120,7 +120,7 @@ same way but as files: add `src/content/journal/ru/<same-slug>.md`.
   process overview) — see `src/i18n/dictionary.ts` and `src/content/home/*.ts`.
 - **English only**: all 13 service pages, all 11 location pages, the 6 project pages, the
   6 journal articles, About, Process, and all legal pages. See `NOTES.md` for the translation
-  backlog and recommended approach (professional human translation per proposal.md §13 —
+  backlog and recommended approach (professional human translation per the original brief §13 —
   "Do not machine-translate blindly").
 
 ## Deployment
@@ -173,5 +173,5 @@ step by step.
 - `docs/WORKFLOW.md` / `docs/HowTo.md` — the team workflow (Issues + Projects board).
 - `NOTES.md` — assumptions made, every `[[VERIFY]]` item, content inventory, and the
   pre-launch QA checklist.
-- `proposal.md` — the original brief this site was built from.
+- the original brief — the original brief this site was built from.
 - `bots/README.md` — Telegram/WhatsApp bot setup.

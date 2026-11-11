@@ -49,7 +49,7 @@ export const TELEGRAM_BOT_HANDLE = (CONTACT.telegram.match(/^https:\/\/t\.me\/([
 
 /**
  * Social profile URLs (schema.org `sameAs`) — set `PUBLIC_SOCIAL_LINKS` (comma-separated)
- * once official accounts exist (proposal.md §21 SOCIAL). Empty by default, which is valid.
+ * once official accounts exist (the original brief §21 SOCIAL). Empty by default, which is valid.
  */
 export const SAME_AS: string[] = (import.meta.env.PUBLIC_SOCIAL_LINKS ?? '')
   .split(',')

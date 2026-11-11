@@ -26,3 +26,6 @@ pnpm-debug.log*
 # jetbrains setting folder
 .idea/
 dist-consent/
+
+# generated reports (regenerate: npm run seo:audit, seo:keywords, seo:links, seo:matrix, qa:audit)
+reports/*.md

@@ -1,7 +1,7 @@
 # FORMA intake bots
 
 Structured project-intake bots for Telegram and WhatsApp, implementing the flow specified in
-`proposal.md` §15 BOT:
+the original brief §15 BOT:
 
 ```
 Language → Service → Location → Project Type → Description → Budget (optional) →
@@ -89,7 +89,7 @@ needs to change.
 ## Contextual preselect from the website
 
 Service and location pages on the site link to the bot with a contextual preselect
-(`proposal.md` "CONTEXTUAL CTA"):
+(the original brief "CONTEXTUAL CTA"):
 
 - **Telegram**: a deep link `https://t.me/<bot_username>?start=service_villa-design` (or
   `start=location_koh-phangan`) is parsed in `bot.command('start', ...)` via

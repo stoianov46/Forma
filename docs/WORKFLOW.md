@@ -7,7 +7,7 @@ the reference doc — for "what do I actually type," see `docs/HowTo.md`.
 ## 1. Three layers
 
 ```
-Proposal (proposal.md, or docs/proposals/<slug>.md for future ones)
+Proposal (the original brief, or docs/proposals/<slug>.md for future ones)
    │
    ▼
 Epic — ONE per proposal — a GitHub Issue, labeled `type: epic`,
@@ -40,11 +40,11 @@ the file's status onto the board (see `docs/epics/README.md` /
 other way, and the file is never edited to match the board.
 
 **Also: one proposal, one file.** Don't split a proposal into
-`proposal.md` + `proposal-v2.md` / `proposal(NEW2).md` / etc. — that
+the original brief + `proposal-v2.md` / `proposal(NEW2).md` / etc. — that
 happened once here (see `docs/Proposals.md` for the history) and just
 meant half the requirements were invisible to everything built from
 `docs/epics/`. If a brief adds to or tightens an earlier one, edit
-`proposal.md` directly, or add a clearly dated addendum section inside it.
+the original brief directly, or add a clearly dated addendum section inside it.
 
 ## 2. Issue types
 
@@ -66,7 +66,7 @@ One GitHub Project (v2), titled **"FORMA Roadmap"**, with these fields:
 - **Priority** (single-select): `P0` (must happen / blocking), `P1` (should
   happen soon), `P2` (nice to have).
 - **Phase** (single-select): `Phase 1` .. `Phase 10`, matching
-  `proposal.md`'s own numbered ROADMAP (brand shell → design system →
+  the original brief's own numbered ROADMAP (brand shell → design system →
   global layout → homepage → core pages → bots → SEO/schema → 4 languages
   → performance → QA → launch checklist). If a future project using this
   same workflow setup doesn't have a real numbered roadmap to draw from,

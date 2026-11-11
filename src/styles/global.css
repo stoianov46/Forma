@@ -1,6 +1,6 @@
 @import "tailwindcss";
 
-/* Self-hosted editorial type system — see proposal.md §5 DESIGN */
+/* Self-hosted editorial type system — see the original brief §5 DESIGN */
 @import "@fontsource-variable/fraunces/standard.css";
 @import "@fontsource-variable/inter";
 @import "@fontsource/ibm-plex-sans-thai/400.css";
