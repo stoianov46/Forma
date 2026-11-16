@@ -1,0 +1,33 @@
+# FORMA
+
+> FORMA is an architecture and design-build studio based on Koh Phangan, Thailand, offering architecture, villa design, interior design, construction, renovation, project management, construction supervision, technical supervision, landscape design, permits & planning, turnkey projects, eco construction and concrete construction — across Koh Phangan, Koh Samui, Koh Tao and Bali.
+
+FORMA integrates architecture, interior design, landscape design, construction and project management into one accountable team, rather than separate firms handed off between each other. The studio designs and builds villas, interiors and full turnkey projects, and also offers independent construction supervision and project management for projects designed or built by others.
+
+## Services
+- [Architecture](https://forma.in.th/services/architecture/): Concept-to-construction architecture shaped by site, climate and light.
+- [Villa Design](https://forma.in.th/services/villa-design/): Bespoke villas planned around view, breeze and privacy.
+- [Interior Design](https://forma.in.th/services/interior-design/): Material palette, lighting and joinery coordinated with the architecture.
+- [Construction](https://forma.in.th/services/construction/): Build delivery with in-house quality control and scheduling.
+- [Renovation](https://forma.in.th/services/renovation/): Assessment-led renovation for existing villas and hospitality properties.
+- [Project Management](https://forma.in.th/services/project-management/): Independent coordination of budget, schedule, procurement and contractors.
+- [Construction Supervision](https://forma.in.th/services/construction-supervision/): Independent site inspections, quality checks and reporting.
+- [Technical Supervision](https://forma.in.th/services/technical-supervision/): Structural and MEP compliance verification during construction.
+- [Landscape Design](https://forma.in.th/services/landscape-design/): Pools, planting and outdoor living integrated with the architecture.
+- [Permits & Planning](https://forma.in.th/services/permits-planning/): Careful, complete permit documentation and submission coordination.
+- [Turnkey Projects](https://forma.in.th/services/turnkey-projects/): Architecture, interiors, construction and management as one integrated service.
+- [Eco Construction](https://forma.in.th/services/eco-construction/): Passive design, material integrity and energy/water strategy from concept.
+- [Concrete Construction](https://forma.in.th/services/concrete-construction/): Structural concrete design-build engineered for coastal tropical durability.
+
+## Locations
+- [Koh Phangan](https://forma.in.th/locations/koh-phangan/) (studio base) · [Koh Samui](https://forma.in.th/locations/koh-samui/) · [Koh Tao](https://forma.in.th/locations/koh-tao/) · [Bali](https://forma.in.th/locations/bali/)
+
+## Other key pages
+- [Projects](https://forma.in.th/projects/): Portfolio of villa, interior, renovation and construction work.
+- [About](https://forma.in.th/about/): Studio background, philosophy and local approach.
+- [Process](https://forma.in.th/process/): The eight-stage project workflow from first contact to handover.
+- [Journal](https://forma.in.th/journal/): Original articles on tropical architecture, construction and renovation.
+- [Contact](https://forma.in.th/contact/): Project enquiry form.
+
+## Languages
+Content is published in English (canonical, at the root path), Russian (/ru/), Thai (/th/) and Hebrew (/he/, right-to-left), with translation coverage expanding over time — English is authoritative where a translated page does not yet exist.
