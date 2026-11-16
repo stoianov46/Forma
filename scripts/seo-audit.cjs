@@ -57,7 +57,7 @@ for (const p of pages) {
     add(url, locale, 'title-length', title.length > cfg.titleMax || title.length < cfg.titleMin ? 'WARNING' : 'PASS', title.length, `${cfg.titleMin}-${cfg.titleMax}`, 'Shorten/lengthen title'); }
   add(url, locale, 'description-present', desc ? 'PASS' : 'FAIL', desc ? desc.length : '(none)', 'non-empty');
   if (desc) { (descs.get(desc) || descs.set(desc, []).get(desc)).push(url);
-    { const dmin = (cfg.descMinByLocale || {})[locale] || cfg.descMin; add(url, locale, 'description-length', desc.length < dmin || desc.length > cfg.descMax ? 'WARNING' : 'PASS', desc.length, `${dmin}-${cfg.descMax}`, 'Rewrite meta description'); } }
+    { const dmin = (cfg.descMinByLocale || {})[locale] || cfg.descMin; add(url, locale, 'description-length', !noindex && (desc.length < dmin || desc.length > cfg.descMax) ? 'WARNING' : 'PASS', desc.length, `${dmin}-${cfg.descMax}`, 'Rewrite meta description'); } }
   if (!is404) {
     add(url, locale, 'canonical-present', canon ? 'PASS' : 'FAIL', canon || '(none)', 'present');
     if (canon) add(url, locale, 'canonical-correct', norm(canon) === url ? 'PASS' : 'FAIL', norm(canon), url, 'Canonical must be the page itself (language-specific)');

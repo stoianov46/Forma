@@ -12,6 +12,8 @@ interface Props {
   heading?: string;
 }
 const { locale, t, articles, heading } = Astro.props;
+// Without a section heading the cards follow the page H1 directly, so they are H2 (no skipped level).
+const CardHeading = heading ? 'h3' : 'h2';
 ---
 
 <section class="wrap py-14 sm:py-20">
@@ -35,7 +37,7 @@ const { locale, t, articles, heading } = Astro.props;
           </div>
           <div class="pt-3">
             <p class="text-xs font-medium tracking-wide text-ink-900/60 uppercase">{a.data.readingMinutes} {t.common.minRead}</p>
-            <h3 class="mt-1 text-lg">{a.data.title}</h3>
+            <CardHeading class="mt-1 text-lg">{a.data.title}</CardHeading>
             <p class="body-m mt-1 text-ink-900/70 line-clamp-2">{a.data.description}</p>
           </div>
         </a>

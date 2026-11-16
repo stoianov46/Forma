@@ -1,5 +1,6 @@
 ---
 title: "Orienting a Villa for Koh Phangan's Sun and Wind"
+seoTitle: "Orienting a Villa for Koh Phangan Sun and Wind"
 description: "How solar path and prevailing wind on Koh Phangan should shape a villa's massing, glazing and shading before any material or style decision is made."
 cluster: "villa-design"
 publishDate: 2026-01-14

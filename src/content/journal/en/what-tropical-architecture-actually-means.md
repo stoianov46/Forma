@@ -1,6 +1,7 @@
 ---
 title: "What 'Tropical Architecture' Actually Means, Beyond the Aesthetic"
-description: "Tropical architecture is a climate response, not a style. A look at the functional principles behind genuinely well-adapted tropical buildings on islands like Koh Phangan."
+seoTitle: "What Tropical Architecture Actually Means"
+description: "Tropical architecture is a climate response, not a style. A look at the functional principles behind well-adapted tropical buildings on islands like Koh Phangan."
 cluster: "tropical-architecture"
 publishDate: 2026-01-21
 readingMinutes: 6

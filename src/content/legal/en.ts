@@ -5,7 +5,7 @@ export const legalEn: LegalContent = {
   privacy: {
     navLabel: 'Privacy Policy',
     title: 'Privacy Policy | FORMA',
-    description: 'How FORMA collects, uses and protects information submitted through this website.',
+    description: 'How FORMA collects, uses and protects information submitted through this website, including project enquiries and the planning tools.',
     h1: 'Privacy Policy',
     sections: [
       {
@@ -45,7 +45,7 @@ export const legalEn: LegalContent = {
   terms: {
     navLabel: 'Terms of Service',
     title: 'Terms of Service | FORMA',
-    description: 'Terms governing use of the FORMA website and initial project enquiries.',
+    description: 'Terms governing use of the FORMA website and initial project enquiries. Please read them before sending an enquiry or using the planning tools.',
     h1: 'Terms of Service',
     sections: [
       {
@@ -77,7 +77,7 @@ export const legalEn: LegalContent = {
   cookies: {
     navLabel: 'Cookie Settings',
     title: 'Cookie Settings | FORMA',
-    description: 'How FORMA uses cookies and similar technologies, and how to manage your preferences.',
+    description: 'How FORMA uses cookies and similar technologies, and how to manage your preferences, including accepting or declining analytics cookies.',
     h1: 'Cookie Settings',
     intro:
       'We use a small number of cookies to run this site and, where you consent, to understand how it is used. You can change your preference at any time using the control below.',
@@ -100,14 +100,14 @@ export const legalEn: LegalContent = {
   accessibility: {
     navLabel: 'Accessibility',
     title: 'Accessibility | FORMA',
-    description: 'Our commitment to an accessible website and how to report an accessibility issue.',
+    description: 'Our commitment to an accessible website and how to report an accessibility issue. Tell us about any barrier you meet and we will look into it.',
     h1: 'Accessibility Statement',
     body: 'We aim for this website to be usable by as many people as possible, including via keyboard navigation and screen readers, with sufficient colour contrast and respect for reduced-motion preferences. If you encounter an accessibility barrier anywhere on this site, please tell us at {email} so we can address it.',
   },
   editorialPolicy: {
     navLabel: 'Editorial Policy',
     title: 'Editorial Policy | FORMA',
-    description: 'How FORMA researches, writes and maintains the articles published in our Journal.',
+    description: 'How FORMA researches, writes and maintains the articles published in our Journal, so you can judge how far to rely on what you read.',
     h1: 'Editorial Policy',
     body: 'Articles published in our Journal are written in-house by our studio team, drawing on our direct experience designing and building on Koh Phangan and the surrounding islands. We do not publish sponsored content, fabricate statistics, or present unverified claims as fact. Where an article references external standards, regulations or technical claims, we reference authoritative sources where appropriate. Articles are reviewed periodically and updated when information changes; the "last updated" date on each article reflects the most recent review.',
   },

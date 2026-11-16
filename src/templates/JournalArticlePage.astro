@@ -36,7 +36,7 @@ const relatedLocations = entry.data.relatedLocationSlugs
   .filter((s: (typeof locations)[number] | undefined): s is (typeof locations)[number] => Boolean(s));
 ---
 
-<BaseLayout locale={locale} path={path} title={`${entry.data.title} | FORMA Journal`} description={entry.data.description} image={optimizedOg.src} availableLocales={availableLocales}>
+<BaseLayout locale={locale} path={path} title={`${entry.data.seoTitle ?? entry.data.title} | FORMA Journal`} description={entry.data.description} image={optimizedOg.src} availableLocales={availableLocales}>
   <Breadcrumbs locale={locale} items={[{ name: t.nav.journal, path: '/journal/' }, { name: entry.data.title, path }]} />
 
   <article class="wrap pb-20 pt-2">

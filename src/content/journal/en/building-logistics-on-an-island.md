@@ -1,5 +1,6 @@
 ---
 title: "Building Logistics on an Island: What a Realistic Schedule Accounts For"
+seoTitle: "Island Building Logistics and Realistic Schedules"
 description: "How material transport, monsoon timing and site access on Koh Phangan should shape a realistic villa construction schedule from the outset."
 cluster: "construction"
 publishDate: 2026-01-28

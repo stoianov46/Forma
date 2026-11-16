@@ -2,8 +2,8 @@
   "summary": {
     "pages": 205,
     "checks": 4110,
-    "pass": 4032,
-    "warning": 78,
+    "pass": 4098,
+    "warning": 12,
     "fail": 0
   },
   "results": [
@@ -200,7 +200,7 @@
       "url": "/404.html",
       "locale": "en",
       "check": "description-length",
-      "status": "WARNING",
+      "status": "PASS",
       "actual": "64",
       "expected": "110-170",
       "fix": "Rewrite meta description"
@@ -524,8 +524,8 @@
       "url": "/accessibility/",
       "locale": "en",
       "check": "description-length",
-      "status": "WARNING",
-      "actual": "81",
+      "status": "PASS",
+      "actual": "142",
       "expected": "110-170",
       "fix": "Rewrite meta description"
     },
@@ -534,7 +534,7 @@
       "locale": "en",
       "check": "description-present",
       "status": "PASS",
-      "actual": "81",
+      "actual": "142",
       "expected": "non-empty",
       "fix": ""
     },
@@ -1046,8 +1046,8 @@
       "url": "/cookies/",
       "locale": "en",
       "check": "description-length",
-      "status": "WARNING",
-      "actual": "84",
+      "status": "PASS",
+      "actual": "136",
       "expected": "110-170",
       "fix": "Rewrite meta description"
     },
@@ -1056,7 +1056,7 @@
       "locale": "en",
       "check": "description-present",
       "status": "PASS",
-      "actual": "84",
+      "actual": "136",
       "expected": "non-empty",
       "fix": ""
     },
@@ -1208,8 +1208,8 @@
       "url": "/editorial-policy/",
       "locale": "en",
       "check": "description-length",
-      "status": "WARNING",
-      "actual": "81",
+      "status": "PASS",
+      "actual": "132",
       "expected": "110-170",
       "fix": "Rewrite meta description"
     },
@@ -1218,7 +1218,7 @@
       "locale": "en",
       "check": "description-present",
       "status": "PASS",
-      "actual": "81",
+      "actual": "132",
       "expected": "non-empty",
       "fix": ""
     },
@@ -1703,8 +1703,8 @@
       "url": "/he/accessibility/",
       "locale": "he",
       "check": "description-length",
-      "status": "WARNING",
-      "actual": "52",
+      "status": "PASS",
+      "actual": "97",
       "expected": "85-170",
       "fix": "Rewrite meta description"
     },
@@ -1713,7 +1713,7 @@
       "locale": "he",
       "check": "description-present",
       "status": "PASS",
-      "actual": "52",
+      "actual": "97",
       "expected": "non-empty",
       "fix": ""
     },
@@ -1820,8 +1820,8 @@
       "url": "/he/accessibility/",
       "locale": "he",
       "check": "title-length",
-      "status": "WARNING",
-      "actual": "14",
+      "status": "PASS",
+      "actual": "20",
       "expected": "20-65",
       "fix": "Shorten/lengthen title"
     },
@@ -1830,7 +1830,7 @@
       "locale": "he",
       "check": "title-present",
       "status": "PASS",
-      "actual": "נגישות | FORMA",
+      "actual": "הצהרת נגישות | FORMA",
       "expected": "non-empty",
       "fix": ""
     },
@@ -2216,8 +2216,8 @@
       "url": "/he/cookies/",
       "locale": "he",
       "check": "description-length",
-      "status": "WARNING",
-      "actual": "73",
+      "status": "PASS",
+      "actual": "112",
       "expected": "85-170",
       "fix": "Rewrite meta description"
     },
@@ -2226,7 +2226,7 @@
       "locale": "he",
       "check": "description-present",
       "status": "PASS",
-      "actual": "73",
+      "actual": "112",
       "expected": "non-empty",
       "fix": ""
     },
@@ -2387,8 +2387,8 @@
       "url": "/he/editorial-policy/",
       "locale": "he",
       "check": "description-length",
-      "status": "WARNING",
-      "actual": "64",
+      "status": "PASS",
+      "actual": "104",
       "expected": "85-170",
       "fix": "Rewrite meta description"
     },
@@ -2397,7 +2397,7 @@
       "locale": "he",
       "check": "description-present",
       "status": "PASS",
-      "actual": "64",
+      "actual": "104",
       "expected": "non-empty",
       "fix": ""
     },
@@ -2585,8 +2585,8 @@
       "url": "/he/journal/",
       "locale": "he",
       "check": "heading-hierarchy",
-      "status": "WARNING",
-      "actual": "level skipped",
+      "status": "PASS",
+      "actual": "ok",
       "expected": "no skipped levels",
       "fix": ""
     },
@@ -3476,8 +3476,8 @@
       "url": "/he/journal/signs-a-villa-renovation-needs-structural-assessment/",
       "locale": "he",
       "check": "title-length",
-      "status": "WARNING",
-      "actual": "78",
+      "status": "PASS",
+      "actual": "57",
       "expected": "20-65",
       "fix": "Shorten/lengthen title"
     },
@@ -3486,7 +3486,7 @@
       "locale": "he",
       "check": "title-present",
       "status": "PASS",
-      "actual": "סימנים לכך שוילה ותיקה זקוקה להערכה קונסטרוקטיבית לפני רנובציה | FORMA Journal",
+      "actual": "וילה ותיקה: מתי נדרשת הערכה קונסטרוקטיבית | FORMA Journal",
       "expected": "non-empty",
       "fix": ""
     },
@@ -3638,8 +3638,8 @@
       "url": "/he/journal/what-tropical-architecture-actually-means/",
       "locale": "he",
       "check": "title-length",
-      "status": "WARNING",
-      "actual": "70",
+      "status": "PASS",
+      "actual": "45",
       "expected": "20-65",
       "fix": "Shorten/lengthen title"
     },
@@ -3648,7 +3648,7 @@
       "locale": "he",
       "check": "title-present",
       "status": "PASS",
-      "actual": "מה &#39;אדריכלות טרופית&#39; באמת אומרת, מעבר לאסתטיקה | FORMA Journal",
+      "actual": "מה אדריכלות טרופית באמת אומרת | FORMA Journal",
       "expected": "non-empty",
       "fix": ""
     },
@@ -6005,8 +6005,8 @@
       "url": "/he/privacy/",
       "locale": "he",
       "check": "description-length",
-      "status": "WARNING",
-      "actual": "56",
+      "status": "PASS",
+      "actual": "94",
       "expected": "85-170",
       "fix": "Rewrite meta description"
     },
@@ -6015,7 +6015,7 @@
       "locale": "he",
       "check": "description-present",
       "status": "PASS",
-      "actual": "56",
+      "actual": "94",
       "expected": "non-empty",
       "fix": ""
     },
@@ -6536,8 +6536,8 @@
       "url": "/he/projects/baan-tai-family-compound/",
       "locale": "he",
       "check": "description-length",
-      "status": "WARNING",
-      "actual": "78",
+      "status": "PASS",
+      "actual": "106",
       "expected": "85-170",
       "fix": "Rewrite meta description"
     },
@@ -6546,7 +6546,7 @@
       "locale": "he",
       "check": "description-present",
       "status": "PASS",
-      "actual": "78",
+      "actual": "106",
       "expected": "non-empty",
       "fix": ""
     },
@@ -10226,8 +10226,8 @@
       "url": "/he/terms/",
       "locale": "he",
       "check": "description-length",
-      "status": "WARNING",
-      "actual": "68",
+      "status": "PASS",
+      "actual": "103",
       "expected": "85-170",
       "fix": "Rewrite meta description"
     },
@@ -10236,7 +10236,7 @@
       "locale": "he",
       "check": "description-present",
       "status": "PASS",
-      "actual": "68",
+      "actual": "103",
       "expected": "non-empty",
       "fix": ""
     },
@@ -10352,8 +10352,8 @@
       "url": "/he/terms/",
       "locale": "he",
       "check": "title-length",
-      "status": "WARNING",
-      "actual": "18",
+      "status": "PASS",
+      "actual": "23",
       "expected": "20-65",
       "fix": "Shorten/lengthen title"
     },
@@ -10362,7 +10362,7 @@
       "locale": "he",
       "check": "title-present",
       "status": "PASS",
-      "actual": "תנאי שימוש | FORMA",
+      "actual": "תנאי שימוש באתר | FORMA",
       "expected": "non-empty",
       "fix": ""
     },
@@ -10397,7 +10397,7 @@
       "url": "/he/thank-you/",
       "locale": "he",
       "check": "description-length",
-      "status": "WARNING",
+      "status": "PASS",
       "actual": "56",
       "expected": "85-170",
       "fix": "Rewrite meta description"
@@ -10577,8 +10577,8 @@
       "url": "/journal/",
       "locale": "en",
       "check": "heading-hierarchy",
-      "status": "WARNING",
-      "actual": "level skipped",
+      "status": "PASS",
+      "actual": "ok",
       "expected": "no skipped levels",
       "fix": ""
     },
@@ -10811,8 +10811,8 @@
       "url": "/journal/building-logistics-on-an-island/",
       "locale": "en",
       "check": "title-length",
-      "status": "WARNING",
-      "actual": "87",
+      "status": "PASS",
+      "actual": "65",
       "expected": "20-65",
       "fix": "Shorten/lengthen title"
     },
@@ -10821,7 +10821,7 @@
       "locale": "en",
       "check": "title-present",
       "status": "PASS",
-      "actual": "Building Logistics on an Island: What a Realistic Schedule Accounts For | FORMA Journal",
+      "actual": "Island Building Logistics and Realistic Schedules | FORMA Journal",
       "expected": "non-empty",
       "fix": ""
     },
@@ -10964,8 +10964,8 @@
       "url": "/journal/building-permits-koh-phangan-what-to-expect/",
       "locale": "en",
       "check": "title-length",
-      "status": "WARNING",
-      "actual": "80",
+      "status": "PASS",
+      "actual": "63",
       "expected": "20-65",
       "fix": "Shorten/lengthen title"
     },
@@ -10974,7 +10974,7 @@
       "locale": "en",
       "check": "title-present",
       "status": "PASS",
-      "actual": "Building Permits on Koh Phangan: What to Expect From the Process | FORMA Journal",
+      "actual": "Building Permits on Koh Phangan: What to Expect | FORMA Journal",
       "expected": "non-empty",
       "fix": ""
     },
@@ -11117,8 +11117,8 @@
       "url": "/journal/orienting-a-villa-for-koh-phangan-sun-and-wind/",
       "locale": "en",
       "check": "title-length",
-      "status": "WARNING",
-      "actual": "68",
+      "status": "PASS",
+      "actual": "62",
       "expected": "20-65",
       "fix": "Shorten/lengthen title"
     },
@@ -11127,7 +11127,7 @@
       "locale": "en",
       "check": "title-present",
       "status": "PASS",
-      "actual": "Orienting a Villa for Koh Phangan&#39;s Sun and Wind | FORMA Journal",
+      "actual": "Orienting a Villa for Koh Phangan Sun and Wind | FORMA Journal",
       "expected": "non-empty",
       "fix": ""
     },
@@ -11423,8 +11423,8 @@
       "url": "/journal/signs-a-villa-renovation-needs-structural-assessment/",
       "locale": "en",
       "check": "title-length",
-      "status": "WARNING",
-      "actual": "84",
+      "status": "PASS",
+      "actual": "61",
       "expected": "20-65",
       "fix": "Shorten/lengthen title"
     },
@@ -11433,7 +11433,7 @@
       "locale": "en",
       "check": "title-present",
       "status": "PASS",
-      "actual": "Signs an Older Villa Needs a Structural Assessment Before Renovation | FORMA Journal",
+      "actual": "Does Your Villa Need a Structural Assessment? | FORMA Journal",
       "expected": "non-empty",
       "fix": ""
     },
@@ -11468,8 +11468,8 @@
       "url": "/journal/what-tropical-architecture-actually-means/",
       "locale": "en",
       "check": "description-length",
-      "status": "WARNING",
-      "actual": "171",
+      "status": "PASS",
+      "actual": "161",
       "expected": "110-170",
       "fix": "Rewrite meta description"
     },
@@ -11478,7 +11478,7 @@
       "locale": "en",
       "check": "description-present",
       "status": "PASS",
-      "actual": "171",
+      "actual": "161",
       "expected": "non-empty",
       "fix": ""
     },
@@ -11576,8 +11576,8 @@
       "url": "/journal/what-tropical-architecture-actually-means/",
       "locale": "en",
       "check": "title-length",
-      "status": "WARNING",
-      "actual": "89",
+      "status": "PASS",
+      "actual": "57",
       "expected": "20-65",
       "fix": "Shorten/lengthen title"
     },
@@ -11586,7 +11586,7 @@
       "locale": "en",
       "check": "title-present",
       "status": "PASS",
-      "actual": "What &#39;Tropical Architecture&#39; Actually Means, Beyond the Aesthetic | FORMA Journal",
+      "actual": "What Tropical Architecture Actually Means | FORMA Journal",
       "expected": "non-empty",
       "fix": ""
     },
@@ -14042,8 +14042,8 @@
       "url": "/privacy/",
       "locale": "en",
       "check": "description-length",
-      "status": "WARNING",
-      "actual": "81",
+      "status": "PASS",
+      "actual": "133",
       "expected": "110-170",
       "fix": "Rewrite meta description"
     },
@@ -14052,7 +14052,7 @@
       "locale": "en",
       "check": "description-present",
       "status": "PASS",
-      "actual": "81",
+      "actual": "133",
       "expected": "non-empty",
       "fix": ""
     },
@@ -15806,8 +15806,8 @@
       "url": "/ru/about/",
       "locale": "ru",
       "check": "description-length",
-      "status": "WARNING",
-      "actual": "185",
+      "status": "PASS",
+      "actual": "165",
       "expected": "110-170",
       "fix": "Rewrite meta description"
     },
@@ -15816,7 +15816,7 @@
       "locale": "ru",
       "check": "description-present",
       "status": "PASS",
-      "actual": "185",
+      "actual": "165",
       "expected": "non-empty",
       "fix": ""
     },
@@ -15986,8 +15986,8 @@
       "url": "/ru/accessibility/",
       "locale": "ru",
       "check": "description-length",
-      "status": "WARNING",
-      "actual": "78",
+      "status": "PASS",
+      "actual": "131",
       "expected": "110-170",
       "fix": "Rewrite meta description"
     },
@@ -15996,7 +15996,7 @@
       "locale": "ru",
       "check": "description-present",
       "status": "PASS",
-      "actual": "78",
+      "actual": "131",
       "expected": "non-empty",
       "fix": ""
     },
@@ -16103,8 +16103,8 @@
       "url": "/ru/accessibility/",
       "locale": "ru",
       "check": "title-length",
-      "status": "WARNING",
-      "actual": "19",
+      "status": "PASS",
+      "actual": "25",
       "expected": "20-65",
       "fix": "Shorten/lengthen title"
     },
@@ -16113,7 +16113,7 @@
       "locale": "ru",
       "check": "title-present",
       "status": "PASS",
-      "actual": "Доступность | FORMA",
+      "actual": "Доступность сайта | FORMA",
       "expected": "non-empty",
       "fix": ""
     },
@@ -16328,8 +16328,8 @@
       "url": "/ru/contact/",
       "locale": "ru",
       "check": "description-length",
-      "status": "WARNING",
-      "actual": "108",
+      "status": "PASS",
+      "actual": "119",
       "expected": "110-170",
       "fix": "Rewrite meta description"
     },
@@ -16338,7 +16338,7 @@
       "locale": "ru",
       "check": "description-present",
       "status": "PASS",
-      "actual": "108",
+      "actual": "119",
       "expected": "non-empty",
       "fix": ""
     },
@@ -16499,8 +16499,8 @@
       "url": "/ru/cookies/",
       "locale": "ru",
       "check": "description-length",
-      "status": "WARNING",
-      "actual": "94",
+      "status": "PASS",
+      "actual": "148",
       "expected": "110-170",
       "fix": "Rewrite meta description"
     },
@@ -16509,7 +16509,7 @@
       "locale": "ru",
       "check": "description-present",
       "status": "PASS",
-      "actual": "94",
+      "actual": "148",
       "expected": "non-empty",
       "fix": ""
     },
@@ -16670,8 +16670,8 @@
       "url": "/ru/editorial-policy/",
       "locale": "ru",
       "check": "description-length",
-      "status": "WARNING",
-      "actual": "78",
+      "status": "PASS",
+      "actual": "145",
       "expected": "110-170",
       "fix": "Rewrite meta description"
     },
@@ -16680,7 +16680,7 @@
       "locale": "ru",
       "check": "description-present",
       "status": "PASS",
-      "actual": "78",
+      "actual": "145",
       "expected": "non-empty",
       "fix": ""
     },
@@ -16868,8 +16868,8 @@
       "url": "/ru/journal/",
       "locale": "ru",
       "check": "heading-hierarchy",
-      "status": "WARNING",
-      "actual": "level skipped",
+      "status": "PASS",
+      "actual": "ok",
       "expected": "no skipped levels",
       "fix": ""
     },
@@ -17111,8 +17111,8 @@
       "url": "/ru/journal/building-logistics-on-an-island/",
       "locale": "ru",
       "check": "title-length",
-      "status": "WARNING",
-      "actual": "92",
+      "status": "PASS",
+      "actual": "50",
       "expected": "20-65",
       "fix": "Shorten/lengthen title"
     },
@@ -17121,7 +17121,7 @@
       "locale": "ru",
       "check": "title-present",
       "status": "PASS",
-      "actual": "Логистика строительства на острове: из чего складывается реалистичный график | FORMA Journal",
+      "actual": "Логистика строительства на острове | FORMA Journal",
       "expected": "non-empty",
       "fix": ""
     },
@@ -17273,8 +17273,8 @@
       "url": "/ru/journal/building-permits-koh-phangan-what-to-expect/",
       "locale": "ru",
       "check": "title-length",
-      "status": "WARNING",
-      "actual": "82",
+      "status": "PASS",
+      "actual": "56",
       "expected": "20-65",
       "fix": "Shorten/lengthen title"
     },
@@ -17283,7 +17283,7 @@
       "locale": "ru",
       "check": "title-present",
       "status": "PASS",
-      "actual": "Разрешения на строительство на Ко Панган: чего ожидать от процесса | FORMA Journal",
+      "actual": "Разрешения на строительство на Ко Панган | FORMA Journal",
       "expected": "non-empty",
       "fix": ""
     },
@@ -17642,8 +17642,8 @@
       "url": "/ru/journal/signs-a-villa-renovation-needs-structural-assessment/",
       "locale": "ru",
       "check": "description-length",
-      "status": "WARNING",
-      "actual": "176",
+      "status": "PASS",
+      "actual": "149",
       "expected": "110-170",
       "fix": "Rewrite meta description"
     },
@@ -17652,7 +17652,7 @@
       "locale": "ru",
       "check": "description-present",
       "status": "PASS",
-      "actual": "176",
+      "actual": "149",
       "expected": "non-empty",
       "fix": ""
     },
@@ -17759,8 +17759,8 @@
       "url": "/ru/journal/signs-a-villa-renovation-needs-structural-assessment/",
       "locale": "ru",
       "check": "title-length",
-      "status": "WARNING",
-      "actual": "96",
+      "status": "PASS",
+      "actual": "59",
       "expected": "20-65",
       "fix": "Shorten/lengthen title"
     },
@@ -17769,7 +17769,7 @@
       "locale": "ru",
       "check": "title-present",
       "status": "PASS",
-      "actual": "Признаки того, что старой вилле перед реновацией нужна конструктивная экспертиза | FORMA Journal",
+      "actual": "Когда вилле нужна конструктивная экспертиза | FORMA Journal",
       "expected": "non-empty",
       "fix": ""
     },
@@ -17804,8 +17804,8 @@
       "url": "/ru/journal/what-tropical-architecture-actually-means/",
       "locale": "ru",
       "check": "description-length",
-      "status": "WARNING",
-      "actual": "189",
+      "status": "PASS",
+      "actual": "160",
       "expected": "110-170",
       "fix": "Rewrite meta description"
     },
@@ -17814,7 +17814,7 @@
       "locale": "ru",
       "check": "description-present",
       "status": "PASS",
-      "actual": "189",
+      "actual": "160",
       "expected": "non-empty",
       "fix": ""
     },
@@ -17921,8 +17921,8 @@
       "url": "/ru/journal/what-tropical-architecture-actually-means/",
       "locale": "ru",
       "check": "title-length",
-      "status": "WARNING",
-      "actual": "89",
+      "status": "PASS",
+      "actual": "54",
       "expected": "20-65",
       "fix": "Shorten/lengthen title"
     },
@@ -17931,7 +17931,7 @@
       "locale": "ru",
       "check": "title-present",
       "status": "PASS",
-      "actual": "Что на самом деле означает «тропическая архитектура» — не только эстетика | FORMA Journal",
+      "actual": "Что означает «тропическая архитектура» | FORMA Journal",
       "expected": "non-empty",
       "fix": ""
     },
@@ -18308,8 +18308,8 @@
       "url": "/ru/locations/bali/",
       "locale": "ru",
       "check": "description-length",
-      "status": "WARNING",
-      "actual": "175",
+      "status": "PASS",
+      "actual": "147",
       "expected": "110-170",
       "fix": "Rewrite meta description"
     },
@@ -18318,7 +18318,7 @@
       "locale": "ru",
       "check": "description-present",
       "status": "PASS",
-      "actual": "175",
+      "actual": "147",
       "expected": "non-empty",
       "fix": ""
     },
@@ -18668,8 +18668,8 @@
       "url": "/ru/locations/haad-rin/",
       "locale": "ru",
       "check": "description-length",
-      "status": "WARNING",
-      "actual": "185",
+      "status": "PASS",
+      "actual": "157",
       "expected": "110-170",
       "fix": "Rewrite meta description"
     },
@@ -18678,7 +18678,7 @@
       "locale": "ru",
       "check": "description-present",
       "status": "PASS",
-      "actual": "185",
+      "actual": "157",
       "expected": "non-empty",
       "fix": ""
     },
@@ -19388,8 +19388,8 @@
       "url": "/ru/locations/koh-samui/",
       "locale": "ru",
       "check": "description-length",
-      "status": "WARNING",
-      "actual": "188",
+      "status": "PASS",
+      "actual": "163",
       "expected": "110-170",
       "fix": "Rewrite meta description"
     },
@@ -19398,7 +19398,7 @@
       "locale": "ru",
       "check": "description-present",
       "status": "PASS",
-      "actual": "188",
+      "actual": "163",
       "expected": "non-empty",
       "fix": ""
     },
@@ -19568,8 +19568,8 @@
       "url": "/ru/locations/koh-tao/",
       "locale": "ru",
       "check": "description-length",
-      "status": "WARNING",
-      "actual": "176",
+      "status": "PASS",
+      "actual": "145",
       "expected": "110-170",
       "fix": "Rewrite meta description"
     },
@@ -19578,7 +19578,7 @@
       "locale": "ru",
       "check": "description-present",
       "status": "PASS",
-      "actual": "176",
+      "actual": "145",
       "expected": "non-empty",
       "fix": ""
     },
@@ -19748,8 +19748,8 @@
       "url": "/ru/locations/sri-thanu/",
       "locale": "ru",
       "check": "description-length",
-      "status": "WARNING",
-      "actual": "175",
+      "status": "PASS",
+      "actual": "160",
       "expected": "110-170",
       "fix": "Rewrite meta description"
     },
@@ -19758,7 +19758,7 @@
       "locale": "ru",
       "check": "description-present",
       "status": "PASS",
-      "actual": "175",
+      "actual": "160",
       "expected": "non-empty",
       "fix": ""
     },
@@ -20288,8 +20288,8 @@
       "url": "/ru/privacy/",
       "locale": "ru",
       "check": "description-length",
-      "status": "WARNING",
-      "actual": "83",
+      "status": "PASS",
+      "actual": "139",
       "expected": "110-170",
       "fix": "Rewrite meta description"
     },
@@ -20298,7 +20298,7 @@
       "locale": "ru",
       "check": "description-present",
       "status": "PASS",
-      "actual": "83",
+      "actual": "139",
       "expected": "non-empty",
       "fix": ""
     },
@@ -21008,8 +21008,8 @@
       "url": "/ru/projects/bay-view-residence-chaloklum/",
       "locale": "ru",
       "check": "description-length",
-      "status": "WARNING",
-      "actual": "176",
+      "status": "PASS",
+      "actual": "143",
       "expected": "110-170",
       "fix": "Rewrite meta description"
     },
@@ -21018,7 +21018,7 @@
       "locale": "ru",
       "check": "description-present",
       "status": "PASS",
-      "actual": "176",
+      "actual": "143",
       "expected": "non-empty",
       "fix": ""
     },
@@ -21890,8 +21890,8 @@
       "url": "/ru/projects/thong-sala-townhouse-renovation/",
       "locale": "ru",
       "check": "title-length",
-      "status": "WARNING",
-      "actual": "66",
+      "status": "PASS",
+      "actual": "59",
       "expected": "20-65",
       "fix": "Shorten/lengthen title"
     },
@@ -21900,7 +21900,7 @@
       "locale": "ru",
       "check": "title-present",
       "status": "PASS",
-      "actual": "Реновация таунхауса в Тонгсале | Концептуальное исследование FORMA",
+      "actual": "Реновация таунхауса в Тонгсале | Концепт-исследование FORMA",
       "expected": "non-empty",
       "fix": ""
     },
@@ -24509,8 +24509,8 @@
       "url": "/ru/terms/",
       "locale": "ru",
       "check": "description-length",
-      "status": "WARNING",
-      "actual": "80",
+      "status": "PASS",
+      "actual": "164",
       "expected": "110-170",
       "fix": "Rewrite meta description"
     },
@@ -24519,7 +24519,7 @@
       "locale": "ru",
       "check": "description-present",
       "status": "PASS",
-      "actual": "80",
+      "actual": "164",
       "expected": "non-empty",
       "fix": ""
     },
@@ -24680,7 +24680,7 @@
       "url": "/ru/thank-you/",
       "locale": "ru",
       "check": "description-length",
-      "status": "WARNING",
+      "status": "PASS",
       "actual": "73",
       "expected": "110-170",
       "fix": "Rewrite meta description"
@@ -27524,8 +27524,8 @@
       "url": "/terms/",
       "locale": "en",
       "check": "description-length",
-      "status": "WARNING",
-      "actual": "71",
+      "status": "PASS",
+      "actual": "143",
       "expected": "110-170",
       "fix": "Rewrite meta description"
     },
@@ -27534,7 +27534,7 @@
       "locale": "en",
       "check": "description-present",
       "status": "PASS",
-      "actual": "71",
+      "actual": "143",
       "expected": "non-empty",
       "fix": ""
     },
@@ -28028,8 +28028,8 @@
       "url": "/th/accessibility/",
       "locale": "th",
       "check": "description-length",
-      "status": "WARNING",
-      "actual": "77",
+      "status": "PASS",
+      "actual": "117",
       "expected": "110-170",
       "fix": "Rewrite meta description"
     },
@@ -28038,7 +28038,7 @@
       "locale": "th",
       "check": "description-present",
       "status": "PASS",
-      "actual": "77",
+      "actual": "117",
       "expected": "non-empty",
       "fix": ""
     },
@@ -28370,8 +28370,8 @@
       "url": "/th/contact/",
       "locale": "th",
       "check": "description-length",
-      "status": "WARNING",
-      "actual": "99",
+      "status": "PASS",
+      "actual": "115",
       "expected": "110-170",
       "fix": "Rewrite meta description"
     },
@@ -28380,7 +28380,7 @@
       "locale": "th",
       "check": "description-present",
       "status": "PASS",
-      "actual": "99",
+      "actual": "115",
       "expected": "non-empty",
       "fix": ""
     },
@@ -28541,8 +28541,8 @@
       "url": "/th/cookies/",
       "locale": "th",
       "check": "description-length",
-      "status": "WARNING",
-      "actual": "87",
+      "status": "PASS",
+      "actual": "136",
       "expected": "110-170",
       "fix": "Rewrite meta description"
     },
@@ -28551,7 +28551,7 @@
       "locale": "th",
       "check": "description-present",
       "status": "PASS",
-      "actual": "87",
+      "actual": "136",
       "expected": "non-empty",
       "fix": ""
     },
@@ -28712,8 +28712,8 @@
       "url": "/th/editorial-policy/",
       "locale": "th",
       "check": "description-length",
-      "status": "WARNING",
-      "actual": "64",
+      "status": "PASS",
+      "actual": "118",
       "expected": "110-170",
       "fix": "Rewrite meta description"
     },
@@ -28722,7 +28722,7 @@
       "locale": "th",
       "check": "description-present",
       "status": "PASS",
-      "actual": "64",
+      "actual": "118",
       "expected": "non-empty",
       "fix": ""
     },
@@ -28910,8 +28910,8 @@
       "url": "/th/journal/",
       "locale": "th",
       "check": "heading-hierarchy",
-      "status": "WARNING",
-      "actual": "level skipped",
+      "status": "PASS",
+      "actual": "ok",
       "expected": "no skipped levels",
       "fix": ""
     },
@@ -29153,8 +29153,8 @@
       "url": "/th/journal/building-logistics-on-an-island/",
       "locale": "th",
       "check": "title-length",
-      "status": "WARNING",
-      "actual": "82",
+      "status": "PASS",
+      "actual": "43",
       "expected": "20-65",
       "fix": "Shorten/lengthen title"
     },
@@ -29163,7 +29163,7 @@
       "locale": "th",
       "check": "title-present",
       "status": "PASS",
-      "actual": "โลจิสติกส์การก่อสร้างบนเกาะ: กำหนดการที่สมจริงต้องคำนึงถึงอะไรบ้าง | FORMA Journal",
+      "actual": "โลจิสติกส์การก่อสร้างบนเกาะ | FORMA Journal",
       "expected": "non-empty",
       "fix": ""
     },
@@ -29315,8 +29315,8 @@
       "url": "/th/journal/building-permits-koh-phangan-what-to-expect/",
       "locale": "th",
       "check": "title-length",
-      "status": "WARNING",
-      "actual": "74",
+      "status": "PASS",
+      "actual": "43",
       "expected": "20-65",
       "fix": "Shorten/lengthen title"
     },
@@ -29325,7 +29325,7 @@
       "locale": "th",
       "check": "title-present",
       "status": "PASS",
-      "actual": "ใบอนุญาตก่อสร้างบนเกาะพะงัน: สิ่งที่ควรคาดหวังจากกระบวนการ | FORMA Journal",
+      "actual": "ใบอนุญาตก่อสร้างบนเกาะพะงัน | FORMA Journal",
       "expected": "non-empty",
       "fix": ""
     },
@@ -29477,8 +29477,8 @@
       "url": "/th/journal/orienting-a-villa-for-koh-phangan-sun-and-wind/",
       "locale": "th",
       "check": "title-length",
-      "status": "WARNING",
-      "actual": "68",
+      "status": "PASS",
+      "actual": "56",
       "expected": "20-65",
       "fix": "Shorten/lengthen title"
     },
@@ -29487,7 +29487,7 @@
       "locale": "th",
       "check": "title-present",
       "status": "PASS",
-      "actual": "การวางทิศทางวิลล่าให้เหมาะกับแสงแดดและลมของเกาะพะงัน | FORMA Journal",
+      "actual": "ทิศทางวิลล่าให้เหมาะกับแดดและลมเกาะพะงัน | FORMA Journal",
       "expected": "non-empty",
       "fix": ""
     },
@@ -29639,8 +29639,8 @@
       "url": "/th/journal/passive-cooling-without-losing-design-quality/",
       "locale": "th",
       "check": "title-length",
-      "status": "WARNING",
-      "actual": "66",
+      "status": "PASS",
+      "actual": "54",
       "expected": "20-65",
       "fix": "Shorten/lengthen title"
     },
@@ -29649,7 +29649,7 @@
       "locale": "th",
       "check": "title-present",
       "status": "PASS",
-      "actual": "การทำความเย็นแบบพาสซีฟโดยไม่สูญเสียคุณภาพการออกแบบ | FORMA Journal",
+      "actual": "การทำความเย็นแบบพาสซีฟโดยไม่เสียดีไซน์ | FORMA Journal",
       "expected": "non-empty",
       "fix": ""
     },
@@ -29801,8 +29801,8 @@
       "url": "/th/journal/signs-a-villa-renovation-needs-structural-assessment/",
       "locale": "th",
       "check": "title-length",
-      "status": "WARNING",
-      "actual": "79",
+      "status": "PASS",
+      "actual": "58",
       "expected": "20-65",
       "fix": "Shorten/lengthen title"
     },
@@ -29811,7 +29811,7 @@
       "locale": "th",
       "check": "title-present",
       "status": "PASS",
-      "actual": "สัญญาณที่บอกว่าวิลล่าเก่าต้องการการประเมินโครงสร้างก่อนปรับปรุง | FORMA Journal",
+      "actual": "วิลล่าเก่าต้องประเมินโครงสร้างก่อนปรับปรุง | FORMA Journal",
       "expected": "non-empty",
       "fix": ""
     },
@@ -29963,8 +29963,8 @@
       "url": "/th/journal/what-tropical-architecture-actually-means/",
       "locale": "th",
       "check": "title-length",
-      "status": "WARNING",
-      "actual": "88",
+      "status": "PASS",
+      "actual": "51",
       "expected": "20-65",
       "fix": "Shorten/lengthen title"
     },
@@ -29973,7 +29973,7 @@
       "locale": "th",
       "check": "title-present",
       "status": "PASS",
-      "actual": "ความหมายที่แท้จริงของ &#39;สถาปัตยกรรมเขตร้อน&#39; นอกเหนือจากความสวยงาม | FORMA Journal",
+      "actual": "สถาปัตยกรรมเขตร้อนที่แท้จริงคืออะไร | FORMA Journal",
       "expected": "non-empty",
       "fix": ""
     },
@@ -32330,8 +32330,8 @@
       "url": "/th/privacy/",
       "locale": "th",
       "check": "description-length",
-      "status": "WARNING",
-      "actual": "66",
+      "status": "PASS",
+      "actual": "127",
       "expected": "110-170",
       "fix": "Rewrite meta description"
     },
@@ -32340,7 +32340,7 @@
       "locale": "th",
       "check": "description-present",
       "status": "PASS",
-      "actual": "66",
+      "actual": "127",
       "expected": "non-empty",
       "fix": ""
     },
@@ -32636,8 +32636,8 @@
       "url": "/th/process/",
       "locale": "th",
       "check": "title-length",
-      "status": "WARNING",
-      "actual": "70",
+      "status": "PASS",
+      "actual": "56",
       "expected": "20-65",
       "fix": "Shorten/lengthen title"
     },
@@ -32646,7 +32646,7 @@
       "locale": "th",
       "check": "title-present",
       "status": "PASS",
-      "actual": "กระบวนการทำงานของเรา | FORMA — สถาปัตยกรรมและออกแบบ-ก่อสร้าง เกาะพะงัน",
+      "actual": "กระบวนการทำงานของเรา | FORMA — ออกแบบ-ก่อสร้าง เกาะพะงัน",
       "expected": "non-empty",
       "fix": ""
     },
@@ -32681,8 +32681,8 @@
       "url": "/th/projects/",
       "locale": "th",
       "check": "description-length",
-      "status": "WARNING",
-      "actual": "107",
+      "status": "PASS",
+      "actual": "139",
       "expected": "110-170",
       "fix": "Rewrite meta description"
     },
@@ -32691,7 +32691,7 @@
       "locale": "th",
       "check": "description-present",
       "status": "PASS",
-      "actual": "107",
+      "actual": "139",
       "expected": "non-empty",
       "fix": ""
     },
@@ -32817,7 +32817,7 @@
       "locale": "th",
       "check": "untranslated-text",
       "status": "PASS",
-      "actual": "10% Latin letters",
+      "actual": "9% Latin letters",
       "expected": "<=30%",
       "fix": "Look for English fallback strings"
     },
@@ -33428,8 +33428,8 @@
       "url": "/th/projects/haad-yao-beachfront-pavilion/",
       "locale": "th",
       "check": "description-length",
-      "status": "WARNING",
-      "actual": "106",
+      "status": "PASS",
+      "actual": "131",
       "expected": "110-170",
       "fix": "Rewrite meta description"
     },
@@ -33438,7 +33438,7 @@
       "locale": "th",
       "check": "description-present",
       "status": "PASS",
-      "actual": "106",
+      "actual": "131",
       "expected": "non-empty",
       "fix": ""
     },
@@ -36551,8 +36551,8 @@
       "url": "/th/terms/",
       "locale": "th",
       "check": "description-length",
-      "status": "WARNING",
-      "actual": "69",
+      "status": "PASS",
+      "actual": "113",
       "expected": "110-170",
       "fix": "Rewrite meta description"
     },
@@ -36561,7 +36561,7 @@
       "locale": "th",
       "check": "description-present",
       "status": "PASS",
-      "actual": "69",
+      "actual": "113",
       "expected": "non-empty",
       "fix": ""
     },
@@ -36722,7 +36722,7 @@
       "url": "/th/thank-you/",
       "locale": "th",
       "check": "description-length",
-      "status": "WARNING",
+      "status": "PASS",
       "actual": "54",
       "expected": "110-170",
       "fix": "Rewrite meta description"
@@ -36875,7 +36875,7 @@
       "url": "/thank-you/",
       "locale": "en",
       "check": "description-length",
-      "status": "WARNING",
+      "status": "PASS",
       "actual": "78",
       "expected": "110-170",
       "fix": "Rewrite meta description"

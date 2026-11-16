@@ -1,5 +1,6 @@
 ---
 title: "Signs an Older Villa Needs a Structural Assessment Before Renovation"
+seoTitle: "Does Your Villa Need a Structural Assessment?"
 description: "The warning signs that suggest a tropical villa renovation should begin with a structural and condition survey rather than a straight cosmetic refresh."
 cluster: "renovation"
 publishDate: 2026-02-04

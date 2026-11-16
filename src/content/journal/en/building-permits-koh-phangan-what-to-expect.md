@@ -1,5 +1,6 @@
 ---
 title: "Building Permits on Koh Phangan: What to Expect From the Process"
+seoTitle: "Building Permits on Koh Phangan: What to Expect"
 description: "A realistic overview of how building permit and planning approval processes typically unfold on Koh Phangan, and how to prepare a stronger submission."
 cluster: "permits-planning"
 publishDate: 2026-02-11
